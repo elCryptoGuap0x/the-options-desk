@@ -28,9 +28,25 @@
     margin: 0;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px 70px; }
+  .wrap { max-width: min(1400px, 92vw); margin: 0 auto; padding: 0 20px 70px; }
   @media (max-width: 560px) {
     .wrap { padding-bottom: 96px; }
+  }
+
+  .hero-stats { max-width: 640px; margin: 0 auto; }
+
+  .desk-grid {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr) 260px;
+    gap: 32px;
+    margin-top: 10px;
+  }
+  .rail-left, .rail-right, .col-center { min-width: 0; }
+  @media (max-width: 1100px) {
+    .desk-grid { grid-template-columns: 1fr; max-width: 640px; margin-left: auto; margin-right: auto; }
+    .col-center { order: 1; }
+    .rail-right { order: 2; }
+    .rail-left { order: 3; }
   }
 
   /* ---- session bar ---- */
@@ -169,6 +185,9 @@
     overflow: hidden;
   }
   .board .cell { background: var(--surface); padding: 14px 8px; text-align: center; }
+  .rail-right .board { grid-template-columns: 1fr; }
+  .rail-right .board .cell { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; text-align: left; padding: 10px 12px; }
+  .rail-right .board .mini-chart { width: 60px; margin-top: 0; }
   .board .sym { font-family: var(--mono); font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
   .board .px { font-family: var(--mono); font-size: 16px; color: var(--text); margin-top: 3px; font-variant-numeric: tabular-nums; }
   .board .chg { font-family: var(--mono); font-size: 12px; margin-top: 2px; color: var(--neutral); font-variant-numeric: tabular-nums; }
@@ -277,6 +296,7 @@
   .news-dot.active { background: var(--gold); }
 
   footer {
+    max-width: 560px; margin: 40px auto 0;
     text-align: center; font-size: 11.5px; color: var(--text-faint); line-height: 1.8;
     padding-top: 22px; border-top: 1px solid var(--border-soft);
   }
@@ -361,60 +381,72 @@
     <span class="status-pill" id="status-pill"><span class="dot"></span><span id="status-text">—</span></span>
   </div>
 
-  <div class="stats" id="stats-row"></div>
-  <div class="expectancy" id="expectancy-row"></div>
-  <div class="stats-note">Contract %, not account %. A +32% ticket means a $1.40 contract sold near $1.85 — not 32% of the account. Fees not included.</div>
-  <div class="week-compare" id="week-compare"></div>
-
-  <div class="sparkline-wrap">
-    <div class="sparkline-label" id="sparkline-label">WEEK PATH</div>
-    <svg viewBox="0 0 300 60" preserveAspectRatio="none">
-      <polyline id="sparkline-line" fill="none" stroke="#c25b4f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="" />
-    </svg>
+  <div class="hero-stats">
+    <div class="stats" id="stats-row"></div>
+    <div class="expectancy" id="expectancy-row"></div>
+    <div class="stats-note">Contract %, not account %. A +32% ticket means a $1.40 contract sold near $1.85 — not 32% of the account. Fees not included.</div>
+    <div class="week-compare" id="week-compare"></div>
   </div>
 
-  <section>
-    <div class="section-title">Market board</div>
-    <div class="section-note" id="board-section-note">Backdrop, not a trade idea.</div>
-    <div class="board" id="market-board"></div>
-    <div class="board-foot" id="board-foot"></div>
-  </section>
+  <div class="desk-grid">
 
-  <section>
-    <div class="section-title">Recent tickets</div>
-    <div class="section-note">Every position, closed, in order. Percent return on the contract, not dollars.</div>
-    <div class="feed" id="ticket-feed"></div>
-  </section>
+    <div class="rail-left">
+      <section>
+        <div class="section-title">Calendar</div>
+        <div class="section-note">Next scheduled macro prints. Name and time, nothing else.</div>
+        <div class="cal-list">
+          <div class="cal-item"><span class="what">JOLTS</span><span class="when">Tue 8:30 CT</span></div>
+          <div class="cal-item"><span class="what">ISM Manufacturing</span><span class="when">Tue 9:00 CT</span></div>
+          <div class="cal-item"><span class="what">ADP Employment</span><span class="when">Wed 7:15 CT</span></div>
+          <div class="cal-item"><span class="what">Weekly Jobless Claims</span><span class="when">Thu 7:30 CT</span></div>
+          <div class="cal-item"><span class="what">Nonfarm Payrolls</span><span class="when">Fri 7:30 CT</span></div>
+        </div>
+      </section>
 
-  <section>
-    <div class="section-title">Calendar</div>
-    <div class="section-note">Next scheduled macro prints. Name and time, nothing else.</div>
-    <div class="cal-list">
-      <div class="cal-item"><span class="what">JOLTS</span><span class="when">Tue 8:30 CT</span></div>
-      <div class="cal-item"><span class="what">ISM Manufacturing</span><span class="when">Tue 9:00 CT</span></div>
-      <div class="cal-item"><span class="what">ADP Employment</span><span class="when">Wed 7:15 CT</span></div>
-      <div class="cal-item"><span class="what">Weekly Jobless Claims</span><span class="when">Thu 7:30 CT</span></div>
-      <div class="cal-item"><span class="what">Nonfarm Payrolls</span><span class="when">Fri 7:30 CT</span></div>
+      <section>
+        <div class="section-title">News</div>
+        <div class="section-note">Curated daily. General market/crypto backdrop, not trade rationale.</div>
+        <div class="news-card">
+          <div class="news-head">
+            <span class="news-tag" id="news-tag">—</span>
+            <span class="news-counter" id="news-counter">— / —</span>
+          </div>
+          <div class="news-title" id="news-title">—</div>
+          <p class="news-summary" id="news-summary">—</p>
+          <div class="news-nav">
+            <button class="news-arrow" id="news-prev" aria-label="Previous story" type="button">&larr;</button>
+            <div class="news-dots" id="news-dots"></div>
+            <button class="news-arrow" id="news-next" aria-label="Next story" type="button">&rarr;</button>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
 
-  <section>
-    <div class="section-title">News</div>
-    <div class="section-note">Curated daily. General market/crypto backdrop, not trade rationale.</div>
-    <div class="news-card">
-      <div class="news-head">
-        <span class="news-tag" id="news-tag">—</span>
-        <span class="news-counter" id="news-counter">— / —</span>
+    <div class="col-center">
+      <div class="sparkline-wrap">
+        <div class="sparkline-label" id="sparkline-label">WEEK PATH</div>
+        <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+          <polyline id="sparkline-line" fill="none" stroke="#c25b4f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="" />
+        </svg>
       </div>
-      <div class="news-title" id="news-title">—</div>
-      <p class="news-summary" id="news-summary">—</p>
-      <div class="news-nav">
-        <button class="news-arrow" id="news-prev" aria-label="Previous story" type="button">&larr;</button>
-        <div class="news-dots" id="news-dots"></div>
-        <button class="news-arrow" id="news-next" aria-label="Next story" type="button">&rarr;</button>
-      </div>
+
+      <section>
+        <div class="section-title">Recent tickets</div>
+        <div class="section-note">Every position, closed, in order. Percent return on the contract, not dollars.</div>
+        <div class="feed" id="ticket-feed"></div>
+      </section>
     </div>
-  </section>
+
+    <div class="rail-right">
+      <section>
+        <div class="section-title">Market board</div>
+        <div class="section-note" id="board-section-note">Backdrop, not a trade idea.</div>
+        <div class="board" id="market-board"></div>
+        <div class="board-foot" id="board-foot"></div>
+      </section>
+    </div>
+
+  </div>
 
   <footer>
     <div class="tape-date" id="tape-date">—</div>
