@@ -138,13 +138,6 @@
   .expectancy .stat { padding: 13px 10px; }
   .expectancy .n { font-size: 18px; }
 
-  .stats-note {
-    font-family: var(--mono);
-    font-size: 10px;
-    color: var(--text-faint);
-    text-align: center;
-    padding: 8px 0 0;
-  }
   .week-compare {
     font-family: var(--mono);
     font-size: 10px;
@@ -171,8 +164,7 @@
   .sparkline-wrap svg { width: 100%; height: 44px; display: block; }
 
   section { margin: 40px 0; }
-  .section-title { font-family: var(--serif); font-size: 18px; color: var(--text); margin: 0 0 4px; }
-  .section-note { font-size: 12px; color: var(--text-faint); margin-bottom: 14px; }
+  .section-title { font-family: var(--serif); font-size: 18px; color: var(--text); margin: 0 0 14px; }
 
   /* ---- market board ---- */
   .board {
@@ -384,7 +376,6 @@
   <div class="hero-stats">
     <div class="stats" id="stats-row"></div>
     <div class="expectancy" id="expectancy-row"></div>
-    <div class="stats-note">Contract %, not account %. A +32% ticket means a $1.40 contract sold near $1.85 — not 32% of the account. Fees not included.</div>
     <div class="week-compare" id="week-compare"></div>
   </div>
 
@@ -393,7 +384,6 @@
     <div class="rail-left">
       <section>
         <div class="section-title">Calendar</div>
-        <div class="section-note">Next scheduled macro prints. Name and time, nothing else.</div>
         <div class="cal-list">
           <div class="cal-item"><span class="what">JOLTS</span><span class="when">Tue 8:30 CT</span></div>
           <div class="cal-item"><span class="what">ISM Manufacturing</span><span class="when">Tue 9:00 CT</span></div>
@@ -405,7 +395,6 @@
 
       <section>
         <div class="section-title">News</div>
-        <div class="section-note">Curated daily. General market/crypto backdrop, not trade rationale.</div>
         <div class="news-card">
           <div class="news-head">
             <span class="news-tag" id="news-tag">—</span>
@@ -432,7 +421,6 @@
 
       <section>
         <div class="section-title">Recent tickets</div>
-        <div class="section-note">Every position, closed, in order. Percent return on the contract, not dollars.</div>
         <div class="feed" id="ticket-feed"></div>
       </section>
     </div>
@@ -440,7 +428,6 @@
     <div class="rail-right">
       <section>
         <div class="section-title">Market board</div>
-        <div class="section-note" id="board-section-note">Backdrop, not a trade idea.</div>
         <div class="board" id="market-board"></div>
         <div class="board-foot" id="board-foot"></div>
       </section>
@@ -637,12 +624,6 @@
       html += '<div class="cell"><div class="sym">' + sym + '</div><div class="px">' + px + '</div><div class="chg ' + cls + '">' + chg + '</div>' + miniChart(c.history, good) + '</div>';
     });
     document.getElementById("market-board").innerHTML = html;
-    var noteEl = document.getElementById("board-section-note");
-    if (session && session.market_state === "OPEN") {
-      noteEl.textContent = "Backdrop, not a trade idea. Live.";
-    } else {
-      noteEl.textContent = "Pits closed — this board is historical, not live.";
-    }
   }
 
   function ticketRowHtml(t) {
