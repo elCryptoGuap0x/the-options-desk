@@ -35,10 +35,10 @@
   ],
   "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
   "market_board": {
-    "SPY": { "last": 769.39, "chg_pct": -0.22 },
-    "QQQ": { "last": 716.44, "chg_pct": -0.65 },
-    "VIXY": { "last": 17.66, "chg_pct": 1.79 },
-    "BTC": { "last": 78241, "chg_pct": 0.90 }
+    "SPY": { "last": 769.39, "chg_pct": -0.22, "history": [771.1, 770.8, 770.2, 769.9, 770.4, 769.6, 769.0, 769.5, 768.9, 769.39] },
+    "QQQ": { "last": 716.44, "chg_pct": -0.65, "history": [721.0, 720.1, 718.6, 718.9, 717.5, 716.9, 717.2, 716.0, 716.8, 716.44] },
+    "VIXY": { "last": 17.66, "chg_pct": 1.79, "history": [17.35, 17.40, 17.28, 17.50, 17.44, 17.60, 17.55, 17.70, 17.62, 17.66] },
+    "BTC": { "last": 78241, "chg_pct": 0.90, "history": [77600, 77800, 77500, 78000, 78300, 78100, 78400, 78200, 78350, 78241] }
   },
   "news": [
     { "tag": "Macro", "title": "Warsh's first Jackson Hole address reads hawkish", "summary": "Fed Chair Kevin Warsh's debut keynote since taking office leaned firmly on getting inflation back to target. Markets repriced the near-term rate path higher within the hour of the speech." },
