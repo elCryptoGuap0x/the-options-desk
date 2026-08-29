@@ -316,6 +316,30 @@
     padding: 3px 8px; cursor: pointer; flex-shrink: 0;
   }
   .tip-copy:hover { border-color: var(--gold); color: var(--gold); }
+
+  .footer-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .note-btn {
+    font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--text-dim);
+    background: none; border: 1px solid var(--border); border-radius: 20px;
+    padding: 9px 20px; cursor: pointer; letter-spacing: 0.05em;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .note-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .note-form { display: flex; flex-direction: column; gap: 8px; }
+  .note-input, .note-textarea {
+    font-family: var(--sans); font-size: 12.5px; color: var(--text);
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 7px;
+    padding: 8px 10px; resize: vertical; width: 100%;
+  }
+  .note-input:focus, .note-textarea:focus { outline: none; border-color: var(--gold); }
+  .note-submit {
+    font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--bg);
+    background: var(--gold); border: none; border-radius: 20px;
+    padding: 8px 16px; cursor: pointer; align-self: flex-start;
+  }
+  .note-submit:hover { opacity: 0.9; }
+  .note-submit:disabled { opacity: 0.5; cursor: default; }
+  .note-status { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); min-height: 14px; }
 </style>
 
 <div class="wrap">
@@ -400,7 +424,10 @@
     This is a public log. Nothing here is a recommendation.
 
     <div class="tip-jar-wrap">
-      <button class="tip-jar-btn" id="tip-jar-toggle" type="button">🫙 Tip the desk</button>
+      <div class="footer-actions">
+        <button class="tip-jar-btn" id="tip-jar-toggle" type="button">🫙 Tip the desk</button>
+        <button class="note-btn" id="note-toggle" type="button">✉️ Send a note</button>
+      </div>
       <div class="tip-panel" id="tip-panel">
         <div class="tip-note">Tape is free. Tips are optional and buy nothing — no signals, no access, no "next trade."</div>
         <div class="tip-row">
@@ -413,6 +440,16 @@
           <span class="tip-addr" id="tip-addr-eth">0xfD6b122cFfF907870F250617f881FCB231509b7E</span>
           <button class="tip-copy" data-copy="eth" type="button">Copy</button>
         </div>
+      </div>
+      <div class="tip-panel" id="note-panel">
+        <div class="tip-note">Feedback on the tape. Not a trade desk. I may not reply.</div>
+        <form class="note-form" id="note-form" action="https://formspree.io/f/mljedajj" method="POST">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input class="note-input" type="text" name="name" placeholder="Name or handle (optional)">
+          <textarea class="note-textarea" name="message" placeholder="Your note" rows="3" required></textarea>
+          <button class="note-submit" id="note-submit-btn" type="submit">Send</button>
+          <div class="note-status" id="note-status"></div>
+        </form>
       </div>
     </div>
   </footer>
@@ -763,12 +800,23 @@
 
 <script>
 (function () {
-  var toggle = document.getElementById("tip-jar-toggle");
-  var panel = document.getElementById("tip-panel");
-  if (!toggle || !panel) return;
-  toggle.addEventListener("click", function () {
-    panel.classList.toggle("open");
-  });
+  var tipToggle = document.getElementById("tip-jar-toggle");
+  var tipPanel = document.getElementById("tip-panel");
+  var noteToggle = document.getElementById("note-toggle");
+  var notePanel = document.getElementById("note-panel");
+
+  function togglePanel(panel, other) {
+    var opening = !panel.classList.contains("open");
+    if (other) other.classList.remove("open");
+    panel.classList.toggle("open", opening);
+  }
+  if (tipToggle && tipPanel) {
+    tipToggle.addEventListener("click", function () { togglePanel(tipPanel, notePanel); });
+  }
+  if (noteToggle && notePanel) {
+    noteToggle.addEventListener("click", function () { togglePanel(notePanel, tipPanel); });
+  }
+
   var copyBtns = document.querySelectorAll(".tip-copy");
   for (var i = 0; i < copyBtns.length; i++) {
     copyBtns[i].addEventListener("click", function () {
@@ -781,6 +829,29 @@
         btn.textContent = "Copied";
         setTimeout(function () { btn.textContent = orig; }, 1500);
       }).catch(function () {});
+    });
+  }
+
+  var form = document.getElementById("note-form");
+  var statusEl = document.getElementById("note-status");
+  var submitBtn = document.getElementById("note-submit-btn");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      statusEl.textContent = "Sending...";
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      }).then(function (r) {
+        statusEl.textContent = r.ok ? "Sent — thanks." : "Something went wrong. Try again later.";
+        if (r.ok) form.reset();
+      }).catch(function () {
+        statusEl.textContent = "Something went wrong. Try again later.";
+      }).finally(function () {
+        submitBtn.disabled = false;
+      });
     });
   }
 })();
