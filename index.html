@@ -281,6 +281,38 @@
     padding-top: 22px; border-top: 1px solid var(--border-soft);
   }
   footer .tape-date { font-family: var(--mono); color: var(--text-faint); margin-bottom: 6px; }
+
+  .tip-jar-wrap { text-align: center; margin-top: 16px; }
+  .tip-jar-btn {
+    font-family: var(--mono); font-size: 11px; color: var(--text-faint);
+    background: none; border: 1px solid var(--border); border-radius: 20px;
+    padding: 6px 14px; cursor: pointer; letter-spacing: 0.04em;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .tip-jar-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .tip-panel {
+    display: none; margin: 12px auto 0; max-width: 340px; width: 100%;
+    background: var(--surface); border: 1px solid var(--border-soft); border-radius: 10px;
+    padding: 14px 16px; text-align: left;
+  }
+  .tip-panel.open { display: block; }
+  .tip-note { font-size: 11px; color: var(--text-faint); margin-bottom: 10px; line-height: 1.5; }
+  .tip-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    padding: 8px 0; border-top: 1px solid var(--border-soft);
+  }
+  .tip-row:first-of-type { border-top: none; }
+  .tip-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-dim); flex-shrink: 0; }
+  .tip-addr {
+    font-family: var(--mono); font-size: 10px; color: var(--text-faint);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0;
+  }
+  .tip-copy {
+    font-family: var(--mono); font-size: 9.5px; background: var(--surface-2);
+    border: 1px solid var(--border); color: var(--text-dim); border-radius: 6px;
+    padding: 3px 8px; cursor: pointer; flex-shrink: 0;
+  }
+  .tip-copy:hover { border-color: var(--gold); color: var(--gold); }
 </style>
 
 <div class="wrap">
@@ -363,6 +395,23 @@
     Results shown are real but historical and not indicative of future performance.<br>
     Same-day options are high-risk; most positions are held under 24 hours.<br>
     This is a public log. Nothing here is a recommendation.
+
+    <div class="tip-jar-wrap">
+      <button class="tip-jar-btn" id="tip-jar-toggle" type="button">🫙 Tip the desk</button>
+      <div class="tip-panel" id="tip-panel">
+        <div class="tip-note">Tape is free. Tips are optional and buy nothing — no signals, no access, no "next trade."</div>
+        <div class="tip-row">
+          <span class="tip-label">SOL</span>
+          <span class="tip-addr" id="tip-addr-sol">CMxhzYabaGiuDjx7pv99Y5pucxtSn9HKnmSVqfnkH2Pj</span>
+          <button class="tip-copy" data-copy="sol" type="button">Copy</button>
+        </div>
+        <div class="tip-row">
+          <span class="tip-label">ETH</span>
+          <span class="tip-addr" id="tip-addr-eth">0xfD6b122cFfF907870F250617f881FCB231509b7E</span>
+          <button class="tip-copy" data-copy="eth" type="button">Copy</button>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </div>
@@ -707,4 +756,29 @@
 
     signInAnonymously(auth).catch(function () { /* anonymous auth not enabled yet -- stay blank */ });
   } catch (e) { /* Firebase unreachable -- stay blank, page still works */ }
+</script>
+
+<script>
+(function () {
+  var toggle = document.getElementById("tip-jar-toggle");
+  var panel = document.getElementById("tip-panel");
+  if (!toggle || !panel) return;
+  toggle.addEventListener("click", function () {
+    panel.classList.toggle("open");
+  });
+  var copyBtns = document.querySelectorAll(".tip-copy");
+  for (var i = 0; i < copyBtns.length; i++) {
+    copyBtns[i].addEventListener("click", function () {
+      var btn = this;
+      var key = btn.getAttribute("data-copy");
+      var srcEl = document.getElementById("tip-addr-" + key);
+      if (!srcEl || !navigator.clipboard) return;
+      navigator.clipboard.writeText(srcEl.textContent).then(function () {
+        var orig = btn.textContent;
+        btn.textContent = "Copied";
+        setTimeout(function () { btn.textContent = orig; }, 1500);
+      }).catch(function () {});
+    });
+  }
+})();
 </script>
