@@ -1,0 +1,585 @@
+<title>The Options Desk</title>
+<style>
+  :root {
+    --bg: #11161a;
+    --surface: #171d22;
+    --surface-2: #1d242a;
+    --border: #2a333a;
+    --border-soft: #212a30;
+    --text: #ede7d9;
+    --text-dim: #a3a99e;
+    --text-faint: #6b7169;
+    --gold: #c9a227;
+    --gold-dim: #3a3018;
+    --good: #4caf7d;
+    --good-dim: #163024;
+    --bad: #c25b4f;
+    --bad-dim: #341f1c;
+    --neutral: #7a8079;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px 70px; }
+  @media (max-width: 560px) {
+    .wrap { padding-bottom: 96px; }
+  }
+
+  /* ---- session bar ---- */
+  .session-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text-faint);
+    letter-spacing: 0.03em;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-soft);
+    margin-bottom: 30px;
+  }
+  .session-bar .sep { color: var(--border); }
+
+  header { margin-bottom: 26px; text-align: center; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .sub {
+    color: var(--text-dim);
+    font-size: 14.5px;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .status-pill-wrap { display: flex; justify-content: center; margin: 22px 0 36px; }
+  .status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--neutral);
+  }
+  .status-pill .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--neutral); }
+  .status-pill.open { color: var(--good); border-color: var(--good-dim); }
+  .status-pill.open .dot { background: var(--good); box-shadow: 0 0 6px var(--good); }
+
+  /* ---- stats ---- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border-soft);
+    border: 1px solid var(--border-soft);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+  .stat { background: var(--surface); padding: 16px 10px; text-align: center; }
+  .stat .n { font-family: var(--serif); font-size: 24px; color: var(--text); font-variant-numeric: tabular-nums; }
+  .stat .n.good { color: var(--good); }
+  .stat .n.bad { color: var(--bad); }
+  .stat .l { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-top: 4px; }
+
+  .expectancy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border-soft);
+    border: 1px solid var(--border-soft);
+    border-top: none;
+  }
+  .expectancy .stat { padding: 13px 10px; }
+  .expectancy .n { font-size: 18px; }
+
+  .stats-note {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+    text-align: center;
+    padding: 8px 0 0;
+  }
+
+  .sparkline-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 14px 16px 10px;
+  }
+  .sparkline-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    margin-bottom: 6px;
+  }
+  .sparkline-wrap svg { width: 100%; height: 44px; display: block; }
+
+  section { margin: 40px 0; }
+  .section-title { font-family: var(--serif); font-size: 18px; color: var(--text); margin: 0 0 4px; }
+  .section-note { font-size: 12px; color: var(--text-faint); margin-bottom: 14px; }
+
+  /* ---- market board ---- */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border-soft);
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .board .cell { background: var(--surface); padding: 14px 8px; text-align: center; }
+  .board .sym { font-family: var(--mono); font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
+  .board .px { font-family: var(--mono); font-size: 16px; color: var(--text); margin-top: 3px; font-variant-numeric: tabular-nums; }
+  .board .chg { font-family: var(--mono); font-size: 12px; margin-top: 2px; color: var(--neutral); font-variant-numeric: tabular-nums; }
+  .board .chg.good { color: var(--good); }
+  .board .chg.bad { color: var(--bad); }
+  .board-foot {
+    display: flex; flex-direction: column; gap: 3px;
+    font-family: var(--mono); font-size: 10px; color: var(--text-faint);
+    padding: 8px 2px 0;
+  }
+
+  /* ---- tickets ---- */
+  .feed { display: flex; flex-direction: column; gap: 8px; }
+  .waiting {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 12.5px; color: var(--text-faint);
+    border: 1px dashed var(--border);
+    border-radius: 9px; padding: 13px 16px;
+    margin-bottom: 4px;
+  }
+  .waiting .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-faint); }
+  .ticket {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 9px;
+    padding: 13px 16px;
+  }
+  .ticket .sym { font-family: var(--mono); font-weight: 700; font-size: 14.5px; color: var(--text); min-width: 44px; }
+  .ticket .dir {
+    font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
+    padding: 2px 8px; border-radius: 20px; justify-self: start;
+  }
+  .dir.call { background: var(--good-dim); color: var(--good); }
+  .dir.put { background: var(--bad-dim); color: var(--bad); }
+  .ticket .time { font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: right; }
+  .ticket .dur { font-family: var(--mono); font-size: 10px; color: var(--text-faint); text-align: right; min-width: 40px; }
+  .ticket .pct { font-family: var(--mono); font-weight: 700; font-size: 14.5px; text-align: right; min-width: 62px; font-variant-numeric: tabular-nums; }
+  .pct.good { color: var(--good); }
+  .pct.bad { color: var(--bad); }
+
+  .day-divider {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-faint); margin: 18px 0 4px; padding-top: 4px;
+  }
+  .day-divider:first-child { margin-top: 0; }
+
+  .streak-line {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    font-family: var(--mono); font-size: 11px; color: var(--text-faint);
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border-soft);
+  }
+  .streak-chip {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 4px; font-weight: 700; font-size: 10px;
+  }
+  .streak-chip.w { background: var(--good-dim); color: var(--good); }
+  .streak-chip.l { background: var(--bad-dim); color: var(--bad); }
+
+  /* ---- calendar ---- */
+  .cal-list { display: flex; flex-direction: column; gap: 6px; }
+  .cal-item {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--surface); border: 1px solid var(--border-soft);
+    border-radius: 8px; padding: 10px 14px;
+    font-family: var(--mono); font-size: 12px;
+  }
+  .cal-item .when { color: var(--text-faint); }
+  .cal-item .what { color: var(--text-dim); }
+
+  /* ---- news ---- */
+  .news-card {
+    background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--gold);
+    border-radius: 0 10px 10px 0; padding: 16px 18px 14px;
+  }
+  .news-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .news-tag {
+    font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+  }
+  .news-counter { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
+  .news-title { font-family: var(--serif); font-size: 16.5px; color: var(--text); margin-bottom: 6px; line-height: 1.35; min-height: 22px; }
+  .news-summary { margin: 0; font-size: 13px; color: var(--text-dim); line-height: 1.55; min-height: 40px; }
+  .news-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 14px; }
+  .news-arrow {
+    font-family: var(--mono); font-size: 15px; line-height: 1;
+    background: var(--surface-2); border: 1px solid var(--border); color: var(--text-dim);
+    width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .news-arrow:hover { border-color: var(--gold); color: var(--gold); }
+  .news-dots { display: flex; gap: 5px; }
+  .news-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--border); transition: background 0.15s ease; }
+  .news-dot.active { background: var(--gold); }
+
+  footer {
+    text-align: center; font-size: 11.5px; color: var(--text-faint); line-height: 1.8;
+    padding-top: 22px; border-top: 1px solid var(--border-soft);
+  }
+  footer .tape-date { font-family: var(--mono); color: var(--text-faint); margin-bottom: 6px; }
+</style>
+
+<div class="wrap">
+
+  <div class="session-bar">
+    <span id="session-clock">—</span>
+    <span class="sep">·</span>
+    <span id="session-next">—</span>
+  </div>
+
+  <header>
+    <div class="eyebrow">Autonomous Options Desk</div>
+    <h1>The Options Desk</h1>
+    <p class="sub">Autonomous options desk. Same-day contracts, small account, every closed ticket on the tape. Entertainment log. Not advice.</p>
+  </header>
+
+  <div class="status-pill-wrap">
+    <span class="status-pill" id="status-pill"><span class="dot"></span><span id="status-text">—</span></span>
+  </div>
+
+  <div class="stats" id="stats-row"></div>
+  <div class="expectancy" id="expectancy-row"></div>
+  <div class="stats-note">Contract %, not account %. Fees not included.</div>
+
+  <div class="sparkline-wrap">
+    <div class="sparkline-label" id="sparkline-label">WEEK PATH</div>
+    <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+      <polyline id="sparkline-line" fill="none" stroke="#c25b4f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="" />
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-title">Market board</div>
+    <div class="section-note">Backdrop, not a trade idea. Frozen when the market's closed.</div>
+    <div class="board" id="market-board"></div>
+    <div class="board-foot" id="board-foot"></div>
+  </section>
+
+  <section>
+    <div class="section-title">Recent tickets</div>
+    <div class="section-note">Every position, closed, in order. Percent return on the contract, not dollars.</div>
+    <div class="feed" id="ticket-feed"></div>
+  </section>
+
+  <section>
+    <div class="section-title">Calendar</div>
+    <div class="section-note">Next scheduled macro prints. Name and time, nothing else.</div>
+    <div class="cal-list">
+      <div class="cal-item"><span class="what">JOLTS</span><span class="when">Tue 8:30 CT</span></div>
+      <div class="cal-item"><span class="what">ISM Manufacturing</span><span class="when">Tue 9:00 CT</span></div>
+      <div class="cal-item"><span class="what">ADP Employment</span><span class="when">Wed 7:15 CT</span></div>
+      <div class="cal-item"><span class="what">Weekly Jobless Claims</span><span class="when">Thu 7:30 CT</span></div>
+      <div class="cal-item"><span class="what">Nonfarm Payrolls</span><span class="when">Fri 7:30 CT</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">News</div>
+    <div class="section-note">Curated daily. General market/crypto backdrop, not trade rationale.</div>
+    <div class="news-card">
+      <div class="news-head">
+        <span class="news-tag" id="news-tag">—</span>
+        <span class="news-counter" id="news-counter">— / —</span>
+      </div>
+      <div class="news-title" id="news-title">—</div>
+      <p class="news-summary" id="news-summary">—</p>
+      <div class="news-nav">
+        <button class="news-arrow" id="news-prev" aria-label="Previous story" type="button">&larr;</button>
+        <div class="news-dots" id="news-dots"></div>
+        <button class="news-arrow" id="news-next" aria-label="Next story" type="button">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="tape-date" id="tape-date">—</div>
+    Educational and entertainment content only. Not investment advice.<br>
+    Results shown are real but historical and not indicative of future performance.<br>
+    Same-day options are high-risk; most positions are held under 24 hours.<br>
+    This is a public log. Nothing here is a recommendation.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  // Fallback snapshot -- used for the very first paint (before fetch
+  // resolves) and whenever the live feed can't be reached at all (e.g.
+  // this file is being previewed somewhere fetch('feed.json') can't
+  // reach, such as the sandboxed Claude Artifact preview). Never blank
+  // the desk: something real is always on screen.
+  var FALLBACK_DATA = {
+    "generated_at": "2026-08-29T20:20:00Z",
+    "session": { "day_label": "SAT", "market_state": "WEEKEND", "next_open": "MON 8:30 CT", "position": "FLAT" },
+    "stats": { "record": "4-10", "win_rate": "28.6%", "trades_this_week": 14, "typical_hold": "0DTE-1DTE", "avg_win": "+33.8%", "avg_loss": "-31.5%", "net_per_ticket": "-12.8%", "hold_typ": "~25 min" },
+    "sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
+    "tickets": [
+      { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "pct": -31.6 },
+      { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "pct": -26.8 },
+      { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "1:27p", "exit": "1:45p", "dur": "18 min", "pct": -25.6 },
+      { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "12:18p", "exit": "12:48p", "dur": "30 min", "pct": 45.5 },
+      { "day": "Thursday", "sym": "CRM", "dir": "put", "entry": "12:00p", "exit": "12:18p", "dur": "18 min", "pct": -27.9 },
+      { "day": "Thursday", "sym": "MSTR", "dir": "call", "entry": "11:32a", "exit": "11:55a", "dur": "23 min", "pct": 32.1 },
+      { "day": "Thursday", "sym": "NOW", "dir": "call", "entry": "9:59a", "exit": "11:44a", "dur": "105 min", "pct": -39.3 },
+      { "day": "Wednesday", "sym": "IBIT", "dir": "put", "entry": "10:44a", "exit": "11:10a", "dur": "26 min", "pct": 39.3 },
+      { "day": "Wednesday", "sym": "PLAB", "dir": "call", "entry": "10:23a", "exit": "10:43a", "dur": "20 min", "pct": -33.3 },
+      { "day": "Tuesday", "sym": "BMNR", "dir": "call", "entry": "11:11a", "exit": "1:05p", "dur": "114 min", "pct": -29.2 },
+      { "day": "Tuesday", "sym": "HOOD", "dir": "call", "entry": "10:20a", "exit": "11:07a", "dur": "47 min", "pct": 18.1 },
+      { "day": "Tuesday", "sym": "IBIT", "dir": "put", "entry": "9:56a", "exit": "10:09a", "dur": "13 min", "pct": -31.4 },
+      { "day": "Monday", "sym": "IBIT", "dir": "call", "entry": "morning", "exit": "morning", "dur": "—", "pct": -32.1 },
+      { "day": "Monday", "sym": "XLF", "dir": "call", "entry": "morning", "exit": "morning", "dur": "2 sec", "pct": -37.5 }
+    ],
+    "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
+    "market_board": {
+      "SPY": { "last": 769.39, "chg_pct": -0.22 },
+      "QQQ": { "last": 716.44, "chg_pct": -0.65 },
+      "VIXY": { "last": 17.66, "chg_pct": 1.79 },
+      "BTC": { "last": 78241, "chg_pct": 0.90 }
+    },
+    "news": [
+      { "tag": "Macro", "title": "Warsh's first Jackson Hole address reads hawkish", "summary": "Fed Chair Kevin Warsh's debut keynote since taking office leaned firmly on getting inflation back to target. Markets repriced the near-term rate path higher within the hour of the speech." },
+      { "tag": "Crypto", "title": "Bitcoin loses the $80K level into a heavy options expiry", "summary": "Roughly $6.4B in BTC options expired near that strike the same session, adding pin pressure as spot slipped on the hawkish Fed reaction." },
+      { "tag": "Crypto", "title": "Solana, Ethereum, and XRP hold up while Bitcoin slips", "summary": "Solana ran as much as +4% intraday (up over 20% on the week), with Ethereum and XRP both holding modest gains even as BTC gave back ground post-speech — a real split within crypto, not a broad risk-off move." },
+      { "tag": "Crypto", "title": "Spot Bitcoin ETFs post an 8-session inflow streak", "summary": "$2.8B moved in over eight straight sessions, the longest run since spring — August is tracking as one of the strongest inflow months since these funds launched." },
+      { "tag": "Equities", "title": "Marvell drops on a soft guide, drags semis with it", "summary": "Marvell (MRVL) fell roughly 8% premarket on disappointing guidance, pulling the sector ETF (SMH) down over 1% and Micron (MU) down more than 2%, even as other large-cap chip names held up." },
+      { "tag": "Equities", "title": "PayPal loses its takeover premium as talks collapse", "summary": "Reports that Stripe and Advent abandoned their roughly $60.50-a-share acquisition pursuit of PayPal (PYPL) erased the deal premium the stock had been carrying, sending it down double digits." },
+      { "tag": "Equities", "title": "Gap and Affirm both beat and raise guidance", "summary": "Gap (GAP) posted a Q2 EPS beat with raised full-year guidance and a new Old Navy CEO; Affirm (AFRM) beat on its fiscal Q4 with strong GMV and user growth. Both jumped double digits premarket." },
+      { "tag": "Macro", "title": "Rate-cut odds fade for the next Fed meeting", "summary": "Futures pricing moved meaningfully hawkish over the course of the week as Fed commentary hardened, most notably after the Jackson Hole speech." }
+    ]
+  };
+
+  var FEED_URL = "feed.json";
+  var POLL_MS = 45000;
+  var newsIdx = 0;
+  var newsItems = [];
+
+  function fmtPct(v) {
+    var s = (v > 0 ? "+" : "") + v.toFixed(1) + "%";
+    return s;
+  }
+  function pctClass(v) { return v >= 0 ? "good" : "bad"; }
+
+  function renderSession(session) {
+    var pill = document.getElementById("status-pill");
+    var text = document.getElementById("status-text");
+    var nextEl = document.getElementById("session-next");
+    pill.classList.remove("open");
+    if (session.position === "IN TRADE") {
+      pill.classList.add("open");
+      text.textContent = "IN TRADE";
+    } else if (session.market_state === "WEEKEND") {
+      text.textContent = "CLOSED FOR WEEKEND";
+    } else if (session.market_state === "CLOSED") {
+      text.textContent = "MARKET CLOSED";
+    } else if (session.market_state === "OPEN") {
+      text.textContent = "FLAT — SCANNING";
+    } else {
+      text.textContent = session.market_state || "—";
+    }
+    nextEl.textContent = session.market_state === "OPEN" ? "LIVE" : "NEXT OPEN " + (session.next_open || "—");
+  }
+
+  function renderStats(stats) {
+    var winClass = "";
+    var wr = parseFloat(stats.win_rate);
+    if (!isNaN(wr)) winClass = wr >= 50 ? "good" : "bad";
+    document.getElementById("stats-row").innerHTML =
+      '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
+      '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate + '</div><div class="l">Win rate</div></div>' +
+      '<div class="stat"><div class="n">' + stats.trades_this_week + '</div><div class="l">Trades this week</div></div>' +
+      '<div class="stat"><div class="n">' + stats.typical_hold + '</div><div class="l">Typical hold</div></div>';
+    document.getElementById("expectancy-row").innerHTML =
+      '<div class="stat"><div class="n good">' + stats.avg_win + '</div><div class="l">Avg win</div></div>' +
+      '<div class="stat"><div class="n bad">' + stats.avg_loss + '</div><div class="l">Avg loss</div></div>' +
+      '<div class="stat"><div class="n ' + (String(stats.net_per_ticket).indexOf("-") === 0 ? "bad" : "good") + '">' + stats.net_per_ticket + '</div><div class="l">Net % / ticket</div></div>' +
+      '<div class="stat"><div class="n">' + stats.hold_typ + '</div><div class="l">Hold, typ.</div></div>';
+  }
+
+  function renderSparkline(vals) {
+    if (!vals || !vals.length) return;
+    var maxV = Math.max.apply(null, vals);
+    var minV = Math.min.apply(null, vals);
+    var range = (maxV - minV) || 1;
+    var n = vals.length;
+    var pts = vals.map(function (v, i) {
+      var x = n > 1 ? (i * 300 / (n - 1)) : 0;
+      var y = (maxV - v) / range * 60;
+      return x.toFixed(1) + "," + y.toFixed(1);
+    }).join(" ");
+    document.getElementById("sparkline-line").setAttribute("points", pts);
+    var last = vals[vals.length - 1];
+    document.getElementById("sparkline-label").textContent =
+      "WEEK PATH   " + fmtPct(last) + "   sum of contract %";
+  }
+
+  function renderMarketBoard(board) {
+    var order = ["SPY", "QQQ", "VIXY", "BTC"];
+    var html = "";
+    order.forEach(function (sym) {
+      var c = board[sym];
+      if (!c) return;
+      var px = sym === "BTC" ? Math.round(c.last).toLocaleString() : c.last.toFixed(2);
+      var cls = c.chg_pct >= 0 ? "good" : "bad";
+      var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+      html += '<div class="cell"><div class="sym">' + sym + '</div><div class="px">' + px + '</div><div class="chg ' + cls + '">' + chg + '</div></div>';
+    });
+    document.getElementById("market-board").innerHTML = html;
+  }
+
+  function renderTickets(data) {
+    var tickets = data.tickets || [];
+    var html = "";
+    if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT") {
+      html += '<div class="waiting"><span class="dot"></span>WAITING · nothing new on the tape</div>';
+    }
+    var lastDay = null;
+    tickets.forEach(function (t) {
+      if (t.day !== lastDay) {
+        html += '<div class="day-divider">' + t.day + '</div>';
+        lastDay = t.day;
+      }
+      html += '<div class="ticket"><span class="sym">' + t.sym + '</span>' +
+        '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
+        '<span class="dur">' + t.dur + '</span>' +
+        '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
+        '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span></div>';
+    });
+    var streak = data.streak_last8 || [];
+    if (streak.length) {
+      html += '<div class="streak-line"><span>LAST ' + streak.length + ':</span>';
+      streak.forEach(function (r) {
+        html += '<span class="streak-chip ' + (r === "W" ? "w" : "l") + '">' + r + '</span>';
+      });
+      html += '</div>';
+    }
+    document.getElementById("ticket-feed").innerHTML = html;
+  }
+
+  function renderNews(items) {
+    newsItems = items || [];
+    newsIdx = 0;
+    var dotsEl = document.getElementById("news-dots");
+    dotsEl.innerHTML = "";
+    newsItems.forEach(function () {
+      var d = document.createElement("span");
+      d.className = "news-dot";
+      dotsEl.appendChild(d);
+    });
+    renderNewsFrame();
+  }
+
+  function renderNewsFrame() {
+    if (!newsItems.length) return;
+    var item = newsItems[newsIdx];
+    document.getElementById("news-tag").textContent = item.tag;
+    document.getElementById("news-title").textContent = item.title;
+    document.getElementById("news-summary").textContent = item.summary;
+    document.getElementById("news-counter").textContent = (newsIdx + 1) + " / " + newsItems.length;
+    var dots = document.getElementById("news-dots").children;
+    for (var i = 0; i < dots.length; i++) dots[i].classList.toggle("active", i === newsIdx);
+  }
+
+  document.getElementById("news-prev").addEventListener("click", function () {
+    if (!newsItems.length) return;
+    newsIdx = (newsIdx - 1 + newsItems.length) % newsItems.length;
+    renderNewsFrame();
+  });
+  document.getElementById("news-next").addEventListener("click", function () {
+    if (!newsItems.length) return;
+    newsIdx = (newsIdx + 1) % newsItems.length;
+    renderNewsFrame();
+  });
+
+  function renderFooter(data) {
+    var d = new Date(data.generated_at);
+    var text = isNaN(d.getTime()) ? "Tape through —" :
+      "Tape through " + d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "America/Chicago" }) +
+      " " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT";
+    document.getElementById("tape-date").textContent = text;
+    document.getElementById("board-foot").innerHTML =
+      '<span>' + (data.session && data.session.market_state === "OPEN" ? "Live" : "As of last close") + ' · BTC live</span>';
+  }
+
+  function render(data) {
+    renderSession(data.session);
+    renderStats(data.stats);
+    renderSparkline(data.sparkline_cum_pct);
+    renderMarketBoard(data.market_board);
+    renderTickets(data);
+    renderNews(data.news);
+    renderFooter(data);
+  }
+
+  // Paint immediately from the fallback so there's never a blank/loading
+  // flash, then try the live feed. Every poll that fails just leaves the
+  // last good render on screen -- never wipe the desk on a bad fetch.
+  render(FALLBACK_DATA);
+
+  function poll() {
+    fetch(FEED_URL, { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("bad status " + r.status); return r.json(); })
+      .then(function (data) { render(data); })
+      .catch(function () { /* keep last good tape on screen */ });
+  }
+  poll();
+  setInterval(poll, POLL_MS);
+
+  // Live wall clock, independent of the feed.
+  var clockEl = document.getElementById("session-clock");
+  function tick() {
+    var now = new Date();
+    var day = now.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }).toUpperCase();
+    var time = now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
+    clockEl.textContent = day + " " + time + " CT";
+  }
+  tick();
+  setInterval(tick, 30000);
+})();
+</script>
