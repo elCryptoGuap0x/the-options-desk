@@ -49,6 +49,7 @@
     margin-bottom: 30px;
   }
   .session-bar .sep { color: var(--border); }
+  #presence-count:not(:empty)::before { content: "·"; color: var(--border); margin: 0 8px; }
 
   header { margin-bottom: 26px; text-align: center; }
   .eyebrow {
@@ -288,6 +289,7 @@
     <span id="session-clock">—</span>
     <span class="sep">·</span>
     <span id="session-next">—</span>
+    <span id="presence-count"></span>
   </div>
 
   <header>
@@ -656,4 +658,53 @@
   tick();
   setInterval(tick, 30000);
 })();
+</script>
+
+<script type="module">
+  // Live "tabs open" presence -- real counted connections, not a vanity
+  // number. Each tab gets an anonymous, throwaway Firebase Auth UID (no
+  // login, no email collected) and writes a single presence/{uid} entry
+  // that's automatically removed on disconnect (tab close, refresh, network
+  // drop). The count is just the number of live entries -- open tabs, not
+  // verified unique humans, which is why the label says "on the tape right
+  // now," not "viewers." Fails silently if Firebase isn't reachable or not
+  // yet configured -- the count just stays blank, never breaks the page.
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+  import { getDatabase, ref, onValue, onDisconnect, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+
+  try {
+    var firebaseConfig = {
+      apiKey: "AIzaSyAn3tpYGBfeyT3f3fziY_JVIEe_Ag8mOl8",
+      authDomain: "the-options-desk.firebaseapp.com",
+      databaseURL: "https://the-options-desk-default-rtdb.firebaseio.com",
+      projectId: "the-options-desk",
+      storageBucket: "the-options-desk.firebasestorage.app",
+      messagingSenderId: "979985506166",
+      appId: "1:979985506166:web:1ebcd0704674ea41a4a457"
+    };
+
+    var app = initializeApp(firebaseConfig);
+    var auth = getAuth(app);
+    var db = getDatabase(app);
+    var countEl = document.getElementById("presence-count");
+
+    onValue(ref(db, "presence"), function (snap) {
+      var n = snap.exists() ? Object.keys(snap.val()).length : 0;
+      if (countEl) countEl.textContent = "on the tape right now: " + n;
+    }, function () { /* no read access yet -- stay blank */ });
+
+    onAuthStateChanged(auth, function (user) {
+      if (!user) return;
+      var myPresenceRef = ref(db, "presence/" + user.uid);
+      onValue(ref(db, ".info/connected"), function (snap) {
+        if (snap.val() === true) {
+          onDisconnect(myPresenceRef).remove();
+          set(myPresenceRef, true);
+        }
+      });
+    });
+
+    signInAnonymously(auth).catch(function () { /* anonymous auth not enabled yet -- stay blank */ });
+  } catch (e) { /* Firebase unreachable -- stay blank, page still works */ }
 </script>
