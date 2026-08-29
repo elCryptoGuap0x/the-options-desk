@@ -14,24 +14,28 @@
     "avg_win": "+33.8%",
     "avg_loss": "-31.5%",
     "net_per_ticket": "-12.8%",
-    "hold_typ": "~25 min"
+    "hold_typ": "~25 min",
+    "prior_week_record": "3-9"
   },
   "sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
   "tickets": [
-    { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "pct": -31.6 },
-    { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "pct": -26.8 },
-    { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "1:27p", "exit": "1:45p", "dur": "18 min", "pct": -25.6 },
-    { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "12:18p", "exit": "12:48p", "dur": "30 min", "pct": 45.5 },
-    { "day": "Thursday", "sym": "CRM", "dir": "put", "entry": "12:00p", "exit": "12:18p", "dur": "18 min", "pct": -27.9 },
-    { "day": "Thursday", "sym": "MSTR", "dir": "call", "entry": "11:32a", "exit": "11:55a", "dur": "23 min", "pct": 32.1 },
-    { "day": "Thursday", "sym": "NOW", "dir": "call", "entry": "9:59a", "exit": "11:44a", "dur": "105 min", "pct": -39.3 },
-    { "day": "Wednesday", "sym": "IBIT", "dir": "put", "entry": "10:44a", "exit": "11:10a", "dur": "26 min", "pct": 39.3 },
-    { "day": "Wednesday", "sym": "PLAB", "dir": "call", "entry": "10:23a", "exit": "10:43a", "dur": "20 min", "pct": -33.3 },
-    { "day": "Tuesday", "sym": "BMNR", "dir": "call", "entry": "11:11a", "exit": "1:05p", "dur": "114 min", "pct": -29.2 },
-    { "day": "Tuesday", "sym": "HOOD", "dir": "call", "entry": "10:20a", "exit": "11:07a", "dur": "47 min", "pct": 18.1 },
-    { "day": "Tuesday", "sym": "IBIT", "dir": "put", "entry": "9:56a", "exit": "10:09a", "dur": "13 min", "pct": -31.4 },
-    { "day": "Monday", "sym": "IBIT", "dir": "call", "entry": "morning", "exit": "morning", "dur": "—", "pct": -32.1 },
-    { "day": "Monday", "sym": "XLF", "dir": "call", "entry": "morning", "exit": "morning", "dur": "2 sec", "pct": -37.5 }
+    { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "dte": "0DTE", "pct": -31.6 },
+    { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "dte": "0DTE", "pct": -26.8 },
+    { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "1:27p", "exit": "1:45p", "dur": "18 min", "dte": "0DTE", "pct": -25.6 },
+    { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "12:18p", "exit": "12:48p", "dur": "30 min", "dte": "0DTE", "pct": 45.5 },
+    { "day": "Thursday", "sym": "CRM", "dir": "put", "entry": "12:00p", "exit": "12:18p", "dur": "18 min", "dte": "0DTE", "pct": -27.9 },
+    { "day": "Thursday", "sym": "MSTR", "dir": "call", "entry": "11:32a", "exit": "11:55a", "dur": "23 min", "dte": "1DTE", "pct": 32.1 },
+    { "day": "Thursday", "sym": "NOW", "dir": "call", "entry": "9:59a", "exit": "11:44a", "dur": "105 min", "dte": "0DTE", "pct": -39.3 },
+    { "day": "Wednesday", "sym": "IBIT", "dir": "put", "entry": "10:44a", "exit": "11:10a", "dur": "26 min", "dte": "1DTE", "pct": 39.3 },
+    { "day": "Wednesday", "sym": "PLAB", "dir": "call", "entry": "10:23a", "exit": "10:43a", "dur": "20 min", "dte": "0DTE", "pct": -33.3 },
+    { "day": "Tuesday", "sym": "BMNR", "dir": "call", "entry": "11:11a", "exit": "1:05p", "dur": "114 min", "dte": "1DTE", "pct": -29.2 },
+    { "day": "Tuesday", "sym": "HOOD", "dir": "call", "entry": "10:20a", "exit": "11:07a", "dur": "47 min", "dte": "0DTE", "pct": 18.1 },
+    { "day": "Tuesday", "sym": "IBIT", "dir": "put", "entry": "9:56a", "exit": "10:09a", "dur": "13 min", "dte": "1DTE", "pct": -31.4 },
+    { "day": "Monday", "sym": "IBIT", "dir": "call", "entry": "morning", "exit": "morning", "dur": "—", "dte": "1DTE", "pct": -32.1 },
+    { "day": "Monday", "sym": "XLF", "dir": "call", "entry": "morning", "exit": "morning", "dur": "2 sec", "dte": "0DTE", "pct": -37.5 }
+  ],
+  "skip_summary": [
+    { "day": "Friday", "count": 6, "names": ["GAP", "AFRM", "MSTR", "HOOD", "COIN", "IREN"] }
   ],
   "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
   "market_board": {

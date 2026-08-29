@@ -128,6 +128,13 @@
     text-align: center;
     padding: 8px 0 0;
   }
+  .week-compare {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+    text-align: center;
+    padding: 3px 0 0;
+  }
 
   .sparkline-wrap {
     background: var(--surface);
@@ -184,6 +191,13 @@
     margin-bottom: 4px;
   }
   .waiting .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-faint); }
+  .skip-row {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--text-faint);
+    border: 1px dashed var(--border);
+    border-radius: 9px; padding: 11px 16px;
+  }
+  .skip-row .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-faint); }
   .ticket {
     display: grid;
     grid-template-columns: auto 1fr auto auto auto;
@@ -288,7 +302,8 @@
 
   <div class="stats" id="stats-row"></div>
   <div class="expectancy" id="expectancy-row"></div>
-  <div class="stats-note">Contract %, not account %. Fees not included.</div>
+  <div class="stats-note">Contract %, not account %. A +32% ticket means a $1.40 contract sold near $1.85 — not 32% of the account. Fees not included.</div>
+  <div class="week-compare" id="week-compare"></div>
 
   <div class="sparkline-wrap">
     <div class="sparkline-label" id="sparkline-label">WEEK PATH</div>
@@ -299,7 +314,7 @@
 
   <section>
     <div class="section-title">Market board</div>
-    <div class="section-note">Backdrop, not a trade idea. Frozen when the market's closed.</div>
+    <div class="section-note" id="board-section-note">Backdrop, not a trade idea.</div>
     <div class="board" id="market-board"></div>
     <div class="board-foot" id="board-foot"></div>
   </section>
@@ -360,23 +375,26 @@
   var FALLBACK_DATA = {
     "generated_at": "2026-08-29T20:20:00Z",
     "session": { "day_label": "SAT", "market_state": "WEEKEND", "next_open": "MON 8:30 CT", "position": "FLAT" },
-    "stats": { "record": "4-10", "win_rate": "28.6%", "trades_this_week": 14, "typical_hold": "0DTE-1DTE", "avg_win": "+33.8%", "avg_loss": "-31.5%", "net_per_ticket": "-12.8%", "hold_typ": "~25 min" },
+    "stats": { "record": "4-10", "win_rate": "28.6%", "trades_this_week": 14, "typical_hold": "0DTE-1DTE", "avg_win": "+33.8%", "avg_loss": "-31.5%", "net_per_ticket": "-12.8%", "hold_typ": "~25 min", "prior_week_record": "3-9" },
     "sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
     "tickets": [
-      { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "pct": -31.6 },
-      { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "pct": -26.8 },
-      { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "1:27p", "exit": "1:45p", "dur": "18 min", "pct": -25.6 },
-      { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "12:18p", "exit": "12:48p", "dur": "30 min", "pct": 45.5 },
-      { "day": "Thursday", "sym": "CRM", "dir": "put", "entry": "12:00p", "exit": "12:18p", "dur": "18 min", "pct": -27.9 },
-      { "day": "Thursday", "sym": "MSTR", "dir": "call", "entry": "11:32a", "exit": "11:55a", "dur": "23 min", "pct": 32.1 },
-      { "day": "Thursday", "sym": "NOW", "dir": "call", "entry": "9:59a", "exit": "11:44a", "dur": "105 min", "pct": -39.3 },
-      { "day": "Wednesday", "sym": "IBIT", "dir": "put", "entry": "10:44a", "exit": "11:10a", "dur": "26 min", "pct": 39.3 },
-      { "day": "Wednesday", "sym": "PLAB", "dir": "call", "entry": "10:23a", "exit": "10:43a", "dur": "20 min", "pct": -33.3 },
-      { "day": "Tuesday", "sym": "BMNR", "dir": "call", "entry": "11:11a", "exit": "1:05p", "dur": "114 min", "pct": -29.2 },
-      { "day": "Tuesday", "sym": "HOOD", "dir": "call", "entry": "10:20a", "exit": "11:07a", "dur": "47 min", "pct": 18.1 },
-      { "day": "Tuesday", "sym": "IBIT", "dir": "put", "entry": "9:56a", "exit": "10:09a", "dur": "13 min", "pct": -31.4 },
-      { "day": "Monday", "sym": "IBIT", "dir": "call", "entry": "morning", "exit": "morning", "dur": "—", "pct": -32.1 },
-      { "day": "Monday", "sym": "XLF", "dir": "call", "entry": "morning", "exit": "morning", "dur": "2 sec", "pct": -37.5 }
+      { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "dte": "0DTE", "pct": -31.6 },
+      { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "dte": "0DTE", "pct": -26.8 },
+      { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "1:27p", "exit": "1:45p", "dur": "18 min", "dte": "0DTE", "pct": -25.6 },
+      { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "12:18p", "exit": "12:48p", "dur": "30 min", "dte": "0DTE", "pct": 45.5 },
+      { "day": "Thursday", "sym": "CRM", "dir": "put", "entry": "12:00p", "exit": "12:18p", "dur": "18 min", "dte": "0DTE", "pct": -27.9 },
+      { "day": "Thursday", "sym": "MSTR", "dir": "call", "entry": "11:32a", "exit": "11:55a", "dur": "23 min", "dte": "1DTE", "pct": 32.1 },
+      { "day": "Thursday", "sym": "NOW", "dir": "call", "entry": "9:59a", "exit": "11:44a", "dur": "105 min", "dte": "0DTE", "pct": -39.3 },
+      { "day": "Wednesday", "sym": "IBIT", "dir": "put", "entry": "10:44a", "exit": "11:10a", "dur": "26 min", "dte": "1DTE", "pct": 39.3 },
+      { "day": "Wednesday", "sym": "PLAB", "dir": "call", "entry": "10:23a", "exit": "10:43a", "dur": "20 min", "dte": "0DTE", "pct": -33.3 },
+      { "day": "Tuesday", "sym": "BMNR", "dir": "call", "entry": "11:11a", "exit": "1:05p", "dur": "114 min", "dte": "1DTE", "pct": -29.2 },
+      { "day": "Tuesday", "sym": "HOOD", "dir": "call", "entry": "10:20a", "exit": "11:07a", "dur": "47 min", "dte": "0DTE", "pct": 18.1 },
+      { "day": "Tuesday", "sym": "IBIT", "dir": "put", "entry": "9:56a", "exit": "10:09a", "dur": "13 min", "dte": "1DTE", "pct": -31.4 },
+      { "day": "Monday", "sym": "IBIT", "dir": "call", "entry": "morning", "exit": "morning", "dur": "—", "dte": "1DTE", "pct": -32.1 },
+      { "day": "Monday", "sym": "XLF", "dir": "call", "entry": "morning", "exit": "morning", "dur": "2 sec", "dte": "0DTE", "pct": -37.5 }
+    ],
+    "skip_summary": [
+      { "day": "Friday", "count": 6, "names": ["GAP", "AFRM", "MSTR", "HOOD", "COIN", "IREN"] }
     ],
     "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
     "market_board": {
@@ -442,6 +460,9 @@
       '<div class="stat"><div class="n bad">' + stats.avg_loss + '</div><div class="l">Avg loss</div></div>' +
       '<div class="stat"><div class="n ' + (String(stats.net_per_ticket).indexOf("-") === 0 ? "bad" : "good") + '">' + stats.net_per_ticket + '</div><div class="l">Net % / ticket</div></div>' +
       '<div class="stat"><div class="n">' + stats.hold_typ + '</div><div class="l">Hold, typ.</div></div>';
+    var cmp = document.getElementById("week-compare");
+    cmp.textContent = stats.prior_week_record ?
+      (stats.trades_this_week + " tickets · " + stats.record + " · vs " + stats.prior_week_record + " last week") : "";
   }
 
   function renderSparkline(vals) {
@@ -477,7 +498,7 @@
       '<polyline points="' + pts + '" style="stroke:' + color + '" /></svg>';
   }
 
-  function renderMarketBoard(board) {
+  function renderMarketBoard(board, session) {
     var order = ["SPY", "QQQ", "VIXY", "BTC"];
     var html = "";
     order.forEach(function (sym) {
@@ -490,25 +511,59 @@
       html += '<div class="cell"><div class="sym">' + sym + '</div><div class="px">' + px + '</div><div class="chg ' + cls + '">' + chg + '</div>' + miniChart(c.history, good) + '</div>';
     });
     document.getElementById("market-board").innerHTML = html;
+    var noteEl = document.getElementById("board-section-note");
+    if (session && session.market_state === "OPEN") {
+      noteEl.textContent = "Backdrop, not a trade idea. Live.";
+    } else {
+      noteEl.textContent = "Pits closed — this board is historical, not live.";
+    }
+  }
+
+  function ticketRowHtml(t) {
+    var durText = t.dte ? (t.dur + " · " + t.dte) : t.dur;
+    return '<div class="ticket"><span class="sym">' + t.sym + '</span>' +
+      '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
+      '<span class="dur">' + durText + '</span>' +
+      '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
+      '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span></div>';
+  }
+
+  // End-of-day only, aggregate, no rule/mechanism language -- e.g. "5
+  // considered, 0 filled". Never a live per-candidate line and never a
+  // reason why each name didn't clear (that's strategy, off-limits).
+  function skipRowHtml(s) {
+    var names = (s.names || []).join(", ");
+    return '<div class="skip-row"><span class="dot"></span>' + s.count + ' considered · 0 filled' +
+      (names ? " — " + names : "") + '</div>';
   }
 
   function renderTickets(data) {
     var tickets = data.tickets || [];
+    var skips = data.skip_summary || [];
+    var skipByDay = {};
+    skips.forEach(function (s) { skipByDay[s.day] = s; });
+
+    var dayOrder = [];
+    var byDay = {};
+    tickets.forEach(function (t) {
+      if (!byDay[t.day]) { byDay[t.day] = []; dayOrder.push(t.day); }
+      byDay[t.day].push(t);
+    });
+    // A day with a skip summary but zero real tickets (a full reject day)
+    // has no ticket row to anchor a divider -- put it at the front, since
+    // that's usually the most recent trading day.
+    skips.forEach(function (s) {
+      if (!byDay[s.day]) { dayOrder.unshift(s.day); byDay[s.day] = []; }
+    });
+
     var html = "";
     if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT") {
       html += '<div class="waiting"><span class="dot"></span>WAITING · nothing new on the tape</div>';
     }
-    var lastDay = null;
-    tickets.forEach(function (t) {
-      if (t.day !== lastDay) {
-        html += '<div class="day-divider">' + t.day + '</div>';
-        lastDay = t.day;
-      }
-      html += '<div class="ticket"><span class="sym">' + t.sym + '</span>' +
-        '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
-        '<span class="dur">' + t.dur + '</span>' +
-        '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
-        '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span></div>';
+    dayOrder.forEach(function (day) {
+      html += '<div class="day-divider">' + day + '</div>';
+      byDay[day].forEach(function (t) { html += ticketRowHtml(t); });
+      if (skipByDay[day]) html += skipRowHtml(skipByDay[day]);
     });
     var streak = data.streak_last8 || [];
     if (streak.length) {
@@ -570,7 +625,7 @@
     renderSession(data.session);
     renderStats(data.stats);
     renderSparkline(data.sparkline_cum_pct);
-    renderMarketBoard(data.market_board);
+    renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
     renderNews(data.news);
     renderFooter(data);
