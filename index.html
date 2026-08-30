@@ -11,6 +11,10 @@
     --text-faint: #6b7169;
     --gold: #c9a227;
     --gold-dim: #3a3018;
+    --blue: #6a9cd0;
+    --blue-dim: #1c2a38;
+    --violet: #a68cd0;
+    --violet-dim: #241c38;
     --good: #4caf7d;
     --good-dim: #163024;
     --bad: #c25b4f;
@@ -166,29 +170,12 @@
   section { margin: 40px 0; }
   .section-title { font-family: var(--serif); font-size: 18px; color: var(--text); margin: 0 0 14px; }
 
-  /* ---- market board ---- */
-  .board {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--border-soft);
-    border: 1px solid var(--border-soft);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .board .cell { background: var(--surface); padding: 14px 8px; text-align: center; }
-  .rail-right .board { grid-template-columns: 1fr; }
-  .rail-right .board .cell { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; text-align: left; padding: 10px 12px; }
-  .rail-right .board .mini-chart { width: 60px; margin-top: 0; }
-  .board .sym { font-family: var(--mono); font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
-  .board .px { font-family: var(--mono); font-size: 16px; color: var(--text); margin-top: 3px; font-variant-numeric: tabular-nums; }
-  .board .chg { font-family: var(--mono); font-size: 12px; margin-top: 2px; color: var(--neutral); font-variant-numeric: tabular-nums; }
-  .board .chg.good { color: var(--good); }
-  .board .chg.bad { color: var(--bad); }
-  .board .mini-chart { width: 100%; height: 20px; display: block; margin-top: 6px; }
-  .board .mini-chart polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+  .board-chg { font-family: var(--mono); font-size: 20px; font-variant-numeric: tabular-nums; }
+  .board-chg.good { color: var(--good); }
+  .board-chg.bad { color: var(--bad); }
+  .board-mini { width: 100%; height: 28px; display: block; margin-top: 10px; }
+  .board-mini polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
   .board-foot {
-    display: flex; flex-direction: column; gap: 3px;
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     padding: 8px 2px 0;
   }
@@ -251,41 +238,31 @@
   .streak-chip.w { background: var(--good-dim); color: var(--good); }
   .streak-chip.l { background: var(--bad-dim); color: var(--bad); }
 
-  /* ---- calendar ---- */
-  .cal-list { display: flex; flex-direction: column; gap: 6px; }
-  .cal-item {
-    display: flex; justify-content: space-between; align-items: center;
-    background: var(--surface); border: 1px solid var(--border-soft);
-    border-radius: 8px; padding: 10px 14px;
-    font-family: var(--mono); font-size: 12px;
-  }
-  .cal-item .when { color: var(--text-faint); }
-  .cal-item .what { color: var(--text-dim); }
-
-  /* ---- news ---- */
-  .news-card {
-    background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--gold);
+  /* ---- shared carousel (news / market board / calendar) ---- */
+  .carousel-card {
+    --accent: var(--gold);
+    background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--accent);
     border-radius: 0 10px 10px 0; padding: 16px 18px 14px;
   }
-  .news-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-  .news-tag {
-    font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold);
+  .carousel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .carousel-tag {
+    font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent);
   }
-  .news-counter { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
-  .news-title { font-family: var(--serif); font-size: 16.5px; color: var(--text); margin-bottom: 6px; line-height: 1.35; min-height: 22px; }
-  .news-summary { margin: 0; font-size: 13px; color: var(--text-dim); line-height: 1.55; min-height: 40px; }
-  .news-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 14px; }
-  .news-arrow {
+  .carousel-counter { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
+  .carousel-title { font-family: var(--serif); font-size: 16.5px; color: var(--text); margin-bottom: 6px; line-height: 1.35; min-height: 22px; }
+  .carousel-body { font-size: 13px; color: var(--text-dim); line-height: 1.55; min-height: 40px; }
+  .carousel-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 14px; }
+  .carousel-arrow {
     font-family: var(--mono); font-size: 15px; line-height: 1;
     background: var(--surface-2); border: 1px solid var(--border); color: var(--text-dim);
     width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
     display: flex; align-items: center; justify-content: center;
     transition: border-color 0.15s ease, color 0.15s ease;
   }
-  .news-arrow:hover { border-color: var(--gold); color: var(--gold); }
-  .news-dots { display: flex; gap: 5px; }
-  .news-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--border); transition: background 0.15s ease; }
-  .news-dot.active { background: var(--gold); }
+  .carousel-arrow:hover { border-color: var(--accent); color: var(--accent); }
+  .carousel-dots { display: flex; gap: 5px; }
+  .carousel-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--border); transition: background 0.15s ease; }
+  .carousel-dot.active { background: var(--accent); }
 
   footer {
     max-width: 560px; margin: 40px auto 0;
@@ -384,22 +361,34 @@
     <div class="rail-left">
       <section>
         <div class="section-title">Calendar</div>
-        <div class="cal-list" id="cal-list"></div>
+        <div class="carousel-card" style="--accent: var(--violet);">
+          <div class="carousel-head">
+            <span class="carousel-tag" id="cal-tag">—</span>
+            <span class="carousel-counter" id="cal-counter">— / —</span>
+          </div>
+          <div class="carousel-title" id="cal-title">—</div>
+          <div class="carousel-body" id="cal-body">—</div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow" id="cal-prev" aria-label="Previous event" type="button">&larr;</button>
+            <div class="carousel-dots" id="cal-dots"></div>
+            <button class="carousel-arrow" id="cal-next" aria-label="Next event" type="button">&rarr;</button>
+          </div>
+        </div>
       </section>
 
       <section>
         <div class="section-title">News</div>
-        <div class="news-card">
-          <div class="news-head">
-            <span class="news-tag" id="news-tag">—</span>
-            <span class="news-counter" id="news-counter">— / —</span>
+        <div class="carousel-card" style="--accent: var(--gold);">
+          <div class="carousel-head">
+            <span class="carousel-tag" id="news-tag">—</span>
+            <span class="carousel-counter" id="news-counter">— / —</span>
           </div>
-          <div class="news-title" id="news-title">—</div>
-          <p class="news-summary" id="news-summary">—</p>
-          <div class="news-nav">
-            <button class="news-arrow" id="news-prev" aria-label="Previous story" type="button">&larr;</button>
-            <div class="news-dots" id="news-dots"></div>
-            <button class="news-arrow" id="news-next" aria-label="Next story" type="button">&rarr;</button>
+          <div class="carousel-title" id="news-title">—</div>
+          <div class="carousel-body" id="news-body">—</div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow" id="news-prev" aria-label="Previous story" type="button">&larr;</button>
+            <div class="carousel-dots" id="news-dots"></div>
+            <button class="carousel-arrow" id="news-next" aria-label="Next story" type="button">&rarr;</button>
           </div>
         </div>
       </section>
@@ -422,7 +411,19 @@
     <div class="rail-right">
       <section>
         <div class="section-title">Market board</div>
-        <div class="board" id="market-board"></div>
+        <div class="carousel-card" style="--accent: var(--blue);">
+          <div class="carousel-head">
+            <span class="carousel-tag" id="market-tag">—</span>
+            <span class="carousel-counter" id="market-counter">— / —</span>
+          </div>
+          <div class="carousel-title" id="market-title">—</div>
+          <div class="carousel-body" id="market-body">—</div>
+          <div class="carousel-nav">
+            <button class="carousel-arrow" id="market-prev" aria-label="Previous symbol" type="button">&larr;</button>
+            <div class="carousel-dots" id="market-dots"></div>
+            <button class="carousel-arrow" id="market-next" aria-label="Next symbol" type="button">&rarr;</button>
+          </div>
+        </div>
         <div class="board-foot" id="board-foot"></div>
       </section>
     </div>
@@ -523,8 +524,6 @@
 
   var FEED_URL = "feed.json";
   var POLL_MS = 45000;
-  var newsIdx = 0;
-  var newsItems = [];
 
   function fmtPct(v) {
     var s = (v > 0 ? "+" : "") + v.toFixed(1) + "%";
@@ -596,29 +595,98 @@
     var n = history.length;
     var pts = history.map(function (v, i) {
       var x = i * 100 / (n - 1);
-      var y = 20 - ((v - minV) / range * 18) - 1;
+      var y = 28 - ((v - minV) / range * 25) - 1.5;
       return x.toFixed(1) + "," + y.toFixed(1);
     }).join(" ");
     var color = good ? "var(--good)" : "var(--bad)";
-    return '<svg class="mini-chart" viewBox="0 0 100 20" preserveAspectRatio="none">' +
+    return '<svg class="board-mini" viewBox="0 0 100 28" preserveAspectRatio="none">' +
       '<polyline points="' + pts + '" style="stroke:' + color + '" /></svg>';
   }
 
-  function renderMarketBoard(board, session) {
-    var order = ["SPY", "QQQ", "VIXY", "BTC", "ETH"];
-    var html = "";
-    order.forEach(function (sym) {
-      var c = board[sym];
-      if (!c) return;
-      var px = sym === "BTC" ? Math.round(c.last).toLocaleString() :
-        sym === "ETH" ? c.last.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) :
-        c.last.toFixed(2);
-      var good = c.chg_pct >= 0;
-      var cls = good ? "good" : "bad";
-      var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
-      html += '<div class="cell"><div class="sym">' + sym + '</div><div class="px">' + px + '</div><div class="chg ' + cls + '">' + chg + '</div>' + miniChart(c.history, good) + '</div>';
+  // Generic prev/next/dots carousel, shared by News, Market board, and
+  // Calendar -- same interaction, different accent color (set via the
+  // --accent CSS custom property on each .carousel-card) and a per-
+  // instance buildFrame(item) that returns {tag, title, body} (body is
+  // rendered as HTML, since market board needs a chart + colored %).
+  function makeCarousel(prefix) {
+    var idx = 0;
+    var items = [];
+    var buildFrame = null;
+    var elTag = document.getElementById(prefix + "-tag");
+    var elTitle = document.getElementById(prefix + "-title");
+    var elBody = document.getElementById(prefix + "-body");
+    var elCounter = document.getElementById(prefix + "-counter");
+    var elDots = document.getElementById(prefix + "-dots");
+    var elPrev = document.getElementById(prefix + "-prev");
+    var elNext = document.getElementById(prefix + "-next");
+
+    function renderFrame() {
+      if (!items.length || !buildFrame) {
+        elTag.textContent = "—"; elTitle.textContent = "—"; elBody.innerHTML = "—";
+        elCounter.textContent = "— / —";
+        return;
+      }
+      var frame = buildFrame(items[idx]);
+      elTag.textContent = frame.tag;
+      elTitle.textContent = frame.title;
+      elBody.innerHTML = frame.body;
+      elCounter.textContent = (idx + 1) + " / " + items.length;
+      var dots = elDots.children;
+      for (var i = 0; i < dots.length; i++) dots[i].classList.toggle("active", i === idx);
+    }
+
+    function setItems(newItems, newBuildFrame) {
+      items = newItems || [];
+      buildFrame = newBuildFrame;
+      idx = items.length ? Math.min(idx, items.length - 1) : 0;
+      elDots.innerHTML = "";
+      items.forEach(function () {
+        var d = document.createElement("span");
+        d.className = "carousel-dot";
+        elDots.appendChild(d);
+      });
+      renderFrame();
+    }
+
+    elPrev.addEventListener("click", function () {
+      if (!items.length) return;
+      idx = (idx - 1 + items.length) % items.length;
+      renderFrame();
     });
-    document.getElementById("market-board").innerHTML = html;
+    elNext.addEventListener("click", function () {
+      if (!items.length) return;
+      idx = (idx + 1) % items.length;
+      renderFrame();
+    });
+
+    return { setItems: setItems };
+  }
+
+  var newsCarousel = makeCarousel("news");
+  var marketCarousel = makeCarousel("market");
+  var calCarousel = makeCarousel("cal");
+
+  var MARKET_ORDER = ["SPY", "QQQ", "DIA", "IWM", "VIXY", "AAPL", "MSFT", "NVDA", "BTC", "ETH", "SOL"];
+  var CRYPTO_SYMS = { "BTC": true, "ETH": true, "SOL": true };
+
+  function fmtPrice(sym, v) {
+    if (CRYPTO_SYMS[sym] && v >= 1000) return Math.round(v).toLocaleString();
+    if (CRYPTO_SYMS[sym]) return v.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    return v.toFixed(2);
+  }
+
+  function renderMarketBoard(board) {
+    var syms = MARKET_ORDER.filter(function (s) { return board[s]; });
+    marketCarousel.setItems(syms, function (sym) {
+      var c = board[sym];
+      var good = c.chg_pct >= 0;
+      var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+      return {
+        tag: sym + (CRYPTO_SYMS[sym] ? " · crypto, 24/7" : ""),
+        title: fmtPrice(sym, c.last),
+        body: '<span class="board-chg ' + (good ? "good" : "bad") + '">' + chg + '</span>' + miniChart(c.history, good)
+      };
+    });
   }
 
   function ticketRowHtml(t) {
@@ -679,48 +747,16 @@
   }
 
   function renderCalendar(items) {
-    var list = document.getElementById("cal-list");
-    if (!list) return;
-    if (!items || !items.length) { list.innerHTML = ""; return; }
-    list.innerHTML = items.map(function (c) {
-      return '<div class="cal-item"><span class="what">' + c.what + '</span><span class="when">' + c.when + '</span></div>';
-    }).join("");
+    calCarousel.setItems(items || [], function (c) {
+      return { tag: "This week", title: c.what, body: c.when };
+    });
   }
 
   function renderNews(items) {
-    newsItems = items || [];
-    newsIdx = 0;
-    var dotsEl = document.getElementById("news-dots");
-    dotsEl.innerHTML = "";
-    newsItems.forEach(function () {
-      var d = document.createElement("span");
-      d.className = "news-dot";
-      dotsEl.appendChild(d);
+    newsCarousel.setItems(items || [], function (item) {
+      return { tag: item.tag, title: item.title, body: item.summary };
     });
-    renderNewsFrame();
   }
-
-  function renderNewsFrame() {
-    if (!newsItems.length) return;
-    var item = newsItems[newsIdx];
-    document.getElementById("news-tag").textContent = item.tag;
-    document.getElementById("news-title").textContent = item.title;
-    document.getElementById("news-summary").textContent = item.summary;
-    document.getElementById("news-counter").textContent = (newsIdx + 1) + " / " + newsItems.length;
-    var dots = document.getElementById("news-dots").children;
-    for (var i = 0; i < dots.length; i++) dots[i].classList.toggle("active", i === newsIdx);
-  }
-
-  document.getElementById("news-prev").addEventListener("click", function () {
-    if (!newsItems.length) return;
-    newsIdx = (newsIdx - 1 + newsItems.length) % newsItems.length;
-    renderNewsFrame();
-  });
-  document.getElementById("news-next").addEventListener("click", function () {
-    if (!newsItems.length) return;
-    newsIdx = (newsIdx + 1) % newsItems.length;
-    renderNewsFrame();
-  });
 
   function renderFooter(data) {
     var d = new Date(data.generated_at);
@@ -729,14 +765,14 @@
       " " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT";
     document.getElementById("tape-date").textContent = text;
     document.getElementById("board-foot").innerHTML =
-      '<span>' + (data.session && data.session.market_state === "OPEN" ? "Live" : "As of last close") + ' · BTC/ETH live</span>';
+      '<span>' + (data.session && data.session.market_state === "OPEN" ? "Live" : "As of last close") + ' · crypto stays live, 24/7</span>';
   }
 
   function render(data) {
     renderSession(data.session);
     renderStats(data.stats);
     renderSparkline(data.sparkline_cum_pct);
-    renderMarketBoard(data.market_board, data.session);
+    renderMarketBoard(data.market_board);
     renderTickets(data);
     renderCalendar(data.calendar);
     renderNews(data.news);
