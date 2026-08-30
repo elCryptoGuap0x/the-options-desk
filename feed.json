@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T23:50:50Z",
+  "generated_at": "2026-08-30T00:01:45Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -329,5 +329,11 @@
       "summary": "Gap (GAP) posted a Q2 EPS beat with raised full-year guidance and a new Old Navy CEO; Affirm (AFRM) beat on its fiscal Q4 with strong GMV and user growth. Both jumped double digits premarket."
     }
   ],
-  "calendar": []
+  "calendar": [
+    { "what": "ISM Manufacturing PMI", "when": "Tue 9:00 CT" },
+    { "what": "JOLTs Job Openings", "when": "Wed 9:00 CT" },
+    { "what": "ADP Employment Change", "when": "Thu 7:15 CT" },
+    { "what": "ISM Services PMI", "when": "Thu 9:00 CT" },
+    { "what": "Nonfarm Payrolls / Unemployment Rate", "when": "Fri 7:30 CT" }
+  ]
 }
