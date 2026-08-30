@@ -41,7 +41,7 @@
 
   .desk-grid {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr) 260px;
+    grid-template-columns: 260px minmax(0, 1fr) 360px;
     gap: 32px;
     margin-top: 10px;
   }
@@ -170,11 +170,18 @@
   section { margin: 40px 0; }
   .section-title { font-family: var(--serif); font-size: 18px; color: var(--text); margin: 0 0 14px; }
 
-  .board-chg { font-family: var(--mono); font-size: 20px; font-variant-numeric: tabular-nums; }
+  .board-chg { font-family: var(--mono); font-size: 26px; font-variant-numeric: tabular-nums; }
   .board-chg.good { color: var(--good); }
   .board-chg.bad { color: var(--bad); }
-  .board-mini { width: 100%; height: 28px; display: block; margin-top: 10px; }
-  .board-mini polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+  .board-mini { width: 100%; height: 44px; display: block; margin-top: 14px; }
+  .board-mini polyline { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+
+  /* Market board's own carousel runs bigger than News/Calendar -- it's
+     showing a short symbol + a single price, not a sentence, and it has
+     the whole right rail to itself. */
+  #market-tag { font-size: 14px; letter-spacing: 0.08em; }
+  #market-title { font-size: 38px; font-variant-numeric: tabular-nums; min-height: 46px; }
+  #market-counter { font-size: 11px; }
   .board-foot {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     padding: 8px 2px 0;
