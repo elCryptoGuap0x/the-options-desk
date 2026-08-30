@@ -17,42 +17,317 @@
     "hold_typ": "~25 min",
     "prior_week_record": "3-9"
   },
-  "sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
+  "sparkline_cum_pct": [
+    0,
+    -37.5,
+    -69.6,
+    -101.0,
+    -82.9,
+    -112.1,
+    -145.4,
+    -106.1,
+    -145.4,
+    -113.3,
+    -141.2,
+    -95.7,
+    -121.3,
+    -148.1,
+    -179.7
+  ],
   "tickets": [
-    { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "dte": "0DTE", "pct": -31.6 },
-    { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "dte": "0DTE", "pct": -26.8 },
-    { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "1:27p", "exit": "1:45p", "dur": "18 min", "dte": "0DTE", "pct": -25.6 },
-    { "day": "Thursday", "sym": "NVDA", "dir": "call", "entry": "12:18p", "exit": "12:48p", "dur": "30 min", "dte": "0DTE", "pct": 45.5 },
-    { "day": "Thursday", "sym": "CRM", "dir": "put", "entry": "12:00p", "exit": "12:18p", "dur": "18 min", "dte": "0DTE", "pct": -27.9 },
-    { "day": "Thursday", "sym": "MSTR", "dir": "call", "entry": "11:32a", "exit": "11:55a", "dur": "23 min", "dte": "1DTE", "pct": 32.1 },
-    { "day": "Thursday", "sym": "NOW", "dir": "call", "entry": "9:59a", "exit": "11:44a", "dur": "105 min", "dte": "0DTE", "pct": -39.3 },
-    { "day": "Wednesday", "sym": "IBIT", "dir": "put", "entry": "10:44a", "exit": "11:10a", "dur": "26 min", "dte": "1DTE", "pct": 39.3 },
-    { "day": "Wednesday", "sym": "PLAB", "dir": "call", "entry": "10:23a", "exit": "10:43a", "dur": "20 min", "dte": "0DTE", "pct": -33.3 },
-    { "day": "Tuesday", "sym": "BMNR", "dir": "call", "entry": "11:11a", "exit": "1:05p", "dur": "114 min", "dte": "1DTE", "pct": -29.2 },
-    { "day": "Tuesday", "sym": "HOOD", "dir": "call", "entry": "10:20a", "exit": "11:07a", "dur": "47 min", "dte": "0DTE", "pct": 18.1 },
-    { "day": "Tuesday", "sym": "IBIT", "dir": "put", "entry": "9:56a", "exit": "10:09a", "dur": "13 min", "dte": "1DTE", "pct": -31.4 },
-    { "day": "Monday", "sym": "IBIT", "dir": "call", "entry": "morning", "exit": "morning", "dur": "—", "dte": "1DTE", "pct": -32.1 },
-    { "day": "Monday", "sym": "XLF", "dir": "call", "entry": "morning", "exit": "morning", "dur": "2 sec", "dte": "0DTE", "pct": -37.5 }
+    {
+      "day": "Thursday",
+      "sym": "OKTA",
+      "dir": "call",
+      "entry": "1:54p",
+      "exit": "2:01p",
+      "dur": "7 min",
+      "dte": "0DTE",
+      "pct": -31.6
+    },
+    {
+      "day": "Thursday",
+      "sym": "CRWD",
+      "dir": "call",
+      "entry": "1:32p",
+      "exit": "2:01p",
+      "dur": "29 min",
+      "dte": "0DTE",
+      "pct": -26.8
+    },
+    {
+      "day": "Thursday",
+      "sym": "NVDA",
+      "dir": "call",
+      "entry": "1:27p",
+      "exit": "1:45p",
+      "dur": "18 min",
+      "dte": "0DTE",
+      "pct": -25.6
+    },
+    {
+      "day": "Thursday",
+      "sym": "NVDA",
+      "dir": "call",
+      "entry": "12:18p",
+      "exit": "12:48p",
+      "dur": "30 min",
+      "dte": "0DTE",
+      "pct": 45.5
+    },
+    {
+      "day": "Thursday",
+      "sym": "CRM",
+      "dir": "put",
+      "entry": "12:00p",
+      "exit": "12:18p",
+      "dur": "18 min",
+      "dte": "0DTE",
+      "pct": -27.9
+    },
+    {
+      "day": "Thursday",
+      "sym": "MSTR",
+      "dir": "call",
+      "entry": "11:32a",
+      "exit": "11:55a",
+      "dur": "23 min",
+      "dte": "1DTE",
+      "pct": 32.1
+    },
+    {
+      "day": "Thursday",
+      "sym": "NOW",
+      "dir": "call",
+      "entry": "9:59a",
+      "exit": "11:44a",
+      "dur": "105 min",
+      "dte": "0DTE",
+      "pct": -39.3
+    },
+    {
+      "day": "Wednesday",
+      "sym": "IBIT",
+      "dir": "put",
+      "entry": "10:44a",
+      "exit": "11:10a",
+      "dur": "26 min",
+      "dte": "1DTE",
+      "pct": 39.3
+    },
+    {
+      "day": "Wednesday",
+      "sym": "PLAB",
+      "dir": "call",
+      "entry": "10:23a",
+      "exit": "10:43a",
+      "dur": "20 min",
+      "dte": "0DTE",
+      "pct": -33.3
+    },
+    {
+      "day": "Tuesday",
+      "sym": "BMNR",
+      "dir": "call",
+      "entry": "11:11a",
+      "exit": "1:05p",
+      "dur": "114 min",
+      "dte": "1DTE",
+      "pct": -29.2
+    },
+    {
+      "day": "Tuesday",
+      "sym": "HOOD",
+      "dir": "call",
+      "entry": "10:20a",
+      "exit": "11:07a",
+      "dur": "47 min",
+      "dte": "0DTE",
+      "pct": 18.1
+    },
+    {
+      "day": "Tuesday",
+      "sym": "IBIT",
+      "dir": "put",
+      "entry": "9:56a",
+      "exit": "10:09a",
+      "dur": "13 min",
+      "dte": "1DTE",
+      "pct": -31.4
+    },
+    {
+      "day": "Monday",
+      "sym": "IBIT",
+      "dir": "call",
+      "entry": "morning",
+      "exit": "morning",
+      "dur": "\u2014",
+      "dte": "1DTE",
+      "pct": -32.1
+    },
+    {
+      "day": "Monday",
+      "sym": "XLF",
+      "dir": "call",
+      "entry": "morning",
+      "exit": "morning",
+      "dur": "2 sec",
+      "dte": "0DTE",
+      "pct": -37.5
+    }
   ],
   "skip_summary": [
-    { "day": "Friday", "count": 6, "names": ["GAP", "AFRM", "MSTR", "HOOD", "COIN", "IREN"] }
+    {
+      "day": "Friday",
+      "count": 6,
+      "names": [
+        "GAP",
+        "AFRM",
+        "MSTR",
+        "HOOD",
+        "COIN",
+        "IREN"
+      ]
+    }
   ],
-  "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
+  "streak_last8": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "W",
+    "L",
+    "L",
+    "L"
+  ],
   "market_board": {
-    "SPY": { "last": 769.39, "chg_pct": -0.22, "history": [771.1, 770.8, 770.2, 769.9, 770.4, 769.6, 769.0, 769.5, 768.9, 769.39, 769.39] },
-    "QQQ": { "last": 716.44, "chg_pct": -0.65, "history": [721.0, 720.1, 718.6, 718.9, 717.5, 716.9, 717.2, 716.0, 716.8, 716.44, 716.44] },
-    "VIXY": { "last": 17.64, "chg_pct": 1.67, "history": [17.35, 17.40, 17.28, 17.50, 17.44, 17.60, 17.55, 17.70, 17.62, 17.66, 17.64] },
-    "BTC": { "last": 78267.62, "chg_pct": 0.98, "history": [77600, 77800, 77500, 78000, 78300, 78100, 78400, 78200, 78350, 78264, 78267.62] },
-    "ETH": { "last": 2459.33, "chg_pct": 0.98, "history": [2431, 2438, 2427, 2445, 2452, 2440, 2458, 2444, 2450, 2456.71, 2459.33] }
+    "SPY": {
+      "last": 769.39,
+      "chg_pct": -0.22,
+      "history": [
+        771.1,
+        770.8,
+        770.2,
+        769.9,
+        770.4,
+        769.6,
+        769.0,
+        769.5,
+        768.9,
+        769.39,
+        769.39
+      ]
+    },
+    "QQQ": {
+      "last": 716.44,
+      "chg_pct": -0.65,
+      "history": [
+        721.0,
+        720.1,
+        718.6,
+        718.9,
+        717.5,
+        716.9,
+        717.2,
+        716.0,
+        716.8,
+        716.44,
+        716.44
+      ]
+    },
+    "VIXY": {
+      "last": 17.64,
+      "chg_pct": 1.67,
+      "history": [
+        17.35,
+        17.4,
+        17.28,
+        17.5,
+        17.44,
+        17.6,
+        17.55,
+        17.7,
+        17.62,
+        17.66,
+        17.64
+      ]
+    },
+    "BTC": {
+      "last": 78267.62,
+      "chg_pct": 0.98,
+      "history": [
+        77600,
+        77800,
+        77500,
+        78000,
+        78300,
+        78100,
+        78400,
+        78200,
+        78350,
+        78264,
+        78267.62
+      ]
+    },
+    "ETH": {
+      "last": 2459.33,
+      "chg_pct": 0.98,
+      "history": [
+        2431,
+        2438,
+        2427,
+        2445,
+        2452,
+        2440,
+        2458,
+        2444,
+        2450,
+        2456.71,
+        2459.33
+      ]
+    }
   },
   "news": [
-    { "tag": "Crypto", "title": "Broad crypto pullback continues into the weekend", "summary": "Total crypto market cap down roughly 2.9% to about $2.72T over the last 24 hours. BTC and ETH both off 3-4% on a rolling basis, a continuation of the post-Jackson-Hole, post-$80K-loss move from Friday rather than a new catalyst." },
-    { "tag": "Crypto", "title": "SEC custody rulemaking enters White House review", "summary": "The SEC's 'Regulation Crypto Assets' custody proposal entered White House OIRA review on 8/25 — part of the broader safe-harbor/offering-exemption package released 8/18. An incremental regulatory-process step; no market reaction tied to it yet." },
-    { "tag": "Macro", "title": "Warsh's first Jackson Hole address reads hawkish", "summary": "Fed Chair Kevin Warsh's debut keynote since taking office leaned firmly on getting inflation back to target. Markets repriced the near-term rate path higher within the hour of the speech." },
-    { "tag": "Crypto", "title": "Solana, Ethereum, and XRP hold up while Bitcoin slips", "summary": "Solana ran as much as +4% intraday (up over 20% on the week), with Ethereum and XRP both holding modest gains even as BTC gave back ground post-speech — a real split within crypto, not a broad risk-off move." },
-    { "tag": "Crypto", "title": "Spot Bitcoin ETFs post an 8-session inflow streak", "summary": "$2.8B moved in over eight straight sessions, the longest run since spring — August is tracking as one of the strongest inflow months since these funds launched." },
-    { "tag": "Equities", "title": "Marvell drops on a soft guide, drags semis with it", "summary": "Marvell (MRVL) fell roughly 8% premarket on disappointing guidance, pulling the sector ETF (SMH) down over 1% and Micron (MU) down more than 2%, even as other large-cap chip names held up." },
-    { "tag": "Equities", "title": "PayPal loses its takeover premium as talks collapse", "summary": "Reports that Stripe and Advent abandoned their roughly $60.50-a-share acquisition pursuit of PayPal (PYPL) erased the deal premium the stock had been carrying, sending it down double digits." },
-    { "tag": "Equities", "title": "Gap and Affirm both beat and raise guidance", "summary": "Gap (GAP) posted a Q2 EPS beat with raised full-year guidance and a new Old Navy CEO; Affirm (AFRM) beat on its fiscal Q4 with strong GMV and user growth. Both jumped double digits premarket." }
-  ]
+    {
+      "tag": "Crypto",
+      "title": "Broad crypto pullback continues into the weekend",
+      "summary": "Total crypto market cap down roughly 2.9% to about $2.72T over the last 24 hours. BTC and ETH both off 3-4% on a rolling basis, a continuation of the post-Jackson-Hole, post-$80K-loss move from Friday rather than a new catalyst."
+    },
+    {
+      "tag": "Crypto",
+      "title": "SEC custody rulemaking enters White House review",
+      "summary": "The SEC's 'Regulation Crypto Assets' custody proposal entered White House OIRA review on 8/25 \u2014 part of the broader safe-harbor/offering-exemption package released 8/18. An incremental regulatory-process step; no market reaction tied to it yet."
+    },
+    {
+      "tag": "Macro",
+      "title": "Warsh's first Jackson Hole address reads hawkish",
+      "summary": "Fed Chair Kevin Warsh's debut keynote since taking office leaned firmly on getting inflation back to target. Markets repriced the near-term rate path higher within the hour of the speech."
+    },
+    {
+      "tag": "Crypto",
+      "title": "Solana, Ethereum, and XRP hold up while Bitcoin slips",
+      "summary": "Solana ran as much as +4% intraday (up over 20% on the week), with Ethereum and XRP both holding modest gains even as BTC gave back ground post-speech \u2014 a real split within crypto, not a broad risk-off move."
+    },
+    {
+      "tag": "Crypto",
+      "title": "Spot Bitcoin ETFs post an 8-session inflow streak",
+      "summary": "$2.8B moved in over eight straight sessions, the longest run since spring \u2014 August is tracking as one of the strongest inflow months since these funds launched."
+    },
+    {
+      "tag": "Equities",
+      "title": "Marvell drops on a soft guide, drags semis with it",
+      "summary": "Marvell (MRVL) fell roughly 8% premarket on disappointing guidance, pulling the sector ETF (SMH) down over 1% and Micron (MU) down more than 2%, even as other large-cap chip names held up."
+    },
+    {
+      "tag": "Equities",
+      "title": "PayPal loses its takeover premium as talks collapse",
+      "summary": "Reports that Stripe and Advent abandoned their roughly $60.50-a-share acquisition pursuit of PayPal (PYPL) erased the deal premium the stock had been carrying, sending it down double digits."
+    },
+    {
+      "tag": "Equities",
+      "title": "Gap and Affirm both beat and raise guidance",
+      "summary": "Gap (GAP) posted a Q2 EPS beat with raised full-year guidance and a new Old Navy CEO; Affirm (AFRM) beat on its fiscal Q4 with strong GMV and user growth. Both jumped double digits premarket."
+    }
+  ],
+  "calendar": []
 }

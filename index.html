@@ -384,13 +384,7 @@
     <div class="rail-left">
       <section>
         <div class="section-title">Calendar</div>
-        <div class="cal-list">
-          <div class="cal-item"><span class="what">JOLTS</span><span class="when">Tue 8:30 CT</span></div>
-          <div class="cal-item"><span class="what">ISM Manufacturing</span><span class="when">Tue 9:00 CT</span></div>
-          <div class="cal-item"><span class="what">ADP Employment</span><span class="when">Wed 7:15 CT</span></div>
-          <div class="cal-item"><span class="what">Weekly Jobless Claims</span><span class="when">Thu 7:30 CT</span></div>
-          <div class="cal-item"><span class="what">Nonfarm Payrolls</span><span class="when">Fri 7:30 CT</span></div>
-        </div>
+        <div class="cal-list" id="cal-list"></div>
       </section>
 
       <section>
@@ -506,6 +500,7 @@
     "skip_summary": [
       { "day": "Friday", "count": 6, "names": ["GAP", "AFRM", "MSTR", "HOOD", "COIN", "IREN"] }
     ],
+    "calendar": [],
     "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
     "market_board": {
       "SPY": { "last": 769.39, "chg_pct": -0.22, "history": [771.1, 770.8, 770.2, 769.9, 770.4, 769.6, 769.0, 769.5, 768.9, 769.39] },
@@ -683,6 +678,15 @@
     document.getElementById("ticket-feed").innerHTML = html;
   }
 
+  function renderCalendar(items) {
+    var list = document.getElementById("cal-list");
+    if (!list) return;
+    if (!items || !items.length) { list.innerHTML = ""; return; }
+    list.innerHTML = items.map(function (c) {
+      return '<div class="cal-item"><span class="what">' + c.what + '</span><span class="when">' + c.when + '</span></div>';
+    }).join("");
+  }
+
   function renderNews(items) {
     newsItems = items || [];
     newsIdx = 0;
@@ -734,6 +738,7 @@
     renderSparkline(data.sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
+    renderCalendar(data.calendar);
     renderNews(data.news);
     renderFooter(data);
   }
