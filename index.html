@@ -175,6 +175,10 @@
   .board-chg.bad { color: var(--bad); }
   .board-mini { width: 100%; height: 58px; display: block; margin-top: 16px; }
   .board-mini polyline { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .board-mini-pending {
+    font-family: var(--mono); font-size: 10.5px; color: var(--text-faint);
+    height: 58px; margin-top: 16px; display: flex; align-items: center;
+  }
 
   /* Market board's own carousel runs bigger than News/Calendar -- it's
      showing a short symbol + a single price, not a sentence. Kept the
@@ -599,7 +603,9 @@
   }
 
   function miniChart(history, good) {
-    if (!history || history.length < 2) return "";
+    if (!history || history.length < 2) {
+      return '<div class="board-mini-pending">building intraday history…</div>';
+    }
     var maxV = Math.max.apply(null, history);
     var minV = Math.min.apply(null, history);
     var range = (maxV - minV) || 1;
