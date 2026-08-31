@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T13:34:00Z",
+  "generated_at": "2026-08-31T13:51:00Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -48,59 +48,59 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 766.52,
-      "chg_pct": -0.37,
-      "history": [767.19, 766.45, 766.93, 766.52]
+      "last": 766.09,
+      "chg_pct": -0.42,
+      "history": [767.19, 766.45, 766.93, 766.52, 766.09]
     },
     "QQQ": {
-      "last": 715.38,
-      "chg_pct": -0.15,
-      "history": [715.0, 713.88, 714.31, 715.38]
+      "last": 715.07,
+      "chg_pct": -0.19,
+      "history": [715.0, 713.88, 714.31, 715.38, 715.07]
     },
     "DIA": {
-      "last": 532.22,
-      "chg_pct": -0.53,
-      "history": [533.45, 533.07, 533.16, 532.22]
+      "last": 531.70,
+      "chg_pct": -0.63,
+      "history": [533.45, 533.07, 533.16, 532.22, 531.70]
     },
     "IWM": {
-      "last": 294.58,
-      "chg_pct": -0.4,
-      "history": [295.2, 294.62, 294.92, 294.58]
+      "last": 293.55,
+      "chg_pct": -0.74,
+      "history": [295.2, 294.62, 294.92, 294.58, 293.55]
     },
     "VIXY": {
-      "last": 17.75,
-      "chg_pct": 0.48,
-      "history": [17.79, 17.77, 17.77, 17.75]
+      "last": 17.70,
+      "chg_pct": 0.20,
+      "history": [17.79, 17.77, 17.77, 17.75, 17.70]
     },
     "AAPL": {
-      "last": 318.47,
-      "chg_pct": -0.38,
-      "history": [318.49, 318.96, 320.15, 318.47]
+      "last": 317.37,
+      "chg_pct": -0.73,
+      "history": [318.49, 318.96, 320.15, 318.47, 317.37]
     },
     "MSFT": {
-      "last": 509.14,
-      "chg_pct": -0.86,
-      "history": [508.74, 508.8, 509.09, 509.14]
+      "last": 510.32,
+      "chg_pct": -0.63,
+      "history": [508.74, 508.8, 509.09, 509.14, 510.32]
     },
     "NVDA": {
-      "last": 217.42,
-      "chg_pct": -0.06,
-      "history": [218.8, 218.18, 218.1, 217.42]
+      "last": 218.21,
+      "chg_pct": 0.30,
+      "history": [218.8, 218.18, 218.1, 217.42, 218.21]
     },
     "BTC": {
-      "last": 77859.45,
-      "chg_pct": 0.14,
-      "history": [78084.64, 77790.44, 78027.63, 77859.45]
+      "last": 77862.59,
+      "chg_pct": 0.15,
+      "history": [78084.64, 77790.44, 78027.63, 77859.45, 77862.59]
     },
     "ETH": {
-      "last": 2447.81,
-      "chg_pct": 1.11,
-      "history": [2455.89, 2448.39, 2452.69, 2447.81]
+      "last": 2442.15,
+      "chg_pct": 0.87,
+      "history": [2455.89, 2448.39, 2452.69, 2447.81, 2442.15]
     },
     "SOL": {
-      "last": 102.57,
-      "chg_pct": 0.62,
-      "history": [103.03, 102.6, 102.83, 102.57]
+      "last": 102.38,
+      "chg_pct": 0.43,
+      "history": [103.03, 102.6, 102.83, 102.57, 102.38]
     }
   },
   "news": [
@@ -117,7 +117,7 @@
     {
       "tag": "Equities",
       "title": "PG&E slides after lawmakers amend wildfire-liability bill",
-      "summary": "California's SB 492 wildfire-liability legislation was amended in a way PG&E called critical to its financing framework, sending the utility down 14-17% premarket. Utilities broadly traded under pressure."
+      "summary": "California's SB 492 wildfire-liability legislation was amended in a way PG&E called critical to its financing framework, sending the utility down sharply. Utilities broadly traded under pressure."
     },
     {
       "tag": "Macro",
@@ -132,7 +132,7 @@
     {
       "tag": "Crypto",
       "title": "Bitcoin and Ether stabilize after the weekend pullback",
-      "summary": "BTC and ETH both traded modestly higher Monday morning, roughly flat to up versus their weekend lows, with the broader crypto-proxy basket moving in the same direction — no divergence between spot and proxies so far."
+      "summary": "BTC and ETH both traded modestly higher Monday morning, roughly flat to up versus their weekend lows, with the broader crypto-proxy basket showing some divergence from spot as the session gets underway."
     },
     {
       "tag": "Crypto",
