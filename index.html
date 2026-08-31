@@ -212,6 +212,21 @@
     border-radius: 9px; padding: 11px 16px;
   }
   .skip-row .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-faint); }
+  .scan-row {
+    display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+    font-family: var(--mono); font-size: 11.5px; color: var(--text-faint);
+    border: 1px dashed var(--border);
+    border-radius: 9px; padding: 10px 14px;
+  }
+  .scan-row .scan-time { color: var(--text-faint); flex-shrink: 0; }
+  .scan-row .scan-sym { color: var(--text); font-weight: 700; flex-shrink: 0; }
+  .scan-row .scan-verdict {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
+    padding: 1px 7px; border-radius: 20px; flex-shrink: 0;
+  }
+  .scan-row .scan-verdict.skip { background: var(--bad-dim); color: var(--bad); }
+  .scan-row .scan-verdict.wait { background: var(--gold-dim); color: var(--gold); }
+  .scan-row .scan-reason { color: var(--text-dim); }
   .ticket {
     display: grid;
     grid-template-columns: auto 1fr auto auto auto;
@@ -422,6 +437,11 @@
         <div class="section-title">Recent tickets</div>
         <div class="feed" id="ticket-feed"></div>
       </section>
+
+      <section>
+        <div class="section-title">On the desk</div>
+        <div class="feed" id="scan-log"></div>
+      </section>
     </div>
 
     <div class="rail-right">
@@ -519,6 +539,10 @@
       { "day": "Friday", "count": 6, "names": ["GAP", "AFRM", "MSTR", "HOOD", "COIN", "IREN"] }
     ],
     "calendar": [],
+    "scan_log": [
+      { "time": "09:53", "sym": "PCG", "verdict": "skip", "reason": "bounced to 13.55, volume faded every bar after the open" },
+      { "time": "09:53", "sym": "HAL", "verdict": "skip", "reason": "mild uptrend but volume thin and declining" }
+    ],
     "streak_last8": ["W", "L", "W", "L", "W", "L", "L", "L"],
     "market_board": {
       "SPY": { "last": 769.39, "chg_pct": -0.22, "history": [771.1, 770.8, 770.2, 769.9, 770.4, 769.6, 769.0, 769.5, 768.9, 769.39] },
@@ -548,10 +572,29 @@
   }
   function pctClass(v) { return v >= 0 ? "good" : "bad"; }
 
+  var lastSession = null;
+
+  // Live "next" text, recomputed every tick (not just on feed poll) so
+  // the countdown-style drama moves with the real clock, not the ~45s
+  // poll cadence. Real flatten window (1:30-2:00 PM CT / 2:30-3:00 PM
+  // ET) and close (3:00 PM CT / 4:00 PM ET) -- same rule as trader's own.
+  function sessionNextText(session) {
+    if (!session) return "—";
+    if (session.market_state !== "OPEN") {
+      return "NEXT OPEN " + (session.next_open || "—");
+    }
+    var parts = new Date().toLocaleTimeString("en-US", { hour12: false, hour: "2-digit", minute: "2-digit", timeZone: "America/Chicago" }).split(":");
+    var mins = parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+    var flattenStart = 13 * 60 + 30, flattenEnd = 14 * 60, closeTime = 15 * 60;
+    if (mins >= closeTime) return "MARKET CLOSED";
+    if (mins >= flattenEnd) return "CLOSING SOON";
+    if (mins >= flattenStart) return "FLATTEN WINDOW — NO NEW ENTRIES";
+    return "NEXT FLATTEN 1:30 CT";
+  }
+
   function renderSession(session) {
     var pill = document.getElementById("status-pill");
     var text = document.getElementById("status-text");
-    var nextEl = document.getElementById("session-next");
     pill.classList.remove("open");
     if (session.position === "IN TRADE") {
       pill.classList.add("open");
@@ -565,7 +608,8 @@
     } else {
       text.textContent = session.market_state || "—";
     }
-    nextEl.textContent = session.market_state === "OPEN" ? "LIVE" : "NEXT OPEN " + (session.next_open || "—");
+    lastSession = session;
+    document.getElementById("session-next").textContent = sessionNextText(session);
   }
 
   function renderStats(stats) {
@@ -782,6 +826,30 @@
     document.getElementById("ticket-feed").innerHTML = html;
   }
 
+  // Delayed by design (same ~one-cycle delay as new tickets) -- by the
+  // time a row appears here, that name's own decision window has already
+  // resolved one way or the other, so this can never be read as "here's
+  // what to watch." Real ticker, real one-line market fact, never the
+  // internal rule/mechanism name that produced the call.
+  function scanRowHtml(s) {
+    var isWait = /wait/i.test(s.verdict || "");
+    var dirHtml = s.dir ? '<span class="dir ' + s.dir + '">' + (s.dir === "call" ? "Call" : "Put") + '</span>' : "";
+    return '<div class="scan-row"><span class="scan-time">' + s.time + '</span>' +
+      '<span class="scan-sym">' + s.sym + '</span>' + dirHtml +
+      '<span class="scan-verdict ' + (isWait ? "wait" : "skip") + '">' + s.verdict + '</span>' +
+      '<span class="scan-reason">' + s.reason + '</span></div>';
+  }
+
+  function renderScanLog(items) {
+    var el = document.getElementById("scan-log");
+    if (!el) return;
+    if (!items || !items.length) {
+      el.innerHTML = '<div class="waiting"><span class="dot"></span>Quiet cycle — nothing new to log yet</div>';
+      return;
+    }
+    el.innerHTML = items.map(scanRowHtml).join("");
+  }
+
   function renderCalendar(items) {
     calCarousel.setItems(items || [], function (c) {
       return { tag: "This week", title: c.what, body: c.when };
@@ -810,6 +878,7 @@
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board);
     renderTickets(data);
+    renderScanLog(data.scan_log);
     renderCalendar(data.calendar);
     renderNews(data.news);
     renderFooter(data);
@@ -836,6 +905,7 @@
     var day = now.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }).toUpperCase();
     var time = now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
     clockEl.textContent = day + " " + time + " CT";
+    if (lastSession) document.getElementById("session-next").textContent = sessionNextText(lastSession);
   }
   tick();
   setInterval(tick, 30000);
