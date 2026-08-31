@@ -1,181 +1,26 @@
 {
-  "generated_at": "2026-08-30T00:24:00Z",
+  "generated_at": "2026-08-31T12:40:00Z",
   "session": {
-    "day_label": "SAT",
-    "market_state": "WEEKEND",
+    "day_label": "MON",
+    "market_state": "CLOSED",
     "next_open": "MON 8:30 CT",
     "position": "FLAT"
   },
   "stats": {
-    "record": "4-10",
-    "win_rate": "28.6%",
-    "trades_this_week": 14,
+    "record": "0-0",
+    "win_rate": "N/A",
+    "trades_this_week": 0,
     "typical_hold": "0DTE-1DTE",
-    "avg_win": "+33.8%",
-    "avg_loss": "-31.5%",
-    "net_per_ticket": "-12.8%",
-    "hold_typ": "~25 min",
-    "prior_week_record": "3-9"
+    "avg_win": "N/A",
+    "avg_loss": "N/A",
+    "net_per_ticket": "N/A",
+    "hold_typ": "N/A",
+    "prior_week_record": "4-10"
   },
   "sparkline_cum_pct": [
-    0,
-    -37.5,
-    -69.6,
-    -101.0,
-    -82.9,
-    -112.1,
-    -145.4,
-    -106.1,
-    -145.4,
-    -113.3,
-    -141.2,
-    -95.7,
-    -121.3,
-    -148.1,
-    -179.7
+    0
   ],
-  "tickets": [
-    {
-      "day": "Thursday",
-      "sym": "OKTA",
-      "dir": "call",
-      "entry": "1:54p",
-      "exit": "2:01p",
-      "dur": "7 min",
-      "dte": "0DTE",
-      "pct": -31.6
-    },
-    {
-      "day": "Thursday",
-      "sym": "CRWD",
-      "dir": "call",
-      "entry": "1:32p",
-      "exit": "2:01p",
-      "dur": "29 min",
-      "dte": "0DTE",
-      "pct": -26.8
-    },
-    {
-      "day": "Thursday",
-      "sym": "NVDA",
-      "dir": "call",
-      "entry": "1:27p",
-      "exit": "1:45p",
-      "dur": "18 min",
-      "dte": "0DTE",
-      "pct": -25.6
-    },
-    {
-      "day": "Thursday",
-      "sym": "NVDA",
-      "dir": "call",
-      "entry": "12:18p",
-      "exit": "12:48p",
-      "dur": "30 min",
-      "dte": "0DTE",
-      "pct": 45.5
-    },
-    {
-      "day": "Thursday",
-      "sym": "CRM",
-      "dir": "put",
-      "entry": "12:00p",
-      "exit": "12:18p",
-      "dur": "18 min",
-      "dte": "0DTE",
-      "pct": -27.9
-    },
-    {
-      "day": "Thursday",
-      "sym": "MSTR",
-      "dir": "call",
-      "entry": "11:32a",
-      "exit": "11:55a",
-      "dur": "23 min",
-      "dte": "1DTE",
-      "pct": 32.1
-    },
-    {
-      "day": "Thursday",
-      "sym": "NOW",
-      "dir": "call",
-      "entry": "9:59a",
-      "exit": "11:44a",
-      "dur": "105 min",
-      "dte": "0DTE",
-      "pct": -39.3
-    },
-    {
-      "day": "Wednesday",
-      "sym": "IBIT",
-      "dir": "put",
-      "entry": "10:44a",
-      "exit": "11:10a",
-      "dur": "26 min",
-      "dte": "1DTE",
-      "pct": 39.3
-    },
-    {
-      "day": "Wednesday",
-      "sym": "PLAB",
-      "dir": "call",
-      "entry": "10:23a",
-      "exit": "10:43a",
-      "dur": "20 min",
-      "dte": "0DTE",
-      "pct": -33.3
-    },
-    {
-      "day": "Tuesday",
-      "sym": "BMNR",
-      "dir": "call",
-      "entry": "11:11a",
-      "exit": "1:05p",
-      "dur": "114 min",
-      "dte": "1DTE",
-      "pct": -29.2
-    },
-    {
-      "day": "Tuesday",
-      "sym": "HOOD",
-      "dir": "call",
-      "entry": "10:20a",
-      "exit": "11:07a",
-      "dur": "47 min",
-      "dte": "0DTE",
-      "pct": 18.1
-    },
-    {
-      "day": "Tuesday",
-      "sym": "IBIT",
-      "dir": "put",
-      "entry": "9:56a",
-      "exit": "10:09a",
-      "dur": "13 min",
-      "dte": "1DTE",
-      "pct": -31.4
-    },
-    {
-      "day": "Monday",
-      "sym": "IBIT",
-      "dir": "call",
-      "entry": "morning",
-      "exit": "morning",
-      "dur": "\u2014",
-      "dte": "1DTE",
-      "pct": -32.1
-    },
-    {
-      "day": "Monday",
-      "sym": "XLF",
-      "dir": "call",
-      "entry": "morning",
-      "exit": "morning",
-      "dur": "2 sec",
-      "dte": "0DTE",
-      "pct": -37.5
-    }
-  ],
+  "tickets": [],
   "skip_summary": [
     {
       "day": "Friday",
@@ -202,191 +47,125 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 769.39,
-      "chg_pct": -0.22,
+      "last": 767.19,
+      "chg_pct": -0.28,
       "history": [
-        771.1,
-        770.8,
-        770.2,
-        769.9,
-        770.4,
-        769.6,
-        769.0,
-        769.5,
-        768.9,
-        769.39,
-        769.39,
-        769.39
+        767.19
       ]
     },
     "QQQ": {
-      "last": 716.44,
-      "chg_pct": -0.65,
+      "last": 715.0,
+      "chg_pct": -0.2,
       "history": [
-        721.0,
-        720.1,
-        718.6,
-        718.9,
-        717.5,
-        716.9,
-        717.2,
-        716.0,
-        716.8,
-        716.44,
-        716.44,
-        716.44
-      ]
-    },
-    "VIXY": {
-      "last": 17.64,
-      "chg_pct": 1.67,
-      "history": [
-        17.35,
-        17.4,
-        17.28,
-        17.5,
-        17.44,
-        17.6,
-        17.55,
-        17.7,
-        17.62,
-        17.66,
-        17.64,
-        17.64
-      ]
-    },
-    "BTC": {
-      "last": 78217.63,
-      "chg_pct": 0.93,
-      "history": [
-        77600,
-        77800,
-        77500,
-        78000,
-        78300,
-        78100,
-        78400,
-        78200,
-        78350,
-        78264,
-        78267.62,
-        78217.63
-      ]
-    },
-    "ETH": {
-      "last": 2461.85,
-      "chg_pct": 1.09,
-      "history": [
-        2431,
-        2438,
-        2427,
-        2445,
-        2452,
-        2440,
-        2458,
-        2444,
-        2450,
-        2456.71,
-        2459.33,
-        2461.85
+        715.0
       ]
     },
     "DIA": {
-      "last": 535.04,
-      "chg_pct": -0.03,
+      "last": 533.45,
+      "chg_pct": -0.3,
       "history": [
-        535.04,
-        535.04
+        533.45
       ]
     },
     "IWM": {
-      "last": 295.75,
-      "chg_pct": -1.35,
+      "last": 295.2,
+      "chg_pct": -0.19,
       "history": [
-        295.75,
-        295.75
+        295.2
+      ]
+    },
+    "VIXY": {
+      "last": 17.79,
+      "chg_pct": 0.74,
+      "history": [
+        17.79
       ]
     },
     "AAPL": {
-      "last": 319.65,
-      "chg_pct": 1.61,
+      "last": 318.49,
+      "chg_pct": -0.38,
       "history": [
-        319.65,
-        319.65
+        318.49
       ]
     },
     "MSFT": {
-      "last": 513.67,
-      "chg_pct": 1.70,
+      "last": 508.74,
+      "chg_pct": -0.93,
       "history": [
-        513.67,
-        513.67
+        508.74
       ]
     },
     "NVDA": {
-      "last": 217.54,
-      "chg_pct": -4.58,
+      "last": 218.8,
+      "chg_pct": 0.57,
       "history": [
-        217.54,
-        217.54
+        218.8
+      ]
+    },
+    "BTC": {
+      "last": 78084.64,
+      "chg_pct": 0.43,
+      "history": [
+        78084.64
+      ]
+    },
+    "ETH": {
+      "last": 2455.89,
+      "chg_pct": 1.44,
+      "history": [
+        2455.89
       ]
     },
     "SOL": {
-      "last": 105.42,
-      "chg_pct": 1.48,
+      "last": 103.03,
+      "chg_pct": 1.07,
       "history": [
-        105.33,
-        105.42
+        103.03
       ]
     }
   },
   "news": [
     {
-      "tag": "Crypto",
-      "title": "Broad crypto pullback continues into the weekend",
-      "summary": "Total crypto market cap down roughly 2.9% to about $2.72T over the last 24 hours. BTC and ETH both off 3-4% on a rolling basis, a continuation of the post-Jackson-Hole, post-$80K-loss move from Friday rather than a new catalyst."
+      "tag": "Macro",
+      "title": "US strikes Iranian rocket launchers near the Strait of Hormuz",
+      "summary": "First US military action in the region in about a month sent oil sharply higher into Monday's open, with WTI up 3-4% toward the mid-$86s and Brent above $91."
     },
     {
-      "tag": "Crypto",
-      "title": "SEC custody rulemaking enters White House review",
-      "summary": "The SEC's 'Regulation Crypto Assets' custody proposal entered White House OIRA review on 8/25 \u2014 part of the broader safe-harbor/offering-exemption package released 8/18. An incremental regulatory-process step; no market reaction tied to it yet."
+      "tag": "Equities",
+      "title": "Energy names lead premarket gains on the oil spike",
+      "summary": "Halliburton, Chevron, Valero, Occidental and Exxon all traded higher premarket as crude jumped on the weekend's Middle East escalation."
+    },
+    {
+      "tag": "Equities",
+      "title": "PG&E slides after lawmakers amend wildfire-liability bill",
+      "summary": "California's SB 492 wildfire-liability legislation was amended in a way PG&E called critical to its financing framework, sending the utility down 14-17% premarket. Utilities broadly traded under pressure."
     },
     {
       "tag": "Macro",
-      "title": "Warsh's first Jackson Hole address reads hawkish",
-      "summary": "Fed Chair Kevin Warsh's debut keynote since taking office leaned firmly on getting inflation back to target. Markets repriced the near-term rate path higher within the hour of the speech."
+      "title": "Residual hawkishness from Fed Chair Warsh's Jackson Hole speech",
+      "summary": "Markets are still digesting Friday's address, in which Warsh said elevated prices need to stay the Fed's main focus and described financial conditions as not broadly restrictive. The 10-year yield is holding near 4.72%, little moved since Friday's jump."
+    },
+    {
+      "tag": "Equities",
+      "title": "ONEOK to acquire Brazos Midstream for $4.425B",
+      "summary": "The cash deal for Permian Midland Basin gas gathering and processing assets is funded by $9B in non-voting minority equity from Apollo, aimed at debt paydown and growth. Expected to close in Q4."
     },
     {
       "tag": "Crypto",
-      "title": "Solana, Ethereum, and XRP hold up while Bitcoin slips",
-      "summary": "Solana ran as much as +4% intraday (up over 20% on the week), with Ethereum and XRP both holding modest gains even as BTC gave back ground post-speech \u2014 a real split within crypto, not a broad risk-off move."
+      "title": "Bitcoin and Ether stabilize after the weekend pullback",
+      "summary": "BTC and ETH both traded modestly higher Monday morning, roughly flat to up versus their weekend lows, with the broader crypto-proxy basket moving in the same direction — no divergence between spot and proxies so far."
     },
     {
       "tag": "Crypto",
-      "title": "Spot Bitcoin ETFs post an 8-session inflow streak",
-      "summary": "$2.8B moved in over eight straight sessions, the longest run since spring \u2014 August is tracking as one of the strongest inflow months since these funds launched."
-    },
-    {
-      "tag": "Equities",
-      "title": "Marvell drops on a soft guide, drags semis with it",
-      "summary": "Marvell (MRVL) fell roughly 8% premarket on disappointing guidance, pulling the sector ETF (SMH) down over 1% and Micron (MU) down more than 2%, even as other large-cap chip names held up."
-    },
-    {
-      "tag": "Equities",
-      "title": "PayPal loses its takeover premium as talks collapse",
-      "summary": "Reports that Stripe and Advent abandoned their roughly $60.50-a-share acquisition pursuit of PayPal (PYPL) erased the deal premium the stock had been carrying, sending it down double digits."
-    },
-    {
-      "tag": "Equities",
-      "title": "Gap and Affirm both beat and raise guidance",
-      "summary": "Gap (GAP) posted a Q2 EPS beat with raised full-year guidance and a new Old Navy CEO; Affirm (AFRM) beat on its fiscal Q4 with strong GMV and user growth. Both jumped double digits premarket."
+      "title": "SEC custody rulemaking still moving through White House review",
+      "summary": "The SEC's 'Regulation Crypto Assets' custody proposal, part of the broader safe-harbor package released in mid-August, remains in OIRA review with no market reaction tied to it yet."
     }
   ],
   "calendar": [
+    { "what": "Dallas Fed Manufacturing", "when": "Mon 9:30 CT" },
     { "what": "ISM Manufacturing PMI", "when": "Tue 9:00 CT" },
     { "what": "JOLTs Job Openings", "when": "Wed 9:00 CT" },
     { "what": "ADP Employment Change", "when": "Thu 7:15 CT" },
-    { "what": "ISM Services PMI", "when": "Thu 9:00 CT" },
     { "what": "Nonfarm Payrolls / Unemployment Rate", "when": "Fri 7:30 CT" }
   ]
 }
