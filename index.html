@@ -413,6 +413,7 @@
       <div class="sparkline-wrap">
         <div class="sparkline-label" id="sparkline-label">WEEK PATH</div>
         <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+          <polyline id="sparkline-prior" fill="none" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3,3" stroke-linejoin="round" stroke-linecap="round" points="" />
           <polyline id="sparkline-line" fill="none" stroke="#c25b4f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="" />
         </svg>
       </div>
@@ -496,7 +497,8 @@
     "generated_at": "2026-08-29T20:20:00Z",
     "session": { "day_label": "SAT", "market_state": "WEEKEND", "next_open": "MON 8:30 CT", "position": "FLAT" },
     "stats": { "record": "4-10", "win_rate": "28.6%", "trades_this_week": 14, "typical_hold": "0DTE-1DTE", "avg_win": "+33.8%", "avg_loss": "-31.5%", "net_per_ticket": "-12.8%", "hold_typ": "~25 min", "prior_week_record": "3-9" },
-    "sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
+    "sparkline_cum_pct": [0],
+    "prior_week_sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
     "tickets": [
       { "day": "Thursday", "sym": "OKTA", "dir": "call", "entry": "1:54p", "exit": "2:01p", "dur": "7 min", "dte": "0DTE", "pct": -31.6 },
       { "day": "Thursday", "sym": "CRWD", "dir": "call", "entry": "1:32p", "exit": "2:01p", "dur": "29 min", "dte": "0DTE", "pct": -26.8 },
@@ -585,21 +587,38 @@
       (stats.trades_this_week + " tickets · " + stats.record + " · vs " + stats.prior_week_record + " last week") : "";
   }
 
-  function renderSparkline(vals) {
-    if (!vals || !vals.length) return;
-    var maxV = Math.max.apply(null, vals);
-    var minV = Math.min.apply(null, vals);
+  function linePoints(vals, maxV, minV) {
     var range = (maxV - minV) || 1;
     var n = vals.length;
-    var pts = vals.map(function (v, i) {
-      var x = n > 1 ? (i * 300 / (n - 1)) : 0;
+    if (n < 2) {
+      // Single point (e.g. a brand-new week, just the [0] starting value)
+      // can't draw a line -- render it as a flat 2-point line at that
+      // value so there's always something real on screen, never a blank
+      // chart on Monday morning.
+      var y0 = (maxV - vals[0]) / range * 60;
+      return "0.0," + y0.toFixed(1) + " 300.0," + y0.toFixed(1);
+    }
+    return vals.map(function (v, i) {
+      var x = i * 300 / (n - 1);
       var y = (maxV - v) / range * 60;
       return x.toFixed(1) + "," + y.toFixed(1);
     }).join(" ");
-    document.getElementById("sparkline-line").setAttribute("points", pts);
+  }
+
+  function renderSparkline(vals, priorVals) {
+    if (!vals || !vals.length) return;
+    var hasPrior = priorVals && priorVals.length > 1;
+    var all = hasPrior ? vals.concat(priorVals) : vals;
+    var maxV = Math.max.apply(null, all);
+    var minV = Math.min.apply(null, all);
+
+    document.getElementById("sparkline-line").setAttribute("points", linePoints(vals, maxV, minV));
+    document.getElementById("sparkline-prior").setAttribute("points", hasPrior ? linePoints(priorVals, maxV, minV) : "");
+
     var last = vals[vals.length - 1];
+    var priorLabel = hasPrior ? ("   ·   last week " + fmtPct(priorVals[priorVals.length - 1]) + " (faint)") : "";
     document.getElementById("sparkline-label").textContent =
-      "WEEK PATH   " + fmtPct(last) + "   sum of contract %";
+      "WEEK PATH   " + fmtPct(last) + "   sum of contract %" + priorLabel;
   }
 
   function miniChart(history, good) {
@@ -788,7 +807,7 @@
   function render(data) {
     renderSession(data.session);
     renderStats(data.stats);
-    renderSparkline(data.sparkline_cum_pct);
+    renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board);
     renderTickets(data);
     renderCalendar(data.calendar);
