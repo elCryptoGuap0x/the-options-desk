@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T14:10:00Z",
+  "generated_at": "2026-08-31T14:26:00Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -34,6 +34,61 @@
         "COIN",
         "IREN"
       ]
+    }
+  ],
+  "scan_log": [
+    {
+      "time": "10:15 ET",
+      "sym": "PCG",
+      "dir": "put",
+      "verdict": "skip",
+      "reason": "Still stuck between $13.36 and $13.66, never broke back below the morning's $13.085 low; volume has faded well off the opening spike."
+    },
+    {
+      "time": "10:15 ET",
+      "sym": "NVAX",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Ran from $9.10 up to $9.88 in the first 20 minutes, then slipped back to the $9.73-9.85 area as volume dried up; no news found behind the move."
+    },
+    {
+      "time": "10:15 ET",
+      "sym": "XE",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Ran from $17.32 to $18.94, then rolled over to $18.31 as volume faded; no catalyst found behind the move."
+    },
+    {
+      "time": "10:15 ET",
+      "sym": "SPY",
+      "verdict": "skip",
+      "reason": "Drifting slightly lower on thin, fading volume, no real move either way."
+    },
+    {
+      "time": "10:15 ET",
+      "sym": "WFRD",
+      "verdict": "skip",
+      "reason": "Volume too thin for the stock's size; a normal stop would land inside the bid/ask spread."
+    },
+    {
+      "time": "09:53 ET",
+      "sym": "PCG",
+      "dir": "put",
+      "verdict": "skip",
+      "reason": "Bounced off the open to $13.55, then faded back to $13.37; volume shrank every bar after the opening print."
+    },
+    {
+      "time": "09:53 ET",
+      "sym": "HAL",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Inching higher along with the broader oil-price jump, but volume kept shrinking bar to bar."
+    },
+    {
+      "time": "09:53 ET",
+      "sym": "NVDA",
+      "verdict": "skip",
+      "reason": "Chopped sideways through the first 20 minutes of the session with no real move either way."
     }
   ],
   "streak_last8": [
