@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T12:40:00Z",
+  "generated_at": "2026-08-31T12:56:57Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -47,81 +47,59 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 767.19,
-      "chg_pct": -0.28,
-      "history": [
-        767.19
-      ]
+      "last": 766.45,
+      "chg_pct": -0.38,
+      "history": [767.19, 766.45]
     },
     "QQQ": {
-      "last": 715.0,
-      "chg_pct": -0.2,
-      "history": [
-        715.0
-      ]
+      "last": 713.88,
+      "chg_pct": -0.36,
+      "history": [715.0, 713.88]
     },
     "DIA": {
-      "last": 533.45,
-      "chg_pct": -0.3,
-      "history": [
-        533.45
-      ]
+      "last": 533.07,
+      "chg_pct": -0.37,
+      "history": [533.45, 533.07]
     },
     "IWM": {
-      "last": 295.2,
-      "chg_pct": -0.19,
-      "history": [
-        295.2
-      ]
+      "last": 294.62,
+      "chg_pct": -0.38,
+      "history": [295.2, 294.62]
     },
     "VIXY": {
-      "last": 17.79,
-      "chg_pct": 0.74,
-      "history": [
-        17.79
-      ]
+      "last": 17.77,
+      "chg_pct": 0.62,
+      "history": [17.79, 17.77]
     },
     "AAPL": {
-      "last": 318.49,
-      "chg_pct": -0.38,
-      "history": [
-        318.49
-      ]
+      "last": 318.96,
+      "chg_pct": -0.23,
+      "history": [318.49, 318.96]
     },
     "MSFT": {
-      "last": 508.74,
-      "chg_pct": -0.93,
-      "history": [
-        508.74
-      ]
+      "last": 508.8,
+      "chg_pct": -0.92,
+      "history": [508.74, 508.8]
     },
     "NVDA": {
-      "last": 218.8,
-      "chg_pct": 0.57,
-      "history": [
-        218.8
-      ]
+      "last": 218.18,
+      "chg_pct": 0.29,
+      "history": [218.8, 218.18]
     },
     "BTC": {
-      "last": 78084.64,
-      "chg_pct": 0.43,
-      "history": [
-        78084.64
-      ]
+      "last": 77790.44,
+      "chg_pct": 0.05,
+      "history": [78084.64, 77790.44]
     },
     "ETH": {
-      "last": 2455.89,
-      "chg_pct": 1.44,
-      "history": [
-        2455.89
-      ]
+      "last": 2448.39,
+      "chg_pct": 1.13,
+      "history": [2455.89, 2448.39]
     },
     "SOL": {
-      "last": 103.03,
-      "chg_pct": 1.07,
-      "history": [
-        103.03
-      ]
+      "last": 102.6,
+      "chg_pct": 0.65,
+      "history": [103.03, 102.6]
     }
   },
   "news": [
