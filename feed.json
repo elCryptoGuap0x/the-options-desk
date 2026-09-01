@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T18:01:00Z",
+  "generated_at": "2026-09-01T18:48:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -66,25 +66,6 @@
   ],
   "scan_log": [
     {
-      "time": "13:05 ET",
-      "sym": "HOOD",
-      "verdict": "skip",
-      "reason": "A real slide continued from late morning, but already many bars into the decline with no fresh setup to act on."
-    },
-    {
-      "time": "13:05 ET",
-      "sym": "WIX",
-      "verdict": "skip",
-      "reason": "Reversed hard off a fresh low, but bounced three bars straight without a new low -- already too late, and volume stayed thin."
-    },
-    {
-      "time": "13:05 ET",
-      "sym": "NVS",
-      "dir": "put",
-      "verdict": "skip",
-      "reason": "A fresh session low on real expanding volume, but the contract's own price ran too far above what the account will size into."
-    },
-    {
       "time": "13:34 ET",
       "sym": "KLRA",
       "dir": "call",
@@ -130,6 +111,25 @@
       "dir": "call",
       "verdict": "skip",
       "reason": "Broke out on strong volume, but the nearest tradable option was priced well above what the account sizes into."
+    },
+    {
+      "time": "14:07 ET",
+      "sym": "MMED",
+      "verdict": "skip",
+      "reason": "A minor bounce off a pullback low inside an existing multi-hour range, not a fresh breakout -- and no short-dated option exists on the name at all."
+    },
+    {
+      "time": "14:07 ET",
+      "sym": "EC",
+      "verdict": "skip",
+      "reason": "Thin, tight chop all cycle with no real range or push to act on."
+    },
+    {
+      "time": "14:07 ET",
+      "sym": "VIST",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A clean close above its own tight range, but the breakout bar's volume fell well short of what the setup needs."
     }
   ],
   "streak_last8": [
@@ -144,8 +144,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 761.77,
-      "chg_pct": -0.69,
+      "last": 760.54,
+      "chg_pct": -0.85,
       "history": [
         767.05,
         761.62,
@@ -155,12 +155,13 @@
         762.25,
         761.925,
         762.035,
-        761.77
+        761.77,
+        760.54
       ]
     },
     "QQQ": {
-      "last": 707.96,
-      "chg_pct": -1.23,
+      "last": 706.08,
+      "chg_pct": -1.49,
       "history": [
         716.76,
         707.06,
@@ -170,12 +171,13 @@
         709.17,
         708.38,
         708.23,
-        707.96
+        707.96,
+        706.08
       ]
     },
     "DIA": {
-      "last": 527.53,
-      "chg_pct": -0.76,
+      "last": 527.22,
+      "chg_pct": -0.82,
       "history": [
         531.57,
         528.25,
@@ -185,12 +187,13 @@
         527.54,
         527.69,
         527.73,
-        527.53
+        527.53,
+        527.22
       ]
     },
     "IWM": {
-      "last": 290.67,
-      "chg_pct": -1.11,
+      "last": 290.41,
+      "chg_pct": -1.20,
       "history": [
         293.93,
         291.87,
@@ -200,12 +203,13 @@
         290.99,
         290.75,
         290.83,
-        290.67
+        290.67,
+        290.41
       ]
     },
     "VIXY": {
-      "last": 17.72,
-      "chg_pct": 2.55,
+      "last": 17.905,
+      "chg_pct": 3.62,
       "history": [
         17.28,
         17.59,
@@ -215,12 +219,13 @@
         17.642,
         17.69,
         17.69,
-        17.72
+        17.72,
+        17.905
       ]
     },
     "AAPL": {
-      "last": 325.555,
-      "chg_pct": 2.75,
+      "last": 324.675,
+      "chg_pct": 2.47,
       "history": [
         316.85,
         316.2,
@@ -230,12 +235,13 @@
         325.55,
         325.26,
         324.74,
-        325.555
+        325.555,
+        324.675
       ]
     },
     "MSFT": {
-      "last": 501.25,
-      "chg_pct": -1.19,
+      "last": 500.53,
+      "chg_pct": -1.33,
       "history": [
         507.29,
         500.4,
@@ -245,12 +251,13 @@
         500.65,
         500.85,
         501.2,
-        501.25
+        501.25,
+        500.53
       ]
     },
     "NVDA": {
-      "last": 218.1495,
-      "chg_pct": -1.19,
+      "last": 216.83,
+      "chg_pct": -1.79,
       "history": [
         220.78,
         216.93,
@@ -260,12 +267,13 @@
         219.61,
         218.47,
         218.345,
-        218.1495
+        218.1495,
+        216.83
       ]
     },
     "BTC": {
-      "last": 77335.41,
-      "chg_pct": -1.69,
+      "last": 76679.71,
+      "chg_pct": -2.52,
       "history": [
         77796.46,
         77953.25,
@@ -275,12 +283,13 @@
         77637.17,
         77502.13,
         77590.17,
-        77335.41
+        77335.41,
+        76679.71
       ]
     },
     "ETH": {
-      "last": 2422.27,
-      "chg_pct": -2.0,
+      "last": 2393.80,
+      "chg_pct": -3.15,
       "history": [
         2446.93,
         2445.59,
@@ -290,12 +299,13 @@
         2434.31,
         2432.81,
         2434.98,
-        2422.27
+        2422.27,
+        2393.80
       ]
     },
     "SOL": {
-      "last": 100.58,
-      "chg_pct": -2.93,
+      "last": 98.77,
+      "chg_pct": -4.69,
       "history": [
         101.98,
         101.86,
@@ -305,7 +315,8 @@
         101.04,
         100.83,
         100.93,
-        100.58
+        100.58,
+        98.77
       ]
     }
   },
