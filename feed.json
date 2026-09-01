@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T16:57:00Z",
+  "generated_at": "2026-09-01T17:15:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -38,59 +38,60 @@
   ],
   "scan_log": [
     {
-      "time": "10:57 ET",
+      "time": "13:05 ET",
+      "sym": "SPY",
+      "verdict": "skip",
+      "reason": "Rallied to a high near midday then rolled over, now stuck consolidating with no fresh push either way."
+    },
+    {
+      "time": "13:05 ET",
+      "sym": "QQQ",
+      "verdict": "skip",
+      "reason": "Bounced to a new intraday high but volume on the bounce was lighter than the leg down that preceded it."
+    },
+    {
+      "time": "13:05 ET",
+      "sym": "IWM",
+      "verdict": "skip",
+      "reason": "Same shape as QQQ -- a thin-volume bounce off the morning's decline, no real push behind it."
+    },
+    {
+      "time": "13:05 ET",
       "sym": "AAPL",
       "dir": "call",
       "verdict": "skip",
-      "reason": "Many bars deep into the same push that already stopped out once today; a pullback bar undercut the prior bar's low."
+      "reason": "Nudged to a marginal new high but on lighter volume than its earlier push, and it's already many bars into that same move."
     },
     {
-      "time": "10:57 ET",
+      "time": "13:05 ET",
       "sym": "MSFT",
       "verdict": "skip",
-      "reason": "Capped below this morning's high, printing progressively lower highs."
+      "reason": "Poked above its recent range intrabar but closed back inside it."
     },
     {
-      "time": "10:57 ET",
+      "time": "13:05 ET",
       "sym": "NVDA",
       "verdict": "skip",
-      "reason": "Stuck in a tight range since a rejection an hour ago, no fresh high or low."
+      "reason": "Chopping in a tight range since a rejection an hour earlier, no fresh high or low."
     },
     {
-      "time": "10:57 ET",
-      "sym": "SPY",
+      "time": "13:05 ET",
+      "sym": "HOOD",
       "verdict": "skip",
-      "reason": "New high but volume kept shrinking the whole way up."
+      "reason": "A real slide continued from late morning, but already many bars into the decline with no fresh setup to act on."
     },
     {
-      "time": "10:57 ET",
-      "sym": "QQQ",
-      "verdict": "skip",
-      "reason": "New high on light volume."
-    },
-    {
-      "time": "10:57 ET",
-      "sym": "IWM",
-      "verdict": "skip",
-      "reason": "New highs but volume stayed light throughout."
-    },
-    {
-      "time": "10:57 ET",
-      "sym": "FRVO",
-      "verdict": "skip",
-      "reason": "Still capped under this morning's wick high, already up huge on the day."
-    },
-    {
-      "time": "10:57 ET",
+      "time": "13:05 ET",
       "sym": "WIX",
       "verdict": "skip",
-      "reason": "Real, continuous climb all session but already up around 12% with no pause anywhere in the move."
+      "reason": "Reversed hard off a fresh low, but bounced three bars straight without a new low -- already too late, and volume stayed thin."
     },
     {
-      "time": "10:57 ET",
-      "sym": "HLF",
+      "time": "13:05 ET",
+      "sym": "NVS",
+      "dir": "put",
       "verdict": "skip",
-      "reason": "Real breakout earlier in the morning, but not caught until several bars too late to act on cleanly."
+      "reason": "A fresh session low on real expanding volume, but the contract's own price ran too far above what the account will size into."
     }
   ],
   "streak_last8": [
@@ -104,17 +105,17 @@
     "L"
   ],
   "market_board": {
-    "SPY": { "last": 762.25, "chg_pct": -0.63, "history": [767.05, 761.62, 761.65, 761.92, 764.095, 762.25] },
-    "QQQ": { "last": 709.17, "chg_pct": -1.06, "history": [716.76, 707.06, 706.90, 707.66, 710.19, 709.17] },
-    "DIA": { "last": 527.54, "chg_pct": -0.76, "history": [531.57, 528.25, 528.56, 529.06, 530.62, 527.54] },
-    "IWM": { "last": 290.99, "chg_pct": -1.00, "history": [293.93, 291.87, 291.89, 291.44, 292.46, 290.99] },
-    "VIXY": { "last": 17.642, "chg_pct": 2.10, "history": [17.28, 17.59, 17.63, 17.67, 17.445, 17.642] },
-    "AAPL": { "last": 325.55, "chg_pct": 2.75, "history": [316.85, 316.20, 316.07, 320.88, 324.6506, 325.55] },
-    "MSFT": { "last": 500.65, "chg_pct": -1.31, "history": [507.29, 500.40, 501.04, 502.26, 503.355, 500.65] },
-    "NVDA": { "last": 219.61, "chg_pct": -0.53, "history": [220.78, 216.93, 216.91, 217.12, 217.935, 219.61] },
-    "BTC": { "last": 77637.17, "chg_pct": -1.30, "history": [77796.46, 77953.25, 77803.14, 78033.56, 78307.65, 77637.17] },
-    "ETH": { "last": 2434.31, "chg_pct": -1.50, "history": [2446.93, 2445.59, 2440.98, 2442.66, 2451.67, 2434.31] },
-    "SOL": { "last": 101.04, "chg_pct": -2.48, "history": [101.98, 101.86, 101.85, 102.09, 102.34, 101.04] }
+    "SPY": { "last": 761.925, "chg_pct": -0.67, "history": [767.05, 761.62, 761.65, 761.92, 764.095, 762.25, 761.925] },
+    "QQQ": { "last": 708.38, "chg_pct": -1.17, "history": [716.76, 707.06, 706.90, 707.66, 710.19, 709.17, 708.38] },
+    "DIA": { "last": 527.69, "chg_pct": -0.73, "history": [531.57, 528.25, 528.56, 529.06, 530.62, 527.54, 527.69] },
+    "IWM": { "last": 290.75, "chg_pct": -1.08, "history": [293.93, 291.87, 291.89, 291.44, 292.46, 290.99, 290.75] },
+    "VIXY": { "last": 17.69, "chg_pct": 2.37, "history": [17.28, 17.59, 17.63, 17.67, 17.445, 17.642, 17.69] },
+    "AAPL": { "last": 325.26, "chg_pct": 2.66, "history": [316.85, 316.20, 316.07, 320.88, 324.6506, 325.55, 325.26] },
+    "MSFT": { "last": 500.85, "chg_pct": -1.27, "history": [507.29, 500.40, 501.04, 502.26, 503.355, 500.65, 500.85] },
+    "NVDA": { "last": 218.47, "chg_pct": -1.05, "history": [220.78, 216.93, 216.91, 217.12, 217.935, 219.61, 218.47] },
+    "BTC": { "last": 77502.13, "chg_pct": -1.47, "history": [77796.46, 77953.25, 77803.14, 78033.56, 78307.65, 77637.17, 77502.13] },
+    "ETH": { "last": 2432.81, "chg_pct": -1.57, "history": [2446.93, 2445.59, 2440.98, 2442.66, 2451.67, 2434.31, 2432.81] },
+    "SOL": { "last": 100.83, "chg_pct": -2.70, "history": [101.98, 101.86, 101.85, 102.09, 102.34, 101.04, 100.83] }
   },
   "news": [
     {
