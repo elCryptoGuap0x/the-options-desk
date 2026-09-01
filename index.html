@@ -576,8 +576,13 @@
 
   // Live "next" text, recomputed every tick (not just on feed poll) so
   // the countdown-style drama moves with the real clock, not the ~45s
-  // poll cadence. Real flatten window (1:30-2:00 PM CT / 2:30-3:00 PM
-  // ET) and close (3:00 PM CT / 4:00 PM ET) -- same rule as trader's own.
+  // poll cadence. Real flatten window (2:00-2:45 PM CT / 3:00-3:45 PM ET,
+  // then within 15 min of close) and close (3:00 PM CT / 4:00 PM ET) --
+  // same rule as trader's own. Corrected 9/1 (real bug, user-caught): this
+  // was still hardcoded to the pre-8/31 window (1:30 PM CT / 2:30 PM ET
+  // last entry) for a full day after CLAUDE.md moved to 3:00 PM ET --
+  // exact same "two clocks disagree" class of bug as the briefing-file
+  // and gate-pending fixes, just on the public-facing side this time.
   function sessionNextText(session) {
     if (!session) return "—";
     if (session.market_state !== "OPEN") {
@@ -585,11 +590,11 @@
     }
     var parts = new Date().toLocaleTimeString("en-US", { hour12: false, hour: "2-digit", minute: "2-digit", timeZone: "America/Chicago" }).split(":");
     var mins = parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
-    var flattenStart = 13 * 60 + 30, flattenEnd = 14 * 60, closeTime = 15 * 60;
+    var flattenStart = 14 * 60, flattenEnd = 14 * 60 + 45, closeTime = 15 * 60;
     if (mins >= closeTime) return "MARKET CLOSED";
     if (mins >= flattenEnd) return "CLOSING SOON";
     if (mins >= flattenStart) return "FLATTEN WINDOW — NO NEW ENTRIES";
-    return "NEXT FLATTEN 1:30 CT";
+    return "NEXT FLATTEN 2:00 CT";
   }
 
   function renderSession(session) {
