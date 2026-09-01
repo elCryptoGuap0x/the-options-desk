@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T13:53:00Z",
+  "generated_at": "2026-09-01T14:46:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -38,6 +38,44 @@
   ],
   "scan_log": [
     {
+      "time": "10:29 ET",
+      "sym": "AAPL",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Still pushing to marginal new highs but already many bars into the same move -- waiting this one out rather than chasing it further."
+    },
+    {
+      "time": "10:29 ET",
+      "sym": "NVDA",
+      "dir": "put",
+      "verdict": "skip",
+      "reason": "Broke down then bounced hard off its low, now fading again off a marginal new high -- a possible reversal building but no clean setup down yet."
+    },
+    {
+      "time": "10:29 ET",
+      "sym": "SPY",
+      "verdict": "skip",
+      "reason": "Grinding to new highs all morning but volume has kept shrinking the whole way up -- a weak, unconvincing push."
+    },
+    {
+      "time": "10:29 ET",
+      "sym": "FRVO",
+      "verdict": "skip",
+      "reason": "Up sharply on the day but starting to stall -- two bars in a row failing to hold its own high."
+    },
+    {
+      "time": "10:29 ET",
+      "sym": "NVS",
+      "verdict": "skip",
+      "reason": "Chopped back down the last couple bars, no clean push either direction."
+    },
+    {
+      "time": "10:29 ET",
+      "sym": "MSFT",
+      "verdict": "skip",
+      "reason": "Still basing below this morning's high, no fresh push yet."
+    },
+    {
       "time": "09:47 ET",
       "sym": "AAPL",
       "dir": "call",
@@ -60,47 +98,7 @@
       "time": "09:47 ET",
       "sym": "DUOL",
       "verdict": "skip",
-      "reason": "Violent back-and-forth swing right at the open — no clean structure yet."
-    },
-    {
-      "time": "09:47 ET",
-      "sym": "YEXT",
-      "verdict": "skip",
-      "reason": "Faded hard off its morning highs and is bleeding lower, with no clean setup either way."
-    },
-    {
-      "time": "09:47 ET",
-      "sym": "FRVO",
-      "verdict": "skip",
-      "reason": "Choppy range all morning, no clean breakout to trade."
-    },
-    {
-      "time": "08:54 ET",
-      "sym": "AAPL",
-      "dir": "call",
-      "verdict": "skip",
-      "reason": "Call setup broke out on a premarket bar, but the session hasn't opened yet so there's no real volume or spread to confirm it."
-    },
-    {
-      "time": "08:54 ET",
-      "sym": "NVDA",
-      "dir": "put",
-      "verdict": "skip",
-      "reason": "Put setup broke down on a premarket bar too, same story — no regular session yet to confirm it actually holds."
-    },
-    {
-      "time": "14:24 ET",
-      "sym": "CAR",
-      "dir": "call",
-      "verdict": "skip",
-      "reason": "Checked again after running over 5% for nearly an hour — still no dated news or event behind the move, and the rally has stalled rather than pushing to a new extreme."
-    },
-    {
-      "time": "14:16 ET",
-      "sym": "CAR",
-      "dir": "call",
-      "verdict": "skip",
-      "reason": "Multi-leg rally all day on real, sustained volume, pushing to fresh highs, but no company-specific news or event explains the move today — just longstanding heavy short interest sitting in the background."
+      "reason": "Violent back-and-forth swing right at the open -- no clean structure yet."
     }
   ],
   "streak_last8": [
@@ -114,17 +112,17 @@
     "L"
   ],
   "market_board": {
-    "SPY": { "last": 761.92, "chg_pct": -0.67, "history": [767.05, 761.62, 761.65, 761.92] },
-    "QQQ": { "last": 707.66, "chg_pct": -1.27, "history": [716.76, 707.06, 706.90, 707.66] },
-    "DIA": { "last": 529.06, "chg_pct": -0.47, "history": [531.57, 528.25, 528.56, 529.06] },
-    "IWM": { "last": 291.44, "chg_pct": -0.85, "history": [293.93, 291.87, 291.89, 291.44] },
-    "VIXY": { "last": 17.67, "chg_pct": 2.23, "history": [17.28, 17.59, 17.63, 17.67] },
-    "AAPL": { "last": 320.88, "chg_pct": 1.27, "history": [316.85, 316.20, 316.07, 320.88] },
-    "MSFT": { "last": 502.26, "chg_pct": -0.99, "history": [507.29, 500.40, 501.04, 502.26] },
-    "NVDA": { "last": 217.12, "chg_pct": -1.66, "history": [220.78, 216.93, 216.91, 217.12] },
-    "BTC": { "last": 78033.56, "chg_pct": -0.80, "history": [77796.46, 77953.25, 77803.14, 78033.56] },
-    "ETH": { "last": 2442.66, "chg_pct": -1.17, "history": [2446.93, 2445.59, 2440.98, 2442.66] },
-    "SOL": { "last": 102.09, "chg_pct": -1.48, "history": [101.98, 101.86, 101.85, 102.09] }
+    "SPY": { "last": 764.095, "chg_pct": -0.39, "history": [767.05, 761.62, 761.65, 761.92, 764.095] },
+    "QQQ": { "last": 710.19, "chg_pct": -0.92, "history": [716.76, 707.06, 706.90, 707.66, 710.19] },
+    "DIA": { "last": 530.62, "chg_pct": -0.18, "history": [531.57, 528.25, 528.56, 529.06, 530.62] },
+    "IWM": { "last": 292.46, "chg_pct": -0.50, "history": [293.93, 291.87, 291.89, 291.44, 292.46] },
+    "VIXY": { "last": 17.445, "chg_pct": 0.96, "history": [17.28, 17.59, 17.63, 17.67, 17.445] },
+    "AAPL": { "last": 324.6506, "chg_pct": 2.46, "history": [316.85, 316.20, 316.07, 320.88, 324.6506] },
+    "MSFT": { "last": 503.355, "chg_pct": -0.78, "history": [507.29, 500.40, 501.04, 502.26, 503.355] },
+    "NVDA": { "last": 217.935, "chg_pct": -1.29, "history": [220.78, 216.93, 216.91, 217.12, 217.935] },
+    "BTC": { "last": 78307.65, "chg_pct": -0.45, "history": [77796.46, 77953.25, 77803.14, 78033.56, 78307.65] },
+    "ETH": { "last": 2451.67, "chg_pct": -0.80, "history": [2446.93, 2445.59, 2440.98, 2442.66, 2451.67] },
+    "SOL": { "last": 102.34, "chg_pct": -1.25, "history": [101.98, 101.86, 101.85, 102.09, 102.34] }
   },
   "news": [
     {
