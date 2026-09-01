@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:39:00Z",
+  "generated_at": "2026-09-01T12:59:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -37,6 +37,20 @@
     }
   ],
   "scan_log": [
+    {
+      "time": "08:54 ET",
+      "sym": "AAPL",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Call setup broke out on a premarket bar, but the session hasn't opened yet so there's no real volume or spread to confirm it."
+    },
+    {
+      "time": "08:54 ET",
+      "sym": "NVDA",
+      "dir": "put",
+      "verdict": "skip",
+      "reason": "Put setup broke down on a premarket bar too, same story — no regular session yet to confirm it actually holds."
+    },
     {
       "time": "14:24 ET",
       "sym": "CAR",
@@ -92,20 +106,6 @@
       "dir": "put",
       "verdict": "skip",
       "reason": "Ground steadily lower to a fresh session low, but volume stayed thin and inconsistent the whole way down — no confirming push and no story behind the move."
-    },
-    {
-      "time": "12:01 ET",
-      "sym": "TSLA",
-      "dir": "call",
-      "verdict": "skip",
-      "reason": "Broke through this morning's high on stronger volume, but nothing company-specific explains the move and it's the third try at this same level today."
-    },
-    {
-      "time": "12:01 ET",
-      "sym": "PCG",
-      "dir": "put",
-      "verdict": "skip",
-      "reason": "Bounced hard off the lows on the heaviest volume of the day, undoing the morning's slide."
     }
   ],
   "streak_last8": [
@@ -119,17 +119,17 @@
     "L"
   ],
   "market_board": {
-    "SPY": { "last": 767.05, "chg_pct": 0.0, "history": [767.05] },
-    "QQQ": { "last": 716.76, "chg_pct": 0.0, "history": [716.76] },
-    "DIA": { "last": 531.57, "chg_pct": 0.0, "history": [531.57] },
-    "IWM": { "last": 293.93, "chg_pct": 0.0, "history": [293.93] },
-    "VIXY": { "last": 17.28, "chg_pct": 0.0, "history": [17.28] },
-    "AAPL": { "last": 316.85, "chg_pct": 0.0, "history": [316.85] },
-    "MSFT": { "last": 507.29, "chg_pct": 0.0, "history": [507.29] },
-    "NVDA": { "last": 220.78, "chg_pct": 0.0, "history": [220.78] },
-    "BTC": { "last": 77796.46, "chg_pct": -1.10, "history": [77796.46] },
-    "ETH": { "last": 2446.93, "chg_pct": -0.99, "history": [2446.93] },
-    "SOL": { "last": 101.98, "chg_pct": -1.59, "history": [101.98] }
+    "SPY": { "last": 761.62, "chg_pct": -0.71, "history": [767.05, 761.62] },
+    "QQQ": { "last": 707.06, "chg_pct": -1.35, "history": [716.76, 707.06] },
+    "DIA": { "last": 528.25, "chg_pct": -0.62, "history": [531.57, 528.25] },
+    "IWM": { "last": 291.87, "chg_pct": -0.70, "history": [293.93, 291.87] },
+    "VIXY": { "last": 17.59, "chg_pct": 1.79, "history": [17.28, 17.59] },
+    "AAPL": { "last": 316.20, "chg_pct": -0.21, "history": [316.85, 316.20] },
+    "MSFT": { "last": 500.40, "chg_pct": -1.36, "history": [507.29, 500.40] },
+    "NVDA": { "last": 216.93, "chg_pct": -1.74, "history": [220.78, 216.93] },
+    "BTC": { "last": 77953.25, "chg_pct": -0.90, "history": [77796.46, 77953.25] },
+    "ETH": { "last": 2445.59, "chg_pct": -1.05, "history": [2446.93, 2445.59] },
+    "SOL": { "last": 101.86, "chg_pct": -1.69, "history": [101.98, 101.86] }
   },
   "news": [
     {
