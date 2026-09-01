@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:59:00Z",
+  "generated_at": "2026-09-01T13:24:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -119,17 +119,17 @@
     "L"
   ],
   "market_board": {
-    "SPY": { "last": 761.62, "chg_pct": -0.71, "history": [767.05, 761.62] },
-    "QQQ": { "last": 707.06, "chg_pct": -1.35, "history": [716.76, 707.06] },
-    "DIA": { "last": 528.25, "chg_pct": -0.62, "history": [531.57, 528.25] },
-    "IWM": { "last": 291.87, "chg_pct": -0.70, "history": [293.93, 291.87] },
-    "VIXY": { "last": 17.59, "chg_pct": 1.79, "history": [17.28, 17.59] },
-    "AAPL": { "last": 316.20, "chg_pct": -0.21, "history": [316.85, 316.20] },
-    "MSFT": { "last": 500.40, "chg_pct": -1.36, "history": [507.29, 500.40] },
-    "NVDA": { "last": 216.93, "chg_pct": -1.74, "history": [220.78, 216.93] },
-    "BTC": { "last": 77953.25, "chg_pct": -0.90, "history": [77796.46, 77953.25] },
-    "ETH": { "last": 2445.59, "chg_pct": -1.05, "history": [2446.93, 2445.59] },
-    "SOL": { "last": 101.86, "chg_pct": -1.69, "history": [101.98, 101.86] }
+    "SPY": { "last": 761.65, "chg_pct": -0.70, "history": [767.05, 761.62, 761.65] },
+    "QQQ": { "last": 706.90, "chg_pct": -1.38, "history": [716.76, 707.06, 706.90] },
+    "DIA": { "last": 528.56, "chg_pct": -0.57, "history": [531.57, 528.25, 528.56] },
+    "IWM": { "last": 291.89, "chg_pct": -0.69, "history": [293.93, 291.87, 291.89] },
+    "VIXY": { "last": 17.63, "chg_pct": 2.03, "history": [17.28, 17.59, 17.63] },
+    "AAPL": { "last": 316.07, "chg_pct": -0.25, "history": [316.85, 316.20, 316.07] },
+    "MSFT": { "last": 501.04, "chg_pct": -1.23, "history": [507.29, 500.40, 501.04] },
+    "NVDA": { "last": 216.91, "chg_pct": -1.76, "history": [220.78, 216.93, 216.91] },
+    "BTC": { "last": 77803.14, "chg_pct": -1.09, "history": [77796.46, 77953.25, 77803.14] },
+    "ETH": { "last": 2440.98, "chg_pct": -1.24, "history": [2446.93, 2445.59, 2440.98] },
+    "SOL": { "last": 101.85, "chg_pct": -1.71, "history": [101.98, 101.86, 101.85] }
   },
   "news": [
     {
