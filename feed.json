@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T19:08:00Z",
+  "generated_at": "2026-09-01T19:27:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -43,6 +43,26 @@
   "tickets": [
     {
       "day": "Tuesday",
+      "sym": "SPY",
+      "dir": "put",
+      "entry": "2:49p",
+      "exit": "2:56p",
+      "dur": "8 min",
+      "dte": "0DTE",
+      "pct": -50.0
+    },
+    {
+      "day": "Tuesday",
+      "sym": "QQQ",
+      "dir": "put",
+      "entry": "2:49p",
+      "exit": "2:55p",
+      "dur": "6 min",
+      "dte": "0DTE",
+      "pct": -48.9
+    },
+    {
+      "day": "Tuesday",
       "sym": "AAPL",
       "dir": "call",
       "entry": "9:52a",
@@ -67,19 +87,6 @@
     }
   ],
   "scan_log": [
-    {
-      "time": "13:34 ET",
-      "sym": "KLRA",
-      "dir": "call",
-      "verdict": "skip",
-      "reason": "Closed above a tight range it had been coiling in, but the breakout bar's volume was far lighter than the base it broke from."
-    },
-    {
-      "time": "13:34 ET",
-      "sym": "CBIO",
-      "verdict": "skip",
-      "reason": "Choppy, thin trading with several quiet no-volume prints -- no clean range to read."
-    },
     {
       "time": "13:34 ET",
       "sym": "CTMX",
@@ -132,11 +139,18 @@
       "dir": "call",
       "verdict": "skip",
       "reason": "A clean close above its own tight range, but the breakout bar's volume fell well short of what the setup needs."
+    },
+    {
+      "time": "15:13 ET",
+      "sym": "VIXY",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A real breakout formed, but by the time it could be acted on the trading window for new positions had already closed for the day, and the price had drifted back into its old range anyway."
     }
   ],
   "streak_last8": [
     "L",
-    "W",
+    "L",
     "L",
     "L",
     "L",
@@ -146,10 +160,9 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 760.7295,
-      "chg_pct": -0.82,
+      "last": 761.255,
+      "chg_pct": -0.76,
       "history": [
-        767.05,
         761.62,
         761.65,
         761.92,
@@ -159,14 +172,14 @@
         762.035,
         761.77,
         760.54,
-        760.7295
+        760.7295,
+        761.255
       ]
     },
     "QQQ": {
-      "last": 706.41,
-      "chg_pct": -1.44,
+      "last": 707.41,
+      "chg_pct": -1.30,
       "history": [
-        716.76,
         707.06,
         706.9,
         707.66,
@@ -176,14 +189,14 @@
         708.23,
         707.96,
         706.08,
-        706.41
+        706.41,
+        707.41
       ]
     },
     "DIA": {
-      "last": 527.2601,
-      "chg_pct": -0.81,
+      "last": 527.57,
+      "chg_pct": -0.75,
       "history": [
-        531.57,
         528.25,
         528.56,
         529.06,
@@ -193,14 +206,14 @@
         527.73,
         527.53,
         527.22,
-        527.2601
+        527.2601,
+        527.57
       ]
     },
     "IWM": {
-      "last": 290.435,
-      "chg_pct": -1.19,
+      "last": 290.665,
+      "chg_pct": -1.11,
       "history": [
-        293.93,
         291.87,
         291.89,
         291.44,
@@ -210,14 +223,14 @@
         290.83,
         290.67,
         290.41,
-        290.435
+        290.435,
+        290.665
       ]
     },
     "VIXY": {
-      "last": 17.9242,
-      "chg_pct": 3.73,
+      "last": 17.855,
+      "chg_pct": 3.33,
       "history": [
-        17.28,
         17.59,
         17.63,
         17.67,
@@ -227,14 +240,14 @@
         17.69,
         17.72,
         17.905,
-        17.9242
+        17.9242,
+        17.855
       ]
     },
     "AAPL": {
-      "last": 325.5501,
-      "chg_pct": 2.75,
+      "last": 325.80,
+      "chg_pct": 2.82,
       "history": [
-        316.85,
         316.2,
         316.07,
         320.88,
@@ -244,14 +257,14 @@
         324.74,
         325.555,
         324.675,
-        325.5501
+        325.5501,
+        325.80
       ]
     },
     "MSFT": {
-      "last": 500.8851,
-      "chg_pct": -1.26,
+      "last": 500.675,
+      "chg_pct": -1.30,
       "history": [
-        507.29,
         500.4,
         501.04,
         502.26,
@@ -261,14 +274,14 @@
         501.2,
         501.25,
         500.53,
-        500.8851
+        500.8851,
+        500.675
       ]
     },
     "NVDA": {
-      "last": 217.300,
-      "chg_pct": -1.58,
+      "last": 217.61,
+      "chg_pct": -1.44,
       "history": [
-        220.78,
         216.93,
         216.91,
         217.12,
@@ -278,14 +291,14 @@
         218.345,
         218.1495,
         216.83,
-        217.300
+        217.300,
+        217.61
       ]
     },
     "BTC": {
-      "last": 77165.78,
-      "chg_pct": -1.90,
+      "last": 77302.05,
+      "chg_pct": -1.72,
       "history": [
-        77796.46,
         77953.25,
         77803.14,
         78033.56,
@@ -295,14 +308,14 @@
         77590.17,
         77335.41,
         76679.71,
-        77165.78
+        77165.78,
+        77302.05
       ]
     },
     "ETH": {
-      "last": 2415.005,
-      "chg_pct": -2.29,
+      "last": 2419.38,
+      "chg_pct": -2.11,
       "history": [
-        2446.93,
         2445.59,
         2440.98,
         2442.66,
@@ -312,14 +325,14 @@
         2434.98,
         2422.27,
         2393.80,
-        2415.005
+        2415.005,
+        2419.38
       ]
     },
     "SOL": {
-      "last": 99.7388,
-      "chg_pct": -3.74,
+      "last": 99.94,
+      "chg_pct": -3.56,
       "history": [
-        101.98,
         101.86,
         101.85,
         102.09,
@@ -329,7 +342,8 @@
         100.93,
         100.58,
         98.77,
-        99.7388
+        99.7388,
+        99.94
       ]
     }
   },
@@ -341,35 +355,31 @@
     },
     {
       "tag": "Equities",
-      "title": "Futures red across the board on the Hormuz escalation",
-      "summary": "S&P 500, Nasdaq, Dow, and Russell 2000 futures all traded lower premarket as the shipping-route risk weighed on broad risk appetite."
+      "title": "Stocks close lower on the Hormuz escalation",
+      "summary": "The Dow, Nasdaq, and S&P 500 all finished Tuesday's session lower as renewed Strait of Hormuz tanker strikes weighed on broad risk appetite; crude surged on the shipping-route risk."
     },
     {
       "tag": "Equities",
-      "title": "Energy and commodity names outperforming premarket",
-      "summary": "Names tied to oil and gas production traded higher premarket as crude climbed on the Strait of Hormuz risk, bucking the broader red tape."
+      "title": "Energy names outperforming, chipmakers lead the decline",
+      "summary": "Names tied to oil and gas production traded higher as crude climbed on the Hormuz risk, while chip and broader tech names took the brunt of the day's intraday selloff."
     },
     {
       "tag": "Crypto",
-      "title": "Bitcoin and Ether soften overnight, proxy basket underperforms spot",
-      "summary": "BTC and ETH both traded modestly lower overnight, roughly 1-1.6% off their prior close. The broader crypto-proxy basket fell further than spot, a real divergence forming as the session opens."
+      "title": "Bitcoin and Ether soften, proxy basket underperforms spot",
+      "summary": "BTC and ETH both traded lower on the session, with the broader crypto-proxy equity basket falling further than spot -- a real divergence that persisted most of the day before narrowing somewhat into the afternoon."
     },
     {
       "tag": "Macro",
-      "title": "ISM Manufacturing PMI due today",
-      "summary": "The week's first scheduled economic print lands this morning, with JOLTs, ADP, and Nonfarm Payrolls still ahead later in the week."
+      "title": "Rate-cut odds jump ahead of the Sept 15-16 FOMC meeting",
+      "summary": "Futures-implied odds of a 25bp cut at the September Fed meeting rose meaningfully during the session, alongside firm Treasury yields, as markets continued digesting last week's Jackson Hole remarks."
     },
     {
       "tag": "Macro",
-      "title": "Markets still digesting Fed Chair Warsh's hawkish Jackson Hole remarks",
-      "summary": "The 10-year yield continues to hold near 4.78%, largely unchanged since Friday's address describing financial conditions as not broadly restrictive."
+      "title": "ISM Manufacturing PMI printed in line",
+      "summary": "The week's first scheduled economic release landed broadly in line with recent readings, with equities firming rather than selling off further in its immediate aftermath."
     }
   ],
   "calendar": [
-    {
-      "what": "ISM Manufacturing PMI",
-      "when": "Tue 9:00 CT"
-    },
     {
       "what": "JOLTs Job Openings",
       "when": "Wed 9:00 CT"
@@ -381,6 +391,14 @@
     {
       "what": "Nonfarm Payrolls / Unemployment Rate",
       "when": "Fri 7:30 CT"
+    },
+    {
+      "what": "CPI",
+      "when": "Thu 9/11 (date TBD, next week)"
+    },
+    {
+      "what": "FOMC Decision",
+      "when": "Wed 9/16"
     }
   ]
 }
