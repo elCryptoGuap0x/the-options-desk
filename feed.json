@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T14:46:00Z",
+  "generated_at": "2026-09-01T16:57:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -38,67 +38,59 @@
   ],
   "scan_log": [
     {
-      "time": "10:29 ET",
+      "time": "10:57 ET",
       "sym": "AAPL",
       "dir": "call",
       "verdict": "skip",
-      "reason": "Still pushing to marginal new highs but already many bars into the same move -- waiting this one out rather than chasing it further."
+      "reason": "Many bars deep into the same push that already stopped out once today; a pullback bar undercut the prior bar's low."
     },
     {
-      "time": "10:29 ET",
-      "sym": "NVDA",
-      "dir": "put",
+      "time": "10:57 ET",
+      "sym": "MSFT",
       "verdict": "skip",
-      "reason": "Broke down then bounced hard off its low, now fading again off a marginal new high -- a possible reversal building but no clean setup down yet."
+      "reason": "Capped below this morning's high, printing progressively lower highs."
     },
     {
-      "time": "10:29 ET",
+      "time": "10:57 ET",
+      "sym": "NVDA",
+      "verdict": "skip",
+      "reason": "Stuck in a tight range since a rejection an hour ago, no fresh high or low."
+    },
+    {
+      "time": "10:57 ET",
       "sym": "SPY",
       "verdict": "skip",
-      "reason": "Grinding to new highs all morning but volume has kept shrinking the whole way up -- a weak, unconvincing push."
+      "reason": "New high but volume kept shrinking the whole way up."
     },
     {
-      "time": "10:29 ET",
+      "time": "10:57 ET",
+      "sym": "QQQ",
+      "verdict": "skip",
+      "reason": "New high on light volume."
+    },
+    {
+      "time": "10:57 ET",
+      "sym": "IWM",
+      "verdict": "skip",
+      "reason": "New highs but volume stayed light throughout."
+    },
+    {
+      "time": "10:57 ET",
       "sym": "FRVO",
       "verdict": "skip",
-      "reason": "Up sharply on the day but starting to stall -- two bars in a row failing to hold its own high."
+      "reason": "Still capped under this morning's wick high, already up huge on the day."
     },
     {
-      "time": "10:29 ET",
-      "sym": "NVS",
+      "time": "10:57 ET",
+      "sym": "WIX",
       "verdict": "skip",
-      "reason": "Chopped back down the last couple bars, no clean push either direction."
+      "reason": "Real, continuous climb all session but already up around 12% with no pause anywhere in the move."
     },
     {
-      "time": "10:29 ET",
-      "sym": "MSFT",
+      "time": "10:57 ET",
+      "sym": "HLF",
       "verdict": "skip",
-      "reason": "Still basing below this morning's high, no fresh push yet."
-    },
-    {
-      "time": "09:47 ET",
-      "sym": "AAPL",
-      "dir": "call",
-      "verdict": "gate wait",
-      "reason": "Pushed to a fresh high on real volume; waiting for the next bar to confirm before it's tradeable."
-    },
-    {
-      "time": "09:47 ET",
-      "sym": "MSFT",
-      "verdict": "skip",
-      "reason": "Bounced hard off a deep morning low and is climbing back, but the move hasn't been confirmed yet."
-    },
-    {
-      "time": "09:47 ET",
-      "sym": "CRK",
-      "verdict": "skip",
-      "reason": "Choppy, bouncing without a clean push either way."
-    },
-    {
-      "time": "09:47 ET",
-      "sym": "DUOL",
-      "verdict": "skip",
-      "reason": "Violent back-and-forth swing right at the open -- no clean structure yet."
+      "reason": "Real breakout earlier in the morning, but not caught until several bars too late to act on cleanly."
     }
   ],
   "streak_last8": [
@@ -112,17 +104,17 @@
     "L"
   ],
   "market_board": {
-    "SPY": { "last": 764.095, "chg_pct": -0.39, "history": [767.05, 761.62, 761.65, 761.92, 764.095] },
-    "QQQ": { "last": 710.19, "chg_pct": -0.92, "history": [716.76, 707.06, 706.90, 707.66, 710.19] },
-    "DIA": { "last": 530.62, "chg_pct": -0.18, "history": [531.57, 528.25, 528.56, 529.06, 530.62] },
-    "IWM": { "last": 292.46, "chg_pct": -0.50, "history": [293.93, 291.87, 291.89, 291.44, 292.46] },
-    "VIXY": { "last": 17.445, "chg_pct": 0.96, "history": [17.28, 17.59, 17.63, 17.67, 17.445] },
-    "AAPL": { "last": 324.6506, "chg_pct": 2.46, "history": [316.85, 316.20, 316.07, 320.88, 324.6506] },
-    "MSFT": { "last": 503.355, "chg_pct": -0.78, "history": [507.29, 500.40, 501.04, 502.26, 503.355] },
-    "NVDA": { "last": 217.935, "chg_pct": -1.29, "history": [220.78, 216.93, 216.91, 217.12, 217.935] },
-    "BTC": { "last": 78307.65, "chg_pct": -0.45, "history": [77796.46, 77953.25, 77803.14, 78033.56, 78307.65] },
-    "ETH": { "last": 2451.67, "chg_pct": -0.80, "history": [2446.93, 2445.59, 2440.98, 2442.66, 2451.67] },
-    "SOL": { "last": 102.34, "chg_pct": -1.25, "history": [101.98, 101.86, 101.85, 102.09, 102.34] }
+    "SPY": { "last": 762.25, "chg_pct": -0.63, "history": [767.05, 761.62, 761.65, 761.92, 764.095, 762.25] },
+    "QQQ": { "last": 709.17, "chg_pct": -1.06, "history": [716.76, 707.06, 706.90, 707.66, 710.19, 709.17] },
+    "DIA": { "last": 527.54, "chg_pct": -0.76, "history": [531.57, 528.25, 528.56, 529.06, 530.62, 527.54] },
+    "IWM": { "last": 290.99, "chg_pct": -1.00, "history": [293.93, 291.87, 291.89, 291.44, 292.46, 290.99] },
+    "VIXY": { "last": 17.642, "chg_pct": 2.10, "history": [17.28, 17.59, 17.63, 17.67, 17.445, 17.642] },
+    "AAPL": { "last": 325.55, "chg_pct": 2.75, "history": [316.85, 316.20, 316.07, 320.88, 324.6506, 325.55] },
+    "MSFT": { "last": 500.65, "chg_pct": -1.31, "history": [507.29, 500.40, 501.04, 502.26, 503.355, 500.65] },
+    "NVDA": { "last": 219.61, "chg_pct": -0.53, "history": [220.78, 216.93, 216.91, 217.12, 217.935, 219.61] },
+    "BTC": { "last": 77637.17, "chg_pct": -1.30, "history": [77796.46, 77953.25, 77803.14, 78033.56, 78307.65, 77637.17] },
+    "ETH": { "last": 2434.31, "chg_pct": -1.50, "history": [2446.93, 2445.59, 2440.98, 2442.66, 2451.67, 2434.31] },
+    "SOL": { "last": 101.04, "chg_pct": -2.48, "history": [101.98, 101.86, 101.85, 102.09, 102.34, 101.04] }
   },
   "news": [
     {
