@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T14:11:30Z",
+  "generated_at": "2026-09-02T14:24:53Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -179,86 +179,86 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 763.99,
-      "chg_pct": 0.29,
-      "history": [762.39, 762.24, 762.81, 761.99, 762.37, 763.99]
+      "last": 765.27,
+      "chg_pct": 0.46,
+      "history": [763.04, 763.74, 763.70, 764.24, 764.83, 765.27]
     },
     "QQQ": {
-      "last": 707.48,
-      "chg_pct": -0.02,
-      "history": [706.65, 706.40, 706.87, 705.84, 705.38, 707.48]
+      "last": 709.16,
+      "chg_pct": 0.21,
+      "history": [706.16, 706.68, 707.00, 707.68, 708.55, 709.16]
     },
     "DIA": {
-      "last": 530.83,
-      "chg_pct": 0.58,
-      "history": [530.00, 530.27, 530.10, 529.39, 530.14, 530.83]
+      "last": 531.14,
+      "chg_pct": 0.64,
+      "history": [530.31, 530.82, 530.71, 531.05, 531.26, 531.14]
     },
     "IWM": {
-      "last": 293.31,
-      "chg_pct": 0.94,
-      "history": [292.59, 292.53, 292.73, 292.50, 292.60, 293.31]
+      "last": 293.46,
+      "chg_pct": 0.99,
+      "history": [292.35, 293.12, 293.09, 293.23, 293.64, 293.46]
     },
     "VIXY": {
-      "last": 17.49,
-      "chg_pct": -1.74,
-      "history": [17.69, 17.66, 17.64, 17.66, 17.63, 17.49]
+      "last": 17.47,
+      "chg_pct": -1.85,
+      "history": [17.56, 17.48, 17.49, 17.44, 17.48, 17.47]
     },
     "AAPL": {
-      "last": 323.56,
-      "chg_pct": -0.48,
-      "history": [325.74, 324.88, 325.46, 324.63, 324.97, 323.56]
+      "last": 324.10,
+      "chg_pct": -0.32,
+      "history": [325.13, 324.00, 324.17, 323.99, 323.83, 324.10]
     },
     "MSFT": {
-      "last": 498.09,
-      "chg_pct": -0.58,
-      "history": [497.23, 495.82, 496.50, 498.84, 497.72, 498.09]
+      "last": 498.27,
+      "chg_pct": -0.55,
+      "history": [498.39, 497.60, 497.58, 498.86, 497.69, 498.27]
     },
     "NVDA": {
-      "last": 222.52,
-      "chg_pct": 2.34,
-      "history": [219.87, 219.78, 219.55, 219.94, 219.88, 222.52]
+      "last": 223.17,
+      "chg_pct": 2.64,
+      "history": [221.46, 221.89, 222.24, 222.43, 222.97, 223.17]
     },
     "BTC": {
-      "last": 77234.01,
-      "chg_pct": -0.38,
-      "history": [77528.32, 76690.00, 77193.64, 77084.33, 77234.01]
+      "last": 77267.76,
+      "chg_pct": -0.31,
+      "history": [77193.64, 77084.33, 77233.56, 77277.53, 77267.76]
     },
     "ETH": {
-      "last": 2405.18,
-      "chg_pct": -0.34,
-      "history": [2413.42, 2383.91, 2406.24, 2400.29, 2405.18]
+      "last": 2403.73,
+      "chg_pct": -0.40,
+      "history": [2406.24, 2400.29, 2404.14, 2404.48, 2403.73]
     },
     "SOL": {
       "last": 99.47,
       "chg_pct": -0.78,
-      "history": [100.25, 99.04, 99.47]
+      "history": [100.25, 99.39, 99.47]
     }
   },
   "news": [
     {
       "tag": "Earnings",
       "title": "GitLab jumps on Q2 beat, raised guidance",
-      "summary": "GitLab (GTLB) reported Q2 non-GAAP EPS of 24c vs. 18c expected on revenue of $286.25M vs. $273.12M expected, and raised full-year adjusted EPS and revenue guidance. Shares were up roughly 20-25% pre-market with several sell-side price-target increases following the print."
+      "summary": "GitLab (GTLB) reported Q2 non-GAAP EPS of 24c vs. 18c expected on revenue of $286.25M vs. $273.12M expected, and raised full-year adjusted EPS and revenue guidance. Shares were up roughly 15-25% through the morning with several sell-side price-target increases following the print."
     },
     {
       "tag": "Earnings",
       "title": "Dell rallies on FQ2 beat, raised full-year outlook",
-      "summary": "Dell (DELL) beat on both adjusted EPS and revenue for its fiscal Q2 and raised full-year guidance. Shares were up about 8-9% pre-market, with elevated options volume on the name."
+      "summary": "Dell (DELL) beat on both adjusted EPS and revenue for its fiscal Q2 and raised full-year guidance. Shares were up roughly 5-9% through the morning, with elevated options volume on the name."
     },
     {
       "tag": "Earnings",
       "title": "MongoDB slides despite beating estimates",
-      "summary": "MongoDB (MDB) beat Q2 estimates on both earnings and revenue, but shares fell 11-14% pre-market after a couple of sell-side price-target cuts -- a guidance-driven pullback rather than a miss on the quarter itself."
+      "summary": "MongoDB (MDB) beat Q2 estimates on both earnings and revenue, but shares fell 11-14% after a couple of sell-side price-target cuts -- a guidance-driven pullback rather than a miss on the quarter itself."
     },
     {
       "tag": "Earnings",
       "title": "Credo Technology drops on latest quarterly report",
-      "summary": "Credo Technology (CRDO) fell 8-10% pre-market following its most recent earnings report, joining today's list of earnings-driven movers."
+      "summary": "Credo Technology (CRDO) fell 9-17% through the morning following its Q1 earnings report, joining today's list of earnings-driven movers."
     },
     {
       "tag": "Macro",
-      "title": "U.S. strikes on Iran, retaliatory attacks reported near Gulf bases",
-      "summary": "U.S. Central Command said it struck Iranian military targets overnight after Iran's Revolutionary Guard attempted attacks on Gulf shipping; Iran was reported to have launched retaliatory strikes toward U.S. bases in the region. Oil and Treasury yields both ticked up in the aftermath (10-year yield near its highest since late 2023), adding a layer of macro risk to the session."
+      "title": "Iran conflict escalates: tankers hit, oil and yields extend higher",
+      "summary": "U.S. Central Command struck Iranian military targets after Iran's Revolutionary Guard attempted attacks on Gulf shipping, and Iran launched retaliatory strikes toward U.S. bases in the region. Since then, two oil tankers (one Saudi-flagged, one South Korean-owned) were reportedly hit by projectiles as the exchange continued. Oil extended its gains (WTI +5.2% since Tuesday, Brent near $95) and Treasury yields pushed to their highest levels in roughly a year, adding a layer of macro risk to the session."
     },
     {
       "tag": "Macro",
@@ -267,8 +267,8 @@
     },
     {
       "tag": "Crypto",
-      "title": "Bitcoin and Ether soften into the open, proxy basket tracking spot",
-      "summary": "BTC and ETH both traded lower into Wednesday's session, with SOL down further; the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) has been moving roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
+      "title": "Bitcoin and Ether soften into the session, proxy basket tracking spot",
+      "summary": "BTC and ETH both traded lower through Wednesday's morning session, with SOL down further; the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) has been moving roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
     }
   ],
   "calendar": [
