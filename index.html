@@ -118,12 +118,18 @@
   /* ---- stats ---- */
   .stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* Fixed 9/2, real bug: hardcoded 4 columns, but the session-$ stat
+       (added 9/2) makes 5 tiles -- the 5th wrapped to its own row,
+       leaving 3 blank cells beside it. Columns now match tile count. */
+    grid-template-columns: repeat(5, 1fr);
     gap: 1px;
     background: var(--border-soft);
     border: 1px solid var(--border-soft);
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+  }
+  @media (max-width: 560px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
   }
   .stat { background: var(--surface); padding: 16px 10px; text-align: center; }
   .stat .n { font-family: var(--serif); font-size: 24px; color: var(--text); font-variant-numeric: tabular-nums; }
@@ -736,8 +742,13 @@
 
     var last = vals[vals.length - 1];
     var priorLabel = hasPrior ? ("   ·   last week " + fmtPct(priorVals[priorVals.length - 1]) + " (faint)") : "";
+    // Fixed 9/2, real bug: this is summed CONTRACT premium % (a real 0DTE
+    // metric -- most positions are sized small, so a deep negative sum
+    // here is normal, not ruin), but a bare "-96%" next to the hero's
+    // real dollar P&L read like the account blew up. Disclaimer now
+    // leads the label, before the number, not buried after it.
     document.getElementById("sparkline-label").textContent =
-      "WEEK PATH   " + fmtPct(last) + "   sum of contract %" + priorLabel;
+      "WEEK PATH (contract premium % -- not account $)   " + fmtPct(last) + priorLabel;
   }
 
   function miniChart(history, good) {
