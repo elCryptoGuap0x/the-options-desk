@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-02T14:39:00Z",
+  "generated_at": "2026-09-02T14:56:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
     "next_open": "THU 8:30 CT",
-    "position": "FLAT"
+    "position": "IN TRADE"
   },
   "stats": {
     "record": "0-3",
@@ -73,6 +73,18 @@
     }
   ],
   "skip_summary": [
+    {
+      "day": "Wednesday",
+      "count": 6,
+      "names": [
+        "NVDA",
+        "TSLA",
+        "HOOD",
+        "VIXY",
+        "IWM",
+        "IREN"
+      ]
+    },
     {
       "day": "Tuesday",
       "count": 11,
@@ -165,6 +177,52 @@
       "dir": "put",
       "verdict": "skip",
       "reason": "A breakdown on strong volume failed to hold just one bar later, and separately, no short-dated option exists on this name at all."
+    },
+    {
+      "time": "10:22 ET",
+      "sym": "NVDA",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A real breakout with strong volume behind it, but the cheapest option that still meets the size floor cost more than the trade size allows."
+    },
+    {
+      "time": "10:22 ET",
+      "sym": "TSLA",
+      "verdict": "skip",
+      "reason": "A fading push tried to bounce off a fresh low, but even the smallest workable contract priced above what the trade size allows."
+    },
+    {
+      "time": "10:22 ET",
+      "sym": "HOOD",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A clean, volume-backed breakout, but the nearest available option doesn't expire soon enough to fit the short-dated rule."
+    },
+    {
+      "time": "10:22 ET",
+      "sym": "VIXY",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Looked like a spent push setting up to fade, but it printed another fresh low on strong volume instead of stalling out -- a live move, not an exhausted one."
+    },
+    {
+      "time": "10:22 ET",
+      "sym": "IWM",
+      "verdict": "skip",
+      "reason": "Ticked just above a level tested several times today, but volume kept fading on each attempt instead of confirming a real break."
+    },
+    {
+      "time": "10:22 ET",
+      "sym": "IREN",
+      "verdict": "skip",
+      "reason": "Poked briefly above a flagged high, but volume on the move stayed below its own earlier push, and it faded back under shortly after."
+    },
+    {
+      "time": "10:48 ET",
+      "sym": "META",
+      "dir": "put",
+      "verdict": "enter",
+      "reason": "A sharp, well-confirmed rally stalled out and lost steam -- capped well below its high for over 30 minutes with fading volume on every bounce attempt. Bought a put against the spent push."
     }
   ],
   "streak_last8": [
@@ -179,71 +237,71 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 765.51,
+      "last": 765.53,
       "chg_pct": 0.49,
-      "history": [763.70, 764.24, 764.86, 765.21, 765.27, 765.58]
+      "history": [765.27, 765.58, 765.86, 766.29, 765.81, 765.44]
     },
     "QQQ": {
-      "last": 709.08,
-      "chg_pct": 0.20,
-      "history": [707.00, 707.68, 708.55, 708.83, 709.20, 709.62]
+      "last": 708.02,
+      "chg_pct": 0.05,
+      "history": [709.20, 709.62, 709.21, 709.60, 708.58, 707.87]
     },
     "DIA": {
-      "last": 531.60,
-      "chg_pct": 0.73,
-      "history": [530.71, 531.05, 531.26, 531.26, 531.22, 531.24]
+      "last": 531.88,
+      "chg_pct": 0.78,
+      "history": [531.19, 531.24, 531.76, 532.10, 531.97, 531.88]
     },
     "IWM": {
-      "last": 293.66,
-      "chg_pct": 1.06,
-      "history": [293.07, 293.23, 293.64, 293.43, 293.39, 293.46]
+      "last": 293.40,
+      "chg_pct": 0.97,
+      "history": [293.39, 293.46, 293.67, 293.63, 293.36, 293.33]
     },
     "VIXY": {
-      "last": 17.44,
-      "chg_pct": -2.05,
-      "history": [17.49, 17.44, 17.48, 17.47, 17.46, 17.44]
+      "last": 17.46,
+      "chg_pct": -1.91,
+      "history": [17.46, 17.44, 17.41, 17.42, 17.47, 17.46]
     },
     "AAPL": {
-      "last": 324.43,
-      "chg_pct": -0.22,
-      "history": [324.17, 324.04, 323.83, 324.08, 324.57, 324.08]
+      "last": 324.33,
+      "chg_pct": -0.25,
+      "history": [324.57, 324.08, 324.56, 324.73, 324.76, 324.20]
     },
     "MSFT": {
-      "last": 497.07,
-      "chg_pct": -0.79,
-      "history": [497.58, 498.84, 497.69, 497.83, 497.79, 497.23]
+      "last": 498.44,
+      "chg_pct": -0.52,
+      "history": [497.79, 497.23, 497.58, 497.93, 498.24, 498.37]
     },
     "NVDA": {
-      "last": 223.53,
-      "chg_pct": 2.80,
-      "history": [222.24, 222.15, 222.95, 223.19, 222.87, 223.36]
+      "last": 223.80,
+      "chg_pct": 2.92,
+      "history": [222.87, 223.32, 223.79, 224.07, 223.73, 223.74]
     },
     "BTC": {
-      "last": 77147.57,
-      "chg_pct": -1.53,
-      "history": [77308.92, 77254.17, 77335.83, 77221.52, 77153.15]
+      "last": 77120.16,
+      "chg_pct": -0.53,
+      "history": [77233.56, 77277.53, 77134.41, 77117.17, 77206.30, 77120.16]
     },
     "ETH": {
-      "last": 2396.12,
-      "chg_pct": -2.32,
-      "history": [2406.03, 2402.64, 2404.46, 2398.00, 2396.19]
+      "last": 2397.28,
+      "chg_pct": -0.67,
+      "history": [2404.14, 2404.48, 2397.23, 2395.17, 2400.24, 2397.28]
     },
     "SOL": {
-      "last": 99.12,
-      "chg_pct": -3.14,
-      "history": [99.51, 99.42, 99.43, 99.17, 99.13]
+      "last": 99.17,
+      "chg_pct": -1.09,
+      "history": [99.39, 99.08, 99.17]
     }
   },
   "news": [
     {
       "tag": "Earnings",
       "title": "GitLab jumps on Q2 beat, raised guidance",
-      "summary": "GitLab (GTLB) reported Q2 non-GAAP EPS of 24c vs. 18c expected on revenue of $286.25M vs. $273.12M expected, and raised full-year adjusted EPS and revenue guidance. Shares were up roughly 15-25% through the morning with several sell-side price-target increases following the print."
+      "summary": "GitLab (GTLB) reported Q2 non-GAAP EPS of 24c vs. 18c expected on revenue of $286.25M vs. $273.12M expected, and raised full-year adjusted EPS and revenue guidance. Shares were up roughly 14-25% through the morning with several sell-side price-target increases following the print."
     },
     {
       "tag": "Earnings",
       "title": "Dell rallies on FQ2 beat, raised full-year outlook",
-      "summary": "Dell (DELL) beat on both adjusted EPS and revenue for its fiscal Q2 and raised full-year guidance. Shares were up roughly 5-9% through the morning, with elevated options volume on the name."
+      "summary": "Dell (DELL) beat on both adjusted EPS and revenue for its fiscal Q2 and raised full-year guidance. Shares were up roughly 4-9% through the morning, decelerating off the premarket highs, with elevated options volume on the name."
     },
     {
       "tag": "Earnings",
@@ -253,7 +311,7 @@
     {
       "tag": "Earnings",
       "title": "Credo Technology drops on latest quarterly report",
-      "summary": "Credo Technology (CRDO) fell 9-17% through the morning following its Q1 earnings report, joining today's list of earnings-driven movers."
+      "summary": "Credo Technology (CRDO) fell 9-18% through the morning following its Q1 earnings report, joining today's list of earnings-driven movers."
     },
     {
       "tag": "Macro",
@@ -268,7 +326,7 @@
     {
       "tag": "Crypto",
       "title": "Bitcoin and Ether soften into the session, proxy basket tracking spot",
-      "summary": "BTC and ETH both traded lower through Wednesday's morning session, with SOL down further; the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) has been moving roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
+      "summary": "BTC and ETH both traded lower through Wednesday's session, with SOL down further; the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) has been moving roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
     }
   ],
   "calendar": [
