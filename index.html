@@ -229,7 +229,7 @@
   .scan-row .scan-reason { color: var(--text-dim); }
   .ticket {
     display: grid;
-    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-columns: auto auto 1fr auto auto auto;
     align-items: center;
     gap: 12px;
     background: var(--surface);
@@ -244,6 +244,36 @@
   }
   .dir.call { background: var(--good-dim); color: var(--good); }
   .dir.put { background: var(--bad-dim); color: var(--bad); }
+  .weeks-section { margin: 28px 0 0; }
+  .weeks-table { display: flex; flex-direction: column; gap: 8px; }
+  .weeks-row {
+    display: grid;
+    grid-template-columns: 64px auto 1fr auto auto 1fr;
+    gap: 14px;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 9px;
+    padding: 12px 16px;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .weeks-row.current { border-color: var(--gold); }
+  .weeks-row .wk-label { font-weight: 700; color: var(--text); }
+  .weeks-row .wk-record { color: var(--text); }
+  .wk-net.good { color: var(--good); }
+  .wk-net.bad { color: var(--bad); }
+  .wk-pending { color: var(--text-faint); font-style: italic; }
+  .weeks-row .wk-disasters { color: var(--text-dim); }
+  .weeks-row .wk-notes { font-family: var(--sans); font-size: 11px; color: var(--text-dim); text-align: right; }
+  .ticket .door {
+    font-family: var(--mono); font-size: 10px; font-weight: 700;
+    width: 20px; height: 20px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    justify-self: start;
+  }
+  .door-B { background: var(--violet-dim); color: var(--violet); }
+  .door-C { background: var(--gold-dim); color: var(--gold); }
   .ticket .time { font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: right; }
   .ticket .dur { font-family: var(--mono); font-size: 10px; color: var(--text-faint); text-align: right; min-width: 40px; }
   .ticket .pct { font-family: var(--mono); font-weight: 700; font-size: 14.5px; text-align: right; min-width: 62px; font-variant-numeric: tabular-nums; }
@@ -466,6 +496,11 @@
 
   </div>
 
+  <section class="weeks-section">
+    <div class="section-title">Weeks</div>
+    <div class="weeks-table" id="weeks-table"></div>
+  </section>
+
   <footer>
     <div class="tape-date" id="tape-date">—</div>
     Educational and entertainment content only. Not investment advice.<br>
@@ -583,13 +618,24 @@
   // last entry) for a full day after CLAUDE.md moved to 3:00 PM ET --
   // exact same "two clocks disagree" class of bug as the briefing-file
   // and gate-pending fixes, just on the public-facing side this time.
+  // Shared CT-clock check, added 9/2 (real bug: the status pill said "FLAT
+  // -- SCANNING" straight through the close because it only looked at the
+  // feed's own market_state, which can lag/differ from our own flatten
+  // rule). Both this and sessionNextText below now read the same clock.
+  function ctMinutesNow() {
+    var parts = new Date().toLocaleTimeString("en-US", { hour12: false, hour: "2-digit", minute: "2-digit", timeZone: "America/Chicago" }).split(":");
+    return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+  }
+  function isPastOwnClose() {
+    return ctMinutesNow() >= 15 * 60; // 3:00 PM CT / 4:00 PM ET close
+  }
+
   function sessionNextText(session) {
     if (!session) return "—";
     if (session.market_state !== "OPEN") {
       return "NEXT OPEN " + (session.next_open || "—");
     }
-    var parts = new Date().toLocaleTimeString("en-US", { hour12: false, hour: "2-digit", minute: "2-digit", timeZone: "America/Chicago" }).split(":");
-    var mins = parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+    var mins = ctMinutesNow();
     var flattenStart = 14 * 60, flattenEnd = 14 * 60 + 45, closeTime = 15 * 60;
     if (mins >= closeTime) return "MARKET CLOSED";
     if (mins >= flattenEnd) return "CLOSING SOON";
@@ -608,6 +654,8 @@
       text.textContent = "CLOSED FOR WEEKEND";
     } else if (session.market_state === "CLOSED") {
       text.textContent = "MARKET CLOSED";
+    } else if (session.market_state === "OPEN" && isPastOwnClose()) {
+      text.textContent = "FLAT — SESSION OVER";
     } else if (session.market_state === "OPEN") {
       text.textContent = "FLAT — SCANNING";
     } else {
@@ -621,8 +669,22 @@
     var winClass = "";
     var wr = parseFloat(stats.win_rate);
     if (!isNaN(wr)) winClass = wr >= 50 ? "good" : "bad";
+    // Added 9/2, real bug: the page had no dollar figure anywhere, only
+    // week-wide % stats -- a real +$38 day rendered next to a -96% "week
+    // path" % number that reads like the account blew up. Session P&L in
+    // real dollars, computed today-only (see site/CLAUDE.md's SCOPE
+    // section), sits right next to the week record so the two numbers
+    // can't be mistaken for each other.
+    var sessionHtml = "";
+    if (stats.session_pnl_usd !== undefined && stats.session_pnl_usd !== null) {
+      var spn = Number(stats.session_pnl_usd);
+      var sessionClass = spn >= 0 ? "good" : "bad";
+      var sessionText = (spn >= 0 ? "+$" : "-$") + Math.abs(spn).toFixed(0);
+      sessionHtml = '<div class="stat"><div class="n ' + sessionClass + '">' + sessionText + '</div><div class="l">Session P&amp;L</div></div>';
+    }
     document.getElementById("stats-row").innerHTML =
       '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
+      sessionHtml +
       '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate + '</div><div class="l">Win rate</div></div>' +
       '<div class="stat"><div class="n">' + stats.trades_this_week + '</div><div class="l">Trades this week</div></div>' +
       '<div class="stat"><div class="n">' + stats.typical_hold + '</div><div class="l">Typical hold</div></div>';
@@ -776,19 +838,28 @@
 
   function ticketRowHtml(t) {
     var durText = t.dte ? (t.dur + " · " + t.dte) : t.dur;
-    return '<div class="ticket"><span class="sym">' + t.sym + '</span>' +
+    var doorBadge = t.door ? '<span class="door door-' + t.door + '">' + t.door + '</span>' : "";
+    return '<div class="ticket">' + doorBadge + '<span class="sym">' + t.sym + '</span>' +
       '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
       '<span class="dur">' + durText + '</span>' +
       '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
       '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span></div>';
   }
 
-  // End-of-day only, aggregate, no rule/mechanism language -- e.g. "5
-  // considered, 0 filled". Never a live per-candidate line and never a
-  // reason why each name didn't clear (that's strategy, off-limits).
-  function skipRowHtml(s) {
-    var names = (s.names || []).join(", ");
-    return '<div class="skip-row"><span class="dot"></span>' + s.count + ' considered · 0 filled' +
+  // End-of-day only, aggregate, no rule/mechanism language -- e.g. "22
+  // looked, 3 filled". Never a live per-candidate line and never a reason
+  // why each name didn't clear (that's strategy, off-limits).
+  // Fixed 9/2, real bug: "0 filled" was hardcoded here regardless of the
+  // actual day's fills -- a day with three real closed tickets still
+  // printed "0 filled". Filled count now comes from the same day's actual
+  // ticket list (passed in), never a static string. The displayed "looked"
+  // count is names.length, not a separately-tracked s.count field, so the
+  // printed number can never drift from the list actually shown (same
+  // fix class as start-loop's own "read the authoritative source" rule).
+  function skipRowHtml(s, filledCount) {
+    var nameList = s.names || [];
+    var names = nameList.join(", ");
+    return '<div class="skip-row"><span class="dot"></span>' + nameList.length + ' looked · ' + filledCount + ' filled' +
       (names ? " — " + names : "") + '</div>';
   }
 
@@ -812,13 +883,17 @@
     });
 
     var html = "";
-    if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT") {
+    // Fixed 9/2, real bug: WAITING showed even with real tickets already
+    // on the page ("you're not waiting" -- there were three closed
+    // tickets sitting right below it). Only show it when today has
+    // genuinely produced nothing yet.
+    if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT" && tickets.length === 0) {
       html += '<div class="waiting"><span class="dot"></span>WAITING · nothing new on the tape</div>';
     }
     dayOrder.forEach(function (day) {
       html += '<div class="day-divider">' + day + '</div>';
       byDay[day].forEach(function (t) { html += ticketRowHtml(t); });
-      if (skipByDay[day]) html += skipRowHtml(skipByDay[day]);
+      if (skipByDay[day]) html += skipRowHtml(skipByDay[day], (byDay[day] || []).length);
     });
     var streak = data.streak_last8 || [];
     if (streak.length) {
@@ -877,6 +952,38 @@
       '<span>' + (data.session && data.session.market_state === "OPEN" ? "Live" : "As of last close") + ' · crypto stays live, 24/7</span>';
   }
 
+  // "Is it getting better?" view, added 9/2 -- one row per calendar week
+  // (or per product-regime sub-split within the current week, e.g. a
+  // Door-A day next to a Door-B/C day, so a mid-week rule change doesn't
+  // blend into one misleading number). Separate from the live daily tape
+  // on purpose -- this answers "better than last week," the daily log
+  // answers "what happened today." A week with real net_usd/avg_hold/
+  // disasters not yet backfilled from the archive shows "pending" rather
+  // than a guessed number -- never invent a historical figure here.
+  function renderWeeks(weeks) {
+    var el = document.getElementById("weeks-table");
+    if (!el) return;
+    if (!weeks || !weeks.length) { el.innerHTML = ""; return; }
+    var html = "";
+    weeks.forEach(function (w) {
+      var hasNet = w.net_usd !== null && w.net_usd !== undefined;
+      var netHtml = hasNet
+        ? '<span class="wk-net ' + (w.net_usd >= 0 ? "good" : "bad") + '">' + (w.net_usd >= 0 ? "+$" : "-$") + Math.abs(w.net_usd) + '</span>'
+        : '<span class="wk-pending">pending</span>';
+      var hasDisasters = w.disasters !== null && w.disasters !== undefined;
+      var disastersText = hasDisasters ? (w.disasters + " disaster" + (w.disasters === 1 ? "" : "s")) : "—";
+      html += '<div class="weeks-row' + (w.locked === false ? " current" : "") + '">' +
+        '<span class="wk-label">' + w.week_label + '</span>' +
+        '<span class="wk-record">' + w.record + '</span>' +
+        netHtml +
+        '<span>' + (w.avg_hold || "—") + '</span>' +
+        '<span class="wk-disasters">' + disastersText + '</span>' +
+        '<span class="wk-notes">' + (w.product || "") + '</span>' +
+        '</div>';
+    });
+    el.innerHTML = html;
+  }
+
   function render(data) {
     renderSession(data.session);
     renderStats(data.stats);
@@ -884,6 +991,7 @@
     renderMarketBoard(data.market_board);
     renderTickets(data);
     renderScanLog(data.scan_log);
+    renderWeeks(data.weeks);
     renderCalendar(data.calendar);
     renderNews(data.news);
     renderFooter(data);
