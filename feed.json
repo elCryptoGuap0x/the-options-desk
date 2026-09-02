@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T12:17:00Z",
+  "generated_at": "2026-09-02T12:37:05Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -174,46 +174,43 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 762.365,
-      "chg_pct": 0.08,
+      "last": 762.12,
+      "chg_pct": 0.04,
       "history": [
-        760.83,
-        761.03,
-        761.29,
-        761.44,
         761.15,
         761.15,
         761.45,
         761.97,
         762.12,
         762.29,
-        762.51
+        762.47,
+        762.43,
+        762.59,
+        762.40,
+        762.12
       ]
     },
     "QQQ": {
-      "last": 707.43,
-      "chg_pct": -0.03,
+      "last": 706.77,
+      "chg_pct": -0.12,
       "history": [
-        705.04,
-        705.30,
-        705.94,
-        705.92,
         705.42,
         705.36,
         705.64,
         706.71,
         706.84,
         707.04,
-        707.50
+        707.56,
+        707.11,
+        707.80,
+        707.37,
+        706.77
       ]
     },
     "DIA": {
-      "last": 528.87,
-      "chg_pct": 0.21,
+      "last": 528.89,
+      "chg_pct": 0.22,
       "history": [
-        527.40,
-        527.40,
-        528.37,
         528.37,
         528.37,
         528.37,
@@ -221,186 +218,198 @@
         528.95,
         529.10,
         528.87,
-        528.87
+        528.97,
+        529.13,
+        528.97,
+        528.89
       ]
     },
     "IWM": {
-      "last": 291.146,
-      "chg_pct": 0.20,
+      "last": 291.08,
+      "chg_pct": 0.18,
       "history": [
-        290.51,
-        290.55,
-        290.79,
-        290.82,
         290.68,
         290.71,
         290.62,
         291.10,
         291.05,
         291.03,
-        291.15
+        291.15,
+        291.10,
+        291.32,
+        291.21,
+        291.08
       ]
     },
     "VIXY": {
       "last": 17.71,
-      "chg_pct": -0.53,
+      "chg_pct": -0.49,
       "history": [
         17.90,
-        17.90,
-        17.90,
-        17.90,
-        17.90,
         17.79,
         17.79,
         17.78,
         17.78,
         17.78,
+        17.71,
+        17.71,
+        17.71,
+        17.71,
         17.71
       ]
     },
     "AAPL": {
-      "last": 326.70,
-      "chg_pct": 0.48,
+      "last": 326.90,
+      "chg_pct": 0.54,
       "history": [
-        325.41,
-        325.81,
-        326.00,
-        326.03,
         326.33,
         326.22,
         326.13,
         326.53,
         326.34,
         326.54,
-        326.67
+        326.67,
+        326.60,
+        326.58,
+        326.67,
+        326.90
       ]
     },
     "MSFT": {
-      "last": 499.50,
-      "chg_pct": -0.30,
+      "last": 499.30,
+      "chg_pct": -0.34,
       "history": [
-        498.00,
-        498.30,
-        498.72,
-        498.68,
         498.50,
         498.51,
         498.70,
         498.99,
         499.37,
         499.47,
-        499.50
+        499.50,
+        499.37,
+        499.50,
+        499.50,
+        499.30
       ]
     },
     "NVDA": {
-      "last": 218.32,
-      "chg_pct": 0.40,
+      "last": 218.00,
+      "chg_pct": 0.26,
       "history": [
-        216.95,
-        216.97,
-        217.00,
-        217.06,
         216.94,
         217.00,
         217.13,
         217.45,
         217.49,
         218.03,
-        218.35
+        218.35,
+        218.34,
+        218.52,
+        218.30,
+        218.00
       ]
     },
     "BTC": {
-      "last": 76823.95,
-      "chg_pct": -0.89,
+      "last": 76899.80,
+      "chg_pct": -1.28,
       "history": [
-        76482.11,
-        76625.01,
-        76690.60,
-        76620.44,
-        76592.00,
-        76667.69,
-        76795.93,
-        76695.11,
-        76758.67,
-        76804.13,
-        76834.98
+        76618.51,
+        76686.04,
+        76834.94,
+        76731.69,
+        76788.88,
+        76836.48,
+        76858.09,
+        76990.30,
+        76989.17,
+        76900.01,
+        76899.80
       ]
     },
     "ETH": {
-      "last": 2382.94,
-      "chg_pct": -1.25,
+      "last": 2384.97,
+      "chg_pct": -2.68,
       "history": [
-        2373.58,
-        2378.14,
-        2380.29,
-        2377.19,
-        2377.14,
-        2377.72,
-        2380.93,
-        2377.46,
-        2378.39,
-        2381.55,
-        2382.06
+        2378.32,
+        2378.59,
+        2381.75,
+        2378.45,
+        2379.09,
+        2382.36,
+        2384.54,
+        2386.89,
+        2386.91,
+        2384.44,
+        2384.97
       ]
     },
     "SOL": {
-      "last": 98.11,
-      "chg_pct": -2.14,
+      "last": 98.13,
+      "chg_pct": -3.92,
       "history": [
-        97.71,
-        97.94,
+        97.85,
+        97.93,
+        98.12,
+        98.00,
+        98.00,
+        98.19,
+        98.11,
+        98.37,
+        98.34,
         98.09,
-        97.97,
-        97.81,
-        97.89,
-        98.09,
-        97.96,
-        97.97,
-        98.16,
-        98.05
+        98.13
       ]
     }
   },
   "news": [
     {
+      "tag": "Earnings",
+      "title": "GitLab jumps on Q2 beat, raised guidance",
+      "summary": "GitLab (GTLB) reported Q2 non-GAAP EPS of 24c vs. 18c expected on revenue of $286.25M vs. $273.12M expected, and raised full-year adjusted EPS and revenue guidance. Shares were up roughly 20-25% pre-market with several sell-side price-target increases following the print."
+    },
+    {
+      "tag": "Earnings",
+      "title": "Dell rallies on FQ2 beat, raised full-year outlook",
+      "summary": "Dell (DELL) beat on both adjusted EPS and revenue for its fiscal Q2 and raised full-year guidance. Shares were up about 8-9% pre-market, with elevated options volume on the name."
+    },
+    {
+      "tag": "Earnings",
+      "title": "MongoDB slides despite beating estimates",
+      "summary": "MongoDB (MDB) beat Q2 estimates on both earnings and revenue, but shares fell 11-14% pre-market after a couple of sell-side price-target cuts -- a guidance-driven pullback rather than a miss on the quarter itself."
+    },
+    {
+      "tag": "Earnings",
+      "title": "Credo Technology drops on latest quarterly report",
+      "summary": "Credo Technology (CRDO) fell 8-10% pre-market following its most recent earnings report, joining today's list of earnings-driven movers."
+    },
+    {
       "tag": "Macro",
-      "title": "Renewed U.S.-Iran tensions in the Strait of Hormuz",
-      "summary": "Two oil tankers, one Saudi-owned and one South Korean-owned, were hit overnight in the Strait of Hormuz, a fresh escalation that sent oil higher and equity futures broadly lower into Tuesday's session."
+      "title": "U.S. strikes on Iran, retaliatory attacks reported near Gulf bases",
+      "summary": "U.S. Central Command said it struck Iranian military targets overnight after Iran's Revolutionary Guard attempted attacks on Gulf shipping; Iran was reported to have launched retaliatory strikes toward U.S. bases in the region. Oil ticked higher and Treasury yields rose to multi-year highs in the aftermath, adding a layer of macro risk to the session."
     },
     {
-      "tag": "Equities",
-      "title": "Stocks close lower on the Hormuz escalation",
-      "summary": "The Dow, Nasdaq, and S&P 500 all finished Tuesday's session lower as renewed Strait of Hormuz tanker strikes weighed on broad risk appetite; crude surged on the shipping-route risk."
-    },
-    {
-      "tag": "Equities",
-      "title": "Energy names outperforming, chipmakers lead the decline",
-      "summary": "Names tied to oil and gas production traded higher as crude climbed on the Hormuz risk, while chip and broader tech names took the brunt of the day's intraday selloff."
+      "tag": "Macro",
+      "title": "ADP employment, factory orders, and the Fed Beige Book due today",
+      "summary": "Wednesday's economic calendar includes the ADP August private-payrolls report, July factory orders, and the Federal Reserve's Beige Book. None are policy decisions on their own, but they're today's scheduled data points ahead of Friday's nonfarm payrolls."
     },
     {
       "tag": "Crypto",
-      "title": "Bitcoin and Ether soften, proxy basket underperforms spot",
-      "summary": "BTC and ETH both traded lower on the session, with the broader crypto-proxy equity basket falling further than spot -- a real divergence that persisted most of the day before narrowing somewhat into the afternoon."
-    },
-    {
-      "tag": "Macro",
-      "title": "Rate-cut odds jump ahead of the Sept 15-16 FOMC meeting",
-      "summary": "Futures-implied odds of a 25bp cut at the September Fed meeting rose meaningfully during the session, alongside firm Treasury yields, as markets continued digesting last week's Jackson Hole remarks."
-    },
-    {
-      "tag": "Macro",
-      "title": "ISM Manufacturing PMI printed in line",
-      "summary": "The week's first scheduled economic release landed broadly in line with recent readings, with equities firming rather than selling off further in its immediate aftermath."
+      "title": "Bitcoin and Ether soften overnight, proxy basket tracking spot",
+      "summary": "BTC and ETH both traded lower into Wednesday's session, with SOL down further; unlike Tuesday, the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is moving roughly in line with spot rather than diverging."
     }
   ],
   "calendar": [
     {
-      "what": "JOLTs Job Openings",
+      "what": "ADP Employment Change",
+      "when": "Wed 7:15 CT"
+    },
+    {
+      "what": "Factory Orders (July)",
       "when": "Wed 9:00 CT"
     },
     {
-      "what": "ADP Employment Change",
-      "when": "Thu 7:15 CT"
+      "what": "Fed Beige Book",
+      "when": "Wed 1:00 CT"
     },
     {
       "what": "Nonfarm Payrolls / Unemployment Rate",
