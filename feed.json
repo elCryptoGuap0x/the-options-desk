@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T18:27:00Z",
+  "generated_at": "2026-09-02T18:39:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -97,16 +97,18 @@
   "skip_summary": [
     {
       "day": "Wednesday",
-      "count": 11,
+      "count": 22,
       "names": [
         "NVDA",
         "TSLA",
         "HOOD",
-        "VIXY",
         "IWM",
         "IREN",
-        "CRCL",
-        "BMNR"
+        "SPY",
+        "QQQ",
+        "DIA",
+        "MSTR",
+        "MSFT"
       ]
     },
     {
@@ -289,6 +291,78 @@
       "dir": "call",
       "verdict": "skip",
       "reason": "Another real, volume-backed breakout, but by the time it came up again the move was already roughly half an hour old -- well past the freshness window, and the day's fade-trade limit was already used up too."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "SPY",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A real, broad-market lift printed on strong volume, but it's only one bar old with no coil in front of it -- not a confirmed setup yet."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "QQQ",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Same broad-market volume lift as SPY and the same issue -- one bar old, no coil in front of it."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "DIA",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Same one-bar lift on strong volume as the rest of the index board -- not enough history yet to call it a real setup."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "IWM",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Also lifted on strong volume this bar -- best-positioned of the four if the next bar confirms it as a fresh leg, but not there yet."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "MSFT",
+      "verdict": "skip",
+      "reason": "A clean fade setup -- spike, failed follow-through, and dried-up volume all lined up cleanly -- but today's limit on that type of trade was already used earlier, so it was passed on regardless of shape."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "MSTR",
+      "verdict": "skip",
+      "reason": "Printed a fresh high on rising volume -- genuine continuation, not an exhausted push, so it doesn't qualify as a fade candidate."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "COIN",
+      "verdict": "skip",
+      "reason": "Also printed a fresh high on rising volume -- real continuation, not a spent move."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "BMNR",
+      "verdict": "skip",
+      "reason": "Fresh high on rising volume as well -- another live push, not a fade setup."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "CRCL",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Already passed on earlier today since the daily limit on that type of trade was hit -- this bar's fresh high just reconfirms the fade read stays invalidated anyway."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "IREN",
+      "verdict": "skip",
+      "reason": "The breakout from earlier in the session is now roughly 50 minutes old -- well past the window either way, and today's limit on the opposite trade type was already used regardless."
+    },
+    {
+      "time": "14:26 ET",
+      "sym": "ETHA",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "First real volume tick of the day came with a marginal fresh high, but the range is still narrow with nothing to base a setup on."
     }
   ],
   "streak_last8": [
@@ -303,59 +377,59 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 765.38,
-      "chg_pct": 0.47,
-      "history": [765.18, 765.26, 765.12, 765.17, 765.63, 765.43]
+      "last": 765.30,
+      "chg_pct": 0.46,
+      "history": [765.26, 765.12, 765.18, 765.63, 765.43, 765.30]
     },
     "QQQ": {
-      "last": 708.64,
-      "chg_pct": 0.14,
-      "history": [708.54, 708.48, 708.38, 708.19, 708.85, 708.78]
+      "last": 708.53,
+      "chg_pct": 0.12,
+      "history": [708.48, 708.38, 708.19, 708.85, 708.78, 708.53]
     },
     "DIA": {
-      "last": 530.04,
+      "last": 530.06,
       "chg_pct": 0.43,
-      "history": [530.17, 530.38, 530.15, 530.16, 530.40, 530.06]
+      "history": [530.38, 530.15, 530.16, 530.40, 530.06, 530.06]
     },
     "IWM": {
-      "last": 293.83,
+      "last": 293.84,
       "chg_pct": 1.12,
-      "history": [293.57, 293.66, 293.71, 293.73, 293.86, 293.78]
+      "history": [293.66, 293.71, 293.73, 293.86, 293.78, 293.84]
     },
     "VIXY": {
       "last": 17.29,
-      "chg_pct": -2.87,
-      "history": [17.32, 17.33, 17.30, 17.30, 17.30, 17.30]
+      "chg_pct": -2.89,
+      "history": [17.33, 17.30, 17.30, 17.30, 17.30, 17.29]
     },
     "AAPL": {
-      "last": 326.46,
-      "chg_pct": 0.41,
-      "history": [325.96, 326.30, 325.98, 326.00, 326.22, 326.18]
+      "last": 326.30,
+      "chg_pct": 0.36,
+      "history": [326.30, 325.98, 326.00, 326.22, 326.18, 326.30]
     },
     "MSFT": {
       "last": 496.14,
       "chg_pct": -0.97,
-      "history": [497.65, 496.86, 496.34, 496.23, 496.63, 496.30]
+      "history": [496.86, 496.34, 496.23, 496.63, 496.30, 496.14]
     },
     "NVDA": {
-      "last": 225.03,
-      "chg_pct": 3.49,
-      "history": [224.67, 224.83, 224.60, 224.71, 224.82, 225.14]
+      "last": 224.95,
+      "chg_pct": 3.46,
+      "history": [224.83, 224.60, 224.71, 224.82, 225.14, 224.95]
     },
     "BTC": {
-      "last": 77451.35,
-      "chg_pct": -0.08,
-      "history": [77396.09, 77431.61, 77451.35]
+      "last": 77433.78,
+      "chg_pct": -0.12,
+      "history": [77396.09, 77431.61, 77433.78]
     },
     "ETH": {
-      "last": 2396.84,
-      "chg_pct": -0.69,
-      "history": [2394.86, 2396.05, 2396.84]
+      "last": 2395.13,
+      "chg_pct": -0.75,
+      "history": [2394.86, 2396.05, 2395.13]
     },
     "SOL": {
-      "last": 99.58,
-      "chg_pct": -0.66,
-      "history": [99.47, 99.44, 99.58]
+      "last": 99.43,
+      "chg_pct": -0.82,
+      "history": [99.47, 99.44, 99.43]
     }
   },
   "news": [
