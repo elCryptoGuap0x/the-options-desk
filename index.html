@@ -284,6 +284,7 @@
   }
   .fuse-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .fuse-dot.g { background: var(--good); }
+  .fuse-dot.r { background: var(--bad); }
   .fuse-dot.gray { background: var(--border-soft); }
   .roast-strip {
     max-width: 640px; margin: 10px auto 0; text-align: center;
@@ -856,15 +857,19 @@
   }
 
   // Fuse replay, added 9/2: a closed ticket's own 10-dot minute-by-minute
-  // reel -- green if that minute's option mark printed a fresh high vs
-  // every prior minute since entry, gray if not. Real per-minute data,
+  // reel -- P&L color, not follow-through (recolored 9/2, real bug:
+  // green/gray read as "made progress" vs "didn't," so a real loser
+  // that never printed a fresh high looked merely dead instead of
+  // actually hurt). Green = that minute's mark closed above entry, red =
+  // below entry, gray = a genuine data gap only. Real per-minute data,
   // computed at write time from actual option bars -- never rendered on
   // an open position (no live "entering" copy, only a replay of
   // something already closed and real).
   function fuseHtml(fuse) {
     if (!fuse || !fuse.dots || !fuse.dots.length) return "";
     var dots = fuse.dots.map(function (d) {
-      return '<span class="fuse-dot ' + (d === "G" ? "g" : "gray") + '"></span>';
+      var cls = d === "G" ? "g" : (d === "R" ? "r" : "gray");
+      return '<span class="fuse-dot ' + cls + '"></span>';
     }).join("");
     return '<div class="fuse-row">' + dots + '</div>';
   }
