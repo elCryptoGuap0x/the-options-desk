@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:44:00Z",
+  "generated_at": "2026-09-02T21:35:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -53,7 +53,10 @@
       "exit": "2:59p",
       "dur": "12 min",
       "dte": "0DTE",
-      "pct": -16.5
+      "pct": -16.5,
+      "fuse": {
+        "dots": ["gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray"]
+      }
     },
     {
       "day": "Wednesday",
@@ -63,7 +66,10 @@
       "exit": "1:43p",
       "dur": "11 min",
       "dte": "0DTE",
-      "pct": -31.0
+      "pct": -31.0,
+      "fuse": {
+        "dots": ["gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray"]
+      }
     },
     {
       "day": "Wednesday",
@@ -73,7 +79,10 @@
       "exit": "11:01a",
       "dur": "10 min",
       "dte": "0DTE",
-      "pct": 75.5
+      "pct": 75.5,
+      "fuse": {
+        "dots": ["G", "G", "G", "gray", "G", "G", "gray", "gray", "gray", "G"]
+      }
     }
   ],
   "skip_summary": [
@@ -275,6 +284,7 @@
       "reason": "A broad-market break lower printed together across the major index ETFs, each clearing its own tight coil on volume well above the range it broke from -- a same-bar move confirmed across three correlated names at once, not a single-name signal. Bought a put against the break."
     }
   ],
+  "roast": "Session over. +$38.",
   "streak_last8": [
     "L",
     "L",
