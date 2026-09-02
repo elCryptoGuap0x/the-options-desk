@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:15:49Z",
+  "generated_at": "2026-09-02T20:26:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -287,6 +287,35 @@
     "W",
     "L",
     "L"
+  ],
+  "weeks": [
+    {
+      "week_label": "8/25",
+      "record": "4-10",
+      "net_usd": null,
+      "avg_hold": null,
+      "disasters": null,
+      "product": "Door A continuation",
+      "locked": true
+    },
+    {
+      "week_label": "9/1",
+      "record": "0-3",
+      "net_usd": -127,
+      "avg_hold": "7 min",
+      "disasters": 2,
+      "product": "Door A (last day)",
+      "locked": true
+    },
+    {
+      "week_label": "9/2–…",
+      "record": "1-2",
+      "net_usd": 38,
+      "avg_hold": "11 min",
+      "disasters": 0,
+      "product": "Door B/C live",
+      "locked": false
+    }
   ],
   "market_board": {
     "SPY": {
