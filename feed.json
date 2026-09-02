@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:26:00Z",
+  "generated_at": "2026-09-02T20:44:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -49,7 +49,6 @@
       "day": "Wednesday",
       "sym": "SPY",
       "dir": "put",
-      "door": "B",
       "entry": "2:47p",
       "exit": "2:59p",
       "dur": "12 min",
@@ -60,7 +59,6 @@
       "day": "Wednesday",
       "sym": "META",
       "dir": "call",
-      "door": "C",
       "entry": "1:32p",
       "exit": "1:43p",
       "dur": "11 min",
@@ -71,7 +69,6 @@
       "day": "Wednesday",
       "sym": "META",
       "dir": "put",
-      "door": "C",
       "entry": "10:51a",
       "exit": "11:01a",
       "dur": "10 min",
@@ -295,7 +292,7 @@
       "net_usd": null,
       "avg_hold": null,
       "disasters": null,
-      "product": "Door A continuation",
+      "product": "prior system",
       "locked": true
     },
     {
@@ -304,7 +301,7 @@
       "net_usd": -127,
       "avg_hold": "7 min",
       "disasters": 2,
-      "product": "Door A (last day)",
+      "product": "prior system",
       "locked": true
     },
     {
@@ -313,7 +310,7 @@
       "net_usd": 38,
       "avg_hold": "11 min",
       "disasters": 0,
-      "product": "Door B/C live",
+      "product": "system update 9/2",
       "locked": false
     }
   ],
@@ -359,19 +356,19 @@
       "history": [224.31, 223.99, 224.02, 224.31, 224.52, 224.40]
     },
     "BTC": {
-      "last": 77284.22,
-      "chg_pct": -0.29,
-      "history": [77510.48, 77284.22]
+      "last": 77302.04,
+      "chg_pct": -0.27,
+      "history": [77510.48, 77284.22, 77302.04]
     },
     "ETH": {
-      "last": 2390.14,
+      "last": 2390.01,
       "chg_pct": -0.96,
-      "history": [2413.42, 2390.14]
+      "history": [2413.42, 2390.14, 2390.01]
     },
     "SOL": {
-      "last": 99.53,
+      "last": 99.52,
       "chg_pct": -0.72,
-      "history": [100.25, 99.53]
+      "history": [100.25, 99.53, 99.52]
     }
   },
   "news": [
