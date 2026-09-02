@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T17:58:00Z",
+  "generated_at": "2026-09-02T18:11:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -97,7 +97,7 @@
   "skip_summary": [
     {
       "day": "Wednesday",
-      "count": 8,
+      "count": 11,
       "names": [
         "NVDA",
         "TSLA",
@@ -268,6 +268,27 @@
       "dir": "call",
       "verdict": "enter",
       "reason": "A separate, fresh intraday decline reversed hard off a new low -- the next bar failed to make a new low and volume dried up on the bounce. A second spent-push read on the same name today, this time to the downside. Bought a call against the spent decline."
+    },
+    {
+      "time": "14:04 ET",
+      "sym": "HOOD",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A clean, volume-backed coil break that kept extending, but by the time it was checked live the push was already about 19 minutes old -- just past the freshness window for that kind of trade."
+    },
+    {
+      "time": "14:04 ET",
+      "sym": "CRCL",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "A fade setup against a spent push that still looked reasonable, but the daily limit on that type of trade had already been hit earlier today, so it was passed on regardless of shape."
+    },
+    {
+      "time": "14:04 ET",
+      "sym": "IREN",
+      "dir": "call",
+      "verdict": "skip",
+      "reason": "Another real, volume-backed breakout, but by the time it came up again the move was already roughly half an hour old -- well past the freshness window, and the day's fade-trade limit was already used up too."
     }
   ],
   "streak_last8": [
@@ -282,59 +303,59 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 765.01,
-      "chg_pct": 0.42,
-      "history": [764.40, 764.46, 764.89, 764.98, 764.99, 765.01]
+      "last": 765.16,
+      "chg_pct": 0.44,
+      "history": [764.98, 764.99, 765.18, 765.26, 765.12, 765.16]
     },
     "QQQ": {
-      "last": 708.39,
-      "chg_pct": 0.11,
-      "history": [707.92, 707.94, 708.48, 708.53, 708.50, 708.39]
+      "last": 708.34,
+      "chg_pct": 0.10,
+      "history": [708.53, 708.50, 708.54, 708.48, 708.38, 708.34]
     },
     "DIA": {
-      "last": 530.07,
-      "chg_pct": 0.44,
-      "history": [529.43, 529.56, 529.82, 529.98, 529.99, 530.07]
+      "last": 530.15,
+      "chg_pct": 0.45,
+      "history": [529.98, 529.99, 530.17, 530.38, 530.15, 530.15]
     },
     "IWM": {
-      "last": 293.51,
-      "chg_pct": 1.01,
-      "history": [293.20, 293.21, 293.40, 293.51, 293.56, 293.51]
+      "last": 293.74,
+      "chg_pct": 1.09,
+      "history": [293.51, 293.56, 293.57, 293.67, 293.71, 293.74]
     },
     "VIXY": {
-      "last": 17.33,
-      "chg_pct": -2.67,
-      "history": [17.38, 17.37, 17.36, 17.35, 17.33, 17.33]
+      "last": 17.30,
+      "chg_pct": -2.84,
+      "history": [17.35, 17.33, 17.32, 17.33, 17.30, 17.30]
     },
     "AAPL": {
-      "last": 325.90,
-      "chg_pct": 0.24,
-      "history": [324.87, 325.02, 325.35, 325.50, 325.83, 325.90]
+      "last": 325.99,
+      "chg_pct": 0.26,
+      "history": [325.50, 325.83, 325.97, 326.30, 325.97, 325.99]
     },
     "MSFT": {
-      "last": 497.22,
-      "chg_pct": -0.76,
-      "history": [496.75, 496.60, 496.91, 496.80, 496.93, 497.22]
+      "last": 496.21,
+      "chg_pct": -0.96,
+      "history": [496.80, 496.93, 497.65, 496.86, 496.34, 496.21]
     },
     "NVDA": {
-      "last": 224.73,
-      "chg_pct": 3.35,
-      "history": [225.08, 225.05, 225.12, 225.12, 224.86, 224.73]
+      "last": 224.68,
+      "chg_pct": 3.33,
+      "history": [225.12, 224.86, 224.67, 224.83, 224.60, 224.68]
     },
     "BTC": {
-      "last": 77299.48,
-      "chg_pct": -0.30,
-      "history": [77528.32, 77299.48]
+      "last": 77407.00,
+      "chg_pct": -0.13,
+      "history": [77510.48, 77407.00]
     },
     "ETH": {
-      "last": 2390.19,
-      "chg_pct": -0.95,
-      "history": [2413.18, 2390.19]
+      "last": 2395.46,
+      "chg_pct": -0.74,
+      "history": [2413.42, 2395.46]
     },
     "SOL": {
-      "last": 99.14,
-      "chg_pct": -1.11,
-      "history": [100.25, 99.14]
+      "last": 99.49,
+      "chg_pct": -0.77,
+      "history": [100.25, 99.49]
     }
   },
   "news": [
@@ -360,18 +381,18 @@
     },
     {
       "tag": "Macro",
-      "title": "Iran conflict still live, but Wednesday's tape has stabilized",
-      "summary": "The Iran/Strait of Hormuz conflict that hit markets Tuesday remains unresolved -- oil tankers were struck this week and the 10-year Treasury yield touched its highest level in roughly a year -- but Wednesday's session has partly digested the shock: major indexes are choppy and roughly flat-to-firm rather than trending lower, a different character from Tuesday's outright slide. Elevated yields remain the more direct drag on equities than the Iran headlines themselves."
+      "title": "Iran conflict still live, but Wednesday's tape has firmed further",
+      "summary": "The Iran/Strait of Hormuz conflict that hit markets Tuesday remains unresolved, and the 10-year Treasury yield touched its highest level in roughly a year (around 4.81%) -- but Wednesday's session has kept firming rather than fading, with major indexes broadly higher on the day. Elevated yields remain the more direct drag on equities than the Iran headlines themselves."
     },
     {
       "tag": "Macro",
-      "title": "ADP employment out; factory orders and Fed Beige Book still ahead",
-      "summary": "Wednesday's ADP August private-payrolls report has already been released. July factory orders and the Federal Reserve's Beige Book are still due later today. None are policy decisions on their own, but they're today's scheduled data points ahead of Friday's nonfarm payrolls."
+      "title": "ADP employment out; factory orders and Fed Beige Book still on deck",
+      "summary": "Wednesday's ADP August private-payrolls report has already been released. July factory orders and the Federal Reserve's Beige Book are still scheduled later today. None are policy decisions on their own, but they're today's scheduled data points ahead of Friday's nonfarm payrolls."
     },
     {
       "tag": "Crypto",
       "title": "Bitcoin and Ether continue to soften through the session",
-      "summary": "BTC and ETH both traded lower through Wednesday's session (BTC -0.3%, ETH -1.0%, SOL -1.1% vs. today's open); the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is tracking roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
+      "summary": "BTC and ETH both traded lower through Wednesday's session (BTC -0.1%, ETH -0.7%, SOL -0.8% vs. today's open); the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is tracking roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
     }
   ],
   "calendar": [
