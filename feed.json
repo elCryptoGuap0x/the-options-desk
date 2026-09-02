@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T19:14:07Z",
+  "generated_at": "2026-09-02T20:15:49Z",
   "session": {
     "day_label": "WED",
-    "market_state": "OPEN",
+    "market_state": "CLOSED",
     "next_open": "THU 8:30 CT",
     "position": "FLAT"
   },
@@ -15,7 +15,8 @@
     "avg_loss": "-34.3%",
     "net_per_ticket": "-16.0%",
     "hold_typ": "8 min",
-    "prior_week_record": "4-10"
+    "prior_week_record": "4-10",
+    "session_pnl_usd": 38
   },
   "sparkline_cum_pct": [
     0,
@@ -48,6 +49,7 @@
       "day": "Wednesday",
       "sym": "SPY",
       "dir": "put",
+      "door": "B",
       "entry": "2:47p",
       "exit": "2:59p",
       "dur": "12 min",
@@ -58,6 +60,7 @@
       "day": "Wednesday",
       "sym": "META",
       "dir": "call",
+      "door": "C",
       "entry": "1:32p",
       "exit": "1:43p",
       "dur": "11 min",
@@ -68,6 +71,7 @@
       "day": "Wednesday",
       "sym": "META",
       "dir": "put",
+      "door": "C",
       "entry": "10:51a",
       "exit": "11:01a",
       "dur": "10 min",
@@ -83,13 +87,25 @@
         "NVDA",
         "TSLA",
         "HOOD",
+        "VIXY",
         "IWM",
         "IREN",
-        "SPY",
         "QQQ",
         "DIA",
+        "AAPL",
+        "MSFT",
         "MSTR",
-        "MSFT"
+        "COIN",
+        "CRCL",
+        "BMNR",
+        "ETHA",
+        "IBIT",
+        "BSOL",
+        "GTLB",
+        "DELL",
+        "CRDO",
+        "MDB",
+        "PANW"
       ]
     }
   ],
@@ -274,59 +290,59 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 765.34,
-      "chg_pct": 0.47,
-      "history": [764.88, 764.82, 764.79, 764.90, 765.21, 765.34]
+      "last": 765.14,
+      "chg_pct": 0.44,
+      "history": [765.31, 765.11, 765.37, 765.38, 765.28, 765.14]
     },
     "QQQ": {
-      "last": 708.77,
-      "chg_pct": 0.16,
-      "history": [708.31, 708.06, 708.21, 708.30, 708.66, 708.77]
+      "last": 709.25,
+      "chg_pct": 0.23,
+      "history": [708.81, 708.62, 708.90, 709.11, 709.32, 709.25]
     },
     "DIA": {
-      "last": 530.39,
-      "chg_pct": 0.50,
-      "history": [529.88, 530.13, 530.01, 530.10, 530.36, 530.39]
+      "last": 530.66,
+      "chg_pct": 0.55,
+      "history": [530.61, 530.67, 530.78, 530.85, 530.63, 530.66]
     },
     "IWM": {
-      "last": 294.23,
-      "chg_pct": 1.26,
-      "history": [293.95, 293.99, 293.98, 294.02, 294.17, 294.23]
+      "last": 294.01,
+      "chg_pct": 1.18,
+      "history": [294.09, 294.08, 294.24, 294.27, 293.92, 294.01]
     },
     "VIXY": {
-      "last": 17.28,
-      "chg_pct": -2.92,
-      "history": [17.29, 17.29, 17.30, 17.30, 17.29, 17.28]
+      "last": 17.27,
+      "chg_pct": -2.98,
+      "history": [17.29, 17.30, 17.28, 17.28, 17.29, 17.27]
     },
     "AAPL": {
-      "last": 325.68,
-      "chg_pct": 0.17,
-      "history": [325.30, 325.18, 325.00, 324.98, 325.48, 325.68]
+      "last": 324.99,
+      "chg_pct": -0.04,
+      "history": [325.92, 325.16, 325.20, 325.25, 325.27, 324.99]
     },
     "MSFT": {
-      "last": 496.26,
-      "chg_pct": -0.95,
-      "history": [495.21, 495.16, 495.28, 495.66, 496.05, 496.26]
+      "last": 496.81,
+      "chg_pct": -0.84,
+      "history": [496.89, 496.90, 497.33, 496.90, 497.32, 496.81]
     },
     "NVDA": {
-      "last": 224.58,
-      "chg_pct": 3.29,
-      "history": [224.78, 224.30, 224.51, 224.46, 224.44, 224.58]
+      "last": 224.40,
+      "chg_pct": 3.20,
+      "history": [224.31, 223.99, 224.02, 224.31, 224.52, 224.40]
     },
     "BTC": {
-      "last": 77322.85,
-      "chg_pct": -0.26,
-      "history": [77431.61, 77433.78, 77329.08, 77415.89, 77322.85]
+      "last": 77284.22,
+      "chg_pct": -0.29,
+      "history": [77510.48, 77284.22]
     },
     "ETH": {
-      "last": 2393.77,
-      "chg_pct": -0.81,
-      "history": [2396.05, 2395.13, 2392.23, 2395.59, 2393.77]
+      "last": 2390.14,
+      "chg_pct": -0.96,
+      "history": [2413.42, 2390.14]
     },
     "SOL": {
-      "last": 99.50,
-      "chg_pct": -0.75,
-      "history": [99.44, 99.43, 99.38, 99.50]
+      "last": 99.53,
+      "chg_pct": -0.72,
+      "history": [100.25, 99.53]
     }
   },
   "news": [
@@ -363,7 +379,7 @@
     {
       "tag": "Crypto",
       "title": "Bitcoin and Ether continue to soften through the session",
-      "summary": "BTC and ETH both traded lower through Wednesday's session (BTC -0.3%, ETH -0.8%, SOL -0.7% vs. today's open); the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is tracking roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
+      "summary": "BTC and ETH both traded lower through Wednesday's session (BTC -0.3%, ETH -1.0%, SOL -0.7% vs. today's open); the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is tracking roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
     }
   ],
   "calendar": [
