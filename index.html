@@ -229,7 +229,7 @@
   .scan-row .scan-reason { color: var(--text-dim); }
   .ticket {
     display: grid;
-    grid-template-columns: auto auto 1fr auto auto auto;
+    grid-template-columns: auto 1fr auto auto auto;
     align-items: center;
     gap: 12px;
     background: var(--surface);
@@ -266,14 +266,6 @@
   .wk-pending { color: var(--text-faint); font-style: italic; }
   .weeks-row .wk-disasters { color: var(--text-dim); }
   .weeks-row .wk-notes { font-family: var(--sans); font-size: 11px; color: var(--text-dim); text-align: right; }
-  .ticket .door {
-    font-family: var(--mono); font-size: 10px; font-weight: 700;
-    width: 20px; height: 20px; border-radius: 6px;
-    display: flex; align-items: center; justify-content: center;
-    justify-self: start;
-  }
-  .door-B { background: var(--violet-dim); color: var(--violet); }
-  .door-C { background: var(--gold-dim); color: var(--gold); }
   .ticket .time { font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: right; }
   .ticket .dur { font-family: var(--mono); font-size: 10px; color: var(--text-faint); text-align: right; min-width: 40px; }
   .ticket .pct { font-family: var(--mono); font-weight: 700; font-size: 14.5px; text-align: right; min-width: 62px; font-variant-numeric: tabular-nums; }
@@ -838,8 +830,7 @@
 
   function ticketRowHtml(t) {
     var durText = t.dte ? (t.dur + " · " + t.dte) : t.dur;
-    var doorBadge = t.door ? '<span class="door door-' + t.door + '">' + t.door + '</span>' : "";
-    return '<div class="ticket">' + doorBadge + '<span class="sym">' + t.sym + '</span>' +
+    return '<div class="ticket"><span class="sym">' + t.sym + '</span>' +
       '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
       '<span class="dur">' + durText + '</span>' +
       '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
@@ -953,9 +944,10 @@
   }
 
   // "Is it getting better?" view, added 9/2 -- one row per calendar week
-  // (or per product-regime sub-split within the current week, e.g. a
-  // Door-A day next to a Door-B/C day, so a mid-week rule change doesn't
-  // blend into one misleading number). Separate from the live daily tape
+  // (or per system-regime sub-split within the current week, e.g. a
+  // prior-system day next to a current-system day, so a mid-week rule
+  // change doesn't blend into one misleading number). Separate from the
+  // live daily tape
   // on purpose -- this answers "better than last week," the daily log
   // answers "what happened today." A week with real net_usd/avg_hold/
   // disasters not yet backfilled from the archive shows "pending" rather
