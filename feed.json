@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-02T17:43:00Z",
+  "generated_at": "2026-09-02T17:58:00Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
     "next_open": "THU 8:30 CT",
-    "position": "OPEN"
+    "position": "FLAT"
   },
   "stats": {
-    "record": "1-3",
-    "win_rate": "25.0%",
-    "trades_this_week": 4,
+    "record": "1-4",
+    "win_rate": "20.0%",
+    "trades_this_week": 5,
     "typical_hold": "0DTE-1DTE",
     "avg_win": "75.5%",
-    "avg_loss": "-41.4%",
-    "net_per_ticket": "-12.2%",
-    "hold_typ": "6 min",
+    "avg_loss": "-38.8%",
+    "net_per_ticket": "-15.9%",
+    "hold_typ": "7 min",
     "prior_week_record": "4-10"
   },
   "sparkline_cum_pct": [
@@ -22,7 +22,8 @@
     -25.2,
     -74.1,
     -124.1,
-    -48.6
+    -48.6,
+    -79.6
   ],
   "prior_week_sparkline_cum_pct": [
     0,
@@ -42,6 +43,16 @@
     -179.7
   ],
   "tickets": [
+    {
+      "day": "Wednesday",
+      "sym": "META",
+      "dir": "call",
+      "entry": "1:32p",
+      "exit": "1:43p",
+      "dur": "11 min",
+      "dte": "0DTE",
+      "pct": -31.0
+    },
     {
       "day": "Wednesday",
       "sym": "META",
@@ -266,64 +277,64 @@
     "L",
     "L",
     "L",
-    "L",
-    "W"
+    "W",
+    "L"
   ],
   "market_board": {
     "SPY": {
-      "last": 764.46,
-      "chg_pct": 0.35,
-      "history": [764.99, 764.60, 764.63, 764.68, 764.40, 764.46]
+      "last": 765.01,
+      "chg_pct": 0.42,
+      "history": [764.40, 764.46, 764.89, 764.98, 764.99, 765.01]
     },
     "QQQ": {
-      "last": 707.87,
-      "chg_pct": 0.03,
-      "history": [708.24, 707.86, 708.25, 708.32, 707.92, 707.96]
+      "last": 708.39,
+      "chg_pct": 0.11,
+      "history": [707.92, 707.94, 708.48, 708.53, 708.50, 708.39]
     },
     "DIA": {
-      "last": 529.63,
-      "chg_pct": 0.36,
-      "history": [530.12, 529.73, 529.73, 529.61, 529.43, 529.56]
+      "last": 530.07,
+      "chg_pct": 0.44,
+      "history": [529.43, 529.56, 529.82, 529.98, 529.99, 530.07]
     },
     "IWM": {
-      "last": 293.20,
-      "chg_pct": 0.90,
-      "history": [293.40, 293.25, 293.13, 293.20, 293.20, 293.21]
+      "last": 293.51,
+      "chg_pct": 1.01,
+      "history": [293.20, 293.21, 293.40, 293.51, 293.56, 293.51]
     },
     "VIXY": {
-      "last": 17.38,
-      "chg_pct": -2.39,
-      "history": [17.39, 17.42, 17.41, 17.39, 17.38, 17.37]
+      "last": 17.33,
+      "chg_pct": -2.67,
+      "history": [17.38, 17.37, 17.36, 17.35, 17.33, 17.33]
     },
     "AAPL": {
-      "last": 325.13,
-      "chg_pct": 0.00,
-      "history": [325.56, 325.67, 325.61, 325.08, 324.87, 325.02]
+      "last": 325.90,
+      "chg_pct": 0.24,
+      "history": [324.87, 325.02, 325.35, 325.50, 325.83, 325.90]
     },
     "MSFT": {
-      "last": 496.62,
-      "chg_pct": -0.88,
-      "history": [496.63, 495.77, 496.32, 496.46, 496.75, 496.60]
+      "last": 497.22,
+      "chg_pct": -0.76,
+      "history": [496.75, 496.60, 496.91, 496.80, 496.93, 497.22]
     },
     "NVDA": {
-      "last": 224.91,
-      "chg_pct": 3.44,
-      "history": [225.23, 224.80, 225.03, 225.47, 225.08, 225.02]
+      "last": 224.73,
+      "chg_pct": 3.35,
+      "history": [225.08, 225.05, 225.12, 225.12, 224.86, 224.73]
     },
     "BTC": {
-      "last": 77138.44,
-      "chg_pct": -0.48,
-      "history": [77510.48, 77138.44]
+      "last": 77299.48,
+      "chg_pct": -0.30,
+      "history": [77528.32, 77299.48]
     },
     "ETH": {
-      "last": 2383.73,
-      "chg_pct": -1.23,
-      "history": [2413.42, 2383.73]
+      "last": 2390.19,
+      "chg_pct": -0.95,
+      "history": [2413.18, 2390.19]
     },
     "SOL": {
-      "last": 98.74,
-      "chg_pct": -1.50,
-      "history": [100.24, 98.74]
+      "last": 99.14,
+      "chg_pct": -1.11,
+      "history": [100.25, 99.14]
     }
   },
   "news": [
@@ -345,7 +356,7 @@
     {
       "tag": "Earnings",
       "title": "Credo Technology extends post-earnings slide",
-      "summary": "Credo Technology (CRDO) has deepened its decline through the session, now down roughly 18-20% following its Q1 earnings report -- worse than the initial 8-10% premarket drop, not a recovery."
+      "summary": "Credo Technology (CRDO) has deepened its decline through the session, now down roughly 20-21% following its Q1 earnings report -- worse than the initial 8-10% premarket drop, not a recovery."
     },
     {
       "tag": "Macro",
@@ -360,7 +371,7 @@
     {
       "tag": "Crypto",
       "title": "Bitcoin and Ether continue to soften through the session",
-      "summary": "BTC and ETH both traded lower through Wednesday's session (BTC -0.6%, ETH -1.5%, SOL -1.8% vs. today's open); the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is tracking roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
+      "summary": "BTC and ETH both traded lower through Wednesday's session (BTC -0.3%, ETH -1.0%, SOL -1.1% vs. today's open); the crypto-proxy equity basket (MSTR, COIN, CRCL, and others) is tracking roughly in line with spot rather than diverging, unlike Tuesday evening's gap."
     }
   ],
   "calendar": [
