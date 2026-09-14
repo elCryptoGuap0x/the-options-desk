@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T21:06:29Z",
+  "generated_at": "2026-09-14T21:44:39Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -350,6 +350,11 @@
   },
   "news": [
     {
+      "tag": "Top",
+      "title": "Today's dominant story",
+      "summary": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board."
+    },
+    {
       "tag": "Stocks",
       "title": "AI leaders called for a slowdown, and the money that builds AI got repriced",
       "summary": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed. No filing, no rule, no guidance change \u2014 a positioning statement. The tape treated it as a direct hit to committed chip and datacenter spending, and midday it has not faded: Marvell -7.1%, AMD -6.0%, Oracle -4.2%, Nvidia -3.3% at late morning, all roughly where they opened. Overnight the same chain hit Asia \u2014 SK Hynix -6%, Samsung Electronics -4%, SoftBank -10%. Pushback landed over the weekend without visibly turning anything: President Trump dismissed the slowdown warnings, and Michael Burry called the Amodei and Altman calls self-serving."
@@ -373,21 +378,6 @@
       "tag": "Stocks",
       "title": "Two single-name stories the morning list did not have",
       "summary": "RUM is +14.7% after a report identified Anthropic as the customer behind its $13.7 billion GPU services contract. It sat on the gainers list all morning at roughly half that move with no catalyst attached \u2014 now it has one, and it lands on the opposite side of the day's dominant story from where the chip names sit. Separately, and tied to nothing else on the board: ELMT is +50.6% after disclosing it will use part of a $450 million committed US Department of Defense investment to expand tungsten supply and domestic manufacturing, with $200 million drawn at closing. BMM is +14.5% alongside it on a binding letter of intent to invest $150-175 million in the Springer Tungsten Complex in Imlay, Nevada."
-    },
-    {
-      "tag": "Macro",
-      "title": "Oil's supply shock got worse, but energy stocks quietly gave the move back",
-      "summary": "The catalyst escalated over the weekend and again this morning. Saudi Arabia suspended its East-West pipeline \u2014 the roughly 7-million-barrel-a-day Red Sea route that bypasses Hormuz \u2014 after drone strikes near key pumping stations, with no public word on damage extent and no restart timeline. A merchant vessel was struck in the Strait of Hormuz and a crew member was killed, and the Iran-Gulf talks on a temporary shipping corridor were postponed. Brent touched $110 before easing to around $108-109. The odd part is the equity side: the oil fund is holding most of its gain and the E&Ps held or extended (Apache +3.4%, Occidental +1.8%), but the integrateds faded to roughly flat and the broad energy sector ETF has gone red on the day. Crude up, energy equities not."
-    },
-    {
-      "tag": "Macro",
-      "title": "Wednesday's Fed decision is priced as a hike, not a hold",
-      "summary": "After Friday's hotter-than-expected August CPI \u2014 +0.4% month-over-month, +3.4% year-over-year, core +0.3% against roughly +0.2% expected \u2014 market-implied odds of a quarter-point rate hike at Wednesday's meeting sit near 85%, with another increasingly expected before year-end. The decision lands at 2:00 PM ET Wednesday with the press conference at 2:30, and retail sales print the same morning at 8:30. Notably, small caps are down less than a third of a percent, so the hike is not what is moving today's tape. Volatility eased through the morning \u2014 the VIX came back to about 17.3 from a 17.65 premarket print, still well above Friday's 15.84 close."
-    },
-    {
-      "tag": "Crypto",
-      "title": "Crypto is still sitting this one out \u2014 the miners are the exception, and it is not a crypto story",
-      "summary": "Spot is quiet and modestly firmer: bitcoin near $78,500, ether near $2,506, solana near $102, all inside about a percent. Majors are conspicuously not participating in the equity selloff in either direction. The equity proxies flipped green through the morning \u2014 Coinbase +7.0% on its analyst upgrade, MicroStrategy +3.3%, Circle +2.9%, the spot bitcoin ETF +1.6%. The exception is the miners: Marathon -4.5% and Riot -3.4% while bitcoin is green. Both have been repriced over the past year as AI and high-performance-computing datacenter hosts, so the frontier-slowdown headline hits their compute-demand leg while the mining leg goes nowhere. That gap has narrowed from the open but is still the widest dislocation on the board."
     }
   ],
   "calendar": [
