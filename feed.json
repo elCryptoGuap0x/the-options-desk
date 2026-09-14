@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-09-14T16:45:00Z",
+  "generated_at": "2026-09-14T21:06:29Z",
   "session": {
     "day_label": "MON",
-    "market_state": "OPEN",
-    "next_open": "TUE 8:30 CT",
+    "market_state": "CLOSED",
+    "next_open": "TOMORROW 8:30 CT",
     "position": "FLAT"
   },
   "stats": {
     "record": "0-0",
-    "win_rate": "—",
+    "win_rate": "\u2014",
     "trades_this_week": 0,
     "typical_hold": "0DTE-2DTE",
-    "avg_win": "—",
-    "avg_loss": "—",
-    "net_per_ticket": "—",
-    "hold_typ": "—",
+    "avg_win": "\u2014",
+    "avg_loss": "\u2014",
+    "net_per_ticket": "\u2014",
+    "hold_typ": "\u2014",
     "prior_week_record": "1-3",
-    "session_pnl_usd": 0
+    "session_pnl_usd": 0.0
   },
   "sparkline_cum_pct": [
     0
@@ -148,14 +148,14 @@
       "sym": "SPY",
       "dir": "call",
       "verdict": "SKIP",
-      "reason": "Tightest base of the day broke higher on volume four times the quietest bar under it, and ran straight to a new session high. Still a skip — the day had already put in higher highs before this leg started. Late in the sequence, not the start of one."
+      "reason": "Tightest base of the day broke higher on volume four times the quietest bar under it, and ran straight to a new session high. Still a skip \u2014 the day had already put in higher highs before this leg started. Late in the sequence, not the start of one."
     },
     {
       "time": "12:26p",
       "sym": "QQQ",
       "dir": "call",
       "verdict": "SKIP",
-      "reason": "Same break, same minute, and the volume expansion was the bigger of the two — nine times the quietest bar in the base. Same objection, same answer."
+      "reason": "Same break, same minute, and the volume expansion was the bigger of the two \u2014 nine times the quietest bar in the base. Same objection, same answer."
     },
     {
       "time": "12:26p",
@@ -175,13 +175,13 @@
       "sym": "USO",
       "dir": "put",
       "verdict": "SKIP",
-      "reason": "Broke out of a tight five-bar range on 5x volume — but the day's high and low were already in."
+      "reason": "Broke out of a tight five-bar range on 5x volume \u2014 but the day's high and low were already in."
     },
     {
       "time": "12:11p",
       "sym": "XLE",
       "verdict": "SKIP",
-      "reason": "Weakest energy read of the session, but the whole pullback is 0.34% — noise on a $65 ETF."
+      "reason": "Weakest energy read of the session, but the whole pullback is 0.34% \u2014 noise on a $65 ETF."
     },
     {
       "time": "12:11p",
@@ -199,13 +199,13 @@
       "time": "12:11p",
       "sym": "NVDA",
       "verdict": "SKIP",
-      "reason": "Down ~3% on the capex story but tracking the index tick for tick — nothing of its own to trade."
+      "reason": "Down ~3% on the capex story but tracking the index tick for tick \u2014 nothing of its own to trade."
     },
     {
       "time": "12:11p",
       "sym": "CRWD",
       "verdict": "SKIP",
-      "reason": "+14.7% and cooling slowly, but the nearest contract expiry is Friday — too far out."
+      "reason": "+14.7% and cooling slowly, but the nearest contract expiry is Friday \u2014 too far out."
     },
     {
       "time": "12:11p",
@@ -217,7 +217,7 @@
       "time": "12:11p",
       "sym": "MSTR",
       "verdict": "SKIP",
-      "reason": "+3.8%, best crypto proxy on the board — no short-dated contract to express it with."
+      "reason": "+3.8%, best crypto proxy on the board \u2014 no short-dated contract to express it with."
     },
     {
       "time": "12:11p",
@@ -263,7 +263,7 @@
       "locked": true
     },
     {
-      "week_label": "9/2–9/4",
+      "week_label": "9/2\u20139/4",
       "record": "2-6",
       "net_usd": -79,
       "avg_hold": "10 min",
@@ -272,7 +272,7 @@
       "locked": true
     },
     {
-      "week_label": "9/8–9/11",
+      "week_label": "9/8\u20139/11",
       "record": "1-3",
       "net_usd": -52,
       "avg_hold": "43 min",
@@ -281,7 +281,7 @@
       "locked": true
     },
     {
-      "week_label": "9/14–…",
+      "week_label": "9/14\u2013\u2026",
       "record": "0-0",
       "net_usd": 0,
       "avg_hold": null,
@@ -292,146 +292,59 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 762.1,
-      "chg_pct": -0.29,
+      "last": 761.93,
+      "chg_pct": 0.0,
       "history": [
-        765.16,
-        773.17,
-        770.19,
-        765.96,
-        762.4,
-        757.83,
-        764.29
+        761.93
       ]
     },
     "QQQ": {
-      "last": 710.65,
-      "chg_pct": -0.59,
+      "last": 710.31,
+      "chg_pct": 0.0,
       "history": [
-        709.24,
-        717.67,
-        718.96,
-        718.36,
-        716.31,
-        708.69,
-        714.88
+        710.31
       ]
     },
     "DIA": {
-      "last": 525.53,
-      "chg_pct": -0.05,
+      "last": 525.38,
+      "chg_pct": 0.0,
       "history": [
-        530.62,
-        536.93,
-        534.08,
-        528.03,
-        524.07,
-        520.75,
-        525.79
-      ]
-    },
-    "IWM": {
-      "last": 288.93,
-      "chg_pct": 0.01,
-      "history": [
-        294.01,
-        295.19,
-        296.01,
-        294.67,
-        290.64,
-        287.7,
-        288.89
+        525.38
       ]
     },
     "VIXY": {
-      "last": 17.49,
-      "chg_pct": 1.1,
+      "last": 17.52,
+      "chg_pct": 0.0,
       "history": [
-        17.28,
-        16.95,
-        17.0,
-        17.3,
-        17.56,
-        18.16,
-        17.3
+        17.515
       ]
     },
-    "AAPL": {
-      "last": 334.79,
-      "chg_pct": 0.76,
+    "MSTR": {
+      "last": 135.74,
+      "chg_pct": 0.0,
       "history": [
-        324.96,
-        328.21,
-        319.97,
-        316.22,
-        315.34,
-        326.57,
-        332.27
+        135.735
       ]
     },
-    "MSFT": {
-      "last": 507.02,
-      "chg_pct": 2.3,
+    "COIN": {
+      "last": 190.4,
+      "chg_pct": 0.0,
       "history": [
-        496.82,
-        510.12,
-        499.7,
-        493.95,
-        491.65,
-        492.44,
-        495.63
+        190.4
       ]
     },
-    "NVDA": {
-      "last": 211.73,
-      "chg_pct": -3.01,
+    "IBIT": {
+      "last": 44.52,
+      "chg_pct": 0.0,
       "history": [
-        224.41,
-        228.45,
-        230.36,
-        225.73,
-        223.67,
-        218.36,
-        218.29
+        44.52
       ]
     },
-    "BTC": {
-      "last": 78638.74,
-      "chg_pct": 1.38,
+    "IREN": {
+      "last": 43.46,
+      "chg_pct": 0.0,
       "history": [
-        78447.11,
-        78283.98,
-        76536.55,
-        77208.55,
-        77262.85,
-        76799.85,
-        77567.44
-      ]
-    },
-    "ETH": {
-      "last": 2522.47,
-      "chg_pct": 0.43,
-      "history": [
-        2485.02,
-        2467.5,
-        2437.36,
-        2516.29,
-        2525.35,
-        2475.86,
-        2512.02
-      ]
-    },
-    "SOL": {
-      "last": 102.41,
-      "chg_pct": 1.45,
-      "history": [
-        103.37,
-        101.54,
-        98.62,
-        102.45,
-        101.74,
-        99.26,
-        100.95
+        43.46
       ]
     }
   },
@@ -439,42 +352,42 @@
     {
       "tag": "Stocks",
       "title": "AI leaders called for a slowdown, and the money that builds AI got repriced",
-      "summary": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed. No filing, no rule, no guidance change — a positioning statement. The tape treated it as a direct hit to committed chip and datacenter spending, and midday it has not faded: Marvell -7.1%, AMD -6.0%, Oracle -4.2%, Nvidia -3.3% at late morning, all roughly where they opened. Overnight the same chain hit Asia — SK Hynix -6%, Samsung Electronics -4%, SoftBank -10%. Pushback landed over the weekend without visibly turning anything: President Trump dismissed the slowdown warnings, and Michael Burry called the Amodei and Altman calls self-serving."
+      "summary": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed. No filing, no rule, no guidance change \u2014 a positioning statement. The tape treated it as a direct hit to committed chip and datacenter spending, and midday it has not faded: Marvell -7.1%, AMD -6.0%, Oracle -4.2%, Nvidia -3.3% at late morning, all roughly where they opened. Overnight the same chain hit Asia \u2014 SK Hynix -6%, Samsung Electronics -4%, SoftBank -10%. Pushback landed over the weekend without visibly turning anything: President Trump dismissed the slowdown warnings, and Michael Burry called the Amodei and Altman calls self-serving."
     },
     {
       "tag": "Stocks",
-      "title": "It is not a tech selloff — the companies that use AI are green",
-      "summary": "The split is the whole story. While the builders sold off, the platforms and applications rallied and have kept extending through the morning: ServiceNow +6.5%, Adobe +3.9%, with Alphabet, Meta, Apple and Microsoft all holding gains. Enterprise software with no capex exposure led the liquid gainer list alongside them — HubSpot, Atlassian, SAP, Accenture, Asana. One index line carries it: the Nasdaq proxy is down roughly twice the S&P proxy, the Dow proxy is nearly flat, and small caps are barely moved. That is a concentrated repricing of one spending chain, not broad risk-off."
+      "title": "It is not a tech selloff \u2014 the companies that use AI are green",
+      "summary": "The split is the whole story. While the builders sold off, the platforms and applications rallied and have kept extending through the morning: ServiceNow +6.5%, Adobe +3.9%, with Alphabet, Meta, Apple and Microsoft all holding gains. Enterprise software with no capex exposure led the liquid gainer list alongside them \u2014 HubSpot, Atlassian, SAP, Accenture, Asana. One index line carries it: the Nasdaq proxy is down roughly twice the S&P proxy, the Dow proxy is nearly flat, and small caps are barely moved. That is a concentrated repricing of one spending chain, not broad risk-off."
     },
     {
       "tag": "Stocks",
       "title": "Cybersecurity roughly doubled its move, and it is no longer just a headline trade",
-      "summary": "The premarket rally in security names has roughly doubled by late morning, and the sector picked up name-specific catalysts it did not have at the open: CrowdStrike +15.3%, Zscaler +15.0%, SentinelOne +14.9%, Palo Alto Networks +13.3%, Okta +11.6%, Cloudflare +6.4%. It also broadened well past the premarket list — Rapid7 +17.4%, SailPoint +14.6%, Tenable +13.7%, Rubrik +13.3%, Fortinet +8.6%. On CrowdStrike specifically: CEO George Kurtz publicly rebutted the slowdown call on Sunday, arguing frontier labs advance regardless and security's job is to make that safe rather than slower, and Jim Cramer amplified it on CNBC. CrowdStrike separately disclosed it registered the resale of 2.12 million shares by a selling stockholder."
+      "summary": "The premarket rally in security names has roughly doubled by late morning, and the sector picked up name-specific catalysts it did not have at the open: CrowdStrike +15.3%, Zscaler +15.0%, SentinelOne +14.9%, Palo Alto Networks +13.3%, Okta +11.6%, Cloudflare +6.4%. It also broadened well past the premarket list \u2014 Rapid7 +17.4%, SailPoint +14.6%, Tenable +13.7%, Rubrik +13.3%, Fortinet +8.6%. On CrowdStrike specifically: CEO George Kurtz publicly rebutted the slowdown call on Sunday, arguing frontier labs advance regardless and security's job is to make that safe rather than slower, and Jim Cramer amplified it on CNBC. CrowdStrike separately disclosed it registered the resale of 2.12 million shares by a selling stockholder."
     },
     {
       "tag": "Stocks",
       "title": "A batch of pre-open analyst moves is doing real work today",
-      "summary": "Ratings changes that landed between 7:46 and 9:01 ET are driving several of the day's cleanest single-name moves. Compass Point upgraded Coinbase from Sell to Neutral with the price target going $130 to $177, and Coinbase is +7.0% against a barely-moved bitcoin — a single-name catalyst, not a crypto move. The same analyst took Bullish from Neutral to Buy, target $30 to $51, and it is +5.7%. The exception that proves the tape's mood: JP Morgan double-upgraded IREN from Underweight to Overweight, target $46 to $65, and IREN is still down about 1% — the AI-capex selloff is overriding the upgrade. Elsewhere, Wells Fargo raised its Okta target to $200, and both B of A and Wedbush lifted Roblox targets."
+      "summary": "Ratings changes that landed between 7:46 and 9:01 ET are driving several of the day's cleanest single-name moves. Compass Point upgraded Coinbase from Sell to Neutral with the price target going $130 to $177, and Coinbase is +7.0% against a barely-moved bitcoin \u2014 a single-name catalyst, not a crypto move. The same analyst took Bullish from Neutral to Buy, target $30 to $51, and it is +5.7%. The exception that proves the tape's mood: JP Morgan double-upgraded IREN from Underweight to Overweight, target $46 to $65, and IREN is still down about 1% \u2014 the AI-capex selloff is overriding the upgrade. Elsewhere, Wells Fargo raised its Okta target to $200, and both B of A and Wedbush lifted Roblox targets."
     },
     {
       "tag": "Stocks",
       "title": "Two single-name stories the morning list did not have",
-      "summary": "RUM is +14.7% after a report identified Anthropic as the customer behind its $13.7 billion GPU services contract. It sat on the gainers list all morning at roughly half that move with no catalyst attached — now it has one, and it lands on the opposite side of the day's dominant story from where the chip names sit. Separately, and tied to nothing else on the board: ELMT is +50.6% after disclosing it will use part of a $450 million committed US Department of Defense investment to expand tungsten supply and domestic manufacturing, with $200 million drawn at closing. BMM is +14.5% alongside it on a binding letter of intent to invest $150-175 million in the Springer Tungsten Complex in Imlay, Nevada."
+      "summary": "RUM is +14.7% after a report identified Anthropic as the customer behind its $13.7 billion GPU services contract. It sat on the gainers list all morning at roughly half that move with no catalyst attached \u2014 now it has one, and it lands on the opposite side of the day's dominant story from where the chip names sit. Separately, and tied to nothing else on the board: ELMT is +50.6% after disclosing it will use part of a $450 million committed US Department of Defense investment to expand tungsten supply and domestic manufacturing, with $200 million drawn at closing. BMM is +14.5% alongside it on a binding letter of intent to invest $150-175 million in the Springer Tungsten Complex in Imlay, Nevada."
     },
     {
       "tag": "Macro",
       "title": "Oil's supply shock got worse, but energy stocks quietly gave the move back",
-      "summary": "The catalyst escalated over the weekend and again this morning. Saudi Arabia suspended its East-West pipeline — the roughly 7-million-barrel-a-day Red Sea route that bypasses Hormuz — after drone strikes near key pumping stations, with no public word on damage extent and no restart timeline. A merchant vessel was struck in the Strait of Hormuz and a crew member was killed, and the Iran-Gulf talks on a temporary shipping corridor were postponed. Brent touched $110 before easing to around $108-109. The odd part is the equity side: the oil fund is holding most of its gain and the E&Ps held or extended (Apache +3.4%, Occidental +1.8%), but the integrateds faded to roughly flat and the broad energy sector ETF has gone red on the day. Crude up, energy equities not."
+      "summary": "The catalyst escalated over the weekend and again this morning. Saudi Arabia suspended its East-West pipeline \u2014 the roughly 7-million-barrel-a-day Red Sea route that bypasses Hormuz \u2014 after drone strikes near key pumping stations, with no public word on damage extent and no restart timeline. A merchant vessel was struck in the Strait of Hormuz and a crew member was killed, and the Iran-Gulf talks on a temporary shipping corridor were postponed. Brent touched $110 before easing to around $108-109. The odd part is the equity side: the oil fund is holding most of its gain and the E&Ps held or extended (Apache +3.4%, Occidental +1.8%), but the integrateds faded to roughly flat and the broad energy sector ETF has gone red on the day. Crude up, energy equities not."
     },
     {
       "tag": "Macro",
       "title": "Wednesday's Fed decision is priced as a hike, not a hold",
-      "summary": "After Friday's hotter-than-expected August CPI — +0.4% month-over-month, +3.4% year-over-year, core +0.3% against roughly +0.2% expected — market-implied odds of a quarter-point rate hike at Wednesday's meeting sit near 85%, with another increasingly expected before year-end. The decision lands at 2:00 PM ET Wednesday with the press conference at 2:30, and retail sales print the same morning at 8:30. Notably, small caps are down less than a third of a percent, so the hike is not what is moving today's tape. Volatility eased through the morning — the VIX came back to about 17.3 from a 17.65 premarket print, still well above Friday's 15.84 close."
+      "summary": "After Friday's hotter-than-expected August CPI \u2014 +0.4% month-over-month, +3.4% year-over-year, core +0.3% against roughly +0.2% expected \u2014 market-implied odds of a quarter-point rate hike at Wednesday's meeting sit near 85%, with another increasingly expected before year-end. The decision lands at 2:00 PM ET Wednesday with the press conference at 2:30, and retail sales print the same morning at 8:30. Notably, small caps are down less than a third of a percent, so the hike is not what is moving today's tape. Volatility eased through the morning \u2014 the VIX came back to about 17.3 from a 17.65 premarket print, still well above Friday's 15.84 close."
     },
     {
       "tag": "Crypto",
-      "title": "Crypto is still sitting this one out — the miners are the exception, and it is not a crypto story",
-      "summary": "Spot is quiet and modestly firmer: bitcoin near $78,500, ether near $2,506, solana near $102, all inside about a percent. Majors are conspicuously not participating in the equity selloff in either direction. The equity proxies flipped green through the morning — Coinbase +7.0% on its analyst upgrade, MicroStrategy +3.3%, Circle +2.9%, the spot bitcoin ETF +1.6%. The exception is the miners: Marathon -4.5% and Riot -3.4% while bitcoin is green. Both have been repriced over the past year as AI and high-performance-computing datacenter hosts, so the frontier-slowdown headline hits their compute-demand leg while the mining leg goes nowhere. That gap has narrowed from the open but is still the widest dislocation on the board."
+      "title": "Crypto is still sitting this one out \u2014 the miners are the exception, and it is not a crypto story",
+      "summary": "Spot is quiet and modestly firmer: bitcoin near $78,500, ether near $2,506, solana near $102, all inside about a percent. Majors are conspicuously not participating in the equity selloff in either direction. The equity proxies flipped green through the morning \u2014 Coinbase +7.0% on its analyst upgrade, MicroStrategy +3.3%, Circle +2.9%, the spot bitcoin ETF +1.6%. The exception is the miners: Marathon -4.5% and Riot -3.4% while bitcoin is green. Both have been repriced over the past year as AI and high-performance-computing datacenter hosts, so the frontier-slowdown headline hits their compute-demand leg while the mining leg goes nowhere. That gap has narrowed from the open but is still the widest dislocation on the board."
     }
   ],
   "calendar": [
@@ -498,5 +411,36 @@
       "what": "Industrial production",
       "when": "Fri 9/18"
     }
-  ]
+  ],
+  "skip_summary_ticker_list": {
+    "count": 23,
+    "names": [
+      "AAPL",
+      "ADBE",
+      "BMNR",
+      "BSOL",
+      "COIN",
+      "CRCL",
+      "CRWD",
+      "DIA",
+      "ETHA",
+      "IBIT",
+      "IREN",
+      "META",
+      "MRVL",
+      "MSFT",
+      "MSTR",
+      "NVDA",
+      "PANW",
+      "QQQ",
+      "SPY",
+      "TSLA",
+      "USO",
+      "VIXY",
+      "XLE"
+    ],
+    "filled": 0
+  },
+  "scan_log_public": "The index funds and the oil fund each pushed higher this afternoon and each got passed on \u2014 every one of those moves ran out of steam faster than the rules will call a move over, so there was never a moment where a trade was allowed. Watched all day, never a ticket.",
+  "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board."
 }
