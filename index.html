@@ -1136,7 +1136,10 @@
 
     onValue(ref(db, "presence"), function (snap) {
       var n = snap.exists() ? Object.keys(snap.val()).length : 0;
-      if (countEl) countEl.textContent = "on the tape right now: " + n;
+      // Fixed 9/13: "on the tape right now" read as a live-setup count
+      // (market activity), not what it actually is -- real page viewers.
+      // Confusing on its own on a weekend ("2" with the market shut).
+      if (countEl) countEl.textContent = "viewing: " + n;
     }, function () { /* no read access yet -- stay blank */ });
 
     onAuthStateChanged(auth, function (user) {
