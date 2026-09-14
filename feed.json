@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:30:00Z",
+  "generated_at": "2026-09-14T14:05:00Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -182,8 +182,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 758.96,
-      "chg_pct": -0.7,
+      "last": 760.4,
+      "chg_pct": -0.51,
       "history": [
         765.16,
         773.17,
@@ -195,8 +195,8 @@
       ]
     },
     "QQQ": {
-      "last": 703.18,
-      "chg_pct": -1.64,
+      "last": 706.33,
+      "chg_pct": -1.2,
       "history": [
         709.24,
         717.67,
@@ -208,8 +208,8 @@
       ]
     },
     "DIA": {
-      "last": 524.2,
-      "chg_pct": -0.3,
+      "last": 524.93,
+      "chg_pct": -0.16,
       "history": [
         530.62,
         536.93,
@@ -221,8 +221,8 @@
       ]
     },
     "IWM": {
-      "last": 287.59,
-      "chg_pct": -0.45,
+      "last": 288.36,
+      "chg_pct": -0.18,
       "history": [
         294.01,
         295.19,
@@ -234,8 +234,8 @@
       ]
     },
     "VIXY": {
-      "last": 17.87,
-      "chg_pct": 3.29,
+      "last": 17.7,
+      "chg_pct": 2.31,
       "history": [
         17.28,
         16.95,
@@ -247,8 +247,8 @@
       ]
     },
     "AAPL": {
-      "last": 334.7,
-      "chg_pct": 0.73,
+      "last": 334.32,
+      "chg_pct": 0.62,
       "history": [
         324.96,
         328.21,
@@ -260,8 +260,8 @@
       ]
     },
     "MSFT": {
-      "last": 497.36,
-      "chg_pct": 0.35,
+      "last": 502.18,
+      "chg_pct": 1.32,
       "history": [
         496.82,
         510.12,
@@ -273,8 +273,8 @@
       ]
     },
     "NVDA": {
-      "last": 211.57,
-      "chg_pct": -3.08,
+      "last": 210.74,
+      "chg_pct": -3.46,
       "history": [
         224.41,
         228.45,
@@ -286,8 +286,8 @@
       ]
     },
     "BTC": {
-      "last": 77806.15,
-      "chg_pct": 0.31,
+      "last": 78281.98,
+      "chg_pct": 0.81,
       "history": [
         78447.11,
         78283.98,
@@ -299,8 +299,8 @@
       ]
     },
     "ETH": {
-      "last": 2502.05,
-      "chg_pct": -0.4,
+      "last": 2503.7,
+      "chg_pct": -0.41,
       "history": [
         2485.02,
         2467.5,
@@ -312,8 +312,8 @@
       ]
     },
     "SOL": {
-      "last": 101.12,
-      "chg_pct": 0.17,
+      "last": 101.56,
+      "chg_pct": 0.41,
       "history": [
         103.37,
         101.54,
@@ -327,48 +327,56 @@
   },
   "news": [
     {
-      "tag": "Macro",
-      "title": "Friday's CPI ran hot and pushed Fed-hike odds sharply higher",
-      "summary": "August CPI landed at +0.4% month-over-month and +3.4% year-over-year, with the core reading at +0.3% versus roughly +0.2% expected — energy costs did most of the work on the headline. It was the last major inflation read before this week's Fed meeting, and by Friday afternoon market-implied odds of a quarter-point hike had climbed from roughly 67-70% in the morning to about 85-90%. Stocks still finished green after four straight down sessions: S&P proxy +0.9%, Dow proxy +1.0%, Nasdaq proxy +0.9%."
-    },
-    {
-      "tag": "Macro",
-      "title": "Consumer sentiment missed badly and inflation expectations jumped",
-      "summary": "The preliminary September University of Michigan sentiment reading came in at 47.8 against roughly 51.0 expected and 51.7 prior — a sharp miss rather than the modest dip that had been penciled in. The expectations component did most of the damage at 45.8 versus 50.5 expected. One-year inflation expectations rose to 4.6% from an expected 4.0%, and the five-year to 3.4%, with higher gas prices and affordability concerns cited as the drivers."
-    },
-    {
-      "tag": "Macro",
-      "title": "Crude gave back its war premium, but the chokepoints are unresolved",
-      "summary": "Brent and WTI both fell about 3% Friday, to roughly $104 and $99, after Iranian state media said Tehran would meet Gulf-state foreign ministers in Oman this week to discuss the Strait of Hormuz. That headline is what knocked the risk premium out of crude — it is not a resolution. Hormuz shipping has been sharply reduced since March, Houthi forces took the Yemeni port of Mocha this week and reportedly advanced toward Perim Island, and both the IEA and OPEC cut their 2026 demand outlooks. US diesel set a fresh retail record near $6.06 a gallon."
+      "tag": "Stocks",
+      "title": "AI leaders called for a slowdown, and the money that builds AI got repriced",
+      "summary": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed. No filing, no rule, no guidance change — a positioning statement. The tape treated it as a direct hit to committed chip and datacenter spending. Overnight: SK Hynix -6%, Samsung Electronics -4%, SoftBank -10%. Premarket in the capex chain: Nebius -8.7%, CoreWeave -8.4%, Marvell -8.4%, Arm -7.7%, Intel -6.7%, Micron -6.6%, AMD -5.8%, Oracle -5.0%, Nvidia -2.7%. The AI-datacenter power names went with them: Oklo -3.6%, Constellation -3.0%, Vistra -2.8%. Volatility gave back Friday's collapse, with the VIX back to 17.65 from a 15.84 close."
     },
     {
       "tag": "Stocks",
-      "title": "Oracle beat, popped 8%, then round-tripped the whole move",
-      "summary": "Oracle beat on fiscal Q1 earnings and revenue, grew cloud revenue 62% year-over-year, added $209B to its remaining performance obligations, and raised full-year guidance — and opened up 7-8%. By midday it was flat to slightly negative. The stated reason from the sell side was margin: non-GAAP gross margin fell to 61% from 68.7% a year ago, missing estimates, against only a modest guidance raise. The AI-infrastructure read-through names kept running anyway, with Dell +11%, HPE +9% on its own beat, and Super Micro +6%."
+      "title": "It is not a tech selloff — the companies that use AI are green",
+      "summary": "The split is the whole story. While the builders sold off, the platforms and applications rallied premarket: ServiceNow +5.0%, Adobe +3.7%, Alphabet +1.7%, Meta +1.7%, Apple +0.8%, Microsoft +0.7%. Enterprise software with no capex exposure led the liquid gainer list alongside them — HubSpot, Atlassian, SAP, Accenture, Asana. One index line carries it: the Nasdaq proxy is down roughly 2.4 times the S&P proxy, with the Dow proxy nearly flat and small caps barely moved. That is a concentrated repricing of one spending chain, not broad risk-off."
     },
     {
       "tag": "Stocks",
-      "title": "Adobe guides light; Copart buys ACV Auctions; RH beats big",
-      "summary": "Adobe beat on fiscal Q3 but guided Q4 revenue slightly below consensus and held annual recurring revenue growth near 10.2%, down from 11.5% last year — shares fell 3-4%. Copart agreed to buy ACV Auctions for $10.50 a share in all cash, about $1.9B and a 45% premium, with ACV immediately trading near the deal price; Copart itself gave back its pop and closed down on a mixed quarter. RH beat Q2 earnings by a wide margin on a slight revenue miss and rose 8-9%. Kroger beat but cut its full-year same-store sales guidance."
+      "title": "Cybersecurity is the bid side of the same headline",
+      "summary": "Security names rallied hard on the argument that an AI-risk narrative means companies spend more on protection, not less: CrowdStrike +7.4%, Palo Alto Networks +5.4%, Zscaler +4.8%, SentinelOne +4.4%, Okta +3.7%, Cloudflare +2.8%. The framing feeds off Jensen Huang's comment last Thursday that cybersecurity is likely AI's next major growth market, and Anthropic's disclosure that it disrupted a Russia-linked campaign using its models against more than 20 Ukrainian government and defense targets. None of these names has an earnings catalyst today — the move is entirely the headline."
+    },
+    {
+      "tag": "Macro",
+      "title": "Oil's war premium came back over the weekend, bigger than before",
+      "summary": "This reverses Friday's de-escalation story outright. Saudi Arabia shut its main East-West pipeline — the Red Sea route that bypasses Hormuz — after drone strikes near key pumping stations. A merchant vessel was struck in the Strait of Hormuz and one crew member was killed. The Iran-Gulf talks on a temporary shipping corridor, the headline that knocked $3 out of crude on Friday, were postponed. Brent crossed $108, a four-month high, up more than 3%; WTI is near $102. The shut pipeline was moving roughly 7 million barrels a day, and reporting suggests Saudi exportable inventory could be drawn down within days if it is not restarted. Energy equities followed: the oil fund +2.9%, Exxon +1.8%, Chevron +1.6%, Occidental +2.2%."
+    },
+    {
+      "tag": "Macro",
+      "title": "Wednesday's Fed decision is now priced as a hike, not a hold",
+      "summary": "After Friday's hotter-than-expected August CPI — +0.4% month-over-month, +3.4% year-over-year, core +0.3% against roughly +0.2% expected — market-implied odds of a quarter-point rate hike at Wednesday's meeting sit near 85%, with another increasingly expected before year-end. The decision lands at 2:00 PM ET Wednesday with the press conference at 2:30. Retail sales print the same morning at 8:30. Notably, small caps are down less than half a percent despite that, so the hike is not what is moving the tape today."
     },
     {
       "tag": "Crypto",
-      "title": "Coins drifted lower through the weekend",
-      "summary": "Bitcoin is around $76,700, down roughly half a percent since midnight Eastern and off from the mid-$78,000s a week ago. Ether is near $2,480 (-1.6%) and Solana near $99.37 (-2.2%). Friday itself was a wide day for crypto — Bitcoin traded between roughly $76,000 and $79,900 around the CPI print — but there has been no crypto-specific catalyst, no exchange or regulatory event, and no ETF-flow story behind the move; it continues to read as macro-driven."
+      "title": "Crypto is sitting this one out, except for the miners",
+      "summary": "Spot is flat and quiet: Bitcoin near $78,300 (+0.8% since midnight ET), Ether near $2,504 (-0.4%), Solana near $101.56 (+0.4%). Majors are inside half a percent and conspicuously not participating in the equity selloff. The exception is the miners, and it is not a crypto story — Marathon -6.8% and Riot -5.3% premarket while Bitcoin was green and the spot ETF proxy tracked it cleanly at +0.6%. Both have been repriced over the past year as AI and high-performance-computing datacenter hosts, so the frontier-slowdown headline hits their compute-demand leg while the mining leg goes nowhere. Coinbase diverged the other way at +2.1% with no name-specific news found."
     }
   ],
   "calendar": [
     {
-      "what": "New Iran bank sanctions expected",
-      "when": "Mon 9/14"
-    },
-    {
-      "what": "FOMC meeting begins",
+      "what": "Empire State manufacturing",
       "when": "Tue 9/15"
     },
     {
-      "what": "FOMC decision",
+      "what": "Retail sales, 8:30 ET",
       "when": "Wed 9/16"
+    },
+    {
+      "what": "FOMC decision 2:00 ET, presser 2:30",
+      "when": "Wed 9/16"
+    },
+    {
+      "what": "Philly Fed, housing starts, Bank of England",
+      "when": "Thu 9/17"
+    },
+    {
+      "what": "Industrial production",
+      "when": "Fri 9/18"
     }
   ]
 }
