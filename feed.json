@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T00:45:00Z",
+  "generated_at": "2026-09-14T01:50:00Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -36,7 +36,60 @@
     -141.0,
     -165.6
   ],
-  "tickets": [],
+  "tickets": [
+    {
+      "day": "Friday",
+      "sym": "IREN",
+      "dir": "call",
+      "entry": "10:33a",
+      "exit": "10:50a",
+      "dur": "17 min",
+      "dte": "0DTE",
+      "pct": -55.0,
+      "fuse": {
+        "dots": ["R", "R", "R", "R", "R", "R", "R", "R", "R", "R"]
+      }
+    },
+    {
+      "day": "Thursday",
+      "sym": "COIN",
+      "dir": "put",
+      "entry": "10:11a",
+      "exit": "10:34a",
+      "dur": "23 min",
+      "dte": "1DTE",
+      "pct": -20.5,
+      "fuse": {
+        "dots": ["R", "R", "G", "G", "G", "G", "G", "R", "R", "R"]
+      }
+    },
+    {
+      "day": "Wednesday",
+      "sym": "IREN",
+      "dir": "call",
+      "entry": "11:41a",
+      "exit": "1:41p",
+      "dur": "121 min",
+      "dte": "2DTE",
+      "pct": 10.6,
+      "fuse": {
+        "dots": ["R", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "G"]
+      }
+    },
+    {
+      "day": "Tuesday",
+      "sym": "TSLA",
+      "dir": "call",
+      "entry": "10:31a",
+      "exit": "10:44a",
+      "dur": "13 min",
+      "dte": "1DTE",
+      "pct": -28.8,
+      "fuse": {
+        "dots": ["R", "R", "R", "R", "R", "R", "R", "R", "gray", "R"]
+      }
+    }
+  ],
   "skip_summary": [],
   "scan_log": [],
   "roast": "Session over. -$11.",
@@ -130,19 +183,19 @@
       "history": [224.41, 228.45, 230.36, 225.73, 223.67, 218.36, 218.29]
     },
     "BTC": {
-      "last": 76766.78,
-      "chg_pct": -0.54,
-      "history": [78447.11, 78283.98, 76536.55, 77208.55, 77262.85, 76799.85, 76766.78]
+      "last": 76748.99,
+      "chg_pct": -0.56,
+      "history": [78447.11, 78283.98, 76536.55, 77208.55, 77262.85, 76799.85, 76748.99]
     },
     "ETH": {
-      "last": 2481.18,
-      "chg_pct": -1.56,
-      "history": [2485.02, 2467.50, 2437.36, 2516.29, 2525.35, 2475.86, 2481.18]
+      "last": 2479.75,
+      "chg_pct": -1.61,
+      "history": [2485.02, 2467.50, 2437.36, 2516.29, 2525.35, 2475.86, 2479.75]
     },
     "SOL": {
-      "last": 99.65,
-      "chg_pct": -1.95,
-      "history": [103.37, 101.54, 98.62, 102.45, 101.74, 99.26, 99.65]
+      "last": 99.37,
+      "chg_pct": -2.21,
+      "history": [103.37, 101.54, 98.62, 102.45, 101.74, 99.26, 99.37]
     }
   },
   "news": [
@@ -179,7 +232,7 @@
     {
       "tag": "Crypto",
       "title": "Coins drifted lower through the weekend",
-      "summary": "Bitcoin is around $76,800, down roughly half a percent since midnight Eastern and off from the mid-$78,000s a week ago. Ether is near $2,481 (-1.6%) and Solana near $99.65 (-2.0%). Friday itself was a wide day for crypto — Bitcoin traded between roughly $76,000 and $79,900 around the CPI print — but there has been no crypto-specific catalyst, no exchange or regulatory event, and no ETF-flow story behind the move; it continues to read as macro-driven."
+      "summary": "Bitcoin is around $76,700, down roughly half a percent since midnight Eastern and off from the mid-$78,000s a week ago. Ether is near $2,480 (-1.6%) and Solana near $99.37 (-2.2%). Friday itself was a wide day for crypto — Bitcoin traded between roughly $76,000 and $79,900 around the CPI print — but there has been no crypto-specific catalyst, no exchange or regulatory event, and no ETF-flow story behind the move; it continues to read as macro-driven."
     }
   ],
   "calendar": [

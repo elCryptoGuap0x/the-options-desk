@@ -927,6 +927,15 @@
     // genuinely produced nothing yet.
     if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT" && tickets.length === 0) {
       html += '<div class="waiting"><span class="dot"></span>WAITING · nothing new on the tape</div>';
+    // Fixed 9/13, real bug: this whole section rendered fully blank on a
+    // WEEKEND/CLOSED market with zero tickets -- WAITING is a weekday
+    // scan-cadence voice ("nothing new on the tape yet"), wrong tone for
+    // a closed desk, so it was deliberately gated to OPEN only, but
+    // nothing existed for the non-OPEN case. Reuses session.next_open
+    // rather than inventing a second copy of the same fact.
+    } else if (data.session && data.session.market_state !== "OPEN" && tickets.length === 0) {
+      html += '<div class="waiting"><span class="dot"></span>Desk closed — next session ' +
+        (data.session.next_open || "TBD") + '.</div>';
     }
     dayOrder.forEach(function (day) {
       html += '<div class="day-divider">' + day + '</div>';
