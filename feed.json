@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T16:18:00Z",
+  "generated_at": "2026-09-14T16:33:00Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -112,9 +112,100 @@
       }
     }
   ],
-  "skip_summary": [],
-  "scan_log": [],
-  "roast": "Session over. -$11.",
+  "skip_summary": [
+    {
+      "day": "Monday",
+      "count": 22,
+      "names": [
+        "SPY",
+        "QQQ",
+        "DIA",
+        "IWM",
+        "VIXY",
+        "AAPL",
+        "MSFT",
+        "META",
+        "NVDA",
+        "TSLA",
+        "USO",
+        "XLE",
+        "CRWD",
+        "PANW",
+        "MRVL",
+        "COIN",
+        "MSTR",
+        "IREN",
+        "IBIT",
+        "BMNR",
+        "CRCL",
+        "ETHA"
+      ]
+    }
+  ],
+  "scan_log": [
+    {
+      "time": "12:11p",
+      "sym": "USO",
+      "dir": "put",
+      "verdict": "SKIP",
+      "reason": "Broke out of a tight five-bar range on 5x volume — but the day's high and low were already in."
+    },
+    {
+      "time": "12:11p",
+      "sym": "XLE",
+      "verdict": "SKIP",
+      "reason": "Weakest energy read of the session, but the whole pullback is 0.34% — noise on a $65 ETF."
+    },
+    {
+      "time": "12:11p",
+      "sym": "SPY",
+      "verdict": "SKIP",
+      "reason": "Session high is half an hour old and price has walked away from it. Dead tape, light volume."
+    },
+    {
+      "time": "12:11p",
+      "sym": "QQQ",
+      "verdict": "SKIP",
+      "reason": "Gave back the whole late-morning advance. Volume showed up on the way down, no setup with it."
+    },
+    {
+      "time": "12:11p",
+      "sym": "NVDA",
+      "verdict": "SKIP",
+      "reason": "Down ~3% on the capex story but tracking the index tick for tick — nothing of its own to trade."
+    },
+    {
+      "time": "12:11p",
+      "sym": "CRWD",
+      "verdict": "SKIP",
+      "reason": "+14.7% and cooling slowly, but the nearest contract expiry is Friday — too far out."
+    },
+    {
+      "time": "12:11p",
+      "sym": "COIN",
+      "verdict": "SKIP",
+      "reason": "+7% on a pre-open upgrade with bitcoin flat. Nearest expiry Friday, and the book was thin last time out."
+    },
+    {
+      "time": "12:11p",
+      "sym": "MSTR",
+      "verdict": "SKIP",
+      "reason": "+3.8%, best crypto proxy on the board — no short-dated contract to express it with."
+    },
+    {
+      "time": "12:11p",
+      "sym": "IREN",
+      "verdict": "SKIP",
+      "reason": "Double-upgraded before the open and still red. Real disagreement, no tradable expiry."
+    },
+    {
+      "time": "12:11p",
+      "sym": "AAPL",
+      "verdict": "SKIP",
+      "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
+    }
+  ],
+  "roast": "22 looked, 0 filled, 0 disasters. Caps held.",
   "streak_last8": [
     "L",
     "L",
@@ -174,8 +265,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 762.14,
-      "chg_pct": -0.28,
+      "last": 762.06,
+      "chg_pct": -0.29,
       "history": [
         765.16,
         773.17,
@@ -187,8 +278,8 @@
       ]
     },
     "QQQ": {
-      "last": 710.48,
-      "chg_pct": -0.62,
+      "last": 710.32,
+      "chg_pct": -0.64,
       "history": [
         709.24,
         717.67,
@@ -200,8 +291,8 @@
       ]
     },
     "DIA": {
-      "last": 525.51,
-      "chg_pct": -0.05,
+      "last": 525.49,
+      "chg_pct": -0.06,
       "history": [
         530.62,
         536.93,
@@ -213,8 +304,8 @@
       ]
     },
     "IWM": {
-      "last": 289.14,
-      "chg_pct": 0.09,
+      "last": 289.06,
+      "chg_pct": 0.06,
       "history": [
         294.01,
         295.19,
@@ -226,8 +317,8 @@
       ]
     },
     "VIXY": {
-      "last": 17.48,
-      "chg_pct": 1.06,
+      "last": 17.51,
+      "chg_pct": 1.18,
       "history": [
         17.28,
         16.95,
@@ -239,8 +330,8 @@
       ]
     },
     "AAPL": {
-      "last": 334.8,
-      "chg_pct": 0.76,
+      "last": 334.58,
+      "chg_pct": 0.7,
       "history": [
         324.96,
         328.21,
@@ -252,8 +343,8 @@
       ]
     },
     "MSFT": {
-      "last": 505.23,
-      "chg_pct": 1.94,
+      "last": 505.3,
+      "chg_pct": 1.95,
       "history": [
         496.82,
         510.12,
@@ -265,8 +356,8 @@
       ]
     },
     "NVDA": {
-      "last": 212.11,
-      "chg_pct": -2.83,
+      "last": 211.81,
+      "chg_pct": -2.97,
       "history": [
         224.41,
         228.45,
@@ -278,8 +369,8 @@
       ]
     },
     "BTC": {
-      "last": 78576.67,
-      "chg_pct": 1.31,
+      "last": 78653.13,
+      "chg_pct": 1.4,
       "history": [
         78447.11,
         78283.98,
@@ -291,8 +382,8 @@
       ]
     },
     "ETH": {
-      "last": 2514.23,
-      "chg_pct": 0.09,
+      "last": 2521.11,
+      "chg_pct": 0.36,
       "history": [
         2485.02,
         2467.5,
@@ -304,8 +395,8 @@
       ]
     },
     "SOL": {
-      "last": 102.13,
-      "chg_pct": 1.17,
+      "last": 102.43,
+      "chg_pct": 1.47,
       "history": [
         103.37,
         101.54,
