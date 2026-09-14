@@ -179,6 +179,13 @@
   .board-chg { font-family: var(--mono); font-size: 26px; font-variant-numeric: tabular-nums; }
   .board-chg.good { color: var(--good); }
   .board-chg.bad { color: var(--bad); }
+  /* Added 9/14 -- ticker verdict color in "On the desk", built into
+     scan_log_public's own HTML by site-build.py (pure template, same
+     source as the text itself -- no separate parsing needed here). */
+  .desk-tag { font-weight: 600; }
+  .desk-tag.bad { color: var(--bad); }
+  .desk-tag.watch { color: var(--blue); }
+  .desk-tag.flag { color: var(--gold); }
   .board-mini { width: 100%; height: 58px; display: block; margin-top: 16px; }
   .board-mini polyline { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
   .board-mini-pending {
