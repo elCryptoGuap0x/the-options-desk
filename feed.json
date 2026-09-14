@@ -47,7 +47,18 @@
       "dte": "0DTE",
       "pct": -55.0,
       "fuse": {
-        "dots": ["R", "R", "R", "R", "R", "R", "R", "R", "R", "R"]
+        "dots": [
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ]
       }
     },
     {
@@ -60,7 +71,18 @@
       "dte": "1DTE",
       "pct": -20.5,
       "fuse": {
-        "dots": ["R", "R", "G", "G", "G", "G", "G", "R", "R", "R"]
+        "dots": [
+          "R",
+          "R",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "R",
+          "R",
+          "R"
+        ]
       }
     },
     {
@@ -71,10 +93,7 @@
       "exit": "1:41p",
       "dur": "121 min",
       "dte": "2DTE",
-      "pct": 10.6,
-      "fuse": {
-        "dots": ["R", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "G"]
-      }
+      "pct": 10.6
     },
     {
       "day": "Tuesday",
@@ -86,7 +105,18 @@
       "dte": "1DTE",
       "pct": -28.8,
       "fuse": {
-        "dots": ["R", "R", "R", "R", "R", "R", "R", "R", "gray", "R"]
+        "dots": [
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "gray",
+          "R"
+        ]
       }
     }
   ],
@@ -123,16 +153,16 @@
       "locked": true
     },
     {
-      "week_label": "9/2–9/4",
+      "week_label": "9/2\u20139/4",
       "record": "1-4",
-      "net_usd": -59.20,
+      "net_usd": -59.2,
       "avg_hold": "10 min",
       "disasters": 0,
       "product": "system update 9/2",
       "locked": true
     },
     {
-      "week_label": "9/8–9/11",
+      "week_label": "9/8\u20139/11",
       "record": "1-3",
       "net_usd": -52,
       "avg_hold": "43 min",
@@ -145,94 +175,182 @@
     "SPY": {
       "last": 764.29,
       "chg_pct": 0.85,
-      "history": [765.16, 773.17, 770.19, 765.96, 762.40, 757.83, 764.29]
+      "history": [
+        765.16,
+        773.17,
+        770.19,
+        765.96,
+        762.4,
+        757.83,
+        764.29
+      ]
     },
     "QQQ": {
       "last": 714.88,
       "chg_pct": 0.87,
-      "history": [709.24, 717.67, 718.96, 718.36, 716.31, 708.69, 714.88]
+      "history": [
+        709.24,
+        717.67,
+        718.96,
+        718.36,
+        716.31,
+        708.69,
+        714.88
+      ]
     },
     "DIA": {
       "last": 525.79,
       "chg_pct": 0.97,
-      "history": [530.62, 536.93, 534.08, 528.03, 524.07, 520.75, 525.79]
+      "history": [
+        530.62,
+        536.93,
+        534.08,
+        528.03,
+        524.07,
+        520.75,
+        525.79
+      ]
     },
     "IWM": {
       "last": 288.89,
       "chg_pct": 0.41,
-      "history": [294.01, 295.19, 296.01, 294.67, 290.64, 287.70, 288.89]
+      "history": [
+        294.01,
+        295.19,
+        296.01,
+        294.67,
+        290.64,
+        287.7,
+        288.89
+      ]
     },
     "VIXY": {
-      "last": 17.30,
+      "last": 17.3,
       "chg_pct": -4.74,
-      "history": [17.28, 16.95, 17.00, 17.30, 17.56, 18.16, 17.30]
+      "history": [
+        17.28,
+        16.95,
+        17.0,
+        17.3,
+        17.56,
+        18.16,
+        17.3
+      ]
     },
     "AAPL": {
       "last": 332.27,
       "chg_pct": 1.75,
-      "history": [324.96, 328.21, 319.97, 316.22, 315.34, 326.57, 332.27]
+      "history": [
+        324.96,
+        328.21,
+        319.97,
+        316.22,
+        315.34,
+        326.57,
+        332.27
+      ]
     },
     "MSFT": {
       "last": 495.63,
       "chg_pct": 0.65,
-      "history": [496.82, 510.12, 499.70, 493.95, 491.65, 492.44, 495.63]
+      "history": [
+        496.82,
+        510.12,
+        499.7,
+        493.95,
+        491.65,
+        492.44,
+        495.63
+      ]
     },
     "NVDA": {
       "last": 218.29,
       "chg_pct": -0.03,
-      "history": [224.41, 228.45, 230.36, 225.73, 223.67, 218.36, 218.29]
+      "history": [
+        224.41,
+        228.45,
+        230.36,
+        225.73,
+        223.67,
+        218.36,
+        218.29
+      ]
     },
     "BTC": {
       "last": 76748.99,
       "chg_pct": -0.56,
-      "history": [78447.11, 78283.98, 76536.55, 77208.55, 77262.85, 76799.85, 76748.99]
+      "history": [
+        78447.11,
+        78283.98,
+        76536.55,
+        77208.55,
+        77262.85,
+        76799.85,
+        76748.99
+      ]
     },
     "ETH": {
       "last": 2479.75,
       "chg_pct": -1.61,
-      "history": [2485.02, 2467.50, 2437.36, 2516.29, 2525.35, 2475.86, 2479.75]
+      "history": [
+        2485.02,
+        2467.5,
+        2437.36,
+        2516.29,
+        2525.35,
+        2475.86,
+        2479.75
+      ]
     },
     "SOL": {
       "last": 99.37,
       "chg_pct": -2.21,
-      "history": [103.37, 101.54, 98.62, 102.45, 101.74, 99.26, 99.37]
+      "history": [
+        103.37,
+        101.54,
+        98.62,
+        102.45,
+        101.74,
+        99.26,
+        99.37
+      ]
     }
   },
   "news": [
     {
       "tag": "Desk",
-      "title": "Desk is closed for the weekend — four tickets last week, one winner",
+      "title": "Desk is closed for the weekend \u2014 four tickets last week, one winner",
       "summary": "No trading Saturday or Sunday; the account has been flat since Friday afternoon and nothing is open. Last week ran four tickets across Tuesday through Friday: one closed green (+10.6%), three closed red, for a net of about -$52 on real dollars. One of the three losers went all the way to the disaster floor. Next live session is Monday at 8:30 CT."
     },
     {
       "tag": "Macro",
       "title": "Friday's CPI ran hot and pushed Fed-hike odds sharply higher",
-      "summary": "August CPI landed at +0.4% month-over-month and +3.4% year-over-year, with the core reading at +0.3% versus roughly +0.2% expected — energy costs did most of the work on the headline. It was the last major inflation read before this week's Fed meeting, and by Friday afternoon market-implied odds of a quarter-point hike had climbed from roughly 67-70% in the morning to about 85-90%. Stocks still finished green after four straight down sessions: S&P proxy +0.9%, Dow proxy +1.0%, Nasdaq proxy +0.9%."
+      "summary": "August CPI landed at +0.4% month-over-month and +3.4% year-over-year, with the core reading at +0.3% versus roughly +0.2% expected \u2014 energy costs did most of the work on the headline. It was the last major inflation read before this week's Fed meeting, and by Friday afternoon market-implied odds of a quarter-point hike had climbed from roughly 67-70% in the morning to about 85-90%. Stocks still finished green after four straight down sessions: S&P proxy +0.9%, Dow proxy +1.0%, Nasdaq proxy +0.9%."
     },
     {
       "tag": "Macro",
       "title": "Consumer sentiment missed badly and inflation expectations jumped",
-      "summary": "The preliminary September University of Michigan sentiment reading came in at 47.8 against roughly 51.0 expected and 51.7 prior — a sharp miss rather than the modest dip that had been penciled in. The expectations component did most of the damage at 45.8 versus 50.5 expected. One-year inflation expectations rose to 4.6% from an expected 4.0%, and the five-year to 3.4%, with higher gas prices and affordability concerns cited as the drivers."
+      "summary": "The preliminary September University of Michigan sentiment reading came in at 47.8 against roughly 51.0 expected and 51.7 prior \u2014 a sharp miss rather than the modest dip that had been penciled in. The expectations component did most of the damage at 45.8 versus 50.5 expected. One-year inflation expectations rose to 4.6% from an expected 4.0%, and the five-year to 3.4%, with higher gas prices and affordability concerns cited as the drivers."
     },
     {
       "tag": "Macro",
       "title": "Crude gave back its war premium, but the chokepoints are unresolved",
-      "summary": "Brent and WTI both fell about 3% Friday, to roughly $104 and $99, after Iranian state media said Tehran would meet Gulf-state foreign ministers in Oman this week to discuss the Strait of Hormuz. That headline is what knocked the risk premium out of crude — it is not a resolution. Hormuz shipping has been sharply reduced since March, Houthi forces took the Yemeni port of Mocha this week and reportedly advanced toward Perim Island, and both the IEA and OPEC cut their 2026 demand outlooks. US diesel set a fresh retail record near $6.06 a gallon."
+      "summary": "Brent and WTI both fell about 3% Friday, to roughly $104 and $99, after Iranian state media said Tehran would meet Gulf-state foreign ministers in Oman this week to discuss the Strait of Hormuz. That headline is what knocked the risk premium out of crude \u2014 it is not a resolution. Hormuz shipping has been sharply reduced since March, Houthi forces took the Yemeni port of Mocha this week and reportedly advanced toward Perim Island, and both the IEA and OPEC cut their 2026 demand outlooks. US diesel set a fresh retail record near $6.06 a gallon."
     },
     {
       "tag": "Stocks",
       "title": "Oracle beat, popped 8%, then round-tripped the whole move",
-      "summary": "Oracle beat on fiscal Q1 earnings and revenue, grew cloud revenue 62% year-over-year, added $209B to its remaining performance obligations, and raised full-year guidance — and opened up 7-8%. By midday it was flat to slightly negative. The stated reason from the sell side was margin: non-GAAP gross margin fell to 61% from 68.7% a year ago, missing estimates, against only a modest guidance raise. The AI-infrastructure read-through names kept running anyway, with Dell +11%, HPE +9% on its own beat, and Super Micro +6%."
+      "summary": "Oracle beat on fiscal Q1 earnings and revenue, grew cloud revenue 62% year-over-year, added $209B to its remaining performance obligations, and raised full-year guidance \u2014 and opened up 7-8%. By midday it was flat to slightly negative. The stated reason from the sell side was margin: non-GAAP gross margin fell to 61% from 68.7% a year ago, missing estimates, against only a modest guidance raise. The AI-infrastructure read-through names kept running anyway, with Dell +11%, HPE +9% on its own beat, and Super Micro +6%."
     },
     {
       "tag": "Stocks",
       "title": "Adobe guides light; Copart buys ACV Auctions; RH beats big",
-      "summary": "Adobe beat on fiscal Q3 but guided Q4 revenue slightly below consensus and held annual recurring revenue growth near 10.2%, down from 11.5% last year — shares fell 3-4%. Copart agreed to buy ACV Auctions for $10.50 a share in all cash, about $1.9B and a 45% premium, with ACV immediately trading near the deal price; Copart itself gave back its pop and closed down on a mixed quarter. RH beat Q2 earnings by a wide margin on a slight revenue miss and rose 8-9%. Kroger beat but cut its full-year same-store sales guidance."
+      "summary": "Adobe beat on fiscal Q3 but guided Q4 revenue slightly below consensus and held annual recurring revenue growth near 10.2%, down from 11.5% last year \u2014 shares fell 3-4%. Copart agreed to buy ACV Auctions for $10.50 a share in all cash, about $1.9B and a 45% premium, with ACV immediately trading near the deal price; Copart itself gave back its pop and closed down on a mixed quarter. RH beat Q2 earnings by a wide margin on a slight revenue miss and rose 8-9%. Kroger beat but cut its full-year same-store sales guidance."
     },
     {
       "tag": "Crypto",
       "title": "Coins drifted lower through the weekend",
-      "summary": "Bitcoin is around $76,700, down roughly half a percent since midnight Eastern and off from the mid-$78,000s a week ago. Ether is near $2,480 (-1.6%) and Solana near $99.37 (-2.2%). Friday itself was a wide day for crypto — Bitcoin traded between roughly $76,000 and $79,900 around the CPI print — but there has been no crypto-specific catalyst, no exchange or regulatory event, and no ETF-flow story behind the move; it continues to read as macro-driven."
+      "summary": "Bitcoin is around $76,700, down roughly half a percent since midnight Eastern and off from the mid-$78,000s a week ago. Ether is near $2,480 (-1.6%) and Solana near $99.37 (-2.2%). Friday itself was a wide day for crypto \u2014 Bitcoin traded between roughly $76,000 and $79,900 around the CPI print \u2014 but there has been no crypto-specific catalyst, no exchange or regulatory event, and no ETF-flow story behind the move; it continues to read as macro-driven."
     }
   ],
   "calendar": [
