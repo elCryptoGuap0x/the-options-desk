@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:05:00Z",
+  "generated_at": "2026-09-14T14:20:00Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -7,34 +7,26 @@
     "position": "FLAT"
   },
   "stats": {
-    "record": "1-3",
-    "win_rate": "25.0%",
-    "trades_this_week": 4,
+    "record": "0-0",
+    "win_rate": "—",
+    "trades_this_week": 0,
     "typical_hold": "0DTE-2DTE",
-    "avg_win": "+10.6%",
-    "avg_loss": "-34.8%",
-    "net_per_ticket": "-23.4%",
-    "hold_typ": "20 min",
-    "prior_week_record": "1-7",
+    "avg_win": "—",
+    "avg_loss": "—",
+    "net_per_ticket": "—",
+    "hold_typ": "—",
+    "prior_week_record": "1-3",
     "session_pnl_usd": 0
   },
   "sparkline_cum_pct": [
+    0
+  ],
+  "prior_week_sparkline_cum_pct": [
     0,
     -28.8,
     -18.2,
     -38.7,
     -93.7
-  ],
-  "prior_week_sparkline_cum_pct": [
-    0,
-    -25.2,
-    -74.1,
-    -124.1,
-    -48.6,
-    -79.6,
-    -96.1,
-    -141.0,
-    -165.6
   ],
   "tickets": [
     {
@@ -182,8 +174,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 760.4,
-      "chg_pct": -0.51,
+      "last": 760.25,
+      "chg_pct": -0.53,
       "history": [
         765.16,
         773.17,
@@ -195,8 +187,8 @@
       ]
     },
     "QQQ": {
-      "last": 706.33,
-      "chg_pct": -1.2,
+      "last": 706.88,
+      "chg_pct": -1.12,
       "history": [
         709.24,
         717.67,
@@ -208,7 +200,7 @@
       ]
     },
     "DIA": {
-      "last": 524.93,
+      "last": 524.96,
       "chg_pct": -0.16,
       "history": [
         530.62,
@@ -221,8 +213,8 @@
       ]
     },
     "IWM": {
-      "last": 288.36,
-      "chg_pct": -0.18,
+      "last": 288.54,
+      "chg_pct": -0.12,
       "history": [
         294.01,
         295.19,
@@ -234,8 +226,8 @@
       ]
     },
     "VIXY": {
-      "last": 17.7,
-      "chg_pct": 2.31,
+      "last": 17.68,
+      "chg_pct": 2.2,
       "history": [
         17.28,
         16.95,
@@ -247,8 +239,8 @@
       ]
     },
     "AAPL": {
-      "last": 334.32,
-      "chg_pct": 0.62,
+      "last": 333.36,
+      "chg_pct": 0.33,
       "history": [
         324.96,
         328.21,
@@ -260,8 +252,8 @@
       ]
     },
     "MSFT": {
-      "last": 502.18,
-      "chg_pct": 1.32,
+      "last": 500.51,
+      "chg_pct": 0.98,
       "history": [
         496.82,
         510.12,
@@ -273,8 +265,8 @@
       ]
     },
     "NVDA": {
-      "last": 210.74,
-      "chg_pct": -3.46,
+      "last": 211.02,
+      "chg_pct": -3.33,
       "history": [
         224.41,
         228.45,
@@ -286,8 +278,8 @@
       ]
     },
     "BTC": {
-      "last": 78281.98,
-      "chg_pct": 0.81,
+      "last": 78499.51,
+      "chg_pct": 1.09,
       "history": [
         78447.11,
         78283.98,
@@ -299,8 +291,8 @@
       ]
     },
     "ETH": {
-      "last": 2503.7,
-      "chg_pct": -0.41,
+      "last": 2513.39,
+      "chg_pct": -0.02,
       "history": [
         2485.02,
         2467.5,
@@ -312,8 +304,8 @@
       ]
     },
     "SOL": {
-      "last": 101.56,
-      "chg_pct": 0.41,
+      "last": 101.87,
+      "chg_pct": 0.71,
       "history": [
         103.37,
         101.54,
