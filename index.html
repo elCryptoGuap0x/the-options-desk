@@ -981,21 +981,25 @@
       '<span class="scan-reason">' + s.reason + '</span></div>';
   }
 
-  function renderScanLog(items, session) {
+  // Rewritten 9/14: "On the desk" used to be a live row-by-row list
+  // (scanRowHtml/items), fed by a per-cycle translation that no longer
+  // exists (scan_log_public is now one real sentence, written once at
+  // end-of-day -- see site-copy.py/CHANGELOG). scanRowHtml/the old items
+  // array kept above, unused, in case a future real per-row feed comes
+  // back; this function now renders the one EOD sentence as the entire
+  // section, same "waiting/closed" fallback voice as before when there
+  // isn't one yet.
+  function renderScanLog(scanLogPublic, session) {
     var el = document.getElementById("scan-log");
     if (!el) return;
-    if (!items || !items.length) {
-      // Fixed 9/13: "Quiet cycle" is weekday scan-cadence voice ("nothing
-      // NEW since last look") -- wrong tone when no cycles ran at all
-      // (weekend/holiday). Same closed-desk fact News/tickets already
-      // show, not a second invented phrase.
+    if (!scanLogPublic) {
       var closedMsg = session && session.market_state !== "OPEN" ?
         "Desk closed — next session " + (session.next_open || "TBD") + "." :
         "Quiet cycle — nothing new to log yet";
       el.innerHTML = '<div class="waiting"><span class="dot"></span>' + closedMsg + '</div>';
       return;
     }
-    el.innerHTML = items.map(scanRowHtml).join("");
+    el.innerHTML = '<div class="scan-row"><span class="scan-reason">' + scanLogPublic + '</span></div>';
   }
 
   function renderCalendar(items) {
@@ -1069,7 +1073,7 @@
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
-    renderScanLog(data.scan_log, data.session);
+    renderScanLog(data.scan_log_public, data.session);
     renderWeeks(data.weeks);
     renderRoast(data.roast);
     renderCalendar(data.calendar);
