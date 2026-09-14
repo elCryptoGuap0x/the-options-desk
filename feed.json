@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T22:44:22Z",
+  "generated_at": "2026-09-14T23:06:00Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -427,6 +427,6 @@
     ],
     "filled": 0
   },
-  "scan_log_public": "A few names pushed hard enough after lunch to get a close look, but every one of them rolled over before the move qualified, and the day ended without a single trade.",
+  "scan_log_public": "23 looked, 0 filled \u2014 AAPL, ADBE, BMNR, BSOL....",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board."
 }
