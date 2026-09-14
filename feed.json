@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T22:05:54Z",
+  "generated_at": "2026-09-14T22:15:06Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -352,7 +352,7 @@
     {
       "tag": "Top",
       "title": "Today's dominant story",
-      "summary": "The day had one story and it never changed: Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk both said publicly that they agreed. No filing, no rule, just a positioning statement \u2014 and the tape read it straight through to the money that builds AI, selling chipmakers and datacenter suppliers overnight in Asia and keeping them down all session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that a more cautious AI world spends more on protection, not less; one of those CEOs spent the morning publicly rebutting the essay and his stock was still the strongest thing on the board at midday."
+      "summary": "One story set the tone and never let go: Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and Sam Altman and Elon Musk both said publicly that they agreed. No filing, no rule \u2014 a positioning statement \u2014 and the tape read it straight through to the money that builds AI, marking down chipmakers, memory and datacenter suppliers overnight in Asia and keeping them down into the US open, with the Nasdaq proxy off more than twice the Dow's. It was not a blanket tech selloff: the companies that merely use AI traded green, and cybersecurity was the strongest group on the board, on the logic that a more cautious AI world spends more on protection, not less. Underneath it, energy kept running \u2014 a Saudi pipeline shut after drone strikes and a vessel struck in the Strait of Hormuz put Brent above $108, a four-month high \u2014 and volatility repriced higher into Wednesday's Fed decision, where a quarter-point hike is now the heavy favorite."
     },
     {
       "tag": "Stocks",
@@ -390,15 +390,15 @@
       "when": "Wed 9/16"
     },
     {
-      "what": "FOMC decision 2:00 ET, presser 2:30",
-      "when": "Wed 9/16"
+      "what": "Fed decision 2:00 ET, press conference 2:30",
+      "when": "Wed 9/16 \u2014 a quarter-point hike is the heavy favorite"
     },
     {
-      "what": "Philly Fed, housing starts, Bank of England",
+      "what": "Philly Fed, housing starts, Bank of England decision",
       "when": "Thu 9/17"
     },
     {
-      "what": "Industrial production",
+      "what": "Industrial production; monthly options expiration",
       "when": "Fri 9/18"
     }
   ],
