@@ -51,7 +51,9 @@
           "R",
           "R"
         ]
-      }
+      },
+      "entry_price": "0.20",
+      "exit_price": "0.09"
     },
     {
       "day": "Thursday",
@@ -75,7 +77,9 @@
           "R",
           "R"
         ]
-      }
+      },
+      "entry_price": "0.88",
+      "exit_price": "0.70"
     },
     {
       "day": "Wednesday",
@@ -85,7 +89,9 @@
       "exit": "1:41p",
       "dur": "121 min",
       "dte": "2DTE",
-      "pct": 10.6
+      "pct": 10.6,
+      "entry_price": "1.23",
+      "exit_price": "1.36"
     },
     {
       "day": "Tuesday",
@@ -109,7 +115,9 @@
           "gray",
           "R"
         ]
-      }
+      },
+      "entry_price": "1.25",
+      "exit_price": "0.89"
     }
   ],
   "skip_summary": [

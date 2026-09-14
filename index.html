@@ -249,6 +249,20 @@
     border: 1px solid var(--border-soft);
     border-radius: 9px;
     padding: 13px 16px;
+    cursor: pointer;
+  }
+  .ticket:hover { border-color: var(--gold-dim); }
+  .ticket:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  /* Added 9/14 -- click-to-expand detail panel on closed tickets. */
+  .ticket-expand {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-top: none;
+    padding: 10px 16px 12px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--text-dim);
+    line-height: 1.6;
   }
   .ticket .sym { font-family: var(--mono); font-weight: 700; font-size: 14.5px; color: var(--text); min-width: 44px; }
   .ticket .dir {
@@ -376,6 +390,16 @@
   }
   .tip-row:first-of-type { border-top: none; }
   .tip-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-dim); flex-shrink: 0; }
+  /* Added 9/14 -- Desk Catch, pure client JS, no server/API involved. */
+  .game-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  #desk-catch-canvas {
+    background: var(--bg); border: 1px solid var(--border-soft); border-radius: 8px;
+    max-width: 100%; touch-action: none;
+  }
+  .game-hud {
+    display: flex; justify-content: space-between; width: 100%; max-width: 320px;
+    font-family: var(--mono); font-size: 11px; color: var(--text-dim);
+  }
   .tip-addr {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0;
@@ -418,6 +442,7 @@
     <span id="session-clock">—</span>
     <span class="sep">·</span>
     <span id="session-next">—</span>
+    <span id="session-countdown"></span>
     <span id="presence-count"></span>
   </div>
 
@@ -534,6 +559,18 @@
       <div class="footer-actions">
         <button class="tip-jar-btn" id="tip-jar-toggle" type="button">🫙 Tip the desk</button>
         <button class="note-btn" id="note-toggle" type="button">✉️ Send a note</button>
+        <button class="note-btn" id="game-toggle" type="button">💰 Desk Catch</button>
+      </div>
+      <div class="tip-panel" id="game-panel">
+        <div class="tip-note">Catch 3 to lock +25%. Miss one and you're stopped out. Arrow keys or tap the sides. High score stays on this device only.</div>
+        <div class="game-wrap">
+          <canvas id="desk-catch-canvas" width="320" height="220"></canvas>
+          <div class="game-hud">
+            <span id="game-status">Press Start</span>
+            <span id="game-best">Best: 0</span>
+          </div>
+          <button class="note-submit" id="game-start-btn" type="button">Start</button>
+        </div>
       </div>
       <div class="tip-panel" id="tip-panel">
         <div class="tip-note">Tape is free. Tips are optional and buy nothing — no signals, no access, no "next trade."</div>
@@ -895,13 +932,36 @@
     return '<div class="fuse-row">' + dots + '</div>';
   }
 
+  // Click-to-expand added 9/14, pure client-side, no new data source --
+  // shows entry_price/exit_price when present (real numbers, backfilled
+  // once for the 4 tickets that existed when this shipped). Future
+  // tickets won't have entry_price/exit_price any more than they'll have
+  // fuse -- same "historical only, not built yet" gap, same honest
+  // fallback: the row just omits that line if the fields aren't there.
+  var _ticketSeq = 0;
+  // Exposed on window: this script runs inside an IIFE, but the inline
+  // onclick= attributes generated below execute in global scope.
+  window.toggleTicket = function (id) {
+    var el = document.getElementById(id);
+    if (el) el.hidden = !el.hidden;
+  };
+  function ticketExpandHtml(t) {
+    var priceLine = (t.entry_price && t.exit_price) ?
+      '<div>Filled ' + t.entry + ' at $' + t.entry_price + ', closed ' + t.exit + ' at $' + t.exit_price + '.</div>' :
+      '<div>Fill/exit price not recorded for this ticket.</div>';
+    return priceLine + '<div>Held ' + t.dur + (t.dte ? ' (' + t.dte + ')' : '') + ', settled ' + fmtPct(t.pct) + '.</div>';
+  }
   function ticketRowHtml(t) {
     var durText = t.dte ? (t.dur + " · " + t.dte) : t.dur;
-    return '<div class="ticket-wrap"><div class="ticket"><span class="sym">' + t.sym + '</span>' +
+    var id = "ticket-expand-" + (_ticketSeq++);
+    return '<div class="ticket-wrap"><div class="ticket" role="button" tabindex="0" ' +
+      'onclick="toggleTicket(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleTicket(\'' + id + '\')">' +
+      '<span class="sym">' + t.sym + '</span>' +
       '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
       '<span class="dur">' + durText + '</span>' +
       '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
       '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span></div>' +
+      '<div class="ticket-expand" id="' + id + '" hidden>' + ticketExpandHtml(t) + '</div>' +
       fuseHtml(t.fuse) + '</div>';
   }
 
@@ -1104,12 +1164,28 @@
 
   // Live wall clock, independent of the feed.
   var clockEl = document.getElementById("session-clock");
+  // Added 9/14: next-open countdown, pure client JS off session.next_open_iso
+  // (a real timestamp site-build.py now emits alongside the human label) --
+  // no server involved, updates every tick same as the clock.
+  var countdownEl = document.getElementById("session-countdown");
+  function countdownText(session) {
+    if (!session || session.market_state === "OPEN" || !session.next_open_iso) return "";
+    var target = new Date(session.next_open_iso).getTime();
+    var diffMs = target - Date.now();
+    if (diffMs <= 0) return "";
+    var totalMin = Math.floor(diffMs / 60000);
+    var h = Math.floor(totalMin / 60), m = totalMin % 60;
+    return "· opens in " + (h > 0 ? h + "h " : "") + m + "m";
+  }
   function tick() {
     var now = new Date();
     var day = now.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }).toUpperCase();
     var time = now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
     clockEl.textContent = day + " " + time + " CT";
-    if (lastSession) document.getElementById("session-next").textContent = sessionNextText(lastSession);
+    if (lastSession) {
+      document.getElementById("session-next").textContent = sessionNextText(lastSession);
+      countdownEl.textContent = countdownText(lastSession);
+    }
   }
   tick();
   setInterval(tick, 30000);
@@ -1174,17 +1250,23 @@
   var tipPanel = document.getElementById("tip-panel");
   var noteToggle = document.getElementById("note-toggle");
   var notePanel = document.getElementById("note-panel");
+  var gameToggle = document.getElementById("game-toggle");
+  var gamePanel = document.getElementById("game-panel");
+  var allPanels = [tipPanel, notePanel, gamePanel];
 
-  function togglePanel(panel, other) {
+  function togglePanel(panel) {
     var opening = !panel.classList.contains("open");
-    if (other) other.classList.remove("open");
+    allPanels.forEach(function (p) { if (p && p !== panel) p.classList.remove("open"); });
     panel.classList.toggle("open", opening);
   }
   if (tipToggle && tipPanel) {
-    tipToggle.addEventListener("click", function () { togglePanel(tipPanel, notePanel); });
+    tipToggle.addEventListener("click", function () { togglePanel(tipPanel); });
   }
   if (noteToggle && notePanel) {
-    noteToggle.addEventListener("click", function () { togglePanel(notePanel, tipPanel); });
+    noteToggle.addEventListener("click", function () { togglePanel(notePanel); });
+  }
+  if (gameToggle && gamePanel) {
+    gameToggle.addEventListener("click", function () { togglePanel(gamePanel); });
   }
 
   var copyBtns = document.querySelectorAll(".tip-copy");
@@ -1224,5 +1306,129 @@
       });
     });
   }
+})();
+</script>
+
+<script>
+/* Desk Catch -- added 9/14, pure client JS, no server/API involved, no
+   effect on trading logic. Catch 3 money bags with the paddle to "lock
+   +25%"; miss one and you're "stopped out"; 30s round with no catch and
+   no miss is a scratch, same vocabulary the trade log uses. High score
+   lives in localStorage only -- this browser, never reported anywhere. */
+(function () {
+  var canvas = document.getElementById("desk-catch-canvas");
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext("2d");
+  var statusEl = document.getElementById("game-status");
+  var bestEl = document.getElementById("game-best");
+  var startBtn = document.getElementById("game-start-btn");
+  var W = canvas.width, H = canvas.height;
+  var PADDLE_W = 54, PADDLE_H = 10, PADDLE_Y = H - 22;
+  var BEST_KEY = "deskCatchBest";
+
+  var best = 0;
+  try { best = parseInt(localStorage.getItem(BEST_KEY), 10) || 0; } catch (e) { best = 0; }
+  if (bestEl) bestEl.textContent = "Best: " + best;
+
+  var state = { paddleX: (W - PADDLE_W) / 2, bag: null, caught: 0, over: true };
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.strokeStyle = "rgba(255,255,255,0.08)";
+    ctx.beginPath();
+    ctx.moveTo(0, PADDLE_Y - 6);
+    ctx.lineTo(W, PADDLE_Y - 6);
+    ctx.stroke();
+
+    for (var i = 0; i < 3; i++) {
+      ctx.beginPath();
+      ctx.arc(14 + i * 16, 14, 5, 0, Math.PI * 2);
+      ctx.fillStyle = i < state.caught ? "#d4af37" : "rgba(255,255,255,0.15)";
+      ctx.fill();
+    }
+
+    ctx.fillStyle = "#d4af37";
+    ctx.fillRect(state.paddleX, PADDLE_Y, PADDLE_W, PADDLE_H);
+
+    if (state.bag) {
+      ctx.font = "20px sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("💰", state.bag.x, state.bag.y);
+    }
+  }
+
+  function spawnBag(now) {
+    state.bag = { x: 16 + Math.random() * (W - 32), y: -14, speed: 1.6 + state.caught * 0.4 };
+    state.lastSpawn = now;
+  }
+
+  function finish(result) {
+    state.over = true;
+    if (state.raf) cancelAnimationFrame(state.raf);
+    if (result === "win") statusEl.textContent = "Locked +25%. 🔒";
+    else if (result === "loss") statusEl.textContent = "Stopped out.";
+    else statusEl.textContent = "Time's up — scratched.";
+    if (state.caught > best) {
+      best = state.caught;
+      try { localStorage.setItem(BEST_KEY, String(best)); } catch (e) {}
+    }
+    if (bestEl) bestEl.textContent = "Best: " + best;
+    startBtn.textContent = "Play again";
+    startBtn.disabled = false;
+  }
+
+  function tick(now) {
+    if (state.over) return;
+    var elapsed = now - state.startTime;
+    if (elapsed >= state.duration) { draw(); finish("time"); return; }
+
+    if (!state.bag && now - state.lastSpawn > 250) spawnBag(now);
+    if (state.bag) {
+      state.bag.y += state.bag.speed;
+      if (state.bag.y >= PADDLE_Y - 6 && state.bag.y <= PADDLE_Y + PADDLE_H &&
+          state.bag.x >= state.paddleX - 8 && state.bag.x <= state.paddleX + PADDLE_W + 8) {
+        state.caught++;
+        state.bag = null;
+        if (state.caught >= 3) { draw(); finish("win"); return; }
+      } else if (state.bag.y > H + 14) {
+        draw(); finish("loss"); return;
+      }
+    }
+
+    statusEl.textContent = "Catching… " + Math.max(0, Math.ceil((state.duration - elapsed) / 1000)) + "s";
+    draw();
+    state.raf = requestAnimationFrame(tick);
+  }
+
+  function startGame() {
+    if (state.raf) cancelAnimationFrame(state.raf);
+    state = {
+      paddleX: (W - PADDLE_W) / 2, bag: null, caught: 0, over: false,
+      startTime: performance.now(), lastSpawn: 0, duration: 30000
+    };
+    startBtn.textContent = "Restart";
+    startBtn.disabled = true;
+    draw();
+    state.raf = requestAnimationFrame(tick);
+  }
+
+  function movePaddleTo(clientX) {
+    if (state.over) return;
+    var rect = canvas.getBoundingClientRect();
+    var x = (clientX - rect.left) * (W / rect.width);
+    state.paddleX = Math.max(0, Math.min(W - PADDLE_W, x - PADDLE_W / 2));
+  }
+
+  canvas.addEventListener("pointerdown", function (e) { movePaddleTo(e.clientX); });
+  canvas.addEventListener("pointermove", function (e) { if (e.buttons) movePaddleTo(e.clientX); });
+  document.addEventListener("keydown", function (e) {
+    if (state.over) return;
+    if (e.key === "ArrowLeft") state.paddleX = Math.max(0, state.paddleX - 24);
+    else if (e.key === "ArrowRight") state.paddleX = Math.min(W - PADDLE_W, state.paddleX + 24);
+  });
+  if (startBtn) startBtn.addEventListener("click", startGame);
+
+  draw();
 })();
 </script>
