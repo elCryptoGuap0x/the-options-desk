@@ -390,14 +390,23 @@
   }
   .tip-row:first-of-type { border-top: none; }
   .tip-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-dim); flex-shrink: 0; }
-  /* Added 9/14 -- Desk Catch, pure client JS, no server/API involved. */
+  /* Desk Runner -- pure client JS, no server/API involved. Rewritten 9/14
+     from a footer-panel paddle game into an always-visible one-button
+     endless runner (Flappy-style: single input, infinite scroll, rising
+     difficulty, instant fail, one-click restart), seated permanently in
+     the right rail under Market board instead of behind a toggle. */
+  .game-card {
+    background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--gold);
+    border-radius: 0 10px 10px 0; padding: 16px 18px 14px;
+  }
+  .game-note { font-family: var(--mono); font-size: 11px; color: var(--text-dim); line-height: 1.5; margin-bottom: 10px; }
   .game-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-  #desk-catch-canvas {
+  #desk-runner-canvas {
     background: var(--bg); border: 1px solid var(--border-soft); border-radius: 8px;
-    max-width: 100%; touch-action: none;
+    width: 100%; height: auto; touch-action: none; cursor: pointer;
   }
   .game-hud {
-    display: flex; justify-content: space-between; width: 100%; max-width: 320px;
+    display: flex; justify-content: space-between; width: 100%;
     font-family: var(--mono); font-size: 11px; color: var(--text-dim);
   }
   .tip-addr {
@@ -539,6 +548,20 @@
         </div>
         <div class="board-foot" id="board-foot"></div>
       </section>
+
+      <section>
+        <div class="section-title">Desk Runner</div>
+        <div class="game-card">
+          <div class="game-note">One tap, click, or Space to fly. Touch a wall and you're stopped out — same click restarts.</div>
+          <div class="game-wrap">
+            <canvas id="desk-runner-canvas" width="300" height="170"></canvas>
+            <div class="game-hud">
+              <span id="game-status">Tap to fly</span>
+              <span id="game-best">Best: 0</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
   </div>
@@ -559,18 +582,6 @@
       <div class="footer-actions">
         <button class="tip-jar-btn" id="tip-jar-toggle" type="button">🫙 Tip the desk</button>
         <button class="note-btn" id="note-toggle" type="button">✉️ Send a note</button>
-        <button class="note-btn" id="game-toggle" type="button">💰 Desk Catch</button>
-      </div>
-      <div class="tip-panel" id="game-panel">
-        <div class="tip-note">Catch 3 to lock +25%. Miss one and you're stopped out. Arrow keys or tap the sides. High score stays on this device only.</div>
-        <div class="game-wrap">
-          <canvas id="desk-catch-canvas" width="320" height="220"></canvas>
-          <div class="game-hud">
-            <span id="game-status">Press Start</span>
-            <span id="game-best">Best: 0</span>
-          </div>
-          <button class="note-submit" id="game-start-btn" type="button">Start</button>
-        </div>
       </div>
       <div class="tip-panel" id="tip-panel">
         <div class="tip-note">Tape is free. Tips are optional and buy nothing — no signals, no access, no "next trade."</div>
@@ -1250,9 +1261,7 @@
   var tipPanel = document.getElementById("tip-panel");
   var noteToggle = document.getElementById("note-toggle");
   var notePanel = document.getElementById("note-panel");
-  var gameToggle = document.getElementById("game-toggle");
-  var gamePanel = document.getElementById("game-panel");
-  var allPanels = [tipPanel, notePanel, gamePanel];
+  var allPanels = [tipPanel, notePanel];
 
   function togglePanel(panel) {
     var opening = !panel.classList.contains("open");
@@ -1264,9 +1273,6 @@
   }
   if (noteToggle && notePanel) {
     noteToggle.addEventListener("click", function () { togglePanel(notePanel); });
-  }
-  if (gameToggle && gamePanel) {
-    gameToggle.addEventListener("click", function () { togglePanel(gamePanel); });
   }
 
   var copyBtns = document.querySelectorAll(".tip-copy");
@@ -1310,125 +1316,147 @@
 </script>
 
 <script>
-/* Desk Catch -- added 9/14, pure client JS, no server/API involved, no
-   effect on trading logic. Catch 3 money bags with the paddle to "lock
-   +25%"; miss one and you're "stopped out"; 30s round with no catch and
-   no miss is a scratch, same vocabulary the trade log uses. High score
-   lives in localStorage only -- this browser, never reported anywhere. */
+/* Desk Runner -- pure client JS, no server/API involved, no effect on
+   trading logic. Rewritten 9/14 as a proper one-button endless runner
+   (Flappy-style): a single tap/click/Space both flies and restarts,
+   walls scroll right to left, speed rises and the gap narrows the
+   longer you survive, one touch is instant game over, no lives. High
+   score lives in localStorage only -- this browser, never reported
+   anywhere. Seated permanently under Market board -- no toggle. */
 (function () {
-  var canvas = document.getElementById("desk-catch-canvas");
+  var canvas = document.getElementById("desk-runner-canvas");
   if (!canvas || !canvas.getContext) return;
   var ctx = canvas.getContext("2d");
   var statusEl = document.getElementById("game-status");
   var bestEl = document.getElementById("game-best");
-  var startBtn = document.getElementById("game-start-btn");
   var W = canvas.width, H = canvas.height;
-  var PADDLE_W = 54, PADDLE_H = 10, PADDLE_Y = H - 22;
-  var BEST_KEY = "deskCatchBest";
+  var BEST_KEY = "deskRunnerBest";
+
+  var PLAYER_X = 40, PLAYER_R = 7;
+  // Tuned via a headless simulation (a bot that flaps only while falling and
+  // below the gap's center), not by eye: the original -5.4/0.32 pair gave a
+  // ~46px single-flap swing against a 66px gap -- any reactive strategy
+  // overshot and died on the very first pipe, every time (score 0/0/0...
+  // across every fixed cadence tested). This pair keeps a flap's swing well
+  // under the gap size, so tapping corrects instead of overshoots.
+  var GRAVITY = 0.30, FLAP_V = -3.6;
+  var WALL_W = 20, WALL_SPACING = 150;
+  var GAP_START = 66, GAP_FLOOR = 44;
+  var SPEED_START = 1.9, SPEED_MAX = 4.2;
 
   var best = 0;
   try { best = parseInt(localStorage.getItem(BEST_KEY), 10) || 0; } catch (e) { best = 0; }
   if (bestEl) bestEl.textContent = "Best: " + best;
 
-  var state = { paddleX: (W - PADDLE_W) / 2, bag: null, caught: 0, over: true };
+  var mode = "idle"; // idle | playing | dead
+  var player, walls, score, speed, raf;
+
+  function resetRun() {
+    player = { y: H / 2, v: 0 };
+    walls = [{ x: W + 40, gapY: gapYFor(), gap: GAP_START, scored: false }];
+    score = 0;
+    speed = SPEED_START;
+  }
+
+  function gapYFor() {
+    var margin = 20;
+    return margin + Math.random() * (H - margin * 2 - GAP_START);
+  }
+
+  function flap() {
+    player.v = FLAP_V;
+  }
 
   function draw() {
     ctx.clearRect(0, 0, W, H);
-    ctx.strokeStyle = "rgba(255,255,255,0.08)";
-    ctx.beginPath();
-    ctx.moveTo(0, PADDLE_Y - 6);
-    ctx.lineTo(W, PADDLE_Y - 6);
-    ctx.stroke();
+    ctx.strokeStyle = "rgba(255,255,255,0.06)";
+    for (var gx = 0; gx < W; gx += 30) { ctx.beginPath(); ctx.moveTo(gx, 0); ctx.lineTo(gx, H); ctx.stroke(); }
 
-    for (var i = 0; i < 3; i++) {
-      ctx.beginPath();
-      ctx.arc(14 + i * 16, 14, 5, 0, Math.PI * 2);
-      ctx.fillStyle = i < state.caught ? "#d4af37" : "rgba(255,255,255,0.15)";
-      ctx.fill();
-    }
+    ctx.fillStyle = "#c25b4f";
+    walls.forEach(function (w) {
+      ctx.fillRect(w.x, 0, WALL_W, w.gapY);
+      ctx.fillRect(w.x, w.gapY + w.gap, WALL_W, H - (w.gapY + w.gap));
+    });
 
     ctx.fillStyle = "#d4af37";
-    ctx.fillRect(state.paddleX, PADDLE_Y, PADDLE_W, PADDLE_H);
+    ctx.beginPath();
+    ctx.arc(PLAYER_X, player.y, PLAYER_R, 0, Math.PI * 2);
+    ctx.fill();
 
-    if (state.bag) {
-      ctx.font = "20px sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText("💰", state.bag.x, state.bag.y);
-    }
+    ctx.font = "bold 13px var(--mono, monospace)";
+    ctx.fillStyle = "rgba(255,255,255,0.35)";
+    ctx.textAlign = "right";
+    ctx.textBaseline = "top";
+    ctx.fillText(String(score), W - 8, 6);
   }
 
-  function spawnBag(now) {
-    state.bag = { x: 16 + Math.random() * (W - 32), y: -14, speed: 1.6 + state.caught * 0.4 };
-    state.lastSpawn = now;
-  }
-
-  function finish(result) {
-    state.over = true;
-    if (state.raf) cancelAnimationFrame(state.raf);
-    if (result === "win") statusEl.textContent = "Locked +25%. 🔒";
-    else if (result === "loss") statusEl.textContent = "Stopped out.";
-    else statusEl.textContent = "Time's up — scratched.";
-    if (state.caught > best) {
-      best = state.caught;
+  function die() {
+    mode = "dead";
+    if (raf) cancelAnimationFrame(raf);
+    if (score > best) {
+      best = score;
       try { localStorage.setItem(BEST_KEY, String(best)); } catch (e) {}
     }
     if (bestEl) bestEl.textContent = "Best: " + best;
-    startBtn.textContent = "Play again";
-    startBtn.disabled = false;
+    statusEl.textContent = "Stopped out — score " + score + ". Tap to retry.";
   }
 
-  function tick(now) {
-    if (state.over) return;
-    var elapsed = now - state.startTime;
-    if (elapsed >= state.duration) { draw(); finish("time"); return; }
+  function step() {
+    if (mode !== "playing") return;
+    player.v += GRAVITY;
+    player.y += player.v;
 
-    if (!state.bag && now - state.lastSpawn > 250) spawnBag(now);
-    if (state.bag) {
-      state.bag.y += state.bag.speed;
-      if (state.bag.y >= PADDLE_Y - 6 && state.bag.y <= PADDLE_Y + PADDLE_H &&
-          state.bag.x >= state.paddleX - 8 && state.bag.x <= state.paddleX + PADDLE_W + 8) {
-        state.caught++;
-        state.bag = null;
-        if (state.caught >= 3) { draw(); finish("win"); return; }
-      } else if (state.bag.y > H + 14) {
-        draw(); finish("loss"); return;
+    if (player.y - PLAYER_R <= 0 || player.y + PLAYER_R >= H) { draw(); die(); return; }
+
+    for (var i = 0; i < walls.length; i++) {
+      var w = walls[i];
+      w.x -= speed;
+      var overlapsX = PLAYER_X + PLAYER_R > w.x && PLAYER_X - PLAYER_R < w.x + WALL_W;
+      if (overlapsX) {
+        var inGap = player.y - PLAYER_R > w.gapY && player.y + PLAYER_R < w.gapY + w.gap;
+        if (!inGap) { draw(); die(); return; }
+      }
+      if (!w.scored && w.x + WALL_W < PLAYER_X) {
+        w.scored = true;
+        score++;
+        speed = Math.min(SPEED_MAX, SPEED_START + score * 0.08);
       }
     }
+    walls = walls.filter(function (w) { return w.x > -WALL_W; });
+    var last = walls[walls.length - 1];
+    if (W - last.x >= WALL_SPACING) {
+      var gap = Math.max(GAP_FLOOR, GAP_START - score * 1.5);
+      walls.push({ x: W + 10, gapY: gapYFor(), gap: gap, scored: false });
+    }
 
-    statusEl.textContent = "Catching… " + Math.max(0, Math.ceil((state.duration - elapsed) / 1000)) + "s";
+    statusEl.textContent = "Score " + score;
     draw();
-    state.raf = requestAnimationFrame(tick);
+    raf = requestAnimationFrame(step);
   }
 
-  function startGame() {
-    if (state.raf) cancelAnimationFrame(state.raf);
-    state = {
-      paddleX: (W - PADDLE_W) / 2, bag: null, caught: 0, over: false,
-      startTime: performance.now(), lastSpawn: 0, duration: 30000
-    };
-    startBtn.textContent = "Restart";
-    startBtn.disabled = true;
+  function start() {
+    resetRun();
+    mode = "playing";
+    flap();
     draw();
-    state.raf = requestAnimationFrame(tick);
+    raf = requestAnimationFrame(step);
   }
 
-  function movePaddleTo(clientX) {
-    if (state.over) return;
-    var rect = canvas.getBoundingClientRect();
-    var x = (clientX - rect.left) * (W / rect.width);
-    state.paddleX = Math.max(0, Math.min(W - PADDLE_W, x - PADDLE_W / 2));
+  function handleInput() {
+    if (mode === "idle" || mode === "dead") { start(); return; }
+    flap();
   }
 
-  canvas.addEventListener("pointerdown", function (e) { movePaddleTo(e.clientX); });
-  canvas.addEventListener("pointermove", function (e) { if (e.buttons) movePaddleTo(e.clientX); });
+  canvas.addEventListener("pointerdown", function (e) { e.preventDefault(); handleInput(); });
   document.addEventListener("keydown", function (e) {
-    if (state.over) return;
-    if (e.key === "ArrowLeft") state.paddleX = Math.max(0, state.paddleX - 24);
-    else if (e.key === "ArrowRight") state.paddleX = Math.min(W - PADDLE_W, state.paddleX + 24);
+    if (e.key !== " " && e.code !== "Space") return;
+    if (document.activeElement && document.activeElement.tagName === "TEXTAREA") return;
+    e.preventDefault();
+    handleInput();
   });
-  if (startBtn) startBtn.addEventListener("click", startGame);
 
+  player = { y: H / 2, v: 0 };
+  walls = [];
   draw();
 })();
 </script>
