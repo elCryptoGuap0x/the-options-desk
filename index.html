@@ -680,7 +680,7 @@
     document.getElementById("session-next").textContent = sessionNextText(session);
   }
 
-  function renderStats(stats) {
+  function renderStats(stats, session) {
     var winClass = "";
     var wr = parseFloat(stats.win_rate);
     if (!isNaN(wr)) winClass = wr >= 50 ? "good" : "bad";
@@ -690,8 +690,14 @@
     // real dollars, computed today-only (see site/CLAUDE.md's SCOPE
     // section), sits right next to the week record so the two numbers
     // can't be mistaken for each other.
+    // Fixed 9/13, real bug: on a non-trading day this is always a
+    // correct-but-misleading $0 -- "today's real P&L is zero" reads as
+    // "nothing happened," sitting right next to a losing week's record
+    // and roast line. Hide the tile entirely when the market isn't open;
+    // the roast strip already carries the last real session's number.
     var sessionHtml = "";
-    if (stats.session_pnl_usd !== undefined && stats.session_pnl_usd !== null) {
+    var marketOpen = !session || session.market_state === "OPEN";
+    if (marketOpen && stats.session_pnl_usd !== undefined && stats.session_pnl_usd !== null) {
       var spn = Number(stats.session_pnl_usd);
       var sessionClass = spn >= 0 ? "good" : "bad";
       var sessionText = (spn >= 0 ? "+$" : "-$") + Math.abs(spn).toFixed(0);
@@ -842,14 +848,22 @@
     return v.toFixed(2);
   }
 
-  function renderMarketBoard(board) {
+  function renderMarketBoard(board, session) {
     var syms = MARKET_ORDER.filter(function (s) { return board[s]; });
+    // Fixed 9/13: the "as of last close" fact only lived in one shared
+    // caption under the whole carousel (#board-foot) -- easy to miss
+    // while scrolling individual cards, and a percent change styled
+    // exactly like a live ticker doesn't itself signal staleness. Equity
+    // cards now say so per-card when the market isn't open; crypto stays
+    // tagged "24/7" unconditionally since it's genuinely still live.
+    var marketClosed = session && session.market_state !== "OPEN";
     marketCarousel.setItems(syms, function (sym) {
       var c = board[sym];
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+      var tag = sym + (CRYPTO_SYMS[sym] ? " · crypto, 24/7" : (marketClosed ? " · as of close" : ""));
       return {
-        tag: sym + (CRYPTO_SYMS[sym] ? " · crypto, 24/7" : ""),
+        tag: tag,
         title: fmtPrice(sym, c.last),
         body: '<span class="board-chg ' + (good ? "good" : "bad") + '">' + chg + '</span>' + miniChart(c.history, good)
       };
@@ -967,11 +981,18 @@
       '<span class="scan-reason">' + s.reason + '</span></div>';
   }
 
-  function renderScanLog(items) {
+  function renderScanLog(items, session) {
     var el = document.getElementById("scan-log");
     if (!el) return;
     if (!items || !items.length) {
-      el.innerHTML = '<div class="waiting"><span class="dot"></span>Quiet cycle — nothing new to log yet</div>';
+      // Fixed 9/13: "Quiet cycle" is weekday scan-cadence voice ("nothing
+      // NEW since last look") -- wrong tone when no cycles ran at all
+      // (weekend/holiday). Same closed-desk fact News/tickets already
+      // show, not a second invented phrase.
+      var closedMsg = session && session.market_state !== "OPEN" ?
+        "Desk closed — next session " + (session.next_open || "TBD") + "." :
+        "Quiet cycle — nothing new to log yet";
+      el.innerHTML = '<div class="waiting"><span class="dot"></span>' + closedMsg + '</div>';
       return;
     }
     el.innerHTML = items.map(scanRowHtml).join("");
@@ -1044,11 +1065,11 @@
 
   function render(data) {
     renderSession(data.session);
-    renderStats(data.stats);
+    renderStats(data.stats, data.session);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
-    renderMarketBoard(data.market_board);
+    renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
-    renderScanLog(data.scan_log);
+    renderScanLog(data.scan_log, data.session);
     renderWeeks(data.weeks);
     renderRoast(data.roast);
     renderCalendar(data.calendar);
