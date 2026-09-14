@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T22:15:06Z",
+  "generated_at": "2026-09-14T22:44:22Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -350,55 +350,51 @@
   },
   "news": [
     {
-      "tag": "Top",
-      "title": "Today's dominant story",
-      "summary": "One story set the tone and never let go: Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and Sam Altman and Elon Musk both said publicly that they agreed. No filing, no rule \u2014 a positioning statement \u2014 and the tape read it straight through to the money that builds AI, marking down chipmakers, memory and datacenter suppliers overnight in Asia and keeping them down into the US open, with the Nasdaq proxy off more than twice the Dow's. It was not a blanket tech selloff: the companies that merely use AI traded green, and cybersecurity was the strongest group on the board, on the logic that a more cautious AI world spends more on protection, not less. Underneath it, energy kept running \u2014 a Saudi pipeline shut after drone strikes and a vessel struck in the Strait of Hormuz put Brent above $108, a four-month high \u2014 and volatility repriced higher into Wednesday's Fed decision, where a quarter-point hike is now the heavy favorite."
+      "tag": "Macro",
+      "title": "Two stories, one tape: AI caution and a pipeline attack",
+      "summary": "The day had a single dominant thread with two ends. Leaders of the biggest AI companies publicly called for slowing down frontier model development, and a Saudi oil pipeline was shut after a drone attack. The first knocked down chipmakers and the AI buildout trade; the second pushed oil sharply higher and dragged the 10-year Treasury yield toward 5% on renewed inflation worry. Both landed two days before the Fed's rate decision, which is what gave them their weight."
     },
     {
       "tag": "Stocks",
-      "title": "AI leaders called for a slowdown, and the money that builds AI got repriced",
-      "summary": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed. No filing, no rule, no guidance change \u2014 a positioning statement. The tape treated it as a direct hit to committed chip and datacenter spending, and midday it has not faded: Marvell -7.1%, AMD -6.0%, Oracle -4.2%, Nvidia -3.3% at late morning, all roughly where they opened. Overnight the same chain hit Asia \u2014 SK Hynix -6%, Samsung Electronics -4%, SoftBank -10%. Pushback landed over the weekend without visibly turning anything: President Trump dismissed the slowdown warnings, and Michael Burry called the Amodei and Altman calls self-serving."
+      "title": "AI leaders call for a slower pace of development",
+      "summary": "Anthropic's Dario Amodei and OpenAI's Sam Altman both highlighted the safety risks of how fast AI models are advancing. There's no rule or filing behind it, just a position taken out loud, but the market read it straight through to the money that builds AI: Nvidia, Micron and the rest of the chip complex sold off, and the Nasdaq and semiconductor indexes lagged. Cybersecurity names went the other way."
+    },
+    {
+      "tag": "Macro",
+      "title": "Saudi Arabia shuts its East-West oil pipeline after a drone attack",
+      "summary": "The line that lets crude bypass the Strait of Hormuz was taken offline, which removes the workaround exactly when the strait itself is the worry. Brent pushed toward $105-110 and WTI followed. Higher oil feeds directly into inflation expectations, so the bond market moved too \u2014 the 10-year yield briefly topped 5% and expectations for another Fed hike firmed."
+    },
+    {
+      "tag": "Macro",
+      "title": "The 10-year yield touched a multi-year high near 5%",
+      "summary": "Bonds sold off as oil-driven inflation fears built through the session, lifting the 10-year Treasury yield to its highest in years just ahead of Wednesday's Fed decision. When yields move like this two days before a rate announcement, it's the market pre-positioning for what it thinks the Fed will say."
     },
     {
       "tag": "Stocks",
-      "title": "It is not a tech selloff \u2014 the companies that use AI are green",
-      "summary": "The split is the whole story. While the builders sold off, the platforms and applications rallied and have kept extending through the morning: ServiceNow +6.5%, Adobe +3.9%, with Alphabet, Meta, Apple and Microsoft all holding gains. Enterprise software with no capex exposure led the liquid gainer list alongside them \u2014 HubSpot, Atlassian, SAP, Accenture, Asana. One index line carries it: the Nasdaq proxy is down roughly twice the S&P proxy, the Dow proxy is nearly flat, and small caps are barely moved. That is a concentrated repricing of one spending chain, not broad risk-off."
+      "title": "Indexes closed lower, but most stocks didn't",
+      "summary": "The S&P 500 and Nasdaq both finished modestly down under the weight of AI and oil, yet the majority of individual stocks actually rose. That gap is worth noticing: the headline indexes are dominated by a handful of very large companies, so when those few are the ones being sold, the average stock can have a perfectly decent day while the number on the screen is red. Software and defensive areas did the offsetting."
     },
     {
       "tag": "Stocks",
-      "title": "Cybersecurity roughly doubled its move, and it is no longer just a headline trade",
-      "summary": "The premarket rally in security names has roughly doubled by late morning, and the sector picked up name-specific catalysts it did not have at the open: CrowdStrike +15.3%, Zscaler +15.0%, SentinelOne +14.9%, Palo Alto Networks +13.3%, Okta +11.6%, Cloudflare +6.4%. It also broadened well past the premarket list \u2014 Rapid7 +17.4%, SailPoint +14.6%, Tenable +13.7%, Rubrik +13.3%, Fortinet +8.6%. On CrowdStrike specifically: CEO George Kurtz publicly rebutted the slowdown call on Sunday, arguing frontier labs advance regardless and security's job is to make that safe rather than slower, and Jim Cramer amplified it on CNBC. CrowdStrike separately disclosed it registered the resale of 2.12 million shares by a selling stockholder."
-    },
-    {
-      "tag": "Stocks",
-      "title": "A batch of pre-open analyst moves is doing real work today",
-      "summary": "Ratings changes that landed between 7:46 and 9:01 ET are driving several of the day's cleanest single-name moves. Compass Point upgraded Coinbase from Sell to Neutral with the price target going $130 to $177, and Coinbase is +7.0% against a barely-moved bitcoin \u2014 a single-name catalyst, not a crypto move. The same analyst took Bullish from Neutral to Buy, target $30 to $51, and it is +5.7%. The exception that proves the tape's mood: JP Morgan double-upgraded IREN from Underweight to Overweight, target $46 to $65, and IREN is still down about 1% \u2014 the AI-capex selloff is overriding the upgrade. Elsewhere, Wells Fargo raised its Okta target to $200, and both B of A and Wedbush lifted Roblox targets."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Two single-name stories the morning list did not have",
-      "summary": "RUM is +14.7% after a report identified Anthropic as the customer behind its $13.7 billion GPU services contract. It sat on the gainers list all morning at roughly half that move with no catalyst attached \u2014 now it has one, and it lands on the opposite side of the day's dominant story from where the chip names sit. Separately, and tied to nothing else on the board: ELMT is +50.6% after disclosing it will use part of a $450 million committed US Department of Defense investment to expand tungsten supply and domestic manufacturing, with $200 million drawn at closing. BMM is +14.5% alongside it on a binding letter of intent to invest $150-175 million in the Springer Tungsten Complex in Imlay, Nevada."
+      "title": "Chips led the losses while cybersecurity rallied hard",
+      "summary": "Nvidia, Broadcom, Micron and the ETFs tracking them took the brunt of the selling. CrowdStrike and its peers ran the opposite direction on the view that a world more cautious about AI spends more on protecting against it, not less \u2014 the same headline read as a cost by one group and as demand by another."
     }
   ],
   "calendar": [
     {
-      "what": "Empire State manufacturing",
-      "when": "Tue 9/15"
-    },
-    {
-      "what": "Retail sales, 8:30 ET",
+      "what": "Fed rate decision, press conference and dot plot",
       "when": "Wed 9/16"
     },
     {
-      "what": "Fed decision 2:00 ET, press conference 2:30",
-      "when": "Wed 9/16 \u2014 a quarter-point hike is the heavy favorite"
+      "what": "Retail sales",
+      "when": "Wed 9/16"
     },
     {
-      "what": "Philly Fed, housing starts, Bank of England decision",
-      "when": "Thu 9/17"
+      "what": "Bank of Japan meeting",
+      "when": "Later this week"
     },
     {
-      "what": "Industrial production; monthly options expiration",
+      "what": "Quad witching (quarterly options and futures expiration)",
       "when": "Fri 9/18"
     }
   ],
@@ -431,6 +427,6 @@
     ],
     "filled": 0
   },
-  "scan_log_public": "Three different names pushed higher in the same stretch after lunch, and all three rolled over so fast that the move was over before the rules would agree it had run \u2014 each one got looked at, each one got passed on. Watched all day, never a ticket.",
+  "scan_log_public": "A few names pushed hard enough after lunch to get a close look, but every one of them rolled over before the move qualified, and the day ended without a single trade.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board."
 }
