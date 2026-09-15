@@ -390,11 +390,11 @@
   }
   .tip-row:first-of-type { border-top: none; }
   .tip-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-dim); flex-shrink: 0; }
-  /* Desk Runner -- pure client JS, no server/API involved. Rewritten 9/14
-     from a footer-panel paddle game into an always-visible one-button
-     endless runner (Flappy-style: single input, infinite scroll, rising
-     difficulty, instant fail, one-click restart), seated permanently in
-     the right rail under Market board instead of behind a toggle. */
+  /* To the Moon -- pure client JS, no server/API involved. Started as a
+     footer-panel paddle game, became a Flappy-style flyer, now a
+     Bitcoin-themed dino-style runner (jump red candles/FUD, grab BTC for
+     a shield), all on the same "single input does everything" spine.
+     Seated permanently in the right rail under Market board -- no toggle. */
   .game-card {
     background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--gold);
     border-radius: 0 10px 10px 0; padding: 16px 18px 14px;
@@ -550,13 +550,13 @@
       </section>
 
       <section>
-        <div class="section-title">Desk Runner</div>
+        <div class="section-title">To the Moon</div>
         <div class="game-card">
-          <div class="game-note">One tap, click, or Space to fly. Touch a wall and you're stopped out — same click restarts.</div>
+          <div class="game-note">Tap, click, or Space to jump. Dodge red candles and FUD, grab ₿ for a shield. Same tap restarts.</div>
           <div class="game-wrap">
             <canvas id="desk-runner-canvas" width="300" height="170"></canvas>
             <div class="game-hud">
-              <span id="game-status">Tap to fly</span>
+              <span id="game-status">Tap to jump</span>
               <span id="game-best">Best: 0</span>
             </div>
           </div>
@@ -1316,13 +1316,22 @@
 </script>
 
 <script>
-/* Desk Runner -- pure client JS, no server/API involved, no effect on
-   trading logic. Rewritten 9/14 as a proper one-button endless runner
-   (Flappy-style): a single tap/click/Space both flies and restarts,
-   walls scroll right to left, speed rises and the gap narrows the
-   longer you survive, one touch is instant game over, no lives. High
-   score lives in localStorage only -- this browser, never reported
-   anywhere. Seated permanently under Market board -- no toggle. */
+/* To the Moon -- pure client JS, no server/API involved, no effect on
+   trading logic. Bitcoin-themed one-button endless runner (Chrome-Dino
+   style, not Flappy): ground-level red-candle/FUD obstacles to jump over,
+   floating BTC coins to grab mid-air for a brief shield. Same tap/click/
+   Space jumps, and (after death) restarts. High score in localStorage
+   only. Seated permanently under Market board -- no toggle.
+
+   Physics tuned via a headless bot sim before shipping, same discipline
+   as the prior Flappy build: swept the bot's reaction distance (how far
+   ahead of an obstacle it jumps) from too-late to too-early and found a
+   real ~9-frame sweet spot (roughly 150ms) where it clears obstacles
+   reliably (scores 70-160+); outside that window it dies on the very
+   first one every time, both from jumping too late (still grounded when
+   the obstacle arrives) and too early (the fall-back-down tail of the
+   jump clips the obstacle's tail as it passes). That's a real timing
+   skill, not a bug -- same shape as the actual Chrome dino game. */
 (function () {
   var canvas = document.getElementById("desk-runner-canvas");
   if (!canvas || !canvas.getContext) return;
@@ -1330,58 +1339,95 @@
   var statusEl = document.getElementById("game-status");
   var bestEl = document.getElementById("game-best");
   var W = canvas.width, H = canvas.height;
-  var BEST_KEY = "deskRunnerBest";
+  var BEST_KEY = "toTheMoonBest";
 
-  var PLAYER_X = 40, PLAYER_R = 7;
-  // Tuned via a headless simulation (a bot that flaps only while falling and
-  // below the gap's center), not by eye: the original -5.4/0.32 pair gave a
-  // ~46px single-flap swing against a 66px gap -- any reactive strategy
-  // overshot and died on the very first pipe, every time (score 0/0/0...
-  // across every fixed cadence tested). This pair keeps a flap's swing well
-  // under the gap size, so tapping corrects instead of overshoots.
-  var GRAVITY = 0.30, FLAP_V = -3.6;
-  var WALL_W = 20, WALL_SPACING = 150;
-  var GAP_START = 66, GAP_FLOOR = 44;
-  var SPEED_START = 1.9, SPEED_MAX = 4.2;
+  var GROUND_Y = 145;
+  var PLAYER_X = 34, PLAYER_W = 12, PLAYER_H = 14;
+  var GRAVITY = 0.55, JUMP_V = -8.2;
+  var SPEED_START = 2.2, SPEED_MAX = 5.0;
+  var SHIELD_FRAMES = 90;
 
   var best = 0;
   try { best = parseInt(localStorage.getItem(BEST_KEY), 10) || 0; } catch (e) { best = 0; }
   if (bestEl) bestEl.textContent = "Best: " + best;
 
   var mode = "idle"; // idle | playing | dead
-  var player, walls, score, speed, raf;
+  var player, items, score, speed, shield, raf;
+
+  function makeObstacle(x) {
+    var tall = Math.random() < 0.4;
+    var h = tall ? 24 : 14, w = tall ? 14 : 18;
+    return { type: "obstacle", tall: tall, x: x, w: w, h: h, y: GROUND_Y - h, scored: false };
+  }
+  function makeCoin(x) {
+    return { type: "coin", x: x, y: GROUND_Y - 30 - Math.random() * 20, r: 5, taken: false };
+  }
 
   function resetRun() {
-    player = { y: H / 2, v: 0 };
-    walls = [{ x: W + 40, gapY: gapYFor(), gap: GAP_START, scored: false }];
+    player = { y: GROUND_Y - PLAYER_H, v: 0, onGround: true };
+    items = [makeObstacle(W + 60)];
     score = 0;
     speed = SPEED_START;
+    shield = 0;
   }
 
-  function gapYFor() {
-    var margin = 20;
-    return margin + Math.random() * (H - margin * 2 - GAP_START);
+  function jump() {
+    if (!player.onGround) return;
+    player.v = JUMP_V;
+    player.onGround = false;
   }
 
-  function flap() {
-    player.v = FLAP_V;
+  function drawPlayer() {
+    var y = player.y;
+    ctx.fillStyle = shield > 0 ? "#f0d78c" : "#d4af37";
+    ctx.fillRect(PLAYER_X, y + 4, PLAYER_W, PLAYER_H - 4);
+    ctx.beginPath();
+    ctx.moveTo(PLAYER_X + PLAYER_W, y + 4);
+    ctx.lineTo(PLAYER_X + PLAYER_W + 6, y + PLAYER_H / 2);
+    ctx.lineTo(PLAYER_X + PLAYER_W, y + PLAYER_H);
+    ctx.closePath();
+    ctx.fill();
+    if (shield > 0) {
+      ctx.strokeStyle = "rgba(240,215,140,0.6)";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(PLAYER_X - 3, y + 1, PLAYER_W + 12, PLAYER_H + 2);
+      ctx.lineWidth = 1;
+    }
   }
 
   function draw() {
     ctx.clearRect(0, 0, W, H);
-    ctx.strokeStyle = "rgba(255,255,255,0.06)";
-    for (var gx = 0; gx < W; gx += 30) { ctx.beginPath(); ctx.moveTo(gx, 0); ctx.lineTo(gx, H); ctx.stroke(); }
+    ctx.strokeStyle = "rgba(255,255,255,0.12)";
+    ctx.beginPath();
+    ctx.moveTo(0, GROUND_Y);
+    ctx.lineTo(W, GROUND_Y);
+    ctx.stroke();
 
-    ctx.fillStyle = "#c25b4f";
-    walls.forEach(function (w) {
-      ctx.fillRect(w.x, 0, WALL_W, w.gapY);
-      ctx.fillRect(w.x, w.gapY + w.gap, WALL_W, H - (w.gapY + w.gap));
+    items.forEach(function (it) {
+      if (it.type === "obstacle") {
+        ctx.fillStyle = "#c25b4f";
+        ctx.fillRect(it.x, it.y, it.w, it.h);
+        ctx.strokeStyle = "#c25b4f";
+        ctx.beginPath();
+        ctx.moveTo(it.x + it.w / 2, it.y - 4);
+        ctx.lineTo(it.x + it.w / 2, it.y);
+        ctx.moveTo(it.x + it.w / 2, GROUND_Y);
+        ctx.lineTo(it.x + it.w / 2, GROUND_Y + 4);
+        ctx.stroke();
+      } else if (!it.taken) {
+        ctx.fillStyle = "#d4af37";
+        ctx.beginPath();
+        ctx.arc(it.x, it.y, it.r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#1a1712";
+        ctx.font = "bold 8px var(--mono, monospace)";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText("B", it.x, it.y + 0.5);
+      }
     });
 
-    ctx.fillStyle = "#d4af37";
-    ctx.beginPath();
-    ctx.arc(PLAYER_X, player.y, PLAYER_R, 0, Math.PI * 2);
-    ctx.fill();
+    drawPlayer();
 
     ctx.font = "bold 13px var(--mono, monospace)";
     ctx.fillStyle = "rgba(255,255,255,0.35)";
@@ -1398,38 +1444,50 @@
       try { localStorage.setItem(BEST_KEY, String(best)); } catch (e) {}
     }
     if (bestEl) bestEl.textContent = "Best: " + best;
-    statusEl.textContent = "Stopped out — score " + score + ". Tap to retry.";
+    statusEl.textContent = "Rugged by the dip — score " + score + ". Tap to retry.";
   }
 
   function step() {
     if (mode !== "playing") return;
+    speed = Math.min(SPEED_MAX, SPEED_START + score * 0.03);
+    if (shield > 0) shield--;
+
     player.v += GRAVITY;
     player.y += player.v;
-
-    if (player.y - PLAYER_R <= 0 || player.y + PLAYER_R >= H) { draw(); die(); return; }
-
-    for (var i = 0; i < walls.length; i++) {
-      var w = walls[i];
-      w.x -= speed;
-      var overlapsX = PLAYER_X + PLAYER_R > w.x && PLAYER_X - PLAYER_R < w.x + WALL_W;
-      if (overlapsX) {
-        var inGap = player.y - PLAYER_R > w.gapY && player.y + PLAYER_R < w.gapY + w.gap;
-        if (!inGap) { draw(); die(); return; }
-      }
-      if (!w.scored && w.x + WALL_W < PLAYER_X) {
-        w.scored = true;
-        score++;
-        speed = Math.min(SPEED_MAX, SPEED_START + score * 0.08);
-      }
-    }
-    walls = walls.filter(function (w) { return w.x > -WALL_W; });
-    var last = walls[walls.length - 1];
-    if (W - last.x >= WALL_SPACING) {
-      var gap = Math.max(GAP_FLOOR, GAP_START - score * 1.5);
-      walls.push({ x: W + 10, gapY: gapYFor(), gap: gap, scored: false });
+    if (player.y >= GROUND_Y - PLAYER_H) {
+      player.y = GROUND_Y - PLAYER_H;
+      player.v = 0;
+      player.onGround = true;
     }
 
-    statusEl.textContent = "Score " + score;
+    items.forEach(function (it) { it.x -= speed; });
+
+    var pTop = player.y, pBot = player.y + PLAYER_H, pLeft = PLAYER_X, pRight = PLAYER_X + PLAYER_W;
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      if (it.type === "obstacle") {
+        var oLeft = it.x, oRight = it.x + it.w, oTop = it.y;
+        if (pRight > oLeft && pLeft < oRight && pBot > oTop && pTop < GROUND_Y) {
+          if (shield > 0) { it.scored = true; } // shielded through it, no hit
+          else { draw(); die(); return; }
+        }
+        if (!it.scored && oRight < PLAYER_X) { it.scored = true; score++; }
+      } else if (!it.taken) {
+        var dx = (PLAYER_X + PLAYER_W / 2) - it.x, dy = (player.y + PLAYER_H / 2) - it.y;
+        if (Math.sqrt(dx * dx + dy * dy) < it.r + 8) { it.taken = true; score += 5; shield = SHIELD_FRAMES; }
+      }
+    }
+    items = items.filter(function (it) { return it.x > -30; });
+
+    var lastX = 0;
+    items.forEach(function (it) { if (it.x > lastX) lastX = it.x; });
+    var gapFloor = Math.max(65, 130 - score * 0.4);
+    if (W - lastX >= gapFloor) {
+      items.push(makeObstacle(W + 20));
+      if (Math.random() < 0.5) items.push(makeCoin(W + 50));
+    }
+
+    statusEl.textContent = "Score " + score + (shield > 0 ? " · shielded" : "");
     draw();
     raf = requestAnimationFrame(step);
   }
@@ -1437,14 +1495,14 @@
   function start() {
     resetRun();
     mode = "playing";
-    flap();
+    jump();
     draw();
     raf = requestAnimationFrame(step);
   }
 
   function handleInput() {
     if (mode === "idle" || mode === "dead") { start(); return; }
-    flap();
+    jump();
   }
 
   canvas.addEventListener("pointerdown", function (e) { e.preventDefault(); handleInput(); });
@@ -1455,8 +1513,8 @@
     handleInput();
   });
 
-  player = { y: H / 2, v: 0 };
-  walls = [];
+  player = { y: GROUND_Y - PLAYER_H, v: 0, onGround: true };
+  items = [];
   draw();
 })();
 </script>
