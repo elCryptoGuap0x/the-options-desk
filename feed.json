@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T19:57:53Z",
+  "generated_at": "2026-09-15T20:01:15Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -265,7 +265,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "22 looked, 0 filled, 0 disasters. Caps held.",
+  "roast": "Session over. -$7.",
   "streak_last8": [
     "L",
     "W",
@@ -322,7 +322,7 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 756.95,
+      "last": 756.99,
       "chg_pct": -0.65,
       "history": [
         761.93,
@@ -346,12 +346,13 @@
         756.95,
         756.86,
         756.6,
-        756.95
+        756.95,
+        756.985
       ]
     },
     "QQQ": {
-      "last": 704.13,
-      "chg_pct": -0.87,
+      "last": 704.34,
+      "chg_pct": -0.84,
       "history": [
         710.31,
         707.63,
@@ -373,12 +374,13 @@
         704.36,
         704.09,
         703.98,
-        704.13
+        704.13,
+        704.34
       ]
     },
     "DIA": {
-      "last": 521.04,
-      "chg_pct": -0.83,
+      "last": 520.89,
+      "chg_pct": -0.85,
       "history": [
         525.38,
         522.55,
@@ -400,12 +402,13 @@
         520.96,
         521.01,
         520.77,
-        521.045
+        521.045,
+        520.891
       ]
     },
     "VIXY": {
-      "last": 17.51,
-      "chg_pct": -0.03,
+      "last": 17.52,
+      "chg_pct": 0.0,
       "history": [
         17.515,
         17.465,
@@ -428,14 +431,14 @@
         17.515,
         17.5,
         17.53,
-        17.51
+        17.51,
+        17.515
       ]
     },
     "BTC": {
-      "last": 76047.88,
-      "chg_pct": -1.12,
+      "last": 76175.57,
+      "chg_pct": -0.95,
       "history": [
-        75734.19,
         75949.9,
         75943.785,
         75899.32,
@@ -464,14 +467,14 @@
         75889.835,
         75976.725,
         76035.825,
-        76047.885
+        76047.885,
+        76175.565
       ]
     },
     "ETH": {
-      "last": 2411.32,
-      "chg_pct": -2.62,
+      "last": 2415.41,
+      "chg_pct": -2.46,
       "history": [
-        2398.92,
         2401.515,
         2402.07,
         2403.22,
@@ -500,14 +503,14 @@
         2403.785,
         2407.845,
         2411.9,
-        2411.32
+        2411.32,
+        2415.415
       ]
     },
     "SOL": {
-      "last": 97.89,
-      "chg_pct": -3.04,
+      "last": 98.0,
+      "chg_pct": -2.93,
       "history": [
-        97.735,
         98.065,
         98.15,
         97.99,
@@ -536,12 +539,13 @@
         97.66,
         97.785,
         97.905,
-        97.895
+        97.895,
+        98.005
       ]
     },
     "MSTR": {
-      "last": 129.38,
-      "chg_pct": -4.68,
+      "last": 129.7,
+      "chg_pct": -4.45,
       "history": [
         135.735,
         132.72,
@@ -564,12 +568,13 @@
         130.255,
         129.96,
         129.32,
-        129.38
+        129.38,
+        129.697
       ]
     },
     "COIN": {
-      "last": 172.1,
-      "chg_pct": -9.61,
+      "last": 172.5,
+      "chg_pct": -9.4,
       "history": [
         190.4,
         181.3181,
@@ -592,12 +597,13 @@
         174.295,
         173.5,
         172.065,
-        172.1
+        172.1,
+        172.5
       ]
     },
     "IBIT": {
-      "last": 42.94,
-      "chg_pct": -3.56,
+      "last": 43.03,
+      "chg_pct": -3.36,
       "history": [
         44.52,
         43.42,
@@ -620,12 +626,13 @@
         42.93,
         42.925,
         42.915,
-        42.935
+        42.935,
+        43.026
       ]
     },
     "IREN": {
-      "last": 41.37,
-      "chg_pct": -4.81,
+      "last": 41.48,
+      "chg_pct": -4.54,
       "history": [
         43.46,
         42.35,
@@ -648,12 +655,13 @@
         41.366,
         41.36,
         41.295,
-        41.37
+        41.37,
+        41.485
       ]
     },
     "NVDA": {
-      "last": 212.01,
-      "chg_pct": 0.14,
+      "last": 212.16,
+      "chg_pct": 0.21,
       "history": [
         211.71,
         212.8601,
@@ -676,7 +684,8 @@
         212.07,
         211.885,
         211.925,
-        212.008
+        212.008,
+        212.16
       ]
     },
     "CRCL": {
@@ -708,8 +717,8 @@
       ]
     },
     "CRWD": {
-      "last": 242.06,
-      "chg_pct": 1.9,
+      "last": 242.23,
+      "chg_pct": 1.98,
       "history": [
         237.5354,
         233.8753,
@@ -731,12 +740,13 @@
         241.3,
         241.825,
         242.268,
-        242.06
+        242.06,
+        242.23
       ]
     },
     "HOOD": {
-      "last": 109.91,
-      "chg_pct": 0.63,
+      "last": 110.51,
+      "chg_pct": 1.18,
       "history": [
         109.22,
         108.98,
@@ -758,12 +768,13 @@
         110.27,
         110.19,
         109.75,
-        109.91
+        109.91,
+        110.51
       ]
     },
     "MRVL": {
-      "last": 221.62,
-      "chg_pct": 0.25,
+      "last": 221.74,
+      "chg_pct": 0.3,
       "history": [
         221.075,
         223.755,
@@ -786,12 +797,13 @@
         221.475,
         221.265,
         221.81,
-        221.62
+        221.62,
+        221.74
       ]
     },
     "PANW": {
-      "last": 377.87,
-      "chg_pct": 0.96,
+      "last": 374.93,
+      "chg_pct": 0.18,
       "history": [
         374.265,
         372.3,
@@ -814,12 +826,13 @@
         376.635,
         377.29,
         377.21,
-        377.87
+        377.87,
+        374.93
       ]
     },
     "USO": {
-      "last": 161.72,
-      "chg_pct": 2.42,
+      "last": 161.78,
+      "chg_pct": 2.46,
       "history": [
         157.896,
         159.335,
@@ -842,12 +855,13 @@
         161.45,
         161.666,
         161.6,
-        161.72
+        161.72,
+        161.782
       ]
     },
     "AAPL": {
-      "last": 330.2,
-      "chg_pct": -1.36,
+      "last": 331.62,
+      "chg_pct": -0.93,
       "history": [
         334.74,
         331.08,
@@ -867,12 +881,13 @@
         330.145,
         329.98,
         329.91,
-        330.202
+        330.202,
+        331.62
       ]
     },
     "ADBE": {
-      "last": 259.06,
-      "chg_pct": -1.4,
+      "last": 258.02,
+      "chg_pct": -1.8,
       "history": [
         262.74,
         262.62,
@@ -887,12 +902,13 @@
         260.675,
         260.41,
         259.785,
-        259.06
+        259.06,
+        258.02
       ]
     },
     "BMNR": {
-      "last": 23.57,
-      "chg_pct": -7.2,
+      "last": 23.61,
+      "chg_pct": -7.07,
       "history": [
         25.405,
         24.509,
@@ -915,12 +931,13 @@
         23.915,
         23.83,
         23.605,
-        23.575
+        23.575,
+        23.61
       ]
     },
     "BSOL": {
-      "last": 13.43,
-      "chg_pct": -2.91,
+      "last": 13.45,
+      "chg_pct": -2.78,
       "history": [
         13.83,
         13.7599,
@@ -940,12 +957,13 @@
         13.42,
         13.425,
         13.42,
-        13.428
+        13.428,
+        13.445
       ]
     },
     "ETHA": {
-      "last": 18.14,
-      "chg_pct": -2.61,
+      "last": 18.18,
+      "chg_pct": -2.39,
       "history": [
         18.6201,
         18.405,
@@ -966,12 +984,13 @@
         18.175,
         18.105,
         18.115,
-        18.135
+        18.135,
+        18.175
       ]
     },
     "IWM": {
-      "last": 284.87,
-      "chg_pct": -0.18,
+      "last": 284.74,
+      "chg_pct": -0.23,
       "history": [
         285.39,
         285.71,
@@ -987,12 +1006,13 @@
         284.895,
         284.915,
         284.795,
-        284.865
+        284.865,
+        284.735
       ]
     },
     "META": {
-      "last": 671.37,
-      "chg_pct": 1.54,
+      "last": 669.88,
+      "chg_pct": 1.31,
       "history": [
         661.21,
         660.94,
@@ -1013,12 +1033,13 @@
         671.71,
         671.073,
         669.15,
-        671.365
+        671.365,
+        669.88
       ]
     },
     "MSFT": {
-      "last": 496.27,
-      "chg_pct": -1.88,
+      "last": 497.0,
+      "chg_pct": -1.73,
       "history": [
         505.765,
         501.295,
@@ -1037,12 +1058,13 @@
         496.345,
         496.45,
         495.74,
-        496.27
+        496.27,
+        496.999
       ]
     },
     "TSLA": {
-      "last": 355.29,
-      "chg_pct": -2.04,
+      "last": 355.99,
+      "chg_pct": -1.84,
       "history": [
         362.68,
         356.61,
@@ -1061,12 +1083,13 @@
         355.93,
         355.51,
         354.54,
-        355.29
+        355.29,
+        355.99
       ]
     },
     "XLE": {
-      "last": 65.86,
-      "chg_pct": 1.25,
+      "last": 65.84,
+      "chg_pct": 1.23,
       "history": [
         65.045,
         65.17,
@@ -1089,58 +1112,87 @@
         65.785,
         65.805,
         65.79,
-        65.855
+        65.855,
+        65.845
       ]
     }
   },
   "news": [
     {
       "tag": "Macro",
-      "title": "Two stories, one tape: AI caution and a pipeline attack",
-      "summary": "The day had a single dominant thread with two ends. Leaders of the biggest AI companies publicly called for slowing down frontier model development, and a Saudi oil pipeline was shut after a drone attack. The first knocked down chipmakers and the AI buildout trade; the second pushed oil sharply higher and dragged the 10-year Treasury yield toward 5% on renewed inflation worry. Both landed two days before the Fed's rate decision, which is what gave them their weight."
-    },
-    {
-      "tag": "Stocks",
-      "title": "AI leaders call for a slower pace of development",
-      "summary": "Anthropic's Dario Amodei and OpenAI's Sam Altman both highlighted the safety risks of how fast AI models are advancing. There's no rule or filing behind it, just a position taken out loud, but the market read it straight through to the money that builds AI: Nvidia, Micron and the rest of the chip complex sold off, and the Nasdaq and semiconductor indexes lagged. Cybersecurity names went the other way."
+      "title": "Oil rally keeps bonds under strain",
+      "summary": "Stocks and futures slipped as elevated crude prices pressured Treasuries, pushing the 10-year yield to levels last seen roughly 19 years ago. Brent climbed toward $107 and up, capping a September gain of about 18%. The dollar advanced and Bitcoin weakened as hopes for near-term US crypto regulation slipped. Risk appetite stayed checked heading into the Fed meeting."
     },
     {
       "tag": "Macro",
-      "title": "Saudi Arabia shuts its East-West oil pipeline after a drone attack",
-      "summary": "The line that lets crude bypass the Strait of Hormuz was taken offline, which removes the workaround exactly when the strait itself is the worry. Brent pushed toward $105-110 and WTI followed. Higher oil feeds directly into inflation expectations, so the bond market moved too \u2014 the 10-year yield briefly topped 5% and expectations for another Fed hike firmed."
+      "title": "The 10-year yield crossed 5% and a rate hike looms",
+      "summary": "Futures declined as surging oil fed inflation worries and the 10-year Treasury yield hit about 5.03%. Markets are pricing better than 90% odds of a quarter-point Fed hike on Wednesday, which would take the target range to 3.75-4.00%. Brent sat near $108-109 and WTI near $104 on Gulf attacks and the Saudi pipeline shutdown, after a Monday session led lower by chipmakers."
     },
     {
       "tag": "Macro",
-      "title": "The 10-year yield touched a multi-year high near 5%",
-      "summary": "Bonds sold off as oil-driven inflation fears built through the session, lifting the 10-year Treasury yield to its highest in years just ahead of Wednesday's Fed decision. When yields move like this two days before a rate announcement, it's the market pre-positioning for what it thinks the Fed will say."
+      "title": "10-year at its highest since 2007 as crude extends gains",
+      "summary": "Futures pointed lower with the 10-year above 5.04% in early trade and crude still climbing on Middle East fighting. Major indexes closed lower Monday, the fifth decline in six sessions, as chipmakers sank on AI safety warnings. Traders continue to see high odds of a rate hike Wednesday."
     },
     {
       "tag": "Stocks",
-      "title": "Indexes closed lower, but most stocks didn't",
-      "summary": "The S&P 500 and Nasdaq both finished modestly down under the weight of AI and oil, yet the majority of individual stocks actually rose. That gap is worth noticing: the headline indexes are dominated by a handful of very large companies, so when those few are the ones being sold, the average stock can have a perfectly decent day while the number on the screen is red. Software and defensive areas did the offsetting."
+      "title": "Global shares mostly lower after AI stocks sink",
+      "summary": "Asian and European markets traded lower following Wall Street's weakness in AI and chip names. SoftBank recovered part of its losses in Tokyo after comments about a delay to an OpenAI listing. US futures stayed under pressure through the overnight session."
     },
     {
       "tag": "Stocks",
-      "title": "Chips led the losses while cybersecurity rallied hard",
-      "summary": "Nvidia, Broadcom, Micron and the ETFs tracking them took the brunt of the selling. CrowdStrike and its peers ran the opposite direction on the view that a world more cautious about AI spends more on protecting against it, not less \u2014 the same headline read as a cost by one group and as demand by another."
+      "title": "AI slowdown fears hit chipmakers while cybersecurity jumps",
+      "summary": "US stocks ended Monday lower with Nvidia and other chipmakers leading the declines, after AI executives raised safety concerns and urged a slower pace of frontier model development. CrowdStrike, Palo Alto Networks and their peers went the other way, surging on relative resilience and analyst support."
+    },
+    {
+      "tag": "Crypto",
+      "title": "Senate votes today on the Clarity Act after the final text drop",
+      "summary": "Republicans released the last draft Monday with 126 Democratic changes included. A cloture vote on the motion to proceed is set for this afternoon, around 2:15pm ET. That vote only starts debate rather than deciding the bill, so it is not a law-or-no-law moment. If cloture fails, the path for the rest of 2026 gets much thinner."
+    },
+    {
+      "tag": "Crypto",
+      "title": "Trump accepted tougher crypto ethics rules",
+      "summary": "Under the agreed terms, covered officials cannot issue or sponsor a digital asset, and must divest a significant crypto interest or place it in a qualified blind trust. State attorneys general get enforcement power. That package was the Democratic blocker, and prediction-market odds jumped on the deal before fading again overnight."
+    },
+    {
+      "tag": "Crypto",
+      "title": "Crypto proxies ripped Monday, then sold off Tuesday premarket",
+      "summary": "CRCL, COIN, MSTR and HOOD all faded between 3% and 6% premarket after Monday's bounce on the ethics deal, and Bitcoin gave back its spike above $79k. That is the classic pattern of buying the headline and then selling the 60-vote math, since passage this year still has to clear the Senate and a House that has already left town."
+    },
+    {
+      "tag": "Crypto",
+      "title": "What the bill would actually do to the proxies",
+      "summary": "Clarity would split digital commodities under the CFTC from securities under the SEC, give exchanges and custodians a real rulebook, and add a Treasury kill-switch on stablecoin rewards if deposits flee community banks. That is why CRCL and COIN move more on the vote than MSTR does, since MSTR still tracks Bitcoin first. SEC Chair Atkins has said the agency will keep writing crypto rules with or without the bill."
+    },
+    {
+      "tag": "Crypto",
+      "title": "The odds are not a done deal",
+      "summary": "Passage needs roughly seven to nine Democratic votes plus GOP holdouts. TD Cowen still puts enactment this year at about 25%, and even a Senate win likely waits on a lame-duck House. If cloture fails the complex fades; if it passes, COIN, CRCL and HOOD can rip again into the next round of procedural votes."
     }
   ],
   "calendar": [
     {
-      "what": "Fed rate decision, press conference and dot plot",
-      "when": "Wed 9/16"
+      "what": "Clarity Act cloture vote in the Senate",
+      "when": "Today, 2:15pm ET"
     },
     {
-      "what": "Retail sales",
-      "when": "Wed 9/16"
+      "what": "Empire Manufacturing",
+      "when": "Today"
     },
     {
-      "what": "Bank of Japan meeting",
+      "what": "API crude inventories",
+      "when": "Today, later session"
+    },
+    {
+      "what": "August retail sales",
+      "when": "Wed, 8:30am ET"
+    },
+    {
+      "what": "FOMC rate decision, projections and dot plot",
+      "when": "Wed, 2:00pm ET"
+    },
+    {
+      "what": "Housing and industrial production data",
       "when": "Later this week"
-    },
-    {
-      "what": "Quad witching (quarterly options and futures expiration)",
-      "when": "Fri 9/18"
     }
   ],
   "skip_summary_ticker_list": {
@@ -1235,21 +1287,21 @@
     "up": [
       {
         "sym": "USO",
-        "chg_pct": 2.42
+        "chg_pct": 2.46
       },
       {
         "sym": "CRWD",
-        "chg_pct": 1.9
+        "chg_pct": 1.98
       },
       {
         "sym": "META",
-        "chg_pct": 1.54
+        "chg_pct": 1.31
       }
     ],
     "down": [
       {
         "sym": "COIN",
-        "chg_pct": -9.61
+        "chg_pct": -9.4
       },
       {
         "sym": "CRCL",
@@ -1257,13 +1309,13 @@
       },
       {
         "sym": "BMNR",
-        "chg_pct": -7.2
+        "chg_pct": -7.07
       }
     ]
   },
   "desk_freshness": {
-    "watch": "2:50",
-    "crypto": "2:57"
+    "watch": "2:56",
+    "crypto": "3:01"
   },
   "desk_board": [
     {
@@ -1335,13 +1387,13 @@
       "sym": "META",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": 1.54
+      "chg_pct": 1.31
     },
     {
       "sym": "BMNR",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": -7.2
+      "chg_pct": -7.07
     }
   ],
   "last_fill_at": "2026-09-15T18:31:18Z"
