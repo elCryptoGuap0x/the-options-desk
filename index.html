@@ -176,6 +176,8 @@
   .desk-movers-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); }
   .desk-mover-row { display: flex; justify-content: space-between; }
   .desk-mover-row .sym { color: var(--text-dim); }
+  .desk-mover-chg.good { color: var(--good); }
+  .desk-mover-chg.bad { color: var(--bad); }
   .desk-freshness {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-soft);
@@ -1160,11 +1162,16 @@
       return;
     }
     function col(label, rows) {
-      var body = (rows || []).map(function (r) {
+      // Site now only ever sends genuinely positive names in "up" and
+      // genuinely negative in "down" (fixed 9/15) -- an empty bucket is
+      // a real, one-sided-board fact, not missing data, so skip the
+      // column entirely rather than show a heading over nothing.
+      if (!rows || !rows.length) return "";
+      var body = rows.map(function (r) {
         var good = r.chg_pct >= 0;
         var chg = (good ? "+" : "") + r.chg_pct.toFixed(2) + "%";
         return '<div class="desk-mover-row"><span class="sym">' + r.sym + '</span>' +
-          '<span class="' + (good ? "good" : "bad") + '">' + chg + '</span></div>';
+          '<span class="desk-mover-chg ' + (good ? "good" : "bad") + '">' + chg + '</span></div>';
       }).join("");
       return '<div class="desk-movers-col"><div class="desk-movers-label">' + label + '</div>' + body + '</div>';
     }
