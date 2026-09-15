@@ -109,6 +109,13 @@
   }
 
   .status-pill-wrap { display: flex; justify-content: center; margin: 22px 0 36px; }
+  /* Added 9/15 -- "big ugly number", deliberately unpolished/blunt per
+     spec: raw minutes since the last real fill (open or close, either
+     counts), no hours/days conversion. Ticks live client-side off a
+     real ISO timestamp, same pattern as the next-open countdown. */
+  .fill-clock { text-align: center; margin: -12px 0 28px; font-family: var(--mono); color: var(--text-faint); }
+  .fill-clock .n { font-family: var(--serif); font-size: 34px; color: var(--text); font-variant-numeric: tabular-nums; display: block; }
+  .fill-clock .l { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
   .status-pill {
     display: inline-flex;
     align-items: center;
@@ -561,6 +568,8 @@
     <span class="status-pill" id="status-pill"><span class="dot"></span><span id="status-text">—</span></span>
   </div>
 
+  <div class="fill-clock" id="fill-clock"></div>
+
   <div class="hero-stats">
     <div class="stats" id="stats-row"></div>
     <div class="expectancy" id="expectancy-row"></div>
@@ -766,6 +775,7 @@
   function pctClass(v) { return v >= 0 ? "good" : "bad"; }
 
   var lastSession = null;
+  var lastFillAt = null;
 
   // Live "next" text, recomputed every tick (not just on feed poll) so
   // the countdown-style drama moves with the real clock, not the ~45s
@@ -1317,14 +1327,37 @@
     var out = [];
     if (data.roast) out.push(data.roast);
     var skip = data.skip_summary_ticker_list;
+    var watching = 0, ruledOut = 0, filledToday = 0;
     if (skip && skip.count) {
-      out.push(skip.filled + " filled, " + skip.count + " looked today.");
-      var watching = 0, ruledOut = 0;
+      filledToday = skip.filled || 0;
+      out.push(filledToday + " filled, " + skip.count + " looked today.");
       (skip.interesting || []).forEach(function (pair) {
         if (pair[1] === "watching") watching++;
         else if (pair[1] === "disqualified") ruledOut++;
       });
       if (watching || ruledOut) out.push(watching + " watching, " + ruledOut + " ruled out.");
+      // Fact-augmented FLAT line, added 9/15 -- direct feedback: "stop
+      // parking on FLAT -- SCANNING" as the only status text ever shown.
+      var session = data.session;
+      if (session && session.position !== "IN TRADE") {
+        out.push("FLAT · " + watching + " still building · " + filledToday + " filled.");
+      }
+    }
+    // Dry-streak / last-fill-day, added 9/15 -- only when today itself
+    // had no fill, so it never contradicts a real same-day trade.
+    if (filledToday === 0 && data.last_fill_at) {
+      var fillDate = new Date(data.last_fill_at);
+      var dayName = fillDate.toLocaleDateString("en-US", { weekday: "long", timeZone: "America/Chicago" });
+      var daysAgo = Math.floor((Date.now() - fillDate.getTime()) / 86400000);
+      out.push(daysAgo <= 0 ? "Last fill: today." : daysAgo === 1 ? "Last fill: yesterday." : "Last fill: " + dayName + ".");
+    }
+    // Top single mover callout, added 9/15 -- only when nothing filled
+    // today, matching "nothing cleared" literally.
+    if (filledToday === 0 && data.board_movers) {
+      var mUp = (data.board_movers.up || [])[0], mDown = (data.board_movers.down || [])[0];
+      if (mUp && mDown) {
+        out.push(mUp.sym + " +" + mUp.chg_pct.toFixed(1) + " · " + mDown.sym + " " + mDown.chg_pct.toFixed(1) + " · nothing cleared.");
+      }
     }
     var stats = data.stats;
     if (stats) {
@@ -1358,6 +1391,7 @@
   }
 
   function render(data) {
+    lastFillAt = data.last_fill_at || null;
     renderSession(data.session);
     renderStats(data.stats, data.session);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
@@ -1453,6 +1487,14 @@
     var h = Math.floor(totalMin / 60), m = totalMin % 60;
     return "· opens in " + (h > 0 ? h + "h " : "") + m + "m";
   }
+  function renderFillClock() {
+    var el = document.getElementById("fill-clock");
+    if (!el) return;
+    if (!lastFillAt) { el.innerHTML = ""; return; }
+    var mins = Math.floor((Date.now() - new Date(lastFillAt).getTime()) / 60000);
+    if (mins < 0) { el.innerHTML = ""; return; }
+    el.innerHTML = '<span class="n">' + mins + '</span><span class="l">minutes since last fill</span>';
+  }
   function tick() {
     var now = new Date();
     var day = now.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }).toUpperCase();
@@ -1462,6 +1504,7 @@
       document.getElementById("session-next").textContent = sessionNextText(lastSession);
       countdownEl.textContent = countdownText(lastSession);
     }
+    renderFillClock();
   }
   tick();
   setInterval(tick, 30000);

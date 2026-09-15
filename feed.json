@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T19:14:32Z",
+  "generated_at": "2026-09-15T19:16:24Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -390,11 +390,9 @@
       ]
     },
     "BTC": {
-      "last": 75879.45,
-      "chg_pct": -1.34,
+      "last": 75934.57,
+      "chg_pct": -1.27,
       "history": [
-        76265.685,
-        76267.625,
         76242.005,
         76809.215,
         76852.66,
@@ -422,15 +420,15 @@
         76041.64,
         75930.825,
         75964.085,
-        75879.45
+        75879.45,
+        75917.355,
+        75934.565
       ]
     },
     "ETH": {
-      "last": 2401.3,
-      "chg_pct": -3.03,
+      "last": 2403.25,
+      "chg_pct": -2.95,
       "history": [
-        2413.905,
-        2414.415,
         2416.005,
         2436.105,
         2438.365,
@@ -458,15 +456,15 @@
         2407.09,
         2400.915,
         2403.795,
-        2401.3
+        2401.3,
+        2403.485,
+        2403.25
       ]
     },
     "SOL": {
-      "last": 97.96,
-      "chg_pct": -2.98,
+      "last": 97.94,
+      "chg_pct": -3.0,
       "history": [
-        98.94,
-        98.91,
         99.01,
         100.0,
         100.115,
@@ -494,7 +492,9 @@
         98.36,
         98.075,
         98.16,
-        97.96
+        97.96,
+        97.985,
+        97.94
       ]
     },
     "MSTR": {
@@ -1060,7 +1060,7 @@
       ]
     ],
     "no_shape_count": 12,
-    "filled": 0
+    "filled": 1
   },
   "scan_log_public": "Closed <span class=\"desk-tag bad\">IBIT</span> -14.9%.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
@@ -1096,7 +1096,7 @@
   },
   "desk_freshness": {
     "watch": "2:11",
-    "crypto": "2:14"
+    "crypto": "2:16"
   },
   "desk_board": [
     {
