@@ -566,7 +566,7 @@
   <section class="game-section">
     <div class="section-title">To the Moon</div>
     <div class="game-card">
-      <div class="game-note">Tap, click, or Space to jump. Dodge red candles and FUD, grab ₿ for a shield. Same tap restarts.</div>
+      <div class="game-note">Tap, click, or Space to jump. Dodge red candles and FUD, grab ₿ for a shield. Hold once you've got fuel (gold bar, top-left) for turbo. Same tap restarts.</div>
       <div class="game-wrap">
         <canvas id="desk-runner-canvas" width="640" height="220"></canvas>
         <div class="game-hud">
@@ -1435,12 +1435,31 @@
     bctx.stroke();
   })();
 
+  // Turbo -- unlocked by coins, not a fixed threshold: each coin adds
+  // fuel, roughly 9 coins for a full tank ("like idk 10 BTC"), rather
+  // than hard-gating on an exact count. Holding (not tapping) while fuel
+  // remains switches gravity off in favor of a steady rise and reuses
+  // the existing shield mechanic for invulnerability -- no new collision
+  // code needed, obstacles already no-op against shield>0.
+  var MAX_FUEL = 360, FUEL_PER_COIN = 40, HOLD_THRESHOLD = 8, RISE_V = -2.2;
+  var isHolding = false, holdFrames = 0, fuel = 0, turboActive = false;
+
+  // Obstacle width ramps from thin to the original tuned width instead of
+  // starting there -- direct feedback that early bars felt too thick.
+  // Only width scales (a wider hit-window is what read as "harder"); the
+  // heights (14/24) and every timing constant stay exactly as bot-tested,
+  // since those govern the actual jump-clearance math, not just how it looks.
+  var WIDTH_RAMP_SCORE = 30;
+
   var mode = "idle"; // idle | playing | dead
   var player, items, score, speed, shield, raf;
 
   function makeObstacle(x) {
     var tall = Math.random() < 0.4;
-    var h = tall ? 24 : 14, w = tall ? 14 : 18;
+    var t = Math.min(1, (score || 0) / WIDTH_RAMP_SCORE);
+    var wStart = tall ? 8 : 10, wEnd = tall ? 14 : 18;
+    var w = Math.round(wStart + (wEnd - wStart) * t);
+    var h = tall ? 24 : 14;
     return { type: "obstacle", tall: tall, x: x, w: w, h: h, y: GROUND_Y - h, scored: false };
   }
   function makeCoin(x) {
@@ -1448,10 +1467,13 @@
   }
 
   function resetRun() {
+    score = 0;
     player = { y: GROUND_Y - PLAYER_H, v: 0, onGround: true };
     items = [makeObstacle(W + 60)];
-    score = 0;
     speed = SPEED_START;
+    fuel = 0;
+    turboActive = false;
+    holdFrames = 0;
     shield = 0;
   }
 
@@ -1571,6 +1593,14 @@
     ctx.textAlign = "right";
     ctx.textBaseline = "top";
     ctx.fillText(String(score), W - 8, 6);
+
+    if (fuel > 0) {
+      var fuelW = 70, fuelPct = fuel / MAX_FUEL;
+      ctx.fillStyle = "rgba(255,255,255,0.15)";
+      ctx.fillRect(8, 8, fuelW, 6);
+      ctx.fillStyle = turboActive ? "#f0d78c" : "#d4af37";
+      ctx.fillRect(8, 8, fuelW * fuelPct, 6);
+    }
   }
 
   function die() {
@@ -1590,12 +1620,29 @@
     speed = Math.min(SPEED_MAX, SPEED_START + score * 0.03);
     if (shield > 0) shield--;
 
-    player.v += GRAVITY;
+    // Turbo only engages on a genuine HOLD (not a tap -- HOLD_THRESHOLD
+    // frames), and only while fuel remains. While active: gravity is
+    // replaced by a constant, controllable rise (not an accelerating
+    // impulse, to keep it steady/predictable), and the existing shield
+    // is kept topped up so obstacles already no-op against it -- no new
+    // collision path, no re-tune of the jump-timing constants below.
+    holdFrames = isHolding ? holdFrames + 1 : 0;
+    turboActive = isHolding && holdFrames > HOLD_THRESHOLD && fuel > 0;
+    if (turboActive) {
+      fuel = Math.max(0, fuel - 1);
+      shield = Math.max(shield, 2);
+      player.v = RISE_V;
+    } else {
+      player.v += GRAVITY;
+    }
     player.y += player.v;
+    player.y = Math.max(4, player.y); // ceiling backstop -- only turbo can reach this high
     if (player.y >= GROUND_Y - PLAYER_H) {
       player.y = GROUND_Y - PLAYER_H;
-      player.v = 0;
+      if (!turboActive) player.v = 0;
       player.onGround = true;
+    } else {
+      player.onGround = false;
     }
 
     items.forEach(function (it) { it.x -= speed; });
@@ -1612,7 +1659,10 @@
         if (!it.scored && oRight < PLAYER_X) { it.scored = true; score++; }
       } else if (!it.taken) {
         var dx = (PLAYER_X + PLAYER_W / 2) - it.x, dy = (player.y + PLAYER_H / 2) - it.y;
-        if (Math.sqrt(dx * dx + dy * dy) < it.r + 8) { it.taken = true; score += 5; shield = SHIELD_FRAMES; }
+        if (Math.sqrt(dx * dx + dy * dy) < it.r + 8) {
+          it.taken = true; score += 5; shield = SHIELD_FRAMES;
+          fuel = Math.min(MAX_FUEL, fuel + FUEL_PER_COIN);
+        }
       }
     }
     items = items.filter(function (it) { return it.x > -30; });
@@ -1628,8 +1678,9 @@
     // Real state words instead of a bare number -- the corner digit in
     // the canvas itself is still the authoritative running score.
     var pastMilestone = score >= MILESTONE;
-    statusEl.textContent = (pastMilestone ? "TO THE MOON" : "JUMP") + " · " + score + (shield > 0 ? " · SHIELDED" : "");
-    statusEl.style.color = pastMilestone ? "var(--gold)" : "";
+    var suffix = turboActive ? " · TURBO" : (shield > 0 ? " · SHIELDED" : "");
+    statusEl.textContent = (pastMilestone ? "TO THE MOON" : "JUMP") + " · " + score + suffix;
+    statusEl.style.color = (pastMilestone || turboActive) ? "var(--gold)" : "";
     draw();
     raf = requestAnimationFrame(step);
   }
@@ -1646,13 +1697,21 @@
     if (mode === "idle" || mode === "dead") { start(); return; }
     jump();
   }
+  function setHolding(v) { isHolding = v; if (!v) holdFrames = 0; }
 
-  canvas.addEventListener("pointerdown", function (e) { e.preventDefault(); handleInput(); });
+  canvas.addEventListener("pointerdown", function (e) { e.preventDefault(); handleInput(); setHolding(true); });
+  canvas.addEventListener("pointerup", function () { setHolding(false); });
+  canvas.addEventListener("pointerleave", function () { setHolding(false); });
   document.addEventListener("keydown", function (e) {
     if (e.key !== " " && e.code !== "Space") return;
     if (document.activeElement && document.activeElement.tagName === "TEXTAREA") return;
     e.preventDefault();
-    handleInput();
+    if (!isHolding) handleInput(); // ignore OS key-repeat while already held
+    setHolding(true);
+  });
+  document.addEventListener("keyup", function (e) {
+    if (e.key !== " " && e.code !== "Space") return;
+    setHolding(false);
   });
 
   player = { y: GROUND_Y - PLAYER_H, v: 0, onGround: true };
