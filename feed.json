@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-15T01:07:20Z",
+  "generated_at": "2026-09-15T12:41:12Z",
   "session": {
-    "day_label": "MON",
-    "market_state": "CLOSED",
+    "day_label": "TUE",
+    "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
-    "next_open_iso": "2026-09-15T13:30:00Z",
+    "next_open_iso": "2026-09-16T13:30:00Z",
     "position": "FLAT"
   },
   "stats": {
@@ -330,27 +330,24 @@
       ]
     },
     "BTC": {
-      "last": 77839.76,
-      "chg_pct": 0.01,
+      "last": 76908.4,
+      "chg_pct": 0.0,
       "history": [
-        77831.32,
-        77839.765
+        76908.395
       ]
     },
     "ETH": {
-      "last": 2511.45,
-      "chg_pct": -0.06,
+      "last": 2476.26,
+      "chg_pct": 0.0,
       "history": [
-        2513.01,
-        2511.455
+        2476.265
       ]
     },
     "SOL": {
-      "last": 102.39,
-      "chg_pct": -0.02,
+      "last": 100.97,
+      "chg_pct": 0.0,
       "history": [
-        102.415,
-        102.395
+        100.965
       ]
     },
     "MSTR": {
@@ -517,73 +514,12 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 23,
-    "names": [
-      "AAPL",
-      "ADBE",
-      "BMNR",
-      "BSOL",
-      "COIN",
-      "CRCL",
-      "CRWD",
-      "DIA",
-      "ETHA",
-      "IBIT",
-      "IREN",
-      "META",
-      "MRVL",
-      "MSFT",
-      "MSTR",
-      "NVDA",
-      "PANW",
-      "QQQ",
-      "SPY",
-      "TSLA",
-      "USO",
-      "VIXY",
-      "XLE"
-    ],
-    "interesting": [
-      [
-        "AAPL",
-        "disqualified"
-      ],
-      [
-        "COIN",
-        "disqualified"
-      ],
-      [
-        "CRWD",
-        "disqualified"
-      ],
-      [
-        "IREN",
-        "disqualified"
-      ],
-      [
-        "MRVL",
-        "disqualified"
-      ],
-      [
-        "MSTR",
-        "disqualified"
-      ],
-      [
-        "NVDA",
-        "disqualified"
-      ],
-      [
-        "PANW",
-        "disqualified"
-      ],
-      [
-        "XLE",
-        "disqualified"
-      ]
-    ],
-    "no_shape_count": 14,
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0,
     "filled": 0
   },
-  "scan_log_public": "23 looked, 0 filled \u2014 <span class=\"desk-tag bad\">AAPL</span> ruled out, <span class=\"desk-tag bad\">COIN</span> ruled out, <span class=\"desk-tag bad\">CRWD</span> ruled out, <span class=\"desk-tag bad\">IREN</span> ruled out, +5 more (14 no setup).",
+  "scan_log_public": "0 looked, 0 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board."
 }
