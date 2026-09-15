@@ -147,6 +147,10 @@
     border-radius: 10px 10px 0 0;
     overflow: hidden;
   }
+  /* Added 9/15 -- market-closed state renders only 4 real tiles (no
+     Session P&L); set by renderStats() alongside the innerHTML that
+     actually drops the tile, so the two can never drift apart. */
+  .stats.cols-4 { grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 560px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
   }
@@ -880,7 +884,15 @@
       expectancyEl.style.display = "none";
     } else {
       expectancyEl.style.display = "";
-      document.getElementById("stats-row").innerHTML =
+      var statsRowEl = document.getElementById("stats-row");
+      // Fixed 9/15, real bug reported live: the session-P&L tile is
+      // deliberately hidden outside market hours (see sessionHtml
+      // above), but the grid stayed hardcoded to 5 columns -- an empty
+      // grey cell where that tile would have been, every time the
+      // market's closed. Columns now match however many tiles actually
+      // render, same principle as the 9/2 fix just above this block.
+      statsRowEl.classList.toggle("cols-4", !sessionHtml);
+      statsRowEl.innerHTML =
         '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
         sessionHtml +
         '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate + '</div><div class="l">Win rate</div></div>' +
