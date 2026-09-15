@@ -394,13 +394,18 @@
      footer-panel paddle game, became a Flappy-style flyer, now a
      Bitcoin-themed dino-style runner (jump red candles/FUD, grab BTC for
      a shield), all on the same "single input does everything" spine.
-     Seated permanently in the right rail under Market board -- no toggle. */
+     Moved out of the 260px right rail into its own full-width section
+     (above the footer/tip jar) so the canvas can actually be sized like a
+     game instead of a rail-card postage stamp -- doubled internal
+     resolution (300x170 -> 640x220) to match, still just CSS-scaled via
+     width:100%, no separate mobile/desktop asset. */
+  .game-section { margin: 28px 0 0; max-width: 720px; margin-left: auto; margin-right: auto; }
   .game-card {
     background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--gold);
-    border-radius: 0 10px 10px 0; padding: 16px 18px 14px;
+    border-radius: 0 10px 10px 0; padding: 18px 20px 16px;
   }
-  .game-note { font-family: var(--mono); font-size: 11px; color: var(--text-dim); line-height: 1.5; margin-bottom: 10px; }
-  .game-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .game-note { font-family: var(--mono); font-size: 11.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 10px; }
+  .game-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
   #desk-runner-canvas {
     background: var(--bg); border: 1px solid var(--border-soft); border-radius: 8px;
     width: 100%; height: auto; touch-action: none; cursor: pointer;
@@ -409,6 +414,7 @@
     display: flex; justify-content: space-between; width: 100%;
     font-family: var(--mono); font-size: 11px; color: var(--text-dim);
   }
+  #game-status { font-weight: 700; letter-spacing: 0.06em; color: var(--text); }
   .tip-addr {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0;
@@ -548,20 +554,6 @@
         </div>
         <div class="board-foot" id="board-foot"></div>
       </section>
-
-      <section>
-        <div class="section-title">To the Moon</div>
-        <div class="game-card">
-          <div class="game-note">Tap, click, or Space to jump. Dodge red candles and FUD, grab ₿ for a shield. Same tap restarts.</div>
-          <div class="game-wrap">
-            <canvas id="desk-runner-canvas" width="300" height="170"></canvas>
-            <div class="game-hud">
-              <span id="game-status">Tap to jump</span>
-              <span id="game-best">Best: 0</span>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
   </div>
@@ -569,6 +561,20 @@
   <section class="weeks-section">
     <div class="section-title">Weeks</div>
     <div class="weeks-table" id="weeks-table"></div>
+  </section>
+
+  <section class="game-section">
+    <div class="section-title">To the Moon</div>
+    <div class="game-card">
+      <div class="game-note">Tap, click, or Space to jump. Dodge red candles and FUD, grab ₿ for a shield. Same tap restarts.</div>
+      <div class="game-wrap">
+        <canvas id="desk-runner-canvas" width="640" height="220"></canvas>
+        <div class="game-hud">
+          <span id="game-status">TAP TO JUMP</span>
+          <span id="game-best">Best: 0</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -1341,11 +1347,18 @@
   var W = canvas.width, H = canvas.height;
   var BEST_KEY = "toTheMoonBest";
 
-  var GROUND_Y = 145;
+  // GROUND_Y/PLAYER_*/GRAVITY/JUMP_V/SPEED are all independent of canvas
+  // size (obstacles react to pixels-per-frame and geometry, not W or H),
+  // so widening the canvas for the full-width layout below didn't need a
+  // re-tune of the already bot-simulated jump timing -- verified by
+  // re-running that same simulation against these exact numbers before
+  // shipping. Only the cosmetic backdrop below needed rescaling.
+  var GROUND_Y = 185;
   var PLAYER_X = 34, PLAYER_W = 12, PLAYER_H = 14;
   var GRAVITY = 0.55, JUMP_V = -8.2;
   var SPEED_START = 2.2, SPEED_MAX = 5.0;
   var SHIELD_FRAMES = 90;
+  var MILESTONE = 25;
 
   var best = 0;
   try { best = parseInt(localStorage.getItem(BEST_KEY), 10) || 0; } catch (e) { best = 0; }
@@ -1363,6 +1376,10 @@
   var bg = document.createElement("canvas");
   bg.width = W; bg.height = H;
   (function renderBackground() {
+    // Original shapes were hand-placed for a 300x170/GROUND_Y=145 canvas;
+    // sx/sy rescale every one of those literals for the new size instead
+    // of re-deriving positions by eye a second time.
+    var sx = W / 300, sy = GROUND_Y / 145;
     var bctx = bg.getContext("2d");
     var sky = bctx.createLinearGradient(0, 0, 0, GROUND_Y);
     sky.addColorStop(0, "#0d1226");
@@ -1372,42 +1389,46 @@
     bctx.fillRect(0, 0, W, GROUND_Y);
 
     bctx.fillStyle = "#f3ecd0";
-    bctx.beginPath(); bctx.arc(W - 46, 28, 15, 0, Math.PI * 2); bctx.fill();
+    bctx.beginPath(); bctx.arc(W - 46 * sx, 28 * sy, 15 * sy, 0, Math.PI * 2); bctx.fill();
     bctx.fillStyle = "rgba(150,130,90,0.18)";
-    bctx.beginPath(); bctx.arc(W - 51, 24, 3, 0, Math.PI * 2); bctx.fill();
-    bctx.beginPath(); bctx.arc(W - 41, 33, 2.2, 0, Math.PI * 2); bctx.fill();
+    bctx.beginPath(); bctx.arc(W - 51 * sx, 24 * sy, 3 * sy, 0, Math.PI * 2); bctx.fill();
+    bctx.beginPath(); bctx.arc(W - 41 * sx, 33 * sy, 2.2 * sy, 0, Math.PI * 2); bctx.fill();
 
     bctx.fillStyle = "#2a2340";
     bctx.beginPath();
-    bctx.moveTo(W - 104, GROUND_Y);
-    bctx.lineTo(W - 60, GROUND_Y - 48);
-    bctx.lineTo(W - 16, GROUND_Y);
+    bctx.moveTo(W - 104 * sx, GROUND_Y);
+    bctx.lineTo(W - 60 * sx, GROUND_Y - 48 * sy);
+    bctx.lineTo(W - 16 * sx, GROUND_Y);
     bctx.closePath();
     bctx.fill();
     bctx.fillStyle = "rgba(230,200,205,0.55)";
     bctx.beginPath();
-    bctx.moveTo(W - 68, GROUND_Y - 34);
-    bctx.lineTo(W - 60, GROUND_Y - 48);
-    bctx.lineTo(W - 52, GROUND_Y - 34);
-    bctx.lineTo(W - 60, GROUND_Y - 39);
+    bctx.moveTo(W - 68 * sx, GROUND_Y - 34 * sy);
+    bctx.lineTo(W - 60 * sx, GROUND_Y - 48 * sy);
+    bctx.lineTo(W - 52 * sx, GROUND_Y - 34 * sy);
+    bctx.lineTo(W - 60 * sx, GROUND_Y - 39 * sy);
     bctx.closePath();
     bctx.fill();
 
     bctx.fillStyle = "rgba(45,80,105,0.65)";
     bctx.beginPath();
-    bctx.moveTo(-4, GROUND_Y);
-    bctx.quadraticCurveTo(14, GROUND_Y - 34, 42, GROUND_Y - 22);
-    bctx.quadraticCurveTo(58, GROUND_Y - 15, 46, GROUND_Y - 4);
-    bctx.quadraticCurveTo(34, GROUND_Y - 12, 14, GROUND_Y - 8);
-    bctx.lineTo(-4, GROUND_Y);
+    bctx.moveTo(-4 * sx, GROUND_Y);
+    bctx.quadraticCurveTo(14 * sx, GROUND_Y - 34 * sy, 42 * sx, GROUND_Y - 22 * sy);
+    bctx.quadraticCurveTo(58 * sx, GROUND_Y - 15 * sy, 46 * sx, GROUND_Y - 4 * sy);
+    bctx.quadraticCurveTo(34 * sx, GROUND_Y - 12 * sy, 14 * sx, GROUND_Y - 8 * sy);
+    bctx.lineTo(-4 * sx, GROUND_Y);
     bctx.closePath();
     bctx.fill();
     bctx.fillStyle = "rgba(230,235,235,0.5)";
-    bctx.beginPath(); bctx.arc(44, GROUND_Y - 21, 3, 0, Math.PI * 2); bctx.fill();
+    bctx.beginPath(); bctx.arc(44 * sx, GROUND_Y - 21 * sy, 3 * sy, 0, Math.PI * 2); bctx.fill();
 
     bctx.fillStyle = "#151109";
     bctx.fillRect(0, GROUND_Y, W, H - GROUND_Y);
-    bctx.strokeStyle = "rgba(255,255,255,0.15)";
+    // Brighter, gold-tinted ground line (was rgba(255,255,255,0.15), read
+    // as barely-there) -- this is the actual jump-timing reference line,
+    // so it needs to visibly pop, not blend into the ground strip below it.
+    bctx.strokeStyle = "rgba(212,175,55,0.85)";
+    bctx.lineWidth = 2;
     bctx.beginPath();
     bctx.moveTo(0, GROUND_Y);
     bctx.lineTo(W, GROUND_Y);
@@ -1560,7 +1581,8 @@
       try { localStorage.setItem(BEST_KEY, String(best)); } catch (e) {}
     }
     if (bestEl) bestEl.textContent = "Best: " + best;
-    statusEl.textContent = "Rugged by the dip — score " + score + ". Tap to retry.";
+    statusEl.style.color = "";
+    statusEl.textContent = "STOPPED · score " + score + " · tap to retry";
   }
 
   function step() {
@@ -1603,7 +1625,11 @@
       if (Math.random() < 0.5) items.push(makeCoin(W + 50));
     }
 
-    statusEl.textContent = "Score " + score + (shield > 0 ? " · shielded" : "");
+    // Real state words instead of a bare number -- the corner digit in
+    // the canvas itself is still the authoritative running score.
+    var pastMilestone = score >= MILESTONE;
+    statusEl.textContent = (pastMilestone ? "TO THE MOON" : "JUMP") + " · " + score + (shield > 0 ? " · SHIELDED" : "");
+    statusEl.style.color = pastMilestone ? "var(--gold)" : "";
     draw();
     raf = requestAnimationFrame(step);
   }
