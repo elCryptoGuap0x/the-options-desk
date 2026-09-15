@@ -1,4 +1,16 @@
 <title>The Options Desk</title>
+<meta name="description" content="Autonomous options desk. Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.">
+<!-- Added 9/14 -- was zero og:/twitter: tags, so a pasted link had no
+     real preview. No og:image: there's no image asset in this repo to
+     point at, and a broken/fabricated image link is worse than none. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Options Desk">
+<meta property="og:title" content="The Options Desk">
+<meta property="og:description" content="Autonomous options desk. Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.">
+<meta property="og:url" content="https://elcryptoguap0x.github.io/the-options-desk/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Options Desk">
+<meta name="twitter:description" content="Autonomous options desk. Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.">
 <style>
   :root {
     --bg: #11161a;
@@ -156,6 +168,17 @@
     padding: 3px 0 0;
   }
 
+  /* Added 9/14 -- on a day with zero trades this week, the 8-tile stat
+     block was almost entirely dashes ("0-0", "--" x6), which a stranger
+     reads as broken rather than "market's shut." Swaps to one real
+     number (last week's actual record) instead of hiding real data
+     behind more real data that just isn't populated yet. */
+  .stat-hero { grid-column: 1 / -1; background: var(--surface); padding: 22px 10px; text-align: center; }
+  .stat-hero-label { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-bottom: 6px; }
+  .stat-hero-value { font-family: var(--serif); font-size: 28px; font-variant-numeric: tabular-nums; color: var(--text); }
+  .stat-hero-value.good { color: var(--good); }
+  .stat-hero-value.bad { color: var(--bad); }
+
   .sparkline-wrap {
     background: var(--surface);
     border: 1px solid var(--border-soft);
@@ -193,16 +216,22 @@
     height: 58px; margin-top: 16px; display: flex; align-items: center;
   }
 
-  /* Market board's own carousel runs bigger than News/Calendar -- it's
-     showing a short symbol + a single price, not a sentence. Kept the
-     same width as the other rail cards (symmetric), given more height
-     instead so the larger type has room to breathe. */
-  .market-card { padding: 22px 20px 20px; }
-  .market-card .carousel-title { margin: 6px 0 14px; }
-  #market-tag { font-size: 14px; letter-spacing: 0.08em; }
-  #market-title { font-size: 38px; font-variant-numeric: tabular-nums; min-height: 46px; }
-  #market-counter { font-size: 11px; }
-  .market-card .carousel-nav { margin-top: 20px; }
+  /* Replaced 9/14 -- was a one-ticker-at-a-time carousel despite having
+     8 real symbols in the data the whole time; direct feedback that
+     "board is one name" reads as thin entertainment. Now a static strip
+     showing all 8 at once, even when most of them are stale/closed. */
+  .board-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .board-chip {
+    background: var(--surface); border: 1px solid var(--border-soft); border-radius: 8px;
+    padding: 10px 10px 9px;
+  }
+  .chip-top { display: flex; align-items: baseline; justify-content: space-between; }
+  .chip-sym { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; color: var(--text); }
+  .chip-tag { font-family: var(--mono); font-size: 8.5px; text-transform: uppercase; color: var(--text-faint); }
+  .chip-price { font-family: var(--serif); font-size: 17px; color: var(--text); font-variant-numeric: tabular-nums; margin-top: 3px; }
+  .chip-chg { font-family: var(--mono); font-size: 11px; font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .chip-chg.good { color: var(--good); }
+  .chip-chg.bad { color: var(--bad); }
   .board-foot {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     padding: 8px 2px 0;
@@ -242,7 +271,7 @@
   .scan-row .scan-reason { color: var(--text-dim); }
   .ticket {
     display: grid;
-    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-columns: auto 1fr auto auto auto auto;
     align-items: center;
     gap: 12px;
     background: var(--surface);
@@ -253,6 +282,11 @@
   }
   .ticket:hover { border-color: var(--gold-dim); }
   .ticket:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  /* Added 9/14 -- expand had no visible affordance beyond a CSS :hover
+     border, invisible on touch. A chevron reads as "expandable" without
+     needing hover at all. */
+  .ticket .chevron { font-family: var(--mono); font-size: 12px; color: var(--text-faint); transition: transform 0.15s ease; }
+  .ticket.open .chevron { transform: rotate(180deg); color: var(--gold); }
   /* Added 9/14 -- click-to-expand detail panel on closed tickets. */
   .ticket-expand {
     background: var(--surface);
@@ -464,7 +498,7 @@
   <header>
     <div class="eyebrow">Autonomous Options Desk</div>
     <h1>The Options Desk</h1>
-    <p class="sub">Autonomous options desk. Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.</p>
+    <p class="sub">Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.</p>
   </header>
 
   <div class="status-pill-wrap">
@@ -539,19 +573,7 @@
     <div class="rail-right">
       <section>
         <div class="section-title">Market board</div>
-        <div class="carousel-card market-card" style="--accent: var(--blue);">
-          <div class="carousel-head">
-            <span class="carousel-tag" id="market-tag">—</span>
-            <span class="carousel-counter" id="market-counter">— / —</span>
-          </div>
-          <div class="carousel-title" id="market-title">—</div>
-          <div class="carousel-body" id="market-body">—</div>
-          <div class="carousel-nav">
-            <button class="carousel-arrow" id="market-prev" aria-label="Previous symbol" type="button">&larr;</button>
-            <div class="carousel-dots" id="market-dots"></div>
-            <button class="carousel-arrow" id="market-next" aria-label="Next symbol" type="button">&rarr;</button>
-          </div>
-        </div>
+        <div class="board-strip" id="board-strip"></div>
         <div class="board-foot" id="board-foot"></div>
       </section>
     </div>
@@ -764,20 +786,38 @@
       var sessionText = (spn >= 0 ? "+$" : "-$") + Math.abs(spn).toFixed(0);
       sessionHtml = '<div class="stat"><div class="n ' + sessionClass + '">' + sessionText + '</div><div class="l">Session P&amp;L</div></div>';
     }
-    document.getElementById("stats-row").innerHTML =
-      '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
-      sessionHtml +
-      '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate + '</div><div class="l">Win rate</div></div>' +
-      '<div class="stat"><div class="n">' + stats.trades_this_week + '</div><div class="l">Trades this week</div></div>' +
-      '<div class="stat"><div class="n">' + stats.typical_hold + '</div><div class="l">Typical hold</div></div>';
-    document.getElementById("expectancy-row").innerHTML =
-      '<div class="stat"><div class="n good">' + stats.avg_win + '</div><div class="l">Avg win</div></div>' +
-      '<div class="stat"><div class="n bad">' + stats.avg_loss + '</div><div class="l">Avg loss</div></div>' +
-      '<div class="stat"><div class="n ' + (String(stats.net_per_ticket).indexOf("-") === 0 ? "bad" : "good") + '">' + stats.net_per_ticket + '</div><div class="l">Net % / ticket</div></div>' +
-      '<div class="stat"><div class="n">' + stats.hold_typ + '</div><div class="l">Hold, typ.</div></div>';
+    var expectancyEl = document.getElementById("expectancy-row");
+    var noTradesYet = Number(stats.trades_this_week) === 0 && stats.prior_week_record;
+    if (noTradesYet) {
+      var priorNet = stats.prior_week_net_usd;
+      var hasNet = priorNet !== undefined && priorNet !== null;
+      var netClass = hasNet ? (priorNet >= 0 ? "good" : "bad") : "";
+      var netText = hasNet ? " / " + (priorNet >= 0 ? "+$" : "-$") + Math.abs(priorNet).toFixed(0) : "";
+      document.getElementById("stats-row").innerHTML =
+        '<div class="stat-hero"><div class="stat-hero-label">Last week</div>' +
+        '<div class="stat-hero-value ' + netClass + '">' + stats.prior_week_record + netText + '</div></div>';
+      expectancyEl.innerHTML = "";
+      expectancyEl.style.display = "none";
+    } else {
+      expectancyEl.style.display = "";
+      document.getElementById("stats-row").innerHTML =
+        '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
+        sessionHtml +
+        '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate + '</div><div class="l">Win rate</div></div>' +
+        '<div class="stat"><div class="n">' + stats.trades_this_week + '</div><div class="l">Trades this week</div></div>' +
+        '<div class="stat"><div class="n">' + stats.typical_hold + '</div><div class="l">Typical hold</div></div>';
+      expectancyEl.innerHTML =
+        '<div class="stat"><div class="n good">' + stats.avg_win + '</div><div class="l">Avg win</div></div>' +
+        '<div class="stat"><div class="n bad">' + stats.avg_loss + '</div><div class="l">Avg loss</div></div>' +
+        '<div class="stat"><div class="n ' + (String(stats.net_per_ticket).indexOf("-") === 0 ? "bad" : "good") + '">' + stats.net_per_ticket + '</div><div class="l">Net % / ticket</div></div>' +
+        '<div class="stat"><div class="n">' + stats.hold_typ + '</div><div class="l">Hold, typ.</div></div>';
+    }
     var cmp = document.getElementById("week-compare");
+    // Labeled explicitly (today/week/last week) -- the bare "0 tickets ·
+    // 0-0 · vs 1-3 last week" reads as one ambiguous number salad without
+    // knowing which figure is which timeframe.
     cmp.textContent = stats.prior_week_record ?
-      (stats.trades_this_week + " tickets · " + stats.record + " · vs " + stats.prior_week_record + " last week") : "";
+      ("today " + stats.trades_this_week + " · week " + stats.record + " · last week " + stats.prior_week_record) : "";
   }
 
   function linePoints(vals, maxV, minV) {
@@ -819,29 +859,12 @@
       "WEEK PATH (contract premium % -- not account $)   " + fmtPct(last) + priorLabel;
   }
 
-  function miniChart(history, good) {
-    if (!history || history.length < 2) {
-      return '<div class="board-mini-pending">building intraday history…</div>';
-    }
-    var maxV = Math.max.apply(null, history);
-    var minV = Math.min.apply(null, history);
-    var range = (maxV - minV) || 1;
-    var n = history.length;
-    var pts = history.map(function (v, i) {
-      var x = i * 100 / (n - 1);
-      var y = 28 - ((v - minV) / range * 25) - 1.5;
-      return x.toFixed(1) + "," + y.toFixed(1);
-    }).join(" ");
-    var color = good ? "var(--good)" : "var(--bad)";
-    return '<svg class="board-mini" viewBox="0 0 100 28" preserveAspectRatio="none">' +
-      '<polyline points="' + pts + '" style="stroke:' + color + '" /></svg>';
-  }
-
-  // Generic prev/next/dots carousel, shared by News, Market board, and
-  // Calendar -- same interaction, different accent color (set via the
-  // --accent CSS custom property on each .carousel-card) and a per-
-  // instance buildFrame(item) that returns {tag, title, body} (body is
-  // rendered as HTML, since market board needs a chart + colored %).
+  // Generic prev/next/dots carousel, shared by News and Calendar -- same
+  // interaction, different accent color (set via the --accent CSS custom
+  // property on each .carousel-card) and a per-instance buildFrame(item)
+  // that returns {tag, title, body} (body rendered as HTML). Market board
+  // used to be a third instance of this; replaced 9/14 with a static
+  // strip showing all symbols at once instead of one-at-a-time paging.
   function makeCarousel(prefix) {
     var idx = 0;
     var items = [];
@@ -897,7 +920,6 @@
   }
 
   var newsCarousel = makeCarousel("news");
-  var marketCarousel = makeCarousel("market");
   var calCarousel = makeCarousel("cal");
 
   var MARKET_ORDER = ["SPY", "QQQ", "DIA", "IWM", "VIXY", "AAPL", "MSFT", "NVDA", "BTC", "ETH", "SOL"];
@@ -911,24 +933,21 @@
 
   function renderMarketBoard(board, session) {
     var syms = MARKET_ORDER.filter(function (s) { return board[s]; });
-    // Fixed 9/13: the "as of last close" fact only lived in one shared
-    // caption under the whole carousel (#board-foot) -- easy to miss
-    // while scrolling individual cards, and a percent change styled
-    // exactly like a live ticker doesn't itself signal staleness. Equity
-    // cards now say so per-card when the market isn't open; crypto stays
-    // tagged "24/7" unconditionally since it's genuinely still live.
+    // Per-chip staleness tag (equity closed vs crypto always-live), same
+    // fact the old shared #board-foot caption carried, just attached to
+    // each name now that all 8 render at once instead of one at a time.
     var marketClosed = session && session.market_state !== "OPEN";
-    marketCarousel.setItems(syms, function (sym) {
+    var html = syms.map(function (sym) {
       var c = board[sym];
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
-      var tag = sym + (CRYPTO_SYMS[sym] ? " · crypto, 24/7" : (marketClosed ? " · as of close" : ""));
-      return {
-        tag: tag,
-        title: fmtPrice(sym, c.last),
-        body: '<span class="board-chg ' + (good ? "good" : "bad") + '">' + chg + '</span>' + miniChart(c.history, good)
-      };
-    });
+      var tag = CRYPTO_SYMS[sym] ? "24/7" : (marketClosed ? "close" : "");
+      return '<div class="board-chip"><div class="chip-top"><span class="chip-sym">' + sym + '</span>' +
+        (tag ? '<span class="chip-tag">' + tag + '</span>' : '') + '</div>' +
+        '<div class="chip-price">' + fmtPrice(sym, c.last) + '</div>' +
+        '<div class="chip-chg ' + (good ? "good" : "bad") + '">' + chg + '</div></div>';
+    }).join("");
+    document.getElementById("board-strip").innerHTML = html || '<div class="board-mini-pending">building board…</div>';
   }
 
   // Fuse replay, added 9/2: a closed ticket's own 10-dot minute-by-minute
@@ -960,7 +979,10 @@
   // onclick= attributes generated below execute in global scope.
   window.toggleTicket = function (id) {
     var el = document.getElementById(id);
-    if (el) el.hidden = !el.hidden;
+    if (!el) return;
+    el.hidden = !el.hidden;
+    var header = el.previousElementSibling;
+    if (header) header.classList.toggle("open", !el.hidden);
   };
   function ticketExpandHtml(t) {
     var priceLine = (t.entry_price && t.exit_price) ?
@@ -977,7 +999,8 @@
       '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
       '<span class="dur">' + durText + '</span>' +
       '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
-      '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span></div>' +
+      '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span>' +
+      '<span class="chevron" aria-hidden="true">⌄</span></div>' +
       '<div class="ticket-expand" id="' + id + '" hidden>' + ticketExpandHtml(t) + '</div>' +
       fuseHtml(t.fuse) + '</div>';
   }
