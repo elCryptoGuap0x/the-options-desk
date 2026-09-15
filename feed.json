@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T23:49:12Z",
+  "generated_at": "2026-09-15T01:07:20Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -329,6 +329,30 @@
         17.515
       ]
     },
+    "BTC": {
+      "last": 77839.76,
+      "chg_pct": 0.01,
+      "history": [
+        77831.32,
+        77839.765
+      ]
+    },
+    "ETH": {
+      "last": 2511.45,
+      "chg_pct": -0.06,
+      "history": [
+        2513.01,
+        2511.455
+      ]
+    },
+    "SOL": {
+      "last": 102.39,
+      "chg_pct": -0.02,
+      "history": [
+        102.415,
+        102.395
+      ]
+    },
     "MSTR": {
       "last": 135.74,
       "chg_pct": 0.0,
@@ -355,6 +379,90 @@
       "chg_pct": 0.0,
       "history": [
         43.46
+      ]
+    },
+    "AAPL": {
+      "last": 334.74,
+      "chg_pct": 0.0,
+      "history": [
+        334.74
+      ]
+    },
+    "CRWD": {
+      "last": 237.54,
+      "chg_pct": 0.0,
+      "history": [
+        237.5354
+      ]
+    },
+    "MRVL": {
+      "last": 221.07,
+      "chg_pct": 0.0,
+      "history": [
+        221.075
+      ]
+    },
+    "NVDA": {
+      "last": 211.71,
+      "chg_pct": 0.0,
+      "history": [
+        211.71
+      ]
+    },
+    "PANW": {
+      "last": 374.26,
+      "chg_pct": 0.0,
+      "history": [
+        374.265
+      ]
+    },
+    "XLE": {
+      "last": 65.05,
+      "chg_pct": 0.0,
+      "history": [
+        65.045
+      ]
+    },
+    "BMNR": {
+      "last": 25.41,
+      "chg_pct": 0.0,
+      "history": [
+        25.405
+      ]
+    },
+    "CRCL": {
+      "last": 94.36,
+      "chg_pct": 0.0,
+      "history": [
+        94.36
+      ]
+    },
+    "META": {
+      "last": 661.21,
+      "chg_pct": 0.0,
+      "history": [
+        661.21
+      ]
+    },
+    "MSFT": {
+      "last": 505.76,
+      "chg_pct": 0.0,
+      "history": [
+        505.765
+      ]
+    },
+    "TSLA": {
+      "last": 362.68,
+      "chg_pct": 0.0,
+      "history": [
+        362.68
+      ]
+    },
+    "USO": {
+      "last": 157.9,
+      "chg_pct": 0.0,
+      "history": [
+        157.896
       ]
     }
   },

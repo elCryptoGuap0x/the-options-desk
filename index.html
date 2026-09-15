@@ -221,6 +221,13 @@
      "board is one name" reads as thin entertainment. Now a static strip
      showing all 8 at once, even when most of them are stale/closed. */
   .board-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  @media (max-width: 1100px) {
+    /* Below the desk-grid breakpoint this column stops being a narrow
+       260px rail and becomes a full-width block (up to 640px) -- 2
+       columns there leaves each chip nearly 300px wide and sparse-
+       looking. 3 columns actually uses the width for density instead. */
+    .board-strip { grid-template-columns: repeat(3, 1fr); }
+  }
   .board-chip {
     background: var(--surface); border: 1px solid var(--border-soft); border-radius: 8px;
     padding: 10px 10px 9px;
@@ -922,7 +929,6 @@
   var newsCarousel = makeCarousel("news");
   var calCarousel = makeCarousel("cal");
 
-  var MARKET_ORDER = ["SPY", "QQQ", "DIA", "IWM", "VIXY", "AAPL", "MSFT", "NVDA", "BTC", "ETH", "SOL"];
   var CRYPTO_SYMS = { "BTC": true, "ETH": true, "SOL": true };
 
   function fmtPrice(sym, v) {
@@ -932,7 +938,14 @@
   }
 
   function renderMarketBoard(board, session) {
-    var syms = MARKET_ORDER.filter(function (s) { return board[s]; });
+    // Fixed 9/14, real bug found while widening the board server-side:
+    // this used to filter through its OWN hardcoded symbol whitelist,
+    // which would have silently dropped every new name site-build.py now
+    // sends (the whole point of tonight's density change). The server
+    // is the single source of both which symbols appear and their order
+    // (JS object key order preserves JSON insertion order for string
+    // keys) -- no client-side whitelist to drift out of sync again.
+    var syms = Object.keys(board || {});
     // Per-chip staleness tag (equity closed vs crypto always-live), same
     // fact the old shared #board-foot caption carried, just attached to
     // each name now that all 8 render at once instead of one at a time.
