@@ -180,6 +180,12 @@
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-soft);
   }
+  /* Added 9/15 -- auto-rotator through the desk-log/movers/freshness
+     blocks (~8s each), reusing the existing carousel-dot look. .active
+     here uses --gold directly since this section isn't a .carousel-card
+     (no local --accent custom property to fall back on). */
+  .desk-rotator-dots { justify-content: center; margin-top: 8px; }
+  .desk-rotator-dots .carousel-dot.active { background: var(--gold); }
 
   /* Added 9/14 -- on a day with zero trades this week, the 8-tile stat
      block was almost entirely dashes ("0-0", "--" x6), which a stranger
@@ -589,6 +595,7 @@
         <div class="feed" id="scan-log"></div>
         <div class="desk-movers" id="desk-movers"></div>
         <div class="desk-freshness" id="desk-freshness"></div>
+        <div class="carousel-dots desk-rotator-dots" id="desk-rotator-dots"></div>
       </section>
     </div>
 
@@ -1268,6 +1275,50 @@
   }
   poll();
   setInterval(poll, POLL_MS);
+
+  // Auto-rotator, added 9/15 -- cycles the desk-log/movers/freshness
+  // blocks in the same slot every ~8s instead of stacking all three.
+  // Independent of the 45s data poll: re-rendering a block's innerHTML
+  // doesn't touch its .hidden state, so rotation position survives a
+  // refresh untouched. Skips any block that's currently empty (e.g. a
+  // closed-market state where movers has nothing to show) rather than
+  // ever landing on a blank pane.
+  (function () {
+    var blocks = [
+      document.getElementById("scan-log"),
+      document.getElementById("desk-movers"),
+      document.getElementById("desk-freshness")
+    ];
+    var dotsEl = document.getElementById("desk-rotator-dots");
+    if (dotsEl) {
+      blocks.forEach(function () {
+        var d = document.createElement("span");
+        d.className = "carousel-dot";
+        dotsEl.appendChild(d);
+      });
+    }
+    var idx = 0;
+    function showOnly(i) {
+      blocks.forEach(function (b, j) { if (b) b.hidden = (j !== i); });
+      if (dotsEl) {
+        var dots = dotsEl.children;
+        for (var k = 0; k < dots.length; k++) dots[k].classList.toggle("active", k === i);
+      }
+    }
+    function nextNonEmpty(fromIdx) {
+      for (var step = 1; step <= blocks.length; step++) {
+        var i = (fromIdx + step) % blocks.length;
+        var b = blocks[i];
+        if (b && b.innerHTML && b.innerHTML.trim()) return i;
+      }
+      return fromIdx;
+    }
+    showOnly(idx);
+    setInterval(function () {
+      idx = nextNonEmpty(idx);
+      showOnly(idx);
+    }, 8000);
+  })();
 
   // Live wall clock, independent of the feed.
   var clockEl = document.getElementById("session-clock");
