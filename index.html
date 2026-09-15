@@ -948,8 +948,16 @@
     var syms = Object.keys(board || {});
     // Per-chip staleness tag (equity closed vs crypto always-live), same
     // fact the old shared #board-foot caption carried, just attached to
-    // each name now that all 8 render at once instead of one at a time.
+    // each name now that all 23 render at once instead of one at a time.
     var marketClosed = session && session.market_state !== "OPEN";
+    // Capped 9/14, real feedback: 23 chips all sitting at +0.00% after
+    // hours reads as wallpaper, not entertainment -- nothing's moving.
+    // Full density is for RTH, when it's actually true. Closed/weekend
+    // falls back to the original 8 (core index/vol + crypto proxies).
+    if (marketClosed) {
+      var CLOSED_CAP = ["SPY", "QQQ", "DIA", "VIXY", "MSTR", "COIN", "IBIT", "IREN"];
+      syms = CLOSED_CAP.filter(function (s) { return board[s]; });
+    }
     var html = syms.map(function (sym) {
       var c = board[sym];
       var good = c.chg_pct >= 0;
