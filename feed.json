@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-15T18:31:49Z",
+  "generated_at": "2026-09-15T18:34:52Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-16T13:30:00Z",
-    "position": "OPEN"
+    "position": "FLAT"
   },
   "stats": {
     "record": "0-0",
@@ -366,10 +366,9 @@
       ]
     },
     "BTC": {
-      "last": 76769.19,
-      "chg_pct": -0.18,
+      "last": 76551.83,
+      "chg_pct": -0.46,
       "history": [
-        76423.875,
         76482.385,
         76523.555,
         76299.995,
@@ -398,14 +397,14 @@
         76582.995,
         76559.755,
         76615.13,
-        76769.19
+        76769.19,
+        76551.83
       ]
     },
     "ETH": {
-      "last": 2428.95,
-      "chg_pct": -1.91,
+      "last": 2424.18,
+      "chg_pct": -2.1,
       "history": [
-        2449.84,
         2452.505,
         2446.255,
         2452.48,
@@ -434,14 +433,14 @@
         2425.785,
         2425.155,
         2425.08,
-        2428.945
+        2428.945,
+        2424.18
       ]
     },
     "SOL": {
-      "last": 99.64,
-      "chg_pct": -1.31,
+      "last": 99.47,
+      "chg_pct": -1.48,
       "history": [
-        100.36,
         100.5,
         100.535,
         100.215,
@@ -470,7 +469,8 @@
         99.46,
         99.545,
         99.535,
-        99.645
+        99.645,
+        99.475
       ]
     },
     "MSTR": {
@@ -912,9 +912,9 @@
       ]
     ],
     "no_shape_count": 12,
-    "filled": 1
+    "filled": 0
   },
-  "scan_log_public": "25 looked, 1 filled.",
+  "scan_log_public": "25 looked, 0 filled \u2014 <span class=\"desk-tag bad\">COIN</span> ruled out, <span class=\"desk-tag bad\">CRCL</span> ruled out, <span class=\"desk-tag bad\">CRWD</span> ruled out, <span class=\"desk-tag bad\">HOOD</span> ruled out, <span class=\"desk-tag flag\">IBIT</span> flagged, <span class=\"desk-tag bad\">IREN</span> ruled out, <span class=\"desk-tag bad\">MRVL</span> ruled out, <span class=\"desk-tag bad\">MSTR</span> ruled out, <span class=\"desk-tag watch\">NVDA</span> watching, <span class=\"desk-tag bad\">PANW</span> ruled out, <span class=\"desk-tag watch\">QQQ</span> watching, <span class=\"desk-tag watch\">SPY</span> watching, <span class=\"desk-tag bad\">USO</span> ruled out (12 no setup).",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -948,6 +948,6 @@
   },
   "desk_freshness": {
     "watch": "1:22",
-    "crypto": "1:31"
+    "crypto": "1:34"
   }
 }
