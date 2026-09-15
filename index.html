@@ -172,6 +172,32 @@
   /* Added 9/15 -- "On the desk" real motion (top movers) + honest
      staleness ("Watch X · quotes Y"), so a repaint between real Watch
      cycles doesn't read as a dead site. */
+  /* Stamp board, added 9/15 -- replaces the old comma-joined chip
+     sentence. One row per name: ticker, a real status word, a public
+     reason mapped from Watch's own note (site-build.py's map_why()).
+     Bigger type, real color, not a paragraph. Always visible, not part
+     of the rotator below -- this is the desk's main content now. */
+  .desk-board { display: flex; flex-direction: column; margin-top: 8px; }
+  .desk-row {
+    display: grid; grid-template-columns: 54px 62px 1fr; align-items: baseline;
+    gap: 10px; padding: 5px 0; border-top: 1px solid var(--border-soft);
+    font-family: var(--mono);
+  }
+  .desk-row:first-child { border-top: none; }
+  .desk-sym { font-size: 13px; font-weight: 700; color: var(--text); }
+  .desk-status { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; }
+  .desk-status.out { color: var(--bad); }
+  .desk-status.watch { color: var(--blue); }
+  .desk-status.hot { color: var(--good); }
+  .desk-why { font-size: 12px; color: var(--text-dim); }
+  .desk-why .pct { font-variant-numeric: tabular-nums; margin-right: 6px; }
+  .desk-why .pct.good { color: var(--good); }
+  .desk-why .pct.bad { color: var(--bad); }
+  /* Stamp-in animation, added 9/15: motion over another widget -- a row
+     slams to full opacity/position instead of just appearing, so a
+     status flip (once it happens, delayed) actually reads as an event. */
+  @keyframes desk-stamp { from { opacity: 0; transform: translateY(-2px) scale(1.02); } to { opacity: 1; transform: none; } }
+  .desk-row { animation: desk-stamp 0.18s ease-out; }
   .desk-movers { display: flex; gap: 16px; margin-top: 10px; font-family: var(--mono); font-size: 11px; }
   .desk-movers-col { display: flex; flex-direction: column; gap: 4px; flex: 1; }
   .desk-movers-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); }
@@ -597,6 +623,7 @@
       <section>
         <div class="section-title">On the desk</div>
         <div class="feed" id="scan-log"></div>
+        <div class="desk-board" id="desk-board"></div>
         <div class="desk-movers" id="desk-movers"></div>
         <div class="desk-freshness" id="desk-freshness"></div>
         <div class="carousel-dots desk-rotator-dots" id="desk-rotator-dots"></div>
@@ -1160,6 +1187,27 @@
     el.innerHTML = '<div class="scan-row"><span class="scan-reason">' + scanLogPublic + '</span></div>';
   }
 
+  function renderDeskBoard(board) {
+    var el = document.getElementById("desk-board");
+    if (!el) return;
+    if (!board || !board.length) {
+      el.innerHTML = "";
+      return;
+    }
+    el.innerHTML = board.map(function (r) {
+      var statusClass = r.status === "OUT" ? "out" : (r.status === "WATCH" ? "watch" : "hot");
+      var why = r.why || "";
+      if (r.status === "HOT" && typeof r.chg_pct === "number") {
+        var good = r.chg_pct >= 0;
+        var pct = (good ? "+" : "") + r.chg_pct.toFixed(1) + "%";
+        why = '<span class="pct ' + (good ? "good" : "bad") + '">' + pct + '</span>' + why;
+      }
+      return '<div class="desk-row"><span class="desk-sym">' + r.sym + '</span>' +
+        '<span class="desk-status ' + statusClass + '">' + r.status + '</span>' +
+        '<span class="desk-why">' + why + '</span></div>';
+    }).join("");
+  }
+
   function renderDeskMovers(movers) {
     var el = document.getElementById("desk-movers");
     if (!el) return;
@@ -1316,6 +1364,7 @@
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
     renderScanLog(data.scan_log_public, data.session);
+    renderDeskBoard(data.desk_board);
     renderDeskMovers(data.board_movers);
     renderDeskFreshness(data.desk_freshness);
     renderWeeks(data.weeks);
@@ -1344,8 +1393,10 @@
   tickRoast();
   setInterval(tickRoast, 20000);
 
-  // Auto-rotator, added 9/15 -- cycles the desk-log/movers/freshness
-  // blocks in the same slot every ~8s instead of stacking all three.
+  // Auto-rotator, added 9/15, narrowed same day -- the stamp board
+  // (#desk-board) is the desk's real content now and stays always
+  // visible; this only cycles the two secondary fact blocks (movers,
+  // freshness) every ~8s so they don't just stack under the board.
   // Independent of the 45s data poll: re-rendering a block's innerHTML
   // doesn't touch its .hidden state, so rotation position survives a
   // refresh untouched. Skips any block that's currently empty (e.g. a
@@ -1353,7 +1404,6 @@
   // ever landing on a blank pane.
   (function () {
     var blocks = [
-      document.getElementById("scan-log"),
       document.getElementById("desk-movers"),
       document.getElementById("desk-freshness")
     ];
