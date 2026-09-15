@@ -1182,11 +1182,14 @@
   function renderDeskFreshness(freshness) {
     var el = document.getElementById("desk-freshness");
     if (!el) return;
-    if (!freshness || (!freshness.watch && !freshness.quotes)) {
+    if (!freshness || (!freshness.watch && !freshness.crypto)) {
       el.innerHTML = "";
       return;
     }
-    el.textContent = "Watch " + (freshness.watch || "--") + " CT · quotes " + (freshness.quotes || "--") + " CT";
+    // "crypto", not "quotes" (fixed 9/15) -- only BTC/ETH/SOL are
+    // genuinely refetched every build cycle; every equity on the board
+    // is exactly as fresh as the "Watch" timestamp already shown here.
+    el.textContent = "Watch " + (freshness.watch || "--") + " CT · crypto " + (freshness.crypto || "--") + " CT";
   }
 
   function renderCalendar(items) {
