@@ -168,6 +168,19 @@
     padding: 3px 0 0;
   }
 
+  /* Added 9/15 -- "On the desk" real motion (top movers) + honest
+     staleness ("Watch X · quotes Y"), so a repaint between real Watch
+     cycles doesn't read as a dead site. */
+  .desk-movers { display: flex; gap: 16px; margin-top: 10px; font-family: var(--mono); font-size: 11px; }
+  .desk-movers-col { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .desk-movers-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); }
+  .desk-mover-row { display: flex; justify-content: space-between; }
+  .desk-mover-row .sym { color: var(--text-dim); }
+  .desk-freshness {
+    font-family: var(--mono); font-size: 10px; color: var(--text-faint);
+    margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-soft);
+  }
+
   /* Added 9/14 -- on a day with zero trades this week, the 8-tile stat
      block was almost entirely dashes ("0-0", "--" x6), which a stranger
      reads as broken rather than "market's shut." Swaps to one real
@@ -574,6 +587,8 @@
       <section>
         <div class="section-title">On the desk</div>
         <div class="feed" id="scan-log"></div>
+        <div class="desk-movers" id="desk-movers"></div>
+        <div class="desk-freshness" id="desk-freshness"></div>
       </section>
     </div>
 
@@ -1130,6 +1145,35 @@
     el.innerHTML = '<div class="scan-row"><span class="scan-reason">' + scanLogPublic + '</span></div>';
   }
 
+  function renderDeskMovers(movers) {
+    var el = document.getElementById("desk-movers");
+    if (!el) return;
+    if (!movers || (!movers.up || !movers.up.length) && (!movers.down || !movers.down.length)) {
+      el.innerHTML = "";
+      return;
+    }
+    function col(label, rows) {
+      var body = (rows || []).map(function (r) {
+        var good = r.chg_pct >= 0;
+        var chg = (good ? "+" : "") + r.chg_pct.toFixed(2) + "%";
+        return '<div class="desk-mover-row"><span class="sym">' + r.sym + '</span>' +
+          '<span class="' + (good ? "good" : "bad") + '">' + chg + '</span></div>';
+      }).join("");
+      return '<div class="desk-movers-col"><div class="desk-movers-label">' + label + '</div>' + body + '</div>';
+    }
+    el.innerHTML = col("Top up", movers.up) + col("Top down", movers.down);
+  }
+
+  function renderDeskFreshness(freshness) {
+    var el = document.getElementById("desk-freshness");
+    if (!el) return;
+    if (!freshness || (!freshness.watch && !freshness.quotes)) {
+      el.innerHTML = "";
+      return;
+    }
+    el.textContent = "Watch " + (freshness.watch || "--") + " CT · quotes " + (freshness.quotes || "--") + " CT";
+  }
+
   function renderCalendar(items) {
     calCarousel.setItems(items || [], function (c) {
       return { tag: "This week", title: c.what, body: c.when };
@@ -1202,6 +1246,8 @@
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
     renderScanLog(data.scan_log_public, data.session);
+    renderDeskMovers(data.board_movers);
+    renderDeskFreshness(data.desk_freshness);
     renderWeeks(data.weeks);
     renderRoast(data.roast);
     renderCalendar(data.calendar);
