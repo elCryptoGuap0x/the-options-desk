@@ -1391,6 +1391,11 @@
         out.push("Last week: " + stats.prior_week_record + netText + ".");
       }
     }
+    // Mechanical tenor-calendar fact, added 9/15 -- real weekly-only-chain
+    // arithmetic (see site-build.py's build_tenor_calendar_line), not a
+    // narrative line. Replaces staring at "FLAT -- SCANNING" with why a
+    // chunk of the board can't fill today regardless of setup quality.
+    if (data.tenor_calendar) out.push(data.tenor_calendar);
     var board = data.market_board;
     if (board) {
       var up = 0, down = 0;
