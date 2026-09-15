@@ -184,13 +184,22 @@
      reason mapped from Watch's own note (site-build.py's map_why()).
      Bigger type, real color, not a paragraph. Always visible, not part
      of the rotator below -- this is the desk's main content now. */
-  .desk-board { display: flex; flex-direction: column; margin-top: 8px; }
-  .desk-row {
-    display: grid; grid-template-columns: 54px 62px 1fr; align-items: baseline;
-    gap: 10px; padding: 5px 0; border-top: 1px solid var(--border-soft);
-    font-family: var(--mono);
+  /* Rebuilt 9/15, real leak found: this section used to live inside
+     .col-center, which is only ~350-420px wide on a non-fullscreen
+     browser (not the 260px rail, but still too narrow for a real
+     multi-column board) -- moved to its own full-width .desk-section
+     below so the grid actually has room. Real card grid now, not a
+     divided list: 2-4 stamps per row depending on width. */
+  .desk-board {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 8px 14px; margin-top: 10px;
   }
-  .desk-row:first-child { border-top: none; }
+  .desk-row {
+    display: flex; flex-direction: column; gap: 3px;
+    padding: 8px 12px; background: var(--surface); border: 1px solid var(--border-soft);
+    border-radius: 7px; font-family: var(--mono);
+  }
+  .desk-row-top { display: flex; justify-content: space-between; align-items: baseline; }
   .desk-sym { font-size: 13px; font-weight: 700; color: var(--text); }
   .desk-status { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; }
   .desk-status.out { color: var(--bad); }
@@ -205,6 +214,7 @@
      status flip (once it happens, delayed) actually reads as an event. */
   @keyframes desk-stamp { from { opacity: 0; transform: translateY(-2px) scale(1.02); } to { opacity: 1; transform: none; } }
   .desk-row { animation: desk-stamp 0.18s ease-out; }
+  .desk-section { margin: 28px 0 0; }
   .desk-movers { display: flex; gap: 16px; margin-top: 10px; font-family: var(--mono); font-size: 11px; }
   .desk-movers-col { display: flex; flex-direction: column; gap: 4px; flex: 1; }
   .desk-movers-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); }
@@ -628,15 +638,6 @@
         <div class="section-title">Recent tickets</div>
         <div class="feed" id="ticket-feed"></div>
       </section>
-
-      <section>
-        <div class="section-title">On the desk</div>
-        <div class="feed" id="scan-log"></div>
-        <div class="desk-board" id="desk-board"></div>
-        <div class="desk-movers" id="desk-movers"></div>
-        <div class="desk-freshness" id="desk-freshness"></div>
-        <div class="carousel-dots desk-rotator-dots" id="desk-rotator-dots"></div>
-      </section>
     </div>
 
     <div class="rail-right">
@@ -648,6 +649,15 @@
     </div>
 
   </div>
+
+  <section class="desk-section">
+    <div class="section-title">On the desk</div>
+    <div class="feed" id="scan-log"></div>
+    <div class="desk-board" id="desk-board"></div>
+    <div class="desk-movers" id="desk-movers"></div>
+    <div class="desk-freshness" id="desk-freshness"></div>
+    <div class="carousel-dots desk-rotator-dots" id="desk-rotator-dots"></div>
+  </section>
 
   <section class="weeks-section">
     <div class="section-title">Weeks</div>
@@ -1212,8 +1222,8 @@
         var pct = (good ? "+" : "") + r.chg_pct.toFixed(1) + "%";
         why = '<span class="pct ' + (good ? "good" : "bad") + '">' + pct + '</span>' + why;
       }
-      return '<div class="desk-row"><span class="desk-sym">' + r.sym + '</span>' +
-        '<span class="desk-status ' + statusClass + '">' + r.status + '</span>' +
+      return '<div class="desk-row"><div class="desk-row-top"><span class="desk-sym">' + r.sym + '</span>' +
+        '<span class="desk-status ' + statusClass + '">' + r.status + '</span></div>' +
         '<span class="desk-why">' + why + '</span></div>';
     }).join("");
   }
