@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:11:44Z",
+  "generated_at": "2026-09-16T14:14:47Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -362,8 +362,8 @@
       ]
     },
     "BTC": {
-      "last": 75452.86,
-      "chg_pct": -0.63,
+      "last": 75468.81,
+      "chg_pct": -0.61,
       "history": [
         75932.23,
         75671.965,
@@ -379,12 +379,13 @@
         75500.005,
         75545.32,
         75496.005,
-        75452.86
+        75452.86,
+        75468.81
       ]
     },
     "ETH": {
-      "last": 2386.01,
-      "chg_pct": -0.88,
+      "last": 2387.99,
+      "chg_pct": -0.79,
       "history": [
         2407.09,
         2398.285,
@@ -400,12 +401,13 @@
         2387.975,
         2391.945,
         2387.715,
-        2386.005
+        2386.005,
+        2387.99
       ]
     },
     "SOL": {
-      "last": 96.87,
-      "chg_pct": -0.63,
+      "last": 96.73,
+      "chg_pct": -0.76,
       "history": [
         97.48,
         97.08,
@@ -421,7 +423,8 @@
         96.945,
         97.005,
         96.84,
-        96.87
+        96.87,
+        96.735
       ]
     },
     "MSTR": {
@@ -792,9 +795,9 @@
       ]
     ],
     "no_shape_count": 20,
-    "filled": 4
+    "filled": 5
   },
-  "scan_log_public": "27 looked, 4 filled.",
+  "scan_log_public": "27 looked, 5 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -828,7 +831,7 @@
   },
   "desk_freshness": {
     "watch": "8:54",
-    "crypto": "9:11"
+    "crypto": "9:14"
   },
   "desk_board": [
     {
