@@ -1095,20 +1095,29 @@
     if (header) header.classList.toggle("open", !el.hidden);
   };
   function ticketExpandHtml(t) {
-    var priceLine = (t.entry_price && t.exit_price) ?
+    // Fixed 9/16, real bug: entry/exit fill TIMES aren't always
+    // extractable (a structure-break flatten's own MANAGE cycle doesn't
+    // always restate a literal execution timestamp) even when the
+    // dollar prices are -- checking only entry_price/exit_price here
+    // rendered "Filled undefined at $X" on those real tickets.
+    var priceLine = (t.entry_price && t.exit_price && t.entry && t.exit) ?
       '<div>Filled ' + t.entry + ' at $' + t.entry_price + ', closed ' + t.exit + ' at $' + t.exit_price + '.</div>' :
+      (t.entry_price && t.exit_price) ?
+      '<div>Entry $' + t.entry_price + ', exit $' + t.exit_price + ' (fill times not recorded).</div>' :
       '<div>Fill/exit price not recorded for this ticket.</div>';
-    return priceLine + '<div>Held ' + t.dur + (t.dte ? ' (' + t.dte + ')' : '') + ', settled ' + fmtPct(t.pct) + '.</div>';
+    var heldLine = t.dur ? ('Held ' + t.dur + (t.dte ? ' (' + t.dte + ')' : '')) : (t.dte || 'Duration not recorded');
+    return priceLine + '<div>' + heldLine + ', settled ' + fmtPct(t.pct) + '.</div>';
   }
   function ticketRowHtml(t) {
-    var durText = t.dte ? (t.dur + " · " + t.dte) : t.dur;
+    var durText = t.dur ? (t.dte ? (t.dur + " · " + t.dte) : t.dur) : (t.dte || "—");
+    var timeText = (t.entry && t.exit) ? (t.entry + ' → ' + t.exit) : "—";
     var id = "ticket-expand-" + (_ticketSeq++);
     return '<div class="ticket-wrap"><div class="ticket" role="button" tabindex="0" ' +
       'onclick="toggleTicket(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleTicket(\'' + id + '\')">' +
       '<span class="sym">' + t.sym + '</span>' +
       '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
       '<span class="dur">' + durText + '</span>' +
-      '<span class="time">' + t.entry + ' → ' + t.exit + '</span>' +
+      '<span class="time">' + timeText + '</span>' +
       '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span>' +
       '<span class="chevron" aria-hidden="true">⌄</span></div>' +
       '<div class="ticket-expand" id="' + id + '" hidden>' + ticketExpandHtml(t) + '</div>' +
