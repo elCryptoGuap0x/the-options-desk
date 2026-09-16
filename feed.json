@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:39:12Z",
+  "generated_at": "2026-09-16T14:42:15Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -382,8 +382,8 @@
       ]
     },
     "BTC": {
-      "last": 75644.37,
-      "chg_pct": -0.38,
+      "last": 75629.21,
+      "chg_pct": -0.4,
       "history": [
         75932.23,
         75671.965,
@@ -408,12 +408,13 @@
         75716.675,
         75567.47,
         75666.535,
-        75644.365
+        75644.365,
+        75629.205
       ]
     },
     "ETH": {
-      "last": 2386.84,
-      "chg_pct": -0.84,
+      "last": 2386.34,
+      "chg_pct": -0.86,
       "history": [
         2407.09,
         2398.285,
@@ -438,12 +439,13 @@
         2395.965,
         2387.665,
         2390.005,
-        2386.845
+        2386.845,
+        2386.34
       ]
     },
     "SOL": {
-      "last": 96.92,
-      "chg_pct": -0.58,
+      "last": 96.9,
+      "chg_pct": -0.59,
       "history": [
         97.48,
         97.08,
@@ -467,7 +469,8 @@
         97.015,
         97.185,
         96.785,
-        96.915
+        96.915,
+        96.9
       ]
     },
     "MSTR": {
@@ -900,7 +903,7 @@
       ]
     ],
     "no_shape_count": 19,
-    "filled": 7
+    "filled": 8
   },
   "scan_log_public": "In: <span class=\"desk-tag good\">SPY</span> call. Watching.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
@@ -936,7 +939,7 @@
   },
   "desk_freshness": {
     "watch": "9:30",
-    "crypto": "9:39"
+    "crypto": "9:42"
   },
   "desk_board": [
     {
