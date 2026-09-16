@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T19:59:34Z",
+  "generated_at": "2026-09-16T20:02:47Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -298,7 +298,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "Session over. -$7.",
+  "roast": "Session over. +$0.",
   "streak_last8": [
     "L",
     "W",
@@ -502,10 +502,9 @@
       ]
     },
     "BTC": {
-      "last": 75992.04,
-      "chg_pct": 0.08,
+      "last": 76068.82,
+      "chg_pct": 0.18,
       "history": [
-        75737.56,
         75764.62,
         75538.395,
         74979.87,
@@ -534,14 +533,14 @@
         76008.11,
         75934.82,
         75997.645,
-        75992.04
+        75992.04,
+        76068.825
       ]
     },
     "ETH": {
-      "last": 2406.52,
-      "chg_pct": -0.02,
+      "last": 2407.68,
+      "chg_pct": 0.02,
       "history": [
-        2399.295,
         2405.405,
         2398.38,
         2375.19,
@@ -570,14 +569,14 @@
         2406.575,
         2404.125,
         2405.525,
-        2406.52
+        2406.52,
+        2407.675
       ]
     },
     "SOL": {
-      "last": 98.03,
-      "chg_pct": 0.57,
+      "last": 98.14,
+      "chg_pct": 0.67,
       "history": [
-        97.72,
         97.87,
         97.61,
         96.76,
@@ -606,7 +605,8 @@
         98.24,
         98.08,
         98.105,
-        98.035
+        98.035,
+        98.135
       ]
     },
     "MSTR": {
@@ -1508,79 +1508,50 @@
   "news": [
     {
       "tag": "Macro",
-      "title": "Oil rally keeps bonds under strain",
-      "summary": "Stocks and futures slipped as elevated crude prices pressured Treasuries, pushing the 10-year yield to levels last seen roughly 19 years ago. Brent climbed toward $107 and up, capping a September gain of about 18%. The dollar advanced and Bitcoin weakened as hopes for near-term US crypto regulation slipped. Risk appetite stayed checked heading into the Fed meeting."
+      "title": "Fed expected to deliver first rate hike in three years",
+      "summary": "Markets price roughly a 92% chance of a 25bp move to a 3.75-4.00% range at today's 2:00pm ET decision. Attention is on the updated projections and median dots for 2026-27, plus Chair Warsh's read on the path forward amid sticky inflation, strong data, and 10-year yields near multi-year highs around 5%. Recent sessions have seen broad selling on yields and oil."
     },
     {
       "tag": "Macro",
-      "title": "The 10-year yield crossed 5% and a rate hike looms",
-      "summary": "Futures declined as surging oil fed inflation worries and the 10-year Treasury yield hit about 5.03%. Markets are pricing better than 90% odds of a quarter-point Fed hike on Wednesday, which would take the target range to 3.75-4.00%. Brent sat near $108-109 and WTI near $104 on Gulf attacks and the Saudi pipeline shutdown, after a Monday session led lower by chipmakers."
+      "title": "August retail sales land at 8:30am ET",
+      "summary": "Advance monthly sales for retail and food services are expected at +0.8% MoM after a run of softer prints. It is the key pre-Fed read on consumption, arriving alongside import and export prices."
     },
     {
       "tag": "Macro",
-      "title": "10-year at its highest since 2007 as crude extends gains",
-      "summary": "Futures pointed lower with the 10-year above 5.04% in early trade and crude still climbing on Middle East fighting. Major indexes closed lower Monday, the fifth decline in six sessions, as chipmakers sank on AI safety warnings. Traders continue to see high odds of a rate hike Wednesday."
+      "title": "Oil eases after inventory build and pipeline update",
+      "summary": "Brent sits near $107-109 and WTI around $104 following a 7.1M barrel crude stock build. The US Energy Secretary says the Saudi East-West pipeline, shut after Iran-aligned drone attacks, should resume within days, though some estimates run longer. A geopolitical premium remains from Hormuz and Iran tensions."
     },
     {
       "tag": "Stocks",
-      "title": "Global shares mostly lower after AI stocks sink",
-      "summary": "Asian and European markets traded lower following Wall Street's weakness in AI and chip names. SoftBank recovered part of its losses in Tokyo after comments about a delay to an OpenAI listing. US futures stayed under pressure through the overnight session."
-    },
-    {
-      "tag": "Stocks",
-      "title": "AI slowdown fears hit chipmakers while cybersecurity jumps",
-      "summary": "US stocks ended Monday lower with Nvidia and other chipmakers leading the declines, after AI executives raised safety concerns and urged a slower pace of frontier model development. CrowdStrike, Palo Alto Networks and their peers went the other way, surging on relative resilience and analyst support."
+      "title": "SK Hynix in talks with Intel on US memory production",
+      "summary": "A Reuters exclusive reports exploratory discussions for SK Hynix to manufacture memory in the US for the first time, either by leasing space at Intel's Ohio fab or through a joint venture with cloud firms. Shares jumped premarket. SK Hynix says it is reviewing options and nothing has been decided, and Seoul could review any tech transfer."
     },
     {
       "tag": "Crypto",
-      "title": "Senate votes today on the Clarity Act after the final text drop",
-      "summary": "Republicans released the last draft Monday with 126 Democratic changes included. A cloture vote on the motion to proceed is set for this afternoon, around 2:15pm ET. That vote only starts debate rather than deciding the bill, so it is not a law-or-no-law moment. If cloture fails, the path for the rest of 2026 gets much thinner."
-    },
-    {
-      "tag": "Crypto",
-      "title": "Trump accepted tougher crypto ethics rules",
-      "summary": "Under the agreed terms, covered officials cannot issue or sponsor a digital asset, and must divest a significant crypto interest or place it in a qualified blind trust. State attorneys general get enforcement power. That package was the Democratic blocker, and prediction-market odds jumped on the deal before fading again overnight."
-    },
-    {
-      "tag": "Crypto",
-      "title": "Crypto proxies ripped Monday, then sold off Tuesday premarket",
-      "summary": "CRCL, COIN, MSTR and HOOD all faded between 3% and 6% premarket after Monday's bounce on the ethics deal, and Bitcoin gave back its spike above $79k. That is the classic pattern of buying the headline and then selling the 60-vote math, since passage this year still has to clear the Senate and a House that has already left town."
-    },
-    {
-      "tag": "Crypto",
-      "title": "What the bill would actually do to the proxies",
-      "summary": "Clarity would split digital commodities under the CFTC from securities under the SEC, give exchanges and custodians a real rulebook, and add a Treasury kill-switch on stablecoin rewards if deposits flee community banks. That is why CRCL and COIN move more on the vote than MSTR does, since MSTR still tracks Bitcoin first. SEC Chair Atkins has said the agency will keep writing crypto rules with or without the bill."
-    },
-    {
-      "tag": "Crypto",
-      "title": "The odds are not a done deal",
-      "summary": "Passage needs roughly seven to nine Democratic votes plus GOP holdouts. TD Cowen still puts enactment this year at about 25%, and even a Senate win likely waits on a lame-duck House. If cloture fails the complex fades; if it passes, COIN, CRCL and HOOD can rip again into the next round of procedural votes."
+      "title": "Crypto regulatory bill fails procedural vote",
+      "summary": "The landmark Clarity Act, which would set a framework for digital assets, was defeated on a procedural vote in the Senate. The result weighed on crypto-related stocks and on Bitcoin, trading around the $75k area."
     }
   ],
   "calendar": [
     {
-      "what": "Clarity Act cloture vote in the Senate",
-      "when": "Today, 2:15pm ET"
+      "what": "Fed decision, SEP/dot plot, and Chair Warsh press conference",
+      "when": "Today, 2:00pm / 2:30pm ET"
     },
     {
-      "what": "Empire Manufacturing",
-      "when": "Today"
+      "what": "Bank of England rate decision",
+      "when": "Thursday"
     },
     {
-      "what": "API crude inventories",
-      "when": "Today, later session"
+      "what": "Weekly jobless claims, housing starts, Philly Fed",
+      "when": "Thursday"
     },
     {
-      "what": "August retail sales",
-      "when": "Wed, 8:30am ET"
+      "what": "Iran/oil geopolitical headlines",
+      "when": "Ongoing"
     },
     {
-      "what": "FOMC rate decision, projections and dot plot",
-      "when": "Wed, 2:00pm ET"
-    },
-    {
-      "what": "Housing and industrial production data",
-      "when": "Later this week"
+      "what": "Options expiration dynamics around the Fed",
+      "when": "This week"
     }
   ],
   "skip_summary_ticker_list": {
@@ -1703,7 +1674,7 @@
   },
   "desk_freshness": {
     "watch": "2:54",
-    "crypto": "2:59"
+    "crypto": "3:02"
   },
   "desk_board": [
     {
