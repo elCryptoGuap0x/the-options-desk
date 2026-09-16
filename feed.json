@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T17:02:34Z",
+  "generated_at": "2026-09-16T17:05:37Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -8,13 +8,13 @@
     "position": "FLAT"
   },
   "stats": {
-    "record": "1-2",
-    "win_rate": "33%",
-    "trades_this_week": 3,
+    "record": "0-2",
+    "win_rate": "0%",
+    "trades_this_week": 2,
     "typical_hold": "0DTE-2DTE",
-    "avg_win": "+35.0%",
-    "avg_loss": "-27.4%",
-    "net_per_ticket": "-6.6%",
+    "avg_win": "\u2014",
+    "avg_loss": "-21.2%",
+    "net_per_ticket": "-21.2%",
     "hold_typ": "~5 min",
     "prior_week_record": "1-3",
     "session_pnl_usd": 0.0,
@@ -22,9 +22,8 @@
   },
   "sparkline_cum_pct": [
     0.0,
-    -14.9,
-    20.1,
-    -19.9
+    -26.3,
+    -42.4
   ],
   "prior_week_sparkline_cum_pct": [
     0,
@@ -34,6 +33,15 @@
     -93.7
   ],
   "tickets": [
+    {
+      "day": "Wed 9/16",
+      "sym": "COIN",
+      "dir": "call",
+      "pct": -26.3,
+      "entry_price": "1.33",
+      "exit_price": "0.98",
+      "dte": "2DTE"
+    },
     {
       "day": "Wed 9/16",
       "sym": "SPY",
@@ -283,7 +291,8 @@
     "L",
     "L",
     "L",
-    "W"
+    "W",
+    "L"
   ],
   "weeks": [
     {
@@ -334,8 +343,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 759.84,
-      "chg_pct": 0.38,
+      "last": 759.55,
+      "chg_pct": 0.34,
       "history": [
         756.985,
         759.51,
@@ -355,12 +364,13 @@
         760.33,
         760.14,
         759.89,
-        759.84
+        759.84,
+        759.555
       ]
     },
     "QQQ": {
-      "last": 710.06,
-      "chg_pct": 0.81,
+      "last": 709.62,
+      "chg_pct": 0.75,
       "history": [
         704.34,
         707.99,
@@ -380,12 +390,13 @@
         710.49,
         710.35,
         710.02,
-        710.06
+        710.06,
+        709.62
       ]
     },
     "DIA": {
-      "last": 520.84,
-      "chg_pct": -0.01,
+      "last": 520.9,
+      "chg_pct": 0.0,
       "history": [
         520.891,
         522.09,
@@ -405,12 +416,13 @@
         521.19,
         521.14,
         520.95,
-        520.84
+        520.84,
+        520.9
       ]
     },
     "VIXY": {
-      "last": 17.43,
-      "chg_pct": -0.51,
+      "last": 17.44,
+      "chg_pct": -0.43,
       "history": [
         17.515,
         17.34,
@@ -430,14 +442,14 @@
         17.4,
         17.42,
         17.415,
-        17.425
+        17.425,
+        17.44
       ]
     },
     "BTC": {
-      "last": 75679.76,
-      "chg_pct": -0.33,
+      "last": 75713.76,
+      "chg_pct": -0.29,
       "history": [
-        75565.335,
         75682.595,
         75691.195,
         75722.545,
@@ -466,14 +478,14 @@
         75743.195,
         75751.045,
         75718.385,
-        75679.755
+        75679.755,
+        75713.765
       ]
     },
     "ETH": {
-      "last": 2388.26,
-      "chg_pct": -0.78,
+      "last": 2391.45,
+      "chg_pct": -0.65,
       "history": [
-        2384.155,
         2391.45,
         2391.575,
         2391.685,
@@ -502,14 +514,14 @@
         2392.35,
         2392.665,
         2390.585,
-        2388.255
+        2388.255,
+        2391.45
       ]
     },
     "SOL": {
-      "last": 97.08,
-      "chg_pct": -0.42,
+      "last": 97.19,
+      "chg_pct": -0.29,
       "history": [
-        96.865,
         97.165,
         97.12,
         97.145,
@@ -538,12 +550,13 @@
         97.185,
         97.255,
         97.19,
-        97.075
+        97.075,
+        97.195
       ]
     },
     "MSTR": {
-      "last": 126.44,
-      "chg_pct": -2.51,
+      "last": 126.4,
+      "chg_pct": -2.54,
       "history": [
         129.697,
         129.93,
@@ -563,12 +576,13 @@
         125.96,
         125.725,
         125.68,
-        126.44
+        126.44,
+        126.4
       ]
     },
     "COIN": {
-      "last": 166.01,
-      "chg_pct": -3.76,
+      "last": 166.13,
+      "chg_pct": -3.69,
       "history": [
         172.5,
         173.4,
@@ -588,7 +602,8 @@
         165.878,
         165.31,
         165.42,
-        166.01
+        166.01,
+        166.13
       ]
     },
     "IBIT": {
@@ -617,8 +632,8 @@
       ]
     },
     "IREN": {
-      "last": 42.9,
-      "chg_pct": 3.41,
+      "last": 43.02,
+      "chg_pct": 3.7,
       "history": [
         41.485,
         42.28,
@@ -637,12 +652,13 @@
         43.37,
         43.105,
         42.95,
-        42.9
+        42.9,
+        43.02
       ]
     },
     "XOM": {
-      "last": 164.85,
-      "chg_pct": -1.79,
+      "last": 164.67,
+      "chg_pct": -1.9,
       "history": [
         167.86,
         165.79,
@@ -661,12 +677,23 @@
         164.57,
         164.58,
         164.67,
-        164.85
+        164.85,
+        164.67
+      ]
+    },
+    "LEN": {
+      "last": 80.12,
+      "chg_pct": -0.34,
+      "history": [
+        80.39,
+        80.28,
+        80.035,
+        80.12
       ]
     },
     "USO": {
-      "last": 156.78,
-      "chg_pct": -3.09,
+      "last": 156.81,
+      "chg_pct": -3.07,
       "history": [
         161.782,
         159.1,
@@ -686,12 +713,13 @@
         156.72,
         156.73,
         156.94,
-        156.78
+        156.78,
+        156.81
       ]
     },
     "XLE": {
-      "last": 64.78,
-      "chg_pct": -1.62,
+      "last": 64.68,
+      "chg_pct": -1.77,
       "history": [
         65.845,
         65.15,
@@ -711,12 +739,13 @@
         64.58,
         64.62,
         64.695,
-        64.78
+        64.78,
+        64.68
       ]
     },
     "INTC": {
-      "last": 101.65,
-      "chg_pct": 1.07,
+      "last": 101.63,
+      "chg_pct": 1.05,
       "history": [
         100.57,
         102.4,
@@ -735,12 +764,13 @@
         102.51,
         102.44,
         101.805,
-        101.65
+        101.65,
+        101.63
       ]
     },
     "AAPL": {
-      "last": 332.5,
-      "chg_pct": 0.27,
+      "last": 332.55,
+      "chg_pct": 0.28,
       "history": [
         331.62,
         333.1,
@@ -760,12 +790,13 @@
         332.48,
         332.7,
         332.65,
-        332.5
+        332.5,
+        332.55
       ]
     },
     "ADBE": {
-      "last": 251.69,
-      "chg_pct": -2.45,
+      "last": 251.57,
+      "chg_pct": -2.5,
       "history": [
         258.02,
         255.44,
@@ -785,12 +816,13 @@
         250.74,
         251.11,
         251.355,
-        251.695
+        251.695,
+        251.57
       ]
     },
     "BMNR": {
-      "last": 22.73,
-      "chg_pct": -3.74,
+      "last": 22.7,
+      "chg_pct": -3.83,
       "history": [
         23.61,
         23.46,
@@ -809,12 +841,13 @@
         22.755,
         22.74,
         22.705,
-        22.7271
+        22.7271,
+        22.705
       ]
     },
     "BSOL": {
       "last": 13.37,
-      "chg_pct": -0.6,
+      "chg_pct": -0.58,
       "history": [
         13.445,
         13.44,
@@ -834,12 +867,13 @@
         13.39,
         13.36,
         13.35,
-        13.365
+        13.365,
+        13.367
       ]
     },
     "CRCL": {
-      "last": 81.87,
-      "chg_pct": -5.11,
+      "last": 81.66,
+      "chg_pct": -5.35,
       "history": [
         86.28,
         85.46,
@@ -859,12 +893,13 @@
         82.1,
         81.81,
         81.75,
-        81.8723
+        81.8723,
+        81.66
       ]
     },
     "CRWD": {
-      "last": 242.29,
-      "chg_pct": 0.02,
+      "last": 241.05,
+      "chg_pct": -0.49,
       "history": [
         242.23,
         239.23,
@@ -884,12 +919,13 @@
         242.65,
         243.04,
         243.0,
-        242.29
+        242.29,
+        241.05
       ]
     },
     "ETHA": {
-      "last": 18.03,
-      "chg_pct": -0.82,
+      "last": 18.02,
+      "chg_pct": -0.88,
       "history": [
         18.175,
         18.07,
@@ -907,12 +943,13 @@
         18.025,
         18.065,
         18.0297,
-        18.0263
+        18.0263,
+        18.015
       ]
     },
     "HOOD": {
-      "last": 105.58,
-      "chg_pct": -4.46,
+      "last": 105.59,
+      "chg_pct": -4.45,
       "history": [
         110.51,
         110.32,
@@ -932,12 +969,13 @@
         105.235,
         105.295,
         105.395,
-        105.58
+        105.58,
+        105.59
       ]
     },
     "IWM": {
-      "last": 286.46,
-      "chg_pct": 0.61,
+      "last": 286.51,
+      "chg_pct": 0.62,
       "history": [
         284.735,
         285.6,
@@ -957,21 +995,13 @@
         286.37,
         286.44,
         286.385,
-        286.465
-      ]
-    },
-    "LEN": {
-      "last": 80.03,
-      "chg_pct": -0.44,
-      "history": [
-        80.39,
-        80.28,
-        80.035
+        286.465,
+        286.51
       ]
     },
     "META": {
-      "last": 675.79,
-      "chg_pct": 0.88,
+      "last": 676.6,
+      "chg_pct": 1.0,
       "history": [
         669.88,
         675.2,
@@ -991,12 +1021,13 @@
         676.315,
         677.0,
         676.53,
-        675.79
+        675.79,
+        676.6
       ]
     },
     "MRVL": {
-      "last": 229.97,
-      "chg_pct": 3.71,
+      "last": 229.09,
+      "chg_pct": 3.31,
       "history": [
         221.74,
         225.97,
@@ -1016,12 +1047,13 @@
         229.435,
         229.885,
         230.245,
-        229.968
+        229.968,
+        229.085
       ]
     },
     "MSFT": {
-      "last": 493.61,
-      "chg_pct": -0.68,
+      "last": 493.52,
+      "chg_pct": -0.7,
       "history": [
         496.999,
         495.28,
@@ -1041,12 +1073,13 @@
         493.88,
         493.5,
         493.77,
-        493.61
+        493.61,
+        493.52
       ]
     },
     "MU": {
-      "last": 931.1,
-      "chg_pct": -0.2,
+      "last": 929.77,
+      "chg_pct": -0.34,
       "history": [
         932.93,
         929.73,
@@ -1061,12 +1094,13 @@
         929.994,
         928.895,
         929.5,
-        931.1
+        931.1,
+        929.77
       ]
     },
     "NVDA": {
-      "last": 215.99,
-      "chg_pct": 1.8,
+      "last": 215.71,
+      "chg_pct": 1.67,
       "history": [
         212.16,
         213.92,
@@ -1085,12 +1119,13 @@
         215.805,
         215.88,
         215.91,
-        215.985
+        215.985,
+        215.705
       ]
     },
     "PANW": {
-      "last": 379.15,
-      "chg_pct": 1.13,
+      "last": 377.43,
+      "chg_pct": 0.67,
       "history": [
         374.93,
         372.17,
@@ -1110,12 +1145,13 @@
         379.875,
         381.06,
         381.4,
-        379.15
+        379.15,
+        377.43
       ]
     },
     "TSLA": {
-      "last": 362.26,
-      "chg_pct": 1.76,
+      "last": 362.23,
+      "chg_pct": 1.75,
       "history": [
         355.99,
         357.42,
@@ -1135,7 +1171,8 @@
         361.21,
         360.76,
         361.22,
-        362.265
+        362.265,
+        362.234
       ]
     }
   },
@@ -1261,6 +1298,10 @@
       ],
       [
         "IREN",
+        "candidate_C"
+      ],
+      [
+        "LEN",
         "watching"
       ],
       [
@@ -1288,44 +1329,44 @@
         "candidate_C"
       ]
     ],
-    "no_shape_count": 20,
+    "no_shape_count": 19,
     "filled": 12
   },
-  "scan_log_public": "Closed <span class=\"desk-tag bad\">COIN</span> -40.0%.",
+  "scan_log_public": "Closed <span class=\"desk-tag bad\">COIN</span> -16.1%.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
-        "sym": "MRVL",
-        "chg_pct": 3.71
-      },
-      {
         "sym": "IREN",
-        "chg_pct": 3.41
+        "chg_pct": 3.7
       },
       {
-        "sym": "NVDA",
-        "chg_pct": 1.8
+        "sym": "MRVL",
+        "chg_pct": 3.31
+      },
+      {
+        "sym": "TSLA",
+        "chg_pct": 1.75
       }
     ],
     "down": [
       {
         "sym": "CRCL",
-        "chg_pct": -5.11
+        "chg_pct": -5.35
       },
       {
         "sym": "HOOD",
-        "chg_pct": -4.46
+        "chg_pct": -4.45
       },
       {
-        "sym": "COIN",
-        "chg_pct": -3.76
+        "sym": "BMNR",
+        "chg_pct": -3.83
       }
     ]
   },
   "desk_freshness": {
-    "watch": "11:51",
-    "crypto": "12:02"
+    "watch": "12:03",
+    "crypto": "12:05"
   },
   "desk_board": [
     {
@@ -1340,6 +1381,11 @@
     },
     {
       "sym": "IREN",
+      "status": "WATCH",
+      "why": "still building"
+    },
+    {
+      "sym": "LEN",
       "status": "WATCH",
       "why": "still building"
     },
@@ -1377,25 +1423,31 @@
       "sym": "MRVL",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": 3.71
+      "chg_pct": 3.31
     },
     {
-      "sym": "NVDA",
+      "sym": "TSLA",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": 1.8
+      "chg_pct": 1.75
     },
     {
       "sym": "CRCL",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": -5.11
+      "chg_pct": -5.35
     },
     {
       "sym": "HOOD",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": -4.46
+      "chg_pct": -4.45
+    },
+    {
+      "sym": "BMNR",
+      "status": "HOT",
+      "why": "not a setup",
+      "chg_pct": -3.83
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
