@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T16:10:47Z",
+  "generated_at": "2026-09-17T16:11:15Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -482,10 +482,9 @@
       ]
     },
     "BTC": {
-      "last": 76641.62,
-      "chg_pct": -0.39,
+      "last": 76611.93,
+      "chg_pct": -0.43,
       "history": [
-        76740.425,
         76641.015,
         76556.545,
         76559.595,
@@ -514,14 +513,14 @@
         76709.995,
         76694.925,
         76612.96,
-        76641.615
+        76641.615,
+        76611.935
       ]
     },
     "ETH": {
-      "last": 2468.51,
-      "chg_pct": -0.05,
+      "last": 2467.18,
+      "chg_pct": -0.1,
       "history": [
-        2472.965,
         2467.19,
         2463.205,
         2463.67,
@@ -550,14 +549,14 @@
         2468.05,
         2469.395,
         2466.635,
-        2468.505
+        2468.505,
+        2467.185
       ]
     },
     "SOL": {
-      "last": 101.19,
-      "chg_pct": 0.04,
+      "last": 101.12,
+      "chg_pct": -0.03,
       "history": [
-        101.67,
         101.32,
         101.18,
         101.325,
@@ -586,7 +585,8 @@
         101.23,
         101.36,
         101.13,
-        101.19
+        101.19,
+        101.12
       ]
     },
     "MSTR": {
@@ -998,28 +998,28 @@
   "news": [
     {
       "tag": "Macro",
-      "title": "Fed expected to deliver first rate hike in three years",
-      "summary": "Markets price roughly a 92% chance of a 25bp move to a 3.75-4.00% range at today's 2:00pm ET decision. Attention is on the updated projections and median dots for 2026-27, plus Chair Warsh's read on the path forward amid sticky inflation, strong data, and 10-year yields near multi-year highs around 5%. Recent sessions have seen broad selling on yields and oil."
-    },
-    {
-      "tag": "Macro",
-      "title": "August retail sales land at 8:30am ET",
-      "summary": "Advance monthly sales for retail and food services are expected at +0.8% MoM after a run of softer prints. It is the key pre-Fed read on consumption, arriving alongside import and export prices."
-    },
-    {
-      "tag": "Macro",
-      "title": "Oil eases after inventory build and pipeline update",
-      "summary": "Brent sits near $107-109 and WTI around $104 following a 7.1M barrel crude stock build. The US Energy Secretary says the Saudi East-West pipeline, shut after Iran-aligned drone attacks, should resume within days, though some estimates run longer. A geopolitical premium remains from Hormuz and Iran tensions."
+      "title": "Stock futures gain as Treasury yields fall below 5% after Fed raises rates; oil slips",
+      "summary": "Futures pointed higher Thursday after the Fed's first hike in three years. Nasdaq 100 futures rose ~1.1%, S&P ~0.8%, Dow ~0.7%. The 10-year yield slipped under 4.99%. Oil continued lower on easing supply fears. Stocks had closed lower Wednesday after the unanimous 25bp move and hawkish Warsh comments."
     },
     {
       "tag": "Stocks",
-      "title": "SK Hynix in talks with Intel on US memory production",
-      "summary": "A Reuters exclusive reports exploratory discussions for SK Hynix to manufacture memory in the US for the first time, either by leasing space at Intel's Ohio fab or through a joint venture with cloud firms. Shares jumped premarket. SK Hynix says it is reviewing options and nothing has been decided, and Seoul could review any tech transfer."
+      "title": "Generac soars on Amazon data-center generator deal",
+      "summary": "Generac shares jumped ~35% premarket after disclosing a long-term supply agreement with Amazon for backup generators. Initial deliveries expected at $2.4B in 2027-28; total payments up to $8B. Amazon received warrants for up to ~1.69M shares. Deal underscores hyperscaler power demand."
     },
     {
-      "tag": "Crypto",
-      "title": "Crypto regulatory bill fails procedural vote",
-      "summary": "The landmark Clarity Act, which would set a framework for digital assets, was defeated on a procedural vote in the Senate. The result weighed on crypto-related stocks and on Bitcoin, trading around the $75k area."
+      "tag": "Macro",
+      "title": "Bank of England holds rates at 3.75% in 6-3 vote",
+      "summary": "BoE kept Bank Rate unchanged as expected but warned inflation could top 4% early next year on energy volatility from the Middle East conflict. Three members preferred a hike. Governor Bailey said prolonged high energy prices raise the odds of future tightening."
+    },
+    {
+      "tag": "Macro",
+      "title": "Oil prices extend decline on Saudi supply recovery hopes",
+      "summary": "Brent and WTI fell further Thursday as reports emerged of Saudi efforts to restore East-West pipeline capacity and offer extra cargoes via ship-to-ship transfers. WTI traded near $100.70, Brent near $103-105. Easing risk premium supported risk assets and pulled yields lower."
+    },
+    {
+      "tag": "Macro",
+      "title": "Housing starts, jobless claims, Philly Fed due at 8:30 ET",
+      "summary": "Thursday's data stack includes weekly initial claims (est. ~208K), August housing starts/permits, and the Philadelphia Fed manufacturing index. These secondary prints will be watched for any shift in labor or housing momentum after the Fed decision."
     }
   ],
   "calendar": [
@@ -1172,7 +1172,7 @@
   },
   "desk_freshness": {
     "watch": "11:06",
-    "crypto": "11:10"
+    "crypto": "11:11"
   },
   "desk_board": [
     {
