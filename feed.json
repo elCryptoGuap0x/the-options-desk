@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T15:52:28Z",
+  "generated_at": "2026-09-17T15:55:31Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -358,7 +358,7 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 762.35,
+      "last": 762.34,
       "chg_pct": 1.15,
       "history": [
         753.68,
@@ -379,12 +379,13 @@
         761.28,
         761.53,
         761.77,
-        762.35
+        762.35,
+        762.335
       ]
     },
     "QQQ": {
-      "last": 716.5,
-      "chg_pct": 1.78,
+      "last": 716.65,
+      "chg_pct": 1.8,
       "history": [
         703.96,
         716.02,
@@ -404,7 +405,8 @@
         715.41,
         715.83,
         715.855,
-        716.5
+        716.5,
+        716.65
       ]
     },
     "DIA": {
@@ -424,10 +426,9 @@
       ]
     },
     "BTC": {
-      "last": 76612.8,
+      "last": 76614.29,
       "chg_pct": -0.43,
       "history": [
-        76683.42,
         76823.895,
         76907.985,
         76868.795,
@@ -456,14 +457,14 @@
         76736.635,
         76648.845,
         76544.895,
-        76612.805
+        76612.805,
+        76614.295
       ]
     },
     "ETH": {
-      "last": 2467.2,
-      "chg_pct": -0.1,
+      "last": 2466.97,
+      "chg_pct": -0.11,
       "history": [
-        2467.7,
         2473.265,
         2478.72,
         2474.845,
@@ -492,14 +493,14 @@
         2470.64,
         2467.815,
         2466.22,
-        2467.2
+        2467.2,
+        2466.965
       ]
     },
     "SOL": {
-      "last": 101.04,
-      "chg_pct": -0.11,
+      "last": 101.05,
+      "chg_pct": -0.1,
       "history": [
-        100.965,
         101.31,
         101.545,
         101.47,
@@ -528,12 +529,13 @@
         101.175,
         101.02,
         100.89,
-        101.04
+        101.04,
+        101.045
       ]
     },
     "MSTR": {
-      "last": 130.87,
-      "chg_pct": 4.37,
+      "last": 130.68,
+      "chg_pct": 4.22,
       "history": [
         125.3911,
         130.12,
@@ -553,12 +555,13 @@
         128.549,
         128.64,
         129.13,
-        130.87
+        130.87,
+        130.68
       ]
     },
     "COIN": {
-      "last": 169.42,
-      "chg_pct": 3.07,
+      "last": 168.88,
+      "chg_pct": 2.74,
       "history": [
         164.37,
         169.63,
@@ -578,12 +581,13 @@
         167.53,
         167.79,
         167.86,
-        169.423
+        169.423,
+        168.88
       ]
     },
     "IBIT": {
-      "last": 43.48,
-      "chg_pct": 1.12,
+      "last": 43.35,
+      "chg_pct": 0.81,
       "history": [
         43.005,
         43.35,
@@ -603,12 +607,13 @@
         43.205,
         43.22,
         43.275,
-        43.485
+        43.485,
+        43.355
       ]
     },
     "IREN": {
-      "last": 43.47,
-      "chg_pct": 1.99,
+      "last": 43.7,
+      "chg_pct": 2.52,
       "history": [
         42.6216,
         45.21,
@@ -628,12 +633,13 @@
         42.86,
         43.045,
         43.335,
-        43.47
+        43.47,
+        43.695
       ]
     },
     "AMZN": {
-      "last": 252.28,
-      "chg_pct": 0.46,
+      "last": 251.95,
+      "chg_pct": 0.33,
       "history": [
         251.12,
         250.495,
@@ -650,12 +656,13 @@
         251.67,
         252.035,
         251.97,
-        252.285
+        252.285,
+        251.95
       ]
     },
     "GNRC": {
-      "last": 208.81,
-      "chg_pct": -10.67,
+      "last": 208.57,
+      "chg_pct": -10.77,
       "history": [
         233.75,
         213.575,
@@ -674,7 +681,8 @@
         207.66,
         208.955,
         208.98,
-        208.81
+        208.81,
+        208.57
       ]
     },
     "CRCL": {
@@ -814,8 +822,8 @@
       ]
     },
     "NEE": {
-      "last": 80.94,
-      "chg_pct": -0.03,
+      "last": 80.87,
+      "chg_pct": -0.12,
       "history": [
         80.97,
         80.78,
@@ -833,12 +841,13 @@
         80.785,
         80.77,
         80.815,
-        80.945
+        80.945,
+        80.87
       ]
     },
     "NVDA": {
-      "last": 219.23,
-      "chg_pct": 2.59,
+      "last": 219.08,
+      "chg_pct": 2.52,
       "history": [
         213.695,
         218.465,
@@ -857,7 +866,8 @@
         218.92,
         219.15,
         219.09,
-        219.23
+        219.23,
+        219.08
       ]
     },
     "PANW": {
@@ -866,6 +876,13 @@
       "history": [
         374.8025,
         366.5
+      ]
+    },
+    "SOXX": {
+      "last": 518.41,
+      "chg_pct": 0.0,
+      "history": [
+        518.41
       ]
     },
     "TSLA": {
@@ -877,8 +894,8 @@
       ]
     },
     "XOM": {
-      "last": 161.97,
-      "chg_pct": -0.89,
+      "last": 161.82,
+      "chg_pct": -0.99,
       "history": [
         163.43,
         161.84,
@@ -897,7 +914,8 @@
         161.84,
         161.89,
         162.03,
-        161.97
+        161.97,
+        161.82
       ]
     }
   },
@@ -951,7 +969,7 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 32,
+    "count": 33,
     "names": [
       "AAPL",
       "ADBE",
@@ -979,6 +997,7 @@
       "NVDA",
       "PANW",
       "QQQ",
+      "SOXX",
       "SPY",
       "TSLA",
       "USO",
@@ -1028,6 +1047,10 @@
         "watching"
       ],
       [
+        "QQQ",
+        "watching"
+      ],
+      [
         "USO",
         "watching"
       ],
@@ -1039,7 +1062,7 @@
     "no_shape_count": 20,
     "filled": 0
   },
-  "scan_log_public": "32 looked, 0 filled (20 quiet).",
+  "scan_log_public": "33 looked, 0 filled (20 quiet).",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1053,13 +1076,13 @@
       },
       {
         "sym": "MSTR",
-        "chg_pct": 4.37
+        "chg_pct": 4.22
       }
     ],
     "down": [
       {
         "sym": "GNRC",
-        "chg_pct": -10.67
+        "chg_pct": -10.77
       },
       {
         "sym": "VIXY",
@@ -1072,8 +1095,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "10:42",
-    "crypto": "10:52"
+    "watch": "10:50",
+    "crypto": "10:55"
   },
   "desk_board": [
     {
@@ -1123,6 +1146,11 @@
     },
     {
       "sym": "MU",
+      "status": "WATCH",
+      "why": "still building"
+    },
+    {
+      "sym": "QQQ",
       "status": "WATCH",
       "why": "still building"
     },
