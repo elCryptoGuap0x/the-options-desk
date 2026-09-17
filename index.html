@@ -397,6 +397,18 @@
     font-size: 12px;
   }
   .weeks-row.current { border-color: var(--gold); }
+  .weeks-header {
+    display: grid;
+    grid-template-columns: 64px auto 1fr auto auto 1fr;
+    gap: 14px;
+    padding: 0 16px 6px;
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+  }
+  .weeks-header span:last-child { text-align: right; }
   .weeks-row .wk-label { font-weight: 700; color: var(--text); }
   .weeks-row .wk-record { color: var(--text); }
   .wk-net.good { color: var(--good); }
@@ -1321,7 +1333,11 @@
     var el = document.getElementById("weeks-table");
     if (!el) return;
     if (!weeks || !weeks.length) { el.innerHTML = ""; return; }
-    var html = "";
+    // Header row, added 9/17, real gap: this table had zero column labels --
+    // "prior system"/"current system" and a bare "pending" read as unlabeled
+    // noise with nothing explaining what any column actually is.
+    var html = '<div class="weeks-header"><span>Week</span><span>Record</span>' +
+      '<span>Net</span><span>Avg hold</span><span>Disasters</span><span>Rules in effect</span></div>';
     weeks.forEach(function (w) {
       var hasNet = w.net_usd !== null && w.net_usd !== undefined;
       var netHtml = hasNet
