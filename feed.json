@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:33:12Z",
+  "generated_at": "2026-09-17T17:36:15Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -502,10 +502,9 @@
       ]
     },
     "BTC": {
-      "last": 76817.18,
-      "chg_pct": -0.16,
+      "last": 76841.29,
+      "chg_pct": -0.13,
       "history": [
-        76612.96,
         76641.615,
         76611.935,
         76621.985,
@@ -534,14 +533,14 @@
         76856.745,
         76818.355,
         76861.745,
-        76817.185
+        76817.185,
+        76841.295
       ]
     },
     "ETH": {
-      "last": 2468.22,
-      "chg_pct": -0.06,
+      "last": 2469.28,
+      "chg_pct": -0.02,
       "history": [
-        2466.635,
         2468.505,
         2467.185,
         2467.81,
@@ -570,14 +569,14 @@
         2473.34,
         2469.69,
         2471.445,
-        2468.225
+        2468.225,
+        2469.275
       ]
     },
     "SOL": {
-      "last": 101.84,
-      "chg_pct": 0.68,
+      "last": 101.81,
+      "chg_pct": 0.66,
       "history": [
-        101.36,
         101.13,
         101.19,
         101.12,
@@ -606,7 +605,8 @@
         101.635,
         101.675,
         101.79,
-        101.84
+        101.84,
+        101.815
       ]
     },
     "MSTR": {
@@ -1282,9 +1282,9 @@
       ]
     ],
     "no_shape_count": 20,
-    "filled": 3
+    "filled": 4
   },
-  "scan_log_public": "33 looked, 3 filled.",
+  "scan_log_public": "33 looked, 4 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1318,7 +1318,7 @@
   },
   "desk_freshness": {
     "watch": "12:30",
-    "crypto": "12:33"
+    "crypto": "12:36"
   },
   "desk_board": [
     {
