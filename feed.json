@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-17T18:49:22Z",
+  "generated_at": "2026-09-17T19:47:38Z",
   "session": {
     "day_label": "THU",
-    "market_state": "OPEN",
+    "market_state": "CLOSED",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-18T13:30:00Z",
     "position": "FLAT"
@@ -512,11 +512,9 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 76592.74,
-      "chg_pct": -0.45,
+      "last": 76477.15,
+      "chg_pct": -0.6,
       "history": [
-        76549.82,
-        76550.515,
         76673.675,
         76552.065,
         76568.765,
@@ -544,17 +542,17 @@
         76723.8,
         76539.055,
         76570.035,
-        76592.745
+        76592.745,
+        76543.345,
+        76477.155
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2455.95,
-      "chg_pct": -0.56,
+      "last": 2445.43,
+      "chg_pct": -0.98,
       "history": [
-        2460.28,
-        2460.29,
         2463.645,
         2459.955,
         2461.45,
@@ -582,17 +580,17 @@
         2461.525,
         2453.825,
         2454.565,
-        2455.945
+        2455.945,
+        2448.4,
+        2445.425
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 101.02,
-      "chg_pct": -0.13,
+      "last": 100.72,
+      "chg_pct": -0.42,
       "history": [
-        100.725,
-        100.9,
         100.89,
         101.145,
         100.885,
@@ -620,7 +618,9 @@
         101.54,
         101.04,
         100.97,
-        101.02
+        101.02,
+        100.86,
+        100.725
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
@@ -1406,14 +1406,14 @@
         "chg_pct": -4.11
       },
       {
-        "sym": "LEN",
-        "chg_pct": -0.71
+        "sym": "ETH",
+        "chg_pct": -0.98
       }
     ]
   },
   "desk_freshness": {
     "watch": "12:42",
-    "crypto": "1:49"
+    "crypto": "2:47"
   },
   "desk_board": [
     {
@@ -1494,10 +1494,10 @@
       "chg_pct": -4.11
     },
     {
-      "sym": "LEN",
+      "sym": "ETH",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": -0.71
+      "chg_pct": -0.98
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
@@ -1519,70 +1519,70 @@
         "line": "Closed -55.0%."
       }
     ],
-    "COIN": [
+    "USO": [
       {
-        "t": null,
-        "line": "Still on watch."
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
       }
     ],
-    "CRCL": [
+    "XLE": [
       {
-        "t": null,
-        "line": "Still on watch."
-      }
-    ],
-    "GNRC": [
-      {
-        "t": null,
-        "line": "Still on watch."
-      }
-    ],
-    "HOOD": [
-      {
-        "t": null,
-        "line": "Still on watch."
-      }
-    ],
-    "INTC": [
-      {
-        "t": null,
-        "line": "Still on watch."
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
       }
     ],
     "MRVL": [
       {
-        "t": null,
-        "line": "Still on watch."
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "COIN": [
+      {
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
       }
     ],
     "MSTR": [
       {
-        "t": null,
-        "line": "Still on watch."
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "CRCL": [
+      {
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "HOOD": [
+      {
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "INTC": [
+      {
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
       }
     ],
     "MU": [
       {
-        "t": null,
-        "line": "Still on watch."
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "GNRC": [
+      {
+        "t": "3:43 PM ET",
+        "line": "First flagged \u2014 still building."
       }
     ],
     "QQQ": [
       {
         "t": null,
         "line": "Ruled out \u2014 already ran."
-      }
-    ],
-    "USO": [
-      {
-        "t": null,
-        "line": "Still on watch."
-      }
-    ],
-    "XLE": [
-      {
-        "t": null,
-        "line": "Still on watch."
       }
     ],
     "BMNR": [
@@ -1597,7 +1597,7 @@
         "line": "Moving, not a setup."
       }
     ],
-    "LEN": [
+    "ETH": [
       {
         "t": null,
         "line": "Moving, not a setup."
