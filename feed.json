@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T18:20:35Z",
+  "generated_at": "2026-09-17T18:49:22Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -512,12 +512,9 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 76723.8,
-      "chg_pct": -0.28,
+      "last": 76592.74,
+      "chg_pct": -0.45,
       "history": [
-        76617.19,
-        76529.525,
-        76513.985,
         76549.82,
         76550.515,
         76673.675,
@@ -544,18 +541,18 @@
         76588.61,
         76600.995,
         76668.815,
-        76723.8
+        76723.8,
+        76539.055,
+        76570.035,
+        76592.745
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2461.53,
-      "chg_pct": -0.33,
+      "last": 2455.95,
+      "chg_pct": -0.56,
       "history": [
-        2464.8,
-        2456.745,
-        2458.565,
         2460.28,
         2460.29,
         2463.645,
@@ -582,18 +579,18 @@
         2457.14,
         2457.225,
         2459.775,
-        2461.525
+        2461.525,
+        2453.825,
+        2454.565,
+        2455.945
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 101.54,
-      "chg_pct": 0.39,
+      "last": 101.02,
+      "chg_pct": -0.13,
       "history": [
-        101.035,
-        101.055,
-        101.08,
         100.725,
         100.9,
         100.89,
@@ -620,7 +617,10 @@
         101.465,
         101.29,
         101.48,
-        101.54
+        101.54,
+        101.04,
+        100.97,
+        101.02
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
@@ -1413,7 +1413,7 @@
   },
   "desk_freshness": {
     "watch": "12:42",
-    "crypto": "1:20"
+    "crypto": "1:49"
   },
   "desk_board": [
     {
@@ -1506,7 +1506,7 @@
     "AMZN": [
       {
         "t": "10:41 AM ET",
-        "line": "Looked at, passed."
+        "line": "Looked \u2014 clock had already run out."
       }
     ],
     "IREN": [

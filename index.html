@@ -230,19 +230,11 @@
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-soft);
   }
-  /* Click-drawer, added 9/17 -- same click-to-expand affordance as
-     .ticket, nested inside .desk-row itself (a grid item) rather than a
-     sibling, so opening it grows that one grid cell instead of adding a
-     second cell to the grid. */
+  /* Click target, added 9/17 -- opens the shared side-sheet (see
+     .detail-sheet below) instead of an inline expansion. */
   .desk-row { cursor: pointer; }
   .desk-row:hover { border-color: var(--gold-dim); }
   .desk-row:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
-  .desk-drawer {
-    margin-top: 4px; padding-top: 6px; border-top: 1px dashed var(--border-soft);
-    display: flex; flex-direction: column; gap: 3px;
-    font-family: var(--mono); font-size: 11px; color: var(--text-dim);
-  }
-  .desk-evt .evt-t { color: var(--text-faint); margin-right: 6px; }
   /* Added 9/15 -- auto-rotator through the desk-log/movers/freshness
      blocks (~8s each), reusing the existing carousel-dot look. .active
      here uses --gold directly since this section isn't a .carousel-card
@@ -317,18 +309,12 @@
   }
   .board-chip:hover { border-color: var(--gold-dim); }
   .board-chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
-  /* Click-drawer, added 9/17: mini sparkline off market_board's own real
-     rolling `history` (this script's snapshot of watch's last_price --
-     see site-build.py's build_market_board), plus the same status/why
-     vocabulary already used in "On the desk" below. Nested inside the
-     chip itself, same reasoning as .desk-drawer above. */
+  /* Mini sparkline off market_board's own real rolling `history` (this
+     script's snapshot of watch's last_price -- see site-build.py's
+     build_market_board). Click/hover opens the shared side-sheet (see
+     .detail-sheet below) with the same series drawn large. */
   .board-mini-spark { width: 100%; height: 20px; display: block; margin-top: 6px; }
   .board-mini-spark polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
-  .board-drawer {
-    margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border-soft);
-    font-family: var(--mono); font-size: 10.5px; color: var(--text-dim);
-  }
-  .board-drawer-why { margin-top: 3px; }
   .chip-top { display: flex; align-items: baseline; justify-content: space-between; }
   .chip-sym { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; color: var(--text); }
   .chip-tag { font-family: var(--mono); font-size: 8.5px; text-transform: uppercase; color: var(--text-faint); }
@@ -402,6 +388,43 @@
     color: var(--text-dim);
     line-height: 1.6;
   }
+
+  /* Shared side-sheet, added 9/17 -- one component for board-chip and
+     desk-row detail views (openSheet/openBoardSheet/openDeskSheet). */
+  .sheet-backdrop {
+    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.45); z-index: 40;
+  }
+  .detail-sheet {
+    position: fixed; z-index: 41; top: 0; right: 0; bottom: 0;
+    width: min(380px, 100vw);
+    background: var(--surface); border-left: 1px solid var(--border-soft);
+    padding: 22px 20px; overflow-y: auto;
+    box-shadow: -10px 0 28px rgba(0, 0, 0, 0.28);
+    animation: sheet-in 0.16s ease-out;
+  }
+  @keyframes sheet-in { from { transform: translateX(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+  .sheet-close {
+    position: absolute; top: 14px; right: 14px; background: none; border: none;
+    color: var(--text-faint); font-size: 22px; line-height: 1; cursor: pointer; padding: 4px;
+  }
+  .sheet-close:hover { color: var(--text); }
+  .sheet-title { font-family: var(--serif); font-size: 21px; color: var(--text); margin: 0 28px 4px 0; }
+  .sheet-sub { font-family: var(--mono); font-size: 13px; color: var(--text-dim); margin-bottom: 4px; }
+  .sheet-sub .good { color: var(--good); } .sheet-sub .bad { color: var(--bad); }
+  .sheet-chart { width: 100%; height: 90px; display: block; margin: 14px 0; }
+  .sheet-chart polyline { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .sheet-chart-pending {
+    font-family: var(--mono); font-size: 11px; color: var(--text-faint);
+    height: 60px; margin: 14px 0; display: flex; align-items: center;
+  }
+  .sheet-why { font-family: var(--mono); font-size: 12.5px; color: var(--text-dim); margin-top: 8px; }
+  .sheet-timeline { display: flex; flex-direction: column; gap: 9px; margin-top: 6px; }
+  .sheet-evt {
+    font-family: var(--mono); font-size: 12.5px; color: var(--text-dim);
+    padding-bottom: 9px; border-bottom: 1px solid var(--border-soft);
+  }
+  .sheet-evt:last-child { border-bottom: none; padding-bottom: 0; }
+  .sheet-evt .evt-t { color: var(--text-faint); margin-right: 8px; display: inline-block; min-width: 40px; }
   .ticket .sym { font-family: var(--mono); font-weight: 700; font-size: 14.5px; color: var(--text); min-width: 44px; }
   .ticket .dir {
     font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
@@ -759,6 +782,17 @@
     </div>
   </footer>
 
+  <!-- Shared side-sheet, added 9/17 -- one component for both board-chip
+       and desk-row detail views (see openSheet/closeSheet/openBoardSheet/
+       openDeskSheet in the script below). Replaces the earlier inline
+       per-tile expansion, which real feedback said read as "just a label
+       toggle," not a real chart or timeline. -->
+  <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <div class="detail-sheet" id="detail-sheet" hidden role="dialog" aria-modal="true">
+    <button class="sheet-close" id="sheet-close" type="button" aria-label="Close">&times;</button>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+
 </div>
 
 <script>
@@ -1059,13 +1093,50 @@
 
   var CRYPTO_SYMS = { "BTC": true, "ETH": true, "SOL": true };
 
+  // Shared side-sheet, added 9/17 -- one dialog for board-chip and
+  // desk-row detail views. Hover-to-open on a hover-capable device
+  // (checked once, not per-tile), tap/click everywhere (touch has no
+  // hover event at all, and click still works fine on a mouse too).
+  // Esc and tap-outside both close; exactly one open at a time since
+  // there's only one sheet element to point at.
+  var HOVER_CAPABLE = !!(window.matchMedia && window.matchMedia("(hover: hover)").matches);
+  var sheetEl = document.getElementById("detail-sheet");
+  var sheetBackdropEl = document.getElementById("sheet-backdrop");
+  var sheetBodyEl = document.getElementById("sheet-body");
+  function openSheet(html) {
+    if (!sheetEl || !sheetBackdropEl || !sheetBodyEl) return;
+    sheetBodyEl.innerHTML = html;
+    sheetEl.hidden = false;
+    sheetBackdropEl.hidden = false;
+  }
+  function closeSheet() {
+    if (!sheetEl || !sheetBackdropEl) return;
+    sheetEl.hidden = true;
+    sheetBackdropEl.hidden = true;
+  }
+  var sheetCloseBtn = document.getElementById("sheet-close");
+  if (sheetCloseBtn) sheetCloseBtn.addEventListener("click", closeSheet);
+  if (sheetBackdropEl) sheetBackdropEl.addEventListener("click", closeSheet);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeSheet();
+  });
+
   function fmtPrice(sym, v) {
     if (CRYPTO_SYMS[sym] && v >= 1000) return Math.round(v).toLocaleString();
     if (CRYPTO_SYMS[sym]) return v.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     return v.toFixed(2);
   }
 
+  // Rewritten 9/17, real feedback: the first version's "click-drawer" was
+  // a tiny inline expansion nested inside a 170px chip -- in practice
+  // indistinguishable from "clicking just toggles a 2-word chip," not a
+  // real chart. Replaced outright with one shared side-sheet component
+  // (openSheet/closeSheet below) -- hover-to-open on a hover-capable
+  // device, tap-to-open on touch, Esc/tap-outside closes, exactly one
+  // open at a time by construction (there's only one sheet element).
+  var _lastBoard = {};
   function renderMarketBoard(board, session) {
+    _lastBoard = board || {};
     // Fixed 9/14, real bug found while widening the board server-side:
     // this used to filter through its OWN hardcoded symbol whitelist,
     // which would have silently dropped every new name site-build.py now
@@ -1086,33 +1157,27 @@
       var CLOSED_CAP = ["SPY", "QQQ", "DIA", "VIXY", "MSTR", "COIN", "IBIT", "IREN"];
       syms = CLOSED_CAP.filter(function (s) { return board[s]; });
     }
+    var hoverAttr = HOVER_CAPABLE ? " onmouseenter=\"openBoardSheet('__SYM__')\"" : "";
     var html = syms.map(function (sym) {
       var c = board[sym];
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
       var tag = CRYPTO_SYMS[sym] ? "24/7" : (marketClosed ? "close" : "");
-      var id = "board-drawer-" + (_boardSeq++);
       return '<div class="board-chip" role="button" tabindex="0" ' +
-        'onclick="toggleDrawer(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleDrawer(\'' + id + '\')">' +
+        'onclick="openBoardSheet(\'' + sym + '\')" onkeydown="if(event.key===\'Enter\')openBoardSheet(\'' + sym + '\')"' +
+        hoverAttr.replace("__SYM__", sym) + '>' +
         '<div class="chip-top"><span class="chip-sym">' + sym + '</span>' +
         (tag ? '<span class="chip-tag">' + tag + '</span>' : '') + '</div>' +
         '<div class="chip-price">' + fmtPrice(sym, c.last) + '</div>' +
         '<div class="chip-chg ' + (good ? "good" : "bad") + '">' + chg + '</div>' +
         boardMiniSparkSvg(c.history) +
-        '<div class="board-drawer" id="' + id + '" hidden>' +
-        (c.status ? '<span class="desk-tag ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '') +
-        (c.why ? '<div class="board-drawer-why">' + c.why + '</div>' : '') +
-        '</div></div>';
+        '</div>';
     }).join("");
     document.getElementById("board-strip").innerHTML = html || '<div class="board-mini-pending">building board…</div>';
   }
 
-  // Click-drawer additions, 9/17: real data already flowing through this
-  // script's own market_board (see site-build.py's build_market_board --
-  // `history` is its own rolling snapshot of watch's last_price, `status`/
-  // `why` reuse desk_board's exact public vocabulary). No new pull, no
-  // per-tier gating needed -- every board row already carries real,
-  // non-fabricated history regardless of coverage tier.
+  // status/why reuse desk_board's exact public vocabulary
+  // (site-build.py's map_why/_VERDICT_PUBLIC) -- no separate lexicon.
   function boardStatusClass(status) {
     if (status === "flagged") return "flag";
     if (status === "watching") return "watch";
@@ -1133,6 +1198,35 @@
     return '<svg class="board-mini-spark" viewBox="0 0 100 20" preserveAspectRatio="none">' +
       '<polyline points="' + pts + '" stroke="' + (good ? "var(--good)" : "var(--bad)") + '" /></svg>';
   }
+  // Same spark, drawn large, inside the sheet -- real delayed points
+  // already on the tile, no live TradingView, no new data source.
+  function boardBigSparkSvg(vals) {
+    if (!vals || vals.length < 2) return '<div class="sheet-chart-pending">Not enough data yet today.</div>';
+    var maxV = Math.max.apply(null, vals), minV = Math.min.apply(null, vals);
+    var range = (maxV - minV) || 1;
+    var n = vals.length;
+    var pts = vals.map(function (v, i) {
+      var x = (i * 300 / (n - 1)).toFixed(1);
+      var y = ((maxV - v) / range * 70).toFixed(1);
+      return x + "," + y;
+    }).join(" ");
+    var good = vals[vals.length - 1] >= vals[0];
+    return '<svg class="sheet-chart" viewBox="0 0 300 70" preserveAspectRatio="none">' +
+      '<polyline points="' + pts + '" stroke="' + (good ? "var(--good)" : "var(--bad)") + '" /></svg>';
+  }
+  window.openBoardSheet = function (sym) {
+    var c = _lastBoard[sym];
+    if (!c) return;
+    var good = c.chg_pct >= 0;
+    var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+    var html = '<div class="sheet-title">' + sym + '</div>' +
+      '<div class="sheet-sub">' + fmtPrice(sym, c.last) +
+      ' <span class="' + (good ? "good" : "bad") + '">' + chg + '</span></div>' +
+      boardBigSparkSvg(c.history) +
+      (c.status ? '<span class="desk-tag ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '') +
+      (c.why ? '<div class="sheet-why">' + c.why + '</div>' : '');
+    openSheet(html);
+  };
 
   // Fuse replay, added 9/2: a closed ticket's own 10-dot minute-by-minute
   // reel -- P&L color, not follow-through (recolored 9/2, real bug:
@@ -1159,13 +1253,12 @@
   // fuse -- same "historical only, not built yet" gap, same honest
   // fallback: the row just omits that line if the fields aren't there.
   var _ticketSeq = 0;
-  var _boardSeq = 0;
-  var _deskSeq = 0;
   // Exposed on window: this script runs inside an IIFE, but the inline
   // onclick= attributes generated below execute in global scope.
-  // Renamed from toggleTicket 9/17 (same generic body, three callers now
-  // -- tickets, board chips, desk rows) -- it never referenced anything
-  // ticket-specific to begin with.
+  // Renamed from toggleTicket 9/16-era code, ticket rows only -- board
+  // chips/desk rows moved to the shared side-sheet (openSheet/closeSheet
+  // below) 9/17, real feedback that a tiny inline expansion read as "just
+  // a label toggle," not a real chart or timeline.
   window.toggleDrawer = function (id) {
     var el = document.getElementById(id);
     if (!el) return;
@@ -1307,14 +1400,18 @@
     el.innerHTML = '<div class="scan-row"><span class="scan-reason">' + scanLogPublic + '</span></div>';
   }
 
+  // Rewritten 9/17, same reasoning as renderMarketBoard above -- opens
+  // the shared side-sheet with a real today-only timeline instead of a
+  // tiny inline expansion.
+  var _lastDeskEvents = {};
   function renderDeskBoard(board, events) {
     var el = document.getElementById("desk-board");
     if (!el) return;
+    _lastDeskEvents = events || {};
     if (!board || !board.length) {
       el.innerHTML = "";
       return;
     }
-    events = events || {};
     el.innerHTML = board.map(function (r) {
       var statusClass = r.status === "OUT" ? "out" : (r.status === "WATCH" ? "watch" : "hot");
       var why = r.why || "";
@@ -1323,24 +1420,32 @@
         var pct = (good ? "+" : "") + r.chg_pct.toFixed(1) + "%";
         why = '<span class="pct ' + (good ? "good" : "bad") + '">' + pct + '</span>' + why;
       }
-      var id = "desk-drawer-" + (_deskSeq++);
-      var evts = events[r.sym] || [];
-      // Today-only, real timeline (site-build.py's build_desk_events) --
-      // no per-click Claude cost, already baked into feed.json.
-      var drawerBody = evts.length ?
-        evts.map(function (e) {
-          return '<div class="desk-evt">' + (e.t ? '<span class="evt-t">' + e.t + '</span>' : '') + e.line + '</div>';
-        }).join("") :
-        '<div class="desk-evt">Nothing logged yet today.</div>';
       return '<div class="desk-row" role="button" tabindex="0" ' +
-        'onclick="toggleDrawer(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleDrawer(\'' + id + '\')">' +
+        'onclick="openDeskSheet(\'' + r.sym + '\')" onkeydown="if(event.key===\'Enter\')openDeskSheet(\'' + r.sym + '\')">' +
         '<div class="desk-row-top"><span class="desk-sym">' + r.sym + '</span>' +
         '<span class="desk-status ' + statusClass + '">' + r.status + '</span></div>' +
         '<span class="desk-why">' + why + '</span>' +
-        '<div class="desk-drawer" id="' + id + '" hidden>' + drawerBody + '</div>' +
         '</div>';
     }).join("");
   }
+  // "10:41 AM ET" -> "10:41a" -- same terse convention tickets already
+  // use (ticketRowHtml's timeText/fmt_time), not a third time format.
+  function shortTimeLabel(raw) {
+    var m = /^(\d{1,2}):(\d{2})\s*(AM|PM)/i.exec(raw || "");
+    if (!m) return raw || "";
+    return m[1] + ":" + m[2] + (/pm/i.test(m[3]) ? "p" : "a");
+  }
+  window.openDeskSheet = function (sym) {
+    var evts = _lastDeskEvents[sym] || [];
+    // Real today-only timeline (site-build.py's build_desk_events) --
+    // no per-click Claude cost, already baked into feed.json.
+    var body = evts.length ?
+      evts.map(function (e) {
+        return '<div class="sheet-evt">' + (e.t ? '<span class="evt-t">' + shortTimeLabel(e.t) + '</span>' : '') + e.line + '</div>';
+      }).join("") :
+      '<div class="sheet-evt">Nothing logged yet today.</div>';
+    openSheet('<div class="sheet-title">' + sym + '</div><div class="sheet-timeline">' + body + '</div>');
+  };
 
   function renderDeskMovers(movers) {
     var el = document.getElementById("desk-movers");
