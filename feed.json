@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:48:27Z",
+  "generated_at": "2026-09-17T18:20:35Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -443,7 +443,9 @@
         762.23,
         761.97,
         762.4
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "QQQ": {
       "last": 716.48,
@@ -479,7 +481,9 @@
         716.45,
         716.38,
         716.48
-      ]
+      ],
+      "status": "ruled out",
+      "why": "already ran"
     },
     "DIA": {
       "last": 518.5,
@@ -490,7 +494,9 @@
         518.42,
         518.15,
         518.495
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "VIXY": {
       "last": 17.01,
@@ -501,16 +507,14 @@
         17.04,
         17.06,
         17.01
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "BTC": {
-      "last": 76543.17,
-      "chg_pct": -0.52,
+      "last": 76723.8,
+      "chg_pct": -0.28,
       "history": [
-        76655.785,
-        76714.115,
-        76660.055,
-        76620.325,
         76617.19,
         76529.525,
         76513.985,
@@ -536,17 +540,19 @@
         76741.8,
         76749.76,
         76626.715,
-        76543.17
-      ]
+        76543.17,
+        76588.61,
+        76600.995,
+        76668.815,
+        76723.8
+      ],
+      "status": "tracked",
+      "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2459.95,
-      "chg_pct": -0.4,
+      "last": 2461.53,
+      "chg_pct": -0.33,
       "history": [
-        2467.385,
-        2468.285,
-        2467.275,
-        2466.525,
         2464.8,
         2456.745,
         2458.565,
@@ -572,16 +578,19 @@
         2468.365,
         2468.39,
         2463.045,
-        2459.95
-      ]
+        2459.95,
+        2457.14,
+        2457.225,
+        2459.775,
+        2461.525
+      ],
+      "status": "tracked",
+      "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 101.47,
-      "chg_pct": 0.31,
+      "last": 101.54,
+      "chg_pct": 0.39,
       "history": [
-        101.185,
-        101.165,
-        101.21,
         101.035,
         101.055,
         101.08,
@@ -608,8 +617,13 @@
         101.76,
         101.805,
         101.57,
-        101.465
-      ]
+        101.465,
+        101.29,
+        101.48,
+        101.54
+      ],
+      "status": "tracked",
+      "why": "price only, not evaluated for a setup"
     },
     "MSTR": {
       "last": 132.78,
@@ -645,7 +659,9 @@
         132.29,
         132.73,
         132.775
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "COIN": {
       "last": 171.63,
@@ -681,7 +697,9 @@
         171.51,
         172.18,
         171.63
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "IBIT": {
       "last": 43.46,
@@ -717,7 +735,9 @@
         43.46,
         43.5,
         43.4633
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "IREN": {
       "last": 43.32,
@@ -753,7 +773,9 @@
         43.49,
         43.38,
         43.32
-      ]
+      ],
+      "status": "flagged",
+      "why": "still building"
     },
     "AMZN": {
       "last": 251.1,
@@ -789,7 +811,9 @@
         251.43,
         251.18,
         251.105
-      ]
+      ],
+      "status": "flagged",
+      "why": "still building"
     },
     "GNRC": {
       "last": 208.52,
@@ -825,7 +849,9 @@
         208.37,
         207.7,
         208.52
-      ]
+      ],
+      "status": "flagged",
+      "why": "still building"
     },
     "CRCL": {
       "last": 84.41,
@@ -836,7 +862,9 @@
         84.72,
         84.87,
         84.41
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "HOOD": {
       "last": 107.47,
@@ -847,7 +875,9 @@
         107.14,
         107.68,
         107.47
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "INTC": {
       "last": 110.91,
@@ -858,7 +888,9 @@
         110.83,
         111.07,
         110.905
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "MRVL": {
       "last": 241.89,
@@ -869,7 +901,9 @@
         242.29,
         241.94,
         241.89
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "MU": {
       "last": 973.73,
@@ -879,7 +913,9 @@
         953.2,
         977.14,
         973.725
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "USO": {
       "last": 156.28,
@@ -890,7 +926,9 @@
         156.59,
         156.51,
         156.285
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "XLE": {
       "last": 64.31,
@@ -901,7 +939,9 @@
         64.31,
         64.35,
         64.305
-      ]
+      ],
+      "status": "watching",
+      "why": "still building"
     },
     "AAPL": {
       "last": 335.81,
@@ -912,7 +952,9 @@
         335.7,
         335.42,
         335.81
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "ADBE": {
       "last": 250.47,
@@ -923,7 +965,9 @@
         249.86,
         250.14,
         250.47
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "BMNR": {
       "last": 24.34,
@@ -934,7 +978,9 @@
         24.24,
         24.32,
         24.34
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "BSOL": {
       "last": 14.0,
@@ -945,7 +991,9 @@
         13.92,
         13.98,
         13.9998
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "CRWD": {
       "last": 246.82,
@@ -956,7 +1004,9 @@
         247.18,
         246.94,
         246.82
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "ETHA": {
       "last": 18.62,
@@ -967,7 +1017,9 @@
         18.6,
         18.64,
         18.6191
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "IWM": {
       "last": 286.56,
@@ -978,7 +1030,9 @@
         286.64,
         286.46,
         286.565
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "LEN": {
       "last": 78.05,
@@ -989,7 +1043,9 @@
         78.11,
         77.87,
         78.045
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "META": {
       "last": 677.92,
@@ -1000,7 +1056,9 @@
         678.83,
         677.76,
         677.92
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "MSFT": {
       "last": 495.43,
@@ -1011,7 +1069,9 @@
         495.21,
         494.85,
         495.43
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "NEE": {
       "last": 81.19,
@@ -1047,7 +1107,9 @@
         81.18,
         81.17,
         81.19
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "NVDA": {
       "last": 219.28,
@@ -1083,7 +1145,9 @@
         218.9,
         218.87,
         219.275
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "PANW": {
       "last": 374.31,
@@ -1094,7 +1158,9 @@
         374.93,
         374.56,
         374.305
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "SOXX": {
       "last": 519.7,
@@ -1114,7 +1180,9 @@
         519.68,
         520.03,
         519.7
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "TSLA": {
       "last": 368.13,
@@ -1125,7 +1193,9 @@
         367.32,
         367.7,
         368.135
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     },
     "XOM": {
       "last": 162.67,
@@ -1161,7 +1231,9 @@
         162.69,
         162.84,
         162.67
-      ]
+      ],
+      "status": "no setup",
+      "why": "quiet"
     }
   },
   "news": [
@@ -1341,7 +1413,7 @@
   },
   "desk_freshness": {
     "watch": "12:42",
-    "crypto": "12:48"
+    "crypto": "1:20"
   },
   "desk_board": [
     {
@@ -1429,5 +1501,107 @@
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
-  "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live"
+  "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
+  "desk_events": {
+    "AMZN": [
+      {
+        "t": "10:41 AM ET",
+        "line": "Looked at, passed."
+      }
+    ],
+    "IREN": [
+      {
+        "t": "01:26 PM ET",
+        "line": "Took a position (put)."
+      },
+      {
+        "t": "01:39 PM ET",
+        "line": "Closed -55.0%."
+      }
+    ],
+    "COIN": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "CRCL": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "GNRC": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "HOOD": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "INTC": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "MRVL": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "MSTR": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "MU": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "QQQ": [
+      {
+        "t": null,
+        "line": "Ruled out \u2014 already ran."
+      }
+    ],
+    "USO": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "XLE": [
+      {
+        "t": null,
+        "line": "Still on watch."
+      }
+    ],
+    "BMNR": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
+      }
+    ],
+    "VIXY": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
+      }
+    ],
+    "LEN": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
+      }
+    ]
+  }
 }

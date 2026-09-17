@@ -230,6 +230,19 @@
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-soft);
   }
+  /* Click-drawer, added 9/17 -- same click-to-expand affordance as
+     .ticket, nested inside .desk-row itself (a grid item) rather than a
+     sibling, so opening it grows that one grid cell instead of adding a
+     second cell to the grid. */
+  .desk-row { cursor: pointer; }
+  .desk-row:hover { border-color: var(--gold-dim); }
+  .desk-row:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .desk-drawer {
+    margin-top: 4px; padding-top: 6px; border-top: 1px dashed var(--border-soft);
+    display: flex; flex-direction: column; gap: 3px;
+    font-family: var(--mono); font-size: 11px; color: var(--text-dim);
+  }
+  .desk-evt .evt-t { color: var(--text-faint); margin-right: 6px; }
   /* Added 9/15 -- auto-rotator through the desk-log/movers/freshness
      blocks (~8s each), reusing the existing carousel-dot look. .active
      here uses --gold directly since this section isn't a .carousel-card
@@ -300,8 +313,22 @@
   }
   .board-chip {
     background: var(--surface); border: 1px solid var(--border-soft); border-radius: 8px;
-    padding: 10px 10px 9px;
+    padding: 10px 10px 9px; cursor: pointer;
   }
+  .board-chip:hover { border-color: var(--gold-dim); }
+  .board-chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  /* Click-drawer, added 9/17: mini sparkline off market_board's own real
+     rolling `history` (this script's snapshot of watch's last_price --
+     see site-build.py's build_market_board), plus the same status/why
+     vocabulary already used in "On the desk" below. Nested inside the
+     chip itself, same reasoning as .desk-drawer above. */
+  .board-mini-spark { width: 100%; height: 20px; display: block; margin-top: 6px; }
+  .board-mini-spark polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+  .board-drawer {
+    margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border-soft);
+    font-family: var(--mono); font-size: 10.5px; color: var(--text-dim);
+  }
+  .board-drawer-why { margin-top: 3px; }
   .chip-top { display: flex; align-items: baseline; justify-content: space-between; }
   .chip-sym { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; color: var(--text); }
   .chip-tag { font-family: var(--mono); font-size: 8.5px; text-transform: uppercase; color: var(--text-faint); }
@@ -1064,12 +1091,47 @@
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
       var tag = CRYPTO_SYMS[sym] ? "24/7" : (marketClosed ? "close" : "");
-      return '<div class="board-chip"><div class="chip-top"><span class="chip-sym">' + sym + '</span>' +
+      var id = "board-drawer-" + (_boardSeq++);
+      return '<div class="board-chip" role="button" tabindex="0" ' +
+        'onclick="toggleDrawer(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleDrawer(\'' + id + '\')">' +
+        '<div class="chip-top"><span class="chip-sym">' + sym + '</span>' +
         (tag ? '<span class="chip-tag">' + tag + '</span>' : '') + '</div>' +
         '<div class="chip-price">' + fmtPrice(sym, c.last) + '</div>' +
-        '<div class="chip-chg ' + (good ? "good" : "bad") + '">' + chg + '</div></div>';
+        '<div class="chip-chg ' + (good ? "good" : "bad") + '">' + chg + '</div>' +
+        boardMiniSparkSvg(c.history) +
+        '<div class="board-drawer" id="' + id + '" hidden>' +
+        (c.status ? '<span class="desk-tag ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '') +
+        (c.why ? '<div class="board-drawer-why">' + c.why + '</div>' : '') +
+        '</div></div>';
     }).join("");
     document.getElementById("board-strip").innerHTML = html || '<div class="board-mini-pending">building board…</div>';
+  }
+
+  // Click-drawer additions, 9/17: real data already flowing through this
+  // script's own market_board (see site-build.py's build_market_board --
+  // `history` is its own rolling snapshot of watch's last_price, `status`/
+  // `why` reuse desk_board's exact public vocabulary). No new pull, no
+  // per-tier gating needed -- every board row already carries real,
+  // non-fabricated history regardless of coverage tier.
+  function boardStatusClass(status) {
+    if (status === "flagged") return "flag";
+    if (status === "watching") return "watch";
+    if (status === "ruled out") return "bad";
+    return "";
+  }
+  function boardMiniSparkSvg(vals) {
+    if (!vals || vals.length < 2) return "";
+    var maxV = Math.max.apply(null, vals), minV = Math.min.apply(null, vals);
+    var range = (maxV - minV) || 1;
+    var n = vals.length;
+    var pts = vals.map(function (v, i) {
+      var x = (i * 100 / (n - 1)).toFixed(1);
+      var y = ((maxV - v) / range * 20).toFixed(1);
+      return x + "," + y;
+    }).join(" ");
+    var good = vals[vals.length - 1] >= vals[0];
+    return '<svg class="board-mini-spark" viewBox="0 0 100 20" preserveAspectRatio="none">' +
+      '<polyline points="' + pts + '" stroke="' + (good ? "var(--good)" : "var(--bad)") + '" /></svg>';
   }
 
   // Fuse replay, added 9/2: a closed ticket's own 10-dot minute-by-minute
@@ -1097,9 +1159,14 @@
   // fuse -- same "historical only, not built yet" gap, same honest
   // fallback: the row just omits that line if the fields aren't there.
   var _ticketSeq = 0;
+  var _boardSeq = 0;
+  var _deskSeq = 0;
   // Exposed on window: this script runs inside an IIFE, but the inline
   // onclick= attributes generated below execute in global scope.
-  window.toggleTicket = function (id) {
+  // Renamed from toggleTicket 9/17 (same generic body, three callers now
+  // -- tickets, board chips, desk rows) -- it never referenced anything
+  // ticket-specific to begin with.
+  window.toggleDrawer = function (id) {
     var el = document.getElementById(id);
     if (!el) return;
     el.hidden = !el.hidden;
@@ -1125,7 +1192,7 @@
     var timeText = (t.entry && t.exit) ? (t.entry + ' → ' + t.exit) : "—";
     var id = "ticket-expand-" + (_ticketSeq++);
     return '<div class="ticket-wrap"><div class="ticket" role="button" tabindex="0" ' +
-      'onclick="toggleTicket(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleTicket(\'' + id + '\')">' +
+      'onclick="toggleDrawer(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleDrawer(\'' + id + '\')">' +
       '<span class="sym">' + t.sym + '</span>' +
       '<span class="dir ' + t.dir + '">' + (t.dir === "call" ? "Call" : "Put") + '</span>' +
       '<span class="dur">' + durText + '</span>' +
@@ -1240,13 +1307,14 @@
     el.innerHTML = '<div class="scan-row"><span class="scan-reason">' + scanLogPublic + '</span></div>';
   }
 
-  function renderDeskBoard(board) {
+  function renderDeskBoard(board, events) {
     var el = document.getElementById("desk-board");
     if (!el) return;
     if (!board || !board.length) {
       el.innerHTML = "";
       return;
     }
+    events = events || {};
     el.innerHTML = board.map(function (r) {
       var statusClass = r.status === "OUT" ? "out" : (r.status === "WATCH" ? "watch" : "hot");
       var why = r.why || "";
@@ -1255,9 +1323,22 @@
         var pct = (good ? "+" : "") + r.chg_pct.toFixed(1) + "%";
         why = '<span class="pct ' + (good ? "good" : "bad") + '">' + pct + '</span>' + why;
       }
-      return '<div class="desk-row"><div class="desk-row-top"><span class="desk-sym">' + r.sym + '</span>' +
+      var id = "desk-drawer-" + (_deskSeq++);
+      var evts = events[r.sym] || [];
+      // Today-only, real timeline (site-build.py's build_desk_events) --
+      // no per-click Claude cost, already baked into feed.json.
+      var drawerBody = evts.length ?
+        evts.map(function (e) {
+          return '<div class="desk-evt">' + (e.t ? '<span class="evt-t">' + e.t + '</span>' : '') + e.line + '</div>';
+        }).join("") :
+        '<div class="desk-evt">Nothing logged yet today.</div>';
+      return '<div class="desk-row" role="button" tabindex="0" ' +
+        'onclick="toggleDrawer(\'' + id + '\')" onkeydown="if(event.key===\'Enter\')toggleDrawer(\'' + id + '\')">' +
+        '<div class="desk-row-top"><span class="desk-sym">' + r.sym + '</span>' +
         '<span class="desk-status ' + statusClass + '">' + r.status + '</span></div>' +
-        '<span class="desk-why">' + why + '</span></div>';
+        '<span class="desk-why">' + why + '</span>' +
+        '<div class="desk-drawer" id="' + id + '" hidden>' + drawerBody + '</div>' +
+        '</div>';
     }).join("");
   }
 
@@ -1450,7 +1531,7 @@
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
     renderScanLog(data.scan_log_public, data.session);
-    renderDeskBoard(data.desk_board);
+    renderDeskBoard(data.desk_board, data.desk_events);
     renderDeskMovers(data.board_movers);
     renderDeskFreshness(data.desk_freshness);
     renderWeeks(data.weeks);
