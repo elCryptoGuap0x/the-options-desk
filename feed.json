@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T13:47:20Z",
+  "generated_at": "2026-09-17T13:50:23Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -358,19 +358,21 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 763.42,
-      "chg_pct": 1.29,
+      "last": 760.93,
+      "chg_pct": 0.96,
       "history": [
         753.68,
-        763.42
+        763.42,
+        760.93
       ]
     },
     "QQQ": {
-      "last": 716.02,
-      "chg_pct": 1.71,
+      "last": 714.26,
+      "chg_pct": 1.46,
       "history": [
         703.96,
-        716.02
+        716.02,
+        714.26
       ]
     },
     "DIA": {
@@ -390,8 +392,8 @@
       ]
     },
     "BTC": {
-      "last": 76139.94,
-      "chg_pct": -1.04,
+      "last": 76271.26,
+      "chg_pct": -0.87,
       "history": [
         76941.91,
         76690.145,
@@ -400,12 +402,13 @@
         76073.17,
         75999.995,
         76061.46,
-        76139.94
+        76139.94,
+        76271.265
       ]
     },
     "ETH": {
-      "last": 2440.64,
-      "chg_pct": -1.18,
+      "last": 2447.32,
+      "chg_pct": -0.91,
       "history": [
         2469.73,
         2459.325,
@@ -414,12 +417,13 @@
         2433.53,
         2434.895,
         2435.875,
-        2440.645
+        2440.645,
+        2447.315
       ]
     },
     "SOL": {
-      "last": 99.86,
-      "chg_pct": -1.28,
+      "last": 100.13,
+      "chg_pct": -1.01,
       "history": [
         101.15,
         100.73,
@@ -428,46 +432,44 @@
         99.78,
         99.66,
         99.705,
-        99.86
+        99.86,
+        100.13
       ]
     },
     "MSTR": {
-      "last": 130.12,
-      "chg_pct": 3.77,
+      "last": 128.02,
+      "chg_pct": 2.1,
       "history": [
         125.3911,
-        130.12
+        130.12,
+        128.02
       ]
     },
     "COIN": {
-      "last": 169.63,
-      "chg_pct": 3.2,
+      "last": 166.08,
+      "chg_pct": 1.04,
       "history": [
         164.37,
-        169.63
+        169.63,
+        166.08
       ]
     },
     "IBIT": {
-      "last": 43.35,
-      "chg_pct": 0.8,
+      "last": 43.01,
+      "chg_pct": 0.01,
       "history": [
         43.005,
-        43.35
+        43.35,
+        43.01
       ]
     },
     "IREN": {
-      "last": 45.21,
-      "chg_pct": 6.07,
+      "last": 43.17,
+      "chg_pct": 1.29,
       "history": [
         42.6216,
-        45.21
-      ]
-    },
-    "AMZN": {
-      "last": 251.12,
-      "chg_pct": 0.0,
-      "history": [
-        251.12
+        45.21,
+        43.17
       ]
     },
     "CRCL": {
@@ -479,10 +481,11 @@
       ]
     },
     "GNRC": {
-      "last": 233.75,
-      "chg_pct": 0.0,
+      "last": 213.57,
+      "chg_pct": -8.63,
       "history": [
-        233.75
+        233.75,
+        213.575
       ]
     },
     "HOOD": {
@@ -517,14 +520,6 @@
         953.2
       ]
     },
-    "NVDA": {
-      "last": 218.47,
-      "chg_pct": 2.23,
-      "history": [
-        213.695,
-        218.465
-      ]
-    },
     "USO": {
       "last": 153.62,
       "chg_pct": -1.48,
@@ -541,14 +536,6 @@
         63.5
       ]
     },
-    "XOM": {
-      "last": 161.84,
-      "chg_pct": -0.97,
-      "history": [
-        163.43,
-        161.84
-      ]
-    },
     "AAPL": {
       "last": 333.85,
       "chg_pct": 0.51,
@@ -563,6 +550,14 @@
       "history": [
         250.6625,
         249.6058
+      ]
+    },
+    "AMZN": {
+      "last": 250.5,
+      "chg_pct": -0.25,
+      "history": [
+        251.12,
+        250.495
       ]
     },
     "BMNR": {
@@ -630,10 +625,20 @@
       ]
     },
     "NEE": {
-      "last": 80.97,
-      "chg_pct": 0.0,
+      "last": 80.78,
+      "chg_pct": -0.23,
       "history": [
-        80.97
+        80.97,
+        80.78
+      ]
+    },
+    "NVDA": {
+      "last": 217.9,
+      "chg_pct": 1.97,
+      "history": [
+        213.695,
+        218.465,
+        217.9
       ]
     },
     "PANW": {
@@ -650,6 +655,15 @@
       "history": [
         358.255,
         364.9959
+      ]
+    },
+    "XOM": {
+      "last": 162.79,
+      "chg_pct": -0.39,
+      "history": [
+        163.43,
+        161.84,
+        162.79
       ]
     }
   },
@@ -740,10 +754,6 @@
     ],
     "interesting": [
       [
-        "AMZN",
-        "watching"
-      ],
-      [
         "COIN",
         "watching"
       ],
@@ -780,41 +790,21 @@
         "watching"
       ],
       [
-        "NVDA",
-        "watching"
-      ],
-      [
-        "QQQ",
-        "watching"
-      ],
-      [
-        "SPY",
-        "watching"
-      ],
-      [
         "USO",
         "watching"
       ],
       [
         "XLE",
         "watching"
-      ],
-      [
-        "XOM",
-        "watching"
       ]
     ],
-    "no_shape_count": 16,
+    "no_shape_count": 21,
     "filled": 0
   },
-  "scan_log_public": "32 looked, 0 filled (16 quiet).",
+  "scan_log_public": "32 looked, 0 filled (21 quiet).",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
-      {
-        "sym": "IREN",
-        "chg_pct": 6.07
-      },
       {
         "sym": "MRVL",
         "chg_pct": 5.15
@@ -822,9 +812,17 @@
       {
         "sym": "HOOD",
         "chg_pct": 4.81
+      },
+      {
+        "sym": "INTC",
+        "chg_pct": 3.8
       }
     ],
     "down": [
+      {
+        "sym": "GNRC",
+        "chg_pct": -8.63
+      },
       {
         "sym": "VIXY",
         "chg_pct": -4.23
@@ -832,23 +830,14 @@
       {
         "sym": "PANW",
         "chg_pct": -2.22
-      },
-      {
-        "sym": "USO",
-        "chg_pct": -1.48
       }
     ]
   },
   "desk_freshness": {
-    "watch": "8:11",
-    "crypto": "8:47"
+    "watch": "8:46",
+    "crypto": "8:50"
   },
   "desk_board": [
-    {
-      "sym": "AMZN",
-      "status": "WATCH",
-      "why": "still building"
-    },
     {
       "sym": "COIN",
       "status": "WATCH",
@@ -895,32 +884,12 @@
       "why": "still building"
     },
     {
-      "sym": "NVDA",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "QQQ",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "SPY",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
       "sym": "USO",
       "status": "WATCH",
       "why": "still building"
     },
     {
       "sym": "XLE",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "XOM",
       "status": "WATCH",
       "why": "still building"
     },
