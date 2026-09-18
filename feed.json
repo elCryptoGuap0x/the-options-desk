@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:21:59Z",
+  "generated_at": "2026-09-18T15:25:02Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -474,10 +474,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80882.76,
-      "chg_pct": 3.67,
+      "last": 81047.55,
+      "chg_pct": 3.88,
       "history": [
-        80184.85,
         80221.985,
         80483.855,
         80474.095,
@@ -506,16 +505,16 @@
         80607.075,
         80765.545,
         80884.82,
-        80882.755
+        80882.755,
+        81047.55
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2581.38,
-      "chg_pct": 3.1,
+      "last": 2589.35,
+      "chg_pct": 3.42,
       "history": [
-        2557.115,
         2558.35,
         2564.445,
         2563.535,
@@ -544,16 +543,16 @@
         2571.545,
         2574.585,
         2580.735,
-        2581.38
+        2581.38,
+        2589.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.33,
-      "chg_pct": 4.32,
+      "last": 110.53,
+      "chg_pct": 4.5,
       "history": [
-        108.665,
         108.7,
         108.865,
         109.04,
@@ -582,7 +581,8 @@
         109.81,
         110.14,
         110.345,
-        110.33
+        110.33,
+        110.525
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1104,9 +1104,14 @@
   },
   "desk_freshness": {
     "watch": "10:16",
-    "crypto": "10:22"
+    "crypto": "10:25"
   },
   "desk_board": [
+    {
+      "sym": "INTC",
+      "status": "WATCH",
+      "why": "Flagged 11:16 AM ET \u2014 named, -3.2% today."
+    },
     {
       "sym": "NVDA",
       "status": "OUT",
@@ -1116,6 +1121,20 @@
   "last_fill_at": "2026-09-16T14:15:43Z",
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {
+    "INTC": [
+      {
+        "t": "8:35 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "9:50 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "11:19 AM ET",
+        "line": "Looked at, passed."
+      }
+    ],
     "USO": [
       {
         "t": "8:35 AM ET",
@@ -1173,16 +1192,6 @@
       },
       {
         "t": "10:14 AM ET",
-        "line": "First flagged \u2014 still building."
-      }
-    ],
-    "INTC": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "9:50 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
