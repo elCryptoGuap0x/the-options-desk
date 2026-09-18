@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:12:37Z",
+  "generated_at": "2026-09-18T14:14:50Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -410,29 +410,31 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 759.71,
-      "chg_pct": -0.35,
+      "last": 759.42,
+      "chg_pct": -0.39,
       "history": [
         762.4,
         760.48,
         760.95,
         760.32,
         759.925,
-        759.71
+        759.71,
+        759.42
       ],
       "status": "no setup",
       "why": "quiet"
     },
     "QQQ": {
-      "last": 717.93,
-      "chg_pct": 0.2,
+      "last": 717.02,
+      "chg_pct": 0.08,
       "history": [
         716.48,
         718.06,
         718.84,
         718.28,
         718.04,
-        717.93
+        717.93,
+        717.02
       ],
       "status": "no setup",
       "why": "quiet"
@@ -456,8 +458,8 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 80184.85,
-      "chg_pct": 2.77,
+      "last": 80221.99,
+      "chg_pct": 2.82,
       "history": [
         78020.865,
         77983.445,
@@ -474,14 +476,15 @@
         80354.175,
         80215.985,
         80259.985,
-        80184.85
+        80184.85,
+        80221.985
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2557.11,
-      "chg_pct": 2.13,
+      "last": 2558.35,
+      "chg_pct": 2.18,
       "history": [
         2503.685,
         2496.595,
@@ -498,14 +501,15 @@
         2561.36,
         2557.315,
         2558.615,
-        2557.115
+        2557.115,
+        2558.35
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 108.7,
-      "chg_pct": 2.78,
+      "last": 108.86,
+      "chg_pct": 2.93,
       "history": [
         105.765,
         105.44,
@@ -522,66 +526,71 @@
         108.705,
         108.53,
         108.665,
-        108.7
+        108.7,
+        108.865
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "MSTR": {
-      "last": 144.47,
-      "chg_pct": 8.8,
+      "last": 144.55,
+      "chg_pct": 8.87,
       "history": [
         132.775,
         135.83,
         141.39,
         143.73,
         143.92,
-        144.465
+        144.465,
+        144.55
       ],
       "status": "watching",
       "why": "still building"
     },
     "COIN": {
-      "last": 185.81,
-      "chg_pct": 8.26,
+      "last": 185.46,
+      "chg_pct": 8.06,
       "history": [
         171.63,
         176.24,
         181.99,
         185.03,
         185.72,
-        185.805
+        185.805,
+        185.46
       ],
       "status": "watching",
       "why": "still building"
     },
     "IBIT": {
-      "last": 45.4,
-      "chg_pct": 4.46,
+      "last": 45.43,
+      "chg_pct": 4.52,
       "history": [
         43.4633,
         44.15,
         44.895,
         45.5,
         45.37,
-        45.4
+        45.4,
+        45.43
       ],
       "status": "watching",
       "why": "still building"
     },
     "IREN": {
-      "last": 44.67,
-      "chg_pct": 3.11,
+      "last": 43.82,
+      "chg_pct": 1.15,
       "history": [
         43.32,
         44.23,
         44.635,
         44.54,
         44.75,
-        44.667
+        44.667,
+        43.82
       ],
-      "status": "no setup",
-      "why": "quiet"
+      "status": "watching",
+      "why": "still building"
     },
     "AMZN": {
       "last": 251.1,
@@ -620,15 +629,16 @@
       "why": "still building"
     },
     "INTC": {
-      "last": 109.03,
-      "chg_pct": -1.69,
+      "last": 108.4,
+      "chg_pct": -2.26,
       "history": [
         110.905,
         109.72,
         109.615,
         109.5,
         109.29,
-        109.03
+        109.03,
+        108.4
       ],
       "status": "watching",
       "why": "still building"
@@ -652,28 +662,30 @@
       "why": "still building"
     },
     "NVDA": {
-      "last": 219.22,
-      "chg_pct": -0.03,
+      "last": 219.91,
+      "chg_pct": 0.29,
       "history": [
         219.275,
         219.3,
         219.7937,
         219.49,
         219.58,
-        219.22
+        219.22,
+        219.91
       ],
       "status": "watching",
       "why": "still building"
     },
     "SMCI": {
-      "last": 39.16,
-      "chg_pct": -2.59,
+      "last": 38.78,
+      "chg_pct": -3.53,
       "history": [
         40.2,
         39.38,
         39.41,
         39.2,
-        39.16
+        39.16,
+        38.78
       ],
       "status": "watching",
       "why": "still building"
@@ -908,6 +920,10 @@
         "watching"
       ],
       [
+        "IREN",
+        "watching"
+      ],
+      [
         "MSTR",
         "watching"
       ],
@@ -920,44 +936,44 @@
         "watching"
       ]
     ],
-    "no_shape_count": 3,
+    "no_shape_count": 2,
     "filled": 0
   },
-  "scan_log_public": "9 looked, 0 filled (3 quiet).",
+  "scan_log_public": "9 looked, 0 filled (2 quiet).",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
         "sym": "MSTR",
-        "chg_pct": 8.8
+        "chg_pct": 8.87
       },
       {
         "sym": "COIN",
-        "chg_pct": 8.26
+        "chg_pct": 8.06
       },
       {
         "sym": "IBIT",
-        "chg_pct": 4.46
+        "chg_pct": 4.52
       }
     ],
     "down": [
       {
         "sym": "SMCI",
-        "chg_pct": -2.59
+        "chg_pct": -3.53
       },
       {
         "sym": "INTC",
-        "chg_pct": -1.69
+        "chg_pct": -2.26
       },
       {
         "sym": "SPY",
-        "chg_pct": -0.35
+        "chg_pct": -0.39
       }
     ]
   },
   "desk_freshness": {
-    "watch": "9:04",
-    "crypto": "9:12"
+    "watch": "9:11",
+    "crypto": "9:14"
   },
   "desk_board": [
     {
@@ -972,6 +988,11 @@
     },
     {
       "sym": "INTC",
+      "status": "WATCH",
+      "why": "still building"
+    },
+    {
+      "sym": "IREN",
       "status": "WATCH",
       "why": "still building"
     },
@@ -994,7 +1015,7 @@
       "sym": "SPY",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": -0.35
+      "chg_pct": -0.39
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
@@ -1053,6 +1074,10 @@
     "IREN": [
       {
         "t": "8:35 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "10:14 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
