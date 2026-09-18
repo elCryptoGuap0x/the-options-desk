@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:15:52Z",
+  "generated_at": "2026-09-18T15:18:55Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -410,8 +410,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 759.68,
-      "chg_pct": -0.36,
+      "last": 759.75,
+      "chg_pct": -0.35,
       "history": [
         762.4,
         760.48,
@@ -426,14 +426,15 @@
         759.4784,
         759.475,
         759.7,
-        759.68
+        759.68,
+        759.75
       ],
       "status": "no setup",
-      "why": "Looked 11:05 AM ET \u2014 no break, quiet tape."
+      "why": "Looked 11:16 AM ET \u2014 no break, quiet tape."
     },
     "QQQ": {
-      "last": 717.28,
-      "chg_pct": 0.11,
+      "last": 717.21,
+      "chg_pct": 0.1,
       "history": [
         716.48,
         718.06,
@@ -448,10 +449,11 @@
         716.83,
         717.079,
         717.23,
-        717.28
+        717.28,
+        717.21
       ],
       "status": "no setup",
-      "why": "Looked 11:05 AM ET \u2014 no break, quiet tape."
+      "why": "Looked 11:16 AM ET \u2014 no break, quiet tape."
     },
     "DIA": {
       "last": 518.5,
@@ -472,10 +474,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80765.54,
-      "chg_pct": 3.52,
+      "last": 80884.82,
+      "chg_pct": 3.67,
       "history": [
-        80215.985,
         80259.985,
         80184.85,
         80221.985,
@@ -504,16 +505,16 @@
         80805.145,
         80673.395,
         80607.075,
-        80765.545
+        80765.545,
+        80884.82
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2574.59,
-      "chg_pct": 2.83,
+      "last": 2580.74,
+      "chg_pct": 3.08,
       "history": [
-        2557.315,
         2558.615,
         2557.115,
         2558.35,
@@ -542,16 +543,16 @@
         2582.32,
         2578.615,
         2571.545,
-        2574.585
+        2574.585,
+        2580.735
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.14,
-      "chg_pct": 4.14,
+      "last": 110.34,
+      "chg_pct": 4.33,
       "history": [
-        108.705,
         108.53,
         108.665,
         108.7,
@@ -580,14 +581,15 @@
         109.955,
         109.78,
         109.81,
-        110.14
+        110.14,
+        110.345
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "MSTR": {
-      "last": 147.26,
-      "chg_pct": 10.91,
+      "last": 147.79,
+      "chg_pct": 11.31,
       "history": [
         132.775,
         135.83,
@@ -602,14 +604,15 @@
         146.37,
         147.111,
         147.615,
-        147.26
+        147.26,
+        147.79
       ],
       "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
+      "why": "On the list since 11:16 AM ET. No look yet."
     },
     "COIN": {
-      "last": 191.99,
-      "chg_pct": 11.86,
+      "last": 192.25,
+      "chg_pct": 12.01,
       "history": [
         171.63,
         176.24,
@@ -624,14 +627,15 @@
         190.355,
         191.045,
         192.09,
-        191.99
+        191.99,
+        192.25
       ],
       "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
+      "why": "On the list since 11:16 AM ET. No look yet."
     },
     "IBIT": {
-      "last": 45.74,
-      "chg_pct": 5.23,
+      "last": 45.71,
+      "chg_pct": 5.17,
       "history": [
         43.4633,
         44.15,
@@ -646,14 +650,15 @@
         45.73,
         45.8099,
         45.815,
-        45.7352
+        45.7352,
+        45.71
       ],
       "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
+      "why": "On the list since 11:16 AM ET. No look yet."
     },
     "IREN": {
-      "last": 44.12,
-      "chg_pct": 1.84,
+      "last": 44.48,
+      "chg_pct": 2.68,
       "history": [
         43.32,
         44.23,
@@ -668,10 +673,11 @@
         44.3,
         44.52,
         44.18,
-        44.115
+        44.115,
+        44.48
       ],
       "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
+      "why": "On the list since 11:16 AM ET. No look yet."
     },
     "GNRC": {
       "last": 203.52,
@@ -687,19 +693,42 @@
       "status": "flagged",
       "why": "Flagged 10:51 AM ET \u2014 -2.4% today."
     },
+    "INTC": {
+      "last": 107.39,
+      "chg_pct": -3.17,
+      "history": [
+        110.905,
+        109.72,
+        109.615,
+        109.5,
+        109.29,
+        109.03,
+        108.4,
+        108.13,
+        108.14,
+        107.92,
+        107.91,
+        107.65,
+        107.28,
+        107.39
+      ],
+      "status": "flagged",
+      "why": "Flagged 11:16 AM ET \u2014 named, -3.2% today."
+    },
     "AMZN": {
-      "last": 255.09,
-      "chg_pct": 1.58,
+      "last": 254.75,
+      "chg_pct": 1.45,
       "history": [
         251.105,
         252.365,
         252.495,
         252.35,
         253.02,
-        255.085
+        255.085,
+        254.75
       ],
       "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
+      "why": "On the list since 11:16 AM ET. No look yet."
     },
     "CRCL": {
       "last": 84.41,
@@ -718,27 +747,6 @@
       ],
       "status": "watching",
       "why": "On the list since 1:42 PM ET. No look yet."
-    },
-    "INTC": {
-      "last": 107.28,
-      "chg_pct": -3.27,
-      "history": [
-        110.905,
-        109.72,
-        109.615,
-        109.5,
-        109.29,
-        109.03,
-        108.4,
-        108.13,
-        108.14,
-        107.92,
-        107.91,
-        107.65,
-        107.28
-      ],
-      "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
     },
     "MRVL": {
       "last": 241.89,
@@ -759,8 +767,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "SMCI": {
-      "last": 38.66,
-      "chg_pct": -3.82,
+      "last": 38.55,
+      "chg_pct": -4.12,
       "history": [
         40.2,
         39.38,
@@ -774,10 +782,11 @@
         38.61,
         38.7739,
         38.585,
-        38.665
+        38.665,
+        38.545
       ],
       "status": "watching",
-      "why": "On the list since 11:05 AM ET. No look yet."
+      "why": "On the list since 11:16 AM ET. No look yet."
     },
     "USO": {
       "last": 156.28,
@@ -798,8 +807,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "NVDA": {
-      "last": 219.24,
-      "chg_pct": -0.02,
+      "last": 219.36,
+      "chg_pct": 0.04,
       "history": [
         219.275,
         219.3,
@@ -814,10 +823,11 @@
         219.25,
         219.26,
         219.11,
-        219.24
+        219.24,
+        219.36
       ],
       "status": "ruled out",
-      "why": "Ruled out 11:05 AM ET \u2014 already ran."
+      "why": "Ruled out 11:16 AM ET \u2014 already ran."
     },
     "AAPL": {
       "last": 335.81,
@@ -1038,7 +1048,7 @@
       ],
       [
         "INTC",
-        "watching"
+        "candidate_C"
       ],
       [
         "IREN",
@@ -1066,25 +1076,25 @@
     "up": [
       {
         "sym": "COIN",
-        "chg_pct": 11.86
+        "chg_pct": 12.01
       },
       {
         "sym": "MSTR",
-        "chg_pct": 10.91
+        "chg_pct": 11.31
       },
       {
         "sym": "IBIT",
-        "chg_pct": 5.23
+        "chg_pct": 5.17
       }
     ],
     "down": [
       {
         "sym": "SMCI",
-        "chg_pct": -3.82
+        "chg_pct": -4.12
       },
       {
         "sym": "INTC",
-        "chg_pct": -3.27
+        "chg_pct": -3.17
       },
       {
         "sym": "GNRC",
@@ -1093,14 +1103,14 @@
     ]
   },
   "desk_freshness": {
-    "watch": "10:05",
-    "crypto": "10:15"
+    "watch": "10:16",
+    "crypto": "10:18"
   },
   "desk_board": [
     {
       "sym": "NVDA",
       "status": "OUT",
-      "why": "Ruled out 11:05 AM ET \u2014 already ran."
+      "why": "Ruled out 11:16 AM ET \u2014 already ran."
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
