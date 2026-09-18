@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T13:50:26Z",
+  "generated_at": "2026-09-18T13:53:29Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -410,23 +410,25 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 760.95,
-      "chg_pct": -0.19,
+      "last": 760.32,
+      "chg_pct": -0.27,
       "history": [
         762.4,
         760.48,
-        760.95
+        760.95,
+        760.32
       ],
       "status": "no setup",
       "why": "quiet"
     },
     "QQQ": {
-      "last": 718.84,
-      "chg_pct": 0.33,
+      "last": 718.28,
+      "chg_pct": 0.25,
       "history": [
         716.48,
         718.06,
-        718.84
+        718.84,
+        718.28
       ],
       "status": "no setup",
       "why": "quiet"
@@ -450,8 +452,8 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 79889.85,
-      "chg_pct": 2.4,
+      "last": 80251.73,
+      "chg_pct": 2.86,
       "history": [
         78020.865,
         77983.445,
@@ -460,14 +462,15 @@
         78883.355,
         79123.77,
         79729.005,
-        79889.855
+        79889.855,
+        80251.725
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2556.22,
-      "chg_pct": 2.1,
+      "last": 2567.8,
+      "chg_pct": 2.56,
       "history": [
         2503.685,
         2496.595,
@@ -476,14 +479,15 @@
         2527.835,
         2533.91,
         2546.83,
-        2556.215
+        2556.215,
+        2567.795
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 108.46,
-      "chg_pct": 2.55,
+      "last": 109.02,
+      "chg_pct": 3.08,
       "history": [
         105.765,
         105.44,
@@ -492,51 +496,56 @@
         107.565,
         107.78,
         108.065,
-        108.46
+        108.46,
+        109.02
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "MSTR": {
-      "last": 141.39,
-      "chg_pct": 6.49,
+      "last": 143.73,
+      "chg_pct": 8.25,
       "history": [
         132.775,
         135.83,
-        141.39
+        141.39,
+        143.73
       ],
       "status": "watching",
       "why": "still building"
     },
     "COIN": {
-      "last": 181.99,
-      "chg_pct": 6.04,
+      "last": 185.03,
+      "chg_pct": 7.81,
       "history": [
         171.63,
         176.24,
-        181.99
+        181.99,
+        185.03
       ],
       "status": "watching",
       "why": "still building"
     },
     "IBIT": {
-      "last": 44.9,
-      "chg_pct": 3.29,
+      "last": 45.5,
+      "chg_pct": 4.69,
       "history": [
         43.4633,
         44.15,
-        44.895
+        44.895,
+        45.5
       ],
       "status": "watching",
       "why": "still building"
     },
     "IREN": {
-      "last": 44.63,
-      "chg_pct": 3.04,
+      "last": 44.54,
+      "chg_pct": 2.82,
       "history": [
         43.32,
         44.23,
-        44.635
+        44.635,
+        44.54
       ],
       "status": "no setup",
       "why": "quiet"
@@ -578,12 +587,13 @@
       "why": "still building"
     },
     "INTC": {
-      "last": 109.61,
-      "chg_pct": -1.16,
+      "last": 109.5,
+      "chg_pct": -1.27,
       "history": [
         110.905,
         109.72,
-        109.615
+        109.615,
+        109.5
       ],
       "status": "watching",
       "why": "still building"
@@ -607,22 +617,24 @@
       "why": "still building"
     },
     "NVDA": {
-      "last": 219.79,
-      "chg_pct": 0.24,
+      "last": 219.49,
+      "chg_pct": 0.1,
       "history": [
         219.275,
         219.3,
-        219.7937
+        219.7937,
+        219.49
       ],
       "status": "watching",
       "why": "still building"
     },
     "SMCI": {
-      "last": 39.38,
-      "chg_pct": -2.04,
+      "last": 39.41,
+      "chg_pct": -1.97,
       "history": [
         40.2,
-        39.38
+        39.38,
+        39.41
       ],
       "status": "watching",
       "why": "still building"
@@ -878,35 +890,35 @@
     "up": [
       {
         "sym": "MSTR",
-        "chg_pct": 6.49
+        "chg_pct": 8.25
       },
       {
         "sym": "COIN",
-        "chg_pct": 6.04
+        "chg_pct": 7.81
       },
       {
         "sym": "IBIT",
-        "chg_pct": 3.29
+        "chg_pct": 4.69
       }
     ],
     "down": [
       {
         "sym": "SMCI",
-        "chg_pct": -2.04
+        "chg_pct": -1.97
       },
       {
         "sym": "INTC",
-        "chg_pct": -1.16
+        "chg_pct": -1.27
       },
       {
         "sym": "SPY",
-        "chg_pct": -0.19
+        "chg_pct": -0.27
       }
     ]
   },
   "desk_freshness": {
-    "watch": "8:46",
-    "crypto": "8:50"
+    "watch": "8:53",
+    "crypto": "8:53"
   },
   "desk_board": [
     {
@@ -943,7 +955,7 @@
       "sym": "SPY",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": -0.19
+      "chg_pct": -0.27
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
