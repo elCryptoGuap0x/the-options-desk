@@ -133,6 +133,7 @@ _RSS_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 _RSS_DESC_RE = re.compile(r"<description>(.*?)</description>", re.S)
 _RSS_LINK_RE = re.compile(r"<link>(.*?)</link>", re.S)
 _RSS_PUBDATE_RE = re.compile(r"<pubDate>(.*?)</pubDate>", re.S)
+_RSS_CATEGORY_RE = re.compile(r"<category>(.*?)</category>", re.S)
 _TAG_STRIP_RE = re.compile(r"<[^>]+>")
 _CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
 
@@ -150,9 +151,18 @@ _CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
 # RSS endpoint is dead (connection failure) and CNBC's returns a hard
 # Akamai "Access Denied" to a scripted request -- both tested and
 # dropped rather than shipped on a guess.
+# category=None means no filter (MarketWatch's feed has no <category>
+# tags at all). The Fed's feed carries a real one per item -- checked
+# live, 9/18: roughly half of press_all.xml is "Enforcement Actions"
+# (routine actions against individual small banks, e.g. "terminates
+# enforcement action with SNB Bancshares") or "Orders on Banking
+# Applications" (routine M&A approvals) -- zero market relevance.
+# Restricting to the feed's OWN "Monetary Policy" category (FOMC
+# statements, meeting minutes, economic projections) uses the source's
+# real classification, not an invented keyword filter.
 NEWS_FEEDS = [
-    ("MARKETS", "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"),
-    ("FED", "https://www.federalreserve.gov/feeds/press_all.xml"),
+    ("MARKETS", "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines", None),
+    ("FED", "https://www.federalreserve.gov/feeds/press_all.xml", "Monetary Policy"),
 ]
 
 
@@ -188,10 +198,18 @@ def _parse_pubdate(raw):
         return ""
 
 
-def _fetch_one_feed(tag, feed_url):
+def _fetch_one_feed(tag, feed_url, category_filter):
     try:
         r = requests.get(feed_url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
         r.raise_for_status()
+        # Real bug caught in testing: the Fed's feed doesn't declare a
+        # charset in its Content-Type header, so requests falls back to
+        # ISO-8859-1 (the old HTTP default) while the actual content is
+        # UTF-8 -- corrupted every em/en-dash into "â\x80\x93"-style
+        # garbage (e.g. "July 28â29" instead of "July 28-29"). Trust
+        # chardet's own content-based detection over the (here, absent)
+        # header instead.
+        r.encoding = r.apparent_encoding or "utf-8"
         text = r.text
     except Exception as e:
         print(f"[tape_update] news fetch failed for {feed_url}: {e}")
@@ -202,6 +220,10 @@ def _fetch_one_feed(tag, feed_url):
         lm = _RSS_LINK_RE.search(block)
         if not tm or not lm:
             continue
+        if category_filter is not None:
+            cm = _RSS_CATEGORY_RE.search(block)
+            if not cm or _clean_field(cm.group(1)) != category_filter:
+                continue
         url = _clean_field(lm.group(1))
         title = _clean_field(tm.group(1))
         if not url or not title:
@@ -229,7 +251,7 @@ def fetch_news(limit=10):
     still stored per item for display -- just not trusted as a
     cross-feed ordering key. Returns [] only if every feed fails.
     """
-    per_feed = [_fetch_one_feed(tag, url) for tag, url in NEWS_FEEDS]
+    per_feed = [_fetch_one_feed(tag, url, cat) for tag, url, cat in NEWS_FEEDS]
     seen_urls = set()
     out = []
     for item in itertools.chain.from_iterable(itertools.zip_longest(*per_feed)):

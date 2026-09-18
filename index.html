@@ -356,17 +356,39 @@
   .chip-chg { font-family: var(--mono); font-size: 11px; font-variant-numeric: tabular-nums; margin-top: 2px; }
   .chip-chg.good { color: var(--good); }
   .chip-chg.bad { color: var(--bad); }
-  .chip-status {
-    display: block; margin-top: 4px; font-family: var(--mono); font-size: 9px;
-    text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint);
+  .board-more-btn {
+    display: block; margin: 10px auto 0;
+    font-family: var(--mono); font-size: 10.5px; font-weight: 700; color: var(--text-faint);
+    background: none; border: 1px solid var(--border); border-radius: 20px;
+    padding: 5px 16px; cursor: pointer; letter-spacing: 0.04em;
   }
-  .chip-status.flag { color: var(--gold); }
-  .chip-status.watch { color: var(--blue); }
-  .chip-status.bad { color: var(--bad); }
+  .board-more-btn:hover { border-color: var(--gold); color: var(--gold); }
   .board-foot {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     padding: 8px 2px 0;
   }
+  /* Board popover, added 9/18 -- replaces the full side-sheet for a
+     quote chip: small, anchored under the chip, price/%/sparkline only,
+     no desk verbs at all (see boardPopContentHtml in the script). */
+  .board-pop {
+    position: fixed; z-index: 45;
+    width: min(320px, 90vw); max-height: 240px; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--border-soft); border-radius: 10px;
+    padding: 12px 14px 10px; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    animation: sheet-in 0.12s ease-out;
+  }
+  .board-pop-close {
+    position: absolute; top: 6px; right: 6px; background: none; border: none;
+    color: var(--text-faint); font-size: 16px; line-height: 1; cursor: pointer; padding: 4px;
+  }
+  .board-pop-close:hover { color: var(--text); }
+  .board-pop-title { font-family: var(--mono); font-weight: 700; font-size: 13px; color: var(--text); margin-bottom: 2px; padding-right: 16px; }
+  .board-pop-price { font-family: var(--serif); font-size: 18px; color: var(--text); font-variant-numeric: tabular-nums; }
+  .board-pop-chg { font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums; margin-left: 6px; }
+  .board-pop-chg.good { color: var(--good); }
+  .board-pop-chg.bad { color: var(--bad); }
+  .board-pop-body .sheet-chart { height: 62px; margin: 8px 0 0; }
+  .board-pop-body .sheet-chart-pending { height: 62px; margin: 8px 0 0; }
 
   /* ---- tickets ---- */
   .feed { display: flex; flex-direction: column; gap: 8px; }
@@ -823,6 +845,7 @@
       <section>
         <div class="section-title">Market board</div>
         <div class="board-strip" id="board-strip"></div>
+        <button class="board-more-btn" id="board-more-btn" type="button" hidden onclick="toggleBoardAll()"></button>
         <div class="board-foot" id="board-foot"></div>
       </section>
     </div>
@@ -895,15 +918,22 @@
     </div>
   </footer>
 
-  <!-- Shared side-sheet, added 9/17 -- one component for both board-chip
-       and desk-row detail views (see openSheet/closeSheet/openBoardSheet/
-       openDeskSheet in the script below). Replaces the earlier inline
-       per-tile expansion, which real feedback said read as "just a label
-       toggle," not a real chart or timeline. -->
+  <!-- Shared side-sheet, added 9/17 -- desk-row detail views only now
+       (see openSheet/closeSheet/openDeskSheet below); it legitimately
+       shows a real timeline, unlike a quote chip. -->
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="detail-sheet" id="detail-sheet" hidden role="dialog" aria-modal="true">
     <button class="sheet-close" id="sheet-close" type="button" aria-label="Close">&times;</button>
     <div class="sheet-body" id="sheet-body"></div>
+  </div>
+
+  <!-- Board popover, added 9/18 -- real feedback that the side-sheet
+       above was "a desk card wearing a chart" for a plain quote lookup.
+       Small, anchored, no desk verbs (see boardChipClick/HoverIn/HoverOut
+       and openBoardPop/closeBoardPop in the script below). -->
+  <div class="board-pop" id="board-pop" hidden>
+    <button class="board-pop-close" id="board-pop-close" type="button" aria-label="Close">&times;</button>
+    <div class="board-pop-body" id="board-pop-body"></div>
   </div>
 
 </div>
@@ -1279,81 +1309,64 @@
     return v.toFixed(2);
   }
 
-  // Rewritten 9/17, real feedback: the first version's "click-drawer" was
-  // a tiny inline expansion nested inside a 170px chip -- in practice
-  // indistinguishable from "clicking just toggles a 2-word chip," not a
-  // real chart. Replaced outright with one shared side-sheet component
-  // (openSheet/closeSheet below) -- hover-to-open on a hover-capable
-  // device, tap-to-open on touch, Esc/tap-outside closes, exactly one
-  // open at a time by construction (there's only one sheet element).
+  // Rewritten 9/18, real feedback: the full side-sheet (used for board
+  // chips since 9/17) was "a desk card wearing a chart" for what should
+  // be a plain quote lookup -- verbs like "on the list since 3:08" don't
+  // belong on a price tile, and a slide-over that eats half the page is
+  // the wrong weight for one number and a sparkline. Chips are now dumb
+  // (sym/tag/price/% only, no status word at all, open or closed) and
+  // clicking/hovering one opens a small anchored popover instead (see
+  // boardChipClick/HoverIn/HoverOut and openBoardPop below) -- the
+  // side-sheet stays reserved for desk-row timelines, which are real
+  // narrative content, not a quote.
   var _lastBoard = {};
+  var _boardShowAll = false;
   function renderMarketBoard(board, session) {
     _lastBoard = board || {};
-    // Fixed 9/14, real bug found while widening the board server-side:
-    // this used to filter through its OWN hardcoded symbol whitelist,
-    // which would have silently dropped every new name site-build.py now
-    // sends (the whole point of tonight's density change). The server
-    // is the single source of both which symbols appear and their order
-    // (JS object key order preserves JSON insertion order for string
-    // keys) -- no client-side whitelist to drift out of sync again.
+    // Server sends a fixed ~20-name universe now (site-build.py's
+    // BOARD_UNIVERSE, added 9/18 -- real reversal of the 9/14 "grows
+    // with whatever Watch is tracking" design, which read as a
+    // screener, not a board) -- no client-side symbol cap needed here
+    // any more, only a display cap (top 8 by move, "All" expands).
     var syms = Object.keys(board || {});
-    // Per-chip staleness tag (equity closed vs crypto always-live), same
-    // fact the old shared #board-foot caption carried, just attached to
-    // each name now that all 23 render at once instead of one at a time.
     var marketClosed = session && session.market_state !== "OPEN";
-    // Capped 9/14, real feedback: 23 chips all sitting at +0.00% after
-    // hours reads as wallpaper, not entertainment -- nothing's moving.
-    // Full density is for RTH, when it's actually true. Closed/weekend
-    // falls back to the original 8 (core index/vol + crypto proxies).
-    if (marketClosed) {
-      var CLOSED_CAP = ["SPY", "QQQ", "DIA", "VIXY", "MSTR", "COIN", "IBIT", "IREN"];
-      syms = CLOSED_CAP.filter(function (s) { return board[s]; });
-    }
-    // Sort by move size, added 9/18 -- biggest mover first instead of
-    // whatever order the server happened to send, real feedback that a
-    // static alphabetical-ish strip reads as dead even when names on it
-    // are genuinely moving.
     syms.sort(function (a, b) { return Math.abs(board[b].chg_pct) - Math.abs(board[a].chg_pct); });
-    var hoverAttr = HOVER_CAPABLE ? " onmouseenter=\"openBoardSheet('__SYM__')\"" : "";
-    var html = syms.map(function (sym) {
+    var TOP_N = 8;
+    var visibleSyms = _boardShowAll ? syms : syms.slice(0, TOP_N);
+    var html = visibleSyms.map(function (sym) {
       var c = board[sym];
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
       var tag = CRYPTO_SYMS[sym] ? "24/7" : (marketClosed ? "close" : "");
-      // Fixed 9/18, real bug seen live: a WATCHING/FLAGGED status word
-      // carried over from Watch's last real (pre-close) read kept showing
-      // on these chips hours after the desk shut -- same "looks like an
-      // active cycle" gap already fixed for the desk-board grid, just on
-      // the market-board chips instead. Closed means price + % only.
-      var statusWord = (!marketClosed && c.status) ? '<span class="chip-status ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '';
-      return '<div class="board-chip" role="button" tabindex="0" ' +
-        'onclick="openBoardSheet(\'' + sym + '\')" onkeydown="if(event.key===\'Enter\')openBoardSheet(\'' + sym + '\')"' +
-        hoverAttr.replace("__SYM__", sym) + '>' +
+      var attrs = 'onclick="boardChipClick(event,\'' + sym + '\')" onkeydown="if(event.key===\'Enter\')boardChipClick(event,\'' + sym + '\')"';
+      if (HOVER_CAPABLE) attrs += ' onmouseenter="boardChipHoverIn(event,\'' + sym + '\')" onmouseleave="boardChipHoverOut()"';
+      return '<div class="board-chip" role="button" tabindex="0" ' + attrs + '>' +
         '<div class="chip-top"><span class="chip-sym">' + sym + '</span>' +
         (tag ? '<span class="chip-tag">' + tag + '</span>' : '') + '</div>' +
         '<div class="chip-price">' + fmtPrice(sym, c.last) + '</div>' +
         '<div class="chip-chg ' + (good ? "good" : "bad") + '">' + chg + '</div>' +
-        statusWord +
         '</div>';
     }).join("");
     document.getElementById("board-strip").innerHTML = html || '<div class="board-mini-pending">building board…</div>';
+    var moreBtn = document.getElementById("board-more-btn");
+    if (moreBtn) {
+      if (syms.length > TOP_N) {
+        moreBtn.hidden = false;
+        moreBtn.textContent = _boardShowAll ? "Show top " + TOP_N : "All (" + syms.length + ")";
+      } else {
+        moreBtn.hidden = true;
+      }
+    }
   }
+  window.toggleBoardAll = function () {
+    _boardShowAll = !_boardShowAll;
+    renderMarketBoard(_lastBoard, lastSession);
+  };
 
-  // Rewritten 9/18, real feedback: 30 mini-sparklines on an idle grid
-  // read as noise, not information (worse on mobile, no hover at all).
-  // Chart now lives ONLY inside the side sheet (boardBigSparkSvg /
-  // openBoardSheet below) -- the tile itself is back to a plain quote
-  // (sym/price/%) plus an optional tiny status word, reusing
-  // desk_board's exact public vocabulary (site-build.py's
-  // map_why/_VERDICT_PUBLIC) -- no separate lexicon.
-  function boardStatusClass(status) {
-    if (status === "flagged") return "flag";
-    if (status === "watching") return "watch";
-    if (status === "ruled out") return "bad";
-    return "";
-  }
-  // Same spark, drawn large, inside the sheet -- real delayed points
-  // already on the tile, no live TradingView, no new data source.
+  // Real delayed points already on the tile, no live TradingView, no
+  // new data source -- same sparkline builder as before, now sized for
+  // the popover instead of the old full-height sheet (.board-pop-body
+  // .sheet-chart CSS shrinks it).
   function boardBigSparkSvg(vals) {
     if (!vals || vals.length < 2) return '<div class="sheet-chart-pending">Not enough data yet today.</div>';
     var maxV = Math.max.apply(null, vals), minV = Math.min.apply(null, vals);
@@ -1368,19 +1381,92 @@
     return '<svg class="sheet-chart" viewBox="0 0 300 70" preserveAspectRatio="none">' +
       '<polyline points="' + pts + '" stroke="' + (good ? "var(--good)" : "var(--bad)") + '" /></svg>';
   }
-  window.openBoardSheet = function (sym) {
+
+  // Board popover -- price/%/sparkline only, deliberately no c.status/
+  // c.why anywhere in here (that's desk-board language, banned from a
+  // quote chip per real feedback, not just when closed).
+  var boardPopEl = document.getElementById("board-pop");
+  var boardPopBodyEl = document.getElementById("board-pop-body");
+  var boardPopCloseBtn = document.getElementById("board-pop-close");
+  var _boardPopPinned = false;
+  var _boardPopSym = null;
+  var _boardPopHoverTimer = null;
+  var _boardPopHideTimer = null;
+  function boardPopContentHtml(sym) {
     var c = _lastBoard[sym];
-    if (!c) return;
+    if (!c) return "";
     var good = c.chg_pct >= 0;
-    var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
-    var html = '<div class="sheet-title">' + sym + '</div>' +
-      '<div class="sheet-sub">' + fmtPrice(sym, c.last) +
-      ' <span class="' + (good ? "good" : "bad") + '">' + chg + '</span></div>' +
-      boardBigSparkSvg(c.history) +
-      (c.status ? '<span class="desk-tag ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '') +
-      (c.why ? '<div class="sheet-why">' + c.why + '</div>' : '');
-    openSheet(html);
+    var chg = (good ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+    return '<div class="board-pop-title">' + sym + '</div>' +
+      '<div><span class="board-pop-price">' + fmtPrice(sym, c.last) + '</span>' +
+      '<span class="board-pop-chg ' + (good ? "good" : "bad") + '">' + chg + '</span></div>' +
+      boardBigSparkSvg(c.history);
+  }
+  function positionBoardPop(anchorEl) {
+    if (!boardPopEl || !anchorEl) return;
+    var r = anchorEl.getBoundingClientRect();
+    var popW = Math.min(320, window.innerWidth * 0.9);
+    var left = Math.max(10, Math.min(r.left, window.innerWidth - popW - 10));
+    var top = r.bottom + 6;
+    if (top + 220 > window.innerHeight) top = Math.max(10, r.top - 226);
+    boardPopEl.style.left = left + "px";
+    boardPopEl.style.top = top + "px";
+  }
+  function openBoardPop(sym, anchorEl, pinned) {
+    var html = boardPopContentHtml(sym);
+    if (!html || !boardPopEl) return;
+    boardPopBodyEl.innerHTML = html;
+    positionBoardPop(anchorEl);
+    boardPopEl.hidden = false;
+    _boardPopSym = sym;
+    if (pinned) _boardPopPinned = true;
+  }
+  function closeBoardPop() {
+    if (!boardPopEl) return;
+    boardPopEl.hidden = true;
+    _boardPopPinned = false;
+    _boardPopSym = null;
+  }
+  window.boardChipClick = function (e, sym) {
+    clearTimeout(_boardPopHoverTimer); clearTimeout(_boardPopHideTimer);
+    if (_boardPopPinned && _boardPopSym === sym && boardPopEl && !boardPopEl.hidden) {
+      closeBoardPop();
+      return;
+    }
+    openBoardPop(sym, e.currentTarget, true);
   };
+  window.boardChipHoverIn = function (e, sym) {
+    var anchorEl = e.currentTarget;
+    clearTimeout(_boardPopHideTimer);
+    clearTimeout(_boardPopHoverTimer);
+    _boardPopHoverTimer = setTimeout(function () {
+      if (!_boardPopPinned) openBoardPop(sym, anchorEl, false);
+    }, 200);
+  };
+  window.boardChipHoverOut = function () {
+    clearTimeout(_boardPopHoverTimer);
+    if (!_boardPopPinned) _boardPopHideTimer = setTimeout(closeBoardPop, 150);
+  };
+  if (boardPopEl) {
+    boardPopEl.addEventListener("mouseenter", function () { clearTimeout(_boardPopHideTimer); });
+    boardPopEl.addEventListener("mouseleave", function () {
+      if (!_boardPopPinned) _boardPopHideTimer = setTimeout(closeBoardPop, 150);
+    });
+  }
+  if (boardPopCloseBtn) boardPopCloseBtn.addEventListener("click", closeBoardPop);
+  document.addEventListener("click", function (e) {
+    if (boardPopEl && !boardPopEl.hidden && !e.target.closest(".board-chip, #board-pop")) closeBoardPop();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeBoardPop();
+  });
+  // Closes rather than re-anchors on scroll -- position is computed
+  // once via getBoundingClientRect (viewport-relative, same frame as
+  // position:fixed), so it would otherwise visually detach from the
+  // chip as the page scrolls underneath it.
+  window.addEventListener("scroll", function () {
+    if (boardPopEl && !boardPopEl.hidden) closeBoardPop();
+  }, true);
 
   // Fuse replay, added 9/2: a closed ticket's own 10-dot minute-by-minute
   // reel -- P&L color, not follow-through (recolored 9/2, real bug:

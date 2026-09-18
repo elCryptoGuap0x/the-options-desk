@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T22:47:17Z",
+  "generated_at": "2026-09-18T23:04:42Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -481,6 +481,123 @@
     }
   ],
   "market_board": {
+    "BTC": {
+      "last": 81165,
+      "chg_pct": 6.23,
+      "history": [
+        80949.015,
+        80882.135,
+        80837.325,
+        80825.335,
+        80838.675,
+        80859.305,
+        80875.745,
+        80859.725,
+        80816.935,
+        80951.815,
+        80949.485,
+        80907.245,
+        81041.435,
+        81124.915,
+        80901.085,
+        80962.325,
+        81007.745,
+        80988.555,
+        80983.725,
+        80945.595,
+        80889.645,
+        80987.215,
+        81037.295,
+        81082.495,
+        81015.575,
+        80996.11,
+        80994.11,
+        81095.365,
+        81179.515,
+        81158.095,
+        81165
+      ],
+      "status": "tracked",
+      "why": "Price only. Not a trade candidate."
+    },
+    "ETH": {
+      "last": 2619.34,
+      "chg_pct": 7.08,
+      "history": [
+        2605.355,
+        2603.745,
+        2603.935,
+        2606.065,
+        2606.005,
+        2606.695,
+        2605.515,
+        2604.785,
+        2608.405,
+        2608.055,
+        2611.42,
+        2623.43,
+        2620.765,
+        2610.725,
+        2611.275,
+        2612.7,
+        2612.615,
+        2616.505,
+        2614.08,
+        2611.115,
+        2618.705,
+        2620.61,
+        2622.155,
+        2627.235,
+        2627.45,
+        2626.32,
+        2618.005,
+        2618.125,
+        2619.435,
+        2616.67,
+        2619.34
+      ],
+      "status": "tracked",
+      "why": "Price only. Not a trade candidate."
+    },
+    "SOL": {
+      "last": 113.27,
+      "chg_pct": 11.69,
+      "history": [
+        112.365,
+        112.16,
+        112.375,
+        112.41,
+        112.425,
+        112.455,
+        112.51,
+        112.555,
+        112.685,
+        112.59,
+        112.615,
+        112.79,
+        112.63,
+        112.39,
+        112.47,
+        112.475,
+        112.315,
+        112.355,
+        112.265,
+        112.26,
+        112.525,
+        112.69,
+        112.745,
+        113.39,
+        113.43,
+        113.325,
+        112.9,
+        112.89,
+        113.27,
+        113.195,
+        113.27
+      ],
+      "status": "tracked",
+      "why": "Price only. Not a trade candidate."
+    },
     "SPY": {
       "last": 761.33,
       "chg_pct": -0.14,
@@ -577,6 +694,24 @@
       "status": "no setup",
       "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
+    "IWM": {
+      "last": 283.48,
+      "chg_pct": -1.08,
+      "history": [
+        286.565,
+        283.4,
+        283.415,
+        283.47,
+        283.41,
+        283.47,
+        283.445,
+        283.47,
+        283.55,
+        283.48
+      ],
+      "status": "no setup",
+      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
+    },
     "VIXY": {
       "last": 17.09,
       "chg_pct": 0.47,
@@ -595,125 +730,147 @@
       "status": "no setup",
       "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
-    "BTC": {
-      "last": 81106,
-      "chg_pct": 6.21,
+    "AAPL": {
+      "last": 335.97,
+      "chg_pct": 0.05,
       "history": [
-        80891.985,
-        80901.225,
-        80904.865,
-        80949.015,
-        80882.135,
-        80837.325,
-        80825.335,
-        80838.675,
-        80859.305,
-        80875.745,
-        80859.725,
-        80816.935,
-        80951.815,
-        80949.485,
-        80907.245,
-        81041.435,
-        81124.915,
-        80901.085,
-        80962.325,
-        81007.745,
-        80988.555,
-        80983.725,
-        80945.595,
-        80889.645,
-        80987.215,
-        81037.295,
-        81082.495,
-        81015.575,
-        80996.11,
-        80994.11,
-        81217,
-        81106
+        335.81,
+        335.225,
+        335.47,
+        335.3732,
+        335.7851,
+        335.6368,
+        335.375,
+        335.5873,
+        335.85,
+        335.83,
+        335.745,
+        335.97
       ],
-      "status": "tracked",
-      "why": "Price only. Not a trade candidate."
+      "status": "no setup",
+      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
-    "ETH": {
-      "last": 2618.77,
-      "chg_pct": 7.1,
+    "MSFT": {
+      "last": 496.4,
+      "chg_pct": 0.2,
       "history": [
-        2602.805,
-        2604.195,
-        2603.655,
-        2608.955,
-        2605.355,
-        2603.745,
-        2603.935,
-        2606.065,
-        2606.005,
-        2606.695,
-        2605.515,
-        2604.785,
-        2608.405,
-        2608.055,
-        2611.42,
-        2623.43,
-        2620.765,
-        2610.725,
-        2611.275,
-        2612.7,
-        2612.615,
-        2616.505,
-        2614.08,
-        2611.115,
-        2618.705,
-        2620.61,
-        2622.155,
-        2627.235,
-        2627.45,
-        2626.32,
-        2626.2,
-        2618.77
+        495.43,
+        494.268,
+        494.98,
+        495.15,
+        494.71,
+        494.64,
+        495.3,
+        495.22,
+        495.49,
+        496.315,
+        496.4
       ],
-      "status": "tracked",
-      "why": "Price only. Not a trade candidate."
+      "status": "no setup",
+      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
-    "SOL": {
-      "last": 112.88,
-      "chg_pct": 11.36,
+    "NVDA": {
+      "last": 219.47,
+      "chg_pct": 0.09,
       "history": [
-        112.255,
-        112.395,
-        112.45,
-        112.51,
-        112.365,
-        112.16,
-        112.375,
-        112.41,
-        112.425,
-        112.455,
-        112.51,
-        112.555,
-        112.685,
-        112.59,
-        112.615,
-        112.79,
-        112.63,
-        112.39,
-        112.47,
-        112.475,
-        112.315,
-        112.355,
-        112.265,
-        112.26,
-        112.525,
-        112.69,
-        112.745,
-        113.39,
-        113.43,
-        113.325,
-        113.28,
-        112.88
+        219.91,
+        220.3718,
+        220.09,
+        219.52,
+        219.25,
+        219.26,
+        219.11,
+        219.24,
+        219.36,
+        219.73,
+        219.645,
+        219.548,
+        219.4,
+        219.34,
+        219.565,
+        219.58,
+        219.655,
+        219.725,
+        220.1,
+        220.035,
+        219.775,
+        219.7783,
+        219.585,
+        219.475,
+        219.54,
+        219.405,
+        219.47,
+        219.33,
+        219.72,
+        219.47
       ],
-      "status": "tracked",
-      "why": "Price only. Not a trade candidate."
+      "status": "ruled out",
+      "why": "Ruled out 3:08 PM ET \u2014 already ran."
+    },
+    "AMZN": {
+      "last": 254.23,
+      "chg_pct": 1.24,
+      "history": [
+        251.105,
+        252.365,
+        252.495,
+        252.35,
+        253.02,
+        255.085,
+        254.75,
+        253.855,
+        253.13,
+        252.88,
+        252.9301,
+        253.05,
+        253.1,
+        253.35,
+        253.7459,
+        254.34,
+        254.23
+      ],
+      "status": "watching",
+      "why": "On the list since 3:08 PM ET. No look yet."
+    },
+    "META": {
+      "last": 672.07,
+      "chg_pct": -0.86,
+      "history": [
+        677.92,
+        670.805,
+        671.19,
+        670.91,
+        670.93,
+        671.28,
+        670.9986,
+        671.195,
+        671.625,
+        672.78,
+        672.82,
+        672.07
+      ],
+      "status": "no setup",
+      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
+    },
+    "TSLA": {
+      "last": 363.71,
+      "chg_pct": -1.2,
+      "history": [
+        368.135,
+        362.91,
+        362.88,
+        363.53,
+        363.7066,
+        363.259,
+        362.89,
+        364.01,
+        362.9401,
+        363.46,
+        363.455,
+        363.71
+      ],
+      "status": "no setup",
+      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
     "MSTR": {
       "last": 152.15,
@@ -791,6 +948,24 @@
       "status": "flagged",
       "why": "Flagged 3:08 PM ET \u2014 +13.2% today."
     },
+    "HOOD": {
+      "last": 119.24,
+      "chg_pct": 10.95,
+      "history": [
+        107.47,
+        119.5707,
+        120.415,
+        119.61,
+        119.2,
+        119.145,
+        119.1,
+        119.23,
+        119.2,
+        119.24
+      ],
+      "status": "watching",
+      "why": "On the list since 3:08 PM ET. No look yet."
+    },
     "IBIT": {
       "last": 45.94,
       "chg_pct": 5.7,
@@ -867,220 +1042,6 @@
       "status": "flagged",
       "why": "Flagged 3:08 PM ET \u2014 +5.8% today."
     },
-    "GNRC": {
-      "last": 205.25,
-      "chg_pct": -1.57,
-      "history": [
-        208.52,
-        202.33,
-        203.3,
-        204.25,
-        203.865,
-        203.52,
-        205.13,
-        205.16,
-        204.745,
-        204.71,
-        204.46,
-        204.54,
-        205.38,
-        205.25
-      ],
-      "status": "flagged",
-      "why": "Flagged 3:08 PM ET \u2014 -1.6% today."
-    },
-    "AMZN": {
-      "last": 254.23,
-      "chg_pct": 1.24,
-      "history": [
-        251.105,
-        252.365,
-        252.495,
-        252.35,
-        253.02,
-        255.085,
-        254.75,
-        253.855,
-        253.13,
-        252.88,
-        252.9301,
-        253.05,
-        253.1,
-        253.35,
-        253.7459,
-        254.34,
-        254.23
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "CRCL": {
-      "last": 91.17,
-      "chg_pct": 8.01,
-      "history": [
-        84.41,
-        91.41,
-        91.25,
-        91.22,
-        91.5365,
-        91.22,
-        90.905,
-        91.08,
-        91.07,
-        90.9827,
-        91.12,
-        91.17
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "HOOD": {
-      "last": 119.24,
-      "chg_pct": 10.95,
-      "history": [
-        107.47,
-        119.5707,
-        120.415,
-        119.61,
-        119.2,
-        119.145,
-        119.1,
-        119.23,
-        119.2,
-        119.24
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "INTC": {
-      "last": 106.93,
-      "chg_pct": -3.58,
-      "history": [
-        109.03,
-        108.4,
-        108.13,
-        108.14,
-        107.92,
-        107.91,
-        107.65,
-        107.28,
-        107.39,
-        107.2,
-        106.995,
-        107.16,
-        106.89,
-        106.6926,
-        106.7,
-        106.965,
-        106.885,
-        106.945,
-        106.915,
-        106.9376,
-        107.115,
-        107.105,
-        106.9795,
-        106.85,
-        106.84,
-        106.6376,
-        106.63,
-        106.52,
-        107.02,
-        106.93
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "MRVL": {
-      "last": 238.22,
-      "chg_pct": -1.52,
-      "history": [
-        241.89,
-        237.93,
-        238.09,
-        237.975,
-        237.95,
-        237.8897,
-        237.77,
-        237.715,
-        238.115,
-        238.22
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "MU": {
-      "last": 1009.32,
-      "chg_pct": 3.66,
-      "history": [
-        973.725,
-        999.645,
-        999.27,
-        1002.99,
-        1001.28,
-        1004.445,
-        1005.83,
-        1008.7143,
-        1009.32
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "SMCI": {
-      "last": 38.91,
-      "chg_pct": -3.21,
-      "history": [
-        38.78,
-        38.685,
-        38.6615,
-        38.561,
-        38.61,
-        38.7739,
-        38.585,
-        38.665,
-        38.545,
-        38.6183,
-        38.8097,
-        38.82,
-        38.58,
-        38.485,
-        38.5,
-        38.61,
-        38.76,
-        38.7151,
-        38.815,
-        38.875,
-        38.8755,
-        38.965,
-        38.925,
-        38.835,
-        38.805,
-        38.712,
-        38.775,
-        38.78,
-        38.8691,
-        38.91
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "USO": {
-      "last": 153.41,
-      "chg_pct": -1.84,
-      "history": [
-        156.285,
-        154.315,
-        154.32,
-        154.19,
-        154.14,
-        154.15,
-        154.035,
-        153.675,
-        153.575,
-        153.41
-      ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
     "XLE": {
       "last": 64.32,
       "chg_pct": 0.02,
@@ -1098,320 +1059,6 @@
       ],
       "status": "watching",
       "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    "NVDA": {
-      "last": 219.47,
-      "chg_pct": 0.09,
-      "history": [
-        219.91,
-        220.3718,
-        220.09,
-        219.52,
-        219.25,
-        219.26,
-        219.11,
-        219.24,
-        219.36,
-        219.73,
-        219.645,
-        219.548,
-        219.4,
-        219.34,
-        219.565,
-        219.58,
-        219.655,
-        219.725,
-        220.1,
-        220.035,
-        219.775,
-        219.7783,
-        219.585,
-        219.475,
-        219.54,
-        219.405,
-        219.47,
-        219.33,
-        219.72,
-        219.47
-      ],
-      "status": "ruled out",
-      "why": "Ruled out 3:08 PM ET \u2014 already ran."
-    },
-    "AAPL": {
-      "last": 335.97,
-      "chg_pct": 0.05,
-      "history": [
-        335.81,
-        335.225,
-        335.47,
-        335.3732,
-        335.7851,
-        335.6368,
-        335.375,
-        335.5873,
-        335.85,
-        335.83,
-        335.745,
-        335.97
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "ADBE": {
-      "last": 249.88,
-      "chg_pct": -0.24,
-      "history": [
-        250.47,
-        249.23,
-        249.505,
-        249.49,
-        249.6125,
-        249.28,
-        249.92,
-        250.02,
-        249.88
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "BMNR": {
-      "last": 26.12,
-      "chg_pct": 7.31,
-      "history": [
-        24.34,
-        25.7001,
-        25.69,
-        25.78,
-        26.025,
-        25.9906,
-        26.045,
-        26.075,
-        26.0463,
-        26.0204,
-        26.025,
-        26.12
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "BSOL": {
-      "last": 15.54,
-      "chg_pct": 11.0,
-      "history": [
-        13.9998,
-        15.4661,
-        15.47,
-        15.49,
-        15.525,
-        15.51,
-        15.495,
-        15.53,
-        15.535,
-        15.4926,
-        15.48,
-        15.54
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "CRWD": {
-      "last": 239.98,
-      "chg_pct": -2.77,
-      "history": [
-        246.82,
-        238.74,
-        238.56,
-        238.52,
-        238.54,
-        240.74,
-        239.67,
-        240.04,
-        239.98
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "ETHA": {
-      "last": 19.79,
-      "chg_pct": 6.29,
-      "history": [
-        18.6191,
-        19.5799,
-        19.555,
-        19.635,
-        19.69,
-        19.695,
-        19.67,
-        19.695,
-        19.75,
-        19.71,
-        19.735,
-        19.79
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "IWM": {
-      "last": 283.48,
-      "chg_pct": -1.08,
-      "history": [
-        286.565,
-        283.4,
-        283.415,
-        283.47,
-        283.41,
-        283.47,
-        283.445,
-        283.47,
-        283.55,
-        283.48
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "LEN": {
-      "last": 76.54,
-      "chg_pct": -1.93,
-      "history": [
-        78.045,
-        76.13,
-        76.1,
-        76.135,
-        76.315,
-        76.165,
-        76.34,
-        76.48,
-        76.54
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "META": {
-      "last": 672.07,
-      "chg_pct": -0.86,
-      "history": [
-        677.92,
-        670.805,
-        671.19,
-        670.91,
-        670.93,
-        671.28,
-        670.9986,
-        671.195,
-        671.625,
-        672.78,
-        672.82,
-        672.07
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "MSFT": {
-      "last": 496.4,
-      "chg_pct": 0.2,
-      "history": [
-        495.43,
-        494.268,
-        494.98,
-        495.15,
-        494.71,
-        494.64,
-        495.3,
-        495.22,
-        495.49,
-        496.315,
-        496.4
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "NEE": {
-      "last": 80.57,
-      "chg_pct": -0.76,
-      "history": [
-        81.19,
-        80.57,
-        80.66,
-        80.5114,
-        80.52,
-        80.625,
-        80.62,
-        80.63,
-        80.57
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "PANW": {
-      "last": 362.7,
-      "chg_pct": -3.1,
-      "history": [
-        374.305,
-        363.16,
-        362.83,
-        363.205,
-        363.3,
-        363.0,
-        362.37,
-        362.4625,
-        362.7
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "SOXX": {
-      "last": 525.78,
-      "chg_pct": 1.17,
-      "history": [
-        519.7,
-        524.63,
-        524.59,
-        524.32,
-        524.22,
-        524.29,
-        524.475,
-        525.0101,
-        525.78
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "TSLA": {
-      "last": 363.71,
-      "chg_pct": -1.2,
-      "history": [
-        368.135,
-        362.91,
-        362.88,
-        363.53,
-        363.7066,
-        363.259,
-        362.89,
-        364.01,
-        362.9401,
-        363.46,
-        363.455,
-        363.71
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
-    },
-    "XOM": {
-      "last": 162.24,
-      "chg_pct": -0.26,
-      "history": [
-        162.67,
-        162.7462,
-        162.695,
-        162.755,
-        162.895,
-        162.74,
-        162.675,
-        162.62,
-        162.24
-      ],
-      "status": "no setup",
-      "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     }
   },
   "news": [
@@ -1424,10 +1071,10 @@
     },
     {
       "tag": "FED",
-      "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
-      "summary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
-      "ts": "2026-09-18T15:00:00Z"
+      "title": "Federal Reserve issues FOMC statement",
+      "summary": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "ts": "2026-09-16T18:00:00Z"
     },
     {
       "tag": "MARKETS",
@@ -1438,10 +1085,10 @@
     },
     {
       "tag": "FED",
-      "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related ",
-      "summary": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
-      "ts": "2026-09-18T15:00:00Z"
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "ts": "2026-09-16T18:00:00Z"
     },
     {
       "tag": "MARKETS",
@@ -1452,10 +1099,10 @@
     },
     {
       "tag": "FED",
-      "title": "Federal Reserve issues FOMC statement",
-      "summary": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "ts": "2026-09-16T18:00:00Z"
+      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "ts": "2026-08-25T18:00:00Z"
     },
     {
       "tag": "MARKETS",
@@ -1466,10 +1113,10 @@
     },
     {
       "tag": "FED",
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
-      "ts": "2026-09-16T18:00:00Z"
+      "title": "Minutes of the Federal Open Market Committee, July 28\u201329, 2026",
+      "summary": "Minutes of the Federal Open Market Committee, July 28\u201329, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+      "ts": "2026-08-19T18:00:00Z"
     },
     {
       "tag": "MARKETS",
@@ -1479,11 +1126,11 @@
       "ts": "2024-11-22T08:34:00Z"
     },
     {
-      "tag": "FED",
-      "title": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service pr",
-      "summary": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm",
-      "ts": "2026-09-11T14:00:00Z"
+      "tag": "MARKETS",
+      "title": "Germany flash services PMI falls to 9-month low of 49.4",
+      "summary": "",
+      "url": "https://www.marketwatch.com/story/germany-flash-services-pmi-falls-to-9-month-low-of-49-4-5e5d2763?mod=mw_rss_realtimeheadlines",
+      "ts": "2024-11-22T08:34:00Z"
     }
   ],
   "calendar": [
@@ -1632,28 +1279,28 @@
         "chg_pct": 13.24
       },
       {
-        "sym": "BSOL",
-        "chg_pct": 11.0
+        "sym": "HOOD",
+        "chg_pct": 10.95
       }
     ],
     "down": [
       {
-        "sym": "INTC",
-        "chg_pct": -3.58
+        "sym": "TSLA",
+        "chg_pct": -1.2
       },
       {
-        "sym": "SMCI",
-        "chg_pct": -3.21
+        "sym": "IWM",
+        "chg_pct": -1.08
       },
       {
-        "sym": "PANW",
-        "chg_pct": -3.1
+        "sym": "META",
+        "chg_pct": -0.86
       }
     ]
   },
   "desk_freshness": {
     "watch": "2:08",
-    "crypto": "3:37"
+    "crypto": "6:04"
   },
   "desk_board": [
     {
@@ -1908,13 +1555,19 @@
         "line": "Ruled out \u2014 already ran."
       }
     ],
-    "BSOL": [
+    "TSLA": [
       {
         "t": null,
         "line": "not a setup"
       }
     ],
-    "PANW": [
+    "IWM": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "META": [
       {
         "t": null,
         "line": "not a setup"
