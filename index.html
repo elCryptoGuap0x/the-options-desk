@@ -105,6 +105,12 @@
     .ribbon-track { animation: none; }
     .ribbon-wrap { overflow-x: auto; }
   }
+  /* Added 9/18, real feedback: the ribbon rendered as one flat-color
+     text node -- no way to color individual %s without real markup. */
+  .ribbon-content .good { color: var(--good); font-weight: 600; }
+  .ribbon-content .bad { color: var(--bad); font-weight: 600; }
+  .ribbon-content .ribbon-desk { color: var(--text); font-weight: 700; }
+  .ribbon-content .ribbon-sep { color: var(--text-faint); }
 
   header { margin-bottom: 26px; text-align: center; }
   .eyebrow {
@@ -1665,35 +1671,51 @@
     var parts = [];
     var session = data.session;
     if (session) {
-      parts.push(session.market_state === "OPEN"
+      var deskLabel = session.market_state === "OPEN"
         ? "DESK OPEN"
-        : "DESK " + session.market_state + " · NEXT OPEN " + (session.next_open || "--"));
+        : "DESK " + session.market_state + " · NEXT OPEN " + (session.next_open || "--");
+      parts.push('<span class="ribbon-desk">' + deskLabel + "</span>");
     }
     var board = data.market_board || {};
+    // Fixed 9/18, real feedback: capping this at the top 10 movers meant
+    // a day where crypto genuinely moved most (today) pushed every
+    // steady-state name (SPY, QQQ, AAPL...) off the ribbon entirely --
+    // "only crypto/crypto-proxies" wasn't a data gap, it was this cap.
+    // Full board now, still biggest-move-first for a little variety.
     Object.keys(board)
       .sort(function (a, b) { return Math.abs(board[b].chg_pct) - Math.abs(board[a].chg_pct); })
-      .slice(0, 10)
       .forEach(function (sym) {
         var c = board[sym];
-        var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
-        parts.push(sym + " " + fmtPrice(sym, c.last) + " " + chg);
+        var good = c.chg_pct >= 0;
+        var chg = (good ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+        parts.push(sym + " " + fmtPrice(sym, c.last) + ' <span class="' + (good ? "good" : "bad") + '">' + chg + "</span>");
       });
     todaysTickets(data.tickets).forEach(function (t) {
-      parts.push(t.sym + " " + (t.dir === "call" ? "C" : "P") + " " + fmtPct(t.pct));
+      var good = t.pct >= 0;
+      parts.push(t.sym + " " + (t.dir === "call" ? "C" : "P") + ' <span class="' + (good ? "good" : "bad") + '">' + fmtPct(t.pct) + "</span>");
     });
     return parts;
   }
   function renderRibbon(data) {
     var wrapEl = document.getElementById("ribbon-wrap");
+    var trackEl = document.getElementById("ribbon-track");
     var aEl = document.getElementById("ribbon-content-a");
     var bEl = document.getElementById("ribbon-content-b");
-    if (!wrapEl || !aEl || !bEl) return;
+    if (!wrapEl || !trackEl || !aEl || !bEl) return;
     var parts = ribbonPieces(data);
     if (!parts.length) { wrapEl.hidden = true; return; }
-    var text = parts.join("   ·   ");
-    aEl.textContent = text;
-    bEl.textContent = text;
+    var html = parts.join('<span class="ribbon-sep">   ·   </span>');
+    aEl.innerHTML = html;
+    bEl.innerHTML = html;
     wrapEl.hidden = false;
+    // Constant scroll speed regardless of content length, added 9/18 --
+    // showing the full board (above) makes a much longer loop than the
+    // old top-10 cap; a fixed animation-duration would just scroll it
+    // faster instead of longer. ~55px/s reads comfortably either way.
+    var width = aEl.getBoundingClientRect().width;
+    if (width > 0) {
+      trackEl.style.animationDuration = Math.max(20, width / 55) + "s";
+    }
   }
 
   function renderCalendar(items) {
