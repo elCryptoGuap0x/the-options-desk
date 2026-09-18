@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T23:18:26Z",
+  "generated_at": "2026-09-18T23:44:35Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -482,8 +482,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81161,
-      "chg_pct": 6.19,
+      "last": 80873,
+      "chg_pct": 5.89,
       "history": [
         80837.325,
         80825.335,
@@ -517,14 +517,15 @@
         81130.755,
         81161,
         81161,
-        81161
+        81161,
+        80873
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2619.38,
-      "chg_pct": 7.08,
+      "last": 2611.13,
+      "chg_pct": 6.77,
       "history": [
         2603.935,
         2606.065,
@@ -558,14 +559,15 @@
         2617.845,
         2619.38,
         2619.38,
-        2619.38
+        2619.38,
+        2611.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.38,
-      "chg_pct": 11.72,
+      "last": 112.94,
+      "chg_pct": 11.27,
       "history": [
         112.375,
         112.41,
@@ -599,7 +601,8 @@
         113.335,
         113.38,
         113.38,
-        113.38
+        113.38,
+        112.94
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
