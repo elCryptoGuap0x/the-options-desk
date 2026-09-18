@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T21:54:35Z",
+  "generated_at": "2026-09-18T22:47:17Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -596,8 +596,8 @@
       "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 81217,
-      "chg_pct": 6.32,
+      "last": 81106,
+      "chg_pct": 6.21,
       "history": [
         80891.985,
         80901.225,
@@ -629,14 +629,15 @@
         81015.575,
         80996.11,
         80994.11,
-        81217
+        81217,
+        81106
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2626.2,
-      "chg_pct": 7.3,
+      "last": 2618.77,
+      "chg_pct": 7.1,
       "history": [
         2602.805,
         2604.195,
@@ -668,14 +669,15 @@
         2627.235,
         2627.45,
         2626.32,
-        2626.2
+        2626.2,
+        2618.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.28,
-      "chg_pct": 11.94,
+      "last": 112.88,
+      "chg_pct": 11.36,
       "history": [
         112.255,
         112.395,
@@ -707,7 +709,8 @@
         113.39,
         113.43,
         113.325,
-        113.28
+        113.28,
+        112.88
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1413,34 +1416,74 @@
   },
   "news": [
     {
-      "tag": "Markets",
-      "title": "It\u2019s almost impossible to sell a condo unit these days: \u2018I feel trapped\u2019",
-      "summary": "Selling a condominium unit has become a challenge for many, as buyers get spooked at the prospect of bearing ever-rising HOA fees \u2014 even if the home comes with a lower price tag."
+      "tag": "MARKETS",
+      "title": "Elon Musk in a post on X says some of his Trump posts \u2018went too far\u2019 and that he regrets them",
+      "summary": "",
+      "url": "https://www.marketwatch.com/story/elon-musk-in-a-post-on-x-says-some-of-his-trump-posts-went-too-far-and-that-he-regrets-them-90e73a6a?mod=mw_rss_realtimeheadlines",
+      "ts": "2025-06-11T07:09:00Z"
     },
     {
-      "tag": "Markets",
-      "title": "Amazon, Palantir and 12 more top tech stock picks from UBS analysts",
-      "summary": "The AI data-center buildout is still early, and UBS says investors can cash in through investments across the technology, media and telecommunications sectors."
+      "tag": "FED",
+      "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+      "summary": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
+      "ts": "2026-09-18T15:00:00Z"
     },
     {
-      "tag": "Markets",
-      "title": "Stocks are failing the \u2018breadth\u2019 test, but options traders still see reason to buy",
-      "summary": "An options volatility tracker has produced a \u201cspike peak\u201d buy signal for stocks for the first time in months, at a time that internal market indicators are negative."
+      "tag": "MARKETS",
+      "title": "Bank of England decision on Thursday will be at 12:02 p.m. local time instead of 12 p.m., due to VE Day\u2019s two minutes of silence",
+      "summary": "",
+      "url": "https://www.marketwatch.com/story/bank-of-england-decision-on-thursday-will-be-at-12-02-p-m-local-time-instead-of-12-p-m-due-to-ve-day-two-minutes-of-silence-1f6bed66?mod=mw_rss_realtimeheadlines",
+      "ts": "2025-05-06T11:59:00Z"
     },
     {
-      "tag": "Markets",
-      "title": "Most of what you know about data centers is wrong",
-      "summary": "As AI hysteria reaches a fever pitch, it\u2019s time to look at the evidence."
+      "tag": "FED",
+      "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related ",
+      "summary": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
+      "ts": "2026-09-18T15:00:00Z"
     },
     {
-      "tag": "Markets",
-      "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
-      "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%."
+      "tag": "MARKETS",
+      "title": "Swiss National Bank cuts interest rates by a half point to 0.5%",
+      "summary": "",
+      "url": "https://www.marketwatch.com/story/swiss-national-bank-cuts-interest-rates-by-a-half-point-to-0-5-ed1fce78?mod=mw_rss_realtimeheadlines",
+      "ts": "2024-12-12T08:32:00Z"
     },
     {
-      "tag": "Markets",
-      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
-      "summary": "\u201cI racked up this debt to cover my living expenses for two years without an income stream.\u201d"
+      "tag": "FED",
+      "title": "Federal Reserve issues FOMC statement",
+      "summary": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "ts": "2026-09-16T18:00:00Z"
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Dollar jumps 0.5% to 0.8890 francs",
+      "summary": "",
+      "url": "https://www.marketwatch.com/story/dollar-jumps-0-5-to-0-8890-francs-047c6b4d?mod=mw_rss_realtimeheadlines",
+      "ts": "2024-12-12T08:32:00Z"
+    },
+    {
+      "tag": "FED",
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "ts": "2026-09-16T18:00:00Z"
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Germany flash manufacturing PMI rises to 4-month high of 43.2",
+      "summary": "",
+      "url": "https://www.marketwatch.com/story/germany-flash-manufacturing-pmi-rises-to-4-month-high-of-43-2-b9e50a64?mod=mw_rss_realtimeheadlines",
+      "ts": "2024-11-22T08:34:00Z"
+    },
+    {
+      "tag": "FED",
+      "title": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service pr",
+      "summary": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm",
+      "ts": "2026-09-11T14:00:00Z"
     }
   ],
   "calendar": [
