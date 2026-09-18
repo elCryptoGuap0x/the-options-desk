@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:48:28Z",
+  "generated_at": "2026-09-18T17:51:31Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -8,13 +8,13 @@
     "position": "FLAT"
   },
   "stats": {
-    "record": "0-4",
-    "win_rate": "0%",
-    "trades_this_week": 4,
+    "record": "2-5",
+    "win_rate": "29%",
+    "trades_this_week": 7,
     "typical_hold": "0DTE-2DTE",
-    "avg_win": "\u2014",
-    "avg_loss": "-17.0%",
-    "net_per_ticket": "-17.0%",
+    "avg_win": "+9.7%",
+    "avg_loss": "-16.3%",
+    "net_per_ticket": "-8.8%",
     "hold_typ": "~11 min",
     "prior_week_record": "1-3",
     "session_pnl_usd": 0.0,
@@ -23,9 +23,12 @@
   "sparkline_cum_pct": [
     0.0,
     -14.9,
-    -25.6,
-    -51.9,
-    -68.0
+    -14.0,
+    -40.3,
+    -56.4,
+    -70.0,
+    -80.4,
+    -61.9
   ],
   "prior_week_sparkline_cum_pct": [
     0,
@@ -35,6 +38,23 @@
     -93.7
   ],
   "tickets": [
+    {
+      "day": "Fri 9/18",
+      "sym": "COIN",
+      "dir": "call",
+      "pct": 18.5,
+      "entry_price": "1.35",
+      "exit_price": "1.60",
+      "dte": "0DTE"
+    },
+    {
+      "day": "Fri 9/18",
+      "sym": "AMZN",
+      "dir": "call",
+      "pct": -10.4,
+      "entry_price": "0.77",
+      "exit_price": "0.69"
+    },
     {
       "day": "Wed 9/16",
       "sym": "COIN",
@@ -353,13 +373,13 @@
   "roast": "Session over. +$0.",
   "streak_last8": [
     "L",
-    "W",
     "L",
     "L",
     "L",
     "L",
     "L",
-    "L"
+    "L",
+    "W"
   ],
   "weeks": [
     {
@@ -400,8 +420,8 @@
     },
     {
       "week_label": "9/14\u2013\u2026",
-      "record": "0-4",
-      "net_usd": -78,
+      "record": "2-5",
+      "net_usd": -60,
       "avg_hold": "11 min",
       "disasters": 0,
       "product": "current system",
@@ -502,10 +522,9 @@
       "why": "Looked 1:41 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80812.74,
-      "chg_pct": 3.58,
+      "last": 80873.68,
+      "chg_pct": 3.66,
       "history": [
-        81025.005,
         81006.365,
         80942.035,
         80953.045,
@@ -534,16 +553,16 @@
         80661.565,
         80738.795,
         80745.065,
-        80812.74
+        80812.74,
+        80873.685
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2599.14,
-      "chg_pct": 3.81,
+      "last": 2605.47,
+      "chg_pct": 4.07,
       "history": [
-        2600.56,
         2595.2,
         2594.025,
         2595.805,
@@ -572,7 +591,8 @@
         2588.955,
         2592.79,
         2594.44,
-        2599.135
+        2599.135,
+        2605.47
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1212,7 +1232,7 @@
     "no_shape_count": 11,
     "filled": 13
   },
-  "scan_log_public": "21 looked, 13 filled.",
+  "scan_log_public": "Closed <span class=\"desk-tag good\">COIN</span> +18.5%.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1246,7 +1266,7 @@
   },
   "desk_freshness": {
     "watch": "12:41",
-    "crypto": "12:48"
+    "crypto": "12:51"
   },
   "desk_board": [
     {
@@ -1313,7 +1333,7 @@
       },
       {
         "t": "11:56 AM ET",
-        "line": "Closed out."
+        "line": "Closed -10.4%."
       }
     ],
     "COIN": [
