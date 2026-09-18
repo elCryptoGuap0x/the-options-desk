@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T13:44:20Z",
+  "generated_at": "2026-09-18T13:47:23Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -448,43 +448,46 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 79123.77,
-      "chg_pct": 1.41,
+      "last": 79729.01,
+      "chg_pct": 2.19,
       "history": [
         78020.865,
         77983.445,
         78327.595,
         78413.165,
         78883.355,
-        79123.77
+        79123.77,
+        79729.005
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2533.91,
-      "chg_pct": 1.21,
+      "last": 2546.83,
+      "chg_pct": 1.72,
       "history": [
         2503.685,
         2496.595,
         2509.3,
         2509.345,
         2527.835,
-        2533.91
+        2533.91,
+        2546.83
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 107.78,
-      "chg_pct": 1.91,
+      "last": 108.06,
+      "chg_pct": 2.17,
       "history": [
         105.765,
         105.44,
         106.365,
         106.735,
         107.565,
-        107.78
+        107.78,
+        108.065
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
@@ -845,8 +848,8 @@
         "chg_pct": 2.3
       },
       {
-        "sym": "IREN",
-        "chg_pct": 2.1
+        "sym": "BTC",
+        "chg_pct": 2.19
       }
     ],
     "down": [
@@ -862,7 +865,7 @@
   },
   "desk_freshness": {
     "watch": "8:12",
-    "crypto": "8:44"
+    "crypto": "8:47"
   },
   "desk_board": [
     {
@@ -878,10 +881,10 @@
       "chg_pct": 2.3
     },
     {
-      "sym": "IREN",
+      "sym": "BTC",
       "status": "HOT",
       "why": "not a setup",
-      "chg_pct": 2.1
+      "chg_pct": 2.19
     },
     {
       "sym": "INTC",
@@ -969,6 +972,12 @@
       {
         "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
+      }
+    ],
+    "BTC": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
       }
     ],
     "SPY": [
