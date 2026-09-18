@@ -254,13 +254,6 @@
   @keyframes desk-stamp { from { opacity: 0; transform: translateY(-2px) scale(1.02); } to { opacity: 1; transform: none; } }
   .desk-row { animation: desk-stamp 0.18s ease-out; }
   .desk-section { margin: 28px 0 0; }
-  .desk-movers { display: flex; gap: 16px; margin-top: 10px; font-family: var(--mono); font-size: 11px; }
-  .desk-movers-col { display: flex; flex-direction: column; gap: 4px; flex: 1; }
-  .desk-movers-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); }
-  .desk-mover-row { display: flex; justify-content: space-between; }
-  .desk-mover-row .sym { color: var(--text-dim); }
-  .desk-mover-chg.good { color: var(--good); }
-  .desk-mover-chg.bad { color: var(--bad); }
   .desk-freshness {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-soft);
@@ -270,12 +263,28 @@
   .desk-row { cursor: pointer; }
   .desk-row:hover { border-color: var(--gold-dim); }
   .desk-row:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
-  /* Added 9/15 -- auto-rotator through the desk-log/movers/freshness
-     blocks (~8s each), reusing the existing carousel-dot look. .active
-     here uses --gold directly since this section isn't a .carousel-card
-     (no local --accent custom property to fall back on). */
-  .desk-rotator-dots { justify-content: center; margin-top: 8px; }
-  .desk-rotator-dots .carousel-dot.active { background: var(--gold); }
+  /* Desk-facts lines, added 9/18 -- replaces both the empty WATCH/OUT
+     grid and the deleted Top Up/Down rotator when the desk is closed:
+     real feedback that a giant dashed empty box read as "vacant seats,"
+     and Top Up/Down duplicated the ribbon/board (both already sort by
+     |%|). Plain text, no card chrome -- the point is reading it in five
+     seconds, not another widget. */
+  .desk-facts-line { font-family: var(--mono); font-size: 12.5px; color: var(--text-dim); line-height: 1.7; }
+  .desk-facts-line .good { color: var(--good); font-weight: 700; }
+  .desk-facts-line .bad { color: var(--bad); font-weight: 700; }
+  .macro-section { margin: 28px 0 0; }
+  .macro-strip {
+    display: flex; flex-wrap: wrap; gap: 8px 22px;
+    font-family: var(--mono); font-size: 12.5px; color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+  .macro-strip .macro-label { color: var(--text-faint); margin-right: 4px; }
+  .btc-range-line {
+    margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border-soft);
+    font-family: var(--mono); font-size: 11.5px; color: var(--text-faint);
+  }
+  .btc-range-line .good { color: var(--good); font-weight: 700; }
+  .btc-range-line .bad { color: var(--bad); font-weight: 700; }
 
   /* Added 9/14 -- on a day with zero trades this week, the 8-tile stat
      block was almost entirely dashes ("0-0", "--" x6), which a stranger
@@ -499,7 +508,7 @@
   .weeks-table { display: flex; flex-direction: column; gap: 8px; }
   .weeks-row {
     display: grid;
-    grid-template-columns: 64px auto 1fr auto auto 1fr;
+    grid-template-columns: 64px auto 1fr auto auto;
     gap: 14px;
     align-items: center;
     background: var(--surface);
@@ -512,7 +521,7 @@
   .weeks-row.current { border-color: var(--gold); }
   .weeks-header {
     display: grid;
-    grid-template-columns: 64px auto 1fr auto auto 1fr;
+    grid-template-columns: 64px auto 1fr auto auto;
     gap: 14px;
     padding: 0 16px 6px;
     font-family: var(--mono);
@@ -528,7 +537,6 @@
   .wk-net.bad { color: var(--bad); }
   .wk-pending { color: var(--text-faint); font-style: italic; }
   .weeks-row .wk-disasters { color: var(--text-dim); }
-  .weeks-row .wk-notes { font-family: var(--sans); font-size: 11px; color: var(--text-dim); text-align: right; }
   .ticket .time { font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: right; }
   .ticket .dur { font-family: var(--mono); font-size: 10px; color: var(--text-faint); text-align: right; min-width: 40px; }
   .ticket .pct { font-family: var(--mono); font-weight: 700; font-size: 14.5px; text-align: right; min-width: 62px; font-variant-numeric: tabular-nums; }
@@ -693,12 +701,17 @@
      game instead of a rail-card postage stamp -- doubled internal
      resolution (300x170 -> 640x220) to match, still just CSS-scaled via
      width:100%, no separate mobile/desktop asset. */
-  .game-section { margin: 28px 0 0; max-width: 720px; margin-left: auto; margin-right: auto; }
+  /* Hairline separating real content above from the game below, added
+     9/18 -- a visual "you're past the desk now" cue instead of one
+     continuous scroll. */
+  .section-hr { border: none; border-top: 1px solid var(--border-soft); margin: 34px 0 6px; }
+  .game-section { margin: 18px 0 0; max-width: 520px; margin-left: auto; margin-right: auto; }
   .game-card {
     background: var(--surface); border: 1px solid var(--border-soft); border-left: 3px solid var(--gold);
-    border-radius: 0 10px 10px 0; padding: 18px 20px 16px;
+    border-radius: 0 10px 10px 0; padding: 13px 16px 12px;
   }
-  .game-note { font-family: var(--mono); font-size: 11.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 10px; }
+  .game-note { font-family: var(--mono); font-size: 10px; color: var(--text-faint); line-height: 1.5; margin-bottom: 8px; }
+  .game-section .section-title { font-size: 13px; color: var(--text-faint); margin-bottom: 8px; }
   .game-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
   #desk-runner-canvas {
     background: var(--bg); border: 1px solid var(--border-soft); border-radius: 8px;
@@ -856,9 +869,18 @@
     <div class="section-title">On the desk</div>
     <div class="feed" id="scan-log"></div>
     <div class="desk-board" id="desk-board"></div>
-    <div class="desk-movers" id="desk-movers"></div>
     <div class="desk-freshness" id="desk-freshness"></div>
-    <div class="carousel-dots desk-rotator-dots" id="desk-rotator-dots"></div>
+  </section>
+
+  <!-- Added 9/18: real, free numbers below the fold instead of a third
+       copy of the tape -- 10Y/DXY/WTI/VIX last print (Yahoo) and BTC's
+       real 24h range (CoinGecko), both already fetched by the 24/7
+       Action. Hidden entirely if neither field is present yet rather
+       than show an empty strip. -->
+  <section class="macro-section" id="macro-section" hidden>
+    <div class="section-title">Macro</div>
+    <div class="macro-strip" id="macro-strip"></div>
+    <div class="btc-range-line" id="btc-range-line"></div>
   </section>
 
   <section class="weeks-section">
@@ -866,6 +888,10 @@
     <div class="weeks-table" id="weeks-table"></div>
   </section>
 
+  <!-- Demoted below a hairline, added 9/18: real feedback that a jump
+       game sitting directly under a -$75 week record read as competing
+       with it for attention, not sitting quietly below the fold. -->
+  <hr class="section-hr">
   <section class="game-section">
     <div class="section-title">To the Moon</div>
     <div class="game-card">
@@ -1693,21 +1719,63 @@
   // the shared side-sheet with a real today-only timeline instead of a
   // tiny inline expansion.
   var _lastDeskEvents = {};
-  function renderDeskBoard(board, events, session) {
+  // This week's real tickets (dated day label, "Fri 9/18" -- same test
+  // used to split the archive collapse in renderTickets), for the
+  // closed-state desk facts below.
+  function weekTickets(tickets) {
+    return (tickets || []).filter(function (t) { return /\d/.test(t.day || ""); });
+  }
+  function pctSpan(pct) {
+    return '<span class="' + (pct >= 0 ? "good" : "bad") + '">' + fmtPct(pct) + '</span>';
+  }
+  function computeDeskFacts(tickets) {
+    var week = weekTickets(tickets);
+    if (!week.length) return null;
+    var best = week[0], worst = week[0];
+    week.forEach(function (t) {
+      if (t.pct > best.pct) best = t;
+      if (t.pct < worst.pct) worst = t;
+    });
+    var withDur = week.filter(function (t) { return /^\d+/.test(t.dur || ""); });
+    var under15 = withDur.filter(function (t) { return parseInt(t.dur, 10) < 15; }).length;
+    return { best: best, worst: worst, under15: under15, withDurCount: withDur.length };
+  }
+  function renderDeskBoard(board, events, session, tickets) {
     var el = document.getElementById("desk-board");
     if (!el) return;
     _lastDeskEvents = events || {};
-    // Added 9/18, real gap: build_desk_board() in site-build.py runs
-    // every cycle regardless of market state, re-emitting whatever Watch
-    // last wrote to watch-state.json during RTH -- with the loop running
-    // every 30 min all night/weekend, that reads as a live watchlist
-    // hours after the desk actually stopped ("on the list since 3:08 ·
-    // no look yet"). Real feedback: this is the site's biggest honesty
-    // gap after close. Fixed client-side rather than in site-build.py --
-    // same closed-state convention as renderTickets/renderScanLog below.
+    // Rewritten 9/18, real feedback ("vacant seats," Top Up/Down being
+    // the same sorted-by-|%| data as the board/ribbon a third time):
+    // build_desk_board() in site-build.py runs every cycle regardless of
+    // market state, re-emitting whatever Watch last wrote hours earlier
+    // ("on the list since 3:08 · no look yet"). Closed no longer shows
+    // an empty WATCH/OUT grid at all -- just today's real closes (if
+    // any) and this week's real facts, computed straight from tickets[]
+    // already in the feed. No API, no Claude, no third copy of the
+    // board.
     if (!session || session.market_state !== "OPEN") {
-      el.innerHTML = '<div class="waiting"><span class="dot"></span>DESK CLOSED — next session ' +
-        ((session && session.next_open) || "TBD") + '.</div>';
+      var lines = [];
+      var todays = todaysTickets(tickets);
+      if (todays.length) {
+        lines.push("Closed today: " + todays.map(function (t) {
+          return t.sym + " " + pctSpan(t.pct);
+        }).join(" · ") + ".");
+      }
+      var facts = computeDeskFacts(tickets);
+      if (facts) {
+        var factParts = [
+          "Best " + facts.best.sym + " " + pctSpan(facts.best.pct),
+          "Worst " + facts.worst.sym + " " + pctSpan(facts.worst.pct)
+        ];
+        if (facts.withDurCount) factParts.push("Holds <15min " + facts.under15 + "/" + facts.withDurCount);
+        lines.push("This week: " + factParts.join(" · ") + ".");
+      }
+      if (!lines.length) {
+        lines.push("Desk closed — next session " + ((session && session.next_open) || "TBD") + ".");
+      }
+      el.innerHTML = lines.map(function (line) {
+        return '<div class="desk-facts-line">' + line + '</div>';
+      }).join("");
       return;
     }
     if (!board || !board.length) {
@@ -1748,30 +1816,6 @@
       '<div class="sheet-evt">Nothing logged yet today.</div>';
     openSheet('<div class="sheet-title">' + sym + '</div><div class="sheet-timeline">' + body + '</div>');
   };
-
-  function renderDeskMovers(movers) {
-    var el = document.getElementById("desk-movers");
-    if (!el) return;
-    if (!movers || (!movers.up || !movers.up.length) && (!movers.down || !movers.down.length)) {
-      el.innerHTML = "";
-      return;
-    }
-    function col(label, rows) {
-      // Site now only ever sends genuinely positive names in "up" and
-      // genuinely negative in "down" (fixed 9/15) -- an empty bucket is
-      // a real, one-sided-board fact, not missing data, so skip the
-      // column entirely rather than show a heading over nothing.
-      if (!rows || !rows.length) return "";
-      var body = rows.map(function (r) {
-        var good = r.chg_pct >= 0;
-        var chg = (good ? "+" : "") + r.chg_pct.toFixed(2) + "%";
-        return '<div class="desk-mover-row"><span class="sym">' + r.sym + '</span>' +
-          '<span class="desk-mover-chg ' + (good ? "good" : "bad") + '">' + chg + '</span></div>';
-      }).join("");
-      return '<div class="desk-movers-col"><div class="desk-movers-label">' + label + '</div>' + body + '</div>';
-    }
-    el.innerHTML = col("Top up", movers.up) + col("Top down", movers.down);
-  }
 
   function renderDeskFreshness(freshness, session, generatedAt) {
     var el = document.getElementById("desk-freshness");
@@ -1917,8 +1961,16 @@
     // Header row, added 9/17, real gap: this table had zero column labels --
     // "prior system"/"current system" and a bare "pending" read as unlabeled
     // noise with nothing explaining what any column actually is.
+    // Fixed 9/18, real feedback: "Rules in effect" (prior system/current
+    // system/system update 9/2) is operator-speak a stranger has no use
+    // for -- dropped outright, not hidden behind a "?". Real weeks with
+    // no backfilled numbers yet (all three of net/hold/disasters null)
+    // are filtered out entirely rather than shown as an unfinished
+    // "pending" row on a public page -- see the feed.json edit alongside
+    // this change. The wk-pending/-- fallbacks below stay as defensive
+    // code for a future week that's added before being backfilled.
     var html = '<div class="weeks-header"><span>Week</span><span>Record</span>' +
-      '<span>Net</span><span>Avg hold</span><span>Disasters</span><span>Rules in effect</span></div>';
+      '<span>Net</span><span>Avg hold</span><span>Disasters</span></div>';
     weeks.forEach(function (w) {
       var hasNet = w.net_usd !== null && w.net_usd !== undefined;
       var netHtml = hasNet
@@ -1932,7 +1984,6 @@
         netHtml +
         '<span>' + (w.avg_hold || "—") + '</span>' +
         '<span class="wk-disasters">' + disastersText + '</span>' +
-        '<span class="wk-notes">' + (w.product || "") + '</span>' +
         '</div>';
     });
     el.innerHTML = html;
@@ -2047,6 +2098,36 @@
     roastIdx = (roastIdx + 1) % roastTemplates.length;
   }
 
+  // Macro strip + BTC range, added 9/18 -- real, free numbers (10Y/DXY/
+  // WTI/VIX last print via Yahoo, BTC 24h range via CoinGecko) both
+  // already fetched by the 24/7 tape_update.py Action. Hidden entirely
+  // if neither field is present (an older feed, or both fetches failed
+  // this cycle) rather than show an empty strip.
+  var MACRO_ORDER = ["10Y", "DXY", "WTI", "VIX"];
+  function renderMacro(macro, btcRange) {
+    var section = document.getElementById("macro-section");
+    var stripEl = document.getElementById("macro-strip");
+    var rangeEl = document.getElementById("btc-range-line");
+    if (!section || !stripEl || !rangeEl) return;
+    var macroKeys = macro ? MACRO_ORDER.filter(function (k) { return macro[k] !== undefined; }) : [];
+    var hasRange = btcRange && typeof btcRange.high_24h === "number";
+    if (!macroKeys.length && !hasRange) { section.hidden = true; return; }
+    section.hidden = false;
+    stripEl.innerHTML = macroKeys.map(function (k) {
+      var v = macro[k];
+      var text = k === "10Y" ? v.toFixed(2) + "%" : v.toFixed(2);
+      return '<span class="macro-item"><span class="macro-label">' + k + '</span>' + text + '</span>';
+    }).join("");
+    if (hasRange) {
+      var good = btcRange.chg_pct >= 0;
+      rangeEl.innerHTML = "BTC " + Math.round(btcRange.last).toLocaleString() +
+        " · 24h " + (btcRange.low_24h / 1000).toFixed(1) + "k–" + (btcRange.high_24h / 1000).toFixed(1) + "k · " +
+        '<span class="' + (good ? "good" : "bad") + '">' + (good ? "+" : "") + btcRange.chg_pct.toFixed(1) + "%</span>";
+    } else {
+      rangeEl.innerHTML = "";
+    }
+  }
+
   function render(data) {
     lastFillAt = data.last_fill_at || null;
     renderSession(data.session);
@@ -2055,9 +2136,9 @@
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
     renderScanLog(data.scan_log_public, data.session);
-    renderDeskBoard(data.desk_board, data.desk_events, data.session);
-    renderDeskMovers(data.board_movers);
+    renderDeskBoard(data.desk_board, data.desk_events, data.session, data.tickets);
     renderDeskFreshness(data.desk_freshness, data.session, data.generated_at);
+    renderMacro(data.macro, data.btc_range);
     renderRibbon(data);
     renderWeeks(data.weeks);
     updateRoastTemplates(data);
@@ -2084,51 +2165,6 @@
   // tied to the 45s poll (see updateRoastTemplates' own comment).
   tickRoast();
   setInterval(tickRoast, 20000);
-
-  // Auto-rotator, added 9/15, narrowed same day -- the stamp board
-  // (#desk-board) is the desk's real content now and stays always
-  // visible; this only cycles the two secondary fact blocks (movers,
-  // freshness) every ~8s so they don't just stack under the board.
-  // Independent of the 45s data poll: re-rendering a block's innerHTML
-  // doesn't touch its .hidden state, so rotation position survives a
-  // refresh untouched. Skips any block that's currently empty (e.g. a
-  // closed-market state where movers has nothing to show) rather than
-  // ever landing on a blank pane.
-  (function () {
-    var blocks = [
-      document.getElementById("desk-movers"),
-      document.getElementById("desk-freshness")
-    ];
-    var dotsEl = document.getElementById("desk-rotator-dots");
-    if (dotsEl) {
-      blocks.forEach(function () {
-        var d = document.createElement("span");
-        d.className = "carousel-dot";
-        dotsEl.appendChild(d);
-      });
-    }
-    var idx = 0;
-    function showOnly(i) {
-      blocks.forEach(function (b, j) { if (b) b.hidden = (j !== i); });
-      if (dotsEl) {
-        var dots = dotsEl.children;
-        for (var k = 0; k < dots.length; k++) dots[k].classList.toggle("active", k === i);
-      }
-    }
-    function nextNonEmpty(fromIdx) {
-      for (var step = 1; step <= blocks.length; step++) {
-        var i = (fromIdx + step) % blocks.length;
-        var b = blocks[i];
-        if (b && b.innerHTML && b.innerHTML.trim()) return i;
-      }
-      return fromIdx;
-    }
-    showOnly(idx);
-    setInterval(function () {
-      idx = nextNonEmpty(idx);
-      showOnly(idx);
-    }, 8000);
-  })();
 
   // Live wall clock, independent of the feed.
   var clockEl = document.getElementById("session-clock");

@@ -128,6 +128,71 @@ def fetch_crypto():
     return out
 
 
+def fetch_btc_range():
+    """Real 24h high/low for BTC, added 9/18 -- one line tying MSTR/
+    COIN/IREN's real moves to crypto's own range without a second board.
+    CoinGecko's /coins/markets endpoint (not the simple/price one used
+    above) is what actually carries high_24h/low_24h. Returns None on
+    any failure.
+    """
+    try:
+        r = requests.get(
+            "https://api.coingecko.com/api/v3/coins/markets",
+            params={"vs_currency": "usd", "ids": "bitcoin", "price_change_percentage": "24h"},
+            timeout=10,
+        )
+        r.raise_for_status()
+        row = r.json()[0]
+        return {
+            "last": row["current_price"],
+            "high_24h": row["high_24h"],
+            "low_24h": row["low_24h"],
+            "chg_pct": round(row["price_change_percentage_24h"], 2),
+        }
+    except Exception as e:
+        print(f"[tape_update] BTC range fetch failed: {e}")
+        return None
+
+
+# Macro strip, added 9/18: real "last print" snapshot, not live intraday
+# -- explicitly matches "freeze after 5pm like stocks." Deliberately NOT
+# 2s10s: tested every plausible free 2-year-yield ticker (^UST2Y doesn't
+# resolve, ^TYX is the 30Y, ^FVX is the 5Y, ^IRX is the 13-week bill)
+# and found no reliable free 2Y source -- shipping a wrong spread would
+# be worse than omitting it.
+MACRO_TICKERS = {
+    "10Y": "^TNX",
+    "DXY": "DX-Y.NYB",
+    "WTI": "CL=F",
+    "VIX": "^VIX",
+}
+
+
+def fetch_macro():
+    """regularMarketPrice only (not postMarket*/preMarket* -- tested
+    earlier and found unreliable/null on a bare unauthenticated call).
+    Per-ticker try/except so one bad symbol doesn't blank the whole
+    strip; returns whatever subset succeeded, {} if all four fail.
+    """
+    out = {}
+    for label, ticker in MACRO_TICKERS.items():
+        try:
+            r = requests.get(
+                f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}",
+                params={"interval": "1d", "range": "5d"},
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=10,
+            )
+            r.raise_for_status()
+            meta = r.json()["chart"]["result"][0]["meta"]
+            price = meta.get("regularMarketPrice")
+            if price is not None:
+                out[label] = round(price, 2)
+        except Exception as e:
+            print(f"[tape_update] macro fetch failed for {label} ({ticker}): {e}")
+    return out
+
+
 _RSS_ITEM_RE = re.compile(r"<item>(.*?)</item>", re.S)
 _RSS_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 _RSS_DESC_RE = re.compile(r"<description>(.*?)</description>", re.S)
@@ -355,15 +420,24 @@ def main():
 
     crypto = fetch_crypto()
     news = fetch_news()
+    btc_range = fetch_btc_range()
+    macro = fetch_macro()
 
     feed["session"] = session
     feed["generated_at"] = now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     if crypto:
         feed["market_board"] = refresh_crypto_board(feed.get("market_board") or {}, crypto)
     feed["news"] = merge_news(feed.get("news"), news)
+    if btc_range:
+        feed["btc_range"] = btc_range
+    if macro:
+        feed["macro"] = macro
 
     if dry_run:
-        print(json.dumps({"session": feed["session"], "crypto": crypto, "news_count": len(news)}, indent=2))
+        print(json.dumps({
+            "session": feed["session"], "crypto": crypto, "news_count": len(news),
+            "btc_range": btc_range, "macro": macro,
+        }, indent=2))
         return
 
     FEED_PATH.write_text(json.dumps(feed, indent=2))

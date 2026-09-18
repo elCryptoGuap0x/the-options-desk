@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T23:18:26Z",
+  "generated_at": "2026-09-18T23:47:19Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -435,15 +435,6 @@
   ],
   "weeks": [
     {
-      "week_label": "8/25",
-      "record": "4-10",
-      "net_usd": null,
-      "avg_hold": null,
-      "disasters": null,
-      "product": "prior system",
-      "locked": true
-    },
-    {
       "week_label": "9/1",
       "record": "0-3",
       "net_usd": -127,
@@ -482,10 +473,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81161,
-      "chg_pct": 6.19,
+      "last": 80883,
+      "chg_pct": 5.88,
       "history": [
-        80837.325,
         80825.335,
         80838.675,
         80859.305,
@@ -515,18 +505,17 @@
         81158.095,
         81142.705,
         81130.755,
-        81161,
-        81161,
-        81161
+        80890.605,
+        80963,
+        80883
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2619.38,
-      "chg_pct": 7.08,
+      "last": 2611.28,
+      "chg_pct": 6.72,
       "history": [
-        2603.935,
         2606.065,
         2606.005,
         2606.695,
@@ -556,18 +545,17 @@
         2616.67,
         2618.455,
         2617.845,
-        2619.38,
-        2619.38,
-        2619.38
+        2610.38,
+        2611.7,
+        2611.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.38,
-      "chg_pct": 11.72,
+      "last": 112.86,
+      "chg_pct": 11.23,
       "history": [
-        112.375,
         112.41,
         112.425,
         112.455,
@@ -597,9 +585,9 @@
         113.195,
         113.355,
         113.335,
-        113.38,
-        113.38,
-        113.38
+        112.845,
+        112.97,
+        112.86
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1282,7 +1270,7 @@
   },
   "desk_freshness": {
     "watch": "2:08",
-    "crypto": "6:18"
+    "crypto": "6:38"
   },
   "desk_board": [
     {
@@ -1555,5 +1543,17 @@
         "line": "not a setup"
       }
     ]
+  },
+  "btc_range": {
+    "last": 80896,
+    "high_24h": 81331,
+    "low_24h": 76252,
+    "chg_pct": 5.92
+  },
+  "macro": {
+    "10Y": 5.0,
+    "DXY": 100.22,
+    "WTI": 95.47,
+    "VIX": 14.81
   }
 }
