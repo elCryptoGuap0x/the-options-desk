@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:04:41Z",
+  "generated_at": "2026-09-18T16:07:44Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -478,10 +478,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80727.04,
-      "chg_pct": 3.47,
+      "last": 80873.46,
+      "chg_pct": 3.66,
       "history": [
-        80757.115,
         80854.12,
         80882.175,
         80862.295,
@@ -510,16 +509,16 @@
         80690.735,
         80735.365,
         80705.365,
-        80727.045
+        80727.045,
+        80873.465
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2582.88,
-      "chg_pct": 3.16,
+      "last": 2592.76,
+      "chg_pct": 3.56,
       "history": [
-        2576.86,
         2576.695,
         2578.305,
         2577.915,
@@ -548,16 +547,16 @@
         2579.835,
         2583.665,
         2579.03,
-        2582.88
+        2582.88,
+        2592.765
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 111.18,
-      "chg_pct": 5.12,
+      "last": 111.38,
+      "chg_pct": 5.31,
       "history": [
-        109.925,
         110.12,
         110.605,
         110.76,
@@ -586,7 +585,8 @@
         110.69,
         111.185,
         111.23,
-        111.18
+        111.18,
+        111.38
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1102,8 +1102,8 @@
         "chg_pct": 12.18
       },
       {
-        "sym": "IBIT",
-        "chg_pct": 5.16
+        "sym": "SOL",
+        "chg_pct": 5.31
       }
     ],
     "down": [
@@ -1123,7 +1123,7 @@
   },
   "desk_freshness": {
     "watch": "11:00",
-    "crypto": "11:04"
+    "crypto": "11:07"
   },
   "desk_board": [
     {
@@ -1269,6 +1269,12 @@
       {
         "t": "9:50 AM ET",
         "line": "First flagged \u2014 still building."
+      }
+    ],
+    "SOL": [
+      {
+        "t": null,
+        "line": "not a setup"
       }
     ]
   }
