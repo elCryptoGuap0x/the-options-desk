@@ -309,12 +309,11 @@
   }
   .board-chip:hover { border-color: var(--gold-dim); }
   .board-chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
-  /* Mini sparkline off market_board's own real rolling `history` (this
-     script's snapshot of watch's last_price -- see site-build.py's
-     build_market_board). Click/hover opens the shared side-sheet (see
-     .detail-sheet below) with the same series drawn large. */
-  .board-mini-spark { width: 100%; height: 20px; display: block; margin-top: 6px; }
-  .board-mini-spark polyline { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+  /* Removed 9/18, real feedback: 30 mini-sparklines on an idle tile grid
+     read as noise, not information, and mobile has no hover to justify
+     one per tile anyway. Chart now lives only in the side sheet
+     (.sheet-chart, click/hover via openBoardSheet) -- the idle board is
+     a plain quote panel: sym/price/% plus an optional tiny status word. */
   .chip-top { display: flex; align-items: baseline; justify-content: space-between; }
   .chip-sym { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; color: var(--text); }
   .chip-tag { font-family: var(--mono); font-size: 8.5px; text-transform: uppercase; color: var(--text-faint); }
@@ -322,6 +321,13 @@
   .chip-chg { font-family: var(--mono); font-size: 11px; font-variant-numeric: tabular-nums; margin-top: 2px; }
   .chip-chg.good { color: var(--good); }
   .chip-chg.bad { color: var(--bad); }
+  .chip-status {
+    display: block; margin-top: 4px; font-family: var(--mono); font-size: 9px;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint);
+  }
+  .chip-status.flag { color: var(--gold); }
+  .chip-status.watch { color: var(--blue); }
+  .chip-status.bad { color: var(--bad); }
   .board-foot {
     font-family: var(--mono); font-size: 10px; color: var(--text-faint);
     padding: 8px 2px 0;
@@ -1163,6 +1169,7 @@
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
       var tag = CRYPTO_SYMS[sym] ? "24/7" : (marketClosed ? "close" : "");
+      var statusWord = c.status ? '<span class="chip-status ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '';
       return '<div class="board-chip" role="button" tabindex="0" ' +
         'onclick="openBoardSheet(\'' + sym + '\')" onkeydown="if(event.key===\'Enter\')openBoardSheet(\'' + sym + '\')"' +
         hoverAttr.replace("__SYM__", sym) + '>' +
@@ -1170,33 +1177,24 @@
         (tag ? '<span class="chip-tag">' + tag + '</span>' : '') + '</div>' +
         '<div class="chip-price">' + fmtPrice(sym, c.last) + '</div>' +
         '<div class="chip-chg ' + (good ? "good" : "bad") + '">' + chg + '</div>' +
-        boardMiniSparkSvg(c.history) +
+        statusWord +
         '</div>';
     }).join("");
     document.getElementById("board-strip").innerHTML = html || '<div class="board-mini-pending">building board…</div>';
   }
 
-  // status/why reuse desk_board's exact public vocabulary
-  // (site-build.py's map_why/_VERDICT_PUBLIC) -- no separate lexicon.
+  // Rewritten 9/18, real feedback: 30 mini-sparklines on an idle grid
+  // read as noise, not information (worse on mobile, no hover at all).
+  // Chart now lives ONLY inside the side sheet (boardBigSparkSvg /
+  // openBoardSheet below) -- the tile itself is back to a plain quote
+  // (sym/price/%) plus an optional tiny status word, reusing
+  // desk_board's exact public vocabulary (site-build.py's
+  // map_why/_VERDICT_PUBLIC) -- no separate lexicon.
   function boardStatusClass(status) {
     if (status === "flagged") return "flag";
     if (status === "watching") return "watch";
     if (status === "ruled out") return "bad";
     return "";
-  }
-  function boardMiniSparkSvg(vals) {
-    if (!vals || vals.length < 2) return "";
-    var maxV = Math.max.apply(null, vals), minV = Math.min.apply(null, vals);
-    var range = (maxV - minV) || 1;
-    var n = vals.length;
-    var pts = vals.map(function (v, i) {
-      var x = (i * 100 / (n - 1)).toFixed(1);
-      var y = ((maxV - v) / range * 20).toFixed(1);
-      return x + "," + y;
-    }).join(" ");
-    var good = vals[vals.length - 1] >= vals[0];
-    return '<svg class="board-mini-spark" viewBox="0 0 100 20" preserveAspectRatio="none">' +
-      '<polyline points="' + pts + '" stroke="' + (good ? "var(--good)" : "var(--bad)") + '" /></svg>';
   }
   // Same spark, drawn large, inside the sheet -- real delayed points
   // already on the tile, no live TradingView, no new data source.
