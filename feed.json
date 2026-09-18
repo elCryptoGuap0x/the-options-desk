@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-18T15:55:32Z",
+  "generated_at": "2026-09-18T15:58:35Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-09-21T13:30:00Z",
-    "position": "OPEN"
+    "position": "FLAT"
   },
   "stats": {
     "record": "0-4",
@@ -476,10 +476,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80690.74,
-      "chg_pct": 3.42,
+      "last": 80735.37,
+      "chg_pct": 3.48,
       "history": [
-        80640.665,
         80545.695,
         80718.305,
         80757.115,
@@ -508,16 +507,16 @@
         80603.025,
         80719.995,
         80775.165,
-        80690.735
+        80690.735,
+        80735.365
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2579.84,
-      "chg_pct": 3.04,
+      "last": 2583.66,
+      "chg_pct": 3.19,
       "history": [
-        2570.0,
         2569.505,
         2574.655,
         2576.86,
@@ -546,16 +545,16 @@
         2574.945,
         2578.685,
         2582.495,
-        2579.835
+        2579.835,
+        2583.665
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.69,
-      "chg_pct": 4.66,
+      "last": 111.19,
+      "chg_pct": 5.12,
       "history": [
-        109.215,
         109.525,
         109.51,
         109.925,
@@ -584,7 +583,8 @@
         110.325,
         110.725,
         110.785,
-        110.69
+        110.69,
+        111.185
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1113,7 +1113,7 @@
   },
   "desk_freshness": {
     "watch": "10:25",
-    "crypto": "10:55"
+    "crypto": "10:58"
   },
   "desk_board": [
     {
@@ -1157,6 +1157,10 @@
       {
         "t": "11:30 AM ET",
         "line": "Looked at, passed."
+      },
+      {
+        "t": "11:56 AM ET",
+        "line": "Closed out."
       }
     ],
     "USO": [
