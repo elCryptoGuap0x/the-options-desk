@@ -486,6 +486,22 @@
   .fuse-dot.g { background: var(--good); }
   .fuse-dot.r { background: var(--bad); }
   .fuse-dot.gray { background: var(--border-soft); }
+  /* Replay, added 9/18: dots stay a static reel until played -- this
+     dims them, then reveals in hold order over ~8s regardless of dot
+     count (see playFuse). Purely a visual replay of data already on
+     screen, no new numbers -- there's no real per-minute magnitude in
+     the feed to tick a "peak %" against, only above/below-entry booleans. */
+  .fuse-dot.fuse-dim { opacity: 0.15; transition: opacity 0.15s ease; }
+  @keyframes fuse-pop { from { transform: scale(1.7); } to { transform: scale(1); } }
+  .fuse-dot.fuse-pop { animation: fuse-pop 0.25s ease-out; opacity: 1; }
+  .fuse-replay {
+    margin-left: auto; align-self: center;
+    font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--text-faint); background: none; border: 1px solid var(--border); border-radius: 20px;
+    padding: 2px 9px; cursor: pointer; flex-shrink: 0;
+  }
+  .fuse-replay:hover { border-color: var(--gold); color: var(--gold); }
+  .fuse-replay:disabled { opacity: 0.5; cursor: default; }
   .roast-strip {
     max-width: 640px; margin: 10px auto 0; text-align: center;
     font-family: var(--serif); font-style: italic; font-size: 13px;
@@ -500,6 +516,21 @@
   }
   .day-divider:first-child { margin-top: 0; }
 
+  /* Collapsed archive, added 9/18: real bug found in the live feed --
+     four tickets carry a bare weekday label ("Friday", "Thursday", no
+     date) left over from before the day label included M/D, sitting
+     directly under this week's dated "Fri 9/18" with nothing telling
+     them apart -- last week's Friday read as this week's. Grouped
+     behind one closed <details> instead (see renderTickets). */
+  .earlier-days { margin-top: 4px; }
+  .earlier-days summary {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-faint); cursor: pointer; padding: 8px 2px; list-style: none;
+  }
+  .earlier-days summary::-webkit-details-marker { display: none; }
+  .earlier-days summary::before { content: "\25b8  "; }
+  .earlier-days[open] summary::before { content: "\25be  "; }
+
   .streak-line {
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     font-family: var(--mono); font-size: 11px; color: var(--text-faint);
@@ -511,6 +542,10 @@
   }
   .streak-chip.w { background: var(--good-dim); color: var(--good); }
   .streak-chip.l { background: var(--bad-dim); color: var(--bad); }
+  /* Pulse on the most recent result, added 9/18 -- pure CSS motion so
+     the streak line reads as live rather than a static row of pills. */
+  @keyframes streak-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.18); } }
+  .streak-chip:last-child { animation: streak-pulse 1.6s ease-in-out infinite; }
 
   /* ---- shared carousel (news / market board / calendar) ---- */
   .carousel-card {
@@ -867,6 +902,21 @@
   }
   function pctClass(v) { return v >= 0 ? "good" : "bad"; }
 
+  // Added 9/18: real fix for the hero P&L tile hiding today's actual
+  // number after the market closes (the exact case where someone is
+  // checking the tape). Ticket day labels are written as "Ddd M/D" --
+  // matching one client-side against today's own CT date, rather than
+  // gating on session.market_state, means a real post-close close still
+  // shows. Shared by the hero stat and the tape-line rotation below so
+  // both agree on what "today" means.
+  function todayDayLabel() {
+    return new Date().toLocaleDateString("en-US", { weekday: "short", month: "numeric", day: "numeric", timeZone: "America/Chicago" }).replace(",", "");
+  }
+  function todaysTickets(tickets) {
+    var label = todayDayLabel();
+    return (tickets || []).filter(function (t) { return t.day === label; });
+  }
+
   var lastSession = null;
   var lastFillAt = null;
 
@@ -926,7 +976,7 @@
     document.getElementById("session-next").textContent = sessionNextText(session);
   }
 
-  function renderStats(stats, session) {
+  function renderStats(stats, session, tickets) {
     var winClass = "";
     var wr = parseFloat(stats.win_rate);
     if (!isNaN(wr)) winClass = wr >= 50 ? "good" : "bad";
@@ -936,18 +986,26 @@
     // real dollars, computed today-only (see site/CLAUDE.md's SCOPE
     // section), sits right next to the week record so the two numbers
     // can't be mistaken for each other.
-    // Fixed 9/13, real bug: on a non-trading day this is always a
-    // correct-but-misleading $0 -- "today's real P&L is zero" reads as
-    // "nothing happened," sitting right next to a losing week's record
-    // and roast line. Hide the tile entirely when the market isn't open;
-    // the roast strip already carries the last real session's number.
+    // Fixed 9/18, real bug reported live: the 9/13 fix gated this tile on
+    // session.market_state === "OPEN", so a real trading day's own real
+    // P&L (today's +$17, two real closes) went dark the moment the
+    // market closed -- exactly when most people actually check the tape.
+    // Gate on whether TODAY has any real tickets instead (see
+    // todaysTickets above) -- that's the fact that actually matters
+    // ("did anything real happen today"), not whether the exchange
+    // happens to be open at render time. A day with zero real tickets
+    // still hides the tile, same reasoning as the original 9/13 fix: a
+    // correct-but-empty $0 next to a losing week's record reads as "site
+    // is broken," not "nothing happened yet."
     var sessionHtml = "";
-    var marketOpen = !session || session.market_state === "OPEN";
-    if (marketOpen && stats.session_pnl_usd !== undefined && stats.session_pnl_usd !== null) {
+    var todays = todaysTickets(tickets);
+    if (todays.length && stats.session_pnl_usd !== undefined && stats.session_pnl_usd !== null) {
       var spn = Number(stats.session_pnl_usd);
       var sessionClass = spn >= 0 ? "good" : "bad";
       var sessionText = (spn >= 0 ? "+$" : "-$") + Math.abs(spn).toFixed(0);
-      sessionHtml = '<div class="stat"><div class="n ' + sessionClass + '">' + sessionText + '</div><div class="l">Session P&amp;L</div></div>';
+      var todayWins = todays.filter(function (t) { return t.pct >= 0; }).length;
+      var todayRecord = todayWins + "-" + (todays.length - todayWins);
+      sessionHtml = '<div class="stat"><div class="n ' + sessionClass + '">' + sessionText + '</div><div class="l">Today ' + todayRecord + '</div></div>';
     }
     var expectancyEl = document.getElementById("expectancy-row");
     var noTradesYet = Number(stats.trades_this_week) === 0 && stats.prior_week_record;
@@ -1163,6 +1221,11 @@
       var CLOSED_CAP = ["SPY", "QQQ", "DIA", "VIXY", "MSTR", "COIN", "IBIT", "IREN"];
       syms = CLOSED_CAP.filter(function (s) { return board[s]; });
     }
+    // Sort by move size, added 9/18 -- biggest mover first instead of
+    // whatever order the server happened to send, real feedback that a
+    // static alphabetical-ish strip reads as dead even when names on it
+    // are genuinely moving.
+    syms.sort(function (a, b) { return Math.abs(board[b].chg_pct) - Math.abs(board[a].chg_pct); });
     var hoverAttr = HOVER_CAPABLE ? " onmouseenter=\"openBoardSheet('__SYM__')\"" : "";
     var html = syms.map(function (sym) {
       var c = board[sym];
@@ -1235,14 +1298,45 @@
   // computed at write time from actual option bars -- never rendered on
   // an open position (no live "entering" copy, only a replay of
   // something already closed and real).
+  // Replay button, added 9/18: dots are real per-minute data already
+  // (see comment above) -- this just re-reveals them in hold order over
+  // ~8s instead of the static reel. No new data, no numeric "peak"
+  // readout -- the dots only carry above/below-entry (G/R), not a real
+  // per-minute magnitude, so a ticking peak-% number would have to be
+  // invented. Skipped on that principle rather than faking it.
+  var _fuseSeq = 0;
   function fuseHtml(fuse) {
     if (!fuse || !fuse.dots || !fuse.dots.length) return "";
+    var id = "fuse-" + (_fuseSeq++);
     var dots = fuse.dots.map(function (d) {
       var cls = d === "G" ? "g" : (d === "R" ? "r" : "gray");
       return '<span class="fuse-dot ' + cls + '"></span>';
     }).join("");
-    return '<div class="fuse-row">' + dots + '</div>';
+    return '<div class="fuse-row" id="' + id + '">' + dots +
+      '<button class="fuse-replay" type="button" onclick="event.stopPropagation(); playFuse(\'' + id + '\')">&#9654; Replay</button></div>';
   }
+  window.playFuse = function (rowId) {
+    var row = document.getElementById(rowId);
+    if (!row) return;
+    var dots = row.querySelectorAll(".fuse-dot");
+    var btn = row.querySelector(".fuse-replay");
+    if (!dots.length || (btn && btn.disabled)) return;
+    if (btn) btn.disabled = true;
+    var total = dots.length;
+    var stepMs = Math.max(60, Math.floor(8000 / total));
+    for (var d = 0; d < dots.length; d++) dots[d].classList.add("fuse-dim");
+    var i = 0;
+    var timer = setInterval(function () {
+      if (i >= total) {
+        clearInterval(timer);
+        if (btn) btn.disabled = false;
+        return;
+      }
+      dots[i].classList.remove("fuse-dim");
+      dots[i].classList.add("fuse-pop");
+      i++;
+    }, stepMs);
+  };
 
   // Click-to-expand added 9/14, pure client-side, no new data source --
   // shows entry_price/exit_price when present (real numbers, backfilled
@@ -1347,11 +1441,29 @@
       html += '<div class="waiting"><span class="dot"></span>Desk closed — next session ' +
         (data.session.next_open || "TBD") + '.</div>';
     }
-    dayOrder.forEach(function (day) {
-      html += '<div class="day-divider">' + day + '</div>';
-      byDay[day].forEach(function (t) { html += ticketRowHtml(t); });
-      if (skipByDay[day]) html += skipRowHtml(skipByDay[day], (byDay[day] || []).length);
-    });
+    // Split dated days ("Fri 9/18" -- current label convention, contains
+    // a digit) from bare-weekday-only days ("Friday" -- written before
+    // the date was added to the label). Real bug, 9/18: four tickets
+    // from a prior week carry the old bare format and sat directly under
+    // this week's dated rows with nothing distinguishing them -- last
+    // week's Friday read as this week's. Bare days collapse behind one
+    // closed <details> instead of interleaving with the live tape.
+    function renderDay(day) {
+      var out = '<div class="day-divider">' + day + '</div>';
+      byDay[day].forEach(function (t) { out += ticketRowHtml(t); });
+      if (skipByDay[day]) out += skipRowHtml(skipByDay[day], (byDay[day] || []).length);
+      return out;
+    }
+    var datedDays = dayOrder.filter(function (d) { return /\d/.test(d); });
+    var bareDays = dayOrder.filter(function (d) { return !/\d/.test(d); });
+    datedDays.forEach(function (day) { html += renderDay(day); });
+    if (bareDays.length) {
+      var bareCount = bareDays.reduce(function (n, d) { return n + (byDay[d] || []).length; }, 0);
+      html += '<details class="earlier-days"><summary>Earlier (' + bareCount +
+        ' ticket' + (bareCount === 1 ? "" : "s") + ', exact date not recorded)</summary>';
+      bareDays.forEach(function (day) { html += renderDay(day); });
+      html += '</details>';
+    }
     var streak = data.streak_last8 || [];
     if (streak.length) {
       html += '<div class="streak-line"><span>LAST ' + streak.length + ':</span>';
@@ -1557,7 +1669,24 @@
   function updateRoastTemplates(data) {
     var out = [];
     if (data.roast) out.push(data.roast);
+    // Tape line, added 9/18: one templated line per real close today,
+    // pure string format off fields already on the ticket (sym/dir/dur/
+    // pct) -- no model call, no invented numbers. Direct feedback that
+    // the rotation read as narrative commentary with no literal replay
+    // of "what just happened, ticket by ticket."
+    var todaysForTape = todaysTickets(data.tickets);
+    todaysForTape.forEach(function (t) {
+      var result = t.pct >= 0 ? "WIN" : "LOSS";
+      var side = t.dir === "call" ? "call" : "put";
+      out.push(t.sym + " " + side + " " + result + " · " + (t.dur || "?") + " · closed " + fmtPct(t.pct) + ".");
+    });
     var skip = data.skip_summary_ticker_list;
+    // Flat-day tape line, added 9/18, exact phrasing requested: only
+    // fires when today itself produced zero real closes (checked above,
+    // not the market-open flag) so it never contradicts a real fill.
+    if (!todaysForTape.length && skip && skip.count) {
+      out.push(skip.count + " looked · 0 filled · next open " + ((data.session && data.session.next_open) || "TBD") + ".");
+    }
     var watching = 0, ruledOut = 0, filledToday = 0;
     if (skip && skip.count) {
       filledToday = skip.filled || 0;
@@ -1629,7 +1758,7 @@
   function render(data) {
     lastFillAt = data.last_fill_at || null;
     renderSession(data.session);
-    renderStats(data.stats, data.session);
+    renderStats(data.stats, data.session, data.tickets);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
