@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T19:04:45Z",
+  "generated_at": "2026-09-18T19:07:48Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -546,10 +546,9 @@
       "why": "Looked 3:00 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80987.21,
-      "chg_pct": 3.8,
+      "last": 81037.29,
+      "chg_pct": 3.87,
       "history": [
-        80858.675,
         80878.615,
         80895.915,
         80893.245,
@@ -578,16 +577,16 @@
         80983.725,
         80945.595,
         80889.645,
-        80987.215
+        80987.215,
+        81037.295
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2618.7,
-      "chg_pct": 4.59,
+      "last": 2620.61,
+      "chg_pct": 4.67,
       "history": [
-        2605.325,
         2604.205,
         2603.995,
         2602.885,
@@ -616,16 +615,16 @@
         2616.505,
         2614.08,
         2611.115,
-        2618.705
+        2618.705,
+        2620.61
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 112.53,
-      "chg_pct": 6.39,
+      "last": 112.69,
+      "chg_pct": 6.55,
       "history": [
-        112.4,
         112.41,
         112.365,
         112.3,
@@ -654,7 +653,8 @@
         112.355,
         112.265,
         112.26,
-        112.525
+        112.525,
+        112.69
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1529,7 +1529,7 @@
   },
   "desk_freshness": {
     "watch": "2:00",
-    "crypto": "2:04"
+    "crypto": "2:07"
   },
   "desk_board": [
     {
@@ -1566,6 +1566,11 @@
       "sym": "NVDA",
       "status": "OUT",
       "why": "Ruled out 3:00 PM ET \u2014 already ran."
+    },
+    {
+      "sym": "QQQ",
+      "status": "WATCH",
+      "why": "On the list since 3:00 PM ET. No look yet."
     },
     {
       "sym": "SMCI",
@@ -1683,6 +1688,38 @@
         "line": "Looked at, passed."
       }
     ],
+    "QQQ": [
+      {
+        "t": "2:31 PM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "3:05 PM ET",
+        "line": "Looked at, passed."
+      }
+    ],
+    "IREN": [
+      {
+        "t": "8:35 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "10:14 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "1:05 PM ET",
+        "line": "Ruled out \u2014 already ran."
+      },
+      {
+        "t": "1:36 PM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "3:06 PM ET",
+        "line": "Looked at, passed."
+      }
+    ],
     "USO": [
       {
         "t": "8:35 AM ET",
@@ -1710,24 +1747,6 @@
     "HOOD": [
       {
         "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      }
-    ],
-    "IREN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "10:14 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "1:05 PM ET",
-        "line": "Ruled out \u2014 already ran."
-      },
-      {
-        "t": "1:36 PM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
@@ -1759,12 +1778,6 @@
       {
         "t": "1:24 PM ET",
         "line": "Ruled out \u2014 already ran."
-      }
-    ],
-    "QQQ": [
-      {
-        "t": "2:31 PM ET",
-        "line": "First flagged \u2014 still building."
       }
     ],
     "PANW": [
