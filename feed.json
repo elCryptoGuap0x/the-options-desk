@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:29:06Z",
+  "generated_at": "2026-09-18T16:32:09Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -410,8 +410,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 758.98,
-      "chg_pct": -0.45,
+      "last": 758.27,
+      "chg_pct": -0.54,
       "history": [
         762.4,
         760.48,
@@ -431,14 +431,15 @@
         759.67,
         758.9,
         759.11,
-        758.98
+        758.98,
+        758.2699
       ],
       "status": "no setup",
-      "why": "Looked 12:19 PM ET \u2014 no break, quiet tape."
+      "why": "Looked 12:28 PM ET \u2014 no break, quiet tape."
     },
     "QQQ": {
-      "last": 716.3,
-      "chg_pct": -0.03,
+      "last": 715.41,
+      "chg_pct": -0.15,
       "history": [
         716.48,
         718.06,
@@ -458,10 +459,11 @@
         716.79,
         716.25,
         716.44,
-        716.3
+        716.3,
+        715.41
       ],
       "status": "no setup",
-      "why": "Looked 12:19 PM ET \u2014 no break, quiet tape."
+      "why": "Looked 12:28 PM ET \u2014 no break, quiet tape."
     },
     "DIA": {
       "last": 518.5,
@@ -482,10 +484,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80953.04,
-      "chg_pct": 3.76,
+      "last": 81061.8,
+      "chg_pct": 3.9,
       "history": [
-        80946.245,
         80744.005,
         80805.145,
         80673.395,
@@ -514,16 +515,16 @@
         81025.005,
         81006.365,
         80942.035,
-        80953.045
+        80953.045,
+        81061.805
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2595.8,
-      "chg_pct": 3.68,
+      "last": 2603.05,
+      "chg_pct": 3.97,
       "history": [
-        2581.105,
         2578.105,
         2582.32,
         2578.615,
@@ -552,16 +553,16 @@
         2600.56,
         2595.2,
         2594.025,
-        2595.805
+        2595.805,
+        2603.045
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 111.51,
-      "chg_pct": 5.43,
+      "last": 111.8,
+      "chg_pct": 5.7,
       "history": [
-        110.665,
         110.14,
         109.955,
         109.78,
@@ -590,14 +591,15 @@
         111.46,
         111.6,
         111.58,
-        111.51
+        111.51,
+        111.795
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "MSTR": {
-      "last": 149.42,
-      "chg_pct": 12.54,
+      "last": 149.72,
+      "chg_pct": 12.76,
       "history": [
         132.775,
         135.83,
@@ -617,14 +619,15 @@
         148.455,
         148.95,
         149.065,
-        149.42
+        149.42,
+        149.72
       ],
       "status": "watching",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     "COIN": {
-      "last": 193.66,
-      "chg_pct": 12.83,
+      "last": 194.18,
+      "chg_pct": 13.14,
       "history": [
         171.63,
         176.24,
@@ -643,14 +646,15 @@
         192.25,
         192.55,
         192.34,
-        193.655
+        193.655,
+        194.175
       ],
       "status": "flagged",
-      "why": "Flagged 12:19 PM ET \u2014 +12.8% today."
+      "why": "Flagged 12:28 PM ET \u2014 +13.1% today."
     },
     "IBIT": {
-      "last": 45.9,
-      "chg_pct": 5.59,
+      "last": 45.88,
+      "chg_pct": 5.57,
       "history": [
         43.4633,
         44.15,
@@ -670,14 +674,15 @@
         45.865,
         45.705,
         45.75,
-        45.895
+        45.895,
+        45.885
       ],
       "status": "watching",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     "IREN": {
-      "last": 44.8,
-      "chg_pct": 3.42,
+      "last": 44.62,
+      "chg_pct": 3.01,
       "history": [
         43.32,
         44.23,
@@ -697,10 +702,11 @@
         44.485,
         44.67,
         44.645,
-        44.8
+        44.8,
+        44.6228
       ],
       "status": "watching",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     "GNRC": {
       "last": 203.52,
@@ -752,8 +758,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "INTC": {
-      "last": 106.89,
-      "chg_pct": -3.62,
+      "last": 106.69,
+      "chg_pct": -3.8,
       "history": [
         110.905,
         109.72,
@@ -772,10 +778,11 @@
         107.2,
         106.995,
         107.16,
-        106.89
+        106.89,
+        106.6926
       ],
       "status": "watching",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     "MRVL": {
       "last": 241.89,
@@ -796,8 +803,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "NVDA": {
-      "last": 219.4,
-      "chg_pct": 0.06,
+      "last": 219.34,
+      "chg_pct": 0.03,
       "history": [
         219.275,
         219.3,
@@ -817,14 +824,15 @@
         219.73,
         219.645,
         219.548,
-        219.4
+        219.4,
+        219.34
       ],
       "status": "watching",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     "SMCI": {
-      "last": 38.58,
-      "chg_pct": -4.03,
+      "last": 38.48,
+      "chg_pct": -4.27,
       "history": [
         40.2,
         39.38,
@@ -843,10 +851,11 @@
         38.6183,
         38.8097,
         38.82,
-        38.58
+        38.58,
+        38.485
       ],
       "status": "watching",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     "USO": {
       "last": 156.28,
@@ -1105,33 +1114,33 @@
       ]
     ],
     "no_shape_count": 2,
-    "filled": 10
+    "filled": 11
   },
-  "scan_log_public": "11 looked, 10 filled.",
+  "scan_log_public": "11 looked, 11 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
         "sym": "COIN",
-        "chg_pct": 12.83
+        "chg_pct": 13.14
       },
       {
         "sym": "MSTR",
-        "chg_pct": 12.54
+        "chg_pct": 12.76
       },
       {
-        "sym": "IBIT",
-        "chg_pct": 5.59
+        "sym": "SOL",
+        "chg_pct": 5.7
       }
     ],
     "down": [
       {
         "sym": "SMCI",
-        "chg_pct": -4.03
+        "chg_pct": -4.27
       },
       {
         "sym": "INTC",
-        "chg_pct": -3.62
+        "chg_pct": -3.8
       },
       {
         "sym": "GNRC",
@@ -1140,8 +1149,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "11:19",
-    "crypto": "11:29"
+    "watch": "11:28",
+    "crypto": "11:32"
   },
   "desk_board": [
     {
@@ -1152,17 +1161,17 @@
     {
       "sym": "COIN",
       "status": "WATCH",
-      "why": "Flagged 12:19 PM ET \u2014 +12.8% today."
+      "why": "Flagged 12:28 PM ET \u2014 +13.1% today."
     },
     {
       "sym": "INTC",
       "status": "WATCH",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     },
     {
       "sym": "NVDA",
       "status": "WATCH",
-      "why": "On the list since 12:19 PM ET. No look yet."
+      "why": "On the list since 12:28 PM ET. No look yet."
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
@@ -1296,6 +1305,12 @@
       {
         "t": "9:50 AM ET",
         "line": "First flagged \u2014 still building."
+      }
+    ],
+    "SOL": [
+      {
+        "t": null,
+        "line": "not a setup"
       }
     ]
   }
