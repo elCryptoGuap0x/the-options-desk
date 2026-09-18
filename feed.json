@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:45:22Z",
+  "generated_at": "2026-09-18T14:51:26Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -426,7 +426,7 @@
         759.4784
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 10:41 AM ET \u2014 no break, quiet tape."
     },
     "QQQ": {
       "last": 716.83,
@@ -445,7 +445,7 @@
         716.83
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 10:41 AM ET \u2014 no break, quiet tape."
     },
     "DIA": {
       "last": 518.5,
@@ -454,7 +454,7 @@
         518.495
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "VIXY": {
       "last": 17.01,
@@ -463,13 +463,12 @@
         17.01
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80757.12,
-      "chg_pct": 3.51,
+      "last": 80854.12,
+      "chg_pct": 3.63,
       "history": [
-        78020.865,
         77983.445,
         78327.595,
         78413.165,
@@ -498,16 +497,16 @@
         80640.665,
         80545.695,
         80718.305,
-        80757.115
+        80757.115,
+        80854.12
       ],
       "status": "tracked",
-      "why": "price only, not evaluated for a setup"
+      "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2576.86,
+      "last": 2576.7,
       "chg_pct": 2.92,
       "history": [
-        2503.685,
         2496.595,
         2509.3,
         2509.345,
@@ -536,16 +535,16 @@
         2570.0,
         2569.505,
         2574.655,
-        2576.86
+        2576.86,
+        2576.695
       ],
       "status": "tracked",
-      "why": "price only, not evaluated for a setup"
+      "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.12,
-      "chg_pct": 4.12,
+      "last": 110.61,
+      "chg_pct": 4.58,
       "history": [
-        105.765,
         105.44,
         106.365,
         106.735,
@@ -574,10 +573,11 @@
         109.525,
         109.51,
         109.925,
-        110.12
+        110.12,
+        110.605
       ],
       "status": "tracked",
-      "why": "price only, not evaluated for a setup"
+      "why": "Price only. Not a trade candidate."
     },
     "MSTR": {
       "last": 146.37,
@@ -596,7 +596,7 @@
         146.37
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "COIN": {
       "last": 190.35,
@@ -615,7 +615,7 @@
         190.355
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "IBIT": {
       "last": 45.73,
@@ -634,7 +634,7 @@
         45.73
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "IREN": {
       "last": 44.3,
@@ -653,7 +653,7 @@
         44.3
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "GNRC": {
       "last": 203.87,
@@ -666,7 +666,7 @@
         203.865
       ],
       "status": "flagged",
-      "why": "still building"
+      "why": "Flagged 10:41 AM ET \u2014 -2.2% today."
     },
     "AMZN": {
       "last": 253.02,
@@ -679,7 +679,7 @@
         253.02
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "CRCL": {
       "last": 84.41,
@@ -688,7 +688,7 @@
         84.41
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 1:42 PM ET. No look yet."
     },
     "HOOD": {
       "last": 107.47,
@@ -697,7 +697,7 @@
         107.47
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 1:42 PM ET. No look yet."
     },
     "INTC": {
       "last": 107.91,
@@ -716,7 +716,7 @@
         107.91
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "MRVL": {
       "last": 241.89,
@@ -725,7 +725,7 @@
         241.89
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 1:42 PM ET. No look yet."
     },
     "MU": {
       "last": 973.73,
@@ -734,7 +734,7 @@
         973.725
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 1:42 PM ET. No look yet."
     },
     "SMCI": {
       "last": 38.61,
@@ -752,7 +752,7 @@
         38.61
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 10:41 AM ET. No look yet."
     },
     "USO": {
       "last": 156.28,
@@ -761,7 +761,7 @@
         156.285
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 1:42 PM ET. No look yet."
     },
     "XLE": {
       "last": 64.31,
@@ -770,7 +770,7 @@
         64.305
       ],
       "status": "watching",
-      "why": "still building"
+      "why": "On the list since 1:42 PM ET. No look yet."
     },
     "NVDA": {
       "last": 219.25,
@@ -789,7 +789,7 @@
         219.25
       ],
       "status": "ruled out",
-      "why": "no follow-through"
+      "why": "Ruled out 10:41 AM ET \u2014 no follow-through."
     },
     "AAPL": {
       "last": 335.81,
@@ -798,7 +798,7 @@
         335.81
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "ADBE": {
       "last": 250.47,
@@ -807,7 +807,7 @@
         250.47
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BMNR": {
       "last": 24.34,
@@ -816,7 +816,7 @@
         24.34
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BSOL": {
       "last": 14.0,
@@ -825,7 +825,7 @@
         13.9998
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "CRWD": {
       "last": 246.82,
@@ -834,7 +834,7 @@
         246.82
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "ETHA": {
       "last": 18.62,
@@ -843,7 +843,7 @@
         18.6191
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "IWM": {
       "last": 286.56,
@@ -852,7 +852,7 @@
         286.565
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "LEN": {
       "last": 78.05,
@@ -861,7 +861,7 @@
         78.045
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "META": {
       "last": 677.92,
@@ -870,7 +870,7 @@
         677.92
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "MSFT": {
       "last": 495.43,
@@ -879,7 +879,7 @@
         495.43
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "NEE": {
       "last": 81.19,
@@ -888,7 +888,7 @@
         81.19
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "PANW": {
       "last": 374.31,
@@ -897,7 +897,7 @@
         374.305
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "SOXX": {
       "last": 519.7,
@@ -906,7 +906,7 @@
         519.7
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "TSLA": {
       "last": 368.13,
@@ -915,7 +915,7 @@
         368.135
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "XOM": {
       "last": 162.67,
@@ -924,7 +924,7 @@
         162.67
       ],
       "status": "no setup",
-      "why": "quiet"
+      "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     }
   },
   "news": [
@@ -1066,7 +1066,7 @@
   },
   "desk_freshness": {
     "watch": "9:41",
-    "crypto": "9:45"
+    "crypto": "9:51"
   },
   "desk_board": [
     {
