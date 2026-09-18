@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:17:57Z",
+  "generated_at": "2026-09-18T17:21:00Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -492,10 +492,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80875.34,
-      "chg_pct": 3.66,
+      "last": 80735.76,
+      "chg_pct": 3.48,
       "history": [
-        80719.995,
         80775.165,
         80690.735,
         80735.365,
@@ -524,16 +523,16 @@
         80775.305,
         80763.395,
         80863.015,
-        80875.335
+        80875.335,
+        80735.755
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2596.05,
-      "chg_pct": 3.69,
+      "last": 2591.05,
+      "chg_pct": 3.49,
       "history": [
-        2578.685,
         2582.495,
         2579.835,
         2583.665,
@@ -562,16 +561,16 @@
         2589.91,
         2589.115,
         2595.125,
-        2596.055
+        2596.055,
+        2591.045
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 111.97,
-      "chg_pct": 5.87,
+      "last": 111.88,
+      "chg_pct": 5.78,
       "history": [
-        110.725,
         110.785,
         110.69,
         111.185,
@@ -600,7 +599,8 @@
         111.53,
         111.63,
         111.745,
-        111.97
+        111.97,
+        111.88
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1166,7 +1166,7 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 5.87
+        "chg_pct": 5.78
       }
     ],
     "down": [
@@ -1186,7 +1186,7 @@
   },
   "desk_freshness": {
     "watch": "12:11",
-    "crypto": "12:17"
+    "crypto": "12:21"
   },
   "desk_board": [
     {
@@ -1208,6 +1208,11 @@
       "sym": "IREN",
       "status": "OUT",
       "why": "Ruled out 1:11 PM ET \u2014 already ran."
+    },
+    {
+      "sym": "MSTR",
+      "status": "WATCH",
+      "why": "Flagged 1:11 PM ET \u2014 +13.1% today."
     },
     {
       "sym": "NVDA",
@@ -1260,6 +1265,20 @@
         "line": "Looked \u2014 clock had already run out."
       }
     ],
+    "MSTR": [
+      {
+        "t": "8:35 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "9:50 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "1:19 PM ET",
+        "line": "Looked at, passed."
+      }
+    ],
     "USO": [
       {
         "t": "8:35 AM ET",
@@ -1275,16 +1294,6 @@
     "MRVL": [
       {
         "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      }
-    ],
-    "MSTR": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "9:50 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
