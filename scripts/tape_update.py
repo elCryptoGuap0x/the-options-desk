@@ -30,10 +30,12 @@ Usage: python3 scripts/tape_update.py [--dry-run]
   --dry-run: print what would be written, touch nothing on disk.
 """
 import html
+import itertools
 import json
 import re
 import sys
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -45,7 +47,6 @@ ET = ZoneInfo("America/New_York")
 CT = ZoneInfo("America/Chicago")
 
 CRYPTO_IDS = {"BTC": "bitcoin", "ETH": "ethereum", "SOL": "solana"}
-RSS_URL = "https://feeds.content.dowjones.io/public/rss/mw_topstories"
 HISTORY_CAP = 40
 
 
@@ -130,33 +131,114 @@ def fetch_crypto():
 _RSS_ITEM_RE = re.compile(r"<item>(.*?)</item>", re.S)
 _RSS_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 _RSS_DESC_RE = re.compile(r"<description>(.*?)</description>", re.S)
+_RSS_LINK_RE = re.compile(r"<link>(.*?)</link>", re.S)
+_RSS_PUBDATE_RE = re.compile(r"<pubDate>(.*?)</pubDate>", re.S)
 _TAG_STRIP_RE = re.compile(r"<[^>]+>")
+_CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
+
+# Added 9/18, real feedback: news had no real article link at all, so
+# there was no way to actually read more than the 2-line blurb. Two
+# real, tested sources. Real content-quality finding along the way:
+# MarketWatch's "Top Stories" feed (mw_topstories) is mostly personal-
+# finance advice columns ("I have $125K in credit-card debt...") that,
+# sorted strict-newest-first against a slow-publishing feed like the
+# Fed's, crowd it out of the top 10 entirely on volume alone -- swapped
+# for mw_realtimeheadlines instead (confirmed via a real pull: rate
+# decisions, PMI prints, FX moves -- the actual "markets" content this
+# site wants). Fed press releases (confirmed working, directly relevant
+# on a day the headline story IS a Fed decision). Reuters' old public
+# RSS endpoint is dead (connection failure) and CNBC's returns a hard
+# Akamai "Access Denied" to a scripted request -- both tested and
+# dropped rather than shipped on a guess.
+NEWS_FEEDS = [
+    ("MARKETS", "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"),
+    ("FED", "https://www.federalreserve.gov/feeds/press_all.xml"),
+]
 
 
-def fetch_news(limit=6):
-    """Real MarketWatch top-stories RSS, headline + description verbatim
-    -- no rewriting, no summarizing, no model call. html.unescape handles
-    the feed's own entities (e.g. "&#x2019;" -> an apostrophe). Returns
-    [] on any failure -- the client already renders an empty news list
-    fine ("-- / --" in the carousel).
+def _clean_field(raw):
+    """Strips a CDATA wrapper (the Fed feed wraps every field in one,
+    MarketWatch doesn't), then HTML tags and entities. Same cleanup
+    either feed needs, so both go through one function.
     """
+    if not raw:
+        return ""
+    text = raw.strip()
+    m = _CDATA_RE.match(text)
+    if m:
+        text = m.group(1)
+    return html.unescape(_TAG_STRIP_RE.sub("", text)).strip()
+
+
+def _parse_pubdate(raw):
+    """RFC-822-style pubDate ("Fri, 18 Sep 2026 21:16:00 GMT") -> ISO
+    UTC, via email.utils (stdlib, handles the real format's edge cases
+    rather than a hand-rolled regex). Returns "" on anything unparsable
+    so a bad date never crashes the run -- the item just sorts last.
+    """
+    raw = _clean_field(raw)
+    if not raw:
+        return ""
     try:
-        r = requests.get(RSS_URL, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        dt = parsedate_to_datetime(raw)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    except Exception:
+        return ""
+
+
+def _fetch_one_feed(tag, feed_url):
+    try:
+        r = requests.get(feed_url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
         r.raise_for_status()
         text = r.text
     except Exception as e:
-        print(f"[tape_update] news fetch failed: {e}")
+        print(f"[tape_update] news fetch failed for {feed_url}: {e}")
         return []
-    out = []
-    for block in _RSS_ITEM_RE.findall(text)[:limit]:
+    items = []
+    for block in _RSS_ITEM_RE.findall(text):
         tm = _RSS_TITLE_RE.search(block)
-        if not tm:
+        lm = _RSS_LINK_RE.search(block)
+        if not tm or not lm:
+            continue
+        url = _clean_field(lm.group(1))
+        title = _clean_field(tm.group(1))
+        if not url or not title:
             continue
         dm = _RSS_DESC_RE.search(block)
-        title = html.unescape(_TAG_STRIP_RE.sub("", tm.group(1))).strip()
-        summary = html.unescape(_TAG_STRIP_RE.sub("", dm.group(1))).strip() if dm else ""
-        if title:
-            out.append({"tag": "Markets", "title": title, "summary": summary})
+        summary = _clean_field(dm.group(1))[:240] if dm else ""
+        pm = _RSS_PUBDATE_RE.search(block)
+        ts = _parse_pubdate(pm.group(1)) if pm else ""
+        items.append({"tag": tag, "title": title[:140], "summary": summary, "url": url, "ts": ts})
+    return items
+
+
+def fetch_news(limit=10):
+    """Real headlines from NEWS_FEEDS, verbatim -- no rewriting, no
+    summarizing, no model call. Every item requires a real `url` (the
+    feed's own <link>) -- an item with no link is dropped outright
+    rather than shipped as a dead-end card.
+
+    Interleaved round-robin across feeds (first item from each feed,
+    then second from each, ...) rather than a global sort by `ts` --
+    real bug found while testing: mw_realtimeheadlines's own <pubDate>
+    is stale/wrong (dated 2024-2025 on genuinely current headlines), so
+    a strict newest-first sort let that one broken field silently crowd
+    the Fed's real, current releases out of the list entirely. `ts` is
+    still stored per item for display -- just not trusted as a
+    cross-feed ordering key. Returns [] only if every feed fails.
+    """
+    per_feed = [_fetch_one_feed(tag, url) for tag, url in NEWS_FEEDS]
+    seen_urls = set()
+    out = []
+    for item in itertools.chain.from_iterable(itertools.zip_longest(*per_feed)):
+        if item is None or item["url"] in seen_urls:
+            continue
+        seen_urls.add(item["url"])
+        out.append(item)
+        if len(out) >= limit:
+            break
     return out
 
 

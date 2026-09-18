@@ -1,4 +1,5 @@
 <title>The Options Desk</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <meta name="description" content="Autonomous options desk. Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.">
 <!-- Added 9/14 -- was zero og:/twitter: tags, so a pasted link had no
      real preview. No og:image: there's no image asset in this repo to
@@ -113,6 +114,11 @@
   .ribbon-content .ribbon-sep { color: var(--text-faint); }
 
   header { margin-bottom: 26px; text-align: center; }
+  /* Logo, added 9/18 -- mark 1 spec: T + candlestick, gold on dark
+     (see logo.svg). Favicon + 28px next to the title only, no
+     masthead art beyond that. */
+  .title-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .site-logo { width: 28px; height: 28px; flex-shrink: 0; border-radius: 6px; }
   .eyebrow {
     font-family: var(--mono);
     font-size: 11px;
@@ -588,7 +594,30 @@
   }
   .carousel-counter { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
   .carousel-title { font-family: var(--serif); font-size: 16.5px; color: var(--text); margin-bottom: 6px; line-height: 1.35; min-height: 22px; }
+  .carousel-title a { color: inherit; text-decoration: none; }
+  .carousel-title a:hover { text-decoration: underline; }
   .carousel-body { font-size: 13px; color: var(--text-dim); line-height: 1.55; min-height: 40px; }
+  /* Added 9/18, real feedback: a headline with no way to actually read
+     more than a 2-line blurb. Off-site tab only -- this site doesn't
+     have the rights or the HTML to reproduce the article itself. */
+  .news-readmore { margin-top: 8px; }
+  .news-readmore a {
+    font-family: var(--mono); font-size: 11px; font-weight: 700; color: var(--gold); text-decoration: none;
+  }
+  .news-readmore a:hover { text-decoration: underline; }
+  .news-all { margin-top: 10px; }
+  .news-all summary {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-faint); cursor: pointer; padding: 6px 2px; list-style: none;
+  }
+  .news-all summary::-webkit-details-marker { display: none; }
+  .news-all summary::before { content: "\25b8  "; }
+  .news-all[open] summary::before { content: "\25be  "; }
+  .news-all ul { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+  .news-all li a {
+    font-size: 12.5px; color: var(--text-dim); text-decoration: none; line-height: 1.4;
+  }
+  .news-all li a:hover { color: var(--gold); text-decoration: underline; }
   .carousel-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 14px; }
   .carousel-arrow {
     font-family: var(--mono); font-size: 15px; line-height: 1;
@@ -713,7 +742,10 @@
 
   <header>
     <div class="eyebrow">Autonomous Options Desk</div>
-    <h1>The Options Desk</h1>
+    <div class="title-row">
+      <img src="logo.svg" width="28" height="28" alt="" class="site-logo">
+      <h1>The Options Desk</h1>
+    </div>
     <p class="sub">Short-dated contracts (0-2DTE), every closed ticket on the tape. Entertainment log. Not advice.</p>
   </header>
 
@@ -765,6 +797,10 @@
             <button class="carousel-arrow" id="news-next" aria-label="Next story" type="button">&rarr;</button>
           </div>
         </div>
+        <details class="news-all" id="news-all-wrap" hidden>
+          <summary>All headlines</summary>
+          <ul id="news-all-list"></ul>
+        </details>
       </section>
     </div>
 
@@ -937,6 +973,14 @@
     return s;
   }
   function pctClass(v) { return v >= 0 ? "good" : "bad"; }
+  // Added 9/18 for real news links -- headline text and URLs come from
+  // an external RSS feed, not hand-authored copy, so anything placed
+  // into innerHTML (title-as-link, the flat headline list) escapes it.
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
 
   // Added 9/18: real fix for the hero P&L tile hiding today's actual
   // number after the market closes (the exact case where someone is
@@ -1154,7 +1198,15 @@
       }
       var frame = buildFrame(items[idx]);
       elTag.textContent = frame.tag;
-      elTitle.textContent = frame.title;
+      // Added 9/18: an optional href turns the title into a real
+      // off-site link (target=_blank) -- news is the only caller that
+      // sets it; calendar keeps the plain-text path unchanged.
+      if (frame.href) {
+        elTitle.innerHTML = '<a href="' + escapeHtml(frame.href) + '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(frame.title) + "</a>";
+      } else {
+        elTitle.textContent = frame.title;
+      }
       elBody.innerHTML = frame.body;
       elCounter.textContent = (idx + 1) + " / " + items.length;
       var dots = elDots.children;
@@ -1725,9 +1777,32 @@
   }
 
   function renderNews(items) {
-    newsCarousel.setItems(items || [], function (item) {
-      return { tag: item.tag, title: item.title, body: item.summary };
+    items = items || [];
+    newsCarousel.setItems(items, function (item) {
+      var readMore = item.url
+        ? '<div class="news-readmore"><a href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer">Read more &rarr;</a></div>'
+        : "";
+      return { tag: item.tag, title: item.title, href: item.url, body: (item.summary || "") + readMore };
     });
+    renderNewsList(items);
+  }
+
+  // Flat list of every fetched headline, added 9/18 -- real feedback:
+  // being stuck clicking through carousel dots one at a time to see
+  // more than the current story. Same off-site-link convention as the
+  // carousel title itself (target=_blank, no on-site article view --
+  // this site doesn't have the rights or the HTML to reproduce one).
+  function renderNewsList(items) {
+    var wrap = document.getElementById("news-all-wrap");
+    var list = document.getElementById("news-all-list");
+    if (!wrap || !list) return;
+    if (!items.length) { wrap.hidden = true; list.innerHTML = ""; return; }
+    list.innerHTML = items.map(function (item) {
+      if (!item.url) return "";
+      return '<li><a href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' +
+        escapeHtml(item.title) + "</a></li>";
+    }).join("");
+    wrap.hidden = false;
   }
 
   function renderFooter(data) {
@@ -2383,7 +2458,7 @@
     ctx.fillStyle = "rgba(255,255,255,0.35)";
     ctx.textAlign = "right";
     ctx.textBaseline = "top";
-    ctx.fillText(String(score), W - 8, 6);
+    ctx.fillText(String(score == null ? 0 : score), W - 8, 6);
 
     if (fuel > 0) {
       var fuelW = 70, fuelPct = fuel / MAX_FUEL;
@@ -2507,6 +2582,16 @@
 
   player = { y: GROUND_Y - PLAYER_H, v: 0, onGround: true };
   items = [];
+  // Fixed 9/18, real bug confirmed live (screenshot showed literal
+  // "undefined" text sitting over the moon graphic): score/fuel/shield
+  // were never initialized before this very first draw() call --
+  // resetRun() is what normally sets them, but that only runs once
+  // start() fires on the player's first input. String(undefined) is the
+  // literal text "undefined", drawn at the HUD's top-right position,
+  // which is exactly where the moon sits in the background art.
+  score = 0;
+  fuel = 0;
+  shield = 0;
   draw();
 })();
 </script>
