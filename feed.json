@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:57:37Z",
+  "generated_at": "2026-09-18T18:00:42Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -526,10 +526,9 @@
       "why": "Looked 1:51 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80878.62,
-      "chg_pct": 3.66,
+      "last": 80895.91,
+      "chg_pct": 3.68,
       "history": [
-        80953.045,
         81061.805,
         81212.255,
         81001.17,
@@ -558,16 +557,16 @@
         80812.74,
         80873.685,
         80858.675,
-        80878.615
+        80878.615,
+        80895.915
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2604.2,
+      "last": 2603.99,
       "chg_pct": 4.01,
       "history": [
-        2595.805,
         2603.045,
         2607.505,
         2601.15,
@@ -596,16 +595,16 @@
         2599.135,
         2605.47,
         2605.325,
-        2604.205
+        2604.205,
+        2603.995
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 112.41,
-      "chg_pct": 6.28,
+      "last": 112.36,
+      "chg_pct": 6.24,
       "history": [
-        111.58,
         111.51,
         111.795,
         112.135,
@@ -634,7 +633,8 @@
         112.39,
         112.32,
         112.4,
-        112.41
+        112.41,
+        112.365
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1333,7 +1333,7 @@
   },
   "desk_freshness": {
     "watch": "12:51",
-    "crypto": "12:57"
+    "crypto": "1:00"
   },
   "desk_board": [
     {
@@ -1370,6 +1370,11 @@
       "sym": "NVDA",
       "status": "OUT",
       "why": "Ruled out 1:51 PM ET \u2014 already ran."
+    },
+    {
+      "sym": "SMCI",
+      "status": "WATCH",
+      "why": "Flagged 1:51 PM ET \u2014 -3.1% today."
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
@@ -1439,6 +1444,16 @@
       {
         "t": "1:38 PM ET",
         "line": "Looked at, passed."
+      }
+    ],
+    "SMCI": [
+      {
+        "t": "9:50 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "1:58 PM ET",
+        "line": "Looked \u2014 clock had already run out."
       }
     ],
     "USO": [
@@ -1517,12 +1532,6 @@
       {
         "t": "1:24 PM ET",
         "line": "Ruled out \u2014 already ran."
-      }
-    ],
-    "SMCI": [
-      {
-        "t": "9:50 AM ET",
-        "line": "First flagged \u2014 still building."
       }
     ],
     "CRWD": [
