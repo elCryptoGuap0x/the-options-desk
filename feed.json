@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:27:02Z",
+  "generated_at": "2026-09-18T14:30:06Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -410,8 +410,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 759.03,
-      "chg_pct": -0.44,
+      "last": 759.19,
+      "chg_pct": -0.42,
       "history": [
         762.4,
         760.48,
@@ -420,14 +420,15 @@
         759.925,
         759.71,
         759.42,
-        759.035
+        759.035,
+        759.19
       ],
       "status": "no setup",
       "why": "quiet"
     },
     "QQQ": {
-      "last": 716.34,
-      "chg_pct": -0.02,
+      "last": 716.76,
+      "chg_pct": 0.04,
       "history": [
         716.48,
         718.06,
@@ -436,7 +437,8 @@
         718.04,
         717.93,
         717.02,
-        716.335
+        716.335,
+        716.76
       ],
       "status": "no setup",
       "why": "quiet"
@@ -460,8 +462,8 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 80694.64,
-      "chg_pct": 3.43,
+      "last": 80729.51,
+      "chg_pct": 3.47,
       "history": [
         78020.865,
         77983.445,
@@ -486,14 +488,15 @@
         80399.115,
         80660.635,
         80858.695,
-        80694.64
+        80694.64,
+        80729.505
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2570.24,
-      "chg_pct": 2.66,
+      "last": 2570.14,
+      "chg_pct": 2.65,
       "history": [
         2503.685,
         2496.595,
@@ -518,14 +521,15 @@
         2559.29,
         2567.075,
         2578.76,
-        2570.245
+        2570.245,
+        2570.14
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 109.34,
-      "chg_pct": 3.38,
+      "last": 109.41,
+      "chg_pct": 3.44,
       "history": [
         105.765,
         105.44,
@@ -550,14 +554,15 @@
         108.81,
         109.285,
         109.795,
-        109.34
+        109.34,
+        109.405
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "MSTR": {
-      "last": 145.18,
-      "chg_pct": 9.34,
+      "last": 146.42,
+      "chg_pct": 10.28,
       "history": [
         132.775,
         135.83,
@@ -566,14 +571,15 @@
         143.92,
         144.465,
         144.55,
-        145.175
+        145.175,
+        146.42
       ],
       "status": "watching",
       "why": "still building"
     },
     "COIN": {
-      "last": 187.6,
-      "chg_pct": 9.3,
+      "last": 189.43,
+      "chg_pct": 10.37,
       "history": [
         171.63,
         176.24,
@@ -582,14 +588,15 @@
         185.72,
         185.805,
         185.46,
-        187.6
+        187.6,
+        189.425
       ],
       "status": "watching",
       "why": "still building"
     },
     "IBIT": {
-      "last": 45.59,
-      "chg_pct": 4.88,
+      "last": 45.77,
+      "chg_pct": 5.31,
       "history": [
         43.4633,
         44.15,
@@ -598,14 +605,15 @@
         45.37,
         45.4,
         45.43,
-        45.585
+        45.585,
+        45.7715
       ],
       "status": "watching",
       "why": "still building"
     },
     "IREN": {
-      "last": 43.57,
-      "chg_pct": 0.58,
+      "last": 43.83,
+      "chg_pct": 1.18,
       "history": [
         43.32,
         44.23,
@@ -614,27 +622,30 @@
         44.75,
         44.667,
         43.82,
-        43.57
+        43.57,
+        43.83
       ],
       "status": "watching",
       "why": "still building"
     },
     "GNRC": {
-      "last": 202.33,
-      "chg_pct": -2.97,
+      "last": 203.3,
+      "chg_pct": -2.5,
       "history": [
         208.52,
-        202.33
+        202.33,
+        203.3
       ],
       "status": "flagged",
       "why": "still building"
     },
     "AMZN": {
-      "last": 252.37,
-      "chg_pct": 0.5,
+      "last": 252.5,
+      "chg_pct": 0.55,
       "history": [
         251.105,
-        252.365
+        252.365,
+        252.495
       ],
       "status": "watching",
       "why": "still building"
@@ -658,8 +669,8 @@
       "why": "still building"
     },
     "INTC": {
-      "last": 108.13,
-      "chg_pct": -2.5,
+      "last": 108.14,
+      "chg_pct": -2.49,
       "history": [
         110.905,
         109.72,
@@ -668,7 +679,8 @@
         109.29,
         109.03,
         108.4,
-        108.13
+        108.13,
+        108.14
       ],
       "status": "watching",
       "why": "still building"
@@ -692,8 +704,8 @@
       "why": "still building"
     },
     "SMCI": {
-      "last": 38.69,
-      "chg_pct": -3.77,
+      "last": 38.66,
+      "chg_pct": -3.83,
       "history": [
         40.2,
         39.38,
@@ -701,7 +713,8 @@
         39.2,
         39.16,
         38.78,
-        38.685
+        38.685,
+        38.6615
       ],
       "status": "watching",
       "why": "still building"
@@ -725,8 +738,8 @@
       "why": "still building"
     },
     "NVDA": {
-      "last": 220.37,
-      "chg_pct": 0.5,
+      "last": 220.09,
+      "chg_pct": 0.37,
       "history": [
         219.275,
         219.3,
@@ -735,7 +748,8 @@
         219.58,
         219.22,
         219.91,
-        220.3718
+        220.3718,
+        220.09
       ],
       "status": "ruled out",
       "why": "already ran"
@@ -986,36 +1000,36 @@
   "board_movers": {
     "up": [
       {
-        "sym": "MSTR",
-        "chg_pct": 9.34
+        "sym": "COIN",
+        "chg_pct": 10.37
       },
       {
-        "sym": "COIN",
-        "chg_pct": 9.3
+        "sym": "MSTR",
+        "chg_pct": 10.28
       },
       {
         "sym": "IBIT",
-        "chg_pct": 4.88
+        "chg_pct": 5.31
       }
     ],
     "down": [
       {
         "sym": "SMCI",
-        "chg_pct": -3.77
+        "chg_pct": -3.83
       },
       {
         "sym": "GNRC",
-        "chg_pct": -2.97
+        "chg_pct": -2.5
       },
       {
         "sym": "INTC",
-        "chg_pct": -2.5
+        "chg_pct": -2.49
       }
     ]
   },
   "desk_freshness": {
-    "watch": "9:20",
-    "crypto": "9:27"
+    "watch": "9:26",
+    "crypto": "9:30"
   },
   "desk_board": [
     {
