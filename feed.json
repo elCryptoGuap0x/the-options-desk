@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:35:13Z",
+  "generated_at": "2026-09-18T16:38:16Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -484,10 +484,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 81212.26,
-      "chg_pct": 4.09,
+      "last": 81001.17,
+      "chg_pct": 3.82,
       "history": [
-        80805.145,
         80673.395,
         80607.075,
         80765.545,
@@ -516,16 +515,16 @@
         80942.035,
         80953.045,
         81061.805,
-        81212.255
+        81212.255,
+        81001.17
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2607.51,
-      "chg_pct": 4.15,
+      "last": 2601.15,
+      "chg_pct": 3.89,
       "history": [
-        2582.32,
         2578.615,
         2571.545,
         2574.585,
@@ -554,16 +553,16 @@
         2594.025,
         2595.805,
         2603.045,
-        2607.505
+        2607.505,
+        2601.15
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 112.14,
-      "chg_pct": 6.02,
+      "last": 111.92,
+      "chg_pct": 5.82,
       "history": [
-        109.955,
         109.78,
         109.81,
         110.14,
@@ -592,7 +591,8 @@
         111.58,
         111.51,
         111.795,
-        112.135
+        112.135,
+        111.92
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1114,9 +1114,9 @@
       ]
     ],
     "no_shape_count": 2,
-    "filled": 12
+    "filled": 13
   },
-  "scan_log_public": "11 looked, 12 filled.",
+  "scan_log_public": "11 looked, 13 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1130,7 +1130,7 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 6.02
+        "chg_pct": 5.82
       }
     ],
     "down": [
@@ -1150,7 +1150,7 @@
   },
   "desk_freshness": {
     "watch": "11:28",
-    "crypto": "11:35"
+    "crypto": "11:38"
   },
   "desk_board": [
     {
