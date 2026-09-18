@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T18:15:57Z",
+  "generated_at": "2026-09-18T18:19:01Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -283,36 +283,7 @@
       "exit_price": "0.89"
     }
   ],
-  "skip_summary": [
-    {
-      "day": "Monday",
-      "count": 22,
-      "names": [
-        "SPY",
-        "QQQ",
-        "DIA",
-        "VIXY",
-        "AAPL",
-        "MSFT",
-        "META",
-        "NVDA",
-        "TSLA",
-        "USO",
-        "XLE",
-        "CRWD",
-        "PANW",
-        "MRVL",
-        "COIN",
-        "MSTR",
-        "IREN",
-        "IBIT",
-        "BMNR",
-        "CRCL",
-        "ETHA",
-        "BSOL"
-      ]
-    }
-  ],
+  "skip_summary": [],
   "scan_log": [
     {
       "time": "12:26p",
@@ -566,12 +537,9 @@
       "why": "Looked 2:11 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80825.34,
-      "chg_pct": 3.59,
+      "last": 80875.74,
+      "chg_pct": 3.66,
       "history": [
-        80830.915,
-        80821.125,
-        80886.785,
         80775.305,
         80763.395,
         80863.015,
@@ -598,18 +566,18 @@
         80949.015,
         80882.135,
         80837.325,
-        80825.335
+        80825.335,
+        80838.675,
+        80859.305,
+        80875.745
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2603.93,
-      "chg_pct": 4.0,
+      "last": 2606.7,
+      "chg_pct": 4.11,
       "history": [
-        2596.305,
-        2592.495,
-        2594.345,
         2589.91,
         2589.115,
         2595.125,
@@ -636,18 +604,18 @@
         2608.955,
         2605.355,
         2603.745,
-        2603.935
+        2603.935,
+        2606.065,
+        2606.005,
+        2606.695
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 112.38,
-      "chg_pct": 6.25,
+      "last": 112.45,
+      "chg_pct": 6.33,
       "history": [
-        111.775,
-        111.63,
-        111.52,
         111.79,
         111.53,
         111.63,
@@ -674,7 +642,10 @@
         112.51,
         112.365,
         112.16,
-        112.375
+        112.375,
+        112.41,
+        112.425,
+        112.455
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1349,7 +1320,7 @@
       ],
       [
         "GNRC",
-        "candidate_C"
+        "watching"
       ],
       [
         "HOOD",
@@ -1357,7 +1328,7 @@
       ],
       [
         "IBIT",
-        "candidate_C"
+        "watching"
       ],
       [
         "INTC",
@@ -1385,7 +1356,7 @@
       ],
       [
         "SMCI",
-        "candidate_B"
+        "watching"
       ],
       [
         "USO",
@@ -1433,7 +1404,7 @@
   },
   "desk_freshness": {
     "watch": "1:11",
-    "crypto": "1:15"
+    "crypto": "1:19"
   },
   "desk_board": [
     {
