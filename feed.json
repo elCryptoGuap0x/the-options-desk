@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:36:16Z",
+  "generated_at": "2026-09-18T17:39:19Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -498,10 +498,9 @@
       "why": "Looked 1:32 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80596.12,
-      "chg_pct": 3.3,
+      "last": 80661.57,
+      "chg_pct": 3.38,
       "history": [
-        80873.465,
         80769.135,
         80866.975,
         80905.505,
@@ -530,16 +529,16 @@
         80697.345,
         80721.305,
         80587.395,
-        80596.125
+        80596.125,
+        80661.565
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2588.99,
+      "last": 2588.95,
       "chg_pct": 3.41,
       "history": [
-        2592.765,
         2590.58,
         2593.785,
         2592.315,
@@ -568,16 +567,16 @@
         2590.82,
         2591.8,
         2586.455,
-        2588.995
+        2588.995,
+        2588.955
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 112.11,
-      "chg_pct": 6.0,
+      "last": 112.16,
+      "chg_pct": 6.04,
       "history": [
-        111.38,
         111.385,
         111.455,
         111.51,
@@ -606,7 +605,8 @@
         111.9,
         112.25,
         111.945,
-        112.11
+        112.11,
+        112.155
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1227,7 +1227,7 @@
   },
   "desk_freshness": {
     "watch": "12:32",
-    "crypto": "12:36"
+    "crypto": "12:39"
   },
   "desk_board": [
     {
@@ -1239,6 +1239,11 @@
       "sym": "COIN",
       "status": "WATCH",
       "why": "On the list since 1:32 PM ET. No look yet."
+    },
+    {
+      "sym": "IBIT",
+      "status": "WATCH",
+      "why": "Flagged 1:32 PM ET \u2014 +5.3% today."
     },
     {
       "sym": "INTC",
@@ -1320,6 +1325,16 @@
         "line": "Looked at, passed."
       }
     ],
+    "IBIT": [
+      {
+        "t": "9:50 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "1:38 PM ET",
+        "line": "Looked at, passed."
+      }
+    ],
     "USO": [
       {
         "t": "8:35 AM ET",
@@ -1377,12 +1392,6 @@
     "GNRC": [
       {
         "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      }
-    ],
-    "IBIT": [
-      {
-        "t": "9:50 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
