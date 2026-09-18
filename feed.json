@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T23:05:44Z",
+  "generated_at": "2026-09-18T23:18:26Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -482,11 +482,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81157,
-      "chg_pct": 6.22,
+      "last": 81161,
+      "chg_pct": 6.19,
       "history": [
-        80949.015,
-        80882.135,
         80837.325,
         80825.335,
         80838.675,
@@ -515,18 +513,19 @@
         81095.365,
         81179.515,
         81158.095,
-        81165,
-        81157
+        81142.705,
+        81130.755,
+        81161,
+        81161,
+        81161
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2618.14,
-      "chg_pct": 7.0,
+      "last": 2619.38,
+      "chg_pct": 7.08,
       "history": [
-        2605.355,
-        2603.745,
         2603.935,
         2606.065,
         2606.005,
@@ -555,18 +554,19 @@
         2618.125,
         2619.435,
         2616.67,
-        2619.34,
-        2618.14
+        2618.455,
+        2617.845,
+        2619.38,
+        2619.38,
+        2619.38
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.2,
-      "chg_pct": 11.63,
+      "last": 113.38,
+      "chg_pct": 11.72,
       "history": [
-        112.365,
-        112.16,
         112.375,
         112.41,
         112.425,
@@ -595,8 +595,11 @@
         112.89,
         113.27,
         113.195,
-        113.27,
-        113.2
+        113.355,
+        113.335,
+        113.38,
+        113.38,
+        113.38
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1066,11 +1069,36 @@
   },
   "news": [
     {
+      "tag": "Macro",
+      "title": "Nasdaq futures lead Wall St gains as oil retreat eases inflation worries",
+      "summary": "Futures pointed higher Friday with Nasdaq 100 contracts up ~0.5-0.6%, S&P ~0.2-0.3% after Thursday's tech-led rebound. Investors digested the Fed's first rate hike in years while lower crude tempered inflation fears. Chipmakers and AI-linked names extended gains. Crude fell for a third day amid mixed supply headlines."
+    },
+    {
+      "tag": "Stocks",
+      "title": "Warren Buffett steps down as Berkshire Hathaway chairman",
+      "summary": "Berkshire named Buffett (96) chairman emeritus effective immediately; son Howard Buffett becomes chairman. Buffett remains a director. He previously handed the CEO role to Greg Abel. Letter cited \"Father Time always wins\" while expressing confidence in succession. Shares little changed on the news."
+    },
+    {
+      "tag": "Macro",
+      "title": "Bank of Japan raises policy rate to 1.25%",
+      "summary": "BoJ hiked 25 bp to the highest level in decades, matching expectations, citing inflation risks. Statement and press conference followed. Yen weakened; Nikkei rose. Move fits synchronized global tightening narrative after recent Fed action."
+    },
+    {
+      "tag": "Macro",
+      "title": "Crude prices extend losses, easing inflation pressure",
+      "summary": "Brent and WTI slipped ~1.5-2% for a third session despite ongoing Middle East tensions and Houthi/Saudi strikes. Markets shrugged off supply concerns; lower energy prices supported risk assets and tempered Fed-related inflation worries."
+    },
+    {
+      "tag": "Stocks",
+      "title": "Chipmakers and AI-linked names drive early strength",
+      "summary": "Semiconductor ETFs and names including NVDA, INTC, SMCI pointed higher premarket after Thursday's strong session. Momentum returned to AI supply-chain stocks in Asia and Europe as well. Broader tech leadership contrasted with softer energy."
+    },
+    {
       "tag": "MARKETS",
-      "title": "Elon Musk in a post on X says some of his Trump posts \u2018went too far\u2019 and that he regrets them",
+      "title": "Fed\u2019s Powell says rate cut \u2018on the table\u2019 as soon as September",
       "summary": "",
-      "url": "https://www.marketwatch.com/story/elon-musk-in-a-post-on-x-says-some-of-his-trump-posts-went-too-far-and-that-he-regrets-them-90e73a6a?mod=mw_rss_realtimeheadlines",
-      "ts": "2025-06-11T07:09:00Z"
+      "url": "https://www.marketwatch.com/story/feds-powell-says-rate-cut-on-the-table-as-soon-as-september-f3f7c8f2?mod=mw_rss_realtimeheadlines",
+      "ts": "2024-07-31T18:41:00Z"
     },
     {
       "tag": "FED",
@@ -1080,60 +1108,11 @@
       "ts": "2026-09-16T18:00:00Z"
     },
     {
-      "tag": "MARKETS",
-      "title": "Bank of England decision on Thursday will be at 12:02 p.m. local time instead of 12 p.m., due to VE Day\u2019s two minutes of silence",
-      "summary": "",
-      "url": "https://www.marketwatch.com/story/bank-of-england-decision-on-thursday-will-be-at-12-02-p-m-local-time-instead-of-12-p-m-due-to-ve-day-two-minutes-of-silence-1f6bed66?mod=mw_rss_realtimeheadlines",
-      "ts": "2025-05-06T11:59:00Z"
-    },
-    {
       "tag": "FED",
       "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
       "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
       "ts": "2026-09-16T18:00:00Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Swiss National Bank cuts interest rates by a half point to 0.5%",
-      "summary": "",
-      "url": "https://www.marketwatch.com/story/swiss-national-bank-cuts-interest-rates-by-a-half-point-to-0-5-ed1fce78?mod=mw_rss_realtimeheadlines",
-      "ts": "2024-12-12T08:32:00Z"
-    },
-    {
-      "tag": "FED",
-      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-      "summary": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
-      "ts": "2026-08-25T18:00:00Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Dollar jumps 0.5% to 0.8890 francs",
-      "summary": "",
-      "url": "https://www.marketwatch.com/story/dollar-jumps-0-5-to-0-8890-francs-047c6b4d?mod=mw_rss_realtimeheadlines",
-      "ts": "2024-12-12T08:32:00Z"
-    },
-    {
-      "tag": "FED",
-      "title": "Minutes of the Federal Open Market Committee, July 28\u201329, 2026",
-      "summary": "Minutes of the Federal Open Market Committee, July 28\u201329, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
-      "ts": "2026-08-19T18:00:00Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Germany flash manufacturing PMI rises to 4-month high of 43.2",
-      "summary": "",
-      "url": "https://www.marketwatch.com/story/germany-flash-manufacturing-pmi-rises-to-4-month-high-of-43-2-b9e50a64?mod=mw_rss_realtimeheadlines",
-      "ts": "2024-11-22T08:34:00Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Germany flash services PMI falls to 9-month low of 49.4",
-      "summary": "",
-      "url": "https://www.marketwatch.com/story/germany-flash-services-pmi-falls-to-9-month-low-of-49-4-5e5d2763?mod=mw_rss_realtimeheadlines",
-      "ts": "2024-11-22T08:34:00Z"
     }
   ],
   "calendar": [
@@ -1303,7 +1282,7 @@
   },
   "desk_freshness": {
     "watch": "2:08",
-    "crypto": "6:04"
+    "crypto": "6:18"
   },
   "desk_board": [
     {

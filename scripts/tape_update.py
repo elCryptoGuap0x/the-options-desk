@@ -165,6 +165,24 @@ NEWS_FEEDS = [
     ("FED", "https://www.federalreserve.gov/feeds/press_all.xml", "Monetary Policy"),
 ]
 
+# Desk-relevance keyword filter, added 9/18 -- real feedback: the
+# realtimeheadlines feed's own <category> tags aren't reliable enough to
+# filter on (unlike the Fed's), so a generic political/celebrity item
+# ("Elon Musk...regrets some of his Trump posts") sailed straight
+# through. Keeps a headline only if its title+summary mentions this
+# desk's own universe (site-build.py's BOARD_UNIVERSE), a macro-data
+# term, or an options/vol term. Word-boundary, case-insensitive --
+# still zero LLM, just a real allowlist instead of an invented one.
+NEWS_KEYWORDS_RE = re.compile(
+    r"\b(?:SPY|QQQ|IWM|DIA|VIX|"
+    r"AAPL|MSFT|NVDA|AMZN|META|GOOGL|TSLA|"
+    r"COIN|MSTR|HOOD|IBIT|IREN|BTC|ETH|BITCOIN|"
+    r"FED|FOMC|CPI|PPI|JOBS|PAYROLLS|TREASURY|YIELD|"
+    r"OPTIONS|0DTE|GAMMA|VOL|"
+    r"OIL|CRUDE|XLE|GDX|GOLD)\b",
+    re.IGNORECASE,
+)
+
 
 def _clean_field(raw):
     """Strips a CDATA wrapper (the Fed feed wraps every field in one,
@@ -230,6 +248,8 @@ def _fetch_one_feed(tag, feed_url, category_filter):
             continue
         dm = _RSS_DESC_RE.search(block)
         summary = _clean_field(dm.group(1))[:240] if dm else ""
+        if not NEWS_KEYWORDS_RE.search(title + " " + summary):
+            continue
         pm = _RSS_PUBDATE_RE.search(block)
         ts = _parse_pubdate(pm.group(1)) if pm else ""
         items.append({"tag": tag, "title": title[:140], "summary": summary, "url": url, "ts": ts})
@@ -284,6 +304,40 @@ def refresh_crypto_board(market_board, crypto):
     return market_board
 
 
+NEWS_LIMIT = 10
+
+
+def merge_news(existing_news, fresh_rss):
+    """Added 9/18, real user ask ("can it also use the ones I pasted on
+    scout report?"): site-build.py's own build_mechanical_news() already
+    parses the user's real pasted morning-scout brief into news cards,
+    zero Claude, every cycle -- and neither that nor its Claude-authored
+    fallback (site-copy.py) ever carries a real per-item `url` (both are
+    synthesized from a pasted brief, not sourced from one article each).
+    That's a reliable, structural signal: any existing item with no
+    `url` is today's real curated content and is kept untouched, in
+    place, on every run. Fresh RSS (always has a real url) fills the
+    remaining slots up to NEWS_LIMIT, deduped against every url already
+    present. Curated content this script has no access to (it runs from
+    a checkout of the public repo alone) never gets silently discarded
+    by an off-hours refresh again.
+    """
+    # Fixed same-day, real bug caught by running this twice in a row
+    # before shipping: an earlier draft deduped fresh_rss against every
+    # url already sitting in existing_news -- including RSS items THIS
+    # SCRIPT wrote last run. Since a live feed's top items are often
+    # unchanged a few minutes later, that treated "still the current
+    # headline" as "already seen" and silently zeroed out the RSS
+    # portion on the very next run. The RSS slice is a fresh snapshot
+    # every run, not something accumulated across runs -- it should
+    # never be deduped against its own prior output, only within a
+    # single fetch (fetch_news already handles that).
+    existing_news = existing_news or []
+    curated = [n for n in existing_news if not n.get("url")]
+    remaining = max(0, NEWS_LIMIT - len(curated))
+    return curated + fresh_rss[:remaining]
+
+
 def main():
     dry_run = "--dry-run" in sys.argv
 
@@ -306,8 +360,7 @@ def main():
     feed["generated_at"] = now.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     if crypto:
         feed["market_board"] = refresh_crypto_board(feed.get("market_board") or {}, crypto)
-    if news:
-        feed["news"] = news
+    feed["news"] = merge_news(feed.get("news"), news)
 
     if dry_run:
         print(json.dumps({"session": feed["session"], "crypto": crypto, "news_count": len(news)}, indent=2))
