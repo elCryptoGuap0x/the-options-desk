@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T12:35:05Z",
+  "generated_at": "2026-09-18T13:05:08Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -446,28 +446,31 @@
       "why": "quiet"
     },
     "BTC": {
-      "last": 78020.87,
-      "chg_pct": 0.0,
+      "last": 77983.45,
+      "chg_pct": -0.05,
       "history": [
-        78020.865
+        78020.865,
+        77983.445
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2503.68,
-      "chg_pct": 0.0,
+      "last": 2496.59,
+      "chg_pct": -0.28,
       "history": [
-        2503.685
+        2503.685,
+        2496.595
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 105.77,
-      "chg_pct": 0.0,
+      "last": 105.44,
+      "chg_pct": -0.31,
       "history": [
-        105.765
+        105.765,
+        105.44
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
@@ -794,13 +797,45 @@
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [],
-    "down": []
+    "down": [
+      {
+        "sym": "SOL",
+        "chg_pct": -0.31
+      },
+      {
+        "sym": "ETH",
+        "chg_pct": -0.28
+      },
+      {
+        "sym": "BTC",
+        "chg_pct": -0.05
+      }
+    ]
   },
   "desk_freshness": {
     "watch": "12:42",
-    "crypto": "7:35"
+    "crypto": "8:05"
   },
-  "desk_board": [],
+  "desk_board": [
+    {
+      "sym": "SOL",
+      "status": "HOT",
+      "why": "not a setup",
+      "chg_pct": -0.31
+    },
+    {
+      "sym": "ETH",
+      "status": "HOT",
+      "why": "not a setup",
+      "chg_pct": -0.28
+    },
+    {
+      "sym": "BTC",
+      "status": "HOT",
+      "why": "not a setup",
+      "chg_pct": -0.05
+    }
+  ],
   "last_fill_at": "2026-09-16T14:15:43Z",
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {
@@ -874,6 +909,24 @@
       {
         "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
+      }
+    ],
+    "SOL": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
+      }
+    ],
+    "ETH": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
+      }
+    ],
+    "BTC": [
+      {
+        "t": null,
+        "line": "Moving, not a setup."
       }
     ]
   }
