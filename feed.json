@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T20:37:41Z",
+  "generated_at": "2026-09-18T21:54:35Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -596,8 +596,8 @@
       "why": "Looked 3:08 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80994.11,
-      "chg_pct": 3.81,
+      "last": 81217,
+      "chg_pct": 6.32,
       "history": [
         80891.985,
         80901.225,
@@ -628,14 +628,15 @@
         81082.495,
         81015.575,
         80996.11,
-        80994.11
+        80994.11,
+        81217
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2626.32,
-      "chg_pct": 4.9,
+      "last": 2626.2,
+      "chg_pct": 7.3,
       "history": [
         2602.805,
         2604.195,
@@ -666,14 +667,15 @@
         2622.155,
         2627.235,
         2627.45,
-        2626.32
+        2626.32,
+        2626.2
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.33,
-      "chg_pct": 7.15,
+      "last": 113.28,
+      "chg_pct": 11.94,
       "history": [
         112.255,
         112.395,
@@ -704,7 +706,8 @@
         112.745,
         113.39,
         113.43,
-        113.325
+        113.325,
+        113.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1410,29 +1413,34 @@
   },
   "news": [
     {
-      "tag": "Macro",
-      "title": "Nasdaq futures lead Wall St gains as oil retreat eases inflation worries",
-      "summary": "Futures pointed higher Friday with Nasdaq 100 contracts up ~0.5-0.6%, S&P ~0.2-0.3% after Thursday's tech-led rebound. Investors digested the Fed's first rate hike in years while lower crude tempered inflation fears. Chipmakers and AI-linked names extended gains. Crude fell for a third day amid mixed supply headlines."
+      "tag": "Markets",
+      "title": "It\u2019s almost impossible to sell a condo unit these days: \u2018I feel trapped\u2019",
+      "summary": "Selling a condominium unit has become a challenge for many, as buyers get spooked at the prospect of bearing ever-rising HOA fees \u2014 even if the home comes with a lower price tag."
     },
     {
-      "tag": "Stocks",
-      "title": "Warren Buffett steps down as Berkshire Hathaway chairman",
-      "summary": "Berkshire named Buffett (96) chairman emeritus effective immediately; son Howard Buffett becomes chairman. Buffett remains a director. He previously handed the CEO role to Greg Abel. Letter cited \"Father Time always wins\" while expressing confidence in succession. Shares little changed on the news."
+      "tag": "Markets",
+      "title": "Amazon, Palantir and 12 more top tech stock picks from UBS analysts",
+      "summary": "The AI data-center buildout is still early, and UBS says investors can cash in through investments across the technology, media and telecommunications sectors."
     },
     {
-      "tag": "Macro",
-      "title": "Bank of Japan raises policy rate to 1.25%",
-      "summary": "BoJ hiked 25 bp to the highest level in decades, matching expectations, citing inflation risks. Statement and press conference followed. Yen weakened; Nikkei rose. Move fits synchronized global tightening narrative after recent Fed action."
+      "tag": "Markets",
+      "title": "Stocks are failing the \u2018breadth\u2019 test, but options traders still see reason to buy",
+      "summary": "An options volatility tracker has produced a \u201cspike peak\u201d buy signal for stocks for the first time in months, at a time that internal market indicators are negative."
     },
     {
-      "tag": "Macro",
-      "title": "Crude prices extend losses, easing inflation pressure",
-      "summary": "Brent and WTI slipped ~1.5-2% for a third session despite ongoing Middle East tensions and Houthi/Saudi strikes. Markets shrugged off supply concerns; lower energy prices supported risk assets and tempered Fed-related inflation worries."
+      "tag": "Markets",
+      "title": "Most of what you know about data centers is wrong",
+      "summary": "As AI hysteria reaches a fever pitch, it\u2019s time to look at the evidence."
     },
     {
-      "tag": "Stocks",
-      "title": "Chipmakers and AI-linked names drive early strength",
-      "summary": "Semiconductor ETFs and names including NVDA, INTC, SMCI pointed higher premarket after Thursday's strong session. Momentum returned to AI supply-chain stocks in Asia and Europe as well. Broader tech leadership contrasted with softer energy."
+      "tag": "Markets",
+      "title": "My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?",
+      "summary": "The Federal Reserve announced a quarter-percentage-point interest-rate hike Wednesday, to a range of 3.75%-4.0%."
+    },
+    {
+      "tag": "Markets",
+      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
+      "summary": "\u201cI racked up this debt to cover my living expenses for two years without an income stream.\u201d"
     }
   ],
   "calendar": [
