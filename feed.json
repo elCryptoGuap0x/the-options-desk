@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-17T19:47:38Z",
+  "generated_at": "2026-09-18T12:35:05Z",
   "session": {
-    "day_label": "THU",
-    "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
-    "next_open_iso": "2026-09-18T13:30:00Z",
+    "day_label": "FRI",
+    "market_state": "OPEN",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-09-21T13:30:00Z",
     "position": "FLAT"
   },
   "stats": {
@@ -411,37 +411,8 @@
   "market_board": {
     "SPY": {
       "last": 762.4,
-      "chg_pct": 1.16,
+      "chg_pct": 0.0,
       "history": [
-        761.29,
-        761.12,
-        760.45,
-        760.42,
-        761.48,
-        762.09,
-        761.93,
-        762.04,
-        761.07,
-        760.785,
-        760.5,
-        761.12,
-        761.28,
-        761.53,
-        761.77,
-        762.35,
-        762.335,
-        762.21,
-        762.25,
-        762.17,
-        762.38,
-        762.55,
-        762.09,
-        762.62,
-        762.54,
-        762.46,
-        762.72,
-        762.23,
-        761.97,
         762.4
       ],
       "status": "no setup",
@@ -449,37 +420,8 @@
     },
     "QQQ": {
       "last": 716.48,
-      "chg_pct": 1.78,
+      "chg_pct": 0.0,
       "history": [
-        714.84,
-        715.32,
-        714.99,
-        715.05,
-        715.88,
-        716.35,
-        716.43,
-        716.33,
-        715.45,
-        715.16,
-        714.72,
-        715.28,
-        715.41,
-        715.83,
-        715.855,
-        716.5,
-        716.65,
-        716.43,
-        716.2,
-        716.5,
-        716.59,
-        716.83,
-        716.28,
-        716.79,
-        716.81,
-        716.7,
-        717.075,
-        716.45,
-        716.38,
         716.48
       ],
       "status": "ruled out",
@@ -487,12 +429,8 @@
     },
     "DIA": {
       "last": 518.5,
-      "chg_pct": 0.71,
+      "chg_pct": 0.0,
       "history": [
-        514.83,
-        521.31,
-        518.42,
-        518.15,
         518.495
       ],
       "status": "no setup",
@@ -500,164 +438,44 @@
     },
     "VIXY": {
       "last": 17.01,
-      "chg_pct": -4.11,
+      "chg_pct": 0.0,
       "history": [
-        17.74,
-        16.99,
-        17.04,
-        17.06,
         17.01
       ],
       "status": "no setup",
       "why": "quiet"
     },
     "BTC": {
-      "last": 76477.15,
-      "chg_pct": -0.6,
+      "last": 78020.87,
+      "chg_pct": 0.0,
       "history": [
-        76673.675,
-        76552.065,
-        76568.765,
-        76556.435,
-        76650.005,
-        76738.625,
-        76803.345,
-        76830.705,
-        76774.615,
-        76743.795,
-        76762.435,
-        76809.335,
-        76856.745,
-        76818.355,
-        76861.745,
-        76817.185,
-        76841.295,
-        76741.8,
-        76749.76,
-        76626.715,
-        76543.17,
-        76588.61,
-        76600.995,
-        76668.815,
-        76723.8,
-        76539.055,
-        76570.035,
-        76592.745,
-        76543.345,
-        76477.155
+        78020.865
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "ETH": {
-      "last": 2445.43,
-      "chg_pct": -0.98,
+      "last": 2503.68,
+      "chg_pct": 0.0,
       "history": [
-        2463.645,
-        2459.955,
-        2461.45,
-        2462.635,
-        2466.965,
-        2469.965,
-        2472.195,
-        2472.69,
-        2470.23,
-        2467.41,
-        2467.195,
-        2469.625,
-        2473.34,
-        2469.69,
-        2471.445,
-        2468.225,
-        2469.275,
-        2468.365,
-        2468.39,
-        2463.045,
-        2459.95,
-        2457.14,
-        2457.225,
-        2459.775,
-        2461.525,
-        2453.825,
-        2454.565,
-        2455.945,
-        2448.4,
-        2445.425
+        2503.685
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "SOL": {
-      "last": 100.72,
-      "chg_pct": -0.42,
+      "last": 105.77,
+      "chg_pct": 0.0,
       "history": [
-        100.89,
-        101.145,
-        100.885,
-        100.96,
-        100.95,
-        101.255,
-        101.455,
-        101.52,
-        101.56,
-        101.305,
-        101.175,
-        101.235,
-        101.395,
-        101.635,
-        101.675,
-        101.79,
-        101.84,
-        101.815,
-        101.76,
-        101.805,
-        101.57,
-        101.465,
-        101.29,
-        101.48,
-        101.54,
-        101.04,
-        100.97,
-        101.02,
-        100.86,
-        100.725
+        105.765
       ],
       "status": "tracked",
       "why": "price only, not evaluated for a setup"
     },
     "MSTR": {
       "last": 132.78,
-      "chg_pct": 5.89,
+      "chg_pct": 0.0,
       "history": [
-        128.02,
-        129.26,
-        131.01,
-        130.46,
-        131.22,
-        131.85,
-        133.02,
-        132.13,
-        130.325,
-        130.51,
-        129.94,
-        128.67,
-        128.1,
-        128.549,
-        128.64,
-        129.13,
-        130.87,
-        130.68,
-        130.665,
-        130.92,
-        130.91,
-        131.01,
-        131.09,
-        131.43,
-        131.7,
-        132.12,
-        132.65,
-        132.29,
-        132.73,
         132.775
       ],
       "status": "watching",
@@ -665,37 +483,8 @@
     },
     "COIN": {
       "last": 171.63,
-      "chg_pct": 4.42,
+      "chg_pct": 0.0,
       "history": [
-        167.02,
-        168.99,
-        168.55,
-        169.68,
-        170.13,
-        171.07,
-        170.32,
-        168.73,
-        169.71,
-        169.37,
-        167.78,
-        167.58,
-        167.53,
-        167.79,
-        167.86,
-        169.423,
-        168.88,
-        169.64,
-        169.49,
-        169.7,
-        170.1,
-        170.26,
-        170.3,
-        170.95,
-        171.14,
-        171.68,
-        172.29,
-        171.51,
-        172.18,
         171.63
       ],
       "status": "watching",
@@ -703,37 +492,8 @@
     },
     "IBIT": {
       "last": 43.46,
-      "chg_pct": 1.07,
+      "chg_pct": 0.0,
       "history": [
-        43.23,
-        43.37,
-        43.24,
-        43.42,
-        43.41,
-        43.555,
-        43.46,
-        43.345,
-        43.37,
-        43.271,
-        43.14,
-        43.15,
-        43.205,
-        43.22,
-        43.275,
-        43.485,
-        43.355,
-        43.425,
-        43.42,
-        43.39,
-        43.4,
-        43.39,
-        43.36,
-        43.4,
-        43.38,
-        43.43,
-        43.495,
-        43.46,
-        43.5,
         43.4633
       ],
       "status": "no setup",
@@ -741,37 +501,8 @@
     },
     "IREN": {
       "last": 43.32,
-      "chg_pct": 1.64,
+      "chg_pct": 0.0,
       "history": [
-        43.17,
-        43.32,
-        43.0,
-        42.64,
-        42.84,
-        42.91,
-        42.915,
-        43.1,
-        43.24,
-        43.58,
-        43.71,
-        43.28,
-        42.76,
-        42.86,
-        43.045,
-        43.335,
-        43.47,
-        43.695,
-        43.4,
-        43.54,
-        43.38,
-        43.52,
-        43.42,
-        43.44,
-        43.55,
-        43.56,
-        43.65,
-        43.49,
-        43.38,
         43.32
       ],
       "status": "flagged",
@@ -779,37 +510,8 @@
     },
     "AMZN": {
       "last": 251.1,
-      "chg_pct": -0.01,
+      "chg_pct": 0.0,
       "history": [
-        251.12,
-        250.495,
-        249.79,
-        250.34,
-        249.64,
-        250.94,
-        252.155,
-        252.2,
-        252.595,
-        251.665,
-        251.31,
-        251.23,
-        251.67,
-        252.035,
-        251.97,
-        252.285,
-        251.95,
-        252.37,
-        251.86,
-        251.8,
-        251.2,
-        251.41,
-        250.98,
-        251.29,
-        251.2,
-        251.42,
-        251.76,
-        251.43,
-        251.18,
         251.105
       ],
       "status": "flagged",
@@ -817,37 +519,8 @@
     },
     "GNRC": {
       "last": 208.52,
-      "chg_pct": -10.79,
+      "chg_pct": 0.0,
       "history": [
-        215.335,
-        212.59,
-        210.49,
-        209.68,
-        209.11,
-        208.59,
-        206.51,
-        207.9,
-        206.445,
-        204.21,
-        203.61,
-        206.24,
-        207.66,
-        208.955,
-        208.98,
-        208.81,
-        208.57,
-        208.58,
-        209.65,
-        211.41,
-        212.24,
-        211.99,
-        211.19,
-        212.25,
-        210.85,
-        208.71,
-        207.78,
-        208.37,
-        207.7,
         208.52
       ],
       "status": "flagged",
@@ -855,12 +528,8 @@
     },
     "CRCL": {
       "last": 84.41,
-      "chg_pct": 4.6,
+      "chg_pct": 0.0,
       "history": [
-        80.695,
-        83.18,
-        84.72,
-        84.87,
         84.41
       ],
       "status": "watching",
@@ -868,12 +537,8 @@
     },
     "HOOD": {
       "last": 107.47,
-      "chg_pct": 3.15,
+      "chg_pct": 0.0,
       "history": [
-        104.19,
-        109.2,
-        107.14,
-        107.68,
         107.47
       ],
       "status": "watching",
@@ -881,12 +546,8 @@
     },
     "INTC": {
       "last": 110.91,
-      "chg_pct": 10.04,
+      "chg_pct": 0.0,
       "history": [
-        100.7878,
-        104.6142,
-        110.83,
-        111.07,
         110.905
       ],
       "status": "watching",
@@ -894,12 +555,8 @@
     },
     "MRVL": {
       "last": 241.89,
-      "chg_pct": 5.76,
+      "chg_pct": 0.0,
       "history": [
-        228.725,
-        240.5,
-        242.29,
-        241.94,
         241.89
       ],
       "status": "watching",
@@ -907,11 +564,8 @@
     },
     "MU": {
       "last": 973.73,
-      "chg_pct": 5.42,
+      "chg_pct": 0.0,
       "history": [
-        923.62,
-        953.2,
-        977.14,
         973.725
       ],
       "status": "watching",
@@ -919,12 +573,8 @@
     },
     "USO": {
       "last": 156.28,
-      "chg_pct": 0.23,
+      "chg_pct": 0.0,
       "history": [
-        155.92,
-        153.62,
-        156.59,
-        156.51,
         156.285
       ],
       "status": "watching",
@@ -932,12 +582,8 @@
     },
     "XLE": {
       "last": 64.31,
-      "chg_pct": 0.34,
+      "chg_pct": 0.0,
       "history": [
-        64.085,
-        63.5,
-        64.31,
-        64.35,
         64.305
       ],
       "status": "watching",
@@ -945,12 +591,8 @@
     },
     "AAPL": {
       "last": 335.81,
-      "chg_pct": 1.1,
+      "chg_pct": 0.0,
       "history": [
-        332.15,
-        333.85,
-        335.7,
-        335.42,
         335.81
       ],
       "status": "no setup",
@@ -958,12 +600,8 @@
     },
     "ADBE": {
       "last": 250.47,
-      "chg_pct": -0.08,
+      "chg_pct": 0.0,
       "history": [
-        250.6625,
-        249.6058,
-        249.86,
-        250.14,
         250.47
       ],
       "status": "no setup",
@@ -971,12 +609,8 @@
     },
     "BMNR": {
       "last": 24.34,
-      "chg_pct": 6.73,
+      "chg_pct": 0.0,
       "history": [
-        22.805,
-        23.3695,
-        24.24,
-        24.32,
         24.34
       ],
       "status": "no setup",
@@ -984,12 +618,8 @@
     },
     "BSOL": {
       "last": 14.0,
-      "chg_pct": 3.74,
+      "chg_pct": 0.0,
       "history": [
-        13.495,
-        13.82,
-        13.92,
-        13.98,
         13.9998
       ],
       "status": "no setup",
@@ -997,12 +627,8 @@
     },
     "CRWD": {
       "last": 246.82,
-      "chg_pct": 2.56,
+      "chg_pct": 0.0,
       "history": [
-        240.655,
-        237.84,
-        247.18,
-        246.94,
         246.82
       ],
       "status": "no setup",
@@ -1010,12 +636,8 @@
     },
     "ETHA": {
       "last": 18.62,
-      "chg_pct": 2.7,
+      "chg_pct": 0.0,
       "history": [
-        18.13,
-        18.5,
-        18.6,
-        18.64,
         18.6191
       ],
       "status": "no setup",
@@ -1023,12 +645,8 @@
     },
     "IWM": {
       "last": 286.56,
-      "chg_pct": 1.09,
+      "chg_pct": 0.0,
       "history": [
-        283.465,
-        288.13,
-        286.64,
-        286.46,
         286.565
       ],
       "status": "no setup",
@@ -1036,12 +654,8 @@
     },
     "LEN": {
       "last": 78.05,
-      "chg_pct": -0.71,
+      "chg_pct": 0.0,
       "history": [
-        78.6,
-        78.49,
-        78.11,
-        77.87,
         78.045
       ],
       "status": "no setup",
@@ -1049,12 +663,8 @@
     },
     "META": {
       "last": 677.92,
-      "chg_pct": 0.21,
+      "chg_pct": 0.0,
       "history": [
-        676.5299,
-        680.53,
-        678.83,
-        677.76,
         677.92
       ],
       "status": "no setup",
@@ -1062,12 +672,8 @@
     },
     "MSFT": {
       "last": 495.43,
-      "chg_pct": 1.08,
+      "chg_pct": 0.0,
       "history": [
-        490.13,
-        494.75,
-        495.21,
-        494.85,
         495.43
       ],
       "status": "no setup",
@@ -1075,37 +681,8 @@
     },
     "NEE": {
       "last": 81.19,
-      "chg_pct": 0.27,
+      "chg_pct": 0.0,
       "history": [
-        80.78,
-        80.86,
-        80.82,
-        80.46,
-        80.71,
-        80.57,
-        80.59,
-        80.74,
-        80.77,
-        80.83,
-        80.84,
-        80.79,
-        80.785,
-        80.77,
-        80.815,
-        80.945,
-        80.87,
-        81.0,
-        81.11,
-        81.09,
-        81.13,
-        81.15,
-        81.05,
-        81.14,
-        81.13,
-        81.16,
-        81.11,
-        81.18,
-        81.17,
         81.19
       ],
       "status": "no setup",
@@ -1113,37 +690,8 @@
     },
     "NVDA": {
       "last": 219.28,
-      "chg_pct": 2.61,
+      "chg_pct": 0.0,
       "history": [
-        217.9,
-        218.2,
-        219.17,
-        219.36,
-        219.23,
-        219.735,
-        219.7,
-        219.595,
-        219.18,
-        219.1,
-        219.12,
-        218.85,
-        218.92,
-        219.15,
-        219.09,
-        219.23,
-        219.08,
-        218.9,
-        218.72,
-        218.68,
-        218.89,
-        218.85,
-        218.89,
-        218.91,
-        218.87,
-        218.7,
-        219.108,
-        218.9,
-        218.87,
         219.275
       ],
       "status": "no setup",
@@ -1151,12 +699,8 @@
     },
     "PANW": {
       "last": 374.31,
-      "chg_pct": -0.13,
+      "chg_pct": 0.0,
       "history": [
-        374.8025,
-        366.5,
-        374.93,
-        374.56,
         374.305
       ],
       "status": "no setup",
@@ -1164,21 +708,8 @@
     },
     "SOXX": {
       "last": 519.7,
-      "chg_pct": 0.25,
+      "chg_pct": 0.0,
       "history": [
-        518.41,
-        518.28,
-        518.51,
-        519.24,
-        519.3,
-        519.39,
-        519.15,
-        519.54,
-        519.84,
-        519.64,
-        520.32,
-        519.68,
-        520.03,
         519.7
       ],
       "status": "no setup",
@@ -1186,12 +717,8 @@
     },
     "TSLA": {
       "last": 368.13,
-      "chg_pct": 2.76,
+      "chg_pct": 0.0,
       "history": [
-        358.255,
-        364.9959,
-        367.32,
-        367.7,
         368.135
       ],
       "status": "no setup",
@@ -1199,37 +726,8 @@
     },
     "XOM": {
       "last": 162.67,
-      "chg_pct": -0.47,
+      "chg_pct": 0.0,
       "history": [
-        161.84,
-        162.79,
-        162.74,
-        162.56,
-        161.78,
-        162.07,
-        161.57,
-        161.61,
-        161.97,
-        162.08,
-        162.22,
-        162.1,
-        162.03,
-        161.84,
-        161.89,
-        162.03,
-        161.97,
-        161.82,
-        161.86,
-        161.81,
-        161.93,
-        162.16,
-        162.39,
-        162.25,
-        162.46,
-        162.54,
-        162.46,
-        162.69,
-        162.84,
         162.67
       ],
       "status": "no setup",
@@ -1239,28 +737,28 @@
   "news": [
     {
       "tag": "Macro",
-      "title": "Stock futures gain as Treasury yields fall below 5% after Fed raises rates; oil slips",
-      "summary": "Futures pointed higher Thursday after the Fed's first hike in three years. Nasdaq 100 futures rose ~1.1%, S&P ~0.8%, Dow ~0.7%. The 10-year yield slipped under 4.99%. Oil continued lower on easing supply fears. Stocks had closed lower Wednesday after the unanimous 25bp move and hawkish Warsh comments."
+      "title": "Nasdaq futures lead Wall St gains as oil retreat eases inflation worries",
+      "summary": "Futures pointed higher Friday with Nasdaq 100 contracts up ~0.5-0.6%, S&P ~0.2-0.3% after Thursday's tech-led rebound. Investors digested the Fed's first rate hike in years while lower crude tempered inflation fears. Chipmakers and AI-linked names extended gains. Crude fell for a third day amid mixed supply headlines."
     },
     {
       "tag": "Stocks",
-      "title": "Generac soars on Amazon data-center generator deal",
-      "summary": "Generac shares jumped ~35% premarket after disclosing a long-term supply agreement with Amazon for backup generators. Initial deliveries expected at $2.4B in 2027-28; total payments up to $8B. Amazon received warrants for up to ~1.69M shares. Deal underscores hyperscaler power demand."
+      "title": "Warren Buffett steps down as Berkshire Hathaway chairman",
+      "summary": "Berkshire named Buffett (96) chairman emeritus effective immediately; son Howard Buffett becomes chairman. Buffett remains a director. He previously handed the CEO role to Greg Abel. Letter cited \"Father Time always wins\" while expressing confidence in succession. Shares little changed on the news."
     },
     {
       "tag": "Macro",
-      "title": "Bank of England holds rates at 3.75% in 6-3 vote",
-      "summary": "BoE kept Bank Rate unchanged as expected but warned inflation could top 4% early next year on energy volatility from the Middle East conflict. Three members preferred a hike. Governor Bailey said prolonged high energy prices raise the odds of future tightening."
+      "title": "Bank of Japan raises policy rate to 1.25%",
+      "summary": "BoJ hiked 25 bp to the highest level in decades, matching expectations, citing inflation risks. Statement and press conference followed. Yen weakened; Nikkei rose. Move fits synchronized global tightening narrative after recent Fed action."
     },
     {
       "tag": "Macro",
-      "title": "Oil prices extend decline on Saudi supply recovery hopes",
-      "summary": "Brent and WTI fell further Thursday as reports emerged of Saudi efforts to restore East-West pipeline capacity and offer extra cargoes via ship-to-ship transfers. WTI traded near $100.70, Brent near $103-105. Easing risk premium supported risk assets and pulled yields lower."
+      "title": "Crude prices extend losses, easing inflation pressure",
+      "summary": "Brent and WTI slipped ~1.5-2% for a third session despite ongoing Middle East tensions and Houthi/Saudi strikes. Markets shrugged off supply concerns; lower energy prices supported risk assets and tempered Fed-related inflation worries."
     },
     {
-      "tag": "Macro",
-      "title": "Housing starts, jobless claims, Philly Fed due at 8:30 ET",
-      "summary": "Thursday's data stack includes weekly initial claims (est. ~208K), August housing starts/permits, and the Philadelphia Fed manufacturing index. These secondary prints will be watched for any shift in labor or housing momentum after the Fed decision."
+      "tag": "Stocks",
+      "title": "Chipmakers and AI-linked names drive early strength",
+      "summary": "Semiconductor ETFs and names including NVDA, INTC, SMCI pointed higher premarket after Thursday's strong session. Momentum returned to AI supply-chain stocks in Asia and Europe as well. Broader tech leadership contrasted with softer energy."
     }
   ],
   "calendar": [
@@ -1286,321 +784,96 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 33,
-    "names": [
-      "AAPL",
-      "ADBE",
-      "AMZN",
-      "BMNR",
-      "BSOL",
-      "COIN",
-      "CRCL",
-      "CRWD",
-      "DIA",
-      "ETHA",
-      "GNRC",
-      "HOOD",
-      "IBIT",
-      "INTC",
-      "IREN",
-      "IWM",
-      "LEN",
-      "META",
-      "MRVL",
-      "MSFT",
-      "MSTR",
-      "MU",
-      "NEE",
-      "NVDA",
-      "PANW",
-      "QQQ",
-      "SOXX",
-      "SPY",
-      "TSLA",
-      "USO",
-      "VIXY",
-      "XLE",
-      "XOM"
-    ],
-    "interesting": [
-      [
-        "AMZN",
-        "candidate_B"
-      ],
-      [
-        "COIN",
-        "watching"
-      ],
-      [
-        "CRCL",
-        "watching"
-      ],
-      [
-        "GNRC",
-        "candidate_C"
-      ],
-      [
-        "HOOD",
-        "watching"
-      ],
-      [
-        "INTC",
-        "watching"
-      ],
-      [
-        "IREN",
-        "candidate_C"
-      ],
-      [
-        "MRVL",
-        "watching"
-      ],
-      [
-        "MSTR",
-        "watching"
-      ],
-      [
-        "MU",
-        "watching"
-      ],
-      [
-        "QQQ",
-        "disqualified"
-      ],
-      [
-        "USO",
-        "watching"
-      ],
-      [
-        "XLE",
-        "watching"
-      ]
-    ],
-    "no_shape_count": 20,
-    "filled": 4
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0,
+    "filled": 0
   },
-  "scan_log_public": "33 looked, 4 filled.",
+  "scan_log_public": "0 looked, 0 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
-    "up": [
-      {
-        "sym": "INTC",
-        "chg_pct": 10.04
-      },
-      {
-        "sym": "BMNR",
-        "chg_pct": 6.73
-      },
-      {
-        "sym": "MSTR",
-        "chg_pct": 5.89
-      }
-    ],
-    "down": [
-      {
-        "sym": "GNRC",
-        "chg_pct": -10.79
-      },
-      {
-        "sym": "VIXY",
-        "chg_pct": -4.11
-      },
-      {
-        "sym": "ETH",
-        "chg_pct": -0.98
-      }
-    ]
+    "up": [],
+    "down": []
   },
   "desk_freshness": {
     "watch": "12:42",
-    "crypto": "2:47"
+    "crypto": "7:35"
   },
-  "desk_board": [
-    {
-      "sym": "AMZN",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "COIN",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "CRCL",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "GNRC",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "HOOD",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "INTC",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "IREN",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "MRVL",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "MSTR",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "MU",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "QQQ",
-      "status": "OUT",
-      "why": "already ran"
-    },
-    {
-      "sym": "USO",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "XLE",
-      "status": "WATCH",
-      "why": "still building"
-    },
-    {
-      "sym": "BMNR",
-      "status": "HOT",
-      "why": "not a setup",
-      "chg_pct": 6.73
-    },
-    {
-      "sym": "VIXY",
-      "status": "HOT",
-      "why": "not a setup",
-      "chg_pct": -4.11
-    },
-    {
-      "sym": "ETH",
-      "status": "HOT",
-      "why": "not a setup",
-      "chg_pct": -0.98
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-16T14:15:43Z",
-  "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
+  "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {
-    "AMZN": [
-      {
-        "t": "10:41 AM ET",
-        "line": "Looked \u2014 clock had already run out."
-      }
-    ],
-    "IREN": [
-      {
-        "t": "01:26 PM ET",
-        "line": "Took a position (put)."
-      },
-      {
-        "t": "01:39 PM ET",
-        "line": "Closed -55.0%."
-      }
-    ],
     "USO": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "XLE": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "MRVL": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "COIN": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "MSTR": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "CRCL": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "HOOD": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "IREN": [
+      {
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "INTC": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "MU": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "GNRC": [
       {
-        "t": "3:43 PM ET",
+        "t": "8:35 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
-    "QQQ": [
+    "AMZN": [
       {
-        "t": null,
-        "line": "Ruled out \u2014 already ran."
-      }
-    ],
-    "BMNR": [
-      {
-        "t": null,
-        "line": "Moving, not a setup."
-      }
-    ],
-    "VIXY": [
-      {
-        "t": null,
-        "line": "Moving, not a setup."
-      }
-    ],
-    "ETH": [
-      {
-        "t": null,
-        "line": "Moving, not a setup."
+        "t": "8:35 AM ET",
+        "line": "First flagged \u2014 still building."
       }
     ]
   }
