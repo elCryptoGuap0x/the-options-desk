@@ -1678,7 +1678,14 @@
     todaysForTape.forEach(function (t) {
       var result = t.pct >= 0 ? "WIN" : "LOSS";
       var side = t.dir === "call" ? "call" : "put";
-      out.push(t.sym + " " + side + " " + result + " · " + (t.dur || "?") + " · closed " + fmtPct(t.pct) + ".");
+      // Fixed 9/18, real bug caught on live phone screenshot: a ticket
+      // missing `dur` (e.g. AMZN's real close today has no dur/dte/entry/
+      // exit, only price+fuse) rendered a literal "?" -- same fallback
+      // gap the ticket row itself already avoids (ticketRowHtml's own
+      // durText falls back to "—", never "?"). Omit the hold segment
+      // entirely when it's not there rather than print a placeholder.
+      var holdPart = t.dur ? (t.dur + " · ") : "";
+      out.push(t.sym + " " + side + " " + result + " · " + holdPart + "closed " + fmtPct(t.pct) + ".");
     });
     var skip = data.skip_summary_ticker_list;
     // Flat-day tape line, added 9/18, exact phrasing requested: only
