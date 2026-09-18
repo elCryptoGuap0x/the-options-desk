@@ -83,6 +83,29 @@
   .session-bar .sep { color: var(--border); }
   #presence-count:not(:empty)::before { content: "·"; color: var(--border); margin: 0 8px; }
 
+  /* Ribbon, added 9/18 -- a scrolling marquee under the clock, built
+     entirely client-side from fields already in feed.json (session/
+     market_board/tickets) -- no new server file, no model call. Two
+     identical copies of the content sit side by side and the track
+     scrolls exactly -50% for a seamless loop (standard marquee trick).
+     Runs during RTH too (not just closed hours) -- it's just as true
+     a summary of "what's on screen" either way. */
+  .ribbon-wrap {
+    overflow: hidden; white-space: nowrap;
+    border-bottom: 1px solid var(--border-soft);
+    background: var(--surface); padding: 7px 0; margin-bottom: 26px;
+  }
+  .ribbon-track { display: inline-flex; animation: ribbon-scroll 38s linear infinite; }
+  .ribbon-content {
+    display: inline-block; padding-right: 48px;
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.02em; color: var(--text-dim);
+  }
+  @keyframes ribbon-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .ribbon-track { animation: none; }
+    .ribbon-wrap { overflow-x: auto; }
+  }
+
   header { margin-bottom: 26px; text-align: center; }
   .eyebrow {
     font-family: var(--mono);
@@ -675,6 +698,13 @@
     <span id="presence-count"></span>
   </div>
 
+  <div class="ribbon-wrap" id="ribbon-wrap" hidden>
+    <div class="ribbon-track" id="ribbon-track">
+      <span class="ribbon-content" id="ribbon-content-a"></span>
+      <span class="ribbon-content" id="ribbon-content-b"></span>
+    </div>
+  </div>
+
   <header>
     <div class="eyebrow">Autonomous Options Desk</div>
     <h1>The Options Desk</h1>
@@ -1232,7 +1262,12 @@
       var good = c.chg_pct >= 0;
       var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
       var tag = CRYPTO_SYMS[sym] ? "24/7" : (marketClosed ? "close" : "");
-      var statusWord = c.status ? '<span class="chip-status ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '';
+      // Fixed 9/18, real bug seen live: a WATCHING/FLAGGED status word
+      // carried over from Watch's last real (pre-close) read kept showing
+      // on these chips hours after the desk shut -- same "looks like an
+      // active cycle" gap already fixed for the desk-board grid, just on
+      // the market-board chips instead. Closed means price + % only.
+      var statusWord = (!marketClosed && c.status) ? '<span class="chip-status ' + boardStatusClass(c.status) + '">' + c.status + '</span>' : '';
       return '<div class="board-chip" role="button" tabindex="0" ' +
         'onclick="openBoardSheet(\'' + sym + '\')" onkeydown="if(event.key===\'Enter\')openBoardSheet(\'' + sym + '\')"' +
         hoverAttr.replace("__SYM__", sym) + '>' +
@@ -1594,9 +1629,24 @@
     el.innerHTML = col("Top up", movers.up) + col("Top down", movers.down);
   }
 
-  function renderDeskFreshness(freshness) {
+  function renderDeskFreshness(freshness, session, generatedAt) {
     var el = document.getElementById("desk-freshness");
     if (!el) return;
+    // Fixed 9/18, real bug: "Watch HH:MM CT" freezes the instant Watch
+    // stops running for the day, but kept displaying as if it were a
+    // live cadence stamp for hours afterward -- same class of "looks
+    // still active" gap as the desk board and market-board chips above.
+    // Once the market isn't open, show the real "as of" time behind
+    // whatever's currently on screen instead: generated_at, which the
+    // 24/7 tape refresh keeps genuinely current even with the desk shut.
+    if (!session || session.market_state !== "OPEN") {
+      if (!generatedAt) { el.innerHTML = ""; return; }
+      var d = new Date(generatedAt);
+      if (isNaN(d.getTime())) { el.innerHTML = ""; return; }
+      var stamp = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
+      el.textContent = "Quotes as of " + stamp + " CT";
+      return;
+    }
     if (!freshness || (!freshness.watch && !freshness.crypto)) {
       el.innerHTML = "";
       return;
@@ -1605,6 +1655,45 @@
     // genuinely refetched every build cycle; every equity on the board
     // is exactly as fresh as the "Watch" timestamp already shown here.
     el.textContent = "Watch " + (freshness.watch || "--") + " CT · crypto " + (freshness.crypto || "--") + " CT";
+  }
+
+  // Ribbon, added 9/18: a scrolling marquee under the clock, built
+  // purely from fields already fetched this poll (session/market_board/
+  // tickets) -- no new server file, no model call, same data the board
+  // and hero already show, just as one continuous line.
+  function ribbonPieces(data) {
+    var parts = [];
+    var session = data.session;
+    if (session) {
+      parts.push(session.market_state === "OPEN"
+        ? "DESK OPEN"
+        : "DESK " + session.market_state + " · NEXT OPEN " + (session.next_open || "--"));
+    }
+    var board = data.market_board || {};
+    Object.keys(board)
+      .sort(function (a, b) { return Math.abs(board[b].chg_pct) - Math.abs(board[a].chg_pct); })
+      .slice(0, 10)
+      .forEach(function (sym) {
+        var c = board[sym];
+        var chg = (c.chg_pct >= 0 ? "+" : "") + c.chg_pct.toFixed(2) + "%";
+        parts.push(sym + " " + fmtPrice(sym, c.last) + " " + chg);
+      });
+    todaysTickets(data.tickets).forEach(function (t) {
+      parts.push(t.sym + " " + (t.dir === "call" ? "C" : "P") + " " + fmtPct(t.pct));
+    });
+    return parts;
+  }
+  function renderRibbon(data) {
+    var wrapEl = document.getElementById("ribbon-wrap");
+    var aEl = document.getElementById("ribbon-content-a");
+    var bEl = document.getElementById("ribbon-content-b");
+    if (!wrapEl || !aEl || !bEl) return;
+    var parts = ribbonPieces(data);
+    if (!parts.length) { wrapEl.hidden = true; return; }
+    var text = parts.join("   ·   ");
+    aEl.textContent = text;
+    bEl.textContent = text;
+    wrapEl.hidden = false;
   }
 
   function renderCalendar(items) {
@@ -1785,7 +1874,8 @@
     renderScanLog(data.scan_log_public, data.session);
     renderDeskBoard(data.desk_board, data.desk_events, data.session);
     renderDeskMovers(data.board_movers);
-    renderDeskFreshness(data.desk_freshness);
+    renderDeskFreshness(data.desk_freshness, data.session, data.generated_at);
+    renderRibbon(data);
     renderWeeks(data.weeks);
     updateRoastTemplates(data);
     renderCalendar(data.calendar);
