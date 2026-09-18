@@ -1514,10 +1514,23 @@
   // the shared side-sheet with a real today-only timeline instead of a
   // tiny inline expansion.
   var _lastDeskEvents = {};
-  function renderDeskBoard(board, events) {
+  function renderDeskBoard(board, events, session) {
     var el = document.getElementById("desk-board");
     if (!el) return;
     _lastDeskEvents = events || {};
+    // Added 9/18, real gap: build_desk_board() in site-build.py runs
+    // every cycle regardless of market state, re-emitting whatever Watch
+    // last wrote to watch-state.json during RTH -- with the loop running
+    // every 30 min all night/weekend, that reads as a live watchlist
+    // hours after the desk actually stopped ("on the list since 3:08 ·
+    // no look yet"). Real feedback: this is the site's biggest honesty
+    // gap after close. Fixed client-side rather than in site-build.py --
+    // same closed-state convention as renderTickets/renderScanLog below.
+    if (!session || session.market_state !== "OPEN") {
+      el.innerHTML = '<div class="waiting"><span class="dot"></span>DESK CLOSED — next session ' +
+        ((session && session.next_open) || "TBD") + '.</div>';
+      return;
+    }
     if (!board || !board.length) {
       el.innerHTML = "";
       return;
@@ -1770,7 +1783,7 @@
     renderMarketBoard(data.market_board, data.session);
     renderTickets(data);
     renderScanLog(data.scan_log_public, data.session);
-    renderDeskBoard(data.desk_board, data.desk_events);
+    renderDeskBoard(data.desk_board, data.desk_events, data.session);
     renderDeskMovers(data.board_movers);
     renderDeskFreshness(data.desk_freshness);
     renderWeeks(data.weeks);
