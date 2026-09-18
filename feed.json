@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:00:36Z",
+  "generated_at": "2026-09-18T15:03:39Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -410,8 +410,8 @@
   ],
   "market_board": {
     "SPY": {
-      "last": 759.48,
-      "chg_pct": -0.38,
+      "last": 759.7,
+      "chg_pct": -0.35,
       "history": [
         762.4,
         760.48,
@@ -424,14 +424,15 @@
         759.19,
         759.34,
         759.4784,
-        759.475
+        759.475,
+        759.7
       ],
       "status": "no setup",
-      "why": "Looked 10:51 AM ET \u2014 no break, quiet tape."
+      "why": "Looked 10:59 AM ET \u2014 no break, quiet tape."
     },
     "QQQ": {
-      "last": 717.08,
-      "chg_pct": 0.08,
+      "last": 717.23,
+      "chg_pct": 0.1,
       "history": [
         716.48,
         718.06,
@@ -444,10 +445,11 @@
         716.76,
         716.7,
         716.83,
-        717.079
+        717.079,
+        717.23
       ],
       "status": "no setup",
-      "why": "Looked 10:51 AM ET \u2014 no break, quiet tape."
+      "why": "Looked 10:59 AM ET \u2014 no break, quiet tape."
     },
     "DIA": {
       "last": 518.5,
@@ -468,10 +470,9 @@
       "why": "Looked 1:42 PM ET \u2014 no break, quiet tape."
     },
     "BTC": {
-      "last": 80946.24,
-      "chg_pct": 3.75,
+      "last": 80744.01,
+      "chg_pct": 3.49,
       "history": [
-        80251.725,
         79971.625,
         79956.745,
         80148.115,
@@ -500,16 +501,16 @@
         80867.27,
         80933.975,
         80866.785,
-        80946.245
+        80946.245,
+        80744.005
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2581.11,
-      "chg_pct": 3.09,
+      "last": 2578.11,
+      "chg_pct": 2.97,
       "history": [
-        2567.795,
         2548.105,
         2548.63,
         2554.575,
@@ -538,16 +539,16 @@
         2578.615,
         2581.015,
         2581.205,
-        2581.105
+        2581.105,
+        2578.105
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.67,
-      "chg_pct": 4.63,
+      "last": 110.14,
+      "chg_pct": 4.14,
       "history": [
-        108.46,
         109.02,
         108.44,
         108.23,
@@ -576,14 +577,15 @@
         110.69,
         110.77,
         110.645,
-        110.665
+        110.665,
+        110.14
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "MSTR": {
-      "last": 147.11,
-      "chg_pct": 10.8,
+      "last": 147.62,
+      "chg_pct": 11.18,
       "history": [
         132.775,
         135.83,
@@ -596,14 +598,15 @@
         146.42,
         145.11,
         146.37,
-        147.111
+        147.111,
+        147.615
       ],
       "status": "watching",
-      "why": "On the list since 10:51 AM ET. No look yet."
+      "why": "On the list since 10:59 AM ET. No look yet."
     },
     "COIN": {
-      "last": 191.04,
-      "chg_pct": 11.31,
+      "last": 192.09,
+      "chg_pct": 11.92,
       "history": [
         171.63,
         176.24,
@@ -616,14 +619,15 @@
         189.425,
         189.29,
         190.355,
-        191.045
+        191.045,
+        192.09
       ],
       "status": "watching",
-      "why": "On the list since 10:51 AM ET. No look yet."
+      "why": "On the list since 10:59 AM ET. No look yet."
     },
     "IBIT": {
       "last": 45.81,
-      "chg_pct": 5.4,
+      "chg_pct": 5.41,
       "history": [
         43.4633,
         44.15,
@@ -636,14 +640,15 @@
         45.7715,
         45.66,
         45.73,
-        45.8099
+        45.8099,
+        45.815
       ],
       "status": "watching",
-      "why": "On the list since 10:51 AM ET. No look yet."
+      "why": "On the list since 10:59 AM ET. No look yet."
     },
     "IREN": {
-      "last": 44.52,
-      "chg_pct": 2.77,
+      "last": 44.18,
+      "chg_pct": 1.99,
       "history": [
         43.32,
         44.23,
@@ -656,10 +661,11 @@
         43.83,
         43.9,
         44.3,
-        44.52
+        44.52,
+        44.18
       ],
       "status": "watching",
-      "why": "On the list since 10:51 AM ET. No look yet."
+      "why": "On the list since 10:59 AM ET. No look yet."
     },
     "GNRC": {
       "last": 203.52,
@@ -707,8 +713,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "INTC": {
-      "last": 107.65,
-      "chg_pct": -2.93,
+      "last": 107.28,
+      "chg_pct": -3.27,
       "history": [
         110.905,
         109.72,
@@ -721,10 +727,11 @@
         108.14,
         107.92,
         107.91,
-        107.65
+        107.65,
+        107.28
       ],
       "status": "watching",
-      "why": "On the list since 10:51 AM ET. No look yet."
+      "why": "On the list since 10:59 AM ET. No look yet."
     },
     "MRVL": {
       "last": 241.89,
@@ -745,8 +752,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "SMCI": {
-      "last": 38.77,
-      "chg_pct": -3.55,
+      "last": 38.59,
+      "chg_pct": -4.02,
       "history": [
         40.2,
         39.38,
@@ -758,10 +765,11 @@
         38.6615,
         38.561,
         38.61,
-        38.7739
+        38.7739,
+        38.585
       ],
       "status": "watching",
-      "why": "On the list since 10:51 AM ET. No look yet."
+      "why": "On the list since 10:59 AM ET. No look yet."
     },
     "USO": {
       "last": 156.28,
@@ -782,8 +790,8 @@
       "why": "On the list since 1:42 PM ET. No look yet."
     },
     "NVDA": {
-      "last": 219.26,
-      "chg_pct": -0.01,
+      "last": 219.11,
+      "chg_pct": -0.08,
       "history": [
         219.275,
         219.3,
@@ -796,10 +804,11 @@
         220.09,
         219.52,
         219.25,
-        219.26
+        219.26,
+        219.11
       ],
       "status": "ruled out",
-      "why": "Ruled out 10:51 AM ET \u2014 already ran."
+      "why": "Ruled out 10:59 AM ET \u2014 already ran."
     },
     "AAPL": {
       "last": 335.81,
@@ -1048,25 +1057,25 @@
     "up": [
       {
         "sym": "COIN",
-        "chg_pct": 11.31
+        "chg_pct": 11.92
       },
       {
         "sym": "MSTR",
-        "chg_pct": 10.8
+        "chg_pct": 11.18
       },
       {
         "sym": "IBIT",
-        "chg_pct": 5.4
+        "chg_pct": 5.41
       }
     ],
     "down": [
       {
         "sym": "SMCI",
-        "chg_pct": -3.55
+        "chg_pct": -4.02
       },
       {
         "sym": "INTC",
-        "chg_pct": -2.93
+        "chg_pct": -3.27
       },
       {
         "sym": "GNRC",
@@ -1075,14 +1084,14 @@
     ]
   },
   "desk_freshness": {
-    "watch": "9:51",
-    "crypto": "10:00"
+    "watch": "9:59",
+    "crypto": "10:03"
   },
   "desk_board": [
     {
       "sym": "NVDA",
       "status": "OUT",
-      "why": "Ruled out 10:51 AM ET \u2014 already ran."
+      "why": "Ruled out 10:59 AM ET \u2014 already ran."
     }
   ],
   "last_fill_at": "2026-09-16T14:15:43Z",
