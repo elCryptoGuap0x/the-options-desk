@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T21:48:05Z",
+  "generated_at": "2026-09-20T21:52:40Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -473,10 +473,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80848,
-      "chg_pct": -0.23,
+      "last": 80891,
+      "chg_pct": -0.22,
       "history": [
-        81041.435,
         81124.915,
         80901.085,
         80962.325,
@@ -515,16 +514,16 @@
         80879,
         81198,
         81011,
-        80848
+        80848,
+        80891
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2622.59,
-      "chg_pct": -0.1,
+      "last": 2624.57,
+      "chg_pct": -0.06,
       "history": [
-        2620.765,
         2610.725,
         2611.275,
         2612.7,
@@ -563,16 +562,16 @@
         2610.4,
         2632.96,
         2630.92,
-        2622.59
+        2622.59,
+        2624.57
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 109.73,
-      "chg_pct": -0.71,
+      "last": 109.77,
+      "chg_pct": -0.7,
       "history": [
-        112.63,
         112.39,
         112.47,
         112.475,
@@ -611,7 +610,8 @@
         108.66,
         109.88,
         110.01,
-        109.73
+        109.73,
+        109.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1106,13 +1106,6 @@
       "summary": "Semiconductor ETFs and names including NVDA, INTC, SMCI pointed higher premarket after Thursday's strong session. Momentum returned to AI supply-chain stocks in Asia and Europe as well. Broader tech leadership contrasted with softer energy."
     },
     {
-      "tag": "MARKETS",
-      "title": "Fed\u2019s Powell says rate cut \u2018on the table\u2019 as soon as September",
-      "summary": "",
-      "url": "https://www.marketwatch.com/story/feds-powell-says-rate-cut-on-the-table-as-soon-as-september-f3f7c8f2?mod=mw_rss_realtimeheadlines",
-      "ts": "2024-07-31T18:41:00Z"
-    },
-    {
       "tag": "FED",
       "title": "Federal Reserve issues FOMC statement",
       "summary": "Federal Reserve issues FOMC statement",
@@ -1120,11 +1113,32 @@
       "ts": "2026-09-16T18:00:00Z"
     },
     {
+      "tag": "MARKETS",
+      "title": "AI Bubble Fears Grow, But Nvidia CEO Gives Bulls a New Argument Anyway",
+      "summary": "Nvidia CEO Jensen Huang says AI has entered a high production ramp, giving bulls a new argument as bubble fears grow.",
+      "url": "https://beincrypto.com/nvidia-ceo-ai-production-ramp/?.tsrc=rss",
+      "ts": "2026-09-20T21:31:46Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto platform Gemini\u2019s stock is down 80% from its IPO. That\u2019s reviving takeover speculation",
+      "summary": "The crypto platform\u2019s market value has fallen to about $753 million, putting fresh attention on the licenses, custody infrastructure and customer relationships a buyer could inherit.",
+      "url": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
+      "ts": "2026-09-20T14:54:48Z"
+    },
+    {
       "tag": "FED",
       "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
       "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
       "ts": "2026-09-16T18:00:00Z"
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Amazon (AMZN) Sued Again, This Time over How it Treats Pregnant Warehouse Workers",
+      "summary": "On September 8, 2026, Reuters reported that Amazon.com, Inc. (NASDAQ:AMZN) was sued in a proposed nationwide class action accusing the company of systematically discriminating against thousands of pregnant employees, including by denying ba",
+      "url": "https://finance.yahoo.com/healthcare/articles/amazon-amzn-sued-again-time-212413687.html?.tsrc=rss",
+      "ts": "2026-09-20T21:24:13Z"
     }
   ],
   "calendar": [
@@ -1569,7 +1583,7 @@
     ]
   },
   "btc_range": {
-    "last": 80850,
+    "last": 80889,
     "high_24h": 81417,
     "low_24h": 80155,
     "chg_pct": -0.22

@@ -202,51 +202,44 @@ _RSS_CATEGORY_RE = re.compile(r"<category>(.*?)</category>", re.S)
 _TAG_STRIP_RE = re.compile(r"<[^>]+>")
 _CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
 
-# Added 9/18, real feedback: news had no real article link at all, so
-# there was no way to actually read more than the 2-line blurb. Two
-# real, tested sources. Real content-quality finding along the way:
-# MarketWatch's "Top Stories" feed (mw_topstories) is mostly personal-
-# finance advice columns ("I have $125K in credit-card debt...") that,
-# sorted strict-newest-first against a slow-publishing feed like the
-# Fed's, crowd it out of the top 10 entirely on volume alone -- swapped
-# for mw_realtimeheadlines instead (confirmed via a real pull: rate
-# decisions, PMI prints, FX moves -- the actual "markets" content this
-# site wants). Fed press releases (confirmed working, directly relevant
-# on a day the headline story IS a Fed decision). Reuters' old public
-# RSS endpoint is dead (connection failure) and CNBC's returns a hard
-# Akamai "Access Denied" to a scripted request -- both tested and
-# dropped rather than shipped on a guess.
-# category=None means no filter (MarketWatch's feed has no <category>
-# tags at all). The Fed's feed carries a real one per item -- checked
-# live, 9/18: roughly half of press_all.xml is "Enforcement Actions"
-# (routine actions against individual small banks, e.g. "terminates
-# enforcement action with SNB Bancshares") or "Orders on Banking
-# Applications" (routine M&A approvals) -- zero market relevance.
-# Restricting to the feed's OWN "Monetary Policy" category (FOMC
-# statements, meeting minutes, economic projections) uses the source's
-# real classification, not an invented keyword filter.
+# Rebuilt 9/20, real finding: mw_realtimeheadlines (added 9/18) turned
+# out to be a frozen document, not a live feed -- pulled it fresh on
+# 9/20 and got byte-identical items to 9/18's first test, several
+# stamped 2024/2025 despite this being 2026. Every fetch all weekend
+# returned the same 3 filtered items because the SOURCE never changed,
+# not because of the scheduling gap (see CHANGELOG). Replaced outright
+# rather than patched. Three sources, each tested live before shipping,
+# each pre-scoped in its own way so the old broad keyword filter is no
+# longer needed for any of them:
+#   - Fed: unchanged, already honest, its own "Monetary Policy" category
+#     is the real filter (see build_mechanical_news's own reasoning).
+#   - Yahoo per-ticker headlines: the `s=` param scopes results server-
+#     side to this desk's own board names -- confirmed live, items are
+#     minutes old, real (e.g. "AI Bubble Fears Grow... Nvidia CEO...").
+#   - CoinDesk: 100% crypto by publication scope (real live pull:
+#     Gemini, Coinbase, Bitcoin -- all today's date). Needs -L-equivalent
+#     handling: the bare URL 308-redirects, requests follows it by
+#     default so no special handling needed here.
+# CoinTelegraph and Yahoo's general markets index were also tested and
+# work, held back as redundant with what's already above -- three
+# diverse, verified-fresh sources is enough; more feeds isn't the goal.
+# Reuters' public RSS is still dead (years now) and CNBC still 403s a
+# scripted request -- neither retested, no reason either would have
+# changed.
 NEWS_FEEDS = [
-    ("MARKETS", "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines", None),
     ("FED", "https://www.federalreserve.gov/feeds/press_all.xml", "Monetary Policy"),
+    ("MARKETS", "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SPY,QQQ,NVDA,AAPL,TSLA,COIN,MSTR,HOOD,AMZN,META", None),
+    ("CRYPTO", "https://www.coindesk.com/arc/outboundfeeds/rss/", None),
 ]
 
-# Desk-relevance keyword filter, added 9/18 -- real feedback: the
-# realtimeheadlines feed's own <category> tags aren't reliable enough to
-# filter on (unlike the Fed's), so a generic political/celebrity item
-# ("Elon Musk...regrets some of his Trump posts") sailed straight
-# through. Keeps a headline only if its title+summary mentions this
-# desk's own universe (site-build.py's BOARD_UNIVERSE), a macro-data
-# term, or an options/vol term. Word-boundary, case-insensitive --
-# still zero LLM, just a real allowlist instead of an invented one.
-NEWS_KEYWORDS_RE = re.compile(
-    r"\b(?:SPY|QQQ|IWM|DIA|VIX|"
-    r"AAPL|MSFT|NVDA|AMZN|META|GOOGL|TSLA|"
-    r"COIN|MSTR|HOOD|IBIT|IREN|BTC|ETH|BITCOIN|"
-    r"FED|FOMC|CPI|PPI|JOBS|PAYROLLS|TREASURY|YIELD|"
-    r"OPTIONS|0DTE|GAMMA|VOL|"
-    r"OIL|CRUDE|XLE|GDX|GOLD)\b",
-    re.IGNORECASE,
-)
+# Age gate, added 9/20 -- the actual fix for "looks stuck," more than
+# any specific source swap: even a genuinely live feed can hand back an
+# old cached/evergreen item, and this is what would have caught
+# mw_realtimeheadlines's 2024/2025 ghosts outright regardless of which
+# source they came from. 5 days -- long enough that a quiet weekend
+# (Fed/SEC both go dark Sat-Sun) doesn't get emptied out, short enough
+# that nothing from last month ever shows up as "current."
+NEWS_MAX_AGE = timedelta(days=5)
 
 
 def _clean_field(raw):
@@ -297,6 +290,7 @@ def _fetch_one_feed(tag, feed_url, category_filter):
     except Exception as e:
         print(f"[tape_update] news fetch failed for {feed_url}: {e}")
         return []
+    now_utc = datetime.now(timezone.utc)
     items = []
     for block in _RSS_ITEM_RE.findall(text):
         tm = _RSS_TITLE_RE.search(block)
@@ -311,12 +305,21 @@ def _fetch_one_feed(tag, feed_url, category_filter):
         title = _clean_field(tm.group(1))
         if not url or not title:
             continue
-        dm = _RSS_DESC_RE.search(block)
-        summary = _clean_field(dm.group(1))[:240] if dm else ""
-        if not NEWS_KEYWORDS_RE.search(title + " " + summary):
-            continue
+        # Age gate, added 9/20 -- the real fix for "looks stuck": a
+        # feed that's genuinely alive can still hand back one evergreen
+        # or mis-cached item, and this is what would have caught
+        # mw_realtimeheadlines's 2024/2025 ghosts regardless of which
+        # source they came from. No parseable date at all is treated as
+        # unverifiable, not assumed fresh -- dropped, same as too old.
         pm = _RSS_PUBDATE_RE.search(block)
         ts = _parse_pubdate(pm.group(1)) if pm else ""
+        if not ts:
+            continue
+        published_dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        if now_utc - published_dt > NEWS_MAX_AGE:
+            continue
+        dm = _RSS_DESC_RE.search(block)
+        summary = _clean_field(dm.group(1))[:240] if dm else ""
         items.append({"tag": tag, "title": title[:140], "summary": summary, "url": url, "ts": ts})
     return items
 
