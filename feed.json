@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T21:52:40Z",
+  "generated_at": "2026-09-20T21:59:59Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -473,10 +473,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80891,
-      "chg_pct": -0.22,
+      "last": 80874,
+      "chg_pct": -0.27,
       "history": [
-        81124.915,
         80901.085,
         80962.325,
         81007.745,
@@ -515,16 +514,16 @@
         81198,
         81011,
         80848,
-        80891
+        80891,
+        80874
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2624.57,
-      "chg_pct": -0.06,
+      "last": 2627.22,
+      "chg_pct": -0.02,
       "history": [
-        2610.725,
         2611.275,
         2612.7,
         2612.615,
@@ -563,16 +562,16 @@
         2632.96,
         2630.92,
         2622.59,
-        2624.57
+        2624.57,
+        2627.22
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 109.77,
-      "chg_pct": -0.7,
+      "last": 109.81,
+      "chg_pct": -0.76,
       "history": [
-        112.39,
         112.47,
         112.475,
         112.315,
@@ -611,7 +610,8 @@
         109.88,
         110.01,
         109.73,
-        109.77
+        109.77,
+        109.81
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1114,10 +1114,17 @@
     },
     {
       "tag": "MARKETS",
-      "title": "AI Bubble Fears Grow, But Nvidia CEO Gives Bulls a New Argument Anyway",
-      "summary": "Nvidia CEO Jensen Huang says AI has entered a high production ramp, giving bulls a new argument as bubble fears grow.",
-      "url": "https://beincrypto.com/nvidia-ceo-ai-production-ramp/?.tsrc=rss",
-      "ts": "2026-09-20T21:31:46Z"
+      "title": "Dow Jones Futures Due: Can The Market Take Flight? Robinhood, Sandisk, AMD, Moderna Surge Into Buy Areas",
+      "summary": "The stock market showed choppy, mixed weekly action. But Robinhood, Sandisk, AMD and Moderna rallied into buy areas.",
+      "url": "https://finance.yahoo.com/m/832159c8-6dc5-38e6-b838-d7db7090ca09/dow-jones-futures-due%3A-can.html?.tsrc=rss",
+      "ts": "2026-09-20T21:57:41Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Markets Breathe Again, Work to Undo Post-Fed Pulldown",
+      "summary": "As we\u2019ve said many times, give the markets a sense of certainty and they will respond accordingly. The market direction is shifting with all three major indices moving to the upside as Treasury yields and crude oil prices slip in early trad",
+      "url": "https://www.cboe.com/insights/posts/markets-breathe-again-work-to-undo-post-fed-pulldown/",
+      "ts": "2026-09-17T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1132,13 +1139,6 @@
       "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
       "ts": "2026-09-16T18:00:00Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Amazon (AMZN) Sued Again, This Time over How it Treats Pregnant Warehouse Workers",
-      "summary": "On September 8, 2026, Reuters reported that Amazon.com, Inc. (NASDAQ:AMZN) was sued in a proposed nationwide class action accusing the company of systematically discriminating against thousands of pregnant employees, including by denying ba",
-      "url": "https://finance.yahoo.com/healthcare/articles/amazon-amzn-sued-again-time-212413687.html?.tsrc=rss",
-      "ts": "2026-09-20T21:24:13Z"
     }
   ],
   "calendar": [
@@ -1583,10 +1583,10 @@
     ]
   },
   "btc_range": {
-    "last": 80889,
+    "last": 80879,
     "high_24h": 81417,
     "low_24h": 80155,
-    "chg_pct": -0.22
+    "chg_pct": -0.28
   },
   "macro": {
     "10Y": 5.0,

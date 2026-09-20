@@ -208,27 +208,41 @@ _CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
 # stamped 2024/2025 despite this being 2026. Every fetch all weekend
 # returned the same 3 filtered items because the SOURCE never changed,
 # not because of the scheduling gap (see CHANGELOG). Replaced outright
-# rather than patched. Three sources, each tested live before shipping,
+# rather than patched. Four sources, each tested live before shipping,
 # each pre-scoped in its own way so the old broad keyword filter is no
 # longer needed for any of them:
 #   - Fed: unchanged, already honest, its own "Monetary Policy" category
 #     is the real filter (see build_mechanical_news's own reasoning).
 #   - Yahoo per-ticker headlines: the `s=` param scopes results server-
-#     side to this desk's own board names -- confirmed live, items are
-#     minutes old, real (e.g. "AI Bubble Fears Grow... Nvidia CEO...").
+#     side to this desk's own board universe (site-build.py's
+#     BOARD_UNIVERSE, kept in sync by hand -- this script has no import
+#     access to that file) -- confirmed live, items are minutes old,
+#     real, and genuinely stock-diverse at 20 names instead of the
+#     original 10 (e.g. "The Stock Market's Best Quarter... S&P 500",
+#     "Should You Buy SpaceX Stock Before Its Next Earnings").
+#   - Cboe Insights: added 9/20, real ask ("what about options news, not
+#     just crypto") -- this is the options exchange's own editorial
+#     blog (hedging demand, vol commentary, "Week of 9/14: Macro
+#     Uncertainty Fuels Hedging Demand Ahead of FOMC"), not a paid
+#     unusual-options-flow signal service (that stays on the Skip list,
+#     per instruction). Confirmed live: real dated items through
+#     Thursday, correctly quiet since -- a weekday-only blog, not stuck.
 #   - CoinDesk: 100% crypto by publication scope (real live pull:
 #     Gemini, Coinbase, Bitcoin -- all today's date). Needs -L-equivalent
 #     handling: the bare URL 308-redirects, requests follows it by
 #     default so no special handling needed here.
 # CoinTelegraph and Yahoo's general markets index were also tested and
-# work, held back as redundant with what's already above -- three
-# diverse, verified-fresh sources is enough; more feeds isn't the goal.
-# Reuters' public RSS is still dead (years now) and CNBC still 403s a
-# scripted request -- neither retested, no reason either would have
-# changed.
+# work, held back as too broad/redundant -- the general index in
+# particular is mostly micro-cap noise (AppFolio, Jersey Mike's, Willis
+# Lease Finance) with nothing to do with this desk's own universe, the
+# same class of problem that got MarketWatch's old topstories feed
+# killed in the first place. Reuters' public RSS is still dead (years
+# now) and CNBC still 403s a scripted request -- neither retested, no
+# reason either would have changed.
 NEWS_FEEDS = [
     ("FED", "https://www.federalreserve.gov/feeds/press_all.xml", "Monetary Policy"),
-    ("MARKETS", "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SPY,QQQ,NVDA,AAPL,TSLA,COIN,MSTR,HOOD,AMZN,META", None),
+    ("MARKETS", "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SPY,QQQ,DIA,IWM,VIXY,AAPL,MSFT,NVDA,AMZN,META,GOOGL,TSLA,MSTR,COIN,HOOD,IBIT,IREN,XLK,XLF,XLE,XLV,GDX", None),
+    ("OPTIONS", "https://www.cboe.com/insights/rss/", None),
     ("CRYPTO", "https://www.coindesk.com/arc/outboundfeeds/rss/", None),
 ]
 
