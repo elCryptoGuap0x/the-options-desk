@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T22:10:09Z",
+  "generated_at": "2026-09-20T23:36:17Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -475,10 +475,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80997,
-      "chg_pct": -0.03,
+      "last": 81147,
+      "chg_pct": -0.21,
       "history": [
-        80962.325,
         81007.745,
         80988.555,
         80983.725,
@@ -517,16 +516,16 @@
         80848,
         80891,
         80874,
-        80997
+        80997,
+        81147
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2635.03,
-      "chg_pct": 0.42,
+      "last": 2639.72,
+      "chg_pct": 0.22,
       "history": [
-        2612.7,
         2612.615,
         2616.505,
         2614.08,
@@ -565,16 +564,16 @@
         2622.59,
         2624.57,
         2627.22,
-        2635.03
+        2635.03,
+        2639.72
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.21,
-      "chg_pct": -0.07,
+      "last": 110.87,
+      "chg_pct": -0.16,
       "history": [
-        112.475,
         112.315,
         112.355,
         112.265,
@@ -613,7 +612,8 @@
         109.73,
         109.77,
         109.81,
-        110.21
+        110.21,
+        110.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1116,10 +1116,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Dow Jones Futures Due: Can The Market Take Flight? Robinhood, Sandisk, AMD, Moderna Surge Into Buy Areas",
-      "summary": "The stock market showed choppy, mixed weekly action. But Robinhood, Sandisk, AMD and Moderna rallied into buy areas.",
-      "url": "https://finance.yahoo.com/m/832159c8-6dc5-38e6-b838-d7db7090ca09/dow-jones-futures-due%3A-can.html?.tsrc=rss",
-      "ts": "2026-09-20T21:57:41Z"
+      "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
+      "summary": "Nvidia is guiding for 70% top-line growth in its next fiscal year, but the chipmaker has regularly proven too conservative with its guidance in the past.",
+      "url": "https://www.fool.com/investing/2026/09/20/prediction-nvidias-70-revenue-forecast-will-drive/?.tsrc=rss",
+      "ts": "2026-09-20T23:33:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -1571,16 +1571,16 @@
     ]
   },
   "btc_range": {
-    "last": 80997,
+    "last": 81142,
     "high_24h": 81417,
     "low_24h": 80155,
-    "chg_pct": -0.03
+    "chg_pct": -0.21
   },
   "macro": {
     "10Y": 5.0,
-    "DXY": 100.24,
-    "WTI": 96.08,
+    "DXY": 100.27,
+    "WTI": 96.31,
     "VIX": 14.81,
-    "asof": "2026-09-20T22:10:09Z"
+    "asof": "2026-09-20T23:36:17Z"
   }
 }
