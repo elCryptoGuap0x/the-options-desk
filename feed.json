@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T21:59:59Z",
+  "generated_at": "2026-09-20T22:10:09Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -64,7 +64,8 @@
           "G",
           "G",
           "G"
-        ]
+        ],
+        "peak_pct": 39.26
       }
     },
     {
@@ -103,7 +104,8 @@
           "R",
           "R",
           "R"
-        ]
+        ],
+        "peak_pct": 11.69
       }
     },
     {
@@ -473,10 +475,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80874,
-      "chg_pct": -0.27,
+      "last": 80997,
+      "chg_pct": -0.03,
       "history": [
-        80901.085,
         80962.325,
         81007.745,
         80988.555,
@@ -515,16 +516,16 @@
         81011,
         80848,
         80891,
-        80874
+        80874,
+        80997
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2627.22,
-      "chg_pct": -0.02,
+      "last": 2635.03,
+      "chg_pct": 0.42,
       "history": [
-        2611.275,
         2612.7,
         2612.615,
         2616.505,
@@ -563,16 +564,16 @@
         2630.92,
         2622.59,
         2624.57,
-        2627.22
+        2627.22,
+        2635.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 109.81,
-      "chg_pct": -0.76,
+      "last": 110.21,
+      "chg_pct": -0.07,
       "history": [
-        112.47,
         112.475,
         112.315,
         112.355,
@@ -611,7 +612,8 @@
         110.01,
         109.73,
         109.77,
-        109.81
+        109.81,
+        110.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1125,20 +1127,6 @@
       "summary": "As we\u2019ve said many times, give the markets a sense of certainty and they will respond accordingly. The market direction is shifting with all three major indices moving to the upside as Treasury yields and crude oil prices slip in early trad",
       "url": "https://www.cboe.com/insights/posts/markets-breathe-again-work-to-undo-post-fed-pulldown/",
       "ts": "2026-09-17T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto platform Gemini\u2019s stock is down 80% from its IPO. That\u2019s reviving takeover speculation",
-      "summary": "The crypto platform\u2019s market value has fallen to about $753 million, putting fresh attention on the licenses, custody infrastructure and customer relationships a buyer could inherit.",
-      "url": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
-      "ts": "2026-09-20T14:54:48Z"
-    },
-    {
-      "tag": "FED",
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "summary": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
-      "ts": "2026-09-16T18:00:00Z"
     }
   ],
   "calendar": [
@@ -1583,15 +1571,16 @@
     ]
   },
   "btc_range": {
-    "last": 80879,
+    "last": 80997,
     "high_24h": 81417,
     "low_24h": 80155,
-    "chg_pct": -0.28
+    "chg_pct": -0.03
   },
   "macro": {
     "10Y": 5.0,
-    "DXY": 100.22,
+    "DXY": 100.24,
     "WTI": 96.08,
-    "VIX": 14.81
+    "VIX": 14.81,
+    "asof": "2026-09-20T22:10:09Z"
   }
 }

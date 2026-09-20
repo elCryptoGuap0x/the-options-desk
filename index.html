@@ -279,6 +279,11 @@
     font-variant-numeric: tabular-nums;
   }
   .macro-strip .macro-label { color: var(--text-faint); margin-right: 4px; }
+  /* Added 9/20, real instruction: don't let a frozen-since-Friday-close
+     macro print sit next to live BTC pretending to be the same
+     freshness -- its own honest "as of" stamp, separate from the BTC
+     range line below it. */
+  .macro-asof { margin-top: 4px; font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
   .btc-range-line {
     margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border-soft);
     font-family: var(--mono); font-size: 11.5px; color: var(--text-faint);
@@ -559,6 +564,10 @@
   .fuse-dot.fuse-dim { opacity: 0.15; transition: opacity 0.15s ease; }
   @keyframes fuse-pop { from { transform: scale(1.7); } to { transform: scale(1); } }
   .fuse-dot.fuse-pop { animation: fuse-pop 0.25s ease-out; opacity: 1; }
+  .fuse-peak {
+    font-family: var(--mono); font-size: 10.5px; font-weight: 700; color: var(--good);
+    margin-left: 6px; min-width: 46px; text-align: right; font-variant-numeric: tabular-nums;
+  }
   .fuse-replay {
     margin-left: auto; align-self: center;
     font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.04em;
@@ -880,6 +889,7 @@
   <section class="macro-section" id="macro-section" hidden>
     <div class="section-title">Macro</div>
     <div class="macro-strip" id="macro-strip"></div>
+    <div class="macro-asof" id="macro-asof"></div>
     <div class="btc-range-line" id="btc-range-line"></div>
   </section>
 
@@ -1517,7 +1527,16 @@
       var cls = d === "G" ? "g" : (d === "R" ? "r" : "gray");
       return '<span class="fuse-dot ' + cls + '"></span>';
     }).join("");
-    return '<div class="fuse-row" id="' + id + '">' + dots +
+    // Real number the replay ticks toward, added 9/20 -- persisted at
+    // EOD from the same HELD-close convention used everywhere else on
+    // this desk (rule 6's ratchet, door-health tallies): the highest
+    // fully-closed 1-min bar's close during the hold, never an intrabar
+    // wick. Absent on older tickets backfilled before this shipped --
+    // the replay just runs dots-only for those, same as before, rather
+    // than inventing a number.
+    var hasPeak = typeof fuse.peak_pct === "number";
+    var peakHtml = hasPeak ? '<span class="fuse-peak" id="' + id + '-peak" data-peak="' + fuse.peak_pct + '">+0.0%</span>' : "";
+    return '<div class="fuse-row" id="' + id + '">' + dots + peakHtml +
       '<button class="fuse-replay" type="button" onclick="event.stopPropagation(); playFuse(\'' + id + '\')">&#9654; Replay</button></div>';
   }
   window.playFuse = function (rowId) {
@@ -1525,20 +1544,28 @@
     if (!row) return;
     var dots = row.querySelectorAll(".fuse-dot");
     var btn = row.querySelector(".fuse-replay");
+    var peakEl = document.getElementById(rowId + "-peak");
+    var peakTarget = peakEl ? parseFloat(peakEl.getAttribute("data-peak")) : null;
     if (!dots.length || (btn && btn.disabled)) return;
     if (btn) btn.disabled = true;
     var total = dots.length;
     var stepMs = Math.max(60, Math.floor(8000 / total));
     for (var d = 0; d < dots.length; d++) dots[d].classList.add("fuse-dim");
+    if (peakEl) peakEl.textContent = "+0.0%";
     var i = 0;
     var timer = setInterval(function () {
       if (i >= total) {
         clearInterval(timer);
         if (btn) btn.disabled = false;
+        if (peakEl && peakTarget !== null) peakEl.textContent = (peakTarget >= 0 ? "+" : "") + peakTarget.toFixed(1) + "%";
         return;
       }
       dots[i].classList.remove("fuse-dim");
       dots[i].classList.add("fuse-pop");
+      if (peakEl && peakTarget !== null) {
+        var current = peakTarget * ((i + 1) / total);
+        peakEl.textContent = (current >= 0 ? "+" : "") + current.toFixed(1) + "%";
+      }
       i++;
     }, stepMs);
   };
@@ -1705,11 +1732,19 @@
   function renderScanLog(scanLogPublic, session) {
     var el = document.getElementById("scan-log");
     if (!el) return;
+    // Fixed 9/20, real feedback ("delete the extra Closed COIN +18.5%
+    // chip"): scan_log_public is a real but static EOD sentence that
+    // never expires, and it duplicated the desk-facts "Closed today:"
+    // line in #desk-board once the desk closes. Hidden entirely outside
+    // RTH -- this element's only real job is narrating a live cycle
+    // while the market is open; the closed-state summary lives in one
+    // place (desk-board) now, not two.
+    if (!session || session.market_state !== "OPEN") {
+      el.innerHTML = "";
+      return;
+    }
     if (!scanLogPublic) {
-      var closedMsg = session && session.market_state !== "OPEN" ?
-        "Desk closed — next session " + (session.next_open || "TBD") + "." :
-        "Quiet cycle — nothing new to log yet";
-      el.innerHTML = '<div class="waiting"><span class="dot"></span>' + closedMsg + '</div>';
+      el.innerHTML = '<div class="waiting"><span class="dot"></span>Quiet cycle — nothing new to log yet</div>';
       return;
     }
     el.innerHTML = '<div class="scan-row"><span class="scan-reason">' + scanLogPublic + '</span></div>';
@@ -2107,6 +2142,7 @@
   function renderMacro(macro, btcRange) {
     var section = document.getElementById("macro-section");
     var stripEl = document.getElementById("macro-strip");
+    var asofEl = document.getElementById("macro-asof");
     var rangeEl = document.getElementById("btc-range-line");
     if (!section || !stripEl || !rangeEl) return;
     var macroKeys = macro ? MACRO_ORDER.filter(function (k) { return macro[k] !== undefined; }) : [];
@@ -2118,6 +2154,21 @@
       var text = k === "10Y" ? v.toFixed(2) + "%" : v.toFixed(2);
       return '<span class="macro-item"><span class="macro-label">' + k + '</span>' + text + '</span>';
     }).join("");
+    // Real instruction, 9/20: this strip is a "last print," not a live
+    // tick -- server-side merge_macro only advances `asof` when a value
+    // genuinely changes, so this stamp is honest even across a whole
+    // frozen weekend, unlike generated_at (which updates every run
+    // regardless of whether these specific numbers moved).
+    if (asofEl) {
+      if (macroKeys.length && macro.asof) {
+        var asofDate = new Date(macro.asof);
+        asofEl.textContent = isNaN(asofDate.getTime()) ? "" :
+          "as of " + asofDate.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }) + " " +
+          asofDate.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT close";
+      } else {
+        asofEl.textContent = "";
+      }
+    }
     if (hasRange) {
       var good = btcRange.chg_pct >= 0;
       rangeEl.innerHTML = "BTC " + Math.round(btcRange.last).toLocaleString() +

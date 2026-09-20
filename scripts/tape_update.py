@@ -193,6 +193,27 @@ def fetch_macro():
     return out
 
 
+def merge_macro(existing_macro, fresh_macro, now_iso):
+    """Added 9/20, real instruction: don't let the macro strip sit next
+    to live BTC pretending to be the same freshness. regularMarketPrice
+    for 10Y/DXY/WTI/VIX genuinely does not change while those markets
+    are closed (weekends, overnight) -- when a fresh fetch comes back
+    byte-identical to what's already stored, this keeps the OLD `asof`
+    stamp instead of rewriting it to "now," so the client can honestly
+    show "as of Fri close" instead of implying a live tick that never
+    happened. Only advances `asof` when a value genuinely moved.
+    """
+    if not fresh_macro:
+        return existing_macro
+    existing_values = {k: v for k, v in (existing_macro or {}).items() if k != "asof"}
+    result = dict(fresh_macro)
+    if existing_values == fresh_macro:
+        result["asof"] = (existing_macro or {}).get("asof") or now_iso
+    else:
+        result["asof"] = now_iso
+    return result
+
+
 _RSS_ITEM_RE = re.compile(r"<item>(.*?)</item>", re.S)
 _RSS_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 _RSS_DESC_RE = re.compile(r"<description>(.*?)</description>", re.S)
@@ -386,7 +407,11 @@ def refresh_crypto_board(market_board, crypto):
     return market_board
 
 
-NEWS_LIMIT = 10
+# Lowered from 10 to 8 on 9/20, real instruction ("1/N with N=0-8") --
+# 5 curated cards already anchor the list on a real trading day, and 8
+# total leaves meaningful room for fresh RSS without padding toward a
+# round number for its own sake.
+NEWS_LIMIT = 8
 
 
 def merge_news(existing_news, fresh_rss):
@@ -447,8 +472,7 @@ def main():
     feed["news"] = merge_news(feed.get("news"), news)
     if btc_range:
         feed["btc_range"] = btc_range
-    if macro:
-        feed["macro"] = macro
+    feed["macro"] = merge_macro(feed.get("macro"), macro, feed["generated_at"])
 
     if dry_run:
         print(json.dumps({
