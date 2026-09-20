@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T23:36:17Z",
+  "generated_at": "2026-09-20T23:44:29Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -241,96 +241,6 @@
       },
       "entry_price": "0.47",
       "exit_price": "0.40"
-    },
-    {
-      "day": "Friday",
-      "sym": "IREN",
-      "dir": "call",
-      "entry": "10:33a",
-      "exit": "10:50a",
-      "dur": "17 min",
-      "dte": "0DTE",
-      "pct": -55.0,
-      "fuse": {
-        "dots": [
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R"
-        ]
-      },
-      "entry_price": "0.20",
-      "exit_price": "0.09"
-    },
-    {
-      "day": "Thursday",
-      "sym": "COIN",
-      "dir": "put",
-      "entry": "10:11a",
-      "exit": "10:34a",
-      "dur": "23 min",
-      "dte": "1DTE",
-      "pct": -20.5,
-      "fuse": {
-        "dots": [
-          "R",
-          "R",
-          "G",
-          "G",
-          "G",
-          "G",
-          "G",
-          "R",
-          "R",
-          "R"
-        ]
-      },
-      "entry_price": "0.88",
-      "exit_price": "0.70"
-    },
-    {
-      "day": "Wednesday",
-      "sym": "IREN",
-      "dir": "call",
-      "entry": "11:41a",
-      "exit": "1:41p",
-      "dur": "121 min",
-      "dte": "2DTE",
-      "pct": 10.6,
-      "entry_price": "1.23",
-      "exit_price": "1.36"
-    },
-    {
-      "day": "Tuesday",
-      "sym": "TSLA",
-      "dir": "call",
-      "entry": "10:31a",
-      "exit": "10:44a",
-      "dur": "13 min",
-      "dte": "1DTE",
-      "pct": -28.8,
-      "fuse": {
-        "dots": [
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "R",
-          "gray",
-          "R"
-        ]
-      },
-      "entry_price": "1.25",
-      "exit_price": "0.89"
     }
   ],
   "skip_summary": [],
@@ -475,10 +385,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81147,
-      "chg_pct": -0.21,
+      "last": 81236,
+      "chg_pct": -0.02,
       "history": [
-        81007.745,
         80988.555,
         80983.725,
         80945.595,
@@ -517,16 +426,16 @@
         80891,
         80874,
         80997,
-        81147
+        81147,
+        81236
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2639.72,
-      "chg_pct": 0.22,
+      "last": 2642.11,
+      "chg_pct": 0.34,
       "history": [
-        2612.615,
         2616.505,
         2614.08,
         2611.115,
@@ -565,16 +474,16 @@
         2624.57,
         2627.22,
         2635.03,
-        2639.72
+        2639.72,
+        2642.11
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.87,
-      "chg_pct": -0.16,
+      "last": 110.99,
+      "chg_pct": 0.01,
       "history": [
-        112.315,
         112.355,
         112.265,
         112.26,
@@ -613,7 +522,8 @@
         109.77,
         109.81,
         110.21,
-        110.87
+        110.87,
+        110.99
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1108,13 +1018,6 @@
       "summary": "Semiconductor ETFs and names including NVDA, INTC, SMCI pointed higher premarket after Thursday's strong session. Momentum returned to AI supply-chain stocks in Asia and Europe as well. Broader tech leadership contrasted with softer energy."
     },
     {
-      "tag": "FED",
-      "title": "Federal Reserve issues FOMC statement",
-      "summary": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "ts": "2026-09-16T18:00:00Z"
-    },
-    {
       "tag": "MARKETS",
       "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
       "summary": "Nvidia is guiding for 70% top-line growth in its next fiscal year, but the chipmaker has regularly proven too conservative with its guidance in the past.",
@@ -1127,28 +1030,27 @@
       "summary": "As we\u2019ve said many times, give the markets a sense of certainty and they will respond accordingly. The market direction is shifting with all three major indices moving to the upside as Treasury yields and crude oil prices slip in early trad",
       "url": "https://www.cboe.com/insights/posts/markets-breathe-again-work-to-undo-post-fed-pulldown/",
       "ts": "2026-09-17T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto platform Gemini\u2019s stock is down 80% from its IPO. That\u2019s reviving takeover speculation",
+      "summary": "The crypto platform\u2019s market value has fallen to about $753 million, putting fresh attention on the licenses, custody infrastructure and customer relationships a buyer could inherit.",
+      "url": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation",
+      "ts": "2026-09-20T14:54:48Z"
     }
   ],
   "calendar": [
     {
-      "what": "Fed decision, SEP/dot plot, and Chair Warsh press conference",
-      "when": "Fri \u00b7 done"
+      "what": "Chicago Fed's Goolsbee speaks + Chicago Fed National Activity Index",
+      "when": "Mon 9/21"
     },
     {
-      "what": "Bank of England rate decision",
-      "when": "Thursday"
+      "what": "US-China trade talks (Bessent/He Lifeng), ahead of the Trump-Xi summit",
+      "when": "Started Sun 9/20 \u00b7 summit Thu 9/24"
     },
     {
-      "what": "Weekly jobless claims, housing starts, Philly Fed",
-      "when": "Thursday"
-    },
-    {
-      "what": "Iran/oil geopolitical headlines",
-      "when": "Ongoing"
-    },
-    {
-      "what": "Options expiration dynamics around the Fed",
-      "when": "This week"
+      "what": "Iran/Saudi pipeline situation, oil market still reacting",
+      "when": "Ongoing, unresolved"
     }
   ],
   "skip_summary_ticker_list": {
@@ -1571,16 +1473,16 @@
     ]
   },
   "btc_range": {
-    "last": 81142,
+    "last": 81226,
     "high_24h": 81417,
     "low_24h": 80155,
-    "chg_pct": -0.21
+    "chg_pct": -0.04
   },
   "macro": {
     "10Y": 5.0,
     "DXY": 100.27,
-    "WTI": 96.31,
+    "WTI": 95.99,
     "VIX": 14.81,
-    "asof": "2026-09-20T23:36:17Z"
+    "asof": "2026-09-20T23:44:29Z"
   }
 }

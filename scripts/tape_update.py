@@ -275,6 +275,14 @@ NEWS_FEEDS = [
 # (Fed/SEC both go dark Sat-Sun) doesn't get emptied out, short enough
 # that nothing from last month ever shows up as "current."
 NEWS_MAX_AGE = timedelta(days=5)
+# Tighter override for FED specifically, added 9/20 same evening, real
+# catch: a bare "Federal Reserve issues FOMC statement" from Wednesday
+# was still sitting on the page Sunday night -- 4 days old, inside the
+# general 5-day gate, but a rate decision is fully digested by markets
+# within a day or two, unlike a slower-moving options-commentary or
+# crypto-regulatory story. Only FED gets the shorter window; the
+# general 5-day gate is unchanged for MARKETS/CRYPTO/OPTIONS.
+NEWS_MAX_AGE_BY_TAG = {"FED": timedelta(days=3)}
 
 
 def _clean_field(raw):
@@ -351,7 +359,7 @@ def _fetch_one_feed(tag, feed_url, category_filter):
         if not ts:
             continue
         published_dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-        if now_utc - published_dt > NEWS_MAX_AGE:
+        if now_utc - published_dt > NEWS_MAX_AGE_BY_TAG.get(tag, NEWS_MAX_AGE):
             continue
         dm = _RSS_DESC_RE.search(block)
         summary = _clean_field(dm.group(1))[:240] if dm else ""
