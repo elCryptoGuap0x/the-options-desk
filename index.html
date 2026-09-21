@@ -2354,8 +2354,20 @@
     var el = document.getElementById("fill-clock");
     if (!el) return;
     if (!lastFillAt) { el.innerHTML = ""; return; }
-    var mins = Math.floor((Date.now() - new Date(lastFillAt).getTime()) / 60000);
+    var fillDate = new Date(lastFillAt);
+    var mins = Math.floor((Date.now() - fillDate.getTime()) / 60000);
     if (mins < 0) { el.innerHTML = ""; return; }
+    // Fixed 9/21, real feedback: the raw-minute count is deliberately
+    // blunt by design for a same-day gap ("47 minutes since last fill"
+    // is the point), but past 24 hours it stops being a clock and
+    // starts being a math problem ("4404 minutes" over a weekend gap).
+    // Switch to the fill's own weekday, same CT convention as the rest
+    // of the page, once the raw count crosses a full day.
+    if (mins >= 1440) {
+      var day = fillDate.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" });
+      el.innerHTML = '<span class="l">Last fill ' + day + '</span>';
+      return;
+    }
     el.innerHTML = '<span class="n">' + mins + '</span><span class="l">minutes since last fill</span>';
   }
   function tick() {

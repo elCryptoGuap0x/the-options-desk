@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:36:35Z",
+  "generated_at": "2026-09-21T19:45:13Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -377,14 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86753,
-      "chg_pct": 6.8,
+      "last": 86561.59,
+      "chg_pct": 1.82,
       "history": [
-        85945.875,
-        86005.74,
-        85973.995,
-        86021.64,
-        86055.795,
         86049.345,
         86036.505,
         86036.985,
@@ -410,20 +405,19 @@
         86049.985,
         86132.075,
         86408.48,
-        86753
+        86201.495,
+        86289.355,
+        86553.125,
+        86506.0,
+        86561.585
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2770.21,
-      "chg_pct": 5.28,
+      "last": 2765.07,
+      "chg_pct": 1.41,
       "history": [
-        2744.82,
-        2748.555,
-        2747.715,
-        2751.63,
-        2752.195,
         2751.845,
         2749.515,
         2749.255,
@@ -449,20 +443,19 @@
         2760.875,
         2764.12,
         2770.165,
-        2770.21
+        2762.855,
+        2764.23,
+        2765.305,
+        2764.3,
+        2765.075
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.32,
-      "chg_pct": 7.36,
+      "last": 118.17,
+      "chg_pct": 1.19,
       "history": [
-        117.055,
-        117.19,
-        117.435,
-        117.425,
-        117.485,
         117.545,
         117.635,
         117.435,
@@ -488,16 +481,19 @@
         117.59,
         117.715,
         117.98,
-        118.32
+        117.7,
+        117.81,
+        118.165,
+        118.145,
+        118.175
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 774.47,
-      "chg_pct": 1.73,
+      "last": 774.1,
+      "chg_pct": 1.68,
       "history": [
-        770.875,
         771.32,
         771.54,
         771.64,
@@ -526,16 +522,16 @@
         774.27,
         774.17,
         774.2,
-        774.465
+        774.465,
+        774.1
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "QQQ": {
-      "last": 741.71,
+      "last": 741.74,
       "chg_pct": 3.09,
       "history": [
-        737.82,
         738.14,
         738.41,
         738.62,
@@ -564,7 +560,8 @@
         741.32,
         741.15,
         741.39,
-        741.71
+        741.71,
+        741.735
       ],
       "status": "ruled out",
       "why": "Not in play."
@@ -585,10 +582,9 @@
       "why": "Not in play."
     },
     "META": {
-      "last": 745.0,
-      "chg_pct": 10.85,
+      "last": 745.51,
+      "chg_pct": 10.93,
       "history": [
-        722.55,
         724.44,
         726.34,
         725.88,
@@ -617,7 +613,8 @@
         744.11,
         745.09,
         744.4,
-        745.0
+        745.0,
+        745.51
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -655,10 +652,9 @@
       "why": "Not in play."
     },
     "IBIT": {
-      "last": 48.75,
-      "chg_pct": 6.12,
+      "last": 48.85,
+      "chg_pct": 6.35,
       "history": [
-        48.73,
         48.69,
         48.6,
         48.57,
@@ -687,10 +683,11 @@
         48.7402,
         48.72,
         48.755,
-        48.75
+        48.75,
+        48.855
       ],
-      "status": "watching",
-      "why": "On the list. No ticket."
+      "status": "ruled out",
+      "why": "Not in play."
     },
     "IREN": {
       "last": 47.4,
@@ -733,27 +730,6 @@
       "tag": "Crypto",
       "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
       "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Coinbase Brings IPO Shares to US Retail Traders, With Oura Up First",
-      "summary": "Eligible customers can request shares at the offering price, but allocations are not guaranteed.",
-      "url": "https://decrypt.co/378874/coinbase-ipo-shares-us-traders-oura?.tsrc=rss",
-      "ts": "2026-09-21T19:26:49Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
-      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
-      "ts": "2026-09-21T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Why this investment bank expects little demand for tokenized stocks despite SEC\u2019s new trading rules",
-      "summary": "TD Cowen expects limited demand for tokenized stocks despite new SEC rules opening a path for trading outside traditional markets.",
-      "url": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
-      "ts": "2026-09-21T19:08:40Z"
     }
   ],
   "calendar": [
@@ -826,7 +802,7 @@
       ],
       [
         "IBIT",
-        "watching"
+        "disqualified"
       ],
       [
         "INTC",
@@ -866,7 +842,7 @@
     "up": [
       {
         "sym": "META",
-        "chg_pct": 10.85
+        "chg_pct": 10.93
       },
       {
         "sym": "MSTR",
@@ -874,18 +850,23 @@
       },
       {
         "sym": "IBIT",
-        "chg_pct": 6.12
+        "chg_pct": 6.35
       }
     ],
     "down": []
   },
   "desk_freshness": {
-    "watch": "2:16",
-    "crypto": "2:20"
+    "watch": "2:25",
+    "crypto": "2:45"
   },
   "desk_board": [
     {
       "sym": "ACN",
+      "status": "OUT",
+      "why": "Not in play."
+    },
+    {
+      "sym": "AMD",
       "status": "OUT",
       "why": "Not in play."
     },
@@ -906,8 +887,8 @@
     },
     {
       "sym": "IBIT",
-      "status": "WATCH",
-      "why": "On the list. No ticket."
+      "status": "OUT",
+      "why": "Not in play."
     },
     {
       "sym": "INTC",
@@ -951,171 +932,175 @@
     "IBIT": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "10:16 AM ET",
-        "line": "Looked at, passed."
+        "line": "Checked \u2014 no ticket."
       },
       {
         "t": "10:42 AM ET",
-        "line": "Ruled out \u2014 already ran."
+        "line": "Not in play."
       },
       {
         "t": "10:48 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
+      },
+      {
+        "t": "3:26 PM ET",
+        "line": "Not in play."
       }
     ],
     "META": [
       {
         "t": "9:35 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "10:25 AM ET",
-        "line": "Looked at, passed."
+        "line": "Checked \u2014 no ticket."
       },
       {
         "t": "01:50 PM ET",
-        "line": "Looked at, passed."
+        "line": "Checked \u2014 no ticket."
       },
       {
         "t": "02:51 PM ET",
-        "line": "Looked at, passed."
+        "line": "Checked \u2014 no ticket."
       }
     ],
     "INTC": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "12:06 PM ET",
-        "line": "Looked at, passed."
+        "line": "Checked \u2014 no ticket."
       }
     ],
     "SPY": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "2:20 PM ET",
-        "line": "Ruled out \u2014 already ran."
+        "line": "Not in play."
       }
     ],
     "QQQ": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "1:49 PM ET",
-        "line": "Ruled out \u2014 already ran."
+        "line": "Not in play."
       }
     ],
     "USO": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "XLE": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "MRVL": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "COIN": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "9:53 AM ET",
-        "line": "Ruled out \u2014 no follow-through."
+        "line": "Not in play."
       }
     ],
     "MSTR": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "9:53 AM ET",
-        "line": "Ruled out \u2014 no follow-through."
+        "line": "Not in play."
       }
     ],
     "CRCL": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "HOOD": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "IREN": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "9:53 AM ET",
-        "line": "Ruled out \u2014 no follow-through."
+        "line": "Not in play."
       }
     ],
     "MU": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "GNRC": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "AMZN": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "SMCI": [
       {
         "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       }
     ],
     "ACN": [
       {
         "t": "9:35 AM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "9:53 AM ET",
-        "line": "Ruled out \u2014 no follow-through."
+        "line": "Not in play."
       }
     ],
     "AMD": [
       {
         "t": "2:07 PM ET",
-        "line": "First flagged \u2014 still building."
+        "line": "Added to the list."
       },
       {
         "t": "3:05 PM ET",
-        "line": "Ruled out \u2014 already ran."
+        "line": "Not in play."
       }
     ],
     "ARM": [
@@ -1151,7 +1136,7 @@
     "asof": "2026-09-21T19:36:35Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-21T19:16:00Z",
+    "last_look_iso": "2026-09-21T19:25:00Z",
     "names": 13,
     "tickets": 0,
     "cadence_min": 4
