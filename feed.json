@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:25:27Z",
+  "generated_at": "2026-09-21T17:31:32Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,11 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85863.63,
-      "chg_pct": 0.99,
+      "last": 85887.91,
+      "chg_pct": 1.02,
       "history": [
-        85955.455,
-        85951.845,
         85857.445,
         85827.005,
         85784.31,
@@ -409,17 +407,17 @@
         85953.055,
         85801.675,
         85814.98,
-        85863.635
+        85863.635,
+        85891.725,
+        85887.915
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2751.59,
-      "chg_pct": 0.91,
+      "last": 2750.24,
+      "chg_pct": 0.86,
       "history": [
-        2755.945,
-        2755.135,
         2747.975,
         2746.88,
         2748.5,
@@ -447,17 +445,17 @@
         2749.935,
         2744.685,
         2749.915,
-        2751.595
+        2751.595,
+        2749.405,
+        2750.235
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.48,
-      "chg_pct": 0.6,
+      "last": 117.53,
+      "chg_pct": 0.63,
       "history": [
-        118.1,
-        117.935,
         117.755,
         117.795,
         117.74,
@@ -485,7 +483,9 @@
         117.525,
         117.315,
         117.52,
-        117.485
+        117.485,
+        117.52,
+        117.525
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -850,7 +850,7 @@
   },
   "desk_freshness": {
     "watch": "12:22",
-    "crypto": "12:25"
+    "crypto": "12:31"
   },
   "desk_board": [
     {
@@ -871,12 +871,12 @@
     {
       "sym": "IBIT",
       "status": "WATCH",
-      "why": "On the list since 1:05 PM ET. No look yet."
+      "why": "On the list since 1:14 PM ET. No look yet."
     },
     {
       "sym": "INTC",
       "status": "WATCH",
-      "why": "Flagged 1:05 PM ET \u2014 named."
+      "why": "Flagged 1:14 PM ET \u2014 named."
     },
     {
       "sym": "IREN",
@@ -886,7 +886,7 @@
     {
       "sym": "META",
       "status": "WATCH",
-      "why": "On the list since 1:05 PM ET. No look yet."
+      "why": "On the list since 1:14 PM ET. No look yet."
     },
     {
       "sym": "MSTR",
