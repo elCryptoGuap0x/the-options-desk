@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T16:04:43Z",
+  "generated_at": "2026-09-21T16:07:46Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85857.45,
-      "chg_pct": 0.99,
+      "last": 85827.01,
+      "chg_pct": 0.95,
       "history": [
-        85773.165,
         85897.175,
         85974.475,
         86020.475,
@@ -409,16 +408,16 @@
         85954.31,
         85955.455,
         85951.845,
-        85857.445
+        85857.445,
+        85827.005
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2747.97,
-      "chg_pct": 0.78,
+      "last": 2746.88,
+      "chg_pct": 0.74,
       "history": [
-        2740.385,
         2750.5,
         2746.4,
         2740.15,
@@ -447,16 +446,16 @@
         2759.625,
         2755.945,
         2755.135,
-        2747.975
+        2747.975,
+        2746.88
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.75,
-      "chg_pct": 0.83,
+      "last": 117.8,
+      "chg_pct": 0.86,
       "history": [
-        118.2,
         118.725,
         118.43,
         118.235,
@@ -485,7 +484,8 @@
         118.275,
         118.1,
         117.935,
-        117.755
+        117.755,
+        117.795
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -835,7 +835,7 @@
   },
   "desk_freshness": {
     "watch": "11:03",
-    "crypto": "11:04"
+    "crypto": "11:07"
   },
   "desk_board": [
     {
@@ -902,6 +902,16 @@
       },
       {
         "t": "10:25 AM ET",
+        "line": "Looked at, passed."
+      }
+    ],
+    "INTC": [
+      {
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      },
+      {
+        "t": "12:06 PM ET",
         "line": "Looked at, passed."
       }
     ],
@@ -975,12 +985,6 @@
       {
         "t": "9:53 AM ET",
         "line": "Ruled out \u2014 no follow-through."
-      }
-    ],
-    "INTC": [
-      {
-        "t": "8:07 AM ET",
-        "line": "First flagged \u2014 still building."
       }
     ],
     "MU": [
