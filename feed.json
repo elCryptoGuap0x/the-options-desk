@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:45:13Z",
+  "generated_at": "2026-09-21T22:48:53Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -377,8 +377,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86561.59,
-      "chg_pct": 1.82,
+      "last": 86395,
+      "chg_pct": 6.46,
       "history": [
         86049.345,
         86036.505,
@@ -409,14 +409,15 @@
         86289.355,
         86553.125,
         86506.0,
-        86561.585
+        86561.585,
+        86395
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2765.07,
-      "chg_pct": 1.41,
+      "last": 2774.92,
+      "chg_pct": 5.18,
       "history": [
         2751.845,
         2749.515,
@@ -447,14 +448,15 @@
         2764.23,
         2765.305,
         2764.3,
-        2765.075
+        2765.075,
+        2774.92
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.17,
-      "chg_pct": 1.19,
+      "last": 119.13,
+      "chg_pct": 7.9,
       "history": [
         117.545,
         117.635,
@@ -485,7 +487,8 @@
         117.81,
         118.165,
         118.145,
-        118.175
+        118.175,
+        119.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -730,6 +733,27 @@
       "tag": "Crypto",
       "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
       "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Robinhood CEO Says Crypto Will Beat Sports at Prediction Markets' Own Game",
+      "summary": "Robinhood CEO Vlad Tenev says crypto event contracts are already outpacing sports bets, and could become the platform's dominant category within a few years.",
+      "url": "https://decrypt.co/378889/robinhood-ceo-crypto-will-beat-sports-prediction-markets?.tsrc=rss",
+      "ts": "2026-09-21T21:46:03Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
+      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
+      "ts": "2026-09-21T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin could test $90,000 after shorts get squeezed, but traders warn leverage is building",
+      "summary": "Bitcoin has broken out to $86,000, but analysts say the next leg depends on whether spot buyers continue to show up as leverage builds.",
+      "url": "https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building",
+      "ts": "2026-09-21T20:39:39Z"
     }
   ],
   "calendar": [
@@ -1123,17 +1147,17 @@
     ]
   },
   "btc_range": {
-    "last": 86554,
-    "high_24h": 86282,
-    "low_24h": 80631,
-    "chg_pct": 6.63
+    "last": 86395,
+    "high_24h": 87330,
+    "low_24h": 80907,
+    "chg_pct": 6.46
   },
   "macro": {
     "10Y": 4.96,
-    "DXY": 100.4,
-    "WTI": 92.35,
-    "VIX": 15.0,
-    "asof": "2026-09-21T19:36:35Z"
+    "DXY": 100.42,
+    "WTI": 92.04,
+    "VIX": 14.87,
+    "asof": "2026-09-21T22:48:53Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-21T19:25:00Z",
