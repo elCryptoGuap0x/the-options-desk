@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T12:12:21Z",
+  "generated_at": "2026-09-21T12:12:30Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -377,25 +377,27 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85027.07,
-      "chg_pct": 0.01,
+      "last": 85016.6,
+      "chg_pct": -0.0,
       "history": [
         85018.495,
         85149.995,
         84987.995,
-        85027.065
+        85027.065,
+        85016.605
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2723.58,
-      "chg_pct": -0.12,
+      "last": 2723.22,
+      "chg_pct": -0.13,
       "history": [
         2726.745,
         2728.32,
         2722.195,
-        2723.58
+        2723.58,
+        2723.225
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -633,16 +635,11 @@
   "scan_log_public": "0 looked, 0 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
-    "up": [
-      {
-        "sym": "BTC",
-        "chg_pct": 0.01
-      }
-    ],
+    "up": [],
     "down": [
       {
         "sym": "ETH",
-        "chg_pct": -0.12
+        "chg_pct": -0.13
       },
       {
         "sym": "SOL",
@@ -752,12 +749,6 @@
       {
         "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
-      }
-    ],
-    "BTC": [
-      {
-        "t": null,
-        "line": "not a setup"
       }
     ],
     "ETH": [
