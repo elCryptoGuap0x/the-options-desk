@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:58:47Z",
+  "generated_at": "2026-09-21T17:59:41Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85873.71,
-      "chg_pct": 1.01,
+      "last": 85884.28,
+      "chg_pct": 1.02,
       "history": [
-        85652.005,
         85802.065,
         85878.985,
         85993.175,
@@ -409,16 +408,16 @@
         85851.295,
         85719.265,
         85859.995,
-        85873.705
+        85873.705,
+        85884.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2743.31,
-      "chg_pct": 0.61,
+      "last": 2742.8,
+      "chg_pct": 0.59,
       "history": [
-        2751.905,
         2758.83,
         2759.175,
         2763.165,
@@ -447,17 +446,16 @@
         2739.95,
         2735.905,
         2741.995,
-        2743.31
+        2743.31,
+        2742.795
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.14,
-      "chg_pct": 0.3,
+      "last": 117.09,
+      "chg_pct": 0.27,
       "history": [
-        116.84,
-        117.35,
         117.505,
         117.7,
         117.58,
@@ -485,7 +483,9 @@
         117.14,
         116.75,
         117.025,
-        117.14
+        117.14,
+        117.065,
+        117.095
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -850,7 +850,7 @@
   },
   "desk_freshness": {
     "watch": "12:46",
-    "crypto": "12:58"
+    "crypto": "12:59"
   },
   "desk_board": [
     {
@@ -876,12 +876,12 @@
     {
       "sym": "IBIT",
       "status": "WATCH",
-      "why": "On the list since 1:22 PM ET. No look yet."
+      "why": "On the list since 1:46 PM ET. No look yet."
     },
     {
       "sym": "INTC",
       "status": "WATCH",
-      "why": "Flagged 1:22 PM ET \u2014 named."
+      "why": "Flagged 1:46 PM ET \u2014 named."
     },
     {
       "sym": "IREN",
@@ -891,12 +891,17 @@
     {
       "sym": "META",
       "status": "WATCH",
-      "why": "On the list since 1:22 PM ET. No look yet."
+      "why": "On the list since 1:46 PM ET. No look yet."
     },
     {
       "sym": "MSTR",
       "status": "OUT",
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
+    },
+    {
+      "sym": "QQQ",
+      "status": "OUT",
+      "why": "Ruled out 1:46 PM ET \u2014 already ran."
     },
     {
       "sym": "WBD",
@@ -1094,5 +1099,5 @@
     "cadence_min": 4
   },
   "today_label": "Mon 9/21",
-  "narrative_line": "MSTR ripping. No ticket. Board still live."
+  "narrative_line": "META ripping. No ticket. Board still live."
 }

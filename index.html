@@ -1921,22 +1921,51 @@
     el.textContent = "Watch " + (freshness.watch || "--") + " CT · crypto " + (freshness.crypto || "--") + " CT";
   }
 
-  // Added 9/21: the heartbeat line ("Last look 11:12 ET · 10 names ·
-  // 0 tickets · next look ~3 min") -- every field describes a cycle that
-  // already finished (site-build.py's build_pulse, itself read off
-  // watch-state.json); "next look" is a forward estimate, never a claim
-  // about what that cycle will decide. Off entirely outside RTH -- same
-  // gating as renderDeskFreshness's own OPEN check, nothing to pulse
-  // about on a closed desk.
+  // Added 9/21: the heartbeat line ("Last look 4m ago · 10 names ·
+  // 0 tickets · next look ~2 min") -- every field describes a cycle
+  // that already finished (site-build.py's build_pulse, itself read
+  // off watch-state.json); "next look" is a forward estimate, never a
+  // claim about what that cycle will decide. Off entirely outside RTH
+  // -- same gating as renderDeskFreshness's own OPEN check, nothing to
+  // pulse about on a closed desk.
+  //
+  // Fixed 9/21, real bug caught live by a spectator: this used to print
+  // pulse.last_look_et/next_look_min exactly as published -- both
+  // computed once at BUILD time. Once site-loop.sh's own push cadence
+  // was throttled to >=540s (separate 9/21 fix, see that file), a
+  // spectator could load the page and see "next look ~4 min" sit
+  // unchanged for a stretch of up to 9 minutes, reading as frozen/fake
+  // even though Watch itself was fine underneath. Now stores the raw
+  // pulse (an absolute last_look_iso + cadence_min) and recomputes both
+  // numbers LIVE every tick (see tick()'s own 30s loop below) off
+  // Date.now() -- same pattern as renderFillClock's minutes-since-last-
+  // fill. Advances between polls and between pushes; a negative "next
+  // look" (the estimate came and went with no new push yet) renders as
+  // "any moment" rather than a stale positive number or a confusing
+  // negative one.
+  var lastPulse = null;
+  var lastPulseSession = null;
   function renderPulse(pulse, session) {
+    lastPulse = pulse;
+    lastPulseSession = session;
+    tickPulse();
+  }
+  function tickPulse() {
     var el = document.getElementById("pulse-line");
     if (!el) return;
-    if (!session || session.market_state !== "OPEN" || !pulse) {
+    var pulse = lastPulse, session = lastPulseSession;
+    if (!session || session.market_state !== "OPEN" || !pulse || !pulse.last_look_iso) {
       el.textContent = "";
       return;
     }
-    el.textContent = "Last look " + pulse.last_look_et + " CT · " + pulse.names + " names · " +
-      pulse.tickets + " ticket" + (pulse.tickets === 1 ? "" : "s") + " · next look ~" + pulse.next_look_min + " min";
+    var lastLookMs = new Date(pulse.last_look_iso).getTime();
+    if (isNaN(lastLookMs)) { el.textContent = ""; return; }
+    var minsAgo = Math.max(0, Math.floor((Date.now() - lastLookMs) / 60000));
+    var lastLookText = minsAgo === 0 ? "just now" : minsAgo + "m ago";
+    var minsToNext = pulse.cadence_min - minsAgo;
+    var nextLookText = minsToNext > 0 ? "~" + minsToNext + " min" : "any moment";
+    el.textContent = "Last look " + lastLookText + " · " + pulse.names + " names · " +
+      pulse.tickets + " ticket" + (pulse.tickets === 1 ? "" : "s") + " · next look " + nextLookText;
   }
 
   // Added 9/21: the one delayed, plain-English story line under the
@@ -2328,6 +2357,7 @@
       countdownEl.textContent = countdownText(lastSession);
     }
     renderFillClock();
+    tickPulse();
   }
   tick();
   setInterval(tick, 30000);
