@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T23:44:29Z",
+  "generated_at": "2026-09-21T01:39:57Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -385,10 +385,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81236,
-      "chg_pct": -0.02,
+      "last": 81369,
+      "chg_pct": 0.4,
       "history": [
-        80988.555,
         80983.725,
         80945.595,
         80889.645,
@@ -427,16 +426,16 @@
         80874,
         80997,
         81147,
-        81236
+        81236,
+        81369
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2642.11,
-      "chg_pct": 0.34,
+      "last": 2674.48,
+      "chg_pct": 2.22,
       "history": [
-        2616.505,
         2614.08,
         2611.115,
         2618.705,
@@ -475,16 +474,16 @@
         2627.22,
         2635.03,
         2639.72,
-        2642.11
+        2642.11,
+        2674.48
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.99,
-      "chg_pct": 0.01,
+      "last": 112.09,
+      "chg_pct": 1.75,
       "history": [
-        112.355,
         112.265,
         112.26,
         112.525,
@@ -523,7 +522,8 @@
         109.81,
         110.21,
         110.87,
-        110.99
+        110.99,
+        112.09
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1019,10 +1019,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year",
-      "summary": "Nvidia is guiding for 70% top-line growth in its next fiscal year, but the chipmaker has regularly proven too conservative with its guidance in the past.",
-      "url": "https://www.fool.com/investing/2026/09/20/prediction-nvidias-70-revenue-forecast-will-drive/?.tsrc=rss",
-      "ts": "2026-09-20T23:33:00Z"
+      "title": "Dow Jones Futures Rise; Can The Market Take Flight? Robinhood, Sandisk, AMD, Moderna Surge Into Buy Areas",
+      "summary": "The stock market showed choppy, mixed weekly action. But Robinhood, Sandisk, AMD and Moderna rallied into buy areas.",
+      "url": "https://finance.yahoo.com/m/832159c8-6dc5-38e6-b838-d7db7090ca09/dow-jones-futures-rise%3B-can.html?.tsrc=rss",
+      "ts": "2026-09-21T01:11:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -1489,16 +1489,16 @@
     ]
   },
   "btc_range": {
-    "last": 81226,
-    "high_24h": 81417,
+    "last": 81362,
+    "high_24h": 81808,
     "low_24h": 80155,
-    "chg_pct": -0.04
+    "chg_pct": 0.4
   },
   "macro": {
     "10Y": 5.0,
-    "DXY": 100.27,
-    "WTI": 95.99,
+    "DXY": 100.21,
+    "WTI": 93.79,
     "VIX": 14.81,
-    "asof": "2026-09-20T23:44:29Z"
+    "asof": "2026-09-21T01:39:57Z"
   }
 }
