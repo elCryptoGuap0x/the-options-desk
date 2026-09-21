@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:56:29Z",
+  "generated_at": "2026-09-21T13:59:32Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,8 +377,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85440.35,
-      "chg_pct": 0.5,
+      "last": 85411.51,
+      "chg_pct": 0.46,
       "history": [
         85018.495,
         85149.995,
@@ -394,14 +394,15 @@
         85328.155,
         85515.75,
         85621.615,
-        85440.355
+        85440.355,
+        85411.51
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2732.8,
-      "chg_pct": 0.22,
+      "last": 2731.62,
+      "chg_pct": 0.18,
       "history": [
         2726.745,
         2728.32,
@@ -417,14 +418,15 @@
         2729.335,
         2729.705,
         2737.58,
-        2732.805
+        2732.805,
+        2731.625
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.98,
-      "chg_pct": 1.02,
+      "last": 118.16,
+      "chg_pct": 1.18,
       "history": [
         116.785,
         116.735,
@@ -439,114 +441,123 @@
         117.555,
         117.77,
         118.165,
-        117.98
+        117.98,
+        118.16
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 767.06,
-      "chg_pct": 0.75,
+      "last": 767.42,
+      "chg_pct": 0.8,
       "history": [
         761.33,
         766.61,
         766.59,
         767.05,
-        767.06
+        767.06,
+        767.42
       ],
       "status": "watching",
-      "why": "On the list since 9:50 AM ET. No look yet."
+      "why": "On the list since 9:56 AM ET. No look yet."
     },
     "QQQ": {
-      "last": 731.13,
-      "chg_pct": 1.62,
+      "last": 732.25,
+      "chg_pct": 1.77,
       "history": [
         719.48,
         728.21,
         730.04,
         731.39,
-        731.13
+        731.13,
+        732.25
       ],
       "status": "watching",
-      "why": "On the list since 9:50 AM ET. No look yet."
+      "why": "On the list since 9:56 AM ET. No look yet."
     },
     "DIA": {
-      "last": 517.37,
-      "chg_pct": 0.2,
+      "last": 517.47,
+      "chg_pct": 0.22,
       "history": [
         516.33,
         520.34,
         517.54,
         516.885,
-        517.37
+        517.37,
+        517.47
       ],
       "status": "ruled out",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "META": {
-      "last": 703.63,
-      "chg_pct": 4.7,
+      "last": 706.17,
+      "chg_pct": 5.07,
       "history": [
         672.07,
         680.61,
         699.93,
         704.11,
-        703.63
+        703.63,
+        706.17
       ],
       "status": "watching",
-      "why": "On the list since 9:50 AM ET. No look yet."
+      "why": "On the list since 9:56 AM ET. No look yet."
     },
     "MSTR": {
-      "last": 168.0,
-      "chg_pct": 10.41,
+      "last": 167.71,
+      "chg_pct": 10.23,
       "history": [
         152.15,
         166.15,
         166.41,
         166.87,
-        167.995
+        167.995,
+        167.71
       ],
       "status": "ruled out",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "COIN": {
-      "last": 206.93,
-      "chg_pct": 6.47,
+      "last": 206.32,
+      "chg_pct": 6.16,
       "history": [
         194.35,
         205.1,
         204.505,
         207.12,
-        206.925
+        206.925,
+        206.32
       ],
       "status": "ruled out",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "IBIT": {
-      "last": 48.49,
-      "chg_pct": 5.55,
+      "last": 48.36,
+      "chg_pct": 5.27,
       "history": [
         45.94,
         48.32,
         48.125,
         48.31,
-        48.49
+        48.49,
+        48.36
       ],
       "status": "watching",
-      "why": "On the list since 9:50 AM ET. No look yet."
+      "why": "On the list since 9:56 AM ET. No look yet."
     },
     "IREN": {
-      "last": 47.77,
-      "chg_pct": 4.23,
+      "last": 47.26,
+      "chg_pct": 3.12,
       "history": [
         45.83,
         48.18,
         47.29,
         47.65,
-        47.77
+        47.77,
+        47.26
       ],
       "status": "ruled out",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     }
   },
   "news": [
@@ -671,48 +682,48 @@
     "up": [
       {
         "sym": "MSTR",
-        "chg_pct": 10.41
+        "chg_pct": 10.23
       },
       {
         "sym": "COIN",
-        "chg_pct": 6.47
+        "chg_pct": 6.16
       },
       {
         "sym": "IBIT",
-        "chg_pct": 5.55
+        "chg_pct": 5.27
       }
     ],
     "down": []
   },
   "desk_freshness": {
-    "watch": "8:50",
-    "crypto": "8:56"
+    "watch": "8:56",
+    "crypto": "8:59"
   },
   "desk_board": [
     {
       "sym": "ACN",
       "status": "OUT",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     {
       "sym": "COIN",
       "status": "OUT",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     {
       "sym": "DIA",
       "status": "OUT",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     {
       "sym": "IREN",
       "status": "OUT",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     {
       "sym": "MSTR",
       "status": "OUT",
-      "why": "Ruled out 9:50 AM ET \u2014 no follow-through."
+      "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     }
   ],
   "last_fill_at": "2026-09-18T16:36:49Z",
@@ -845,7 +856,7 @@
     "DIA": [
       {
         "t": null,
-        "line": "Ruled out 9:50 AM ET \u2014 no follow-through."
+        "line": "Ruled out 9:56 AM ET \u2014 no follow-through."
       }
     ]
   },
