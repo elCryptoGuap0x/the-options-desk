@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T07:16:06Z",
+  "generated_at": "2026-09-21T12:09:16Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -21,14 +21,7 @@
     "prior_week_net_usd": -52
   },
   "sparkline_cum_pct": [
-    0.0,
-    -14.9,
-    -25.6,
-    -51.9,
-    -68.0,
-    -81.6,
-    -92.0,
-    -73.5
+    0.0
   ],
   "prior_week_sparkline_cum_pct": [
     0,
@@ -342,7 +335,6 @@
     "L",
     "L",
     "L",
-    "L",
     "W"
   ],
   "weeks": [
@@ -385,240 +377,57 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81481,
-      "chg_pct": 1.45,
+      "last": 85149.99,
+      "chg_pct": 0.15,
       "history": [
-        80945.595,
-        80889.645,
-        80987.215,
-        81037.295,
-        81082.495,
-        81015.575,
-        80996.11,
-        80994.11,
-        81095.365,
-        81179.515,
-        81158.095,
-        81142.705,
-        81130.755,
-        80890.605,
-        80963,
-        80883,
-        80877,
-        80877,
-        81073,
-        80995,
-        81270,
-        81501,
-        81512,
-        81363,
-        81001,
-        81295,
-        81051,
-        80227,
-        80410,
-        80879,
-        81198,
-        81011,
-        80848,
-        80891,
-        80874,
-        80997,
-        81147,
-        81236,
-        81369,
-        81481
+        85018.495,
+        85149.995
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2656.8,
-      "chg_pct": 3.19,
+      "last": 2728.32,
+      "chg_pct": 0.06,
       "history": [
-        2611.115,
-        2618.705,
-        2620.61,
-        2622.155,
-        2627.235,
-        2627.45,
-        2626.32,
-        2618.005,
-        2618.125,
-        2619.435,
-        2616.67,
-        2618.455,
-        2617.845,
-        2610.38,
-        2611.7,
-        2611.28,
-        2611.01,
-        2611.01,
-        2606.7,
-        2624.41,
-        2638.7,
-        2637.9,
-        2646.92,
-        2636.77,
-        2623.68,
-        2631.86,
-        2618.2,
-        2572.18,
-        2575.18,
-        2610.4,
-        2632.96,
-        2630.92,
-        2622.59,
-        2624.57,
-        2627.22,
-        2635.03,
-        2639.72,
-        2642.11,
-        2674.48,
-        2656.8
+        2726.745,
+        2728.32
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 111.86,
-      "chg_pct": 2.9,
+      "last": 116.73,
+      "chg_pct": -0.04,
       "history": [
-        112.26,
-        112.525,
-        112.69,
-        112.745,
-        113.39,
-        113.43,
-        113.325,
-        112.9,
-        112.89,
-        113.27,
-        113.195,
-        113.355,
-        113.335,
-        112.845,
-        112.97,
-        112.86,
-        112.84,
-        112.84,
-        113.06,
-        111.62,
-        111.87,
-        111.8,
-        111.63,
-        111.4,
-        110.35,
-        111.0,
-        110.07,
-        108.31,
-        108.36,
-        108.66,
-        109.88,
-        110.01,
-        109.73,
-        109.77,
-        109.81,
-        110.21,
-        110.87,
-        110.99,
-        112.09,
-        111.86
+        116.785,
+        116.735
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
       "last": 761.33,
-      "chg_pct": -0.14,
+      "chg_pct": 0.0,
       "history": [
-        759.42,
-        759.035,
-        759.19,
-        759.34,
-        759.4784,
-        759.475,
-        759.7,
-        759.68,
-        759.75,
-        759.67,
-        758.9,
-        759.11,
-        758.98,
-        758.2699,
-        758.96,
-        759.41,
-        759.4,
-        759.39,
-        759.295,
-        759.45,
-        759.655,
-        759.63,
-        759.88,
-        759.83,
-        759.94,
-        760.305,
-        760.425,
-        760.62,
-        761.32,
         761.33
       ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
+      "status": "flagged",
+      "why": "Flagged 3:08 PM ET \u2014 named."
     },
     "QQQ": {
       "last": 719.48,
-      "chg_pct": 0.42,
+      "chg_pct": 0.0,
       "history": [
-        717.02,
-        716.335,
-        716.76,
-        716.7,
-        716.83,
-        717.079,
-        717.23,
-        717.28,
-        717.21,
-        716.79,
-        716.25,
-        716.44,
-        716.3,
-        715.41,
-        716.2406,
-        716.66,
-        716.74,
-        716.94,
-        717.11,
-        717.16,
-        717.36,
-        717.47,
-        717.63,
-        717.51,
-        717.46,
-        717.85,
-        718.0,
-        718.31,
-        719.17,
         719.48
       ],
-      "status": "watching",
-      "why": "On the list since 3:08 PM ET. No look yet."
+      "status": "flagged",
+      "why": "Flagged 3:08 PM ET \u2014 named."
     },
     "DIA": {
       "last": 516.33,
-      "chg_pct": -0.42,
+      "chg_pct": 0.0,
       "history": [
-        518.495,
-        515.0,
-        515.14,
-        515.0,
-        515.26,
-        515.41,
-        515.48,
-        515.8,
-        515.985,
-        515.98,
-        516.41,
         516.33
       ],
       "status": "no setup",
@@ -626,17 +435,8 @@
     },
     "IWM": {
       "last": 283.48,
-      "chg_pct": -1.08,
+      "chg_pct": 0.0,
       "history": [
-        286.565,
-        283.4,
-        283.415,
-        283.47,
-        283.41,
-        283.47,
-        283.445,
-        283.47,
-        283.55,
         283.48
       ],
       "status": "no setup",
@@ -644,17 +444,8 @@
     },
     "VIXY": {
       "last": 17.09,
-      "chg_pct": 0.47,
+      "chg_pct": 0.0,
       "history": [
-        17.01,
-        17.19,
-        17.155,
-        17.145,
-        17.14,
-        17.145,
-        17.1499,
-        17.115,
-        17.13,
         17.09
       ],
       "status": "no setup",
@@ -662,19 +453,8 @@
     },
     "AAPL": {
       "last": 335.97,
-      "chg_pct": 0.05,
+      "chg_pct": 0.0,
       "history": [
-        335.81,
-        335.225,
-        335.47,
-        335.3732,
-        335.7851,
-        335.6368,
-        335.375,
-        335.5873,
-        335.85,
-        335.83,
-        335.745,
         335.97
       ],
       "status": "no setup",
@@ -682,18 +462,8 @@
     },
     "MSFT": {
       "last": 496.4,
-      "chg_pct": 0.2,
+      "chg_pct": 0.0,
       "history": [
-        495.43,
-        494.268,
-        494.98,
-        495.15,
-        494.71,
-        494.64,
-        495.3,
-        495.22,
-        495.49,
-        496.315,
         496.4
       ],
       "status": "no setup",
@@ -701,37 +471,8 @@
     },
     "NVDA": {
       "last": 219.47,
-      "chg_pct": 0.09,
+      "chg_pct": 0.0,
       "history": [
-        219.91,
-        220.3718,
-        220.09,
-        219.52,
-        219.25,
-        219.26,
-        219.11,
-        219.24,
-        219.36,
-        219.73,
-        219.645,
-        219.548,
-        219.4,
-        219.34,
-        219.565,
-        219.58,
-        219.655,
-        219.725,
-        220.1,
-        220.035,
-        219.775,
-        219.7783,
-        219.585,
-        219.475,
-        219.54,
-        219.405,
-        219.47,
-        219.33,
-        219.72,
         219.47
       ],
       "status": "ruled out",
@@ -739,24 +480,8 @@
     },
     "AMZN": {
       "last": 254.23,
-      "chg_pct": 1.24,
+      "chg_pct": 0.0,
       "history": [
-        251.105,
-        252.365,
-        252.495,
-        252.35,
-        253.02,
-        255.085,
-        254.75,
-        253.855,
-        253.13,
-        252.88,
-        252.9301,
-        253.05,
-        253.1,
-        253.35,
-        253.7459,
-        254.34,
         254.23
       ],
       "status": "watching",
@@ -764,19 +489,8 @@
     },
     "META": {
       "last": 672.07,
-      "chg_pct": -0.86,
+      "chg_pct": 0.0,
       "history": [
-        677.92,
-        670.805,
-        671.19,
-        670.91,
-        670.93,
-        671.28,
-        670.9986,
-        671.195,
-        671.625,
-        672.78,
-        672.82,
         672.07
       ],
       "status": "no setup",
@@ -784,19 +498,8 @@
     },
     "TSLA": {
       "last": 363.71,
-      "chg_pct": -1.2,
+      "chg_pct": 0.0,
       "history": [
-        368.135,
-        362.91,
-        362.88,
-        363.53,
-        363.7066,
-        363.259,
-        362.89,
-        364.01,
-        362.9401,
-        363.46,
-        363.455,
         363.71
       ],
       "status": "no setup",
@@ -804,37 +507,8 @@
     },
     "MSTR": {
       "last": 152.15,
-      "chg_pct": 14.59,
+      "chg_pct": 0.0,
       "history": [
-        144.55,
-        145.175,
-        146.42,
-        145.11,
-        146.37,
-        147.111,
-        147.615,
-        147.26,
-        147.79,
-        148.455,
-        148.95,
-        149.065,
-        149.42,
-        149.72,
-        149.6595,
-        149.925,
-        150.21,
-        150.1,
-        150.09,
-        150.435,
-        150.44,
-        150.94,
-        151.845,
-        151.93,
-        151.43,
-        151.54,
-        151.66,
-        151.69,
-        151.97,
         152.15
       ],
       "status": "watching",
@@ -842,55 +516,17 @@
     },
     "COIN": {
       "last": 194.35,
-      "chg_pct": 13.24,
+      "chg_pct": 0.0,
       "history": [
-        185.72,
-        185.805,
-        185.46,
-        187.6,
-        189.425,
-        189.29,
-        190.355,
-        191.045,
-        192.09,
-        191.99,
-        192.25,
-        192.55,
-        192.34,
-        193.655,
-        194.175,
-        194.0002,
-        193.63,
-        194.55,
-        194.31,
-        194.06,
-        194.475,
-        195.045,
-        196.12,
-        195.0,
-        193.35,
-        194.18,
-        193.905,
-        194.02,
-        194.31,
         194.35
       ],
-      "status": "flagged",
-      "why": "Flagged 3:08 PM ET \u2014 +13.2% today."
+      "status": "watching",
+      "why": "On the list since 3:08 PM ET. No look yet."
     },
     "HOOD": {
       "last": 119.24,
-      "chg_pct": 10.95,
+      "chg_pct": 0.0,
       "history": [
-        107.47,
-        119.5707,
-        120.415,
-        119.61,
-        119.2,
-        119.145,
-        119.1,
-        119.23,
-        119.2,
         119.24
       ],
       "status": "watching",
@@ -898,93 +534,26 @@
     },
     "IBIT": {
       "last": 45.94,
-      "chg_pct": 5.7,
+      "chg_pct": 0.0,
       "history": [
-        45.4,
-        45.43,
-        45.585,
-        45.7715,
-        45.66,
-        45.73,
-        45.8099,
-        45.815,
-        45.7352,
-        45.71,
-        45.865,
-        45.705,
-        45.75,
-        45.895,
-        45.885,
-        45.9,
-        45.82,
-        45.815,
-        45.78,
-        45.7632,
-        45.765,
-        45.7119,
-        45.81,
-        45.9,
-        45.875,
-        45.825,
-        45.845,
-        45.895,
-        45.875,
         45.94
       ],
       "status": "flagged",
-      "why": "Flagged 3:08 PM ET \u2014 +5.7% today."
+      "why": "Flagged 3:08 PM ET \u2014 named."
     },
     "IREN": {
       "last": 45.83,
-      "chg_pct": 5.79,
+      "chg_pct": 0.0,
       "history": [
-        43.82,
-        43.57,
-        43.83,
-        43.9,
-        44.3,
-        44.52,
-        44.18,
-        44.115,
-        44.48,
-        44.485,
-        44.67,
-        44.645,
-        44.8,
-        44.6228,
-        44.77,
-        44.95,
-        44.845,
-        44.915,
-        45.205,
-        45.31,
-        45.4,
-        45.45,
-        45.57,
-        45.96,
-        45.856,
-        46.05,
-        46.06,
-        46.01,
-        45.81,
         45.83
       ],
-      "status": "flagged",
-      "why": "Flagged 3:08 PM ET \u2014 +5.8% today."
+      "status": "watching",
+      "why": "On the list since 3:08 PM ET. No look yet."
     },
     "XLE": {
       "last": 64.32,
-      "chg_pct": 0.02,
+      "chg_pct": 0.0,
       "history": [
-        64.305,
-        64.38,
-        64.37,
-        64.39,
-        64.43,
-        64.4297,
-        64.375,
-        64.365,
-        64.395,
         64.32
       ],
       "status": "watching",
@@ -993,50 +562,29 @@
   },
   "news": [
     {
-      "tag": "Macro",
-      "title": "Nasdaq futures lead Wall St gains as oil retreat eases inflation worries",
-      "summary": "Futures pointed higher Friday with Nasdaq 100 contracts up ~0.5-0.6%, S&P ~0.2-0.3% after Thursday's tech-led rebound. Investors digested the Fed's first rate hike in years while lower crude tempered inflation fears. Chipmakers and AI-linked names extended gains. Crude fell for a third day amid mixed supply headlines."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Warren Buffett steps down as Berkshire Hathaway chairman",
-      "summary": "Berkshire named Buffett (96) chairman emeritus effective immediately; son Howard Buffett becomes chairman. Buffett remains a director. He previously handed the CEO role to Greg Abel. Letter cited \"Father Time always wins\" while expressing confidence in succession. Shares little changed on the news."
+      "tag": "Crypto",
+      "title": "Bitcoin taps $85,000 for first time since January as short liquidations surge",
+      "summary": "BTC briefly cleared $85,000 Monday, highest since January, up more than 5% in 24 hours from the ~$81k area. CoinGlass showed $650M\u2013$750M in crypto liquidations over 24 hours, mostly shorts, including ~$262M in one hour near $84k. Open interest still rose, so traders chased. First weekly close above the 50-week MA in 45 weeks. Listed catch is IBIT 0DTE; MSTR/COIN next options Friday."
     },
     {
       "tag": "Macro",
-      "title": "Bank of Japan raises policy rate to 1.25%",
-      "summary": "BoJ hiked 25 bp to the highest level in decades, matching expectations, citing inflation risks. Statement and press conference followed. Yen weakened; Nikkei rose. Move fits synchronized global tightening narrative after recent Fed action."
+      "title": "Wall St futures rise as AI stocks gain, oil prices slide",
+      "summary": "ES/NQ higher on an AI bid after last week's sector scare faded. Intel, Marvell, Meta, Dell pointed higher premarket. A ~2% oil drop pulled yields lower. Trump said he would be open to meeting Iran's president at UNGA. Greenland security deal with Denmark also helped sentiment."
+    },
+    {
+      "tag": "Crypto",
+      "title": "US crypto stocks extend pre-market gains, Strategy up over 7%",
+      "summary": "MSTR premarket ~$165 (+7%), COIN +5%, CRCL +6%, HOOD +4%. Those names do not list today or tomorrow \u2014 first expiration 9/25 \u2014 so the open options tape is IBIT, not MSTR. Friday already printed MSTR +16.39% and IBIT +6.3% on the tokenized-securities exemption headline."
     },
     {
       "tag": "Macro",
-      "title": "Crude prices extend losses, easing inflation pressure",
-      "summary": "Brent and WTI slipped ~1.5-2% for a third session despite ongoing Middle East tensions and Houthi/Saudi strikes. Markets shrugged off supply concerns; lower energy prices supported risk assets and tempered Fed-related inflation worries."
+      "title": "Stock Market Today: Futures Rise to Begin Week, Led by Tech Stocks; Oil Prices, Bond Yields Fall",
+      "summary": "Nasdaq futures led. SOXX premarket +2.5% with Intel ~+6%. Memory names (MU, WDC) bid. Magnificent Seven mostly green except Apple. Paramount and WBD +7% on merger-progress reports; those two also lack 0DTE/1DTE."
     },
     {
-      "tag": "Stocks",
-      "title": "Chipmakers and AI-linked names drive early strength",
-      "summary": "Semiconductor ETFs and names including NVDA, INTC, SMCI pointed higher premarket after Thursday's strong session. Momentum returned to AI supply-chain stocks in Asia and Europe as well. Broader tech leadership contrasted with softer energy."
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Stocktwits Tech Watch: Trump-Xi Summit, AI Pacing Debate and Meta And YouTube Events In Focus This Week",
-      "summary": "CEO of OpenAI, Nvidia, and Microsoft, as well as Apple\u2019s chairman Tim Cook, among others, would attend the state dinner with Chinese President Xi Jinping.",
-      "url": "https://stocktwits.com/news-articles/markets/equity/stocktwits-tech-watch-trump-xi-summit-ai-pacing-debate-and-meta-and-you-tube-events-in-focus-this-week/cZMRIBoRB40?.tsrc=rss",
-      "ts": "2026-09-21T06:49:06Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Markets Breathe Again, Work to Undo Post-Fed Pulldown",
-      "summary": "As we\u2019ve said many times, give the markets a sense of certainty and they will respond accordingly. The market direction is shifting with all three major indices moving to the upside as Treasury yields and crude oil prices slip in early trad",
-      "url": "https://www.cboe.com/insights/posts/markets-breathe-again-work-to-undo-post-fed-pulldown/",
-      "ts": "2026-09-17T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Kalshi faces \u2018fake crypto volume\u2019 allegations as critic flags identical $5,500 trades",
-      "summary": "A trader alleged on X that Kalshi is inflating trading volumes in its ether perpetual futures.",
-      "url": "https://www.coindesk.com/markets/2026/09/21/kalshi-s-crypto-chief-responds-to-fake-crypto-volume-allegations-as-critic-flags-identical-usd5-500-trades",
-      "ts": "2026-09-21T06:20:47Z"
+      "tag": "Crypto",
+      "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
+      "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
     }
   ],
   "calendar": [
@@ -1070,418 +618,149 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 34,
-    "names": [
-      "AAPL",
-      "ADBE",
-      "AMZN",
-      "BMNR",
-      "BSOL",
-      "COIN",
-      "CRCL",
-      "CRWD",
-      "DIA",
-      "ETHA",
-      "GNRC",
-      "HOOD",
-      "IBIT",
-      "INTC",
-      "IREN",
-      "IWM",
-      "LEN",
-      "META",
-      "MRVL",
-      "MSFT",
-      "MSTR",
-      "MU",
-      "NEE",
-      "NVDA",
-      "PANW",
-      "QQQ",
-      "SMCI",
-      "SOXX",
-      "SPY",
-      "TSLA",
-      "USO",
-      "VIXY",
-      "XLE",
-      "XOM"
-    ],
-    "interesting": [
-      [
-        "AMZN",
-        "watching"
-      ],
-      [
-        "COIN",
-        "watching"
-      ],
-      [
-        "CRCL",
-        "watching"
-      ],
-      [
-        "GNRC",
-        "watching"
-      ],
-      [
-        "HOOD",
-        "watching"
-      ],
-      [
-        "IBIT",
-        "watching"
-      ],
-      [
-        "INTC",
-        "watching"
-      ],
-      [
-        "IREN",
-        "watching"
-      ],
-      [
-        "MRVL",
-        "watching"
-      ],
-      [
-        "MSTR",
-        "watching"
-      ],
-      [
-        "MU",
-        "watching"
-      ],
-      [
-        "NVDA",
-        "disqualified"
-      ],
-      [
-        "QQQ",
-        "watching"
-      ],
-      [
-        "SMCI",
-        "watching"
-      ],
-      [
-        "SPY",
-        "watching"
-      ],
-      [
-        "USO",
-        "watching"
-      ],
-      [
-        "XLE",
-        "watching"
-      ]
-    ],
-    "no_shape_count": 17,
-    "filled": 13
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0,
+    "filled": 0
   },
-  "scan_log_public": "Closed <span class=\"desk-tag good\">COIN</span> +18.5%.",
+  "scan_log_public": "0 looked, 0 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
-        "sym": "MSTR",
-        "chg_pct": 14.59
+        "sym": "BTC",
+        "chg_pct": 0.15
       },
       {
-        "sym": "COIN",
-        "chg_pct": 13.24
-      },
-      {
-        "sym": "HOOD",
-        "chg_pct": 10.95
+        "sym": "ETH",
+        "chg_pct": 0.06
       }
     ],
     "down": [
       {
-        "sym": "TSLA",
-        "chg_pct": -1.2
-      },
-      {
-        "sym": "IWM",
-        "chg_pct": -1.08
-      },
-      {
-        "sym": "META",
-        "chg_pct": -0.86
+        "sym": "SOL",
+        "chg_pct": -0.04
       }
     ]
   },
   "desk_freshness": {
     "watch": "2:08",
-    "crypto": "6:38"
+    "crypto": "7:09"
   },
-  "desk_board": [
-    {
-      "sym": "AMZN",
-      "status": "WATCH",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    {
-      "sym": "COIN",
-      "status": "WATCH",
-      "why": "Flagged 3:08 PM ET \u2014 +13.2% today."
-    },
-    {
-      "sym": "IBIT",
-      "status": "WATCH",
-      "why": "Flagged 3:08 PM ET \u2014 +5.7% today."
-    },
-    {
-      "sym": "INTC",
-      "status": "WATCH",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    {
-      "sym": "IREN",
-      "status": "WATCH",
-      "why": "Flagged 3:08 PM ET \u2014 +5.8% today."
-    },
-    {
-      "sym": "MSTR",
-      "status": "WATCH",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    {
-      "sym": "NVDA",
-      "status": "OUT",
-      "why": "Ruled out 3:08 PM ET \u2014 already ran."
-    },
-    {
-      "sym": "QQQ",
-      "status": "WATCH",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    {
-      "sym": "SMCI",
-      "status": "WATCH",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    },
-    {
-      "sym": "SPY",
-      "status": "WATCH",
-      "why": "On the list since 3:08 PM ET. No look yet."
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-18T16:36:49Z",
-  "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
+  "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
-    "INTC": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "9:50 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "11:19 AM ET",
-        "line": "Looked at, passed."
-      }
-    ],
-    "AMZN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "11:30 AM ET",
-        "line": "Looked at, passed."
-      },
-      {
-        "t": "11:56 AM ET",
-        "line": "Closed -10.4%."
-      }
-    ],
-    "COIN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "9:50 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "12:19 PM ET",
-        "line": "Looked \u2014 clock had already run out."
-      },
-      {
-        "t": "2:22 PM ET",
-        "line": "Looked at, passed."
-      }
-    ],
-    "MSTR": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "9:50 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "1:19 PM ET",
-        "line": "Looked at, passed."
-      },
-      {
-        "t": "2:03 PM ET",
-        "line": "Ruled out \u2014 already ran."
-      },
-      {
-        "t": "2:31 PM ET",
-        "line": "First flagged \u2014 still building."
-      }
-    ],
-    "IBIT": [
-      {
-        "t": "9:50 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "1:38 PM ET",
-        "line": "Looked at, passed."
-      }
-    ],
-    "SMCI": [
-      {
-        "t": "9:50 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "1:58 PM ET",
-        "line": "Looked \u2014 clock had already run out."
-      },
-      {
-        "t": "2:22 PM ET",
-        "line": "Ruled out \u2014 no follow-through."
-      },
-      {
-        "t": "4:31 PM ET",
-        "line": "First flagged \u2014 still building."
-      }
-    ],
     "SPY": [
       {
-        "t": "2:31 PM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "3:03 PM ET",
-        "line": "Looked at, passed."
       }
     ],
     "QQQ": [
       {
-        "t": "2:31 PM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "3:05 PM ET",
-        "line": "Looked at, passed."
-      }
-    ],
-    "IREN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "10:14 AM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "1:05 PM ET",
-        "line": "Ruled out \u2014 already ran."
-      },
-      {
-        "t": "1:36 PM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "3:06 PM ET",
-        "line": "Looked at, passed."
       }
     ],
     "USO": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "XLE": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "IBIT": [
+      {
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "MRVL": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "COIN": [
+      {
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "MSTR": [
+      {
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "CRCL": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "HOOD": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "IREN": [
+      {
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "INTC": [
+      {
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "MU": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
     "GNRC": [
       {
-        "t": "8:35 AM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
       }
     ],
-    "NVDA": [
+    "AMZN": [
       {
-        "t": "9:50 AM ET",
+        "t": "8:07 AM ET",
         "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "10:24 AM ET",
-        "line": "Ruled out \u2014 already ran."
-      },
-      {
-        "t": "12:04 PM ET",
-        "line": "First flagged \u2014 still building."
-      },
-      {
-        "t": "1:24 PM ET",
-        "line": "Ruled out \u2014 already ran."
       }
     ],
-    "TSLA": [
+    "SMCI": [
+      {
+        "t": "8:07 AM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
+    "BTC": [
       {
         "t": null,
         "line": "not a setup"
       }
     ],
-    "IWM": [
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
       }
     ],
-    "META": [
+    "SOL": [
       {
         "t": null,
         "line": "not a setup"
@@ -1489,16 +768,16 @@
     ]
   },
   "btc_range": {
-    "last": 81481,
-    "high_24h": 82012,
-    "low_24h": 80155,
-    "chg_pct": 1.45
+    "last": 84997,
+    "high_24h": 85046,
+    "low_24h": 80414,
+    "chg_pct": 5.62
   },
   "macro": {
     "10Y": 5.0,
-    "DXY": 100.34,
-    "WTI": 93.96,
-    "VIX": 14.81,
-    "asof": "2026-09-21T07:16:06Z"
+    "DXY": 100.22,
+    "WTI": 93.46,
+    "VIX": 14.8,
+    "asof": "2026-09-21T12:09:09Z"
   }
 }
