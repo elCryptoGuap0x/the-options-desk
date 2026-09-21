@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T14:57:34Z",
+  "generated_at": "2026-09-21T15:00:37Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85942.51,
-      "chg_pct": 1.09,
+      "last": 85805.63,
+      "chg_pct": 0.93,
       "history": [
-        85257.005,
         85212.335,
         85124.245,
         84908.925,
@@ -409,16 +408,16 @@
         85897.175,
         85974.475,
         86020.475,
-        85942.505
+        85942.505,
+        85805.63
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2740.15,
-      "chg_pct": 0.49,
+      "last": 2736.47,
+      "chg_pct": 0.36,
       "history": [
-        2728.035,
         2737.33,
         2735.295,
         2722.245,
@@ -447,16 +446,16 @@
         2740.385,
         2750.5,
         2746.4,
-        2740.15
+        2740.15,
+        2736.475
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.23,
-      "chg_pct": 1.24,
+      "last": 117.96,
+      "chg_pct": 1.01,
       "history": [
-        116.795,
         116.9,
         117.495,
         117.085,
@@ -485,7 +484,8 @@
         118.2,
         118.725,
         118.43,
-        118.235
+        118.235,
+        117.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -788,7 +788,7 @@
   },
   "desk_freshness": {
     "watch": "9:56",
-    "crypto": "9:57"
+    "crypto": "10:00"
   },
   "desk_board": [
     {
