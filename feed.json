@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:20:35Z",
+  "generated_at": "2026-09-21T19:36:35Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -377,8 +377,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86408.48,
-      "chg_pct": 1.63,
+      "last": 86753,
+      "chg_pct": 6.8,
       "history": [
         85945.875,
         86005.74,
@@ -409,14 +409,15 @@
         85986.725,
         86049.985,
         86132.075,
-        86408.48
+        86408.48,
+        86753
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2770.16,
-      "chg_pct": 1.59,
+      "last": 2770.21,
+      "chg_pct": 5.28,
       "history": [
         2744.82,
         2748.555,
@@ -447,14 +448,15 @@
         2756.825,
         2760.875,
         2764.12,
-        2770.165
+        2770.165,
+        2770.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.98,
-      "chg_pct": 1.02,
+      "last": 118.32,
+      "chg_pct": 7.36,
       "history": [
         117.055,
         117.19,
@@ -485,7 +487,8 @@
         117.48,
         117.59,
         117.715,
-        117.98
+        117.98,
+        118.32
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -730,6 +733,27 @@
       "tag": "Crypto",
       "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
       "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Coinbase Brings IPO Shares to US Retail Traders, With Oura Up First",
+      "summary": "Eligible customers can request shares at the offering price, but allocations are not guaranteed.",
+      "url": "https://decrypt.co/378874/coinbase-ipo-shares-us-traders-oura?.tsrc=rss",
+      "ts": "2026-09-21T19:26:49Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
+      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
+      "ts": "2026-09-21T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Why this investment bank expects little demand for tokenized stocks despite SEC\u2019s new trading rules",
+      "summary": "TD Cowen expects limited demand for tokenized stocks despite new SEC rules opening a path for trading outside traditional markets.",
+      "url": "https://www.coindesk.com/markets/2026/09/21/why-this-investment-bank-sees-little-demand-for-tokenized-stocks-despite-sec-s-new-trading-rules",
+      "ts": "2026-09-21T19:08:40Z"
     }
   ],
   "calendar": [
@@ -1114,17 +1138,17 @@
     ]
   },
   "btc_range": {
-    "last": 84997,
-    "high_24h": 85046,
-    "low_24h": 80414,
-    "chg_pct": 5.62
+    "last": 86554,
+    "high_24h": 86282,
+    "low_24h": 80631,
+    "chg_pct": 6.63
   },
   "macro": {
-    "10Y": 5.0,
-    "DXY": 100.22,
-    "WTI": 93.46,
-    "VIX": 14.8,
-    "asof": "2026-09-21T12:09:09Z"
+    "10Y": 4.96,
+    "DXY": 100.4,
+    "WTI": 92.35,
+    "VIX": 15.0,
+    "asof": "2026-09-21T19:36:35Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-21T19:16:00Z",
