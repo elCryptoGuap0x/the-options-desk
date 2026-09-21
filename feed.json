@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T16:07:46Z",
+  "generated_at": "2026-09-21T16:10:49Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85827.01,
-      "chg_pct": 0.95,
+      "last": 85784.31,
+      "chg_pct": 0.9,
       "history": [
-        85897.175,
         85974.475,
         86020.475,
         85942.505,
@@ -409,16 +408,16 @@
         85955.455,
         85951.845,
         85857.445,
-        85827.005
+        85827.005,
+        85784.31
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2746.88,
-      "chg_pct": 0.74,
+      "last": 2748.5,
+      "chg_pct": 0.8,
       "history": [
-        2750.5,
         2746.4,
         2740.15,
         2736.475,
@@ -447,16 +446,16 @@
         2755.945,
         2755.135,
         2747.975,
-        2746.88
+        2746.88,
+        2748.5
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.8,
-      "chg_pct": 0.86,
+      "last": 117.74,
+      "chg_pct": 0.82,
       "history": [
-        118.725,
         118.43,
         118.235,
         117.96,
@@ -485,14 +484,15 @@
         118.1,
         117.935,
         117.755,
-        117.795
+        117.795,
+        117.74
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 770.88,
-      "chg_pct": 1.25,
+      "last": 771.32,
+      "chg_pct": 1.31,
       "history": [
         761.33,
         766.61,
@@ -522,14 +522,15 @@
         770.92,
         770.9,
         770.655,
-        770.875
+        770.875,
+        771.32
       ],
       "status": "watching",
-      "why": "On the list since 12:03 PM ET. No look yet."
+      "why": "On the list since 12:09 PM ET. No look yet."
     },
     "QQQ": {
-      "last": 737.41,
-      "chg_pct": 2.49,
+      "last": 737.82,
+      "chg_pct": 2.55,
       "history": [
         719.48,
         728.21,
@@ -559,10 +560,11 @@
         737.48,
         737.35,
         737.13,
-        737.41
+        737.41,
+        737.82
       ],
       "status": "watching",
-      "why": "On the list since 12:03 PM ET. No look yet."
+      "why": "On the list since 12:09 PM ET. No look yet."
     },
     "DIA": {
       "last": 518.46,
@@ -580,8 +582,8 @@
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "META": {
-      "last": 722.62,
-      "chg_pct": 7.52,
+      "last": 722.55,
+      "chg_pct": 7.51,
       "history": [
         672.07,
         680.61,
@@ -611,10 +613,11 @@
         718.8,
         719.34,
         720.83,
-        722.625
+        722.625,
+        722.55
       ],
       "status": "watching",
-      "why": "On the list since 12:03 PM ET. No look yet."
+      "why": "On the list since 12:09 PM ET. No look yet."
     },
     "MSTR": {
       "last": 166.36,
@@ -647,8 +650,8 @@
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "IBIT": {
-      "last": 48.69,
-      "chg_pct": 5.99,
+      "last": 48.6,
+      "chg_pct": 5.79,
       "history": [
         45.94,
         48.32,
@@ -677,10 +680,11 @@
         48.71,
         48.78,
         48.73,
-        48.69
+        48.69,
+        48.6
       ],
       "status": "watching",
-      "why": "On the list since 12:03 PM ET. No look yet."
+      "why": "On the list since 12:09 PM ET. No look yet."
     },
     "IREN": {
       "last": 47.4,
@@ -824,18 +828,18 @@
       },
       {
         "sym": "META",
-        "chg_pct": 7.52
+        "chg_pct": 7.51
       },
       {
         "sym": "IBIT",
-        "chg_pct": 5.99
+        "chg_pct": 5.79
       }
     ],
     "down": []
   },
   "desk_freshness": {
-    "watch": "11:03",
-    "crypto": "11:07"
+    "watch": "11:09",
+    "crypto": "11:10"
   },
   "desk_board": [
     {
@@ -1042,7 +1046,7 @@
     "asof": "2026-09-21T12:09:09Z"
   },
   "pulse": {
-    "last_look_et": "11:03",
+    "last_look_et": "11:09",
     "names": 10,
     "tickets": 0,
     "next_look_min": 4
