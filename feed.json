@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:59:41Z",
+  "generated_at": "2026-09-21T18:10:53Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,13 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85884.28,
-      "chg_pct": 1.02,
+      "last": 85973.99,
+      "chg_pct": 1.12,
       "history": [
-        85802.065,
-        85878.985,
-        85993.175,
-        85929.975,
         85999.995,
         86026.015,
         85995.07,
@@ -409,19 +405,19 @@
         85719.265,
         85859.995,
         85873.705,
-        85884.28
+        85884.28,
+        85884.24,
+        85945.875,
+        86005.74,
+        85973.995
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2742.8,
-      "chg_pct": 0.59,
+      "last": 2747.72,
+      "chg_pct": 0.77,
       "history": [
-        2758.83,
-        2759.175,
-        2763.165,
-        2761.45,
         2765.065,
         2756.805,
         2755.44,
@@ -447,19 +443,19 @@
         2735.905,
         2741.995,
         2743.31,
-        2742.795
+        2742.795,
+        2740.95,
+        2744.82,
+        2748.555,
+        2747.715
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.09,
-      "chg_pct": 0.27,
+      "last": 117.42,
+      "chg_pct": 0.55,
       "history": [
-        117.505,
-        117.7,
-        117.58,
-        117.79,
         117.685,
         117.595,
         117.405,
@@ -485,17 +481,19 @@
         117.025,
         117.14,
         117.065,
-        117.095
+        117.095,
+        117.055,
+        117.19,
+        117.435,
+        117.425
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 773.15,
-      "chg_pct": 1.55,
+      "last": 773.28,
+      "chg_pct": 1.57,
       "history": [
-        769.23,
-        769.44,
         768.905,
         768.99,
         769.17,
@@ -523,17 +521,17 @@
         772.82,
         772.84,
         772.31,
-        773.15
+        773.15,
+        772.94,
+        773.28
       ],
       "status": "watching",
-      "why": "On the list since 1:46 PM ET. No look yet."
+      "why": "On the list since 2:06 PM ET. No look yet."
     },
     "QQQ": {
-      "last": 739.79,
-      "chg_pct": 2.82,
+      "last": 739.93,
+      "chg_pct": 2.84,
       "history": [
-        735.48,
-        734.685,
         734.975,
         735.03,
         735.85,
@@ -561,10 +559,12 @@
         739.03,
         739.01,
         738.83,
-        739.79
+        739.79,
+        739.73,
+        739.93
       ],
       "status": "ruled out",
-      "why": "Ruled out 1:46 PM ET \u2014 already ran."
+      "why": "Ruled out 2:06 PM ET \u2014 already ran."
     },
     "DIA": {
       "last": 518.46,
@@ -582,11 +582,9 @@
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "META": {
-      "last": 743.06,
-      "chg_pct": 10.56,
+      "last": 742.57,
+      "chg_pct": 10.49,
       "history": [
-        712.07,
-        709.36,
         710.85,
         710.15,
         706.57,
@@ -614,14 +612,16 @@
         734.15,
         733.41,
         739.955,
-        743.06
+        743.06,
+        741.63,
+        742.565
       ],
-      "status": "watching",
-      "why": "On the list since 1:46 PM ET. No look yet."
+      "status": "flagged",
+      "why": "Flagged 2:06 PM ET \u2014 named, +10.5% today."
     },
     "MSTR": {
-      "last": 166.36,
-      "chg_pct": 9.34,
+      "last": 165.5,
+      "chg_pct": 8.77,
       "history": [
         152.15,
         166.15,
@@ -629,14 +629,15 @@
         166.87,
         167.995,
         167.71,
-        166.36
+        166.36,
+        165.5
       ],
       "status": "ruled out",
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "COIN": {
-      "last": 203.17,
-      "chg_pct": 4.54,
+      "last": 203.66,
+      "chg_pct": 4.79,
       "history": [
         194.35,
         205.1,
@@ -644,17 +645,16 @@
         207.12,
         206.925,
         206.32,
-        203.17
+        203.17,
+        203.66
       ],
       "status": "ruled out",
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "IBIT": {
-      "last": 48.62,
-      "chg_pct": 5.84,
+      "last": 48.7,
+      "chg_pct": 6.02,
       "history": [
-        48.545,
-        48.59,
         48.6,
         48.7,
         48.58,
@@ -682,10 +682,12 @@
         48.69,
         48.59,
         48.665,
-        48.625
+        48.625,
+        48.645,
+        48.705
       ],
       "status": "watching",
-      "why": "On the list since 1:46 PM ET. No look yet."
+      "why": "On the list since 2:06 PM ET. No look yet."
     },
     "IREN": {
       "last": 47.4,
@@ -761,9 +763,10 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 12,
+    "count": 13,
     "names": [
       "ACN",
+      "AMD",
       "ARM",
       "COIN",
       "DIA",
@@ -780,6 +783,10 @@
       [
         "ACN",
         "disqualified"
+      ],
+      [
+        "AMD",
+        "watching"
       ],
       [
         "ARM",
@@ -829,28 +836,28 @@
     "no_shape_count": 0,
     "filled": 0
   },
-  "scan_log_public": "12 looked, 0 filled.",
+  "scan_log_public": "13 looked, 0 filled.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
         "sym": "META",
-        "chg_pct": 10.56
+        "chg_pct": 10.49
       },
       {
         "sym": "MSTR",
-        "chg_pct": 9.34
+        "chg_pct": 8.77
       },
       {
         "sym": "IBIT",
-        "chg_pct": 5.84
+        "chg_pct": 6.02
       }
     ],
     "down": []
   },
   "desk_freshness": {
-    "watch": "12:46",
-    "crypto": "12:59"
+    "watch": "1:06",
+    "crypto": "1:10"
   },
   "desk_board": [
     {
@@ -937,6 +944,10 @@
       },
       {
         "t": "10:25 AM ET",
+        "line": "Looked at, passed."
+      },
+      {
+        "t": "01:50 PM ET",
         "line": "Looked at, passed."
       }
     ],
@@ -1060,6 +1071,12 @@
         "line": "Ruled out \u2014 no follow-through."
       }
     ],
+    "AMD": [
+      {
+        "t": "2:07 PM ET",
+        "line": "First flagged \u2014 still building."
+      }
+    ],
     "ARM": [
       {
         "t": null,
@@ -1093,8 +1110,8 @@
     "asof": "2026-09-21T12:09:09Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-21T17:46:00Z",
-    "names": 12,
+    "last_look_iso": "2026-09-21T18:06:00Z",
+    "names": 13,
     "tickets": 0,
     "cadence_min": 4
   },
