@@ -1041,12 +1041,28 @@
   ],
   "calendar": [
     {
-      "what": "Chicago Fed's Goolsbee speaks + Chicago Fed National Activity Index",
+      "what": "US-China trade talks (Bessent/He Lifeng) + Chicago Fed's Goolsbee speaks",
       "when": "Mon 9/21"
     },
     {
-      "what": "US-China trade talks (Bessent/He Lifeng), ahead of the Trump-Xi summit",
-      "when": "Started Sun 9/20 \u00b7 summit Thu 9/24"
+      "what": "Richmond Fed index, Fed speakers (Williams/Jefferson/Barkin), 2y Treasury auction",
+      "when": "Tue 9/22"
+    },
+    {
+      "what": "Flash PMIs, EIA crude inventories",
+      "when": "Wed 9/23"
+    },
+    {
+      "what": "Jobless claims, new home sales, COST/DRI earnings, 7y Treasury auction",
+      "when": "Thu 9/24"
+    },
+    {
+      "what": "Trump-Xi summit",
+      "when": "Thu 9/24"
+    },
+    {
+      "what": "Durable goods, UMich sentiment final -- no CPI/FOMC/NFP this week",
+      "when": "Fri 9/25"
     },
     {
       "what": "Iran/Saudi pipeline situation, oil market still reacting",
