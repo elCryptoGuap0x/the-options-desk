@@ -143,7 +143,12 @@
     line-height: 1.6;
   }
 
-  .status-pill-wrap { display: flex; justify-content: center; margin: 22px 0 36px; }
+  .status-pill-wrap { display: flex; justify-content: center; margin: 22px 0 8px; }
+  /* Added 9/21 -- the heartbeat line under the badge: "scanning" is a
+     status word, this is proof. Empty string collapses to nothing (no
+     stray gap) whenever renderPulse has nothing real to show yet. */
+  .pulse-line { text-align: center; color: var(--text-dim); font-size: 12.5px; letter-spacing: 0.02em; margin-bottom: 28px; font-variant-numeric: tabular-nums; }
+  .pulse-line:empty { margin-bottom: 0; }
   /* Added 9/15 -- "big ugly number", deliberately unpolished/blunt per
      spec: raw minutes since the last real fill (open or close, either
      counts), no hours/days conversion. Ticks live client-side off a
@@ -168,6 +173,8 @@
   .status-pill .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--neutral); }
   .status-pill.open { color: var(--good); border-color: var(--good-dim); }
   .status-pill.open .dot { background: var(--good); box-shadow: 0 0 6px var(--good); }
+  .status-pill.stale { color: var(--bad); border-color: var(--bad-dim); }
+  .status-pill.stale .dot { background: var(--bad); box-shadow: 0 0 6px var(--bad); }
 
   /* ---- stats ---- */
   .stats {
@@ -796,6 +803,7 @@
   <div class="status-pill-wrap">
     <span class="status-pill" id="status-pill"><span class="dot"></span><span id="status-text">—</span></span>
   </div>
+  <div class="pulse-line" id="pulse-line"></div>
 
   <div class="fill-clock" id="fill-clock"></div>
 
@@ -1100,11 +1108,29 @@
     return "NEXT FLATTEN 2:00 CT";
   }
 
-  function renderSession(session) {
+  // Added 9/21, real feedback: nothing distinguished "the loop is
+  // scanning but hasn't found anything" from "the loop is dead" -- both
+  // looked exactly like "FLAT -- SCANNING" forever. generated_at is
+  // refreshed by whichever process last touched feed.json (site-loop.sh
+  // during RTH, the 24/7 tape-refresh Action otherwise) regardless of
+  // what Watch itself found, so its own age is a genuine heartbeat check,
+  // independent of desk_board/pulse content.
+  var STALE_AFTER_MIN = 15;
+  function isFeedStale(generatedAt) {
+    if (!generatedAt) return false;
+    var d = new Date(generatedAt);
+    if (isNaN(d.getTime())) return false;
+    return (Date.now() - d.getTime()) > STALE_AFTER_MIN * 60 * 1000;
+  }
+  function renderSession(session, generatedAt) {
     var pill = document.getElementById("status-pill");
     var text = document.getElementById("status-text");
     pill.classList.remove("open");
-    if (session.position === "IN TRADE") {
+    pill.classList.remove("stale");
+    if (session.market_state === "OPEN" && session.position !== "IN TRADE" && isFeedStale(generatedAt)) {
+      pill.classList.add("stale");
+      text.textContent = "STALE — CHECK LOOPS";
+    } else if (session.position === "IN TRADE") {
       pill.classList.add("open");
       text.textContent = "IN TRADE";
     } else if (session.market_state === "WEEKEND") {
@@ -1661,8 +1687,16 @@
     // on the page ("you're not waiting" -- there were three closed
     // tickets sitting right below it). Only show it when today has
     // genuinely produced nothing yet.
-    if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT" && tickets.length === 0) {
-      html += '<div class="waiting"><span class="dot"></span>WAITING · nothing new on the tape</div>';
+    // Fixed 9/21, real bug found live: this checked tickets.length (the
+    // WHOLE historical array) instead of today's own count, so once any
+    // real ticket had ever been written, WAITING could never show again --
+    // on a fresh trading day with zero closes so far, the list's top entry
+    // stayed whatever last week's last real close was (e.g. "Fri 9/18"),
+    // reading as if that were today's own result. Now anchored on
+    // todaysTickets, with an explicit dated line so "nothing yet" and
+    // "here's last week's winner" can never look like the same thing.
+    if (data.session && data.session.market_state === "OPEN" && data.session.position === "FLAT" && todaysTickets(tickets).length === 0) {
+      html += '<div class="waiting"><span class="dot"></span>' + todayDayLabel() + ' · no tickets yet</div>';
     // Fixed 9/13, real bug: this whole section rendered fully blank on a
     // WEEKEND/CLOSED market with zero tickets -- WAITING is a weekday
     // scan-cadence voice ("nothing new on the tape yet"), wrong tone for
@@ -1878,6 +1912,24 @@
     // genuinely refetched every build cycle; every equity on the board
     // is exactly as fresh as the "Watch" timestamp already shown here.
     el.textContent = "Watch " + (freshness.watch || "--") + " CT · crypto " + (freshness.crypto || "--") + " CT";
+  }
+
+  // Added 9/21: the heartbeat line ("Last look 11:12 ET · 10 names ·
+  // 0 tickets · next look ~3 min") -- every field describes a cycle that
+  // already finished (site-build.py's build_pulse, itself read off
+  // watch-state.json); "next look" is a forward estimate, never a claim
+  // about what that cycle will decide. Off entirely outside RTH -- same
+  // gating as renderDeskFreshness's own OPEN check, nothing to pulse
+  // about on a closed desk.
+  function renderPulse(pulse, session) {
+    var el = document.getElementById("pulse-line");
+    if (!el) return;
+    if (!session || session.market_state !== "OPEN" || !pulse) {
+      el.textContent = "";
+      return;
+    }
+    el.textContent = "Last look " + pulse.last_look_et + " CT · " + pulse.names + " names · " +
+      pulse.tickets + " ticket" + (pulse.tickets === 1 ? "" : "s") + " · next look ~" + pulse.next_look_min + " min";
   }
 
   // Ribbon, added 9/18: a scrolling marquee under the clock, built
@@ -2181,7 +2233,8 @@
 
   function render(data) {
     lastFillAt = data.last_fill_at || null;
-    renderSession(data.session);
+    renderSession(data.session, data.generated_at);
+    renderPulse(data.pulse, data.session);
     renderStats(data.stats, data.session, data.tickets);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);
