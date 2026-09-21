@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T15:21:59Z",
+  "generated_at": "2026-09-21T15:25:02Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85996.52,
-      "chg_pct": 1.15,
+      "last": 85945.03,
+      "chg_pct": 1.09,
       "history": [
-        85621.615,
         85440.355,
         85411.51,
         85458.195,
@@ -409,16 +408,16 @@
         86266.635,
         86201.095,
         86121.185,
-        85996.525
+        85996.525,
+        85945.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2735.01,
-      "chg_pct": 0.3,
+      "last": 2733.12,
+      "chg_pct": 0.23,
       "history": [
-        2737.58,
         2732.805,
         2731.625,
         2733.86,
@@ -447,16 +446,16 @@
         2747.87,
         2745.425,
         2742.355,
-        2735.005
+        2735.005,
+        2733.125
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.77,
-      "chg_pct": 0.84,
+      "last": 117.51,
+      "chg_pct": 0.62,
       "history": [
-        118.165,
         117.98,
         118.16,
         118.46,
@@ -485,13 +484,14 @@
         118.725,
         118.41,
         118.095,
-        117.765
+        117.765,
+        117.51
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 769.93,
+      "last": 769.92,
       "chg_pct": 1.13,
       "history": [
         761.33,
@@ -515,13 +515,14 @@
         769.22,
         769.45,
         769.66,
-        769.93
+        769.93,
+        769.92
       ],
       "status": "watching",
-      "why": "On the list since 11:18 AM ET. No look yet."
+      "why": "On the list since 11:23 AM ET. No look yet."
     },
     "QQQ": {
-      "last": 736.27,
+      "last": 736.23,
       "chg_pct": 2.33,
       "history": [
         719.48,
@@ -545,10 +546,11 @@
         735.85,
         736.17,
         736.38,
-        736.27
+        736.27,
+        736.23
       ],
       "status": "watching",
-      "why": "On the list since 11:18 AM ET. No look yet."
+      "why": "On the list since 11:23 AM ET. No look yet."
     },
     "DIA": {
       "last": 517.47,
@@ -565,8 +567,8 @@
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "META": {
-      "last": 711.86,
-      "chg_pct": 5.92,
+      "last": 710.76,
+      "chg_pct": 5.76,
       "history": [
         672.07,
         680.61,
@@ -589,10 +591,11 @@
         706.57,
         708.7,
         708.62,
-        711.86
+        711.86,
+        710.76
       ],
       "status": "flagged",
-      "why": "Flagged 11:18 AM ET \u2014 named, +5.9% today."
+      "why": "Flagged 11:23 AM ET \u2014 named, +5.8% today."
     },
     "MSTR": {
       "last": 167.71,
@@ -623,8 +626,8 @@
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
     },
     "IBIT": {
-      "last": 48.83,
-      "chg_pct": 6.28,
+      "last": 48.72,
+      "chg_pct": 6.05,
       "history": [
         45.94,
         48.32,
@@ -647,10 +650,11 @@
         48.71,
         48.75,
         48.89,
-        48.825
+        48.825,
+        48.72
       ],
       "status": "watching",
-      "why": "On the list since 11:18 AM ET. No look yet."
+      "why": "On the list since 11:23 AM ET. No look yet."
     },
     "IREN": {
       "last": 47.26,
@@ -792,19 +796,19 @@
         "chg_pct": 10.23
       },
       {
-        "sym": "IBIT",
-        "chg_pct": 6.28
-      },
-      {
         "sym": "COIN",
         "chg_pct": 6.16
+      },
+      {
+        "sym": "IBIT",
+        "chg_pct": 6.05
       }
     ],
     "down": []
   },
   "desk_freshness": {
-    "watch": "10:18",
-    "crypto": "10:22"
+    "watch": "10:23",
+    "crypto": "10:25"
   },
   "desk_board": [
     {
@@ -825,7 +829,7 @@
     {
       "sym": "IBIT",
       "status": "WATCH",
-      "why": "On the list since 11:18 AM ET. No look yet."
+      "why": "On the list since 11:23 AM ET. No look yet."
     },
     {
       "sym": "IREN",
@@ -835,7 +839,7 @@
     {
       "sym": "META",
       "status": "WATCH",
-      "why": "Flagged 11:18 AM ET \u2014 named, +5.9% today."
+      "why": "Flagged 11:23 AM ET \u2014 named, +5.8% today."
     },
     {
       "sym": "MSTR",
