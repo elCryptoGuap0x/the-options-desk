@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:31:32Z",
+  "generated_at": "2026-09-21T17:36:26Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,12 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85887.91,
-      "chg_pct": 1.02,
+      "last": 85855.01,
+      "chg_pct": 0.98,
       "history": [
-        85857.445,
-        85827.005,
-        85784.31,
         85717.69,
         85872.895,
         85822.005,
@@ -409,18 +406,18 @@
         85814.98,
         85863.635,
         85891.725,
-        85887.915
+        85887.915,
+        85912.525,
+        85930.93,
+        85855.015
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2750.24,
-      "chg_pct": 0.86,
+      "last": 2747.51,
+      "chg_pct": 0.76,
       "history": [
-        2747.975,
-        2746.88,
-        2748.5,
         2749.305,
         2760.765,
         2762.395,
@@ -447,18 +444,18 @@
         2749.915,
         2751.595,
         2749.405,
-        2750.235
+        2750.235,
+        2749.03,
+        2749.16,
+        2747.505
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.53,
-      "chg_pct": 0.63,
+      "last": 117.56,
+      "chg_pct": 0.66,
       "history": [
-        117.755,
-        117.795,
-        117.74,
         117.705,
         118.025,
         118.055,
@@ -485,7 +482,10 @@
         117.52,
         117.485,
         117.52,
-        117.525
+        117.525,
+        117.625,
+        117.66,
+        117.555
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -850,13 +850,18 @@
   },
   "desk_freshness": {
     "watch": "12:22",
-    "crypto": "12:31"
+    "crypto": "12:36"
   },
   "desk_board": [
     {
       "sym": "ACN",
       "status": "OUT",
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
+    },
+    {
+      "sym": "ARM",
+      "status": "OUT",
+      "why": "Ruled out 1:17 PM ET \u2014 no follow-through."
     },
     {
       "sym": "COIN",
@@ -871,12 +876,12 @@
     {
       "sym": "IBIT",
       "status": "WATCH",
-      "why": "On the list since 1:14 PM ET. No look yet."
+      "why": "On the list since 1:22 PM ET. No look yet."
     },
     {
       "sym": "INTC",
       "status": "WATCH",
-      "why": "Flagged 1:14 PM ET \u2014 named."
+      "why": "Flagged 1:22 PM ET \u2014 named."
     },
     {
       "sym": "IREN",
@@ -886,12 +891,17 @@
     {
       "sym": "META",
       "status": "WATCH",
-      "why": "On the list since 1:14 PM ET. No look yet."
+      "why": "On the list since 1:22 PM ET. No look yet."
     },
     {
       "sym": "MSTR",
       "status": "OUT",
       "why": "Ruled out 9:56 AM ET \u2014 no follow-through."
+    },
+    {
+      "sym": "WBD",
+      "status": "OUT",
+      "why": "Ruled out 1:17 PM ET \u2014 no follow-through."
     }
   ],
   "last_fill_at": "2026-09-18T16:36:49Z",
@@ -1079,5 +1089,6 @@
     "tickets": 0,
     "next_look_min": 4
   },
-  "today_label": "Mon 9/21"
+  "today_label": "Mon 9/21",
+  "narrative_line": "MSTR ripping. No ticket. Board still live."
 }

@@ -147,8 +147,14 @@
   /* Added 9/21 -- the heartbeat line under the badge: "scanning" is a
      status word, this is proof. Empty string collapses to nothing (no
      stray gap) whenever renderPulse has nothing real to show yet. */
-  .pulse-line { text-align: center; color: var(--text-dim); font-size: 12.5px; letter-spacing: 0.02em; margin-bottom: 28px; font-variant-numeric: tabular-nums; }
-  .pulse-line:empty { margin-bottom: 0; }
+  .pulse-line { text-align: center; color: var(--text-dim); font-size: 12.5px; letter-spacing: 0.02em; margin-bottom: 4px; font-variant-numeric: tabular-nums; }
+  /* Added 9/21 -- the one delayed, plain-English story line ("META
+     ripping. No ticket. Board still live."). Deliberately louder than
+     the pulse line above it: pulse is proof-of-life, this is the thing
+     a spectator actually reads. Never structured/tabular data, so no
+     tabular-nums here. */
+  .narrative-line { text-align: center; color: var(--text); font-size: 14px; font-weight: 600; margin-bottom: 28px; }
+  .narrative-line:empty { margin-bottom: 0; }
   /* Added 9/15 -- "big ugly number", deliberately unpolished/blunt per
      spec: raw minutes since the last real fill (open or close, either
      counts), no hours/days conversion. Ticks live client-side off a
@@ -804,6 +810,7 @@
     <span class="status-pill" id="status-pill"><span class="dot"></span><span id="status-text">—</span></span>
   </div>
   <div class="pulse-line" id="pulse-line"></div>
+  <div class="narrative-line" id="narrative-line"></div>
 
   <div class="fill-clock" id="fill-clock"></div>
 
@@ -1932,6 +1939,23 @@
       pulse.tickets + " ticket" + (pulse.tickets === 1 ? "" : "s") + " · next look ~" + pulse.next_look_min + " min";
   }
 
+  // Added 9/21: the one delayed, plain-English story line under the
+  // pulse -- site-build.py's build_narrative_line, canned templates only
+  // ("SYM ripping/dropping. No ticket. Board still live." or "Looked at
+  // N names. Nothing cleared. Still scanning."). Server-side already
+  // returns null on a day with a real ticket (the ticket card is the
+  // story then) or before anything's been looked at -- this function
+  // just renders whatever string comes back, or clears the line.
+  function renderNarrativeLine(line, session) {
+    var el = document.getElementById("narrative-line");
+    if (!el) return;
+    if (!session || session.market_state !== "OPEN" || !line) {
+      el.textContent = "";
+      return;
+    }
+    el.textContent = line;
+  }
+
   // Ribbon, added 9/18: a scrolling marquee under the clock, built
   // purely from fields already fetched this poll (session/market_board/
   // tickets) -- no new server file, no model call, same data the board
@@ -2235,6 +2259,7 @@
     lastFillAt = data.last_fill_at || null;
     renderSession(data.session, data.generated_at);
     renderPulse(data.pulse, data.session);
+    renderNarrativeLine(data.narrative_line, data.session);
     renderStats(data.stats, data.session, data.tickets);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);
