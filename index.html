@@ -1962,6 +1962,17 @@
     if (isNaN(lastLookMs)) { el.textContent = ""; return; }
     var minsAgo = Math.max(0, Math.floor((Date.now() - lastLookMs) / 60000));
     var lastLookText = minsAgo === 0 ? "just now" : minsAgo + "m ago";
+    // Added 9/21, real feedback: past a real staleness threshold, a
+    // "next look ~N min" claim stops being an estimate and starts being
+    // wrong -- once Watch is genuinely behind (its own real cadence can
+    // run 5-7 min under load, occasionally more), say so plainly instead
+    // of continuing to promise a number the line itself can't back up.
+    // Same STALE_AFTER_MIN threshold the page-level badge already uses.
+    if (minsAgo > STALE_AFTER_MIN) {
+      el.textContent = "Last look " + lastLookText + " · " + pulse.names + " names · " +
+        pulse.tickets + " ticket" + (pulse.tickets === 1 ? "" : "s") + " · running behind";
+      return;
+    }
     var minsToNext = pulse.cadence_min - minsAgo;
     var nextLookText = minsToNext > 0 ? "~" + minsToNext + " min" : "any moment";
     el.textContent = "Last look " + lastLookText + " · " + pulse.names + " names · " +
