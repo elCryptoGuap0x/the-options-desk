@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:49:41Z",
+  "generated_at": "2026-09-21T17:58:47Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,13 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85851.46,
-      "chg_pct": 0.98,
+      "last": 85873.71,
+      "chg_pct": 1.01,
       "history": [
-        85897.075,
-        85909.65,
-        85880.405,
-        85759.74,
         85652.005,
         85802.065,
         85878.985,
@@ -409,19 +405,19 @@
         85929.125,
         85919.245,
         85831.545,
-        85851.455
+        85851.455,
+        85851.295,
+        85719.265,
+        85859.995,
+        85873.705
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2740.92,
-      "chg_pct": 0.52,
+      "last": 2743.31,
+      "chg_pct": 0.61,
       "history": [
-        2762.555,
-        2765.215,
-        2764.595,
-        2759.02,
         2751.905,
         2758.83,
         2759.175,
@@ -447,19 +443,19 @@
         2749.345,
         2746.905,
         2740.305,
-        2740.92
+        2740.92,
+        2739.95,
+        2735.905,
+        2741.995,
+        2743.31
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.23,
-      "chg_pct": 0.39,
+      "last": 117.14,
+      "chg_pct": 0.3,
       "history": [
-        117.75,
-        117.695,
-        117.65,
-        117.19,
         116.84,
         117.35,
         117.505,
@@ -485,7 +481,11 @@
         117.57,
         117.545,
         117.37,
-        117.235
+        117.235,
+        117.14,
+        116.75,
+        117.025,
+        117.14
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -850,7 +850,7 @@
   },
   "desk_freshness": {
     "watch": "12:46",
-    "crypto": "12:49"
+    "crypto": "12:58"
   },
   "desk_board": [
     {
@@ -1088,10 +1088,10 @@
     "asof": "2026-09-21T12:09:09Z"
   },
   "pulse": {
-    "last_look_et": "12:46",
+    "last_look_iso": "2026-09-21T17:46:00Z",
     "names": 12,
     "tickets": 0,
-    "next_look_min": 4
+    "cadence_min": 4
   },
   "today_label": "Mon 9/21",
   "narrative_line": "MSTR ripping. No ticket. Board still live."
