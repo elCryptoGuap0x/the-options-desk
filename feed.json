@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T16:10:49Z",
+  "generated_at": "2026-09-21T16:13:52Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85784.31,
-      "chg_pct": 0.9,
+      "last": 85717.69,
+      "chg_pct": 0.82,
       "history": [
-        85974.475,
         86020.475,
         85942.505,
         85805.63,
@@ -409,16 +408,16 @@
         85951.845,
         85857.445,
         85827.005,
-        85784.31
+        85784.31,
+        85717.69
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2748.5,
-      "chg_pct": 0.8,
+      "last": 2749.3,
+      "chg_pct": 0.83,
       "history": [
-        2746.4,
         2740.15,
         2736.475,
         2740.105,
@@ -447,16 +446,16 @@
         2755.135,
         2747.975,
         2746.88,
-        2748.5
+        2748.5,
+        2749.305
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.74,
-      "chg_pct": 0.82,
+      "last": 117.7,
+      "chg_pct": 0.79,
       "history": [
-        118.43,
         118.235,
         117.96,
         118.545,
@@ -485,7 +484,8 @@
         117.935,
         117.755,
         117.795,
-        117.74
+        117.74,
+        117.705
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -839,7 +839,7 @@
   },
   "desk_freshness": {
     "watch": "11:09",
-    "crypto": "11:10"
+    "crypto": "11:13"
   },
   "desk_board": [
     {
@@ -860,7 +860,7 @@
     {
       "sym": "IBIT",
       "status": "WATCH",
-      "why": "On the list since 11:46 AM ET. No look yet."
+      "why": "On the list since 11:51 AM ET. No look yet."
     },
     {
       "sym": "IREN",
@@ -870,7 +870,7 @@
     {
       "sym": "META",
       "status": "WATCH",
-      "why": "On the list since 11:46 AM ET. No look yet."
+      "why": "On the list since 11:51 AM ET. No look yet."
     },
     {
       "sym": "MSTR",
