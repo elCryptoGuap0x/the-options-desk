@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T11:46:38Z",
+  "generated_at": "2026-09-22T11:50:30Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -394,28 +394,33 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86056.77,
-      "chg_pct": 0.0,
+      "last": 86042.49,
+      "chg_pct": -0.02,
       "history": [
-        86056.775
+        86056.775,
+        86050.755,
+        86042.485
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2744.16,
-      "chg_pct": 0.0,
+      "last": 2745.14,
+      "chg_pct": 0.04,
       "history": [
-        2744.165
+        2744.165,
+        2745.145
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.38,
-      "chg_pct": 0.0,
+      "last": 117.4,
+      "chg_pct": 0.02,
       "history": [
-        117.375
+        117.375,
+        117.415,
+        117.4
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -560,12 +565,26 @@
   "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
-    "up": [],
-    "down": []
+    "up": [
+      {
+        "sym": "ETH",
+        "chg_pct": 0.04
+      },
+      {
+        "sym": "SOL",
+        "chg_pct": 0.02
+      }
+    ],
+    "down": [
+      {
+        "sym": "BTC",
+        "chg_pct": -0.02
+      }
+    ]
   },
   "desk_freshness": {
     "watch": "2:25",
-    "crypto": "6:46"
+    "crypto": "6:50"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-18T16:36:49Z",
@@ -581,6 +600,24 @@
       {
         "t": "7:46 AM ET",
         "line": "Added to the list."
+      }
+    ],
+    "ETH": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "SOL": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "BTC": [
+      {
+        "t": null,
+        "line": "not a setup"
       }
     ]
   },
