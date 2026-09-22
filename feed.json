@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-22T19:58:44Z",
+  "generated_at": "2026-09-22T20:01:59Z",
   "session": {
     "day_label": "TUE",
-    "market_state": "OPEN",
+    "market_state": "CLOSED",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-23T13:30:00Z",
     "position": "FLAT"
@@ -330,7 +330,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "",
+  "roast": "Session over. +$0.",
   "streak_last8": [
     "L",
     "L",
@@ -394,10 +394,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86274.48,
-      "chg_pct": 0.25,
+      "last": 86174.02,
+      "chg_pct": 0.14,
       "history": [
-        86322.595,
         86379.715,
         86422.795,
         86454.185,
@@ -426,16 +425,16 @@
         86285.375,
         86221.535,
         86174.675,
-        86274.475
+        86274.475,
+        86174.025
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2750.26,
-      "chg_pct": 0.22,
+      "last": 2749.2,
+      "chg_pct": 0.18,
       "history": [
-        2746.25,
         2749.49,
         2748.355,
         2750.395,
@@ -464,16 +463,16 @@
         2751.785,
         2748.19,
         2745.885,
-        2750.255
+        2750.255,
+        2749.205
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.98,
-      "chg_pct": 0.52,
+      "last": 118.12,
+      "chg_pct": 0.63,
       "history": [
-        118.08,
         118.005,
         117.725,
         117.975,
@@ -502,7 +501,8 @@
         118.05,
         117.875,
         117.85,
-        117.98
+        117.98,
+        118.12
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -807,32 +807,28 @@
   ],
   "calendar": [
     {
-      "what": "US-China trade talks (Bessent/He Lifeng) + Chicago Fed's Goolsbee speaks",
-      "when": "Mon 9/21"
+      "what": "Richmond Fed Manufacturing Index",
+      "when": "Today, 10:00 ET"
     },
     {
-      "what": "Richmond Fed index, Fed speakers (Williams/Jefferson/Barkin), 2y Treasury auction",
-      "when": "Tue 9/22"
+      "what": "Fed speakers: Williams, Jefferson, Barkin",
+      "when": "Today"
     },
     {
-      "what": "Flash PMIs, EIA crude inventories",
-      "when": "Wed 9/23"
+      "what": "2-year note auction",
+      "when": "Today"
     },
     {
-      "what": "Jobless claims, new home sales, COST/DRI earnings, 7y Treasury auction",
-      "when": "Thu 9/24"
+      "what": "Trump-Xi meeting",
+      "when": "Thursday"
     },
     {
-      "what": "Trump-Xi summit",
-      "when": "Thu 9/24"
+      "what": "Durable Goods and UMich sentiment",
+      "when": "Friday"
     },
     {
-      "what": "Durable goods, UMich sentiment final -- no CPI/FOMC/NFP this week",
-      "when": "Fri 9/25"
-    },
-    {
-      "what": "Iran/Saudi pipeline situation, oil market still reacting",
-      "when": "Ongoing, unresolved"
+      "what": "Ongoing US-Iran / UNGA diplomacy",
+      "when": "This week"
     }
   ],
   "skip_summary_ticker_list": {
@@ -924,7 +920,7 @@
   },
   "desk_freshness": {
     "watch": "2:58",
-    "crypto": "2:58"
+    "crypto": "3:01"
   },
   "desk_board": [
     {
