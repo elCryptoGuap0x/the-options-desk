@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T20:01:59Z",
+  "generated_at": "2026-09-22T22:54:06Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -394,8 +394,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86174.02,
-      "chg_pct": 0.14,
+      "last": 86200,
+      "chg_pct": -0.19,
       "history": [
         86379.715,
         86422.795,
@@ -426,14 +426,15 @@
         86221.535,
         86174.675,
         86274.475,
-        86174.025
+        86174.025,
+        86200
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2749.2,
-      "chg_pct": 0.18,
+      "last": 2756.77,
+      "chg_pct": -0.65,
       "history": [
         2749.49,
         2748.355,
@@ -464,14 +465,15 @@
         2748.19,
         2745.885,
         2750.255,
-        2749.205
+        2749.205,
+        2756.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.12,
-      "chg_pct": 0.63,
+      "last": 118.59,
+      "chg_pct": -0.45,
       "history": [
         118.005,
         117.725,
@@ -502,7 +504,8 @@
         117.875,
         117.85,
         117.98,
-        118.12
+        118.12,
+        118.59
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -803,6 +806,27 @@
       "tag": "Stocks",
       "title": "UNGA 2026 live: Trump to speak as world leaders gather",
       "summary": "Trump second speaker today after Lula; also meets Zelensky and formalizes Greenland security deal. Iran war, Ukraine, AI regulation and climate on agenda. Iranian delegation present; diplomacy headlines possible."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Meta\u2019s new AI agent just got me $250 in flight credits",
+      "summary": "In the Loop host Ejaaz Ahamadeen recounts how Muse, Meta's (META) new AI agent, helped get him $250 in flight credits and rebooked a new flight after his original flight was delayed, demonstrating how users can now interact with an agent th",
+      "url": "https://finance.yahoo.com/video/meta-ai-agent-just-got-214556275.html?.tsrc=rss",
+      "ts": "2026-09-22T21:45:56Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
+      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
+      "ts": "2026-09-21T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Democrats 'chose visceral hatred for' Donald Trump over crypto Clarity Act, Lummis says",
+      "summary": "Senator Cynthia Lummis said the crypto industry should \"pin it on the Democrats\" in her first public remarks after last week's failed Clarity Act vote.",
+      "url": "https://www.coindesk.com/policy/2026/09/22/democrats-chose-visceral-hatred-for-donald-trump-over-crypto-clarity-act-lummis-says",
+      "ts": "2026-09-22T21:29:05Z"
     }
   ],
   "calendar": [
@@ -1074,17 +1098,17 @@
     ]
   },
   "btc_range": {
-    "last": 86263,
-    "high_24h": 87330,
+    "last": 86203,
+    "high_24h": 86669,
     "low_24h": 85107,
-    "chg_pct": -0.35
+    "chg_pct": -0.18
   },
   "macro": {
     "10Y": 4.97,
-    "DXY": 100.52,
-    "WTI": 89.16,
-    "VIX": 14.22,
-    "asof": "2026-09-22T19:57:25Z"
+    "DXY": 100.54,
+    "WTI": 89.67,
+    "VIX": 14.21,
+    "asof": "2026-09-22T22:54:06Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-22T19:58:30Z",
