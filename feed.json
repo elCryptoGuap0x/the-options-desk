@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-22T02:48:24Z",
+  "generated_at": "2026-09-22T06:21:35Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-09-22T13:30:00Z",
     "position": "FLAT"
   },
@@ -394,8 +394,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85787.04,
-      "chg_pct": 0.9,
+      "last": 85284,
+      "chg_pct": 4.33,
       "history": [
         85953.045,
         85953.455,
@@ -426,14 +426,15 @@
         85735.965,
         85737.685,
         85800.015,
-        85787.045
+        85787.045,
+        85284
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2743.43,
-      "chg_pct": 0.61,
+      "last": 2727.35,
+      "chg_pct": 2.11,
       "history": [
         2750.315,
         2750.455,
@@ -464,14 +465,15 @@
         2745.345,
         2746.295,
         2746.245,
-        2743.435
+        2743.435,
+        2727.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.72,
-      "chg_pct": 0.8,
+      "last": 116.57,
+      "chg_pct": 3.87,
       "history": [
         117.4,
         117.32,
@@ -502,7 +504,8 @@
         117.845,
         117.955,
         117.965,
-        117.725
+        117.725,
+        116.57
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -747,6 +750,27 @@
       "tag": "Crypto",
       "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
       "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "TSLA, SPCX, AAPL Could Be Next To \u2018Rip\u2019 After Meta\u2019s Muse Rally, Analyst Says \u2014 Here Are The Catalysts",
+      "summary": "Meta surged 11% as investors embraced its Muse AI agent, which surpassed 2.5 million downloads and briefly topped Apple\u2019s U.S. App Store.",
+      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-spcx-aapl-next-to-rip-meta-muse-rally-analyst-here-are-the-catalysts/cZMPg4uRBe4?.tsrc=rss",
+      "ts": "2026-09-22T06:02:01Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
+      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
+      "ts": "2026-09-21T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Elon Musk's X brings bitcoin and stock trading closer to the timeline",
+      "summary": "Elon Musk\u2019s X lets U.S. users tap cashtags such as $BTC to view live charts and access Coinbase, Kraken and other trading platforms.",
+      "url": "https://www.coindesk.com/markets/2026/09/22/elon-musk-s-x-brings-bitcoin-and-stock-trading-closer-to-the-timeline",
+      "ts": "2026-09-22T05:26:00Z"
     }
   ],
   "calendar": [
@@ -1140,17 +1164,17 @@
     ]
   },
   "btc_range": {
-    "last": 85776,
+    "last": 85286,
     "high_24h": 87330,
-    "low_24h": 80979,
-    "chg_pct": 4.88
+    "low_24h": 81460,
+    "chg_pct": 4.33
   },
   "macro": {
     "10Y": 4.96,
-    "DXY": 100.39,
-    "WTI": 92.89,
+    "DXY": 100.43,
+    "WTI": 93.7,
     "VIX": 14.87,
-    "asof": "2026-09-22T01:16:41Z"
+    "asof": "2026-09-22T06:21:35Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-21T19:25:00Z",
