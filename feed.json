@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T19:49:28Z",
+  "generated_at": "2026-09-22T19:57:25Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -394,8 +394,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86339.1,
-      "chg_pct": 0.33,
+      "last": 86179,
+      "chg_pct": -0.49,
       "history": [
         86630.695,
         86515.055,
@@ -426,14 +426,15 @@
         86355.18,
         86439.09,
         86402.215,
-        86339.095
+        86339.095,
+        86179
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2751.84,
-      "chg_pct": 0.28,
+      "last": 2746.17,
+      "chg_pct": -0.54,
       "history": [
         2755.725,
         2752.91,
@@ -464,14 +465,15 @@
         2752.885,
         2757.125,
         2754.335,
-        2751.845
+        2751.845,
+        2746.17
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.05,
-      "chg_pct": 0.58,
+      "last": 117.87,
+      "chg_pct": -0.11,
       "history": [
         118.155,
         118.315,
@@ -502,7 +504,8 @@
         118.29,
         118.405,
         118.35,
-        118.05
+        118.05,
+        117.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -803,6 +806,27 @@
       "tag": "Stocks",
       "title": "UNGA 2026 live: Trump to speak as world leaders gather",
       "summary": "Trump second speaker today after Lula; also meets Zelensky and formalizes Greenland security deal. Iran war, Ukraine, AI regulation and climate on agenda. Iranian delegation present; diplomacy headlines possible."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Apple Takes Aim at Nvidia\u2019s AI Economics: New Macs Have \u2018No Cost per Token,\u2019 Hardware Chief Says",
+      "summary": "Apple Inc. (NASDAQ:AAPL) is pitching its newest Macs as a way for businesses to run powerful AI models without paying per-token cloud charges, taking aim at the economics behind the AI infrastructure boom.\u201cThere\u2019s no cost per token. You\u2019re ",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61932828/apple-macs-ai-no-cost-per-token-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+      "ts": "2026-09-22T19:32:50Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
+      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
+      "ts": "2026-09-21T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Canada's 'Big Six' banks to launch interbank tokenized deposit initiative",
+      "summary": "Initial testing will focus on moving digital commercial deposits across participating institutions before linking to broader digital asset ecosystems.",
+      "url": "https://www.coindesk.com/business/2026/09/22/canada-s-big-six-banks-unite-to-launch-interbank-tokenized-deposit-initiative",
+      "ts": "2026-09-22T17:34:03Z"
     }
   ],
   "calendar": [
@@ -1074,17 +1098,17 @@
     ]
   },
   "btc_range": {
-    "last": 85994,
+    "last": 86263,
     "high_24h": 87330,
-    "low_24h": 84806,
-    "chg_pct": 1.33
+    "low_24h": 85107,
+    "chg_pct": -0.35
   },
   "macro": {
-    "10Y": 4.96,
-    "DXY": 100.42,
-    "WTI": 90.12,
-    "VIX": 14.7,
-    "asof": "2026-09-22T11:54:36Z"
+    "10Y": 4.97,
+    "DXY": 100.52,
+    "WTI": 89.16,
+    "VIX": 14.22,
+    "asof": "2026-09-22T19:57:25Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-22T19:47:40Z",
