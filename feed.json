@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T06:21:35Z",
+  "generated_at": "2026-09-22T11:46:38Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -394,155 +394,36 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85284,
-      "chg_pct": 4.33,
+      "last": 86056.77,
+      "chg_pct": 0.0,
       "history": [
-        85953.045,
-        85953.455,
-        85980.375,
-        85991.615,
-        86013.705,
-        86070.245,
-        86052.515,
-        86050.055,
-        86000.015,
-        86065.535,
-        85986.725,
-        86049.985,
-        86132.075,
-        86408.48,
-        86201.495,
-        86289.355,
-        86553.125,
-        86506.0,
-        86561.585,
-        85555.655,
-        85674.645,
-        85690.495,
-        85784.555,
-        85809.0,
-        85830.875,
-        85785.025,
-        85735.965,
-        85737.685,
-        85800.015,
-        85787.045,
-        85284
+        86056.775
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2727.35,
-      "chg_pct": 2.11,
+      "last": 2744.16,
+      "chg_pct": 0.0,
       "history": [
-        2750.315,
-        2750.455,
-        2751.355,
-        2752.44,
-        2753.65,
-        2756.155,
-        2757.675,
-        2758.19,
-        2756.945,
-        2758.525,
-        2756.825,
-        2760.875,
-        2764.12,
-        2770.165,
-        2762.855,
-        2764.23,
-        2765.305,
-        2764.3,
-        2765.075,
-        2739.42,
-        2744.045,
-        2744.955,
-        2746.095,
-        2746.615,
-        2747.53,
-        2747.655,
-        2745.345,
-        2746.295,
-        2746.245,
-        2743.435,
-        2727.35
+        2744.165
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.57,
-      "chg_pct": 3.87,
+      "last": 117.38,
+      "chg_pct": 0.0,
       "history": [
-        117.4,
-        117.32,
-        117.41,
-        117.405,
-        117.58,
-        117.705,
-        117.755,
-        117.72,
-        117.635,
-        117.35,
-        117.515,
-        117.48,
-        117.59,
-        117.715,
-        117.98,
-        117.7,
-        117.81,
-        118.165,
-        118.145,
-        118.175,
-        117.255,
-        117.52,
-        117.57,
-        117.76,
-        117.745,
-        117.71,
-        117.845,
-        117.955,
-        117.965,
-        117.725,
-        116.57
+        117.375
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
       "last": 774.1,
-      "chg_pct": 1.68,
+      "chg_pct": 0.0,
       "history": [
-        771.32,
-        771.54,
-        771.64,
-        771.74,
-        772.14,
-        772.41,
-        772.1,
-        772.2,
-        772.15,
-        772.4681,
-        772.82,
-        772.84,
-        772.31,
-        773.15,
-        772.94,
-        773.28,
-        773.265,
-        773.31,
-        773.749,
-        773.855,
-        773.655,
-        773.905,
-        774.105,
-        774.36,
-        774.34,
-        774.27,
-        774.17,
-        774.2,
-        774.465,
         774.1
       ],
       "status": "ruled out",
@@ -550,37 +431,8 @@
     },
     "QQQ": {
       "last": 741.74,
-      "chg_pct": 3.09,
+      "chg_pct": 0.0,
       "history": [
-        738.14,
-        738.41,
-        738.62,
-        739.03,
-        739.13,
-        738.88,
-        738.72,
-        738.645,
-        739.0884,
-        738.79,
-        739.03,
-        739.01,
-        738.83,
-        739.79,
-        739.73,
-        739.93,
-        740.06,
-        740.205,
-        740.49,
-        740.555,
-        740.295,
-        740.71,
-        740.79,
-        741.25,
-        741.37,
-        741.32,
-        741.15,
-        741.39,
-        741.71,
         741.735
       ],
       "status": "ruled out",
@@ -588,14 +440,8 @@
     },
     "DIA": {
       "last": 518.46,
-      "chg_pct": 0.41,
+      "chg_pct": 0.0,
       "history": [
-        516.33,
-        520.34,
-        517.54,
-        516.885,
-        517.37,
-        517.47,
         518.46
       ],
       "status": "ruled out",
@@ -603,37 +449,8 @@
     },
     "META": {
       "last": 745.51,
-      "chg_pct": 10.93,
+      "chg_pct": 0.0,
       "history": [
-        724.44,
-        726.34,
-        725.88,
-        728.12,
-        727.82,
-        728.55,
-        728.88,
-        728.05,
-        731.6495,
-        733.58,
-        734.15,
-        733.41,
-        739.955,
-        743.06,
-        741.63,
-        742.565,
-        742.94,
-        741.59,
-        746.145,
-        747.74,
-        746.96,
-        747.838,
-        746.09,
-        745.845,
-        746.04,
-        744.11,
-        745.09,
-        744.4,
-        745.0,
         745.51
       ],
       "status": "watching",
@@ -641,15 +458,8 @@
     },
     "MSTR": {
       "last": 165.5,
-      "chg_pct": 8.77,
+      "chg_pct": 0.0,
       "history": [
-        152.15,
-        166.15,
-        166.41,
-        166.87,
-        167.995,
-        167.71,
-        166.36,
         165.5
       ],
       "status": "ruled out",
@@ -657,15 +467,8 @@
     },
     "COIN": {
       "last": 203.66,
-      "chg_pct": 4.79,
+      "chg_pct": 0.0,
       "history": [
-        194.35,
-        205.1,
-        204.505,
-        207.12,
-        206.925,
-        206.32,
-        203.17,
         203.66
       ],
       "status": "ruled out",
@@ -673,37 +476,8 @@
     },
     "IBIT": {
       "last": 48.85,
-      "chg_pct": 6.35,
+      "chg_pct": 0.0,
       "history": [
-        48.69,
-        48.6,
-        48.57,
-        48.615,
-        48.62,
-        48.69,
-        48.61,
-        48.72,
-        48.705,
-        48.7599,
-        48.69,
-        48.59,
-        48.665,
-        48.625,
-        48.645,
-        48.705,
-        48.735,
-        48.755,
-        48.7,
-        48.685,
-        48.675,
-        48.685,
-        48.705,
-        48.7151,
-        48.745,
-        48.7402,
-        48.72,
-        48.755,
-        48.75,
         48.855
       ],
       "status": "ruled out",
@@ -711,14 +485,8 @@
     },
     "IREN": {
       "last": 47.4,
-      "chg_pct": 3.41,
+      "chg_pct": 0.0,
       "history": [
-        45.83,
-        48.18,
-        47.29,
-        47.65,
-        47.77,
-        47.26,
         47.395
       ],
       "status": "ruled out",
@@ -727,50 +495,29 @@
   },
   "news": [
     {
-      "tag": "Crypto",
-      "title": "Bitcoin taps $85,000 for first time since January as short liquidations surge",
-      "summary": "BTC briefly cleared $85,000 Monday, highest since January, up more than 5% in 24 hours from the ~$81k area. CoinGlass showed $650M\u2013$750M in crypto liquidations over 24 hours, mostly shorts, including ~$262M in one hour near $84k. Open interest still rose, so traders chased. First weekly close above the 50-week MA in 45 weeks. Listed catch is IBIT 0DTE; MSTR/COIN next options Friday."
+      "tag": "Macro",
+      "title": "Wall St futures pause after AI rally, focus on Mideast tensions",
+      "summary": "Futures steady after Monday's AI-driven gains that lifted Nasdaq to a record. Investors watch potential US-Iran talks at UN that could ease the six-month conflict. Oil and 10-year yields remain key drivers near elevated levels. Mag7 mixed premarket with META +0.5%."
     },
     {
       "tag": "Macro",
-      "title": "Wall St futures rise as AI stocks gain, oil prices slide",
-      "summary": "ES/NQ higher on an AI bid after last week's sector scare faded. Intel, Marvell, Meta, Dell pointed higher premarket. A ~2% oil drop pulled yields lower. Trump said he would be open to meeting Iran's president at UNGA. Greenland security deal with Denmark also helped sentiment."
-    },
-    {
-      "tag": "Crypto",
-      "title": "US crypto stocks extend pre-market gains, Strategy up over 7%",
-      "summary": "MSTR premarket ~$165 (+7%), COIN +5%, CRCL +6%, HOOD +4%. Those names do not list today or tomorrow \u2014 first expiration 9/25 \u2014 so the open options tape is IBIT, not MSTR. Friday already printed MSTR +16.39% and IBIT +6.3% on the tokenized-securities exemption headline."
+      "title": "Tech Rally Stalls as Oil Snaps Four-Day Losing Run",
+      "summary": "AI advance paused overnight while Brent rose above $102 on diplomacy uncertainty. Trump addresses UN today and may meet Iranian counterpart. S&P futures little changed after one-month high. Trump-Xi meeting Thursday still in focus."
     },
     {
       "tag": "Macro",
-      "title": "Stock Market Today: Futures Rise to Begin Week, Led by Tech Stocks; Oil Prices, Bond Yields Fall",
-      "summary": "Nasdaq futures led. SOXX premarket +2.5% with Intel ~+6%. Memory names (MU, WDC) bid. Magnificent Seven mostly green except Apple. Paramount and WBD +7% on merger-progress reports; those two also lack 0DTE/1DTE."
+      "title": "Morning Bid: As oil swoons, AI recharges",
+      "summary": "Meta Muse reception and softer oil powered Monday's lift, with AMD reaching $1T. Global chip stocks firmed further. UNGA meetings could include Trump-Iran contact. Fed speakers and 2-year auction on today's docket."
     },
     {
-      "tag": "Crypto",
-      "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
-      "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
+      "tag": "Macro",
+      "title": "Stock futures edge higher after Nasdaq record",
+      "summary": "Futures ticked up modestly as yields and oil slipped. META residual strength after +11% on Muse #1 App Store ranking. Mag7 mixed, semiconductors softer premarket. Trump-Xi Thursday remains key."
     },
     {
-      "tag": "MARKETS",
-      "title": "TSLA, SPCX, AAPL Could Be Next To \u2018Rip\u2019 After Meta\u2019s Muse Rally, Analyst Says \u2014 Here Are The Catalysts",
-      "summary": "Meta surged 11% as investors embraced its Muse AI agent, which surpassed 2.5 million downloads and briefly topped Apple\u2019s U.S. App Store.",
-      "url": "https://stocktwits.com/news-articles/markets/equity/tsla-spcx-aapl-next-to-rip-meta-muse-rally-analyst-here-are-the-catalysts/cZMPg4uRBe4?.tsrc=rss",
-      "ts": "2026-09-22T06:02:01Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
-      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
-      "ts": "2026-09-21T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Elon Musk's X brings bitcoin and stock trading closer to the timeline",
-      "summary": "Elon Musk\u2019s X lets U.S. users tap cashtags such as $BTC to view live charts and access Coinbase, Kraken and other trading platforms.",
-      "url": "https://www.coindesk.com/markets/2026/09/22/elon-musk-s-x-brings-bitcoin-and-stock-trading-closer-to-the-timeline",
-      "ts": "2026-09-22T05:26:00Z"
+      "tag": "Stocks",
+      "title": "UNGA 2026 live: Trump to speak as world leaders gather",
+      "summary": "Trump second speaker today after Lula; also meets Zelensky and formalizes Greenland security deal. Iran war, Ukraine, AI regulation and climate on agenda. Iranian delegation present; diplomacy headlines possible."
     }
   ],
   "calendar": [
@@ -804,362 +551,36 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 13,
-    "names": [
-      "ACN",
-      "AMD",
-      "ARM",
-      "COIN",
-      "DIA",
-      "IBIT",
-      "INTC",
-      "IREN",
-      "META",
-      "MSTR",
-      "QQQ",
-      "SPY",
-      "WBD"
-    ],
-    "interesting": [
-      [
-        "ACN",
-        "disqualified"
-      ],
-      [
-        "AMD",
-        "disqualified"
-      ],
-      [
-        "ARM",
-        "disqualified"
-      ],
-      [
-        "COIN",
-        "disqualified"
-      ],
-      [
-        "DIA",
-        "disqualified"
-      ],
-      [
-        "IBIT",
-        "disqualified"
-      ],
-      [
-        "INTC",
-        "watching"
-      ],
-      [
-        "IREN",
-        "disqualified"
-      ],
-      [
-        "META",
-        "watching"
-      ],
-      [
-        "MSTR",
-        "disqualified"
-      ],
-      [
-        "QQQ",
-        "disqualified"
-      ],
-      [
-        "SPY",
-        "disqualified"
-      ],
-      [
-        "WBD",
-        "disqualified"
-      ]
-    ],
+    "count": 0,
+    "names": [],
+    "interesting": [],
     "no_shape_count": 0,
     "filled": 0
   },
-  "scan_log_public": "13 names on the list \u00b7 0 tickets.",
+  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
-    "up": [
-      {
-        "sym": "META",
-        "chg_pct": 10.93
-      },
-      {
-        "sym": "MSTR",
-        "chg_pct": 8.77
-      },
-      {
-        "sym": "IBIT",
-        "chg_pct": 6.35
-      }
-    ],
+    "up": [],
     "down": []
   },
   "desk_freshness": {
     "watch": "2:25",
-    "crypto": "9:48"
+    "crypto": "6:46"
   },
-  "desk_board": [
-    {
-      "sym": "ACN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "AMD",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "ARM",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "COIN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "DIA",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "IBIT",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "INTC",
-      "status": "WATCH",
-      "why": "On the list. No ticket."
-    },
-    {
-      "sym": "IREN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "META",
-      "status": "WATCH",
-      "why": "On the list. No ticket."
-    },
-    {
-      "sym": "MSTR",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "QQQ",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "SPY",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "WBD",
-      "status": "OUT",
-      "why": "Not in play."
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-18T16:36:49Z",
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
-    "IBIT": [
+    "INTC": [
       {
-        "t": "8:07 AM ET",
+        "t": "7:46 AM ET",
         "line": "Added to the list."
-      },
-      {
-        "t": "10:16 AM ET",
-        "line": "Checked \u2014 no ticket."
-      },
-      {
-        "t": "10:42 AM ET",
-        "line": "Not in play."
-      },
-      {
-        "t": "10:48 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "3:26 PM ET",
-        "line": "Not in play."
       }
     ],
     "META": [
       {
-        "t": "9:35 AM ET",
+        "t": "7:46 AM ET",
         "line": "Added to the list."
-      },
-      {
-        "t": "10:25 AM ET",
-        "line": "Checked \u2014 no ticket."
-      },
-      {
-        "t": "01:50 PM ET",
-        "line": "Checked \u2014 no ticket."
-      },
-      {
-        "t": "02:51 PM ET",
-        "line": "Checked \u2014 no ticket."
-      }
-    ],
-    "INTC": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "12:06 PM ET",
-        "line": "Checked \u2014 no ticket."
-      }
-    ],
-    "SPY": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "2:20 PM ET",
-        "line": "Not in play."
-      }
-    ],
-    "QQQ": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "1:49 PM ET",
-        "line": "Not in play."
-      }
-    ],
-    "USO": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "XLE": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "MRVL": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "COIN": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:53 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "MSTR": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:53 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "CRCL": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "HOOD": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "IREN": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:53 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "MU": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "GNRC": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "AMZN": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "SMCI": [
-      {
-        "t": "8:07 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "ACN": [
-      {
-        "t": "9:35 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:53 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "AMD": [
-      {
-        "t": "2:07 PM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "3:05 PM ET",
-        "line": "Not in play."
-      }
-    ],
-    "ARM": [
-      {
-        "t": null,
-        "line": "Not in play."
-      }
-    ],
-    "DIA": [
-      {
-        "t": null,
-        "line": "Not in play."
-      }
-    ],
-    "WBD": [
-      {
-        "t": null,
-        "line": "Not in play."
       }
     ]
   },
@@ -1178,10 +599,10 @@
   },
   "pulse": {
     "last_look_iso": "2026-09-21T19:25:00Z",
-    "names": 13,
+    "names": 0,
     "tickets": 0,
-    "cadence_min": 4
+    "cadence_min": 30
   },
-  "today_label": "Mon 9/21",
-  "narrative_line": "META ripping. No ticket. Board still live."
+  "today_label": "Tue 9/22",
+  "narrative_line": null
 }
