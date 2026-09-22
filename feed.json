@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:16:41Z",
+  "generated_at": "2026-09-22T02:20:31Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -377,10 +377,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85747,
-      "chg_pct": 4.88,
+      "last": 85555.65,
+      "chg_pct": 0.63,
       "history": [
-        86049.345,
         86036.505,
         86036.985,
         85930.415,
@@ -410,17 +409,15 @@
         86553.125,
         86506.0,
         86561.585,
-        86395,
-        85747
+        85555.655
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2748.91,
-      "chg_pct": 2.3,
+      "last": 2739.42,
+      "chg_pct": 0.46,
       "history": [
-        2751.845,
         2749.515,
         2749.255,
         2749.295,
@@ -450,17 +447,15 @@
         2765.305,
         2764.3,
         2765.075,
-        2774.92,
-        2748.91
+        2739.42
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.93,
-      "chg_pct": 4.68,
+      "last": 117.25,
+      "chg_pct": 0.4,
       "history": [
-        117.545,
         117.635,
         117.435,
         117.445,
@@ -490,8 +485,7 @@
         118.165,
         118.145,
         118.175,
-        119.13,
-        117.93
+        117.255
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -736,27 +730,6 @@
       "tag": "Crypto",
       "title": "Bitcoin Price Explodes Past $84,000: Here Is What Is Driving BTC",
       "summary": "Fuel loaded Friday: hike delivered but path less hawkish than feared, then spot ETF inflows Thursday\u2013Friday (~$593M) reversed earlier-week outflows. Funding stayed low until price hit the $83k\u2013$86k short cluster. Golden cross and reclaim of corporate-treasury cost basis near $80.4k were already in. Squeeze risk at the equity open is two-way."
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Why Intel, Arm, and Other AI Chip Stocks Soared Today",
-      "summary": "Meta's Muse could usher in a wave of agentic AI-driven growth for chipmakers.",
-      "url": "https://www.fool.com/investing/2026/09/21/why-intel-arm-amd-ai-chip-stocks-soared-today/?.tsrc=rss",
-      "ts": "2026-09-22T01:03:18Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
-      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
-      "ts": "2026-09-21T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin could test $90,000 after shorts get squeezed, but traders warn leverage is building",
-      "summary": "Bitcoin has broken out to $86,000, but analysts say the next leg depends on whether spot buyers continue to show up as leverage builds.",
-      "url": "https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building",
-      "ts": "2026-09-21T20:39:39Z"
     }
   ],
   "calendar": [
@@ -884,7 +857,7 @@
   },
   "desk_freshness": {
     "watch": "2:25",
-    "crypto": "2:45"
+    "crypto": "9:20"
   },
   "desk_board": [
     {

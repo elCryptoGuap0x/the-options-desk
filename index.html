@@ -2278,9 +2278,16 @@
     if (asofEl) {
       if (macroKeys.length && macro.asof) {
         var asofDate = new Date(macro.asof);
+        // Fixed 9/21, real bug caught live (screenshot at 8:16 PM CT --
+        // not any market's close): "close" was hardcoded onto this
+        // stamp regardless of what time it actually was. This field is
+        // a last-print timestamp (server-side merge_macro only advances
+        // it when a value genuinely changes, per the comment above), not
+        // a claim that markets closed at that moment -- dropping the
+        // word instead of asserting something false.
         asofEl.textContent = isNaN(asofDate.getTime()) ? "" :
           "as of " + asofDate.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }) + " " +
-          asofDate.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT close";
+          asofDate.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT";
       } else {
         asofEl.textContent = "";
       }
