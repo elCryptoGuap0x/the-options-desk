@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-22T19:57:25Z",
+  "generated_at": "2026-09-22T19:58:44Z",
   "session": {
     "day_label": "TUE",
-    "market_state": "CLOSED",
+    "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-23T13:30:00Z",
     "position": "FLAT"
@@ -17,7 +17,7 @@
     "net_per_ticket": "\u2014",
     "hold_typ": "\u2014",
     "prior_week_record": "1-6",
-    "session_pnl_usd": 17.0,
+    "session_pnl_usd": 0.0,
     "prior_week_net_usd": -75
   },
   "sparkline_cum_pct": [
@@ -330,7 +330,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "Session over. +$17.",
+  "roast": "",
   "streak_last8": [
     "L",
     "L",
@@ -394,13 +394,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86179,
-      "chg_pct": -0.49,
+      "last": 86274.48,
+      "chg_pct": 0.25,
       "history": [
-        86630.695,
-        86515.055,
-        86461.485,
-        86372.035,
         86322.595,
         86379.715,
         86422.795,
@@ -427,19 +423,18 @@
         86439.09,
         86402.215,
         86339.095,
-        86179
+        86285.375,
+        86221.535,
+        86174.675,
+        86274.475
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2746.17,
-      "chg_pct": -0.54,
+      "last": 2750.26,
+      "chg_pct": 0.22,
       "history": [
-        2755.725,
-        2752.91,
-        2750.445,
-        2747.44,
         2746.25,
         2749.49,
         2748.355,
@@ -466,18 +461,18 @@
         2757.125,
         2754.335,
         2751.845,
-        2746.17
+        2751.785,
+        2748.19,
+        2745.885,
+        2750.255
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.87,
-      "chg_pct": -0.11,
+      "last": 117.98,
+      "chg_pct": 0.52,
       "history": [
-        118.155,
-        118.315,
-        118.175,
         118.08,
         118.005,
         117.725,
@@ -505,17 +500,17 @@
         118.405,
         118.35,
         118.05,
-        117.87
+        117.875,
+        117.85,
+        117.98
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 774.56,
-      "chg_pct": 0.06,
+      "last": 773.75,
+      "chg_pct": -0.05,
       "history": [
-        773.311,
-        773.26,
         773.16,
         773.37,
         773.345,
@@ -543,17 +538,17 @@
         774.36,
         774.905,
         774.39,
-        774.56
+        774.56,
+        774.82,
+        773.75
       ],
-      "status": "watching",
-      "why": "On the list. No ticket."
+      "status": "ruled out",
+      "why": "Not in play."
     },
     "QQQ": {
-      "last": 747.65,
-      "chg_pct": 0.8,
+      "last": 747.5,
+      "chg_pct": 0.78,
       "history": [
-        745.295,
-        745.28,
         745.09,
         745.4,
         745.15,
@@ -581,17 +576,17 @@
         747.32,
         747.75,
         747.29,
-        747.65
+        747.65,
+        748.22,
+        747.5
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "IWM": {
-      "last": 287.87,
-      "chg_pct": -0.01,
+      "last": 287.21,
+      "chg_pct": -0.24,
       "history": [
-        286.79,
-        286.88,
         286.75,
         286.74,
         286.9,
@@ -619,17 +614,17 @@
         287.39,
         287.86,
         287.72,
-        287.87
+        287.87,
+        287.56,
+        287.21
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "NVDA": {
-      "last": 229.19,
-      "chg_pct": 1.33,
+      "last": 228.94,
+      "chg_pct": 1.22,
       "history": [
-        229.68,
-        229.79,
         229.69,
         229.445,
         229.26,
@@ -657,17 +652,17 @@
         229.615,
         229.73,
         229.4,
-        229.19
+        229.19,
+        229.83,
+        228.935
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "META": {
-      "last": 738.36,
-      "chg_pct": -0.96,
+      "last": 736.2,
+      "chg_pct": -1.25,
       "history": [
-        744.225,
-        745.53,
         745.2,
         744.04,
         742.982,
@@ -695,7 +690,9 @@
         740.27,
         739.645,
         739.17,
-        738.36
+        738.36,
+        739.5,
+        736.195
       ],
       "status": "ruled out",
       "why": "Not in play."
@@ -729,11 +726,9 @@
       "why": "Not in play."
     },
     "IBIT": {
-      "last": 48.88,
-      "chg_pct": 0.04,
+      "last": 48.84,
+      "chg_pct": -0.02,
       "history": [
-        48.975,
-        48.98,
         48.975,
         49.015,
         49.065,
@@ -761,10 +756,12 @@
         48.975,
         48.935,
         48.93,
-        48.875
+        48.875,
+        48.865,
+        48.845
       ],
       "status": "no setup",
-      "why": "Looked 3:47 PM ET \u2014 no break, quiet tape."
+      "why": "Looked 3:58 PM ET \u2014 no break, quiet tape."
     },
     "IREN": {
       "last": 47.92,
@@ -806,27 +803,6 @@
       "tag": "Stocks",
       "title": "UNGA 2026 live: Trump to speak as world leaders gather",
       "summary": "Trump second speaker today after Lula; also meets Zelensky and formalizes Greenland security deal. Iran war, Ukraine, AI regulation and climate on agenda. Iranian delegation present; diplomacy headlines possible."
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Apple Takes Aim at Nvidia\u2019s AI Economics: New Macs Have \u2018No Cost per Token,\u2019 Hardware Chief Says",
-      "summary": "Apple Inc. (NASDAQ:AAPL) is pitching its newest Macs as a way for businesses to run powerful AI models without paying per-token cloud charges, taking aim at the economics behind the AI infrastructure boom.\u201cThere\u2019s no cost per token. You\u2019re ",
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61932828/apple-macs-ai-no-cost-per-token-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-      "ts": "2026-09-22T19:32:50Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
-      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
-      "ts": "2026-09-21T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Canada's 'Big Six' banks to launch interbank tokenized deposit initiative",
-      "summary": "Initial testing will focus on moving digital commercial deposits across participating institutions before linking to broader digital asset ecosystems.",
-      "url": "https://www.coindesk.com/business/2026/09/22/canada-s-big-six-banks-unite-to-launch-interbank-tokenized-deposit-initiative",
-      "ts": "2026-09-22T17:34:03Z"
     }
   ],
   "calendar": [
@@ -908,7 +884,7 @@
       ],
       [
         "SPY",
-        "watching"
+        "disqualified"
       ]
     ],
     "no_shape_count": 1,
@@ -924,7 +900,7 @@
       },
       {
         "sym": "NVDA",
-        "chg_pct": 1.33
+        "chg_pct": 1.22
       },
       {
         "sym": "IREN",
@@ -938,17 +914,17 @@
       },
       {
         "sym": "META",
-        "chg_pct": -0.96
+        "chg_pct": -1.25
       },
       {
         "sym": "IWM",
-        "chg_pct": -0.01
+        "chg_pct": -0.24
       }
     ]
   },
   "desk_freshness": {
-    "watch": "2:47",
-    "crypto": "2:49"
+    "watch": "2:58",
+    "crypto": "2:58"
   },
   "desk_board": [
     {
@@ -993,8 +969,8 @@
     },
     {
       "sym": "SPY",
-      "status": "OUT",
-      "why": "Not in play."
+      "status": "WATCH",
+      "why": "On the list. No ticket."
     }
   ],
   "last_fill_at": "2026-09-18T16:36:49Z",
@@ -1028,6 +1004,10 @@
       {
         "t": "3:40 PM ET",
         "line": "Added to the list."
+      },
+      {
+        "t": "3:58 PM ET",
+        "line": "Not in play."
       }
     ],
     "QQQ": [
@@ -1111,7 +1091,7 @@
     "asof": "2026-09-22T19:57:25Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-22T19:47:40Z",
+    "last_look_iso": "2026-09-22T19:58:30Z",
     "names": 10,
     "tickets": 3,
     "cadence_min": 4
