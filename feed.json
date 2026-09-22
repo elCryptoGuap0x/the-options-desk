@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T22:48:53Z",
+  "generated_at": "2026-09-22T01:16:41Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -377,8 +377,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86395,
-      "chg_pct": 6.46,
+      "last": 85747,
+      "chg_pct": 4.88,
       "history": [
         86049.345,
         86036.505,
@@ -410,14 +410,15 @@
         86553.125,
         86506.0,
         86561.585,
-        86395
+        86395,
+        85747
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2774.92,
-      "chg_pct": 5.18,
+      "last": 2748.91,
+      "chg_pct": 2.3,
       "history": [
         2751.845,
         2749.515,
@@ -449,14 +450,15 @@
         2765.305,
         2764.3,
         2765.075,
-        2774.92
+        2774.92,
+        2748.91
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.13,
-      "chg_pct": 7.9,
+      "last": 117.93,
+      "chg_pct": 4.68,
       "history": [
         117.545,
         117.635,
@@ -488,7 +490,8 @@
         118.165,
         118.145,
         118.175,
-        119.13
+        119.13,
+        117.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -736,10 +739,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Robinhood CEO Says Crypto Will Beat Sports at Prediction Markets' Own Game",
-      "summary": "Robinhood CEO Vlad Tenev says crypto event contracts are already outpacing sports bets, and could become the platform's dominant category within a few years.",
-      "url": "https://decrypt.co/378889/robinhood-ceo-crypto-will-beat-sports-prediction-markets?.tsrc=rss",
-      "ts": "2026-09-21T21:46:03Z"
+      "title": "Why Intel, Arm, and Other AI Chip Stocks Soared Today",
+      "summary": "Meta's Muse could usher in a wave of agentic AI-driven growth for chipmakers.",
+      "url": "https://www.fool.com/investing/2026/09/21/why-intel-arm-amd-ai-chip-stocks-soared-today/?.tsrc=rss",
+      "ts": "2026-09-22T01:03:18Z"
     },
     {
       "tag": "OPTIONS",
@@ -1147,17 +1150,17 @@
     ]
   },
   "btc_range": {
-    "last": 86395,
+    "last": 85776,
     "high_24h": 87330,
-    "low_24h": 80907,
-    "chg_pct": 6.46
+    "low_24h": 80979,
+    "chg_pct": 4.88
   },
   "macro": {
     "10Y": 4.96,
-    "DXY": 100.42,
-    "WTI": 92.04,
+    "DXY": 100.39,
+    "WTI": 92.89,
     "VIX": 14.87,
-    "asof": "2026-09-21T22:48:53Z"
+    "asof": "2026-09-22T01:16:41Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-21T19:25:00Z",
