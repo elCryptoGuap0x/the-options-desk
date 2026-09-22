@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T11:50:30Z",
+  "generated_at": "2026-09-22T11:54:36Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -394,33 +394,36 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86042.49,
-      "chg_pct": -0.02,
+      "last": 85994,
+      "chg_pct": 1.33,
       "history": [
         86056.775,
         86050.755,
-        86042.485
+        86042.485,
+        85994
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2745.14,
-      "chg_pct": 0.04,
+      "last": 2742.13,
+      "chg_pct": 0.64,
       "history": [
         2744.165,
-        2745.145
+        2745.145,
+        2742.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.4,
-      "chg_pct": 0.02,
+      "last": 117.27,
+      "chg_pct": 0.39,
       "history": [
         117.375,
         117.415,
-        117.4
+        117.4,
+        117.27
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -523,6 +526,27 @@
       "tag": "Stocks",
       "title": "UNGA 2026 live: Trump to speak as world leaders gather",
       "summary": "Trump second speaker today after Lula; also meets Zelensky and formalizes Greenland security deal. Iran war, Ukraine, AI regulation and climate on agenda. Iranian delegation present; diplomacy headlines possible."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Shopify Embraces Meta\u2019s Muse Across All Stores as Amazon Blocks It \u2013 and the Merchant Landscape Splits in Two",
+      "summary": "The Three Errands That Failed On September 9, one day after Meta launched Muse, PYMNTS ran the agent through three basic consumer tasks: reordering toilet paper on Amazon, ordering a pizza from Domino\u2019s, and booking a reservation on Resy. A",
+      "url": "https://finance.yahoo.com/technology/ai/articles/shopify-embraces-meta-muse-across-113401279.html?.tsrc=rss",
+      "ts": "2026-09-22T11:34:01Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
+      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
+      "ts": "2026-09-21T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "A $3.2 million 'bitcoin butterfly' option trade bets on $95,000 by the end of October",
+      "summary": "Your day-ahead look for Sept. 22, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/09/22/a-usd3-2-million-bitcoin-butterfly-option-trade-bets-on-usd95-000-by-the-end-of-october",
+      "ts": "2026-09-22T11:35:43Z"
     }
   ],
   "calendar": [
@@ -622,17 +646,17 @@
     ]
   },
   "btc_range": {
-    "last": 85286,
+    "last": 85994,
     "high_24h": 87330,
-    "low_24h": 81460,
-    "chg_pct": 4.33
+    "low_24h": 84806,
+    "chg_pct": 1.33
   },
   "macro": {
     "10Y": 4.96,
-    "DXY": 100.43,
-    "WTI": 93.7,
-    "VIX": 14.87,
-    "asof": "2026-09-22T06:21:35Z"
+    "DXY": 100.42,
+    "WTI": 90.12,
+    "VIX": 14.7,
+    "asof": "2026-09-22T11:54:36Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-21T19:25:00Z",
