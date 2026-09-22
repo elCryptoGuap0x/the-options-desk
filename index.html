@@ -1798,8 +1798,36 @@
   // This week's real tickets (dated day label, "Fri 9/18" -- same test
   // used to split the archive collapse in renderTickets), for the
   // closed-state desk facts below.
+  // Fixed 9/21, real bug caught live: this never actually scoped to the
+  // current calendar week -- /\d/.test(t.day) just means "has a real
+  // dated day label at all" (true for every ticket ever closed since
+  // the bare-weekday-only format was dropped), not "closed this week."
+  // The desk's own "This week: Best/Worst" line kept showing last
+  // week's real COIN trades under a "This week" label days into the
+  // new week -- same rollover bug class as tonight's server-side fixes
+  // (site-build.py's find_week_closes/roll_week_if_needed), just a
+  // fourth instance of it, this time client-side. Computes this week's
+  // real Mon-Fri day labels in CT (same format todayDayLabel() already
+  // uses) via plain millisecond arithmetic on Date.now() -- never
+  // parses a formatted string back into a Date, which is the fragile
+  // part of doing this in another timezone.
+  function ctWeekdayIndex() {
+    var wd = new Date().toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" });
+    return { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }[wd];
+  }
+  function thisWeekDayLabels() {
+    var idx = ctWeekdayIndex();
+    var mondayOffsetDays = idx === 0 ? 6 : idx - 1;
+    var labels = [];
+    for (var i = 0; i < 5; i++) {
+      var d = new Date(Date.now() - mondayOffsetDays * 86400000 + i * 86400000);
+      labels.push(d.toLocaleDateString("en-US", { weekday: "short", month: "numeric", day: "numeric", timeZone: "America/Chicago" }).replace(",", ""));
+    }
+    return labels;
+  }
   function weekTickets(tickets) {
-    return (tickets || []).filter(function (t) { return /\d/.test(t.day || ""); });
+    var labels = thisWeekDayLabels();
+    return (tickets || []).filter(function (t) { return labels.indexOf(t.day) !== -1; });
   }
   function pctSpan(pct) {
     return '<span class="' + (pct >= 0 ? "good" : "bad") + '">' + fmtPct(pct) + '</span>';
