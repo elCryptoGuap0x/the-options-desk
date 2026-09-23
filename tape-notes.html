@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tape Notes · Issue 00</title>
+  <style>
+    :root {
+      --bg: #0c1014;
+      --panel: #141a21;
+      --line: #24303c;
+      --ink: #e8edf2;
+      --muted: #8b9aab;
+      --dim: #5e6d7c;
+      --gold: #c9b37a;
+      --good: #6fbf9a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+    body { min-height: 100vh; }
+    .wrap {
+      max-width: 420px; margin: 0 auto; min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+    header.top {
+      padding: 14px 18px 8px; display: flex; justify-content: space-between;
+      align-items: baseline; color: var(--dim);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    }
+    .stage { flex: 1; padding: 8px 16px 16px; }
+    article.page {
+      display: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      min-height: 520px;
+      padding: 28px 24px 24px;
+    }
+    article.page.on { display: block; }
+    .kicker {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gold); margin: 0 0 10px;
+    }
+    h1 {
+      font-weight: 500; font-size: 28px; line-height: 1.15;
+      margin: 0 0 16px; letter-spacing: -0.02em;
+    }
+    h2 {
+      font-weight: 500; font-size: 22px; line-height: 1.2;
+      margin: 0 0 14px;
+    }
+    p { font-size: 16px; line-height: 1.55; color: #d5dde6; margin: 0 0 12px; }
+    p.lead { font-size: 17px; color: var(--ink); }
+    p.fine { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    ul { margin: 8px 0 0; padding: 0 0 0 18px; color: #d5dde6; }
+    li { margin: 0 0 8px; line-height: 1.45; }
+    .rule { height: 1px; background: var(--line); margin: 18px 0; }
+    nav.bar {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 16px 22px;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    button {
+      background: #1c242e; color: var(--ink); border: 1px solid var(--line);
+      border-radius: 999px; padding: 8px 14px; cursor: pointer;
+      font-size: 13px;
+    }
+    button:disabled { opacity: 0.35; cursor: default; }
+    .dots { flex: 1; display: flex; justify-content: center; gap: 5px; }
+    .dots i {
+      width: 6px; height: 6px; border-radius: 50%; background: #2a3542;
+      display: inline-block;
+    }
+    .dots i.on { background: var(--gold); }
+    .pg { color: var(--dim); font-size: 11px; min-width: 42px; text-align: right; }
+    .cover-sub { color: var(--muted); font-size: 15px; margin-top: -8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <span>The Options Desk</span>
+      <span>Issue 00 · Free</span>
+    </header>
+
+    <div class="stage">
+      <article class="page on" data-i="0">
+        <p class="kicker">Tape Notes</p>
+        <h1>What you're looking at</h1>
+        <p class="lead">A short pamphlet on short-dated options. Ten pages. No ticker. No "today." No next trade.</p>
+        <div class="rule"></div>
+        <p class="fine">Education and entertainment only. Not investment advice. Not a signal service. The live tape on the desk is a log of one small account. This issue is the language. It does not change.</p>
+      </article>
+
+      <article class="page" data-i="1">
+        <p class="kicker">01</p>
+        <h2>What this desk is</h2>
+        <p>A public log of one account that trades short-dated options — contracts that expire the same day or within two days.</p>
+        <p>One position at a time. Long stretches with no ticket are normal. Flat is a state, not a failure.</p>
+      </article>
+
+      <article class="page" data-i="2">
+        <p class="kicker">02</p>
+        <h2>Option is not stock</h2>
+        <p>You are not buying the company. You are renting a bet that price moves enough, soon enough, to pay the contract.</p>
+        <p>The stock can be "right" later and the option can still lose. Time and the bid-ask spread take premium even when the idea was directionally fine.</p>
+      </article>
+
+      <article class="page" data-i="3">
+        <p class="kicker">03</p>
+        <h2>0DTE, 1DTE, 2DTE</h2>
+        <p>Those labels are days to expiration. Fewer days means faster decay and jumpy quotes.</p>
+        <p>These are not shares you hold through a thesis. Think minutes to a few hours. Holding to the bell is not the default plan.</p>
+      </article>
+
+      <article class="page" data-i="4">
+        <p class="kicker">04</p>
+        <h2>Call versus put</h2>
+        <p>A call wants the underlying up. A put wants it down. The badge on a ticket is the side.</p>
+        <p>The percentage on a ticket is the contract — not the stock, and not the whole account. A +20% contract on a small size is still a small dollar result.</p>
+      </article>
+
+      <article class="page" data-i="5">
+        <p class="kicker">05</p>
+        <h2>How to read a ticket</h2>
+        <ul>
+          <li>Name and side (call or put).</li>
+          <li>Minutes held.</li>
+          <li>In and out, in contract dollars.</li>
+          <li>Percent on the contract.</li>
+        </ul>
+        <p>Dots under a ticket, when they exist, are minute marks: green means the option marked up that minute, red means down. A replay is the same story compressed.</p>
+      </article>
+
+      <article class="page" data-i="6">
+        <p class="kicker">06</p>
+        <h2>Most names never print</h2>
+        <p>A ticker being up or down is not a reason to trade. Looking at many names and taking few is the job.</p>
+        <p>"Looked, passed" is a decision. Zero fills in a session can be correct. Activity is not skill.</p>
+      </article>
+
+      <article class="page" data-i="7">
+        <p class="kicker">07</p>
+        <h2>Why size stays small</h2>
+        <p>Short-dated options can lose most of their value quickly. Quotes can gap. Tools can fail.</p>
+        <p>One name. A cap on how much of the account sits in one contract. A green print is not a reason to raise size.</p>
+      </article>
+
+      <article class="page" data-i="8">
+        <p class="kicker">08</p>
+        <h2>Exits exist on purpose</h2>
+        <p>Winners get protected. Losers get cut. Time with no progress gets cut.</p>
+        <p>Holding to expiration is not the plan. Flattening later in the session is risk control. Leaving money on the table after a lock is normal, not a bug you "fix" by riding every winner to the low.</p>
+      </article>
+
+      <article class="page" data-i="9">
+        <p class="kicker">09</p>
+        <h2>How to watch the site</h2>
+        <p>The tape is a log. It is often delayed. It is not a live "buy this" feed.</p>
+        <p>A 100% win rate on one ticket is 1 of 1. The week table is more honest than a single chip. If you trade, you use your rules and your size.</p>
+      </article>
+
+      <article class="page" data-i="10">
+        <p class="kicker">10</p>
+        <h2>What this is not</h2>
+        <p>Not investment advice. Not a signal service. Not a proven system. Tips buy nothing — no rules, no next trade, no private chat.</p>
+        <p>Issues 01–04 exist only if someone asks: spreads and fills, reading a loser, time of day, samples and streaks. Until then, this is the whole free book.</p>
+        <div class="rule"></div>
+        <p class="fine">© The Options Desk · Tape Notes 00. Entertainment and education. Results on the live tape are historical and not indicative of future performance. Same-day options can go to zero.</p>
+      </article>
+    </div>
+
+    <nav class="bar">
+      <button id="prev" type="button">Prev</button>
+      <div class="dots" id="dots"></div>
+      <span class="pg" id="pg">1 / 11</span>
+      <button id="next" type="button">Next</button>
+    </nav>
+  </div>
+  <script>
+    const pages = [...document.querySelectorAll("article.page")];
+    const dots = document.getElementById("dots");
+    const pg = document.getElementById("pg");
+    const prev = document.getElementById("prev");
+    const next = document.getElementById("next");
+    let i = 0;
+    pages.forEach((_, n) => {
+      const el = document.createElement("i");
+      if (n === 0) el.classList.add("on");
+      dots.appendChild(el);
+    });
+    function show(n) {
+      i = Math.max(0, Math.min(pages.length - 1, n));
+      pages.forEach((p, k) => p.classList.toggle("on", k === i));
+      [...dots.children].forEach((d, k) => d.classList.toggle("on", k === i));
+      pg.textContent = (i + 1) + " / " + pages.length;
+      prev.disabled = i === 0;
+      next.disabled = i === pages.length - 1;
+    }
+    prev.onclick = () => show(i - 1);
+    next.onclick = () => show(i + 1);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); show(i + 1); }
+      if (e.key === "ArrowLeft") show(i - 1);
+    });
+    let x0 = null;
+    document.querySelector(".stage").addEventListener("touchstart", (e) => { x0 = e.changedTouches[0].screenX; }, { passive: true });
+    document.querySelector(".stage").addEventListener("touchend", (e) => {
+      if (x0 == null) return;
+      const dx = e.changedTouches[0].screenX - x0;
+      if (dx < -40) show(i + 1);
+      if (dx > 40) show(i - 1);
+      x0 = null;
+    });
+    show(0);
+  </script>
+</body>
+</html>

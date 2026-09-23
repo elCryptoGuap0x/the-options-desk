@@ -780,6 +780,7 @@
     background: none; border: 1px solid var(--border); border-radius: 20px;
     padding: 9px 20px; cursor: pointer; letter-spacing: 0.05em;
     transition: border-color 0.15s ease, color 0.15s ease;
+    display: inline-block; text-decoration: none;
   }
   .note-btn:hover { border-color: var(--gold); color: var(--gold); }
   .note-form { display: flex; flex-direction: column; gap: 8px; }
@@ -960,6 +961,7 @@
 
     <div class="tip-jar-wrap">
       <div class="footer-actions">
+        <a class="note-btn" href="tape-notes.html" target="_blank" rel="noopener">📖 Tape Notes</a>
         <button class="tip-jar-btn" id="tip-jar-toggle" type="button">🫙 Tip the desk</button>
         <button class="note-btn" id="note-toggle" type="button">✉️ Send a note</button>
       </div>
