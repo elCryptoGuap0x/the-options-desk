@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:55:10Z",
+  "generated_at": "2026-09-23T16:58:24Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -439,11 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83899.93,
-      "chg_pct": -1.85,
+      "last": 83953.75,
+      "chg_pct": -1.79,
       "history": [
-        84419.315,
-        84294.425,
         84219.215,
         84205.975,
         84167.195,
@@ -471,17 +469,17 @@
         84009.705,
         83902.085,
         83880.98,
-        83899.925
+        83899.925,
+        83927.545,
+        83953.75
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2656.07,
-      "chg_pct": -2.48,
+      "last": 2657.35,
+      "chg_pct": -2.43,
       "history": [
-        2666.015,
-        2664.23,
         2657.81,
         2657.04,
         2657.87,
@@ -509,17 +507,17 @@
         2661.875,
         2657.93,
         2653.74,
-        2656.075
+        2656.075,
+        2656.95,
+        2657.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 114.06,
-      "chg_pct": -2.58,
+      "last": 114.28,
+      "chg_pct": -2.39,
       "history": [
-        114.425,
-        114.03,
         114.0,
         113.95,
         114.155,
@@ -547,14 +545,16 @@
         114.315,
         114.165,
         113.905,
-        114.055
+        114.055,
+        114.07,
+        114.275
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 767.57,
-      "chg_pct": -0.8,
+      "last": 767.16,
+      "chg_pct": -0.85,
       "history": [
         773.75,
         772.06,
@@ -582,14 +582,15 @@
         768.42,
         768.3,
         767.96,
-        767.57
+        767.57,
+        767.16
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 739.43,
-      "chg_pct": -1.08,
+      "last": 739.04,
+      "chg_pct": -1.13,
       "history": [
         747.5,
         744.604,
@@ -617,14 +618,15 @@
         740.57,
         740.32,
         739.72,
-        739.43
+        739.43,
+        739.04
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IWM": {
-      "last": 282.61,
-      "chg_pct": -1.6,
+      "last": 282.33,
+      "chg_pct": -1.7,
       "history": [
         287.21,
         284.52,
@@ -652,14 +654,15 @@
         283.03,
         283.09,
         283.01,
-        282.605
+        282.605,
+        282.33
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "NVDA": {
-      "last": 224.22,
-      "chg_pct": -2.06,
+      "last": 224.36,
+      "chg_pct": -2.0,
       "history": [
         228.935,
         228.4,
@@ -687,7 +690,8 @@
         224.595,
         224.5,
         224.33,
-        224.22
+        224.22,
+        224.36
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -713,8 +717,8 @@
       "why": "Not in play."
     },
     "MSTR": {
-      "last": 163.41,
-      "chg_pct": -2.76,
+      "last": 163.47,
+      "chg_pct": -2.73,
       "history": [
         168.05,
         167.6875,
@@ -742,7 +746,8 @@
         163.935,
         163.565,
         163.96,
-        163.41
+        163.41,
+        163.4672
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -783,8 +788,8 @@
       "why": "On the list. No ticket."
     },
     "IBIT": {
-      "last": 47.51,
-      "chg_pct": -2.74,
+      "last": 47.52,
+      "chg_pct": -2.71,
       "history": [
         48.845,
         48.615,
@@ -813,14 +818,15 @@
         47.7,
         47.585,
         47.64,
-        47.505
+        47.505,
+        47.5226
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IREN": {
-      "last": 47.94,
-      "chg_pct": 0.04,
+      "last": 47.84,
+      "chg_pct": -0.17,
       "history": [
         47.92,
         48.48,
@@ -848,14 +854,15 @@
         48.292,
         48.19,
         48.0,
-        47.9399
+        47.9399,
+        47.84
       ],
       "status": "no setup",
-      "why": "Looked 12:51 PM ET \u2014 no break, quiet tape."
+      "why": "Looked 12:56 PM ET \u2014 no break, quiet tape."
     },
     "XLE": {
-      "last": 62.42,
-      "chg_pct": -0.62,
+      "last": 62.15,
+      "chg_pct": -1.05,
       "history": [
         62.81,
         62.695,
@@ -879,7 +886,8 @@
         62.76,
         62.7335,
         62.765,
-        62.42
+        62.42,
+        62.15
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -1026,30 +1034,26 @@
       {
         "sym": "COIN",
         "chg_pct": 0.43
-      },
-      {
-        "sym": "IREN",
-        "chg_pct": 0.04
       }
     ],
     "down": [
       {
         "sym": "MSTR",
-        "chg_pct": -2.76
+        "chg_pct": -2.73
       },
       {
         "sym": "IBIT",
-        "chg_pct": -2.74
+        "chg_pct": -2.71
       },
       {
-        "sym": "SOL",
-        "chg_pct": -2.58
+        "sym": "ETH",
+        "chg_pct": -2.43
       }
     ]
   },
   "desk_freshness": {
-    "watch": "11:51",
-    "crypto": "11:55"
+    "watch": "11:56",
+    "crypto": "11:58"
   },
   "desk_board": [
     {
@@ -1153,13 +1157,7 @@
         "line": "Not in play."
       }
     ],
-    "IREN": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ],
-    "SOL": [
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
@@ -1180,7 +1178,7 @@
     "asof": "2026-09-23T12:08:51Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-23T16:51:00Z",
+    "last_look_iso": "2026-09-23T16:56:00Z",
     "names": 12,
     "tickets": 6,
     "cadence_min": 4
@@ -1194,6 +1192,6 @@
     "IBIT \u2014 still watching, nothing confirmed.",
     "IWM \u2014 already traded, done.",
     "META \u2014 move already extended.",
-    "MSTR \u2014 already faded, nothing left."
+    "MSTR \u2014 close, but not clean enough yet."
   ]
 }
