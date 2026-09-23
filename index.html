@@ -1000,7 +1000,7 @@
   var FALLBACK_DATA = {
     "generated_at": "2026-08-29T20:20:00Z",
     "session": { "day_label": "SAT", "market_state": "WEEKEND", "next_open": "MON 8:30 CT", "position": "FLAT" },
-    "stats": { "record": "4-10", "win_rate": "28.6%", "trades_this_week": 14, "typical_hold": "0DTE-1DTE", "avg_win": "+33.8%", "avg_loss": "-31.5%", "net_per_ticket": "-12.8%", "hold_typ": "~25 min", "prior_week_record": "3-9" },
+    "stats": { "record": "—", "win_rate": "—", "trades_this_week": 0, "typical_hold": "0DTE-1DTE", "avg_win": "—", "avg_loss": "—", "net_per_ticket": "—", "hold_typ": "—", "prior_week_record": "—" },
     "sparkline_cum_pct": [0],
     "prior_week_sparkline_cum_pct": [0, -37.5, -69.6, -101.0, -82.9, -112.1, -145.4, -106.1, -145.4, -113.3, -141.2, -95.7, -121.3, -148.1, -179.7],
     "tickets": [
@@ -1123,7 +1123,16 @@
   // during RTH, the 24/7 tape-refresh Action otherwise) regardless of
   // what Watch itself found, so its own age is a genuine heartbeat check,
   // independent of desk_board/pulse content.
-  var STALE_AFTER_MIN = 15;
+  // Raised 15->20 9/23, real feedback: Watch's own ambient (non-Door-A)
+  // board cadence legitimately runs 5-9 min under normal conditions and
+  // "can run 5-7 min under load, occasionally more" per this file's own
+  // note above -- a 15-min trip wire was firing "running behind" on
+  // ordinary quiet-tape cycles, not just genuine stalls, and a viewer
+  // reads that phrase as "the loop is dead," not "Watch is being
+  // thorough." 20 min keeps the check meaningful for a real stall
+  // (Watch's own 9/22 connectivity outage ran ~30-70 min, well past
+  // either threshold) without alarming on normal variance.
+  var STALE_AFTER_MIN = 20;
   function isFeedStale(generatedAt) {
     if (!generatedAt) return false;
     var d = new Date(generatedAt);
