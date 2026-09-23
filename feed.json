@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:04:38Z",
+  "generated_at": "2026-09-23T16:08:10Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -437,11 +437,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83899.99,
-      "chg_pct": -1.85,
+      "last": 84273.84,
+      "chg_pct": -1.41,
       "history": [
-        84198.095,
-        84311.745,
         84404.18,
         84449.31,
         84480.475,
@@ -469,17 +467,17 @@
         84167.195,
         84125.625,
         83998.595,
-        83899.995
+        83899.995,
+        83920.545,
+        84273.835
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2652.88,
-      "chg_pct": -2.59,
+      "last": 2664.1,
+      "chg_pct": -2.18,
       "history": [
-        2662.355,
-        2665.28,
         2668.895,
         2675.405,
         2675.585,
@@ -507,17 +505,17 @@
         2657.87,
         2659.625,
         2654.235,
-        2652.875
+        2652.875,
+        2652.745,
+        2664.1
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.95,
-      "chg_pct": -2.67,
+      "last": 114.89,
+      "chg_pct": -1.86,
       "history": [
-        114.245,
-        114.4,
         114.56,
         115.165,
         115.115,
@@ -545,7 +543,9 @@
         113.95,
         114.155,
         113.935,
-        113.95
+        113.95,
+        114.1,
+        114.895
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -963,14 +963,14 @@
         "chg_pct": -3.01
       },
       {
-        "sym": "SOL",
-        "chg_pct": -2.67
+        "sym": "ETH",
+        "chg_pct": -2.18
       }
     ]
   },
   "desk_freshness": {
     "watch": "11:02",
-    "crypto": "11:04"
+    "crypto": "11:08"
   },
   "desk_board": [
     {
@@ -1076,7 +1076,7 @@
         "line": "not a setup"
       }
     ],
-    "SOL": [
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
