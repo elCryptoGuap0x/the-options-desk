@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T01:26:24Z",
+  "generated_at": "2026-09-23T06:36:51Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-09-23T13:30:00Z",
     "position": "FLAT"
   },
@@ -394,8 +394,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86665,
-      "chg_pct": 1.19,
+      "last": 86428,
+      "chg_pct": 1.12,
       "history": [
         86379.715,
         86422.795,
@@ -428,14 +428,15 @@
         86274.475,
         86174.025,
         86200,
-        86665
+        86665,
+        86428
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2769.42,
-      "chg_pct": 0.83,
+      "last": 2756.33,
+      "chg_pct": 0.85,
       "history": [
         2749.49,
         2748.355,
@@ -468,14 +469,15 @@
         2750.255,
         2749.205,
         2756.77,
-        2769.42
+        2769.42,
+        2756.33
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.06,
-      "chg_pct": 1.14,
+      "last": 118.78,
+      "chg_pct": 1.69,
       "history": [
         118.005,
         117.725,
@@ -508,7 +510,8 @@
         117.98,
         118.12,
         118.59,
-        119.06
+        119.06,
+        118.78
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -812,10 +815,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Meta doesn't need the best AI model \u2014 it has something better: you.\n\nWhile OpenAI and Anthropic compete on raw model performance, Meta's new",
-      "summary": "Meta doesn't need the best AI model \u2014 it has something better: you. While OpenAI and Anthropic compete on raw model performance, Meta's new agent wins on data. They know what you want to buy before you do, and now they can finally act on it",
-      "url": "https://finance.yahoo.com/video/meta-doesnt-best-ai-model-230704784.html?.tsrc=rss",
-      "ts": "2026-09-22T23:07:04Z"
+      "title": "Trump-Xi Summit Could Reset Trade Tensions. 3 Things Investors Are Watching.",
+      "summary": "President Donald Trump and China\u2019s Xi Jinping are seeking stability as investors watch for progress on tariffs, trade deals, AI and Taiwan.",
+      "url": "https://finance.yahoo.com/m/cf5c08e0-b082-3348-82fb-63717b1ff78e/trump-xi-summit-could-reset.html?.tsrc=rss",
+      "ts": "2026-09-23T06:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -826,10 +829,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. regulator warns about cheating risks in 'mention markets' on prediction platforms",
-      "summary": "The Commodity Futures Trading Commission issued a new advisory to flag the unique dangers of markets based on individuals' behavior.",
-      "url": "https://www.coindesk.com/policy/2026/09/22/u-s-regulator-warns-about-cheating-risks-in-mention-markets-on-prediction-platforms",
-      "ts": "2026-09-23T00:00:45Z"
+      "title": "Solana starts testing upgrade that could cut finality from 12.8 seconds to 150 milliseconds",
+      "summary": "Alpenglow would let exchanges, bridges and merchants treat payments as irreversible almost immediately.",
+      "url": "https://www.coindesk.com/tech/2026/09/23/solana-starts-testing-upgrade-that-could-cut-finality-from-12-8-seconds-to-150-milliseconds",
+      "ts": "2026-09-23T05:16:22Z"
     }
   ],
   "calendar": [
@@ -1101,17 +1104,17 @@
     ]
   },
   "btc_range": {
-    "last": 86665,
-    "high_24h": 86639,
-    "low_24h": 85107,
-    "chg_pct": 1.2
+    "last": 86429,
+    "high_24h": 87251,
+    "low_24h": 85163,
+    "chg_pct": 1.14
   },
   "macro": {
     "10Y": 4.97,
-    "DXY": 100.61,
-    "WTI": 90.21,
+    "DXY": 100.74,
+    "WTI": 89.36,
     "VIX": 14.21,
-    "asof": "2026-09-23T01:26:24Z"
+    "asof": "2026-09-23T06:36:51Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-22T19:58:30Z",
