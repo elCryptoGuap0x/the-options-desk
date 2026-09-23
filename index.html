@@ -207,6 +207,11 @@
   .stat .n.good { color: var(--good); }
   .stat .n.bad { color: var(--bad); }
   .stat .l { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-top: 4px; }
+  /* Added 9/23, real feedback: a bare "100% win rate" on n=1 reads as a
+     promo even though the math is true -- this qualifier (e.g. "1 of 1
+     today") always sits right on the number so the sample size is never
+     separated from the stat it describes. */
+  .stat .n-note { display: block; font-family: var(--mono); font-size: 10px; font-weight: 400; color: var(--text-faint); }
 
   .expectancy {
     display: grid;
@@ -286,6 +291,14 @@
   .desk-facts-line { font-family: var(--mono); font-size: 12.5px; color: var(--text-dim); line-height: 1.7; }
   .desk-facts-line .good { color: var(--good); font-weight: 700; }
   .desk-facts-line .bad { color: var(--bad); font-weight: 700; }
+  /* Added 9/23, real feedback: "12 names, 6 tickets" is dead air for a
+     spectator watching a FLAT desk -- these are the delayed (15-40 min
+     old, same buffer as desk_board), plain-English answers to "what did
+     it actually look at and pass on," in the same terse public
+     vocabulary as everywhere else on this page (no door letters, no
+     internal jargon -- see classify_skip_line in site-build.py). */
+  .pass-lines { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border-soft); font-family: var(--mono); font-size: 11.5px; color: var(--text-faint); line-height: 1.8; }
+  .pass-lines-title { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-bottom: 4px; }
   .macro-section { margin: 28px 0 0; }
   .macro-strip {
     display: flex; flex-wrap: wrap; gap: 8px 22px;
@@ -561,6 +574,11 @@
   .ticket .pct { font-family: var(--mono); font-weight: 700; font-size: 14.5px; text-align: right; min-width: 62px; font-variant-numeric: tabular-nums; }
   .ticket-wrap { display: flex; flex-direction: column; gap: 0; }
   .ticket-wrap .ticket { border-radius: 9px 9px 0 0; }
+  /* Added 9/23, real feedback: "ticket is a result with no thesis" --
+     one plain-English sentence, public-safe (no box %, no hold %, no
+     door name), same one-off backfill convention as fuse dots. */
+  .ticket-thesis { font-size: 12px; color: var(--text-dim); padding: 0 16px 8px; background: var(--surface); border: 1px solid var(--border-soft); border-top: none; border-bottom: none; }
+  .fuse-legend { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); margin: 0 0 10px; }
   .fuse-row {
     display: flex; gap: 3px; padding: 8px 16px 10px;
     background: var(--surface); border: 1px solid var(--border-soft); border-top: none;
@@ -894,6 +912,7 @@
     <div class="section-title">On the desk</div>
     <div class="feed" id="scan-log"></div>
     <div class="desk-board" id="desk-board"></div>
+    <div class="pass-lines" id="pass-lines"></div>
     <div class="desk-freshness" id="desk-freshness"></div>
   </section>
 
@@ -1139,6 +1158,32 @@
     if (isNaN(d.getTime())) return false;
     return (Date.now() - d.getTime()) > STALE_AFTER_MIN * 60 * 1000;
   }
+  // Added 9/23, real feedback: a plain-English recap under the status
+  // pill that fires even on a day that already has a real ticket
+  // (unlike narrative-line, which defers to the ticket card then) --
+  // pure string from the feed, no model call.
+  function renderSessionCaption(caption, session) {
+    var el = document.getElementById("session-caption");
+    if (!el) return;
+    el.textContent = (session && session.market_state === "OPEN" && caption) ? caption : "";
+  }
+
+  // Added 9/23, real feedback ("12 names isn't a story"): the delayed,
+  // per-name pass lines from site-build.py's classify_skip_line, same
+  // 15-40 min buffer as desk_board. Only rendered while the market is
+  // open and flat -- once a position is live the desk board itself is
+  // the story, and off-hours this would just be stale noise.
+  function renderPassLines(lines, session) {
+    var el = document.getElementById("pass-lines");
+    if (!el) return;
+    if (!session || session.market_state !== "OPEN" || !lines || !lines.length) {
+      el.innerHTML = "";
+      return;
+    }
+    el.innerHTML = '<div class="pass-lines-title">Looked at, passed on (~20 min delayed)</div>' +
+      lines.map(function (l) { return '<div>' + l + '</div>'; }).join("");
+  }
+
   function renderSession(session, generatedAt) {
     var pill = document.getElementById("status-pill");
     var text = document.getElementById("status-text");
@@ -1221,7 +1266,9 @@
       statsRowEl.innerHTML =
         '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
         sessionHtml +
-        '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate + '</div><div class="l">Win rate</div></div>' +
+        '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate +
+          (stats.today_record ? '<span class="n-note">' + stats.today_record + '</span>' : '') +
+          '</div><div class="l">Win rate</div></div>' +
         '<div class="stat"><div class="n">' + stats.trades_this_week + '</div><div class="l">Trades this week</div></div>' +
         '<div class="stat"><div class="n">' + stats.typical_hold + '</div><div class="l">Typical hold</div></div>';
       expectancyEl.innerHTML =
@@ -1660,6 +1707,7 @@
       '<span class="pct ' + pctClass(t.pct) + '">' + fmtPct(t.pct) + '</span>' +
       '<span class="chevron" aria-hidden="true">⌄</span></div>' +
       '<div class="ticket-expand" id="' + id + '" hidden>' + ticketExpandHtml(t) + '</div>' +
+      (t.thesis ? '<div class="ticket-thesis">' + t.thesis + '</div>' : '') +
       fuseHtml(t.fuse) + '</div>';
   }
 
@@ -1714,6 +1762,13 @@
     });
 
     var html = "";
+    // Added 9/23, real feedback: "dots are there, nobody knows green/
+    // red" -- one static line, shown once, only when at least one real
+    // ticket actually has fuse data (no point explaining a legend for
+    // dots nobody sees yet).
+    if (tickets.some(function (t) { return t.fuse && t.fuse.dots && t.fuse.dots.length; })) {
+      html += '<div class="fuse-legend">green = option up that minute · red = down</div>';
+    }
     // Fixed 9/2, real bug: WAITING showed even with real tickets already
     // on the page ("you're not waiting" -- there were three closed
     // tickets sitting right below it). Only show it when today has
@@ -2297,7 +2352,7 @@
     }
     var stats = data.stats;
     if (stats) {
-      if (stats.record) out.push("This week: " + stats.record + ".");
+      if (stats.record && stats.record !== "—") out.push("This week: " + stats.record + ".");
       if (stats.prior_week_record) {
         var net = stats.prior_week_net_usd;
         var netText = (net !== undefined && net !== null) ?
@@ -2387,8 +2442,10 @@
   function render(data) {
     lastFillAt = data.last_fill_at || null;
     renderSession(data.session, data.generated_at);
+    renderSessionCaption(data.session_caption, data.session);
     renderPulse(data.pulse, data.session);
     renderNarrativeLine(data.narrative_line, data.session);
+    renderPassLines(data.delayed_pass_lines, data.session);
     renderStats(data.stats, data.session, data.tickets);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);
