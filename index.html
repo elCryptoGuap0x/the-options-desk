@@ -2701,22 +2701,30 @@
   // drawn a few px past the hitbox on every side (hitbox itself, used
   // for collision, is untouched below). Was a rocket; swapped on request.
   function drawPlayer() {
+    // Drawn 2x the original size (requested), anchored on the hitbox's
+    // own ground contact point (bodyBottom) and horizontal center (cx) --
+    // PLAYER_W/PLAYER_H themselves, and everything below that reads them
+    // for physics/collision (jump/gravity/hit-test), are untouched, so
+    // the bot-tested difficulty is exactly what it was before. Only the
+    // art grew; same precedent as the jetpack already drawing a few px
+    // past the hitbox on every side.
+    var scale = 2;
     var cx = PLAYER_X + PLAYER_W / 2;
-    var headR = 5;
-    var headCy = player.y + headR;
-    var bodyTop = headCy + headR - 2;
+    var headR = 5 * scale;
     var bodyBottom = player.y + PLAYER_H;
-    var bodyW = PLAYER_W - 2;
+    var headCy = bodyBottom - PLAYER_H * scale + headR;
+    var bodyTop = headCy + headR - 2 * scale;
+    var bodyW = (PLAYER_W - 2) * scale;
     var bodyLeft = cx - bodyW / 2, bodyRight = cx + bodyW / 2;
     var accent = shield > 0 ? "#f0d78c" : "#d4af37";
 
-    var packX = bodyLeft - 4, packY = bodyTop + 1, packW = 4, packH = (bodyBottom - bodyTop) - 2;
+    var packX = bodyLeft - 4 * scale, packY = bodyTop + 1 * scale, packW = 4 * scale, packH = (bodyBottom - bodyTop) - 2 * scale;
 
     if (player.v < -1) {
       ctx.fillStyle = "#e8703a";
       ctx.beginPath();
       ctx.moveTo(packX, packY + packH);
-      ctx.lineTo(packX + packW / 2, packY + packH + 6 + Math.random() * 3);
+      ctx.lineTo(packX + packW / 2, packY + packH + 6 * scale + Math.random() * 3 * scale);
       ctx.lineTo(packX + packW, packY + packH);
       ctx.closePath();
       ctx.fill();
@@ -2734,13 +2742,13 @@
 
     ctx.fillStyle = "#3a5a6e";
     ctx.beginPath();
-    ctx.arc(cx + 1.2, headCy, headR * 0.55, 0, Math.PI * 2);
+    ctx.arc(cx + 1.2 * scale, headCy, headR * 0.55, 0, Math.PI * 2);
     ctx.fill();
 
     if (shield > 0) {
       ctx.strokeStyle = "rgba(240,215,140,0.6)";
       ctx.lineWidth = 2;
-      ctx.strokeRect(packX - 3, headCy - headR - 3, (bodyRight - packX) + 6, (bodyBottom - (headCy - headR)) + 6);
+      ctx.strokeRect(packX - 3 * scale, headCy - headR - 3 * scale, (bodyRight - packX) + 6 * scale, (bodyBottom - (headCy - headR)) + 6 * scale);
       ctx.lineWidth = 1;
     }
   }
