@@ -1,27 +1,28 @@
 {
-  "generated_at": "2026-09-23T13:53:23Z",
+  "generated_at": "2026-09-23T14:13:55Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-24T13:30:00Z",
-    "position": "OPEN"
+    "position": "FLAT"
   },
   "stats": {
-    "record": "0-0",
-    "win_rate": "\u2014",
-    "trades_this_week": 0,
+    "record": "1-0",
+    "win_rate": "100%",
+    "trades_this_week": 1,
     "typical_hold": "0DTE-2DTE",
-    "avg_win": "\u2014",
+    "avg_win": "+19.6%",
     "avg_loss": "\u2014",
-    "net_per_ticket": "\u2014",
-    "hold_typ": "\u2014",
+    "net_per_ticket": "+19.6%",
+    "hold_typ": "~24 min",
     "prior_week_record": "1-6",
     "session_pnl_usd": 0.0,
     "prior_week_net_usd": -75
   },
   "sparkline_cum_pct": [
-    0.0
+    0.0,
+    19.6
   ],
   "prior_week_sparkline_cum_pct": [
     0.0,
@@ -34,6 +35,17 @@
     -73.5
   ],
   "tickets": [
+    {
+      "day": "Wed 9/23",
+      "sym": "IWM",
+      "dir": "call",
+      "pct": 19.6,
+      "entry_price": "0.56",
+      "exit_price": "0.67",
+      "entry": "8:46a",
+      "exit": "9:10a",
+      "dur": "24 min"
+    },
     {
       "day": "Fri 9/18",
       "sym": "COIN",
@@ -338,6 +350,7 @@
     "L",
     "L",
     "L",
+    "W",
     "W"
   ],
   "weeks": [
@@ -384,9 +397,9 @@
     {
       "week_label": "9/21\u2013\u2026",
       "week_start": "2026-09-21",
-      "record": "0-0",
-      "net_usd": 0,
-      "avg_hold": "\u2014",
+      "record": "1-0",
+      "net_usd": 11,
+      "avg_hold": "24 min",
       "disasters": 0,
       "product": "current system",
       "locked": false
@@ -394,8 +407,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85647.15,
-      "chg_pct": 0.2,
+      "last": 84611.93,
+      "chg_pct": -1.02,
       "history": [
         85480.445,
         85431.205,
@@ -405,14 +418,18 @@
         85846.1,
         85692.075,
         85700.295,
-        85647.145
+        85647.145,
+        85681.8,
+        85587.595,
+        85168.135,
+        84611.925
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2713.91,
-      "chg_pct": -0.35,
+      "last": 2666.49,
+      "chg_pct": -2.09,
       "history": [
         2723.525,
         2723.105,
@@ -423,14 +440,19 @@
         2719.13,
         2713.505,
         2714.57,
-        2713.905
+        2713.905,
+        2712.005,
+        2715.615,
+        2709.81,
+        2687.815,
+        2666.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.7,
-      "chg_pct": -0.31,
+      "last": 113.73,
+      "chg_pct": -2.85,
       "history": [
         117.07,
         116.735,
@@ -440,7 +462,12 @@
         117.02,
         116.755,
         116.74,
-        116.705
+        116.705,
+        116.62,
+        116.545,
+        116.345,
+        115.27,
+        113.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -629,9 +656,9 @@
       ]
     ],
     "no_shape_count": 2,
-    "filled": 3
+    "filled": 6
   },
-  "scan_log_public": "8 names on the list \u00b7 3 tickets.",
+  "scan_log_public": "Closed <span class=\"desk-tag good\">IWM</span> +19.6%.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -650,25 +677,31 @@
     ],
     "down": [
       {
-        "sym": "IWM",
-        "chg_pct": -0.94
+        "sym": "SOL",
+        "chg_pct": -2.85
       },
       {
-        "sym": "IBIT",
-        "chg_pct": -0.61
+        "sym": "ETH",
+        "chg_pct": -2.09
       },
       {
-        "sym": "QQQ",
-        "chg_pct": -0.39
+        "sym": "BTC",
+        "chg_pct": -1.02
       }
     ]
   },
   "desk_freshness": {
     "watch": "8:47",
-    "crypto": "8:53"
+    "crypto": "9:13"
   },
-  "desk_board": [],
-  "last_fill_at": "2026-09-18T16:36:49Z",
+  "desk_board": [
+    {
+      "sym": "IWM",
+      "status": "WATCH",
+      "why": "On the list. No ticket."
+    }
+  ],
+  "last_fill_at": "2026-09-23T14:10:57Z",
   "tenor_calendar": "weeklies 2DTE live \u00b7 indices + IBIT live",
   "desk_events": {
     "IWM": [
@@ -722,6 +755,24 @@
         "t": null,
         "line": "not a setup"
       }
+    ],
+    "SOL": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "ETH": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "BTC": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
     ]
   },
   "btc_range": {
@@ -740,7 +791,7 @@
   "pulse": {
     "last_look_iso": "2026-09-23T13:47:47Z",
     "names": 8,
-    "tickets": 3,
+    "tickets": 6,
     "cadence_min": 3
   },
   "today_label": "Wed 9/23",
