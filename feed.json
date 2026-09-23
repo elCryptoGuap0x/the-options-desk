@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T20:00:49Z",
+  "generated_at": "2026-09-23T20:30:21Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84503.68,
-      "chg_pct": -1.14,
+      "last": 84261,
+      "chg_pct": -2.37,
       "history": [
         84145.725,
         84138.88,
@@ -471,14 +471,15 @@
         84548.775,
         84512.965,
         84490.055,
-        84503.685
+        84503.685,
+        84261
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2678.14,
-      "chg_pct": -1.67,
+      "last": 2670.0,
+      "chg_pct": -3.1,
       "history": [
         2661.795,
         2660.17,
@@ -509,14 +510,15 @@
         2678.335,
         2676.465,
         2676.47,
-        2678.14
+        2678.14,
+        2670.0
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 114.61,
-      "chg_pct": -2.1,
+      "last": 114.11,
+      "chg_pct": -3.53,
       "history": [
         114.115,
         114.11,
@@ -547,7 +549,8 @@
         114.59,
         114.685,
         114.61,
-        114.615
+        114.615,
+        114.11
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -983,6 +986,27 @@
       "tag": "Macro",
       "title": "Europe's PMIs came in hot; the US print at 9:45 is the one that bites",
       "summary": "European flash PMIs beat on services, with the German composite at 53.8 and France back above 50. US flash PMIs print at 9:45 ET, with manufacturing consensus near 53.6 against 53.9 prior and services around 55.8-56 against 56.5. A hot number keeps October hike pricing alive, one snapshot of FedWatch had it near 58%, and keeps financials under pressure; a miss helps duration and the Nasdaq record. EIA crude inventories follow at 10:30."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Stock Market Today: Small Caps, Gold Miners Spanked Amid Selloff; Meta Makes A Bullish Move",
+      "summary": "Stock Market Today: The Dow Jones index falls Wednesday after the Nasdaq set new highs Tuesday. Micron and Sandisk drop.",
+      "url": "https://finance.yahoo.com/m/f0c95ea3-7b96-3a04-82c0-08260c90b7cc/stock-market-today%3A-small.html?.tsrc=rss",
+      "ts": "2026-09-23T20:25:51Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
+      "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
+      "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
+      "ts": "2026-09-23T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Kalshi says it is not being investigated by the CFTC over trading activity",
+      "summary": "The prediction market says unusual patterns in its ether perpetual market are the result of liquidity incentives.",
+      "url": "https://www.coindesk.com/markets/2026/09/23/kalshi-says-it-is-not-being-investigated-by-the-cftc-over-trading-activity",
+      "ts": "2026-09-23T19:04:52Z"
     }
   ],
   "calendar": [
@@ -1279,17 +1303,17 @@
     ]
   },
   "btc_range": {
-    "last": 85502,
+    "last": 84261,
     "high_24h": 87251,
-    "low_24h": 85444,
-    "chg_pct": -0.53
+    "low_24h": 83654,
+    "chg_pct": -2.4
   },
   "macro": {
-    "10Y": 4.97,
-    "DXY": 100.87,
-    "WTI": 90.71,
-    "VIX": 14.31,
-    "asof": "2026-09-23T12:08:51Z"
+    "10Y": 5.11,
+    "DXY": 101.11,
+    "WTI": 92.78,
+    "VIX": 15.18,
+    "asof": "2026-09-23T20:30:21Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-23T19:57:30Z",
