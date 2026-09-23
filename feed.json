@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:54:06Z",
+  "generated_at": "2026-09-23T01:26:24Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -394,8 +394,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86200,
-      "chg_pct": -0.19,
+      "last": 86665,
+      "chg_pct": 1.19,
       "history": [
         86379.715,
         86422.795,
@@ -427,14 +427,15 @@
         86174.675,
         86274.475,
         86174.025,
-        86200
+        86200,
+        86665
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2756.77,
-      "chg_pct": -0.65,
+      "last": 2769.42,
+      "chg_pct": 0.83,
       "history": [
         2749.49,
         2748.355,
@@ -466,14 +467,15 @@
         2745.885,
         2750.255,
         2749.205,
-        2756.77
+        2756.77,
+        2769.42
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.59,
-      "chg_pct": -0.45,
+      "last": 119.06,
+      "chg_pct": 1.14,
       "history": [
         118.005,
         117.725,
@@ -505,7 +507,8 @@
         117.85,
         117.98,
         118.12,
-        118.59
+        118.59,
+        119.06
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -809,10 +812,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Meta\u2019s new AI agent just got me $250 in flight credits",
-      "summary": "In the Loop host Ejaaz Ahamadeen recounts how Muse, Meta's (META) new AI agent, helped get him $250 in flight credits and rebooked a new flight after his original flight was delayed, demonstrating how users can now interact with an agent th",
-      "url": "https://finance.yahoo.com/video/meta-ai-agent-just-got-214556275.html?.tsrc=rss",
-      "ts": "2026-09-22T21:45:56Z"
+      "title": "Meta doesn't need the best AI model \u2014 it has something better: you.\n\nWhile OpenAI and Anthropic compete on raw model performance, Meta's new",
+      "summary": "Meta doesn't need the best AI model \u2014 it has something better: you. While OpenAI and Anthropic compete on raw model performance, Meta's new agent wins on data. They know what you want to buy before you do, and now they can finally act on it",
+      "url": "https://finance.yahoo.com/video/meta-doesnt-best-ai-model-230704784.html?.tsrc=rss",
+      "ts": "2026-09-22T23:07:04Z"
     },
     {
       "tag": "OPTIONS",
@@ -823,10 +826,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Democrats 'chose visceral hatred for' Donald Trump over crypto Clarity Act, Lummis says",
-      "summary": "Senator Cynthia Lummis said the crypto industry should \"pin it on the Democrats\" in her first public remarks after last week's failed Clarity Act vote.",
-      "url": "https://www.coindesk.com/policy/2026/09/22/democrats-chose-visceral-hatred-for-donald-trump-over-crypto-clarity-act-lummis-says",
-      "ts": "2026-09-22T21:29:05Z"
+      "title": "U.S. regulator warns about cheating risks in 'mention markets' on prediction platforms",
+      "summary": "The Commodity Futures Trading Commission issued a new advisory to flag the unique dangers of markets based on individuals' behavior.",
+      "url": "https://www.coindesk.com/policy/2026/09/22/u-s-regulator-warns-about-cheating-risks-in-mention-markets-on-prediction-platforms",
+      "ts": "2026-09-23T00:00:45Z"
     }
   ],
   "calendar": [
@@ -1098,17 +1101,17 @@
     ]
   },
   "btc_range": {
-    "last": 86203,
-    "high_24h": 86669,
+    "last": 86665,
+    "high_24h": 86639,
     "low_24h": 85107,
-    "chg_pct": -0.18
+    "chg_pct": 1.2
   },
   "macro": {
     "10Y": 4.97,
-    "DXY": 100.54,
-    "WTI": 89.67,
+    "DXY": 100.61,
+    "WTI": 90.21,
     "VIX": 14.21,
-    "asof": "2026-09-22T22:54:06Z"
+    "asof": "2026-09-23T01:26:24Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-22T19:58:30Z",
