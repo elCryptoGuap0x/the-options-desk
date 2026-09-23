@@ -1676,6 +1676,20 @@
     var skips = data.skip_summary || [];
     var skipByDay = {};
     skips.forEach(function (s) { skipByDay[s.day] = s; });
+    // Fixed 9/23, real gap (user-caught, "skip list still empty"):
+    // `skip_summary` above was retired server-side (site-build.py now
+    // always writes it as []) once skip_summary_ticker_list replaced it
+    // as the live, mechanically-computed source -- this client code was
+    // never rewired, so the "N looked, M filled -- names" row silently
+    // stopped appearing on every real trading day since. That field
+    // only ever reflects TODAY's scan (rebuilt fresh from
+    // watch-state.json every cycle), so it maps onto today's own day
+    // label specifically, not a historical per-day array like the old
+    // field was.
+    var todaysSkip = data.skip_summary_ticker_list;
+    if (todaysSkip && todaysSkip.names && todaysSkip.names.length) {
+      skipByDay[todayDayLabel()] = { day: todayDayLabel(), names: todaysSkip.names };
+    }
 
     var dayOrder = [];
     var byDay = {};
@@ -2202,7 +2216,19 @@
   var roastIdx = 0;
   function updateRoastTemplates(data) {
     var out = [];
-    if (data.roast) out.push(data.roast);
+    // Fixed 9/23, real gap (user-caught): roast is deliberately only
+    // overwritten by site-build.py at real EOD (pick_roast's own "don't
+    // touch it just because a cycle ran" rule) and otherwise carries
+    // forward whatever it last said -- correct for its own job, but
+    // that means an EOD-phrased "Session over. +$X." line from
+    // YESTERDAY'S real close sits there all morning once a new session
+    // opens, reading as if today already ended. Suppress it here,
+    // client-side, specifically when it still claims the session is
+    // over while the feed's own live session.market_state says
+    // otherwise -- a real, checkable contradiction, not a guess.
+    var roastStale = data.roast && /session over/i.test(data.roast) &&
+      data.session && data.session.market_state === "OPEN";
+    if (data.roast && !roastStale) out.push(data.roast);
     // Tape line, added 9/18: one templated line per real close today,
     // pure string format off fields already on the ticket (sym/dir/dur/
     // pct) -- no model call, no invented numbers. Direct feedback that
