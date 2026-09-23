@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T06:36:51Z",
+  "generated_at": "2026-09-23T12:08:51Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -394,8 +394,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86428,
-      "chg_pct": 1.12,
+      "last": 85503,
+      "chg_pct": -0.53,
       "history": [
         86379.715,
         86422.795,
@@ -429,14 +429,15 @@
         86174.025,
         86200,
         86665,
-        86428
+        86428,
+        85503
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2756.33,
-      "chg_pct": 0.85,
+      "last": 2722.97,
+      "chg_pct": -0.73,
       "history": [
         2749.49,
         2748.355,
@@ -470,14 +471,15 @@
         2749.205,
         2756.77,
         2769.42,
-        2756.33
+        2756.33,
+        2722.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.78,
-      "chg_pct": 1.69,
+      "last": 116.85,
+      "chg_pct": -0.35,
       "history": [
         118.005,
         117.725,
@@ -511,7 +513,8 @@
         118.12,
         118.59,
         119.06,
-        118.78
+        118.78,
+        116.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -815,10 +818,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Trump-Xi Summit Could Reset Trade Tensions. 3 Things Investors Are Watching.",
-      "summary": "President Donald Trump and China\u2019s Xi Jinping are seeking stability as investors watch for progress on tariffs, trade deals, AI and Taiwan.",
-      "url": "https://finance.yahoo.com/m/cf5c08e0-b082-3348-82fb-63717b1ff78e/trump-xi-summit-could-reset.html?.tsrc=rss",
-      "ts": "2026-09-23T06:00:00Z"
+      "title": "The hidden tech trap destroying your portfolio",
+      "summary": "Gabelli Funds' John Belton and Wells Fargo Advisors' James Taylor break down the \"concentration trap\" catching retail investors off guard, and share the ultimate gut-check to know if you are carrying too much risk",
+      "url": "https://finance.yahoo.com/video/hidden-tech-trap-destroying-portfolio-110000499.html?.tsrc=rss",
+      "ts": "2026-09-23T11:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -829,10 +832,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Solana starts testing upgrade that could cut finality from 12.8 seconds to 150 milliseconds",
-      "summary": "Alpenglow would let exchanges, bridges and merchants treat payments as irreversible almost immediately.",
-      "url": "https://www.coindesk.com/tech/2026/09/23/solana-starts-testing-upgrade-that-could-cut-finality-from-12-8-seconds-to-150-milliseconds",
-      "ts": "2026-09-23T05:16:22Z"
+      "title": "Live updates: Bitcoin slips under $86,000 as money rotates into BCH and ZEC",
+      "summary": "Bitcoin matched Monday's high near $87,300 before running into selling, while citcoin cash surged 28% on a CME futures listing and ZEC added 9%.",
+      "url": "https://www.coindesk.com/business/2026/09/23/live-updates-bitcoin-slips-under-usd86-000-as-money-rotates-into-bch-and-zec",
+      "ts": "2026-09-23T11:29:30Z"
     }
   ],
   "calendar": [
@@ -1104,17 +1107,17 @@
     ]
   },
   "btc_range": {
-    "last": 86429,
+    "last": 85502,
     "high_24h": 87251,
-    "low_24h": 85163,
-    "chg_pct": 1.14
+    "low_24h": 85444,
+    "chg_pct": -0.53
   },
   "macro": {
     "10Y": 4.97,
-    "DXY": 100.74,
-    "WTI": 89.36,
-    "VIX": 14.21,
-    "asof": "2026-09-23T06:36:51Z"
+    "DXY": 100.87,
+    "WTI": 90.71,
+    "VIX": 14.31,
+    "asof": "2026-09-23T12:08:51Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-22T19:58:30Z",
