@@ -2895,11 +2895,16 @@
     // next obstacle needed clearing, not just hard. Spacing is now set
     // directly in TIME (frames) and converted to a pixel threshold off
     // the CURRENT speed every check, so the reaction window is what
-    // actually ramps, not a side effect of it. Floor of 45 frames stays
-    // comfortably above the ~30-frame jump cycle (~15 frames/0.25s of
-    // real margin at max difficulty); start of 59 frames matches the
-    // original score-0 feel exactly (130px / 2.2 speed = 59.1 frames).
-    var timeGapFrames = Math.max(45, 59 - score * 0.12);
+    // actually ramps, not a side effect of it. Start of 59 frames
+    // matches the original score-0 feel exactly (130px / 2.2 speed =
+    // 59.1 frames). Floor raised 45->56 same day, real feedback after
+    // live play at score 103 (46.6-frame reaction time there) still
+    // felt too tight even though it was mathematically clear of the
+    // ~30-frame jump cycle -- 56 nearly doubles that margin (~26.2
+    // frames/~0.44s of slack instead of ~15.2/~0.25s) and sits close
+    // enough to the score-0 feel (59) that the back half of a run
+    // stays close to the easy opening instead of visibly tightening.
+    var timeGapFrames = Math.max(56, 59 - score * 0.12);
     var gapFloor = timeGapFrames * speed;
     if (W - lastX >= gapFloor) {
       items.push(makeObstacle(W + 20));
