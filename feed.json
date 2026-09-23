@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T13:35:10Z",
+  "generated_at": "2026-09-23T13:44:17Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -394,80 +394,94 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85594.21,
-      "chg_pct": 0.13,
+      "last": 85846.1,
+      "chg_pct": 0.43,
       "history": [
         85480.445,
         85431.205,
-        85594.215
+        85594.215,
+        85766.655,
+        85837.51,
+        85846.1
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2713.59,
-      "chg_pct": -0.36,
+      "last": 2719.13,
+      "chg_pct": -0.16,
       "history": [
         2723.525,
         2723.105,
         2716.435,
-        2713.59
+        2713.59,
+        2720.655,
+        2722.275,
+        2719.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.64,
-      "chg_pct": -0.37,
+      "last": 117.02,
+      "chg_pct": -0.04,
       "history": [
         117.07,
         116.735,
-        116.64
+        116.64,
+        116.865,
+        117.09,
+        117.02
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 773.75,
-      "chg_pct": 0.0,
+      "last": 772.06,
+      "chg_pct": -0.22,
       "history": [
-        773.75
+        773.75,
+        772.06
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 747.5,
-      "chg_pct": 0.0,
+      "last": 744.6,
+      "chg_pct": -0.39,
       "history": [
-        747.5
+        747.5,
+        744.604
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "IWM": {
-      "last": 287.21,
-      "chg_pct": 0.0,
+      "last": 284.52,
+      "chg_pct": -0.94,
       "history": [
-        287.21
+        287.21,
+        284.52
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "NVDA": {
-      "last": 228.94,
-      "chg_pct": 0.0,
+      "last": 228.4,
+      "chg_pct": -0.23,
       "history": [
-        228.935
+        228.935,
+        228.4
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "META": {
-      "last": 736.2,
-      "chg_pct": 0.0,
+      "last": 749.98,
+      "chg_pct": 1.87,
       "history": [
-        736.195
+        736.195,
+        749.98
       ],
       "status": "ruled out",
       "why": "Not in play."
@@ -491,13 +505,14 @@
       "why": "Not in play."
     },
     "IBIT": {
-      "last": 48.84,
-      "chg_pct": 0.0,
+      "last": 48.62,
+      "chg_pct": -0.47,
       "history": [
-        48.845
+        48.845,
+        48.615
       ],
-      "status": "no setup",
-      "why": "Looked 3:58 PM ET \u2014 no break, quiet tape."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "IREN": {
       "last": 47.92,
@@ -563,53 +578,112 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 0,
-    "names": [],
-    "interesting": [],
+    "count": 5,
+    "names": [
+      "IBIT",
+      "IWM",
+      "NVDA",
+      "QQQ",
+      "SPY"
+    ],
+    "interesting": [
+      [
+        "IBIT",
+        "watching"
+      ],
+      [
+        "IWM",
+        "watching"
+      ],
+      [
+        "NVDA",
+        "watching"
+      ],
+      [
+        "QQQ",
+        "watching"
+      ],
+      [
+        "SPY",
+        "watching"
+      ]
+    ],
     "no_shape_count": 0,
     "filled": 0
   },
-  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
+  "scan_log_public": "5 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
+        "sym": "META",
+        "chg_pct": 1.87
+      },
+      {
         "sym": "BTC",
-        "chg_pct": 0.13
+        "chg_pct": 0.43
       }
     ],
     "down": [
       {
-        "sym": "SOL",
-        "chg_pct": -0.37
+        "sym": "IWM",
+        "chg_pct": -0.94
       },
       {
-        "sym": "ETH",
-        "chg_pct": -0.36
+        "sym": "IBIT",
+        "chg_pct": -0.47
+      },
+      {
+        "sym": "QQQ",
+        "chg_pct": -0.39
       }
     ]
   },
   "desk_freshness": {
-    "watch": "2:58",
-    "crypto": "8:35"
+    "watch": "8:42",
+    "crypto": "8:44"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-18T16:36:49Z",
   "tenor_calendar": "weeklies 2DTE live \u00b7 indices + IBIT live",
   "desk_events": {
+    "SPY": [
+      {
+        "t": "9:44 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "QQQ": [
+      {
+        "t": "9:44 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "IWM": [
+      {
+        "t": "9:44 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "NVDA": [
+      {
+        "t": "9:44 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "IBIT": [
+      {
+        "t": "9:44 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "META": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
     "BTC": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ],
-    "SOL": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ],
-    "ETH": [
       {
         "t": null,
         "line": "not a setup"
@@ -630,8 +704,8 @@
     "asof": "2026-09-23T12:08:51Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-22T19:58:30Z",
-    "names": 0,
+    "last_look_iso": "2026-09-23T13:42:30Z",
+    "names": 5,
     "tickets": 0,
     "cadence_min": 3
   },
