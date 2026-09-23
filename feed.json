@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T15:19:27Z",
+  "generated_at": "2026-09-23T15:23:11Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -407,11 +407,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84598.23,
-      "chg_pct": -1.03,
+      "last": 84582.96,
+      "chg_pct": -1.05,
       "history": [
-        85692.075,
-        85700.295,
         85647.145,
         85681.8,
         85587.595,
@@ -439,17 +437,17 @@
         84642.385,
         84607.105,
         84660.42,
-        84598.225
+        84598.225,
+        84621.015,
+        84582.965
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2677.89,
-      "chg_pct": -1.68,
+      "last": 2680.97,
+      "chg_pct": -1.56,
       "history": [
-        2714.57,
-        2713.905,
         2712.005,
         2715.615,
         2709.81,
@@ -477,17 +475,17 @@
         2679.525,
         2676.635,
         2678.415,
-        2677.885
+        2677.885,
+        2679.945,
+        2680.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.55,
-      "chg_pct": -1.3,
+      "last": 115.45,
+      "chg_pct": -1.38,
       "history": [
-        116.74,
-        116.705,
         116.62,
         116.545,
         116.345,
@@ -515,7 +513,9 @@
         115.685,
         115.635,
         115.535,
-        115.55
+        115.55,
+        115.49,
+        115.455
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -864,7 +864,7 @@
       },
       {
         "sym": "ETH",
-        "chg_pct": -1.68
+        "chg_pct": -1.56
       },
       {
         "sym": "NVDA",
@@ -874,7 +874,7 @@
   },
   "desk_freshness": {
     "watch": "10:18",
-    "crypto": "10:19"
+    "crypto": "10:23"
   },
   "desk_board": [
     {

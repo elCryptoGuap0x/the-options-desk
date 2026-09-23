@@ -257,6 +257,7 @@
   .desk-status.out { color: var(--bad); }
   .desk-status.watch { color: var(--blue); }
   .desk-status.hot { color: var(--good); }
+  .desk-status.closed { color: var(--gold); }
   .desk-why { font-size: 12px; color: var(--text-dim); }
   .desk-why .pct { font-variant-numeric: tabular-nums; margin-right: 6px; }
   .desk-why .pct.good { color: var(--good); }
@@ -1886,10 +1887,28 @@
       el.innerHTML = "";
       return;
     }
+    // Fixed 9/23, real gap (user-caught, "why does desk look empty" on a
+    // day with a real live A fill): this row list came straight from
+    // Watch's own board scan (WATCH/OUT/HOT), which has no idea a real
+    // ticket exists -- site-build.py's own desk_board "why" text is
+    // built from watch-state.json's verdict alone, never cross-checked
+    // against tickets[], so a name that already filled and closed today
+    // still read "On the list. No ticket." right through the rest of
+    // the session. `tickets` was already being passed into this
+    // function (used only in the CLOSED branch above) -- reusing it
+    // here rather than adding a new feed field. Most-recent ticket wins
+    // if a name traded more than once today (tickets[] is already
+    // most-recent-first).
+    var closedToday = {};
+    todaysTickets(tickets).forEach(function (t) {
+      if (!closedToday[t.sym]) closedToday[t.sym] = t;
+    });
     el.innerHTML = board.map(function (r) {
-      var statusClass = r.status === "OUT" ? "out" : (r.status === "WATCH" ? "watch" : "hot");
-      var why = r.why || "";
-      if (r.status === "HOT" && typeof r.chg_pct === "number") {
+      var ticket = closedToday[r.sym];
+      var statusClass = ticket ? "closed" : (r.status === "OUT" ? "out" : (r.status === "WATCH" ? "watch" : "hot"));
+      var statusLabel = ticket ? "CLOSED" : r.status;
+      var why = ticket ? (pctSpan(ticket.pct) + " realized today.") : (r.why || "");
+      if (!ticket && r.status === "HOT" && typeof r.chg_pct === "number") {
         var good = r.chg_pct >= 0;
         var pct = (good ? "+" : "") + r.chg_pct.toFixed(1) + "%";
         why = '<span class="pct ' + (good ? "good" : "bad") + '">' + pct + '</span>' + why;
@@ -1897,7 +1916,7 @@
       return '<div class="desk-row" role="button" tabindex="0" ' +
         'onclick="openDeskSheet(\'' + r.sym + '\')" onkeydown="if(event.key===\'Enter\')openDeskSheet(\'' + r.sym + '\')">' +
         '<div class="desk-row-top"><span class="desk-sym">' + r.sym + '</span>' +
-        '<span class="desk-status ' + statusClass + '">' + r.status + '</span></div>' +
+        '<span class="desk-status ' + statusClass + '">' + statusLabel + '</span></div>' +
         '<span class="desk-why">' + why + '</span>' +
         '</div>';
     }).join("");
