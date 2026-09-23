@@ -2882,7 +2882,25 @@
 
     var lastX = 0;
     items.forEach(function (it) { if (it.x > lastX) lastX = it.x; });
-    var gapFloor = Math.max(65, 130 - score * 0.4);
+    // Fixed 9/22, real bug (user-caught, "almost impossible" at speed):
+    // this used to be a flat PIXEL gap (130 down to a 65 floor) with no
+    // reference to `speed` at all -- but obstacles close at `speed`
+    // px/frame, so the actual reaction TIME is pixel_gap / speed, and
+    // that collapses on its own as speed ramps even before the pixel
+    // floor is reached. Verified: a full jump (up and back to ground)
+    // takes ~29.8 frames (2 * |JUMP_V| / GRAVITY); the old formula's
+    // implied time-gap was already down to ~18.6 frames by score 93
+    // (speed maxed) and ~13 by score 162 -- both less than one full
+    // jump cycle, i.e. mathematically impossible to land before the
+    // next obstacle needed clearing, not just hard. Spacing is now set
+    // directly in TIME (frames) and converted to a pixel threshold off
+    // the CURRENT speed every check, so the reaction window is what
+    // actually ramps, not a side effect of it. Floor of 45 frames stays
+    // comfortably above the ~30-frame jump cycle (~15 frames/0.25s of
+    // real margin at max difficulty); start of 59 frames matches the
+    // original score-0 feel exactly (130px / 2.2 speed = 59.1 frames).
+    var timeGapFrames = Math.max(45, 59 - score * 0.12);
+    var gapFloor = timeGapFrames * speed;
     if (W - lastX >= gapFloor) {
       items.push(makeObstacle(W + 20));
       if (Math.random() < 0.5) items.push(makeCoin(W + 50));
