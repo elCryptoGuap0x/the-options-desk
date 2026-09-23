@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-23T13:44:17Z",
+  "generated_at": "2026-09-23T13:53:23Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-24T13:30:00Z",
-    "position": "FLAT"
+    "position": "OPEN"
   },
   "stats": {
     "record": "0-0",
@@ -394,22 +394,25 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85846.1,
-      "chg_pct": 0.43,
+      "last": 85647.15,
+      "chg_pct": 0.2,
       "history": [
         85480.445,
         85431.205,
         85594.215,
         85766.655,
         85837.51,
-        85846.1
+        85846.1,
+        85692.075,
+        85700.295,
+        85647.145
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2719.13,
-      "chg_pct": -0.16,
+      "last": 2713.91,
+      "chg_pct": -0.35,
       "history": [
         2723.525,
         2723.105,
@@ -417,21 +420,27 @@
         2713.59,
         2720.655,
         2722.275,
-        2719.13
+        2719.13,
+        2713.505,
+        2714.57,
+        2713.905
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.02,
-      "chg_pct": -0.04,
+      "last": 116.7,
+      "chg_pct": -0.31,
       "history": [
         117.07,
         116.735,
         116.64,
         116.865,
         117.09,
-        117.02
+        117.02,
+        116.755,
+        116.74,
+        116.705
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -487,41 +496,45 @@
       "why": "Not in play."
     },
     "MSTR": {
-      "last": 168.05,
-      "chg_pct": 0.0,
+      "last": 167.69,
+      "chg_pct": -0.22,
       "history": [
-        168.05
+        168.05,
+        167.6875
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "no setup",
+      "why": "Looked 9:47 AM ET \u2014 no break, quiet tape."
     },
     "COIN": {
-      "last": 198.4,
-      "chg_pct": 0.0,
+      "last": 202.85,
+      "chg_pct": 2.25,
       "history": [
-        198.395
+        198.395,
+        202.85
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "IBIT": {
-      "last": 48.62,
-      "chg_pct": -0.47,
+      "last": 48.55,
+      "chg_pct": -0.61,
       "history": [
         48.845,
-        48.615
+        48.615,
+        48.545
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IREN": {
-      "last": 47.92,
-      "chg_pct": 0.0,
+      "last": 48.48,
+      "chg_pct": 1.17,
       "history": [
-        47.92
+        47.92,
+        48.48
       ],
-      "status": "ruled out",
-      "why": "Not in play."
+      "status": "no setup",
+      "why": "Looked 9:47 AM ET \u2014 no break, quiet tape."
     }
   },
   "news": [
@@ -578,15 +591,22 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 5,
+    "count": 8,
     "names": [
+      "COIN",
       "IBIT",
+      "IREN",
       "IWM",
+      "MSTR",
       "NVDA",
       "QQQ",
       "SPY"
     ],
     "interesting": [
+      [
+        "COIN",
+        "watching"
+      ],
       [
         "IBIT",
         "watching"
@@ -608,20 +628,24 @@
         "watching"
       ]
     ],
-    "no_shape_count": 0,
-    "filled": 0
+    "no_shape_count": 2,
+    "filled": 3
   },
-  "scan_log_public": "5 names on the list \u00b7 0 tickets.",
+  "scan_log_public": "8 names on the list \u00b7 3 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
+      {
+        "sym": "COIN",
+        "chg_pct": 2.25
+      },
       {
         "sym": "META",
         "chg_pct": 1.87
       },
       {
-        "sym": "BTC",
-        "chg_pct": 0.43
+        "sym": "IREN",
+        "chg_pct": 1.17
       }
     ],
     "down": [
@@ -631,7 +655,7 @@
       },
       {
         "sym": "IBIT",
-        "chg_pct": -0.47
+        "chg_pct": -0.61
       },
       {
         "sym": "QQQ",
@@ -640,13 +664,23 @@
     ]
   },
   "desk_freshness": {
-    "watch": "8:42",
-    "crypto": "8:44"
+    "watch": "8:47",
+    "crypto": "8:53"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-18T16:36:49Z",
   "tenor_calendar": "weeklies 2DTE live \u00b7 indices + IBIT live",
   "desk_events": {
+    "IWM": [
+      {
+        "t": "9:44 AM ET",
+        "line": "Added to the list."
+      },
+      {
+        "t": "9:47 AM ET",
+        "line": "Took a position."
+      }
+    ],
     "SPY": [
       {
         "t": "9:44 AM ET",
@@ -654,12 +688,6 @@
       }
     ],
     "QQQ": [
-      {
-        "t": "9:44 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "IWM": [
       {
         "t": "9:44 AM ET",
         "line": "Added to the list."
@@ -677,13 +705,19 @@
         "line": "Added to the list."
       }
     ],
+    "COIN": [
+      {
+        "t": "9:50 AM ET",
+        "line": "Added to the list."
+      }
+    ],
     "META": [
       {
         "t": null,
         "line": "not a setup"
       }
     ],
-    "BTC": [
+    "IREN": [
       {
         "t": null,
         "line": "not a setup"
@@ -704,9 +738,9 @@
     "asof": "2026-09-23T12:08:51Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-23T13:42:30Z",
-    "names": 5,
-    "tickets": 0,
+    "last_look_iso": "2026-09-23T13:47:47Z",
+    "names": 8,
+    "tickets": 3,
     "cadence_min": 3
   },
   "today_label": "Wed 9/23",
