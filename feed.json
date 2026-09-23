@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T15:41:44Z",
+  "generated_at": "2026-09-23T15:48:39Z",
   "session": {
     "day_label": "WED",
     "market_state": "OPEN",
@@ -407,12 +407,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84362.41,
-      "chg_pct": -1.31,
+      "last": 84219.21,
+      "chg_pct": -1.48,
       "history": [
-        84212.995,
-        84276.625,
-        84072.325,
         83996.465,
         84420.22,
         84378.345,
@@ -439,18 +436,18 @@
         84523.175,
         84357.035,
         84323.255,
-        84362.41
+        84362.41,
+        84419.315,
+        84294.425,
+        84219.215
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2663.81,
-      "chg_pct": -2.19,
+      "last": 2657.81,
+      "chg_pct": -2.41,
       "history": [
-        2649.13,
-        2659.115,
-        2652.93,
         2654.475,
         2665.85,
         2668.015,
@@ -477,18 +474,18 @@
         2674.55,
         2664.25,
         2663.115,
-        2663.81
+        2663.81,
+        2666.015,
+        2664.23,
+        2657.81
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 114.44,
-      "chg_pct": -2.25,
+      "last": 114.03,
+      "chg_pct": -2.6,
       "history": [
-        113.46,
-        113.945,
-        113.53,
         113.34,
         114.275,
         114.46,
@@ -515,7 +512,10 @@
         115.045,
         114.655,
         114.47,
-        114.44
+        114.44,
+        114.615,
+        114.425,
+        114.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -895,22 +895,22 @@
     ],
     "down": [
       {
+        "sym": "SOL",
+        "chg_pct": -2.6
+      },
+      {
+        "sym": "ETH",
+        "chg_pct": -2.41
+      },
+      {
         "sym": "MSTR",
         "chg_pct": -2.37
-      },
-      {
-        "sym": "SOL",
-        "chg_pct": -2.25
-      },
-      {
-        "sym": "IBIT",
-        "chg_pct": -2.22
       }
     ]
   },
   "desk_freshness": {
     "watch": "10:41",
-    "crypto": "10:41"
+    "crypto": "10:48"
   },
   "desk_board": [
     {
@@ -1017,6 +1017,12 @@
       }
     ],
     "SOL": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
