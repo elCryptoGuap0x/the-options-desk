@@ -674,6 +674,12 @@
   .tape-notes-card { display: block; text-decoration: none; transition: border-color 0.15s ease; }
   .tape-notes-card:hover { border-left-color: var(--gold); }
   .tape-notes-card .carousel-body { min-height: 0; }
+  /* Titles-only list, no links -- see the HTML comment above this block
+     for why these stay text, not <a> tags. */
+  .tape-notes-more { margin-top: 8px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border-soft); border-radius: 8px; }
+  .tape-notes-more-label { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-bottom: 6px; }
+  .tape-notes-more-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; color: var(--text-dim); padding: 4px 0; }
+  .tape-notes-req { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); }
   /* Added 9/18, real feedback: a headline with no way to actually read
      more than a 2-line blurb. Off-site tab only -- this site doesn't
      have the rights or the HTML to reproduce the article itself. */
@@ -882,6 +888,20 @@
           <div class="carousel-title">Short-dated options, in English.</div>
           <div class="carousel-body">Free · 12 pages · not a signal</div>
         </a>
+        <!-- Added 9/23, real product call: 01-04 exist as drafts but stay
+             titles-only here on purpose. The files are kept out of the
+             public-site repo entirely (a "locked" link is fake the
+             moment the HTML sits on GitHub Pages -- anyone who guesses
+             the path gets it). Traffic and actual requests (via the
+             footer note form) decide the drip order, not finished prose
+             sitting around. -->
+        <div class="tape-notes-more">
+          <div class="tape-notes-more-label">More issues, by request</div>
+          <div class="tape-notes-more-row"><span>01 — Spreads &amp; fills</span><span class="tape-notes-req">Request</span></div>
+          <div class="tape-notes-more-row"><span>02 — Reading a loser</span><span class="tape-notes-req">Request</span></div>
+          <div class="tape-notes-more-row"><span>03 — Time of day</span><span class="tape-notes-req">Request</span></div>
+          <div class="tape-notes-more-row"><span>04 — Sample size</span><span class="tape-notes-req">Request</span></div>
+        </div>
       </section>
 
       <section>
