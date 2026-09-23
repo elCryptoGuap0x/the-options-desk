@@ -2822,6 +2822,7 @@
 
   var mode = "idle"; // idle | playing | dead
   var player, items, score, speed, shield, raf;
+  var framesSinceFlyer = 0;
 
   function makeObstacle(x) {
     var tall = Math.random() < 0.4;
@@ -2835,6 +2836,23 @@
     return { type: "coin", x: x, y: GROUND_Y - 32 - Math.random() * 20, r: 9, taken: false };
   }
 
+  // Added 9/23, real feedback ("Chrome dino's flying bird at higher
+  // levels, this is easy now at score 200"): a second obstacle type
+  // that adds a real decision -- jump or don't -- instead of just
+  // "jump, always." Placed so the two existing moves already handle it
+  // with no new control: FLYER_Y/FLYER_H sit entirely above standing
+  // height (player.y=171 when grounded) but inside the real jump arc
+  // (peak player.y ~= 171 - JUMP_V^2/(2*GRAVITY) ~= 110), so standing
+  // still is always safe and jumping into one is the only way to get
+  // hit -- same shape as Chrome's mid-height bird, just "don't jump"
+  // instead of "duck". Verified against this file's own real physics
+  // constants, not eyeballed.
+  var FLYER_MIN_SCORE = 50;
+  var FLYER_Y = 146, FLYER_H = 9, FLYER_W = 17;
+  function makeFlyer(x) {
+    return { type: "flyer", x: x, y: FLYER_Y, w: FLYER_W, h: FLYER_H, scored: false, wing: 0 };
+  }
+
   function resetRun() {
     score = 0;
     player = { y: GROUND_Y - PLAYER_H, v: 0, onGround: true };
@@ -2844,6 +2862,7 @@
     turboActive = false;
     holdFrames = 0;
     shield = 0;
+    framesSinceFlyer = 0;
   }
 
   function jump() {
@@ -2923,6 +2942,40 @@
         ctx.moveTo(it.x + it.w / 2, GROUND_Y);
         ctx.lineTo(it.x + it.w / 2, GROUND_Y + 4);
         ctx.stroke();
+      } else if (it.type === "flyer") {
+        // UFO, on request -- more memorable than a plain bird silhouette
+        // and still reads as "avoid this" via the red glow/beam (same
+        // danger color as ground obstacles). Saucer body is metallic
+        // gray so it's visually distinct from the red candles at a
+        // glance, not a second copy of the same shape. Light pulse
+        // driven by it.x (already advancing every frame) instead of a
+        // separate animation counter.
+        var fcx = it.x + it.w / 2, fcy = it.y + it.h / 2;
+        var pulse = (Math.sin(it.x * 0.25) + 1) / 2; // 0..1
+        // Faint red beam underneath, pulsing -- the "danger" tell.
+        ctx.fillStyle = "rgba(194,91,79," + (0.15 + pulse * 0.2) + ")";
+        ctx.beginPath();
+        ctx.moveTo(fcx - 3, fcy + it.h / 2);
+        ctx.lineTo(fcx + 3, fcy + it.h / 2);
+        ctx.lineTo(fcx + 7, fcy + it.h / 2 + 9);
+        ctx.lineTo(fcx - 7, fcy + it.h / 2 + 9);
+        ctx.closePath();
+        ctx.fill();
+        // Saucer body.
+        ctx.fillStyle = "#9aa5b1";
+        ctx.beginPath();
+        ctx.ellipse(fcx, fcy + 1, it.w / 2, it.h / 2.6, 0, 0, Math.PI * 2);
+        ctx.fill();
+        // Dome.
+        ctx.fillStyle = "#c9d3dc";
+        ctx.beginPath();
+        ctx.ellipse(fcx, fcy - 2, it.w / 4, it.h / 2.4, 0, Math.PI, 0);
+        ctx.fill();
+        // Pulsing red light on the rim -- reinforces "this one's a threat".
+        ctx.fillStyle = "rgba(194,91,79," + (0.6 + pulse * 0.4) + ")";
+        ctx.beginPath();
+        ctx.arc(fcx, fcy + 2, 1.6, 0, Math.PI * 2);
+        ctx.fill();
       } else if (!it.taken) {
         // Bigger coin (r=9, was 5) plus a hand-drawn double-strike glyph
         // instead of a plain font "B" -- at 5px radius a bare letter read
@@ -3026,6 +3079,15 @@
           else { draw(); die(); return; }
         }
         if (!it.scored && oRight < PLAYER_X) { it.scored = true; score++; }
+      } else if (it.type === "flyer") {
+        // Full AABB, unlike the ground obstacle above -- a flyer doesn't
+        // touch GROUND_Y, so its own top/bottom are both real edges.
+        var fLeft = it.x, fRight = it.x + it.w, fTop = it.y, fBot = it.y + it.h;
+        if (pRight > fLeft && pLeft < fRight && pBot > fTop && pTop < fBot) {
+          if (shield > 0) { it.scored = true; }
+          else { draw(); die(); return; }
+        }
+        if (!it.scored && fRight < PLAYER_X) { it.scored = true; score++; }
       } else if (!it.taken) {
         var dx = (PLAYER_X + PLAYER_W / 2) - it.x, dy = (player.y + PLAYER_H / 2) - it.y;
         if (Math.sqrt(dx * dx + dy * dy) < it.r + 8) {
@@ -3065,6 +3127,31 @@
     if (W - lastX >= gapFloor) {
       items.push(makeObstacle(W + 20));
       if (Math.random() < 0.5) items.push(makeCoin(W + 50));
+    }
+
+    // Second obstacle type, added 9/23 (see makeFlyer's own comment for
+    // the height-band reasoning). Independent cooldown timer, not tied
+    // to the ground-obstacle gap logic above -- keeps that already-
+    // tuned timing untouched. Cooldown shortens with score for "varying
+    // levels" (420 frames/~7s at first appearance down to a 180
+    // frame/~3s floor), then holds -- more frequent, not just present/
+    // absent, as the run gets deeper. Skipped (retried next frame,
+    // counter not reset) while a ground obstacle sits too close to the
+    // spawn point, so a run never needs to jump and stay-grounded at
+    // the same instant.
+    framesSinceFlyer++;
+    if (score >= FLYER_MIN_SCORE) {
+      var flyerCooldown = Math.max(180, 420 - (score - FLYER_MIN_SCORE) * 2);
+      if (framesSinceFlyer >= flyerCooldown) {
+        var flyerSpawnX = W + 40;
+        var obstacleTooClose = items.some(function (it) {
+          return it.type === "obstacle" && Math.abs(it.x - flyerSpawnX) < 150;
+        });
+        if (!obstacleTooClose) {
+          items.push(makeFlyer(flyerSpawnX));
+          framesSinceFlyer = 0;
+        }
+      }
     }
 
     // Real state words instead of a bare number -- the corner digit in
