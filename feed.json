@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T20:30:21Z",
+  "generated_at": "2026-09-23T23:06:37Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84261,
-      "chg_pct": -2.37,
+      "last": 84511,
+      "chg_pct": -1.95,
       "history": [
         84145.725,
         84138.88,
@@ -472,14 +472,15 @@
         84512.965,
         84490.055,
         84503.685,
-        84261
+        84261,
+        84511
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2670.0,
-      "chg_pct": -3.1,
+      "last": 2688.44,
+      "chg_pct": -2.43,
       "history": [
         2661.795,
         2660.17,
@@ -511,14 +512,15 @@
         2676.465,
         2676.47,
         2678.14,
-        2670.0
+        2670.0,
+        2688.44
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 114.11,
-      "chg_pct": -3.53,
+      "last": 115.03,
+      "chg_pct": -2.95,
       "history": [
         114.115,
         114.11,
@@ -550,7 +552,8 @@
         114.685,
         114.61,
         114.615,
-        114.11
+        114.11,
+        115.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -989,10 +992,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Stock Market Today: Small Caps, Gold Miners Spanked Amid Selloff; Meta Makes A Bullish Move",
-      "summary": "Stock Market Today: The Dow Jones index falls Wednesday after the Nasdaq set new highs Tuesday. Micron and Sandisk drop.",
-      "url": "https://finance.yahoo.com/m/f0c95ea3-7b96-3a04-82c0-08260c90b7cc/stock-market-today%3A-small.html?.tsrc=rss",
-      "ts": "2026-09-23T20:25:51Z"
+      "title": "Dow Jones Futures: Stocks Fall As Treasury Yields Soar; Palantir, Palo Alto Flash Buy Signals",
+      "summary": "The stock market fell as Treasury yields skyrocketed and oil prices rose, but Palantir and Palo Alto flashed buy signals.",
+      "url": "https://finance.yahoo.com/m/d54436eb-45f8-3808-b582-09ab7590f21b/dow-jones-futures%3A-stocks.html?.tsrc=rss",
+      "ts": "2026-09-23T22:26:01Z"
     },
     {
       "tag": "OPTIONS",
@@ -1303,17 +1306,17 @@
     ]
   },
   "btc_range": {
-    "last": 84261,
+    "last": 84553,
     "high_24h": 87251,
     "low_24h": 83654,
-    "chg_pct": -2.4
+    "chg_pct": -2.02
   },
   "macro": {
     "10Y": 5.11,
     "DXY": 101.11,
-    "WTI": 92.78,
+    "WTI": 92.24,
     "VIX": 15.18,
-    "asof": "2026-09-23T20:30:21Z"
+    "asof": "2026-09-23T23:06:37Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-23T19:57:30Z",
