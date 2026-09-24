@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-24T19:57:51Z",
+  "generated_at": "2026-09-24T20:00:55Z",
   "session": {
     "day_label": "THU",
-    "market_state": "OPEN",
+    "market_state": "CLOSED",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-25T13:30:00Z",
     "position": "FLAT"
@@ -439,10 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84390.02,
-      "chg_pct": 0.98,
+      "last": 84375.93,
+      "chg_pct": 0.97,
       "history": [
-        84412.625,
         84364.76,
         84232.565,
         84473.27,
@@ -471,16 +470,16 @@
         84424.715,
         84532.315,
         84524.62,
-        84390.025
+        84390.025,
+        84375.925
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2694.72,
-      "chg_pct": 1.66,
+      "last": 2694.36,
+      "chg_pct": 1.64,
       "history": [
-        2682.545,
         2682.11,
         2678.785,
         2687.885,
@@ -509,16 +508,16 @@
         2696.635,
         2699.17,
         2698.62,
-        2694.725
+        2694.725,
+        2694.365
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.29,
-      "chg_pct": 3.29,
+      "last": 117.21,
+      "chg_pct": 3.22,
       "history": [
-        117.395,
         117.265,
         117.145,
         116.885,
@@ -547,16 +546,16 @@
         117.325,
         117.4,
         117.43,
-        117.29
+        117.29,
+        117.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 768.1,
-      "chg_pct": 0.1,
+      "last": 767.45,
+      "chg_pct": 0.01,
       "history": [
-        763.79,
         764.035,
         766.86,
         768.5,
@@ -585,16 +584,16 @@
         767.63,
         767.75,
         767.59,
-        768.1
+        768.1,
+        767.45
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 741.78,
-      "chg_pct": 0.16,
+      "last": 741.48,
+      "chg_pct": 0.12,
       "history": [
-        735.47,
         735.65,
         739.21,
         741.63,
@@ -623,7 +622,8 @@
         740.95,
         741.23,
         740.94,
-        741.78
+        741.78,
+        741.48
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -1245,11 +1245,11 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 3.29
+        "chg_pct": 3.22
       },
       {
         "sym": "ETH",
-        "chg_pct": 1.66
+        "chg_pct": 1.64
       }
     ],
     "down": [
@@ -1268,8 +1268,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "2:53",
-    "crypto": "2:57"
+    "watch": "2:59",
+    "crypto": "3:00"
   },
   "desk_board": [
     {
@@ -1476,7 +1476,7 @@
     "asof": "2026-09-24T12:02:02Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-24T19:53:35Z",
+    "last_look_iso": "2026-09-24T19:59:04Z",
     "names": 25,
     "tickets": 0,
     "cadence_min": 4
