@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T18:35:57Z",
+  "generated_at": "2026-09-24T18:45:03Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -439,12 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84232.57,
-      "chg_pct": 0.8,
+      "last": 84400.01,
+      "chg_pct": 1.0,
       "history": [
-        84397.9,
-        84433.485,
-        84377.535,
         84499.995,
         84367.015,
         84325.975,
@@ -471,18 +468,18 @@
         84412.32,
         84412.625,
         84364.76,
-        84232.565
+        84232.565,
+        84473.27,
+        84384.355,
+        84400.005
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2678.78,
-      "chg_pct": 1.05,
+      "last": 2686.72,
+      "chg_pct": 1.35,
       "history": [
-        2683.105,
-        2683.75,
-        2681.3,
         2686.225,
         2680.92,
         2680.425,
@@ -509,18 +506,18 @@
         2682.38,
         2682.545,
         2682.11,
-        2678.785
+        2678.785,
+        2687.885,
+        2685.385,
+        2686.715
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.89,
-      "chg_pct": 2.94,
+      "last": 117.12,
+      "chg_pct": 3.15,
       "history": [
-        116.985,
-        117.265,
-        117.075,
         117.31,
         117.055,
         116.96,
@@ -547,16 +544,18 @@
         117.395,
         117.265,
         117.145,
-        116.885
+        116.885,
+        116.975,
+        117.08,
+        117.125
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 767.15,
-      "chg_pct": -0.03,
+      "last": 767.82,
+      "chg_pct": 0.06,
       "history": [
-        766.26,
         765.65,
         766.0,
         765.47,
@@ -585,16 +584,16 @@
         766.69,
         767.44,
         767.18,
-        767.15
+        767.15,
+        767.82
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 740.07,
-      "chg_pct": -0.07,
+      "last": 740.84,
+      "chg_pct": 0.03,
       "history": [
-        738.02,
         737.53,
         737.54,
         737.28,
@@ -623,7 +622,8 @@
         739.26,
         740.17,
         740.01,
-        740.07
+        740.07,
+        740.84
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -639,10 +639,9 @@
       "why": "Looked 2:18 PM ET \u2014 no break, quiet tape."
     },
     "IWM": {
-      "last": 281.41,
-      "chg_pct": -0.17,
+      "last": 281.7,
+      "chg_pct": -0.07,
       "history": [
-        280.68,
         280.42,
         280.62,
         280.75,
@@ -671,7 +670,8 @@
         281.09,
         281.57,
         281.44,
-        281.41
+        281.41,
+        281.7
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -794,8 +794,8 @@
       "why": "Looked 2:35 PM ET \u2014 no break, quiet tape."
     },
     "GOOGL": {
-      "last": 342.08,
-      "chg_pct": 1.22,
+      "last": 342.16,
+      "chg_pct": 1.25,
       "history": [
         337.95,
         337.48,
@@ -823,7 +823,8 @@
         342.23,
         342.36,
         341.96,
-        342.08
+        342.08,
+        342.16
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -840,10 +841,9 @@
       "why": "Looked 2:18 PM ET \u2014 no break, quiet tape."
     },
     "MSTR": {
-      "last": 162.22,
-      "chg_pct": -0.33,
+      "last": 162.26,
+      "chg_pct": -0.3,
       "history": [
-        162.535,
         164.14,
         164.54,
         162.9,
@@ -872,16 +872,16 @@
         161.6,
         162.26,
         161.94,
-        162.215
+        162.215,
+        162.265
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "COIN": {
-      "last": 198.6,
-      "chg_pct": 0.13,
+      "last": 198.69,
+      "chg_pct": 0.18,
       "history": [
-        198.26,
         199.52,
         199.4775,
         197.86,
@@ -910,16 +910,16 @@
         198.09,
         198.55,
         198.23,
-        198.6
+        198.6,
+        198.685
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IBIT": {
-      "last": 47.75,
-      "chg_pct": -0.2,
+      "last": 47.78,
+      "chg_pct": -0.13,
       "history": [
-        47.7099,
         48.025,
         48.045,
         47.8413,
@@ -948,16 +948,16 @@
         47.65,
         47.75,
         47.76,
-        47.75
+        47.75,
+        47.785
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IREN": {
-      "last": 46.28,
-      "chg_pct": -1.94,
+      "last": 46.32,
+      "chg_pct": -1.85,
       "history": [
-        46.22,
         46.51,
         46.095,
         46.11,
@@ -986,16 +986,16 @@
         46.05,
         46.18,
         46.14,
-        46.28
+        46.28,
+        46.32
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "XLE": {
-      "last": 62.69,
-      "chg_pct": 0.55,
+      "last": 62.58,
+      "chg_pct": 0.36,
       "history": [
-        63.155,
         63.135,
         63.16,
         63.2,
@@ -1024,7 +1024,8 @@
         62.85,
         62.8,
         62.77,
-        62.69
+        62.69,
+        62.575
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -1215,17 +1216,17 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 2.94
+        "chg_pct": 3.15
       },
       {
-        "sym": "GOOGL",
-        "chg_pct": 1.22
+        "sym": "ETH",
+        "chg_pct": 1.35
       }
     ],
     "down": [
       {
         "sym": "IREN",
-        "chg_pct": -1.94
+        "chg_pct": -1.85
       },
       {
         "sym": "NVDA",
@@ -1238,8 +1239,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "1:35",
-    "crypto": "1:35"
+    "watch": "1:41",
+    "crypto": "1:45"
   },
   "desk_board": [
     {
@@ -1425,6 +1426,12 @@
         "line": "not a setup"
       }
     ],
+    "ETH": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
     "VIXY": [
       {
         "t": null,
@@ -1446,7 +1453,7 @@
     "asof": "2026-09-24T12:02:02Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-24T18:35:30Z",
+    "last_look_iso": "2026-09-24T18:41:00Z",
     "names": 25,
     "tickets": 0,
     "cadence_min": 4
