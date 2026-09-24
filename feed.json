@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T20:26:32Z",
+  "generated_at": "2026-09-24T23:24:23Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84193,
-      "chg_pct": -0.08,
+      "last": 84347,
+      "chg_pct": -0.11,
       "history": [
         84364.76,
         84232.565,
@@ -472,14 +472,15 @@
         84524.62,
         84390.025,
         84375.925,
-        84193
+        84193,
+        84347
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2684.06,
-      "chg_pct": 0.53,
+      "last": 2688.26,
+      "chg_pct": 0.12,
       "history": [
         2682.11,
         2678.785,
@@ -511,14 +512,15 @@
         2698.62,
         2694.725,
         2694.365,
-        2684.06
+        2684.06,
+        2688.26
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.79,
-      "chg_pct": 2.3,
+      "last": 116.72,
+      "chg_pct": 1.56,
       "history": [
         117.265,
         117.145,
@@ -550,7 +552,8 @@
         117.43,
         117.29,
         117.21,
-        116.79
+        116.79,
+        116.72
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1091,24 +1094,24 @@
     },
     {
       "tag": "MARKETS",
-      "title": "The era of AI wearables focused on listening is here",
-      "summary": "Yahoo Finance Technology Editor Dan Howley joins Market Domination host Brooke DiPalma to report on the next round of wearable devices focused on listening to collect data, including built-in cameras in Meta's (META) Smart Glasses and the A",
-      "url": "https://finance.yahoo.com/video/the-era-of-ai-wearables-focused-on-listening-is-here-200354391.html?.tsrc=rss",
-      "ts": "2026-09-24T20:03:54Z"
+      "title": "META Stock Is Set For Its Best Month In Over 13 Years \u2014 It\u2019s Inches Away From $2 Trillion Market Cap",
+      "summary": "Meta shares are experiencing their strongest monthly surge in over a decade, driven by strong consumer adoption of its new Muse AI assistant.",
+      "url": "https://stocktwits.com/news-articles/markets/equity/meta-stock-is-set-for-its-best-month-in-over-13-years-it-s-inches-away-from-2-trillion-market-cap/cZMJ1cpRBab?.tsrc=rss",
+      "ts": "2026-09-24T23:16:20Z"
     },
     {
       "tag": "OPTIONS",
       "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
       "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
       "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-23T04:00:00Z"
+      "ts": "2026-09-22T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Someone was trying to sell Ondo Finance after founder Nathan Allman's death",
-      "summary": "The company has vehemently denied that it was shopping for buyers. Allman\u2019s estate declined to comment.",
-      "url": "https://www.coindesk.com/business/2026/09/23/someone-was-trying-to-sell-ondo-finance-after-founder-nathan-allman-s-death",
-      "ts": "2026-09-24T20:13:25Z"
+      "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
+      "summary": "The state wants to block Polymarket from operating without a gambling license and recover allegedly illegal gains.",
+      "url": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
+      "ts": "2026-09-24T22:41:44Z"
     }
   ],
   "calendar": [
@@ -1487,17 +1490,17 @@
     ]
   },
   "btc_range": {
-    "last": 84212,
+    "last": 84344,
     "high_24h": 84843,
     "low_24h": 82941,
-    "chg_pct": -0.05
+    "chg_pct": -0.11
   },
   "macro": {
     "10Y": 5.16,
-    "DXY": 101.28,
-    "WTI": 95.43,
-    "VIX": 15.65,
-    "asof": "2026-09-24T20:26:32Z"
+    "DXY": 101.25,
+    "WTI": 94.21,
+    "VIX": 15.67,
+    "asof": "2026-09-24T23:24:23Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-24T19:59:04Z",
