@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T06:21:59Z",
+  "generated_at": "2026-09-24T12:02:02Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84156,
-      "chg_pct": -2.73,
+      "last": 83440,
+      "chg_pct": -2.58,
       "history": [
         84145.725,
         84138.88,
@@ -475,14 +475,15 @@
         84261,
         84511,
         84233,
-        84156
+        84156,
+        83440
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2688.41,
-      "chg_pct": -2.56,
+      "last": 2645.22,
+      "chg_pct": -3.04,
       "history": [
         2661.795,
         2660.17,
@@ -517,14 +518,15 @@
         2670.0,
         2688.44,
         2680.73,
-        2688.41
+        2688.41,
+        2645.22
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.13,
-      "chg_pct": -3.07,
+      "last": 113.24,
+      "chg_pct": -3.3,
       "history": [
         114.115,
         114.11,
@@ -559,7 +561,8 @@
         114.11,
         115.03,
         115.09,
-        115.13
+        115.13,
+        113.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -998,24 +1001,24 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Holding(s) in Company",
-      "summary": "TR-1: Standard form for notification of major holdings 1. Issuer Details ISIN GB00BL6K5J42 Issuer Name ENDEAVOUR MINING PLC UK or Non-UK Issuer UK 2. Reason for Notification An acquisition or disposal of voting rights 3. Details of person s",
-      "url": "https://finance.yahoo.com/news/holding-company-060000751.html?.tsrc=rss",
-      "ts": "2026-09-24T06:00:00Z"
+      "title": "10-year Treasury yield rose to its 2007 high, but this portfolio manager isn't worried 'at all'",
+      "summary": "Andersen Capital Management founder and CEO, Peter Andersen, sits down with Market Domination Overtime host Josh Lipton to explain why the rising 10-year Treasury yield (^TNX) might not be a concern for risk assets.",
+      "url": "https://finance.yahoo.com/video/10-treasury-yield-rose-2007-120000667.html?.tsrc=rss",
+      "ts": "2026-09-24T12:00:00Z"
     },
     {
       "tag": "OPTIONS",
       "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
       "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
       "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-22T04:00:00Z"
+      "ts": "2026-09-23T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "A week of AI coding cut a quantum-safe bitcoin transaction estimate from $320 to $66",
-      "summary": "StarkWare, which conducted the research, says contest participants using AI tools made the computation about five times faster, though the $66 figure has not yet been demonstrated in another transaction mined on Bitcoin.",
-      "url": "https://www.coindesk.com/tech/2026/09/24/a-week-of-ai-coding-cut-a-quantum-safe-bitcoin-transaction-estimate-from-usd320-to-usd66",
-      "ts": "2026-09-24T05:24:56Z"
+      "title": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
+      "summary": "The fraudster managed to scam about 100 people across the United States, convincing them of transferring funds to him, claiming their accounts had been hacked.",
+      "url": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme",
+      "ts": "2026-09-24T11:33:57Z"
     }
   ],
   "calendar": [
@@ -1312,17 +1315,17 @@
     ]
   },
   "btc_range": {
-    "last": 84160,
-    "high_24h": 86459,
-    "low_24h": 83654,
-    "chg_pct": -2.74
+    "last": 83440,
+    "high_24h": 85876,
+    "low_24h": 82941,
+    "chg_pct": -2.58
   },
   "macro": {
     "10Y": 5.11,
-    "DXY": 101.07,
-    "WTI": 92.09,
-    "VIX": 15.18,
-    "asof": "2026-09-24T06:21:59Z"
+    "DXY": 101.27,
+    "WTI": 93.67,
+    "VIX": 16.16,
+    "asof": "2026-09-24T12:02:02Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-23T19:57:30Z",
