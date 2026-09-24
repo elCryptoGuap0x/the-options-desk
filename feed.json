@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T20:00:55Z",
+  "generated_at": "2026-09-24T20:26:32Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84375.93,
-      "chg_pct": 0.97,
+      "last": 84193,
+      "chg_pct": -0.08,
       "history": [
         84364.76,
         84232.565,
@@ -471,14 +471,15 @@
         84532.315,
         84524.62,
         84390.025,
-        84375.925
+        84375.925,
+        84193
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2694.36,
-      "chg_pct": 1.64,
+      "last": 2684.06,
+      "chg_pct": 0.53,
       "history": [
         2682.11,
         2678.785,
@@ -509,14 +510,15 @@
         2699.17,
         2698.62,
         2694.725,
-        2694.365
+        2694.365,
+        2684.06
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.21,
-      "chg_pct": 3.22,
+      "last": 116.79,
+      "chg_pct": 2.3,
       "history": [
         117.265,
         117.145,
@@ -547,7 +549,8 @@
         117.4,
         117.43,
         117.29,
-        117.21
+        117.21,
+        116.79
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1085,6 +1088,27 @@
       "tag": "Macro",
       "title": "Fed's Barr says more hikes are likely needed",
       "summary": "Barr framed the last 18 months as a string of shocks still pushing prices higher, arguing further tightening is probably required to get inflation back to target. That lands on top of a 5-handle 10-year and a dollar at an eight-week high. Barkin and Hammack speak around midday, while jobless claims at 8:30 ET and new home sales at 10:00 ET are the data tests of the hike narrative."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "The era of AI wearables focused on listening is here",
+      "summary": "Yahoo Finance Technology Editor Dan Howley joins Market Domination host Brooke DiPalma to report on the next round of wearable devices focused on listening to collect data, including built-in cameras in Meta's (META) Smart Glasses and the A",
+      "url": "https://finance.yahoo.com/video/the-era-of-ai-wearables-focused-on-listening-is-here-200354391.html?.tsrc=rss",
+      "ts": "2026-09-24T20:03:54Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
+      "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
+      "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
+      "ts": "2026-09-23T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Someone was trying to sell Ondo Finance after founder Nathan Allman's death",
+      "summary": "The company has vehemently denied that it was shopping for buyers. Allman\u2019s estate declined to comment.",
+      "url": "https://www.coindesk.com/business/2026/09/23/someone-was-trying-to-sell-ondo-finance-after-founder-nathan-allman-s-death",
+      "ts": "2026-09-24T20:13:25Z"
     }
   ],
   "calendar": [
@@ -1463,17 +1487,17 @@
     ]
   },
   "btc_range": {
-    "last": 83440,
-    "high_24h": 85876,
+    "last": 84212,
+    "high_24h": 84843,
     "low_24h": 82941,
-    "chg_pct": -2.58
+    "chg_pct": -0.05
   },
   "macro": {
-    "10Y": 5.11,
-    "DXY": 101.27,
-    "WTI": 93.67,
-    "VIX": 16.16,
-    "asof": "2026-09-24T12:02:02Z"
+    "10Y": 5.16,
+    "DXY": 101.28,
+    "WTI": 95.43,
+    "VIX": 15.65,
+    "asof": "2026-09-24T20:26:32Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-24T19:59:04Z",
