@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T15:15:31Z",
+  "generated_at": "2026-09-24T15:24:38Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -439,12 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83872.2,
-      "chg_pct": 0.36,
+      "last": 84181.5,
+      "chg_pct": 0.73,
       "history": [
-        83929.74,
-        83954.085,
-        83866.965,
         83923.3,
         84147.99,
         84213.545,
@@ -471,18 +468,18 @@
         83736.335,
         83876.445,
         83873.265,
-        83872.2
+        83872.2,
+        83949.125,
+        84031.565,
+        84181.5
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2664.41,
-      "chg_pct": 0.51,
+      "last": 2670.83,
+      "chg_pct": 0.75,
       "history": [
-        2665.805,
-        2664.46,
-        2661.205,
         2667.545,
         2669.115,
         2666.95,
@@ -509,18 +506,18 @@
         2660.605,
         2662.845,
         2663.02,
-        2664.415
+        2664.415,
+        2664.41,
+        2665.975,
+        2670.83
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.03,
-      "chg_pct": 1.31,
+      "last": 115.77,
+      "chg_pct": 1.95,
       "history": [
-        114.775,
-        114.795,
-        114.685,
         114.64,
         114.81,
         114.915,
@@ -547,14 +544,17 @@
         114.82,
         114.87,
         114.99,
-        115.035
+        115.035,
+        115.295,
+        115.47,
+        115.765
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 764.33,
-      "chg_pct": -0.39,
+      "last": 763.37,
+      "chg_pct": -0.52,
       "history": [
         767.355,
         764.23,
@@ -574,14 +574,15 @@
         765.47,
         764.71,
         764.34,
-        764.325
+        764.325,
+        763.365
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 735.89,
-      "chg_pct": -0.63,
+      "last": 735.09,
+      "chg_pct": -0.74,
       "history": [
         740.5863,
         734.88,
@@ -601,14 +602,15 @@
         737.28,
         736.09,
         735.91,
-        735.89
+        735.89,
+        735.09
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IWM": {
-      "last": 279.89,
-      "chg_pct": -0.71,
+      "last": 279.59,
+      "chg_pct": -0.82,
       "history": [
         281.895,
         281.02,
@@ -627,7 +629,8 @@
         280.82,
         280.32,
         280.09,
-        279.89
+        279.89,
+        279.59
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -718,8 +721,8 @@
       "why": "Looked 10:33 AM ET \u2014 no break, quiet tape."
     },
     "MSTR": {
-      "last": 159.61,
-      "chg_pct": -1.94,
+      "last": 159.93,
+      "chg_pct": -1.74,
       "history": [
         162.76,
         159.88,
@@ -739,14 +742,15 @@
         160.925,
         158.85,
         158.665,
-        159.6096
+        159.6096,
+        159.93
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "COIN": {
-      "last": 195.55,
-      "chg_pct": -1.4,
+      "last": 195.65,
+      "chg_pct": -1.35,
       "history": [
         198.335,
         196.33,
@@ -766,14 +770,15 @@
         197.86,
         195.665,
         195.6,
-        195.55
+        195.55,
+        195.65
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IBIT": {
-      "last": 47.43,
-      "chg_pct": -0.86,
+      "last": 47.52,
+      "chg_pct": -0.68,
       "history": [
         47.845,
         47.38,
@@ -793,14 +798,15 @@
         47.46,
         47.39,
         47.34,
-        47.4329
+        47.4329,
+        47.5199
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IREN": {
-      "last": 45.65,
-      "chg_pct": -3.27,
+      "last": 45.28,
+      "chg_pct": -4.06,
       "history": [
         47.195,
         45.8,
@@ -820,14 +826,15 @@
         46.11,
         45.69,
         45.76,
-        45.65
+        45.65,
+        45.2799
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "XLE": {
-      "last": 63.25,
-      "chg_pct": 1.44,
+      "last": 63.21,
+      "chg_pct": 1.38,
       "history": [
         62.35,
         63.02,
@@ -846,7 +853,8 @@
         63.13,
         63.19,
         63.235,
-        63.25
+        63.25,
+        63.21
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -1012,22 +1020,22 @@
         "chg_pct": 2.44
       },
       {
-        "sym": "XLE",
-        "chg_pct": 1.44
+        "sym": "SOL",
+        "chg_pct": 1.95
       },
       {
-        "sym": "SOL",
-        "chg_pct": 1.31
+        "sym": "XLE",
+        "chg_pct": 1.38
       }
     ],
     "down": [
       {
         "sym": "IREN",
-        "chg_pct": -3.27
+        "chg_pct": -4.06
       },
       {
         "sym": "MSTR",
-        "chg_pct": -1.94
+        "chg_pct": -1.74
       },
       {
         "sym": "NVDA",
@@ -1036,8 +1044,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "10:06",
-    "crypto": "10:15"
+    "watch": "10:20",
+    "crypto": "10:24"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
@@ -1172,7 +1180,7 @@
     "asof": "2026-09-24T12:02:02Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-24T15:06:00Z",
+    "last_look_iso": "2026-09-24T15:20:00Z",
     "names": 17,
     "tickets": 0,
     "cadence_min": 4
@@ -1183,7 +1191,7 @@
   "delayed_pass_lines": [
     "AAPL \u2014 still watching, nothing confirmed.",
     "COIN \u2014 still watching, nothing confirmed.",
-    "CRWD \u2014 quiet, no shape yet.",
+    "CRWD \u2014 still watching, nothing confirmed.",
     "GLD \u2014 still watching, nothing confirmed.",
     "IBIT \u2014 still watching, nothing confirmed.",
     "IREN \u2014 quiet, no shape yet."
