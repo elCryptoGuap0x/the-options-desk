@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T14:39:04Z",
+  "generated_at": "2026-09-24T14:48:12Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84508.76,
-      "chg_pct": 1.13,
+      "last": 84198.77,
+      "chg_pct": 0.76,
       "history": [
         83567.545,
         83505.225,
@@ -466,14 +466,17 @@
         84878.755,
         84832.16,
         84709.365,
-        84508.755
+        84508.755,
+        84457.595,
+        84357.145,
+        84198.775
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2685.72,
-      "chg_pct": 1.32,
+      "last": 2676.01,
+      "chg_pct": 0.95,
       "history": [
         2650.825,
         2647.85,
@@ -499,14 +502,17 @@
         2694.25,
         2696.695,
         2693.41,
-        2685.715
+        2685.715,
+        2682.385,
+        2680.12,
+        2676.015
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.97,
-      "chg_pct": 2.14,
+      "last": 115.64,
+      "chg_pct": 1.84,
       "history": [
         113.55,
         113.505,
@@ -533,14 +539,17 @@
         116.345,
         116.335,
         116.24,
-        115.975
+        115.975,
+        115.99,
+        115.755,
+        115.635
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 765.65,
-      "chg_pct": -0.22,
+      "last": 766.0,
+      "chg_pct": -0.18,
       "history": [
         767.355,
         764.23,
@@ -555,13 +564,14 @@
         766.345,
         765.98,
         766.26,
-        765.65
+        765.65,
+        766.0
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 737.53,
+      "last": 737.54,
       "chg_pct": -0.41,
       "history": [
         740.5863,
@@ -577,14 +587,15 @@
         737.21,
         737.24,
         738.02,
-        737.53
+        737.53,
+        737.54
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IWM": {
-      "last": 280.75,
-      "chg_pct": -0.41,
+      "last": 280.82,
+      "chg_pct": -0.38,
       "history": [
         281.895,
         281.02,
@@ -599,7 +610,8 @@
         280.68,
         280.42,
         280.62,
-        280.75
+        280.75,
+        280.82
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -626,7 +638,7 @@
       "why": "On the list. No ticket."
     },
     "NVDA": {
-      "last": 222.49,
+      "last": 222.48,
       "chg_pct": -1.14,
       "history": [
         225.055,
@@ -639,7 +651,8 @@
         222.0554,
         222.45,
         222.33,
-        222.485
+        222.485,
+        222.48
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -685,8 +698,8 @@
       "why": "Looked 10:33 AM ET \u2014 no break, quiet tape."
     },
     "MSTR": {
-      "last": 164.54,
-      "chg_pct": 1.09,
+      "last": 162.9,
+      "chg_pct": 0.09,
       "history": [
         162.76,
         159.88,
@@ -701,14 +714,15 @@
         162.645,
         162.535,
         164.14,
-        164.54
+        164.54,
+        162.9
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "COIN": {
-      "last": 199.52,
-      "chg_pct": 0.6,
+      "last": 199.48,
+      "chg_pct": 0.58,
       "history": [
         198.335,
         196.33,
@@ -723,14 +737,15 @@
         196.25,
         196.63,
         198.26,
-        199.52
+        199.52,
+        199.4775
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IBIT": {
-      "last": 48.05,
-      "chg_pct": 0.42,
+      "last": 47.84,
+      "chg_pct": -0.01,
       "history": [
         47.845,
         47.38,
@@ -745,14 +760,15 @@
         47.724,
         47.7099,
         48.025,
-        48.045
+        48.045,
+        47.8413
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IREN": {
-      "last": 46.51,
-      "chg_pct": -1.45,
+      "last": 46.09,
+      "chg_pct": -2.33,
       "history": [
         47.195,
         45.8,
@@ -767,14 +783,15 @@
         45.96,
         46.115,
         46.22,
-        46.51
+        46.51,
+        46.095
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "XLE": {
-      "last": 63.16,
-      "chg_pct": 1.3,
+      "last": 63.2,
+      "chg_pct": 1.36,
       "history": [
         62.35,
         63.02,
@@ -788,7 +805,8 @@
         63.115,
         63.155,
         63.135,
-        63.16
+        63.16,
+        63.2
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -955,17 +973,17 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 2.14
+        "chg_pct": 1.84
       },
       {
-        "sym": "ETH",
-        "chg_pct": 1.32
+        "sym": "XLE",
+        "chg_pct": 1.36
       }
     ],
     "down": [
       {
         "sym": "IREN",
-        "chg_pct": -1.45
+        "chg_pct": -2.33
       },
       {
         "sym": "NVDA",
@@ -978,8 +996,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "9:33",
-    "crypto": "9:39"
+    "watch": "9:38",
+    "crypto": "9:48"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
@@ -1098,12 +1116,6 @@
         "t": null,
         "line": "not a setup"
       }
-    ],
-    "ETH": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
     ]
   },
   "btc_range": {
@@ -1120,7 +1132,7 @@
     "asof": "2026-09-24T12:02:02Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-24T14:33:00Z",
+    "last_look_iso": "2026-09-24T14:38:47Z",
     "names": 17,
     "tickets": 0,
     "cadence_min": 4
@@ -1131,9 +1143,9 @@
   "delayed_pass_lines": [
     "AAPL \u2014 still watching, nothing confirmed.",
     "COIN \u2014 still watching, nothing confirmed.",
-    "CRWD \u2014 still watching, nothing confirmed.",
+    "CRWD \u2014 quiet, no shape yet.",
     "GLD \u2014 still watching, nothing confirmed.",
     "IBIT \u2014 still watching, nothing confirmed.",
-    "IREN \u2014 still watching, nothing confirmed."
+    "IREN \u2014 close, but not clean enough yet."
   ]
 }
