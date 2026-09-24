@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T23:06:37Z",
+  "generated_at": "2026-09-24T01:21:32Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84511,
-      "chg_pct": -1.95,
+      "last": 84233,
+      "chg_pct": -2.82,
       "history": [
         84145.725,
         84138.88,
@@ -473,14 +473,15 @@
         84490.055,
         84503.685,
         84261,
-        84511
+        84511,
+        84233
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2688.44,
-      "chg_pct": -2.43,
+      "last": 2680.73,
+      "chg_pct": -3.23,
       "history": [
         2661.795,
         2660.17,
@@ -513,14 +514,15 @@
         2676.47,
         2678.14,
         2670.0,
-        2688.44
+        2688.44,
+        2680.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.03,
-      "chg_pct": -2.95,
+      "last": 115.09,
+      "chg_pct": -3.36,
       "history": [
         114.115,
         114.11,
@@ -553,7 +555,8 @@
         114.61,
         114.615,
         114.11,
-        115.03
+        115.03,
+        115.09
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -992,17 +995,17 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Dow Jones Futures: Stocks Fall As Treasury Yields Soar; Palantir, Palo Alto Flash Buy Signals",
-      "summary": "The stock market fell as Treasury yields skyrocketed and oil prices rose, but Palantir and Palo Alto flashed buy signals.",
-      "url": "https://finance.yahoo.com/m/d54436eb-45f8-3808-b582-09ab7590f21b/dow-jones-futures%3A-stocks.html?.tsrc=rss",
-      "ts": "2026-09-23T22:26:01Z"
+      "title": "Meta's Zuckerberg says Muse AI agent will take a small fee from transactions",
+      "summary": "Meta says it will profit from small fees on Muse transactions.",
+      "url": "https://finance.yahoo.com/technology/article/metas-zuckerberg-says-muse-ai-agent-will-take-a-small-fee-from-transactions-234639802.html?.tsrc=rss",
+      "ts": "2026-09-23T23:46:39Z"
     },
     {
       "tag": "OPTIONS",
       "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
       "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
       "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-23T04:00:00Z"
+      "ts": "2026-09-22T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1306,17 +1309,17 @@
     ]
   },
   "btc_range": {
-    "last": 84553,
+    "last": 84270,
     "high_24h": 87251,
     "low_24h": 83654,
-    "chg_pct": -2.02
+    "chg_pct": -2.78
   },
   "macro": {
     "10Y": 5.11,
     "DXY": 101.11,
-    "WTI": 92.24,
+    "WTI": 91.4,
     "VIX": 15.18,
-    "asof": "2026-09-23T23:06:37Z"
+    "asof": "2026-09-24T01:21:32Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-23T19:57:30Z",
