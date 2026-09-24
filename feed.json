@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T17:41:20Z",
+  "generated_at": "2026-09-24T17:50:26Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -439,12 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84203.46,
-      "chg_pct": 0.76,
+      "last": 84154.96,
+      "chg_pct": 0.7,
       "history": [
-        84018.415,
-        84465.82,
-        84514.45,
         84638.185,
         84569.345,
         84616.595,
@@ -471,18 +468,18 @@
         84402.975,
         84285.675,
         84217.805,
-        84203.465
+        84203.465,
+        84126.215,
+        84172.685,
+        84154.965
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2675.2,
-      "chg_pct": 0.92,
+      "last": 2670.27,
+      "chg_pct": 0.73,
       "history": [
-        2666.625,
-        2684.075,
-        2688.375,
         2692.8,
         2692.16,
         2693.725,
@@ -509,18 +506,18 @@
         2683.44,
         2676.155,
         2675.905,
-        2675.205
+        2675.205,
+        2670.3,
+        2670.735,
+        2670.27
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.75,
-      "chg_pct": 2.82,
+      "last": 116.64,
+      "chg_pct": 2.73,
       "history": [
-        115.955,
-        116.81,
-        117.095,
         117.25,
         116.975,
         117.02,
@@ -547,7 +544,10 @@
         117.165,
         117.0,
         116.855,
-        116.755
+        116.755,
+        116.615,
+        116.635,
+        116.645
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1130,7 +1130,7 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 2.82
+        "chg_pct": 2.73
       },
       {
         "sym": "XLE",
@@ -1154,7 +1154,7 @@
   },
   "desk_freshness": {
     "watch": "12:38",
-    "crypto": "12:41"
+    "crypto": "12:50"
   },
   "desk_board": [
     {
@@ -1349,14 +1349,14 @@
     "cadence_min": 4
   },
   "today_label": "Thu 9/24",
-  "narrative_line": "Looked at 17 names. Nothing cleared. Still scanning.",
+  "narrative_line": "Looked at 20 names. Nothing cleared. Still scanning.",
   "session_caption": "No fills today. Scanning.",
   "delayed_pass_lines": [
     "COIN \u2014 still watching, nothing confirmed.",
+    "COST \u2014 still watching, nothing confirmed.",
     "CRWD \u2014 still watching, nothing confirmed.",
     "GLD \u2014 still watching, nothing confirmed.",
     "GOOGL \u2014 still watching, nothing confirmed.",
-    "IBIT \u2014 still watching, nothing confirmed.",
-    "IWM \u2014 still watching, nothing confirmed."
+    "IBIT \u2014 still watching, nothing confirmed."
   ]
 }
