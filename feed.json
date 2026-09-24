@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T12:02:02Z",
+  "generated_at": "2026-09-24T12:26:46Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -19,7 +19,7 @@
     "prior_week_record": "1-6",
     "session_pnl_usd": 11.0,
     "prior_week_net_usd": -75,
-    "today_record": "1 of 1 today"
+    "today_record": "0 of 0 today"
   },
   "sparkline_cum_pct": [
     0.0,
@@ -439,167 +439,39 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83440,
-      "chg_pct": -2.58,
+      "last": 83505.23,
+      "chg_pct": -0.07,
       "history": [
-        84145.725,
-        84138.88,
-        84132.225,
-        84145.14,
-        84216.175,
-        84206.115,
-        84336.635,
-        84334.015,
-        84344.355,
-        84319.325,
-        84295.465,
-        84220.25,
-        84311.505,
-        84358.645,
-        84382.205,
-        84317.365,
-        84341.315,
-        84411.245,
-        84426.515,
-        84391.125,
-        84436.375,
-        84480.365,
-        84448.005,
-        84457.245,
-        84431.785,
-        84492.815,
-        84548.775,
-        84512.965,
-        84490.055,
-        84503.685,
-        84261,
-        84511,
-        84233,
-        84156,
-        83440
+        83567.545,
+        83505.225
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2645.22,
-      "chg_pct": -3.04,
+      "last": 2647.85,
+      "chg_pct": -0.11,
       "history": [
-        2661.795,
-        2660.17,
-        2659.865,
-        2659.095,
-        2663.2,
-        2663.585,
-        2668.64,
-        2669.73,
-        2670.005,
-        2668.595,
-        2667.115,
-        2664.125,
-        2667.83,
-        2668.12,
-        2668.06,
-        2666.96,
-        2669.155,
-        2673.275,
-        2674.46,
-        2672.685,
-        2673.645,
-        2675.535,
-        2674.335,
-        2675.04,
-        2674.025,
-        2676.555,
-        2678.335,
-        2676.465,
-        2676.47,
-        2678.14,
-        2670.0,
-        2688.44,
-        2680.73,
-        2688.41,
-        2645.22
+        2650.825,
+        2647.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 113.24,
-      "chg_pct": -3.3,
+      "last": 113.5,
+      "chg_pct": -0.04,
       "history": [
-        114.115,
-        114.11,
-        114.125,
-        114.09,
-        114.05,
-        114.18,
-        114.175,
-        114.415,
-        114.41,
-        114.49,
-        114.265,
-        114.26,
-        114.07,
-        114.165,
-        114.26,
-        114.255,
-        114.25,
-        114.29,
-        114.46,
-        114.525,
-        114.47,
-        114.55,
-        114.585,
-        114.55,
-        114.575,
-        114.385,
-        114.59,
-        114.685,
-        114.61,
-        114.615,
-        114.11,
-        115.03,
-        115.09,
-        115.13,
-        113.24
+        113.55,
+        113.505
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
       "last": 767.36,
-      "chg_pct": -0.83,
+      "chg_pct": 0.0,
       "history": [
-        767.76,
-        767.375,
-        767.31,
-        767.48,
-        768.455,
-        768.545,
-        768.48,
-        768.86,
-        768.31,
-        768.44,
-        768.32,
-        768.44,
-        768.33,
-        768.09,
-        767.62,
-        767.97,
-        768.06,
-        767.9,
-        768.16,
-        767.82,
-        768.12,
-        767.815,
-        767.65,
-        767.6,
-        767.72,
-        767.965,
-        767.93,
-        767.705,
-        766.77,
         767.355
       ],
       "status": "watching",
@@ -607,37 +479,8 @@
     },
     "QQQ": {
       "last": 740.59,
-      "chg_pct": -0.92,
+      "chg_pct": 0.0,
       "history": [
-        739.92,
-        739.13,
-        739.225,
-        739.485,
-        740.715,
-        740.82,
-        740.74,
-        741.08,
-        740.57,
-        740.625,
-        740.83,
-        740.885,
-        740.9539,
-        740.71,
-        740.23,
-        740.79,
-        740.93,
-        740.8,
-        741.02,
-        740.68,
-        741.23,
-        740.78,
-        740.655,
-        740.66,
-        740.84,
-        741.16,
-        741.015,
-        740.68,
-        740.085,
         740.5863
       ],
       "status": "watching",
@@ -645,37 +488,8 @@
     },
     "IWM": {
       "last": 281.89,
-      "chg_pct": -1.85,
+      "chg_pct": 0.0,
       "history": [
-        282.635,
-        282.51,
-        282.345,
-        282.27,
-        282.74,
-        282.83,
-        282.795,
-        282.94,
-        282.6,
-        282.622,
-        282.575,
-        282.545,
-        282.505,
-        282.4,
-        282.27,
-        282.265,
-        282.31,
-        282.3,
-        282.63,
-        282.29,
-        282.48,
-        282.51,
-        282.365,
-        282.43,
-        282.51,
-        282.42,
-        282.425,
-        282.04,
-        282.07,
         281.895
       ],
       "status": "ruled out",
@@ -683,37 +497,8 @@
     },
     "NVDA": {
       "last": 225.06,
-      "chg_pct": -1.69,
+      "chg_pct": 0.0,
       "history": [
-        224.59,
-        224.4598,
-        224.56,
-        224.61,
-        225.09,
-        225.22,
-        225.27,
-        225.39,
-        225.275,
-        225.135,
-        225.435,
-        225.525,
-        225.555,
-        225.415,
-        225.275,
-        225.385,
-        225.465,
-        225.35,
-        225.28,
-        225.235,
-        225.3,
-        225.28,
-        225.4199,
-        225.255,
-        225.185,
-        225.39,
-        225.3606,
-        225.315,
-        224.9,
         225.055
       ],
       "status": "watching",
@@ -721,37 +506,8 @@
     },
     "META": {
       "last": 745.3,
-      "chg_pct": 1.24,
+      "chg_pct": 0.0,
       "history": [
-        753.3375,
-        752.89,
-        751.32,
-        748.75,
-        751.085,
-        753.5,
-        751.88,
-        751.21,
-        750.365,
-        747.74,
-        749.7,
-        749.5,
-        749.065,
-        748.67,
-        747.96,
-        747.88,
-        749.68,
-        748.365,
-        748.61,
-        748.635,
-        747.81,
-        747.5,
-        747.9402,
-        747.4727,
-        747.81,
-        749.97,
-        747.15,
-        747.28,
-        745.73,
         745.3
       ],
       "status": "ruled out",
@@ -759,24 +515,8 @@
     },
     "TSLA": {
       "last": 379.94,
-      "chg_pct": 0.19,
+      "chg_pct": 0.0,
       "history": [
-        379.23,
-        378.9167,
-        380.0243,
-        379.916,
-        379.5,
-        379.78,
-        379.7,
-        380.1,
-        379.9699,
-        379.83,
-        380.26,
-        379.66,
-        379.715,
-        379.87,
-        379.225,
-        379.99,
         379.94
       ],
       "status": "watching",
@@ -784,37 +524,8 @@
     },
     "MSTR": {
       "last": 162.76,
-      "chg_pct": -3.15,
+      "chg_pct": 0.0,
       "history": [
-        163.705,
-        163.06,
-        163.16,
-        163.094,
-        163.58,
-        163.575,
-        163.04,
-        163.02,
-        162.63,
-        162.45,
-        162.34,
-        162.42,
-        162.45,
-        162.3,
-        162.35,
-        162.45,
-        162.74,
-        162.73,
-        162.86,
-        162.44,
-        162.59,
-        162.775,
-        162.67,
-        163.76,
-        163.54,
-        163.72,
-        163.605,
-        162.84,
-        163.28,
         162.76
       ],
       "status": "watching",
@@ -822,37 +533,8 @@
     },
     "COIN": {
       "last": 198.34,
-      "chg_pct": -0.03,
+      "chg_pct": 0.0,
       "history": [
-        199.85,
-        199.235,
-        199.17,
-        198.515,
-        199.4,
-        199.5,
-        199.2,
-        199.14,
-        199.015,
-        199.035,
-        198.855,
-        198.765,
-        198.805,
-        198.305,
-        198.5,
-        198.455,
-        198.94,
-        198.76,
-        198.38,
-        198.45,
-        198.28,
-        198.4136,
-        198.005,
-        198.62,
-        198.151,
-        198.5,
-        198.48,
-        197.8599,
-        197.72,
         198.335
       ],
       "status": "watching",
@@ -860,37 +542,8 @@
     },
     "IBIT": {
       "last": 47.84,
-      "chg_pct": -2.05,
+      "chg_pct": 0.0,
       "history": [
-        47.6799,
-        47.6132,
-        47.605,
-        47.59,
-        47.6915,
-        47.7519,
-        47.705,
-        47.73,
-        47.715,
-        47.7026,
-        47.67,
-        47.645,
-        47.655,
-        47.67,
-        47.635,
-        47.675,
-        47.705,
-        47.77,
-        47.76,
-        47.7,
-        47.7497,
-        47.7698,
-        47.75,
-        47.795,
-        47.79,
-        47.83,
-        47.825,
-        47.8288,
-        47.875,
         47.845
       ],
       "status": "watching",
@@ -898,37 +551,8 @@
     },
     "IREN": {
       "last": 47.2,
-      "chg_pct": -1.51,
+      "chg_pct": 0.0,
       "history": [
-        47.9452,
-        48.07,
-        48.065,
-        48.08,
-        47.91,
-        48.01,
-        47.985,
-        47.975,
-        48.03,
-        48.0001,
-        48.065,
-        48.23,
-        48.245,
-        48.25,
-        48.35,
-        48.125,
-        48.2194,
-        48.12,
-        48.21,
-        48.0428,
-        47.94,
-        48.0073,
-        47.87,
-        48.06,
-        48.14,
-        48.085,
-        47.92,
-        47.71,
-        47.505,
         47.195
       ],
       "status": "no setup",
@@ -936,37 +560,8 @@
     },
     "XLE": {
       "last": 62.35,
-      "chg_pct": -0.73,
+      "chg_pct": 0.0,
       "history": [
-        62.335,
-        62.295,
-        62.4,
-        62.41,
-        62.435,
-        62.575,
-        62.375,
-        62.4,
-        62.46,
-        62.455,
-        62.4,
-        62.405,
-        62.395,
-        62.425,
-        62.3605,
-        62.315,
-        62.305,
-        62.295,
-        62.3,
-        62.29,
-        62.365,
-        62.385,
-        62.34,
-        62.3,
-        62.35,
-        62.325,
-        62.4,
-        62.43,
-        62.275,
         62.35
       ],
       "status": "watching",
@@ -976,335 +571,186 @@
   "news": [
     {
       "tag": "Macro",
-      "title": "US and Iran talk for three hours, and oil listens",
-      "summary": "Officials from both sides met at the UN for roughly three hours, a session Trump called \"very good,\" with another meeting said to be planned. The same week, he told the UN he still sees a choice between a deal and \"annihilating\" Iran. Markets read the meeting as a de-escalation bid: oil slipped toward and under $100 while equity futures stayed contained. Tehran's public conditions around Hormuz, the blockade, and frozen assets are still unmet, so any leak can reprice the open."
+      "title": "10-year tops 5.1% as hike bets build",
+      "summary": "Global bonds sold off after strong US activity data and a weak 5-year auction, pushing the 10-year yield as high as ~5.15% and the 5-year above 5% for the first time since 2007. Markets are pricing more tightening into October. Stocks followed yields down Wednesday, with the S&P off 0.75% to ~7,706 and the Nasdaq down 1.13%. Another auction today keeps duration in charge of the tape."
     },
     {
       "tag": "Macro",
-      "title": "Xi lands today, and the AI dinner is the part markets care about",
-      "summary": "Trump is expected to greet Xi Jinping at Joint Base Andrews ahead of Thursday meetings and a dinner with tech CEOs, including Nvidia's Jensen Huang. The flagged agenda is trade, Iran, rare earths, and AI. Analysts are not pricing a grand bargain, but any line on export controls or AI cooperation lands on Nvidia and the semis first. It is the first US state visit of this kind in years, so the optics alone can move the open."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Nasdaq takes a second straight record while financials get sold",
-      "summary": "The Nasdaq Composite closed at another record Tuesday, up 0.45%, while the Dow fell about 0.4% and the S&P finished flat as financials sold off. Meta's Muse AI assistant is the split in the narrative: infrastructure and tech catch the bid, brokers and some consumer platforms take the hit. Memory names that led Tuesday, MU and SNDK, are softer premarket. Breadth is narrow enough that a weak PMI print could unwind the record bid quickly."
-    },
-    {
-      "tag": "Stocks",
-      "title": "IonQ pops 11% on a quantum error-correction decoder that runs on a normal CPU",
-      "summary": "IonQ rose about 11-12% premarket after saying it tested an end-to-end real-time quantum error-correction decoder on a standard CPU, citing simulations up to 408 logical qubits and tens of millions of operations with low classical overhead. Peer quantum names RGTI, QBTS, and QUBT lifted alongside it. Moves like this can gap and then fade, and the stock's listed options skip today and tomorrow, with the next expiry on Friday."
+      "title": "Futures slide as Xi lands and yields stay high",
+      "summary": "S&P futures were off about 0.5% and Nasdaq futures about 1% ahead of the open, with Dow futures only modestly lower. Sticky inflation and the bond tape outweighed any AI-continuation bid. Trump's meetings with Xi in Washington, plus a dinner with US tech CEOs, are the day's political headline. Bessent said the trade truce has already been extended two months to Jan 10."
     },
     {
       "tag": "Macro",
-      "title": "Europe's PMIs came in hot; the US print at 9:45 is the one that bites",
-      "summary": "European flash PMIs beat on services, with the German composite at 53.8 and France back above 50. US flash PMIs print at 9:45 ET, with manufacturing consensus near 53.6 against 53.9 prior and services around 55.8-56 against 56.5. A hot number keeps October hike pricing alive, one snapshot of FedWatch had it near 58%, and keeps financials under pressure; a miss helps duration and the Nasdaq record. EIA crude inventories follow at 10:30."
+      "title": "Oil jumps on Iran rhetoric; energy the only sector that worked",
+      "summary": "WTI and Brent ripped Wednesday after Pezeshkian said Tehran would not surrender and after Trump's \"annihilate\" line. Energy led the S&P while nine of eleven sectors fell, with utilities down 1.72% and communication services down 1.49%. Crude held its gains overnight, WTI near $93 and Brent near $104. Geopolitical headlines stay a two-way risk for energy at the open."
     },
     {
-      "tag": "MARKETS",
-      "title": "10-year Treasury yield rose to its 2007 high, but this portfolio manager isn't worried 'at all'",
-      "summary": "Andersen Capital Management founder and CEO, Peter Andersen, sits down with Market Domination Overtime host Josh Lipton to explain why the rising 10-year Treasury yield (^TNX) might not be a concern for risk assets.",
-      "url": "https://finance.yahoo.com/video/10-treasury-yield-rose-2007-120000667.html?.tsrc=rss",
-      "ts": "2026-09-24T12:00:00Z"
+      "tag": "Stocks",
+      "title": "Alphabet and Amazon drag the Nasdaq as AI multiples compress",
+      "summary": "GOOGL fell 3.8%, AMZN 2.2% and NVDA 1.5% in a session that saw the PHLX semiconductor index off 1.2%. That is the sleeve that will trade the Xi dinner and any AI-regulation language, and Nasdaq futures staying the weakest contract this morning is the same story rather than a new one. Cybersecurity was the exception, with PANW and CRWD both up about 5% on analyst target hikes."
     },
     {
-      "tag": "OPTIONS",
-      "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
-      "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
-      "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-23T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
-      "summary": "The fraudster managed to scam about 100 people across the United States, convincing them of transferring funds to him, claiming their accounts had been hacked.",
-      "url": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme",
-      "ts": "2026-09-24T11:33:57Z"
+      "tag": "Macro",
+      "title": "Fed's Barr says more hikes are likely needed",
+      "summary": "Barr framed the last 18 months as a string of shocks still pushing prices higher, arguing further tightening is probably required to get inflation back to target. That lands on top of a 5-handle 10-year and a dollar at an eight-week high. Barkin and Hammack speak around midday, while jobless claims at 8:30 ET and new home sales at 10:00 ET are the data tests of the hike narrative."
     }
   ],
   "calendar": [
     {
-      "what": "US Flash PMIs",
-      "when": "Today, 9:45 ET"
+      "what": "Initial and continuing jobless claims",
+      "when": "Today, 8:30 ET"
     },
     {
-      "what": "Fed's Barr speaks",
-      "when": "Today, 10:05 ET"
+      "what": "August new home sales",
+      "when": "Today, 10:00 ET"
     },
     {
-      "what": "EIA crude inventories",
-      "when": "Today, 10:30 ET"
-    },
-    {
-      "what": "$70B 5-year Treasury auction",
-      "when": "Today, 13:00 ET"
-    },
-    {
-      "what": "Xi arrival in the US",
+      "what": "$44B 7-year Treasury auction",
       "when": "Today"
     },
     {
       "what": "Trump-Xi meetings and tech CEO dinner",
-      "when": "Thursday"
+      "when": "Today"
+    },
+    {
+      "what": "Darden and BB earnings",
+      "when": "Today, before the open"
+    },
+    {
+      "what": "Costco earnings",
+      "when": "Today, after the close"
     },
     {
       "what": "Durable goods orders",
-      "when": "Friday"
+      "when": "Friday, 8:30 ET"
     },
     {
-      "what": "UMich sentiment, final",
-      "when": "Friday"
+      "what": "Final UMich sentiment",
+      "when": "Friday, 10:00 ET"
     },
     {
-      "what": "Iran diplomacy, oil around $100, Fed hike re-pricing",
-      "when": "Ongoing"
+      "what": "JOLTS job openings",
+      "when": "Tuesday, Sept 29"
+    },
+    {
+      "what": "Q2 GDP third estimate and PCE",
+      "when": "Wednesday, Sept 30"
+    },
+    {
+      "what": "Next FOMC meeting",
+      "when": "Oct 27-28"
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 16,
-    "names": [
-      "AMD",
-      "COIN",
-      "IBIT",
-      "IONQ",
-      "IREN",
-      "IWM",
-      "META",
-      "MSTR",
-      "MU",
-      "NVDA",
-      "QQQ",
-      "SCHW",
-      "SPY",
-      "TSLA",
-      "WOR",
-      "XLE"
-    ],
-    "interesting": [
-      [
-        "AMD",
-        "disqualified"
-      ],
-      [
-        "COIN",
-        "watching"
-      ],
-      [
-        "IBIT",
-        "watching"
-      ],
-      [
-        "IONQ",
-        "watching"
-      ],
-      [
-        "IWM",
-        "disqualified"
-      ],
-      [
-        "META",
-        "disqualified"
-      ],
-      [
-        "MSTR",
-        "watching"
-      ],
-      [
-        "MU",
-        "watching"
-      ],
-      [
-        "NVDA",
-        "watching"
-      ],
-      [
-        "QQQ",
-        "watching"
-      ],
-      [
-        "SCHW",
-        "watching"
-      ],
-      [
-        "SPY",
-        "watching"
-      ],
-      [
-        "TSLA",
-        "watching"
-      ],
-      [
-        "WOR",
-        "disqualified"
-      ],
-      [
-        "XLE",
-        "watching"
-      ]
-    ],
-    "no_shape_count": 1,
-    "filled": 6
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0,
+    "filled": 0
   },
-  "scan_log_public": "Closed <span class=\"desk-tag good\">IWM</span> +19.6%.",
+  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
-    "up": [
-      {
-        "sym": "META",
-        "chg_pct": 1.24
-      },
-      {
-        "sym": "TSLA",
-        "chg_pct": 0.19
-      }
-    ],
+    "up": [],
     "down": [
       {
-        "sym": "MSTR",
-        "chg_pct": -3.15
+        "sym": "ETH",
+        "chg_pct": -0.11
+      },
+      {
+        "sym": "BTC",
+        "chg_pct": -0.07
       },
       {
         "sym": "SOL",
-        "chg_pct": -2.1
-      },
-      {
-        "sym": "IBIT",
-        "chg_pct": -2.05
+        "chg_pct": -0.04
       }
     ]
   },
   "desk_freshness": {
     "watch": "2:57",
-    "crypto": "3:00"
+    "crypto": "7:26"
   },
-  "desk_board": [
-    {
-      "sym": "AMD",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "IWM",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "META",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "WOR",
-      "status": "OUT",
-      "why": "Not in play."
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
-  "tenor_calendar": "weeklies 2DTE live \u00b7 indices + IBIT live",
+  "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
   "desk_events": {
-    "IWM": [
-      {
-        "t": "9:44 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:47 AM ET",
-        "line": "Took a position (put)."
-      },
-      {
-        "t": "12:54 PM ET",
-        "line": "Not in play."
-      }
-    ],
     "SPY": [
       {
-        "t": "9:44 AM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "QQQ": [
       {
-        "t": "9:44 AM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "NVDA": [
       {
-        "t": "9:44 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "IBIT": [
-      {
-        "t": "9:44 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "10:26 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "COIN": [
-      {
-        "t": "9:50 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "10:26 AM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "MU": [
       {
-        "t": "10:20 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "MSTR": [
-      {
-        "t": "10:26 AM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "XLE": [
       {
-        "t": "10:29 AM ET",
+        "t": "8:26 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "MSTR": [
+      {
+        "t": "8:26 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "COIN": [
+      {
+        "t": "8:26 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "IBIT": [
+      {
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "IONQ": [
       {
-        "t": "1:41 PM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "SCHW": [
       {
-        "t": "1:41 PM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
     "TSLA": [
       {
-        "t": "2:36 PM ET",
+        "t": "8:26 AM ET",
         "line": "Added to the list."
       }
     ],
-    "AMD": [
+    "ETH": [
       {
         "t": null,
-        "line": "Not in play."
+        "line": "not a setup"
       }
     ],
-    "META": [
+    "BTC": [
       {
         "t": null,
-        "line": "Not in play."
-      }
-    ],
-    "WOR": [
-      {
-        "t": null,
-        "line": "Not in play."
+        "line": "not a setup"
       }
     ],
     "SOL": [
@@ -1329,19 +775,12 @@
   },
   "pulse": {
     "last_look_iso": "2026-09-23T19:57:30Z",
-    "names": 16,
-    "tickets": 6,
-    "cadence_min": 4
+    "names": 0,
+    "tickets": 0,
+    "cadence_min": 30
   },
-  "today_label": "Wed 9/23",
+  "today_label": "Thu 9/24",
   "narrative_line": null,
-  "session_caption": "1 fill today. IWM put. +19.6%. Scanning.",
-  "delayed_pass_lines": [
-    "AMD \u2014 move already extended.",
-    "COIN \u2014 still watching, nothing confirmed.",
-    "IBIT \u2014 still watching, nothing confirmed.",
-    "IONQ \u2014 still watching, nothing confirmed.",
-    "IWM \u2014 already traded, done.",
-    "META \u2014 move already extended."
-  ]
+  "session_caption": "No fills today. Scanning.",
+  "delayed_pass_lines": []
 }
