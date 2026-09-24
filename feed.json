@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T16:10:17Z",
+  "generated_at": "2026-09-24T16:19:24Z",
   "session": {
     "day_label": "THU",
     "market_state": "OPEN",
@@ -439,12 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84202.93,
-      "chg_pct": 0.76,
+      "last": 84514.45,
+      "chg_pct": 1.13,
       "history": [
-        84457.595,
-        84357.145,
-        84198.775,
         83756.285,
         83640.585,
         83671.89,
@@ -471,18 +468,18 @@
         84262.025,
         84234.955,
         84195.21,
-        84202.925
+        84202.925,
+        84018.415,
+        84465.82,
+        84514.45
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2673.71,
-      "chg_pct": 0.86,
+      "last": 2688.38,
+      "chg_pct": 1.42,
       "history": [
-        2682.385,
-        2680.12,
-        2676.015,
         2658.61,
         2655.2,
         2658.575,
@@ -509,18 +506,18 @@
         2676.375,
         2674.95,
         2674.265,
-        2673.71
+        2673.71,
+        2666.625,
+        2684.075,
+        2688.375
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.28,
-      "chg_pct": 2.41,
+      "last": 117.09,
+      "chg_pct": 3.12,
       "history": [
-        115.975,
-        115.99,
-        115.755,
         115.635,
         114.615,
         114.755,
@@ -547,7 +544,10 @@
         115.95,
         116.105,
         116.175,
-        116.285
+        116.285,
+        115.955,
+        116.81,
+        117.095
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1060,12 +1060,12 @@
   "board_movers": {
     "up": [
       {
-        "sym": "META",
-        "chg_pct": 2.44
+        "sym": "SOL",
+        "chg_pct": 3.12
       },
       {
-        "sym": "SOL",
-        "chg_pct": 2.41
+        "sym": "META",
+        "chg_pct": 2.44
       },
       {
         "sym": "XLE",
@@ -1089,7 +1089,7 @@
   },
   "desk_freshness": {
     "watch": "11:06",
-    "crypto": "11:10"
+    "crypto": "11:19"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
