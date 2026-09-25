@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T18:10:32Z",
+  "generated_at": "2026-09-25T18:19:41Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -439,40 +439,49 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83865.65,
-      "chg_pct": 0.17,
+      "last": 84009.02,
+      "chg_pct": 0.34,
       "history": [
         83722.125,
         83810.795,
         83850.295,
         83831.065,
-        83865.65
+        83865.65,
+        83992.77,
+        83986.055,
+        84009.025
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2688.82,
-      "chg_pct": 0.2,
+      "last": 2696.57,
+      "chg_pct": 0.49,
       "history": [
         2683.415,
         2688.15,
         2688.135,
         2687.45,
-        2688.825
+        2688.825,
+        2694.345,
+        2694.885,
+        2696.575
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.25,
-      "chg_pct": 0.31,
+      "last": 122.2,
+      "chg_pct": 1.09,
       "history": [
         120.88,
         121.065,
         121.195,
         121.165,
-        121.25
+        121.25,
+        121.995,
+        122.205,
+        122.2
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -773,12 +782,12 @@
         "chg_pct": 3.86
       },
       {
-        "sym": "SPY",
-        "chg_pct": 0.46
+        "sym": "SOL",
+        "chg_pct": 1.09
       },
       {
-        "sym": "QQQ",
-        "chg_pct": 0.45
+        "sym": "ETH",
+        "chg_pct": 0.49
       }
     ],
     "down": [
@@ -798,7 +807,7 @@
   },
   "desk_freshness": {
     "watch": "1:06",
-    "crypto": "1:10"
+    "crypto": "1:19"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
@@ -910,6 +919,18 @@
       {
         "t": "2:07 PM ET",
         "line": "Added to the list."
+      }
+    ],
+    "SOL": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "ETH": [
+      {
+        "t": null,
+        "line": "not a setup"
       }
     ],
     "META": [
