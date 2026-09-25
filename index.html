@@ -1235,17 +1235,24 @@
 
   // Added 9/23, real feedback ("12 names isn't a story"): the delayed,
   // per-name pass lines from site-build.py's classify_skip_line, same
-  // 15-40 min buffer as desk_board. Only rendered while the market is
-  // open and flat -- once a position is live the desk board itself is
-  // the story, and off-hours this would just be stale noise.
-  function renderPassLines(lines, session) {
+  // 15-40 min buffer as desk_board. Live-market rendering unchanged --
+  // once a position is live the desk board itself is the story.
+  // Extended 9/25, real feedback ("after close there's no way to tell if
+  // the desk looked and passed, or the box was just dark"): also render
+  // once CLOSED/WEEKEND, same lines, different header -- but only on a
+  // day with zero real tickets, same principle as the OPEN gate: a real
+  // fill is always the day's story, this is only for a quiet day.
+  function renderPassLines(lines, session, hasTicketToday) {
     var el = document.getElementById("pass-lines");
     if (!el) return;
-    if (!session || session.market_state !== "OPEN" || !lines || !lines.length) {
+    if (!session || !lines || !lines.length || hasTicketToday) {
       el.innerHTML = "";
       return;
     }
-    el.innerHTML = '<div class="pass-lines-title">Looked at, passed on (~20 min delayed)</div>' +
+    var title = session.market_state === "OPEN"
+      ? "Looked at, passed on (~20 min delayed)"
+      : "Today, looked at and passed on:";
+    el.innerHTML = '<div class="pass-lines-title">' + title + '</div>' +
       lines.map(function (l) { return '<div>' + l + '</div>'; }).join("");
   }
 
@@ -2516,7 +2523,7 @@
     renderSessionCaption(data.session_caption, data.session, data.closed_caption);
     renderPulse(data.pulse, data.session);
     renderNarrativeLine(data.narrative_line, data.session);
-    renderPassLines(data.delayed_pass_lines, data.session);
+    renderPassLines(data.delayed_pass_lines, data.session, todaysTickets(data.tickets || []).length > 0);
     renderStats(data.stats, data.session, data.tickets);
     renderSparkline(data.sparkline_cum_pct, data.prior_week_sparkline_cum_pct);
     renderMarketBoard(data.market_board, data.session);

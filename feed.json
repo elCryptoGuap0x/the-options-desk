@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T21:36:55Z",
+  "generated_at": "2026-09-25T22:41:06Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -439,10 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83810.04,
-      "chg_pct": 0.11,
+      "last": 84088.48,
+      "chg_pct": 0.44,
       "history": [
-        83974.62,
         83937.525,
         83945.395,
         83935.205,
@@ -471,16 +470,16 @@
         83762.435,
         83773.605,
         83806.945,
-        83810.035
+        83810.035,
+        84088.475
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2680.16,
-      "chg_pct": -0.12,
+      "last": 2693.82,
+      "chg_pct": 0.39,
       "history": [
-        2693.265,
         2693.585,
         2693.005,
         2693.065,
@@ -509,16 +508,16 @@
         2680.735,
         2681.115,
         2680.265,
-        2680.16
+        2680.16,
+        2693.815
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.13,
-      "chg_pct": 0.21,
+      "last": 122.34,
+      "chg_pct": 1.21,
       "history": [
-        122.06,
         122.085,
         122.055,
         121.9,
@@ -547,7 +546,8 @@
         121.175,
         121.27,
         121.16,
-        121.13
+        121.13,
+        122.345
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -939,100 +939,8 @@
       "why": "On the list. No ticket."
     }
   },
-  "news": [
-    {
-      "tag": "Macro",
-      "title": "10-year tops 5.1% as hike bets build",
-      "summary": "Global bonds sold off after strong US activity data and a weak 5-year auction, pushing the 10-year yield as high as ~5.15% and the 5-year above 5% for the first time since 2007. Markets are pricing more tightening into October. Stocks followed yields down Wednesday, with the S&P off 0.75% to ~7,706 and the Nasdaq down 1.13%. Another auction today keeps duration in charge of the tape."
-    },
-    {
-      "tag": "Macro",
-      "title": "Futures slide as Xi lands and yields stay high",
-      "summary": "S&P futures were off about 0.5% and Nasdaq futures about 1% ahead of the open, with Dow futures only modestly lower. Sticky inflation and the bond tape outweighed any AI-continuation bid. Trump's meetings with Xi in Washington, plus a dinner with US tech CEOs, are the day's political headline. Bessent said the trade truce has already been extended two months to Jan 10."
-    },
-    {
-      "tag": "Macro",
-      "title": "Oil jumps on Iran rhetoric; energy the only sector that worked",
-      "summary": "WTI and Brent ripped Wednesday after Pezeshkian said Tehran would not surrender and after Trump's \"annihilate\" line. Energy led the S&P while nine of eleven sectors fell, with utilities down 1.72% and communication services down 1.49%. Crude held its gains overnight, WTI near $93 and Brent near $104. Geopolitical headlines stay a two-way risk for energy at the open."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Alphabet and Amazon drag the Nasdaq as AI multiples compress",
-      "summary": "GOOGL fell 3.8%, AMZN 2.2% and NVDA 1.5% in a session that saw the PHLX semiconductor index off 1.2%. That is the sleeve that will trade the Xi dinner and any AI-regulation language, and Nasdaq futures staying the weakest contract this morning is the same story rather than a new one. Cybersecurity was the exception, with PANW and CRWD both up about 5% on analyst target hikes."
-    },
-    {
-      "tag": "Macro",
-      "title": "Fed's Barr says more hikes are likely needed",
-      "summary": "Barr framed the last 18 months as a string of shocks still pushing prices higher, arguing further tightening is probably required to get inflation back to target. That lands on top of a 5-handle 10-year and a dollar at an eight-week high. Barkin and Hammack speak around midday, while jobless claims at 8:30 ET and new home sales at 10:00 ET are the data tests of the hike narrative."
-    },
-    {
-      "tag": "MARKETS",
-      "title": "What's different about Microsoft's Copilot AI reboot",
-      "summary": "Microsoft (MSFT) launched a reboot of Copilot, shifting its focus from personal AI to workplace use. Yahoo Finance Technology Editor Dan Howley explains what you should know.",
-      "url": "https://finance.yahoo.com/video/whats-different-microsofts-copilot-ai-195423063.html?.tsrc=rss",
-      "ts": "2026-09-25T19:54:23Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
-      "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
-      "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-23T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Blockchain Association sees leadership shift shortly after crypto Clarity Act fizzles",
-      "summary": "The trade group will be run again by its original CEO, Kristin Smith, when Summer Mersinger leaves at the end of a long congressional tussle.",
-      "url": "https://www.coindesk.com/policy/2026/09/25/blockchain-association-sees-leadership-shift-shortly-after-crypto-clarity-act-fizzles",
-      "ts": "2026-09-25T20:01:05Z"
-    }
-  ],
-  "calendar": [
-    {
-      "what": "Initial and continuing jobless claims",
-      "when": "Today, 8:30 ET"
-    },
-    {
-      "what": "August new home sales",
-      "when": "Today, 10:00 ET"
-    },
-    {
-      "what": "$44B 7-year Treasury auction",
-      "when": "Today"
-    },
-    {
-      "what": "Trump-Xi meetings and tech CEO dinner",
-      "when": "Today"
-    },
-    {
-      "what": "Darden and BB earnings",
-      "when": "Today, before the open"
-    },
-    {
-      "what": "Costco earnings",
-      "when": "Today, after the close"
-    },
-    {
-      "what": "Durable goods orders",
-      "when": "Friday, 8:30 ET"
-    },
-    {
-      "what": "Final UMich sentiment",
-      "when": "Friday, 10:00 ET"
-    },
-    {
-      "what": "JOLTS job openings",
-      "when": "Tuesday, Sept 29"
-    },
-    {
-      "what": "Q2 GDP third estimate and PCE",
-      "when": "Wednesday, Sept 30"
-    },
-    {
-      "what": "Next FOMC meeting",
-      "when": "Oct 27-28"
-    }
-  ],
+  "news": [],
+  "calendar": [],
   "skip_summary_ticker_list": {
     "count": 26,
     "names": [
@@ -1138,9 +1046,9 @@
       ]
     ],
     "no_shape_count": 8,
-    "filled": 2
+    "filled": 0
   },
-  "scan_log_public": "26 names on the list \u00b7 2 tickets.",
+  "scan_log_public": "26 names on the list (8 quiet) \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1149,12 +1057,12 @@
         "chg_pct": 3.69
       },
       {
-        "sym": "AAPL",
-        "chg_pct": 1.11
+        "sym": "SOL",
+        "chg_pct": 1.21
       },
       {
-        "sym": "DIA",
-        "chg_pct": 0.86
+        "sym": "AAPL",
+        "chg_pct": 1.11
       }
     ],
     "down": [
@@ -1174,7 +1082,7 @@
   },
   "desk_freshness": {
     "watch": "3:00",
-    "crypto": "4:36"
+    "crypto": "5:41"
   },
   "desk_board": [
     {
@@ -1300,13 +1208,13 @@
         "line": "Not in play."
       }
     ],
-    "AAPL": [
+    "SOL": [
       {
         "t": null,
         "line": "not a setup"
       }
     ],
-    "DIA": [
+    "AAPL": [
       {
         "t": null,
         "line": "not a setup"
@@ -1335,7 +1243,7 @@
   "pulse": {
     "last_look_iso": "2026-09-25T20:00:50Z",
     "names": 26,
-    "tickets": 2,
+    "tickets": 0,
     "cadence_min": 4
   },
   "today_label": "Fri 9/25",
