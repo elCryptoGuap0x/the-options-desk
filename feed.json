@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T18:19:41Z",
+  "generated_at": "2026-09-25T18:28:48Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84009.02,
-      "chg_pct": 0.34,
+      "last": 83939.22,
+      "chg_pct": 0.26,
       "history": [
         83722.125,
         83810.795,
@@ -449,14 +449,15 @@
         83865.65,
         83992.77,
         83986.055,
-        84009.025
+        84009.025,
+        83939.22
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2696.57,
-      "chg_pct": 0.49,
+      "last": 2692.19,
+      "chg_pct": 0.33,
       "history": [
         2683.415,
         2688.15,
@@ -465,14 +466,15 @@
         2688.825,
         2694.345,
         2694.885,
-        2696.575
+        2696.575,
+        2692.19
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 122.2,
-      "chg_pct": 1.09,
+      "last": 121.75,
+      "chg_pct": 0.72,
       "history": [
         120.88,
         121.065,
@@ -481,7 +483,8 @@
         121.25,
         121.995,
         122.205,
-        122.2
+        122.2,
+        121.745
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -783,11 +786,11 @@
       },
       {
         "sym": "SOL",
-        "chg_pct": 1.09
+        "chg_pct": 0.72
       },
       {
-        "sym": "ETH",
-        "chg_pct": 0.49
+        "sym": "SPY",
+        "chg_pct": 0.46
       }
     ],
     "down": [
@@ -807,7 +810,7 @@
   },
   "desk_freshness": {
     "watch": "1:06",
-    "crypto": "1:19"
+    "crypto": "1:28"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
@@ -927,12 +930,6 @@
         "line": "not a setup"
       }
     ],
-    "ETH": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ],
     "META": [
       {
         "t": null,
@@ -960,7 +957,14 @@
     "cadence_min": 4
   },
   "today_label": "Fri 9/25",
-  "narrative_line": null,
+  "narrative_line": "Looked at 11 names. Nothing cleared. Still scanning.",
   "session_caption": "No fills today. Scanning.",
-  "delayed_pass_lines": []
+  "delayed_pass_lines": [
+    "AKAM \u2014 still watching, nothing confirmed.",
+    "COIN \u2014 still watching, nothing confirmed.",
+    "COST \u2014 still watching, nothing confirmed.",
+    "IBIT \u2014 still watching, nothing confirmed.",
+    "IREN \u2014 still watching, nothing confirmed.",
+    "MSFT \u2014 still watching, nothing confirmed."
+  ]
 }
