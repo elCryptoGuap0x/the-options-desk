@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T20:01:19Z",
+  "generated_at": "2026-09-25T20:44:23Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83980.96,
-      "chg_pct": 0.31,
+      "last": 84066,
+      "chg_pct": -0.37,
       "history": [
         83967.345,
         83958.465,
@@ -471,14 +471,15 @@
         84002.48,
         84001.055,
         84012.685,
-        83980.955
+        83980.955,
+        84066
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2692.3,
-      "chg_pct": 0.33,
+      "last": 2691.4,
+      "chg_pct": 0.12,
       "history": [
         2693.2,
         2692.67,
@@ -509,14 +510,15 @@
         2695.305,
         2693.605,
         2692.62,
-        2692.3
+        2692.3,
+        2691.4
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.86,
-      "chg_pct": 0.81,
+      "last": 122.51,
+      "chg_pct": 4.76,
       "history": [
         121.93,
         121.95,
@@ -547,7 +549,8 @@
         121.815,
         121.75,
         121.785,
-        121.86
+        121.86,
+        122.51
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,6 +951,27 @@
       "tag": "Macro",
       "title": "Fed's Barr says more hikes are likely needed",
       "summary": "Barr framed the last 18 months as a string of shocks still pushing prices higher, arguing further tightening is probably required to get inflation back to target. That lands on top of a 5-handle 10-year and a dollar at an eight-week high. Barkin and Hammack speak around midday, while jobless claims at 8:30 ET and new home sales at 10:00 ET are the data tests of the hike narrative."
+    },
+    {
+      "tag": "MARKETS",
+      "title": "What's different about Microsoft's Copilot AI reboot",
+      "summary": "Microsoft (MSFT) launched a reboot of Copilot, shifting its focus from personal AI to workplace use. Yahoo Finance Technology Editor Dan Howley explains what you should know.",
+      "url": "https://finance.yahoo.com/video/whats-different-microsofts-copilot-ai-195423063.html?.tsrc=rss",
+      "ts": "2026-09-25T19:54:23Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
+      "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
+      "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
+      "ts": "2026-09-23T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Blockchain Association sees leadership shift shortly after crypto Clarity Act fizzles",
+      "summary": "The trade group will be run again by its original CEO, Kristin Smith, when Summer Mersinger leaves at the end of a long congressional tussle.",
+      "url": "https://www.coindesk.com/policy/2026/09/25/blockchain-association-sees-leadership-shift-shortly-after-crypto-clarity-act-fizzles",
+      "ts": "2026-09-25T20:01:05Z"
     }
   ],
   "calendar": [
@@ -1283,17 +1307,17 @@
     ]
   },
   "btc_range": {
-    "last": 84017,
-    "high_24h": 84845,
-    "low_24h": 82941,
-    "chg_pct": -0.11
+    "last": 84078,
+    "high_24h": 85208,
+    "low_24h": 83230,
+    "chg_pct": -0.37
   },
   "macro": {
-    "10Y": 5.16,
-    "DXY": 101.16,
-    "WTI": 92.99,
-    "VIX": 15.67,
-    "asof": "2026-09-25T06:54:37Z"
+    "10Y": 5.18,
+    "DXY": 101.01,
+    "WTI": 92.8,
+    "VIX": 14.87,
+    "asof": "2026-09-25T20:44:23Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-25T19:54:30Z",
