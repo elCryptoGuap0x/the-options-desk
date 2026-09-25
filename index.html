@@ -1207,10 +1207,23 @@
   // pill that fires even on a day that already has a real ticket
   // (unlike narrative-line, which defers to the ticket card then) --
   // pure string from the feed, no model call.
-  function renderSessionCaption(caption, session) {
+  // Extended 9/25, real feedback ("after close the page is a stats
+  // wall"): market_state !== OPEN now shows closed_caption instead of
+  // going blank -- same real day's facts, worded for after the bell
+  // (site-build.py computes both; this just picks which one applies).
+  // next_open appended here, client-side, since it's already a live
+  // session field and doesn't need to be baked into the caption string.
+  function renderSessionCaption(caption, session, closedCaption) {
     var el = document.getElementById("session-caption");
     if (!el) return;
-    el.textContent = (session && session.market_state === "OPEN" && caption) ? caption : "";
+    if (session && session.market_state === "OPEN" && caption) {
+      el.textContent = caption;
+    } else if (session && session.market_state !== "OPEN" && closedCaption) {
+      var next = session.next_open ? (" Next open " + session.next_open + ".") : "";
+      el.textContent = closedCaption + next;
+    } else {
+      el.textContent = "";
+    }
   }
 
   // Added 9/23, real feedback ("12 names isn't a story"): the delayed,
@@ -1669,8 +1682,14 @@
     // wick. Absent on older tickets backfilled before this shipped --
     // the replay just runs dots-only for those, same as before, rather
     // than inventing a number.
+    // Fixed 9/25, real bug: resting state showed a static "+0.0%" on
+    // every ticket with real peak data, before Replay was ever clicked --
+    // reads as a broken/dead number to anyone who doesn't know to click.
+    // Show the real value at rest; Replay re-runs the count-up from zero
+    // as a visual effect and always lands back on this same real number.
     var hasPeak = typeof fuse.peak_pct === "number";
-    var peakHtml = hasPeak ? '<span class="fuse-peak" id="' + id + '-peak" data-peak="' + fuse.peak_pct + '">+0.0%</span>' : "";
+    var restingPct = hasPeak ? ((fuse.peak_pct >= 0 ? "+" : "") + fuse.peak_pct.toFixed(1) + "%") : "";
+    var peakHtml = hasPeak ? '<span class="fuse-peak" id="' + id + '-peak" data-peak="' + fuse.peak_pct + '">' + restingPct + '</span>' : "";
     return '<div class="fuse-row" id="' + id + '">' + dots + peakHtml +
       '<button class="fuse-replay" type="button" onclick="event.stopPropagation(); playFuse(\'' + id + '\')">&#9654; Replay</button></div>';
   }
@@ -2487,7 +2506,7 @@
   function render(data) {
     lastFillAt = data.last_fill_at || null;
     renderSession(data.session, data.generated_at);
-    renderSessionCaption(data.session_caption, data.session);
+    renderSessionCaption(data.session_caption, data.session, data.closed_caption);
     renderPulse(data.pulse, data.session);
     renderNarrativeLine(data.narrative_line, data.session);
     renderPassLines(data.delayed_pass_lines, data.session);
