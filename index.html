@@ -155,6 +155,12 @@
      tabular-nums here. */
   .narrative-line { text-align: center; color: var(--text); font-size: 14px; font-weight: 600; margin-bottom: 28px; }
   .narrative-line:empty { margin-bottom: 0; }
+  /* Added 9/25, real bug fix: renderSessionCaption() has targeted this id
+     since 9/23 but the element itself was never added to the markup --
+     getElementById returned null every time, so the function has been a
+     silent no-op since it shipped. */
+  .session-caption { text-align: center; color: var(--text-faint); font-size: 13px; margin-bottom: 20px; }
+  .session-caption:empty { margin-bottom: 0; }
   /* Added 9/15 -- "big ugly number", deliberately unpolished/blunt per
      spec: raw minutes since the last real fill (open or close, either
      counts), no hours/days conversion. Ticks live client-side off a
@@ -843,6 +849,7 @@
   </div>
   <div class="pulse-line" id="pulse-line"></div>
   <div class="narrative-line" id="narrative-line"></div>
+  <div class="session-caption" id="session-caption"></div>
 
   <div class="fill-clock" id="fill-clock"></div>
 
