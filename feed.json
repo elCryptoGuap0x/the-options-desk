@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T01:51:48Z",
+  "generated_at": "2026-09-25T06:54:37Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-09-25T13:30:00Z",
     "position": "FLAT"
   },
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84513,
-      "chg_pct": 0.52,
+      "last": 84014,
+      "chg_pct": -0.12,
       "history": [
         84364.76,
         84232.565,
@@ -474,14 +474,15 @@
         84375.925,
         84193,
         84347,
-        84513
+        84513,
+        84014
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2687.57,
-      "chg_pct": 0.45,
+      "last": 2673.77,
+      "chg_pct": -0.44,
       "history": [
         2682.11,
         2678.785,
@@ -515,14 +516,15 @@
         2694.365,
         2684.06,
         2688.26,
-        2687.57
+        2687.57,
+        2673.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.44,
-      "chg_pct": 2.43,
+      "last": 116.24,
+      "chg_pct": 1.26,
       "history": [
         117.265,
         117.145,
@@ -556,7 +558,8 @@
         117.21,
         116.79,
         116.72,
-        117.44
+        117.44,
+        116.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1097,24 +1100,24 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Dow Jones Futures: Market Rally Resilient As Yields, Oil Prices Keep Rising; Tesla Holds Semi Event",
-      "summary": "The stock market rallied to close mixed even as yields and oil prices kept rising. Taiwan Semi is a buy. A Tesla Semi event is underway.",
-      "url": "https://finance.yahoo.com/m/f20152d5-c38c-3d1c-80ad-574b31be1248/dow-jones-futures%3A-market.html?.tsrc=rss",
-      "ts": "2026-09-25T01:35:56Z"
+      "title": "Meta's Muse Agent Makes Waves: Market Snapshot",
+      "summary": "Major banks, insurers and online travel agencies stocks took a tumble this week after Meta's new artificial intelligence agent, Muse rose to the top of Apple's app store. Increasing usage of the app sparked fears that personal AI tools coul",
+      "url": "https://finance.yahoo.com/video/metas-muse-agent-makes-waves-062946885.html?.tsrc=rss",
+      "ts": "2026-09-25T06:29:46Z"
     },
     {
       "tag": "OPTIONS",
       "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
       "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
       "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-22T04:00:00Z"
+      "ts": "2026-09-23T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
-      "summary": "The state wants to block Polymarket from operating without a gambling license and recover allegedly illegal gains.",
-      "url": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
-      "ts": "2026-09-24T22:41:44Z"
+      "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gray Chen says",
+      "summary": "Bitget lost $351.6 million after attackers compromised a wallet backend, spoofed transaction data, Chen said on X.",
+      "url": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
+      "ts": "2026-09-25T04:29:34Z"
     }
   ],
   "calendar": [
@@ -1493,17 +1496,17 @@
     ]
   },
   "btc_range": {
-    "last": 84498,
-    "high_24h": 84843,
+    "last": 84017,
+    "high_24h": 84845,
     "low_24h": 82941,
-    "chg_pct": 0.47
+    "chg_pct": -0.11
   },
   "macro": {
     "10Y": 5.16,
-    "DXY": 101.25,
-    "WTI": 93.13,
+    "DXY": 101.16,
+    "WTI": 92.99,
     "VIX": 15.67,
-    "asof": "2026-09-25T01:51:48Z"
+    "asof": "2026-09-25T06:54:37Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-24T19:59:04Z",
