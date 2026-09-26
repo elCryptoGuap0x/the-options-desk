@@ -21,9 +21,6 @@
     li{margin:0 0 6px;font-size:14.5px;line-height:1.4;color:#d5dde6}
     .box{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin:8px 0 10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;line-height:1.4}
     .box b{color:var(--gold)}
-    table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;margin:8px 0 12px}
-    th,td{text-align:left;padding:5px 4px;border-bottom:1px solid var(--line);color:#d5dde6}
-    th{color:var(--dim);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
     nav.bar{display:flex;align-items:center;gap:8px;padding:6px 16px 20px;font-family:ui-sans-serif,system-ui,sans-serif}
     button{background:#1c242e;color:var(--ink);border:1px solid var(--line);border-radius:50%;width:34px;height:34px;padding:0;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center}
     button:hover{border-color:var(--gold);color:var(--gold)}
@@ -36,15 +33,18 @@
     dl.glossary dt{font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;color:var(--gold);margin:12px 0 2px}
     dl.glossary dt:first-child{margin-top:0}
     dl.glossary dd{margin:0 0 2px;font-size:13.5px;line-height:1.42;color:#d5dde6}
+    .ex-tag{display:inline-block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:8px}
     .viz-caption{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--dim);text-align:center;margin:6px 0 12px}
-    .w5{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:6px 0 10px}
-    .w5-block{border:1px solid var(--line);border-radius:8px;padding:10px 5px;text-align:center;background:#1a222b}
-    .w5-block b{display:block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--gold);margin-bottom:4px}
-    .w5-block span{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;color:var(--dim)}
-    .win{border:1px solid var(--line);border-radius:10px;padding:10px 10px 6px;margin:10px 0}
-    .win-lab{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
-    .win svg{width:100%;height:48px;display:block}
-    .win-cap{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;color:var(--dim);text-align:center;margin-top:4px}
+    /* Two-clock strip -- the only visual in this issue, reused with different examples */
+    .w1-row{display:flex;align-items:center;gap:10px;margin:5px 0}
+    .w1-lab{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;letter-spacing:.06em;color:var(--dim);width:78px;flex-shrink:0;text-transform:uppercase}
+    .w1-line{flex:1;height:26px}
+    .w1-line svg{width:100%;height:100%;display:block}
+    .w1-dots{flex:1;display:flex;gap:3px}
+    .w1-dots i{flex:1;height:18px;border-radius:3px}
+    .w1-dots i.g{background:var(--good)}
+    .w1-dots i.r{background:var(--bad)}
+    .w1-vals{display:flex;justify-content:space-between;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;color:var(--muted);margin:2px 0 10px 88px}
   </style>
 </head>
 <body>
@@ -54,125 +54,111 @@
 
 <article class="page on">
   <p class="kicker">Tape Notes · 03</p>
-  <h1>The session is three markets wearing one ticker</h1>
-  <p>Open, midday, and last hour do not pay the same rent. Treating 10:00 and 2:30 as the same 0DTE product is how quiet afternoons get expensive.</p>
-  <div class="box"><b>Job:</b> know which clock you are on before you call something a setup. Not a timetable to copy. Education only.</div>
+  <h1>Two clocks</h1>
+  <p>The underlying runs on one clock. The option runs on another. They usually move together. When they don't, this is the issue that explains why — and why "the stock did what I thought" is not the same claim as "the trade worked."</p>
+  <div class="box"><b>Job:</b> one idea, in depth. Generic mechanics, not this desk's rules. Not advice.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">The session, at a glance</p>
-  <h2>Three products, one ticker</h2>
-  <div class="w5">
-    <div class="w5-block"><b>Open</b><span>range, then a spike</span></div>
-    <div class="w5-block"><b>Midday</b><span>flat, rent</span></div>
-    <div class="w5-block"><b>Last 90m</b><span>steep decay</span></div>
+  <p class="kicker">01 · The two clocks</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>Same event, two readings</h2>
+  <div class="w1-row">
+    <span class="w1-lab">Underlying</span>
+    <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,18 15,17 30,16 45,15 60,14 75,13 90,11 100,10" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
   </div>
-  <div class="viz-caption">Same day. Not the same clock.</div>
-</article>
-
-<article class="page">
-  <p class="kicker">01 · The open</p>
-  <span class="ex-tag" style="display:inline-block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:8px;">Example · not a live ticker</span>
-  <h2>Range, impulse, widest quotes</h2>
-  <div class="win">
-    <div class="win-lab">Underlying, first 30 min</div>
-    <svg viewBox="0 0 100 40" preserveAspectRatio="none"><polyline points="0,26 15,24 30,25 45,23 55,24 65,10 80,6 100,4" fill="none" stroke="var(--gold)" stroke-width="1.5"/></svg>
-    <div class="win-cap">Range, then a spike — easy to buy the climax</div>
+  <div class="w1-row">
+    <span class="w1-lab">Option</span>
+    <div class="w1-dots"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
   </div>
-  <p>First half hour: ranges print, first drives happen, spreads are often worst. A gap-and-go with no pause is usually extended before you finish the sentence.</p>
-  <div class="box"><b>Yield:</b> the open is for recognition, not for proving you are awake.</div>
+  <div class="viz-caption">Underlying grinds slowly up. Option is red every minute. Different clocks, same eight minutes.</div>
+  <p>The stock's clock measures price. The option's clock measures price <em>and</em> time <em>and</em> the tax of trading it. A move that's real by the stock's clock can still be a loss by the option's.</p>
+  <div class="box"><b>Yield:</b> "the stock did what I expected" and "the trade worked" are two separate claims. This issue is about the gap between them.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">02 · Midday</p>
-  <h2>Where "I should do something" lives</h2>
-  <div class="win">
-    <div class="win-lab">Underlying + premium, midday</div>
-    <svg viewBox="0 0 100 40" preserveAspectRatio="none">
-      <polyline points="0,18 25,19 50,18 75,20 100,19" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
-      <polyline points="0,30 25,32 50,34 75,35 100,37" fill="none" stroke="var(--bad)" stroke-width="1.5"/>
-    </svg>
-    <div class="win-cap">Underlying flat · premium decaying underneath it</div>
+  <p class="kicker">02 · Time is rent</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>Theta doesn't wait for a verdict</h2>
+  <div class="w1-row">
+    <span class="w1-lab">Underlying</span>
+    <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,13 20,13 40,14 60,13 80,14 100,13" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
   </div>
-  <p>Volume thins. Premium rots. The stock is still red or green on the day, so the brain invents a trade that should have been taken at 10:12.</p>
-  <ul>
-    <li>Still down 1% at noon is not a fresh put.</li>
-    <li>A 15-minute coil in a dead tape is often just lunch.</li>
-  </ul>
-  <div class="box"><b>Yield:</b> midday default is pass. Activity here is usually a leak, not a missed calling.</div>
-</article>
-
-<article class="page">
-  <p class="kicker">03 · Last 90 minutes</p>
-  <h2>0DTE is a different animal after lunch</h2>
-  <div class="win">
-    <div class="win-lab">Underlying flat · premium, last 90m</div>
-    <svg viewBox="0 0 100 40" preserveAspectRatio="none">
-      <polyline points="0,18 30,19 60,18 100,19" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
-      <polyline points="0,22 30,26 60,32 100,38" fill="none" stroke="var(--bad)" stroke-width="1.5"/>
-    </svg>
-    <div class="win-cap">Flat stock, steep premium drop — the clock, not the tape</div>
+  <div class="w1-row">
+    <span class="w1-lab">Option</span>
+    <div class="w1-dots"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
   </div>
-  <p>Same-day contracts decay faster into the close. A new idea now needs more follow-through, not less, because there is less clock left for it to be "a little late."</p>
+  <div class="viz-caption">Underlying goes nowhere. Option bleeds anyway — quiet minutes still charge <span class="term">theta</span>.</div>
+  <p>A flat stock is not a neutral outcome for a short-dated contract. Every quiet minute is rent paid whether or not the idea eventually plays out.</p>
+  <div class="box"><b>Yield:</b> "it hasn't moved yet" is not the same as "nothing is happening." Time is always happening.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">03 · A small dip, a big hole</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>Quote noise vs. a real move</h2>
+  <div class="w1-row">
+    <span class="w1-lab">Underlying</span>
+    <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,10 20,11 40,10 60,14 80,12 100,11" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
+  </div>
+  <div class="w1-row">
+    <span class="w1-lab">Option</span>
+    <div class="w1-dots"><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="g"></i></div>
+  </div>
+  <div class="viz-caption">A small wobble in the underlying can print a much bigger swing in the option — <span class="term">quote noise</span>, not a real reversal.</div>
+  <p>Same-day contracts amplify small underlying moves into large premium swings, especially on a thin book. Not every red dot means the thesis broke.</p>
+  <div class="box"><b>Yield:</b> before reacting to an option's own wiggle, check whether the underlying actually did anything.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">04 · Why the stock's clock can win and yours can still lose</p>
+  <h2>Three things sit between the two clocks</h2>
   <ul>
-    <li>A 40-minute thesis does not fit in a 50-minute life.</li>
-    <li>Holding 0DTE into the bell is a second decision. Make it on purpose or flatten.</li>
+    <li><b>Time</b> — the move has to happen soon enough to matter before expiry.</li>
+    <li><b>Size</b> — the move has to be big enough to clear the spread and still be worth something.</li>
+    <li><b>Path</b> — a move that arrives the "long way," with a dip first, can shake you out before it pays.</li>
   </ul>
+  <div class="box"><b>Yield:</b> being right about direction is necessary. It has never been sufficient.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">04 · Color of the day</p>
-  <h2>The open is not the session</h2>
-  <table>
-    <tr><th>What you see</th><th>What it is not</th></tr>
-    <tr><td>Index red since 9:31</td><td>A standing put for six hours</td></tr>
-    <tr><td>Name green +2%</td><td>A standing call after the move is three hours old</td></tr>
-    <tr><td>VIX up</td><td>Permission to size up</td></tr>
-  </table>
-  <p>Day color is context. It does not reset the "is this impulse fresh" question every hour.</p>
+  <p class="kicker">05 · What "early" actually means</p>
+  <h2>Early is not the same as patient</h2>
+  <p>If the underlying has not done anything useful in the first several minutes, holding is not "being early" — it's paying rent on a move that hasn't started. Genuinely early looks like a fresh, small move just beginning. Falsely early looks like a flat line and a hopeful story.</p>
+  <div class="box"><b>Yield:</b> a thesis that needs "just a little more time" every few minutes is usually a thesis that already failed quietly.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">05 · News windows</p>
-  <h2>The print is not the trade</h2>
-  <p>Scheduled numbers create a burst. The burst is often done in the first minutes. Trading "because there is news" after the spike is late by definition.</p>
-  <ul>
-    <li>If you did not have a plan before the number, you do not get one after.</li>
-    <li>Headlines arrive late on any public page. Do not use a delayed site as a news desk.</li>
-  </ul>
-  <div class="box"><b>Yield:</b> news explains why a range broke. It does not make a three-hour-old break fresh.</div>
+  <p class="kicker">06 · Reading a ticket through two clocks</p>
+  <h2>The question behind every closed ticket</h2>
+  <p>When a ticket closes red, the first useful question is not "was I wrong," it's "which clock actually killed this." The underlying can be blameless and the contract can still die on time or on the spread. All three are real outcomes, and they call for different lessons.</p>
 </article>
 
 <article class="page">
-  <p class="kicker">06 · Overnight and 1DTE</p>
-  <h2>Holding past the session is a new bet</h2>
-  <p>A 1DTE that is quiet at 3:50 ET is not "more room." It is inventory into a gap you do not control. Weekend is another product on top of overnight.</p>
-  <div class="box"><b>Yield:</b> if the plan was an intraday burst, flatten. Do not discover you are a swing trader at 3:58.</div>
-</article>
-
-<article class="page">
-  <p class="kicker">07 · Flatten as a habit</p>
-  <h2>Not fear. Inventory control.</h2>
-  <p>Books that trade same-day paper pick a time when new risk stops and open risk gets worked off. The idea is not optional: you do not want a melting 0DTE babysat by hope.</p>
-  <div class="box"><b>Yield:</b> "still looks good" at the end of the window is how leftovers become overnight accidents.</div>
-</article>
-
-<article class="page">
-  <p class="kicker">08 · Spectator clock</p>
-  <h2>How to watch a quiet tape</h2>
-  <ul>
-    <li>Open: expect looks. Do not expect a ticket.</li>
-    <li>Midday: a long scanning stretch is the job working.</li>
-    <li>Late day: fewer new tickets is health, not a broken bot.</li>
-  </ul>
-  <p class="fine">If a public desk is flat for hours, that can be correct. Issue 00 is the language. This issue is the clock. Not advice. Not a schedule to copy.</p>
+  <p class="kicker">07 · Reading a real divergence</p>
+  <span class="ex-tag">Example · invented numbers, not a live ticket</span>
+  <h2>Walking through one, start to finish</h2>
+  <div class="w1-row">
+    <span class="w1-lab">Underlying</span>
+    <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,20 20,19 40,17 60,15 80,12 100,9" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
+  </div>
+  <div class="w1-vals"><span>100.00</span><span>100.40</span></div>
+  <div class="w1-row">
+    <span class="w1-lab">Call</span>
+    <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,10 20,13 40,17 60,20 80,22 100,23" fill="none" stroke="var(--bad)" stroke-width="1.5"/></svg></div>
+  </div>
+  <div class="w1-vals"><span>1.50</span><span>1.22</span></div>
+  <div class="viz-caption">Underlying: 100.00 → 100.40, up 0.4%. Call: 1.50 → 1.22, down 18.7%.</div>
+  <p>The underlying did move the right way — up, all session, no reversal. The call still lost almost a fifth of its value. Why: the move was small relative to the strike, it took most of the session to arrive, and theta was charging the whole time it waited. Right direction, wrong size, wrong pace.</p>
+  <div class="box"><b>Yield:</b> "the underlying went the right way" is the beginning of reading a ticket, not the end of it.</div>
 </article>
 
 <article class="page">
   <p class="kicker">Glossary · Issue 03</p>
   <h2>Starred terms, in order</h2>
   <dl class="glossary">
-    <dt>No new starred terms this issue</dt><dd>All words used here were defined in Issue 00 or 01.</dd>
+    <dt>Theta</dt><dd>Daily (and intra-day) decay of an option's premium. Quiet minutes still charge rent.</dd>
+    <dt>Quote noise</dt><dd>An option's bid/ask moving without a proportionally real move in the underlying.</dd>
   </dl>
 </article>
 
@@ -180,7 +166,7 @@
 <nav class="bar">
   <button id="prev" type="button" aria-label="Previous page">&larr;</button>
   <div class="dots" id="dots"></div>
-  <span class="pg" id="pg">1 / 11</span>
+  <span class="pg" id="pg">1 / 9</span>
   <button id="next" type="button" aria-label="Next page">&rarr;</button>
 </nav>
 </div>

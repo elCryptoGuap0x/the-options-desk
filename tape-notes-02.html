@@ -38,24 +38,25 @@
     dl.glossary dd{margin:0 0 2px;font-size:13.5px;line-height:1.42;color:#d5dde6}
     .ex-tag{display:inline-block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:8px}
     .viz-caption{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--dim);text-align:center;margin:6px 0 12px}
-    .w1-row{display:flex;align-items:center;gap:10px;margin:5px 0}
-    .w1-lab{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;letter-spacing:.06em;color:var(--dim);width:62px;flex-shrink:0;text-transform:uppercase}
-    .w1-line{flex:1;height:26px}
-    .w1-line svg{width:100%;height:100%;display:block}
-    .w1-dots{flex:1;display:flex;gap:3px}
-    .w1-dots i{flex:1;height:18px;border-radius:3px}
-    .w1-dots i.g{background:var(--good)}
-    .w1-dots i.r{background:var(--bad)}
-    .w4{display:flex;gap:3px;margin:8px 0 4px}
-    .w4 i{flex:1;height:18px;border-radius:3px}
-    .w4 i.g{background:var(--good)}
-    .w4 i.r{background:var(--bad)}
-    .grid4{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 4px}
-    .mini-ticket{border:1px solid var(--line);border-radius:8px;padding:8px 9px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;}
-    .mini-tag{display:inline-block;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:5px}
-    .mini-ticket .mrow{display:flex;justify-content:space-between;color:var(--dim);margin-bottom:2px}
-    .mini-ticket .mrow b{color:var(--ink);font-weight:600}
-    .mini-ticket .mcap{color:var(--muted);font-size:9.5px;margin-top:4px;line-height:1.3}
+    .w2{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:6px 0 4px}
+    .w2-cell{border:1px solid var(--line);border-radius:8px;padding:8px 3px;text-align:center}
+    .w2-cell.w2-last{opacity:.55}
+    .w2-cell.w2-mid{border-style:dashed}
+    .w2-cell.w2-bid{border-color:var(--good)}
+    .w2-cell.w2-ask{border-color:var(--gold)}
+    .w2-val{font-family:ui-sans-serif,system-ui,sans-serif;font-size:14px;font-weight:600}
+    .w2-tag{font-family:ui-sans-serif,system-ui,sans-serif;font-size:8px;letter-spacing:.08em;color:var(--dim);margin-top:2px}
+    .w2-note{font-family:ui-sans-serif,system-ui,sans-serif;font-size:7.5px;color:var(--muted);margin-top:1px}
+    .w3-bar{position:relative;height:30px;background:#1a222b;border:1px solid var(--line);border-radius:8px;margin:24px 0 8px}
+    .w3-fill{position:absolute;top:3px;bottom:3px;background:linear-gradient(90deg,rgba(164,72,63,.10),rgba(164,72,63,.35));border-radius:6px}
+    .w3-tick{position:absolute;top:0;bottom:0;width:1px;background:var(--dim)}
+    .w3-tick .t-lab{position:absolute;top:-19px;transform:translateX(-50%);font-family:ui-sans-serif,system-ui,sans-serif;font-size:9.5px;color:var(--gold);white-space:nowrap}
+    .w3-tick .t-sub{position:absolute;bottom:-17px;transform:translateX(-50%);font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;color:var(--dim);white-space:nowrap}
+    .hurdle{text-align:center;font-family:ui-sans-serif,system-ui,sans-serif;font-size:16px;color:var(--gold);margin:14px 0 4px;font-weight:600}
+    .walk{display:flex;justify-content:center;align-items:center;gap:10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:14px;margin:10px 0 4px}
+    .walk span{color:var(--dim)}
+    .walk b{color:var(--bad)}
+    .walk b.limit{color:var(--muted);font-weight:400;text-decoration:line-through;text-decoration-color:var(--dim);}
   </style>
 </head>
 <body>
@@ -65,90 +66,134 @@
 
 <article class="page on">
   <p class="kicker">Tape Notes · 02</p>
-  <h1>Reading a loser</h1>
-  <p>A red ticket is data. It is not a personality test. Not advice.</p>
-  <div class="box"><b>Job:</b> separate tuition from malpractice. Education only. Not a post-mortem of any live name.</div>
+  <h1>The fill is a tax</h1>
+  <p>Short-dated options do not lose only when you are wrong. They lose when you pay the market to get in and pay it again to get out. This issue is liquidity as a filter — not a ticker list.</p>
+  <div class="box"><b>Job:</b> know whether a contract is tradable before you care about the chart. Generic mechanics, not this desk's rules. Not advice.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">01 · Name the clock that killed it</p>
-  <span class="ex-tag">Example · not live tickets</span>
-  <h2>Four fake tickets, four different deaths</h2>
-  <div class="grid4">
-    <div class="mini-ticket"><span class="mini-tag">LATE</span>
-      <div class="mrow"><span>Side</span><b>Call</b></div>
-      <div class="mrow"><span>Fill</span><b>+9m after burst</b></div>
-      <div class="mcap">Impulse was over when the order landed.</div>
-    </div>
-    <div class="mini-ticket"><span class="mini-tag">THIN</span>
-      <div class="mrow"><span>Side</span><b>Put</b></div>
-      <div class="mrow"><span>Book</span><b>1.50×1 / 1.52×1</b></div>
-      <div class="mcap">Quote flicked, stock barely moved.</div>
-    </div>
-    <div class="mini-ticket"><span class="mini-tag">THESIS</span>
-      <div class="mrow"><span>Side</span><b>Call</b></div>
-      <div class="mrow"><span>Underlying</span><b>never broke level</b></div>
-      <div class="mcap">The stock never did the thing.</div>
-    </div>
-    <div class="mini-ticket"><span class="mini-tag">CLOCK</span>
-      <div class="mrow"><span>Side</span><b>Put</b></div>
-      <div class="mrow"><span>Underlying</span><b>right, late</b></div>
-      <div class="mcap">Stock finished the move after the contract died.</div>
-    </div>
-  </div>
-  <table>
-    <tr><th>What happened</th><th>Usual name</th><th>What it is</th></tr>
-    <tr><td>Underlying never did the thing</td><td>Thesis miss</td><td>Side or timing of the <em>stock</em></td></tr>
-    <tr><td>Underlying did it; premium did not</td><td>Two-clock miss</td><td>Decay, spread, or a move too small for this strike</td></tr>
-    <tr><td>Premium never printed green after entry</td><td>Late</td><td>Impulse was over at the fill</td></tr>
-  </table>
-  <div class="box"><b>Yield:</b> if you cannot put the ticket in one tag, you cannot learn from it. "Red" is not a diagnosis.</div>
-</article>
-
-<article class="page">
-  <p class="kicker">02 · First minute is the tell</p>
+  <p class="kicker">01 · Four prices</p>
   <span class="ex-tag">Example · not a live ticket</span>
-  <h2>The fuse that never goes green</h2>
-  <div class="w4"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
-  <div class="viz-caption">Never green after entry, on a liquid contract, is usually late — not unlucky side.</div>
-  <p>The stock can still be "in play." You bought the tail. A quick spike through +15% then a straight line to the stop is often <b>quote + no lock</b>, not "the idea was garbage."</p>
-  <p>Stock finishes green, option finishes red: you learned issue 00. Do not "prove it" by holding to expiration.</p>
+  <h2>Last, mid, bid, ask</h2>
+  <div class="w2">
+    <div class="w2-cell w2-last"><div class="w2-val">1.50</div><div class="w2-tag">LAST</div></div>
+    <div class="w2-cell w2-mid"><div class="w2-val">1.41</div><div class="w2-tag">MID</div></div>
+    <div class="w2-cell w2-bid"><div class="w2-val">1.40</div><div class="w2-tag">BID</div><div class="w2-note">you can sell</div></div>
+    <div class="w2-cell w2-ask"><div class="w2-val">1.42</div><div class="w2-tag">ASK</div><div class="w2-note">you pay</div></div>
+  </div>
+  <div class="viz-caption">Last is grayed out on purpose — it's history, not a price you can act on.</div>
+  <table>
+    <tr><th>Print</th><th>Use</th></tr>
+    <tr><td>Last</td><td>History. Can be a minute old. Not an exit.</td></tr>
+    <tr><td>Mid</td><td>Story. Nobody owes you this price.</td></tr>
+    <tr><td>Bid</td><td>What you can sell, now, if <span class="term">size</span> exists.</td></tr>
+    <tr><td>Ask</td><td>What you pay to get long the contract.</td></tr>
+  </table>
+  <div class="box"><b>Yield:</b> <span class="term">mark-to-mid</span> P&amp;L is entertainment. Mark-to-bid is the money that can leave the account.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">03 · Clean vs sloppy</p>
-  <h2>Grade the process</h2>
-  <p><b>Clean loser:</b> tight market, fill near the quote you approved, stop or time cut as planned, dollars inside the cap. Tuition. Keep the rulebook.</p>
-  <p><b>Sloppy loser:</b> wide open, chase, no stop, extra size, "it should come back," held into the last hour because the day was already red.</p>
-  <div class="box"><b>Yield:</b> process-clean and $-red can coexist. Process-sloppy and $-green is the dangerous one.</div>
+  <p class="kicker">02 · Round-trip tax</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>Do the arithmetic before the click</h2>
+  <div class="w3-bar">
+    <div class="w3-fill" style="left:24%; right:20%;"></div>
+    <div class="w3-tick" style="left:24%;"><span class="t-lab">$1.40</span><b class="t-sub">exit bid</b></div>
+    <div class="w3-tick" style="left:80%;"><span class="t-lab">$1.60</span><b class="t-sub">paid ask</b></div>
+  </div>
+  <div class="viz-caption" style="margin-top:20px;">−$20 / −12.5% before the stock moves an inch</div>
+  <div class="hurdle">spread ÷ ask = hurdle rate</div>
+  <p>Need +15% on the contract just to get to even? Skip. Need +30%? That is not a trade. That is a donation with a chart. Penny-wide on a liquid index is a different product than a wide single-name 0DTE.</p>
+  <div class="box"><b>Yield:</b> if the idea cannot clear the hurdle fast, it is not an idea for this tenor.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">04 · Do not average the autopsy</p>
-  <h2>One hero winner is not the system</h2>
-  <p>One hero winner plus four sloppy losers is not "the system works if you ignore the noise." The hero is the noise if n is small.</p>
-  <p>Write one line per ticket: <em>late / thin / thesis / clock / exit</em>. If the same word shows up four times in a week, that word is the work — not a new indicator.</p>
+  <p class="kicker">03 · Size on the book</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>A tight quote with no size is a trap</h2>
+  <div class="w2">
+    <div class="w2-cell w2-last"><div class="w2-val">—</div><div class="w2-tag">LAST</div></div>
+    <div class="w2-cell w2-mid"><div class="w2-val">1.51</div><div class="w2-tag">MID</div></div>
+    <div class="w2-cell w2-bid"><div class="w2-val">1.50 ×1</div><div class="w2-tag">BID</div></div>
+    <div class="w2-cell w2-ask"><div class="w2-val">1.52 ×1</div><div class="w2-tag">ASK</div></div>
+  </div>
+  <div class="viz-caption">Looks liquid. One contract is the whole quote.</div>
+  <div class="w2">
+    <div class="w2-cell w2-last"><div class="w2-val">—</div><div class="w2-tag">LAST</div></div>
+    <div class="w2-cell w2-mid"><div class="w2-val">1.52</div><div class="w2-tag">MID</div></div>
+    <div class="w2-cell w2-bid"><div class="w2-val">1.35</div><div class="w2-tag">BID</div></div>
+    <div class="w2-cell w2-ask"><div class="w2-val">1.70</div><div class="w2-tag">ASK</div></div>
+  </div>
+  <div class="viz-caption">After you buy the ×1: you were the liquidity. Next print moves on you, not the stock.</div>
+  <p>Check size on both sides, not just the pennies. Your 2-lot can be the whole market on a thin strike.</p>
+  <div class="box"><b>Yield:</b> if your order is a meaningful fraction of displayed size, you are the <span class="term">liquidity</span>.</div>
 </article>
 
 <article class="page">
-  <p class="kicker">05 · What a loser is not</p>
-  <h2>Guardrails</h2>
+  <p class="kicker">04 · Stale limits</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>Waiting is not the same as being patient</h2>
+  <div class="walk"><b class="limit">1.52</b><span>→</span><b>1.58</b><span>→</span><b>1.64</b></div>
+  <div class="viz-caption">Ask walks right over three ticks. Your limit is still sitting at 1.52.</div>
+  <p>A working limit at "fair" mid while the ask walks away is how late fills happen. On a same-day contract the walk takes seconds. If it does not fill in a few seconds on a liquid name, the market already left.</p>
+  <div class="box"><b>Yield:</b> a missed fill is cheaper than a late fill. "I had to get it" is not a reason.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">05 · Stops on thin paper</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>The option quote is not the stock</h2>
+  <div class="viz-caption">A small dip in the underlying can print a much larger hole in a same-day contract.</div>
+  <p>A <span class="term">resting stop</span> on the option can fire on that noise even if the stock thesis is intact. Know whether you are stopped on the contract or on the underlying.</p>
+  <div class="box"><b>Yield:</b> the first risk on a same-day contract is often the quote, not the trend. Size as if the bid can vanish.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">06 · Which names even have a market</p>
+  <h2>No chain, no opinion</h2>
+  <table>
+    <tr><th>Expiry on the chain</th><th>Legal?</th></tr>
+    <tr><td>Today</td><td>—</td></tr>
+    <tr><td>Tomorrow</td><td>—</td></tr>
+    <tr><td>+2 sessions</td><td>—</td></tr>
+    <tr><td colspan="2" style="color:var(--bad); text-align:center;">no near-dated expiry listed — dead <span class="term">chain</span></td></tr>
+  </table>
+  <p>A beautiful chart on a name with a distant next expiry, or a very wide next-day quote, is a postcard. Index products: usually the tightest same-day paper. Single names: sometimes — check the actual strike, not the brand.</p>
+  <div class="box"><b>Yield:</b> liquidity is a gate. Chart quality does not override a dead chain.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">07 · After you are in</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>Exit liquidity is worse than entry</h2>
+  <div class="walk"><b class="limit">1.48 ×12</b><span>→</span><b>1.22 ×1</b></div>
+  <div class="viz-caption">The bid you saw at entry is not a promise.</div>
+  <p>Take the bid when you decided to leave. A limit to "get a better out" on a collapsing same-day contract is often a hold. If size disappears, <span class="term">flatten</span> at market. Pride is expensive.</p>
+</article>
+
+<article class="page">
+  <p class="kicker">08 · Checklist</p>
+  <h2>Before any short-dated click</h2>
   <ul>
-    <li>Not proof the opposite side would have paid (hindsight).</li>
-    <li>Not proof you should loosen the next entry.</li>
-    <li>Not proof you should skip the next valid tape.</li>
-    <li>One red 0DTE is a sample of one.</li>
+    <li>Bid and ask named. Size named.</li>
+    <li>Round-trip tax as a % of ask.</li>
+    <li>Can I exit 1 contract without moving the market?</li>
+    <li>Is the last print younger than a few seconds?</li>
+    <li>If this fills 15 seconds late, is it still the same trade?</li>
   </ul>
-  <p class="fine">Issue 00 is the language. This issue is the <span class="term">autopsy</span>. Not advice.</p>
+  <p class="fine">If any answer is "I don't know," you do not have a price. Issue 01 is the instrument. This issue is the tax. Not a setup list. Not advice.</p>
 </article>
 
 <article class="page">
   <p class="kicker">Glossary · Issue 02</p>
   <h2>Starred terms, in order</h2>
   <dl class="glossary">
-    <dt>Thesis</dt><dd>The specific claim ("this push continues / this push is spent"). Not "I think the stock is good."</dd>
-    <dt>Late</dt><dd>Confirmation and fill happened after the burst that would have paid.</dd>
-    <dt>Autopsy</dt><dd>Review after the close, with fills and minutes, not mid-session rule rewriting.</dd>
+    <dt>Size (on the book)</dt><dd>Contracts advertised at that bid or ask. ×1 is a postcard, not a market.</dd>
+    <dt>Mark-to-mid</dt><dd>Valuing the position at the midpoint. Feels better than what you can actually sell.</dd>
+    <dt>Liquidity</dt><dd>Ability to enter and exit at a known tax. Tight pennies with no size is fake liquidity.</dd>
+    <dt>Resting stop</dt><dd>A live order sitting at the broker that can fill without you watching.</dd>
+    <dt>Chain</dt><dd>The list of expiries and strikes that actually trade. No near expiry means no trade.</dd>
+    <dt>Flatten</dt><dd>Close the whole position. Flat means no option risk left.</dd>
   </dl>
 </article>
 
@@ -156,7 +201,7 @@
 <nav class="bar">
   <button id="prev" type="button" aria-label="Previous page">&larr;</button>
   <div class="dots" id="dots"></div>
-  <span class="pg" id="pg">1 / 7</span>
+  <span class="pg" id="pg">1 / 10</span>
   <button id="next" type="button" aria-label="Next page">&rarr;</button>
 </nav>
 </div>

@@ -22,9 +22,6 @@
     li { margin: 0 0 6px; font-size: 14.5px; line-height: 1.4; color: #d5dde6; }
     .box { border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; margin: 8px 0 10px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; line-height: 1.4; }
     .box b { color: var(--gold); }
-    table { width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12.5px; margin: 8px 0 12px; }
-    th, td { text-align: left; padding: 5px 4px; border-bottom: 1px solid var(--line); color: #d5dde6; }
-    th { color: var(--dim); font-weight: 600; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
     nav.bar { display: flex; align-items: center; gap: 8px; padding: 6px 16px 20px; font-family: ui-sans-serif, system-ui, sans-serif; }
     button { background: #1c242e; color: var(--ink); border: 1px solid var(--line); border-radius: 50%; width: 34px; height: 34px; padding: 0; cursor: pointer; font-size: 17px; display: flex; align-items: center; justify-content: center; }
     button:hover { border-color: var(--gold); color: var(--gold); }
@@ -39,57 +36,33 @@
     dl.glossary dd { margin: 0 0 2px; font-size: 13.5px; line-height: 1.42; color: #d5dde6; }
     .ex-tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; margin-bottom: 8px; }
     .viz-caption { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10.5px; color: var(--dim); text-align: center; margin: 6px 0 12px; }
-    /* Widget 1: two-clock strip */
-    .w1-row { display: flex; align-items: center; gap: 10px; margin: 5px 0; }
-    .w1-lab { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9px; letter-spacing: .06em; color: var(--dim); width: 62px; flex-shrink: 0; text-transform: uppercase; }
-    .w1-line { flex: 1; height: 26px; }
-    .w1-line svg { width: 100%; height: 100%; display: block; }
-    .w1-dots { flex: 1; display: flex; gap: 3px; }
-    .w1-dots i { flex: 1; height: 18px; border-radius: 3px; }
-    .w1-dots i.g { background: var(--good); }
-    .w1-dots i.r { background: var(--bad); }
-    /* Widget 2: quote tile */
-    .w2 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 6px 0 4px; }
-    .w2-cell { border: 1px solid var(--line); border-radius: 8px; padding: 8px 3px; text-align: center; }
-    .w2-cell.w2-last { opacity: .55; }
-    .w2-cell.w2-mid { border-style: dashed; }
-    .w2-cell.w2-bid { border-color: var(--good); }
-    .w2-cell.w2-ask { border-color: var(--gold); }
-    .w2-val { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 600; }
-    .w2-tag { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8px; letter-spacing: .08em; color: var(--dim); margin-top: 2px; }
-    .w2-note { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 7.5px; color: var(--muted); margin-top: 1px; }
-    /* Widget 3: round-trip bar */
-    .w3-bar { position: relative; height: 30px; background: #1a222b; border: 1px solid var(--line); border-radius: 8px; margin: 24px 0 8px; }
-    .w3-fill { position: absolute; top: 3px; bottom: 3px; background: linear-gradient(90deg, rgba(164,72,63,.10), rgba(164,72,63,.35)); border-radius: 6px; }
-    .w3-tick { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--dim); }
-    .w3-tick .t-lab { position: absolute; top: -19px; transform: translateX(-50%); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9.5px; color: var(--gold); white-space: nowrap; }
-    .w3-tick .t-sub { position: absolute; bottom: -17px; transform: translateX(-50%); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9px; color: var(--dim); white-space: nowrap; }
-    .w3-hole { text-align: center; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; color: var(--bad); margin: 18px 0 4px; }
-    /* Widget 4: mini fuse */
-    .w4 { display: flex; gap: 3px; margin: 8px 0 4px; }
-    .w4 i { flex: 1; height: 18px; border-radius: 3px; }
-    .w4 i.g { background: var(--good); }
-    .w4 i.r { background: var(--bad); }
-    /* Widget 5: session ribbon */
-    .w5 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin: 6px 0 4px; }
-    .w5-block { border: 1px solid var(--line); border-radius: 8px; padding: 10px 5px; text-align: center; background: #1a222b; }
-    .w5-block b { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10.5px; color: var(--gold); margin-bottom: 4px; }
-    .w5-block span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9px; color: var(--dim); }
-    /* Mock ticket card */
+    /* mini wireframe chrome */
+    .wf { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #10151b; }
+    .wf-clock { display: flex; justify-content: space-between; align-items: center; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10px; color: var(--dim); }
+    .wf-pill { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; font-size: 10px; }
+    .wf-pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--good); }
+    .wf-spark svg { width: 100%; height: 40px; display: block; margin: 8px 0 2px; }
     .mock-ticket { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; }
     .mock-ticket .mt-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
     .mock-ticket .mt-row:last-child { margin-bottom: 0; }
     .mock-ticket .mt-lab { color: var(--dim); }
     .mock-ticket .mt-val { color: var(--ink); font-weight: 600; }
-    .mock-ticket .mt-val.bad { color: var(--bad); }
     .mock-ticket .mt-val.good { color: var(--good); }
-    /* Tenor fill-level icons */
-    .w-tenor { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 6px 0 4px; }
-    .w-tenor-cell { text-align: center; }
-    .w-tenor-tube { position: relative; width: 20px; height: 44px; margin: 0 auto 6px; border: 1px solid var(--line); border-radius: 6px; background: #1a222b; overflow: hidden; }
-    .w-tenor-tube i { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(201,179,122,.55), rgba(201,179,122,.25)); }
-    .w-tenor-cell b { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10.5px; color: var(--gold); }
-    .w-tenor-cell span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8.5px; color: var(--dim); }
+    .w4 { display: flex; gap: 3px; margin: 8px 0 4px; }
+    .w4 i { flex: 1; height: 18px; border-radius: 3px; }
+    .w4 i.g { background: var(--good); }
+    .w4 i.r { background: var(--bad); }
+    .clockface { position: relative; width: 56px; height: 56px; border: 2px solid var(--gold); border-radius: 50%; margin: 6px auto 10px; }
+    .clockface i { position: absolute; left: 50%; top: 50%; width: 2px; background: var(--gold); transform-origin: bottom center; }
+    .board-row { display: flex; justify-content: space-between; align-items: center; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11.5px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+    .board-row:last-child { border-bottom: none; }
+    .board-row .bname { color: var(--dim); }
+    .board-row .bstat { padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); font-size: 9.5px; }
+    .board-row .bstat.watch { color: var(--gold); border-color: var(--gold); }
+    .board-row .bstat.out { color: var(--dim); }
+    table.weeks { width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; margin: 6px 0 4px; }
+    table.weeks th, table.weeks td { text-align: left; padding: 5px 4px; border-bottom: 1px solid var(--line); color: #d5dde6; }
+    table.weeks th { color: var(--dim); font-weight: 600; font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; }
   </style>
 </head>
 <body>
@@ -99,188 +72,113 @@
 
       <article class="page on">
         <p class="kicker">Tape Notes · 00</p>
-        <h1>The <span class="term">premium</span> dies first. The idea can still be right.</h1>
-        <p>Use this to read a public ticket, decide if a contract is even tradable, and not turn one green print into a larger account. Same-day options can go to zero.</p>
-        <div class="box"><b>Job:</b> the language, not a strategy. Education / entertainment only. Not advice. Not this desk's live rules.</div>
+        <h1>How to read this desk</h1>
+        <p>This issue is a tour of the page, not an options class. It tells you what each piece of the site means so a real ticket, a quiet week, and a "no tickets today" caption all read the same way: honestly.</p>
+        <div class="box"><b>Job:</b> the site, not the strategy. Options mechanics live in issues 01+. Not advice.</div>
       </article>
 
       <article class="page">
-        <p class="kicker">01 · Two clocks</p>
+        <p class="kicker">01 · The header</p>
+        <span class="ex-tag">Wireframe · not live data</span>
+        <h2>Clock, state, next open</h2>
+        <div class="wf">
+          <div class="wf-clock"><span class="wf-pill"><i></i>MARKET OPEN</span><span>Next open: Mon 8:30 CT</span></div>
+        </div>
+        <div class="viz-caption">The pill tells you if there's a live session right now. If it isn't OPEN, nothing on the page is happening live.</div>
+        <p>The caption line under the pill is the plain-English recap: what the desk did today (or didn't), in one sentence. No jargon, no setup name.</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">02 · Week path</p>
+        <span class="ex-tag">Wireframe · not live data</span>
+        <h2>The line under the clock</h2>
+        <div class="wf">
+          <div class="wf-spark"><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,22 20,18 40,20 60,10 80,12 100,6" fill="none" stroke="var(--gold)" stroke-width="1.5"/></svg></div>
+        </div>
+        <div class="viz-caption">This week's running result, day by day — not a single ticket's chart.</div>
+        <p>Up-and-to-the-right for a week is a real week. A flat stretch just means no tickets landed those days. The line does not predict where it goes next.</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">03 · Tickets</p>
         <span class="ex-tag">Example · not a live ticket</span>
-        <h2>The stock's clock and the contract's clock</h2>
-        <div class="w1-row">
-          <span class="w1-lab">Underlying</span>
-          <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,18 15,17 30,16 45,15 60,14 75,13 90,11 100,10" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
-        </div>
-        <div class="w1-row">
-          <span class="w1-lab">Option</span>
-          <div class="w1-dots"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
-        </div>
-        <div class="viz-caption">Stock +0.4% · contract −18%. Different clocks.</div>
-        <p>The stock can grind your way for two hours and the contract can still be down. You rented a move <em>by a time</em>. If the move is late, small, or choppy, three things eat you before the thesis gets a vote:</p>
-        <ul>
-          <li><span class="term">Time</span> — every quiet minute is rent (<span class="term">theta</span>).</li>
-          <li><span class="term">Spread</span> — you buy the <span class="term">ask</span>, sell the <span class="term">bid</span>. <span class="term">Mid</span> is fiction.</li>
-          <li><span class="term">Quote noise</span> — a 0.3% dip in the <span class="term">underlying</span> can print −20% on a same-day contract.</li>
-        </ul>
-        <div class="box"><b>Yield:</b> if the underlying has not done anything useful in the first several minutes, you are not "early." You are paying rent on a dead <span class="term">impulse</span>.</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">02 · The fill is the first P&amp;L</p>
-        <span class="ex-tag">Example · not a live ticket</span>
-        <h2>Bid, ask, last — before the chart matters</h2>
-        <div class="w2">
-          <div class="w2-cell w2-last"><div class="w2-val">1.50</div><div class="w2-tag">LAST</div></div>
-          <div class="w2-cell w2-mid"><div class="w2-val">1.41</div><div class="w2-tag">MID</div></div>
-          <div class="w2-cell w2-bid"><div class="w2-val">1.40</div><div class="w2-tag">BID</div><div class="w2-note">you can sell</div></div>
-          <div class="w2-cell w2-ask"><div class="w2-val">1.42</div><div class="w2-tag">ASK</div><div class="w2-note">you pay</div></div>
-        </div>
-        <div class="viz-caption">Tight: 2¢ wide. Tradable — round-trip tax is pennies.</div>
-        <div class="w2">
-          <div class="w2-cell w2-last"><div class="w2-val">—</div><div class="w2-tag">LAST</div></div>
-          <div class="w2-cell w2-mid"><div class="w2-val">1.38</div><div class="w2-tag">MID</div></div>
-          <div class="w2-cell w2-bid"><div class="w2-val">1.20</div><div class="w2-tag">BID</div></div>
-          <div class="w2-cell w2-ask"><div class="w2-val">1.55</div><div class="w2-tag">ASK</div></div>
-        </div>
-        <div class="viz-caption">Wide: lift the ask, dump the bid — start ~−20% before the stock moves.</div>
-        <div class="w2">
-          <div class="w2-cell w2-last"><div class="w2-val">1.50</div><div class="w2-tag">LAST</div></div>
-          <div class="w2-cell w2-mid"><div class="w2-val">1.30</div><div class="w2-tag">MID</div></div>
-          <div class="w2-cell w2-bid"><div class="w2-val">1.10</div><div class="w2-tag">BID</div></div>
-          <div class="w2-cell w2-ask"><div class="w2-val">1.50</div><div class="w2-tag">ASK</div></div>
-        </div>
-        <div class="viz-caption"><span class="term">Last</span> is a tombstone: 1.50 printed once. You cannot exit there.</div>
-        <p>A limit sitting on a 40-second-old quote is a chase, not patience. If you need a 30% contract win just to beat the spread, skip it. Thin 0DTE singles whip more than SPY/QQQ. That is a filter.</p>
-        <div class="box"><b>Yield:</b> name the bid and the ask out loud before you care about the chart.</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">03 · Tenor</p>
-        <h2>What you actually bought</h2>
-        <div class="w-tenor">
-          <div class="w-tenor-cell"><div class="w-tenor-tube"><i style="height:14%;"></i></div><b><span class="term">0DTE</span></b><span>melts by the close</span></div>
-          <div class="w-tenor-cell"><div class="w-tenor-tube"><i style="height:48%;"></i></div><b>1DTE</b><span>+ one overnight</span></div>
-          <div class="w-tenor-cell"><div class="w-tenor-tube"><i style="height:85%;"></i></div><b>2DTE</b><span>+ a weekend, maybe</span></div>
-        </div>
-        <p>Minutes, not a swing. Afternoon on 0DTE is not the open. Holding to expiration is rarely the plan. If the idea needs "tomorrow," you bought the wrong contract — or you should be flat.</p>
-        <div class="box"><b>Yield:</b> match hold time to tenor. A 3-hour thesis does not belong in a same-day option.</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">04 · Side is not mood</p>
-        <h2>Trade the move, not the day's color</h2>
-        <p>A <span class="term">call</span> pays only if that contract's premium rises after decay and spread. A <span class="term">put</span> is the mirror. Color of the session is a backdrop, not a trigger.</p>
-        <p>Down 1% since the open can already be finished. A second push that looks like the first is often the one that fails. Index-tied names moving tick-for-tick with the market are not "their own" trade.</p>
-        <div class="box"><b>Yield:</b> trade a move that is happening or clearly failing — premium of <em>this</em> contract, not "market color."</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">05 · Read a ticket in 20 seconds</p>
-        <span class="ex-tag">Example · not a live ticket</span>
-        <h2>Four fields, in order</h2>
+        <h2>One closed trade, four fields</h2>
         <div class="mock-ticket">
-          <div class="mt-row"><span class="mt-lab">Side</span><span class="mt-val">Put</span></div>
-          <div class="mt-row"><span class="mt-lab">Minutes</span><span class="mt-val">24 min</span></div>
-          <div class="mt-row"><span class="mt-lab">In → out</span><span class="mt-val">$1.42 → $1.70</span></div>
-          <div class="mt-row"><span class="mt-lab">Contract %</span><span class="mt-val good">+19.7%</span></div>
+          <div class="mt-row"><span class="mt-lab">Side</span><span class="mt-val">Call</span></div>
+          <div class="mt-row"><span class="mt-lab">Minutes</span><span class="mt-val">11 min</span></div>
+          <div class="mt-row"><span class="mt-lab">In → out</span><span class="mt-val">$0.85 → $1.05</span></div>
+          <div class="mt-row"><span class="mt-lab">Contract %</span><span class="mt-val good">+23.5%</span></div>
         </div>
-        <div class="w4"><i class="g"></i><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i></div>
-        <div class="viz-caption">Dots: green = marked up that minute, red = down.</div>
-        <p>A long red string right after entry usually means the impulse was over when the order landed.</p>
-        <div class="box"><b>Yield:</b> 100% win rate on 1 ticket is "1 of 1." The week table is the adult number.</div>
+        <p>A ticket only appears once it's <em>closed</em>. Nothing live is ever shown mid-trade — that's on purpose, not a delay bug. Tap a ticket to expand it for the fill prices and a one-line plain-English thesis.</p>
       </article>
 
       <article class="page">
-        <p class="kicker">06 · The free edge</p>
-        <h2>Most names should never print</h2>
-        <div class="mock-ticket" style="text-align:center;">
-          <div class="mt-row" style="justify-content:center; gap:16px;">
-            <span class="mt-val" style="font-size:15px;">12 looks</span><span class="mt-lab">·</span><span class="mt-val good" style="font-size:15px;">1 fill</span>
-          </div>
-        </div>
-        <div class="viz-caption">A good morning, not a slow one.</div>
-        <ul>
-          <li>Already extended — pass.</li>
-          <li>Chop, no follow-through — pass.</li>
-          <li>Cannot name a tight market — pass.</li>
-          <li>Already in a name — pass.</li>
-          <li>Need activity to feel like a trader — that is the leak.</li>
-        </ul>
-        <div class="box"><b>Yield:</b> zero fills can be a perfect day. Activity is not skill.</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">07 · Size</p>
-        <h2>Cap dollars, not tickers</h2>
-        <div class="mock-ticket" style="text-align:center; font-size:15px;">
-          <b>$2.00</b> <span class="mt-lab">×</span> <b>1</b> <span class="mt-lab">=</span> <b style="color:var(--gold);">$200 at risk</b>
-        </div>
-        <div class="viz-caption">Not "one lot" — $200, before any stop.</div>
-        <p>Same-day premium can lose half its value on a quote flick the stock barely felt. Cap <b>dollars</b>, not "I like this ticker." If the plan changes because the last chip was green, there was no plan.</p>
-        <div class="box"><b>Yield:</b> do not add size to celebrate. Add size only after weeks of process and a real sample. Most people never get there. That is fine.</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">08 · Three exits</p>
-        <h2>Decide the categories before the fill</h2>
-        <ul>
-          <li><b>Working</b> — lock some. Do not donate a winner back to noise.</li>
-          <li><b>Not working</b> — several minutes with no new favorable extreme is information. Cut it.</li>
-          <li><b>Broken</b> — if the underlying invalidates the idea, leave. Do not wait for the option quote to invent a reason.</li>
-        </ul>
-        <div class="box"><b>Yield:</b> inventing exit categories mid-trade is revenge with extra steps.</div>
-      </article>
-
-      <article class="page">
-        <p class="kicker">09 · Time of day</p>
-        <h2>Same ticker, three products</h2>
-        <div class="w5">
-          <div class="w5-block"><b>Open</b><span>wide spreads</span></div>
-          <div class="w5-block"><b>Midday</b><span>chop · rent</span></div>
-          <div class="w5-block"><b>Last 90m</b><span>0DTE melts</span></div>
-        </div>
-        <p>Open ~30 min: range + first impulse, spreads widest, easy to buy the <span class="term">climax</span>. Midday: chop, premium rots, most "I should do something" fills live here. Last 90: 0DTE decay accelerates, new risk needs a better reason than boredom.</p>
-        <p>A name still red on the day at 1pm is not, by itself, a put. The move may have finished at 10:15.</p>
-      </article>
-
-      <article class="page">
-        <p class="kicker">10 · How losers actually look</p>
+        <p class="kicker">04 · The dots</p>
         <span class="ex-tag">Example · not a live ticket</span>
-        <h2>Grade the process first</h2>
-        <div class="viz-caption">Clean cut — never green, cut on time</div>
-        <div class="w4"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
-        <div class="viz-caption" style="margin-top:14px;">Sloppy round-trip — worked, then given back, no lock</div>
-        <div class="w4"><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
-        <p style="margin-top:10px;"><b>Clean:</b> tight contract, idea never worked, cut on time or structure, small dollars. Tuition.<br>
-        <b>Sloppy:</b> chased a late quote, wide spread, no stop, added size, held because "it should come back."</p>
-        <div class="box"><b>Yield:</b> grade the ticket on process first. P&amp;L is the loudest and worst teacher on n=1.</div>
+        <h2>A minute-by-minute replay</h2>
+        <div class="w4"><i class="g"></i><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i></div>
+        <div class="viz-caption">Green = that minute's mark closed above entry. Red = below. Real per-minute data, not a smoothed line.</div>
+        <p>Tap ▶ Replay to watch the dots reveal in order instead of all at once. It's the same numbers either way — replay is just pacing, not new information.</p>
       </article>
 
       <article class="page">
-        <p class="kicker">11 · A log is not a booth</p>
-        <h2>Watch, don't copy</h2>
-        <p>The tape is often delayed on purpose. Judge few tickets, tight contracts, fast cuts, small size. Do not copy a fill. Do not scale off a 100% chip.</p>
-        <p class="fine">This issue is the language. Later issues are fills, tenor timing, and reading a loser. Not advice.</p>
+        <p class="kicker">05 · The delay</p>
+        <h2>Why nothing here is instant</h2>
+        <div class="clockface"><i style="height:20px; transform: translate(-1px,-20px) rotate(60deg);"></i><i style="height:14px; transform: translate(-1px,-14px) rotate(200deg);"></i></div>
+        <div class="viz-caption" style="margin-top:0;">Board and desk activity are shown roughly 15–40 minutes behind real time.</div>
+        <p>This is deliberate, not laggy infrastructure. A public page that showed a live "about to enter" signal would function like a tip service, which this isn't. Closed tickets post as soon as they're closed — the delay only applies to what's being <em>looked at</em>, not what already happened.</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">06 · On the desk</p>
+        <span class="ex-tag">Wireframe · not live data</span>
+        <h2>What was looked at, delayed</h2>
+        <div class="wf">
+          <div class="board-row"><span class="bname">Name A</span><span class="bstat watch">watching</span></div>
+          <div class="board-row"><span class="bname">Name B</span><span class="bstat out">passed</span></div>
+        </div>
+        <p>This is the delayed "what got a look" strip — names that were on the board, whether or not anything happened with them. It answers "did the desk see the tape today," not "what should I buy."</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">07 · The board</p>
+        <span class="ex-tag">Wireframe · not live data</span>
+        <h2>What's actually moving</h2>
+        <div class="wf">
+          <div class="board-row"><span class="bname">Index / mega-cap tickers</span><span class="bstat">last price · % change</span></div>
+        </div>
+        <p>A cosmetic market strip — real prices, no trade implication. It exists so a visitor can feel the day's tape (yields up, a name gapping) without it doubling as a call to action.</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">08 · Weeks</p>
+        <span class="ex-tag">Wireframe · not live data</span>
+        <h2>The adult number</h2>
+        <table class="weeks">
+          <tr><th>Week</th><th>Record</th><th>Net</th></tr>
+          <tr><td>This week</td><td>2–1</td><td>+$34</td></tr>
+          <tr><td>Last week</td><td>1–4</td><td>−$52</td></tr>
+        </table>
+        <div class="viz-caption">A single green ticket can look better than the week actually was. This table is the wider view.</div>
+        <p>Read the week table before the win-rate chip at the top. One green ticket and a rough week can both be true on the same page.</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">09 · Tips buy nothing</p>
+        <h2>What the tip jar is and isn't</h2>
+        <ul>
+          <li>No signals, no access, no "next trade."</li>
+          <li>No subscription tier, no unlock, nothing changes if you tip.</li>
+          <li>It's coffee money for a public log, not a payment for information.</li>
+        </ul>
+        <p class="fine">This issue is the site. Issues 01 and on are the actual mechanics of a short-dated option — not this desk's own rules, just how the instrument works. Not advice.</p>
       </article>
 
       <article class="page">
         <p class="kicker">Glossary · Issue 00</p>
         <h2>Starred terms, in order</h2>
         <dl class="glossary">
-          <dt>Premium</dt><dd>The price of the option contract. This is what you actually win or lose.</dd>
-          <dt>Theta</dt><dd>Daily (and intra-day) decay of that premium. Quiet minutes still charge rent.</dd>
-          <dt>Spread</dt><dd>Ask minus bid. You buy the high side, sell the low side.</dd>
-          <dt>Bid / ask</dt><dd>What you can sell at now / what you pay to buy now.</dd>
-          <dt>Mid</dt><dd>Halfway between bid and ask. A story, not a fill.</dd>
-          <dt>Last</dt><dd>Last reported trade. Can be stale. Not an exit.</dd>
-          <dt>Underlying</dt><dd>The stock or ETF the option is written on.</dd>
-          <dt>Quote noise</dt><dd>The option's bid/ask jumping without a real move in the underlying.</dd>
-          <dt>Impulse</dt><dd>A short, directional burst. If it is over, you are renting chop.</dd>
-          <dt>Round-trip</dt><dd>Buy then sell (or sell then buy). Both sides pay the spread.</dd>
-          <dt>0DTE / 1DTE / 2DTE (tenor)</dt><dd>Expires today / tomorrow / in two sessions.</dd>
-          <dt>Call / put</dt><dd>Contract that needs the underlying up / down enough, soon enough for this strike's premium to rise.</dd>
-          <dt>Climax</dt><dd>The last burst of a move, often the high or low of the push. Buying it as "the start" is the usual tax.</dd>
+          <dt>No starred terms this issue</dt><dd>This issue is about the page, not options vocabulary — that starts in Issue 01.</dd>
         </dl>
       </article>
 
@@ -288,7 +186,7 @@
     <nav class="bar">
       <button id="prev" type="button" aria-label="Previous page">&larr;</button>
       <div class="dots" id="dots"></div>
-      <span class="pg" id="pg">1 / 13</span>
+      <span class="pg" id="pg">1 / 11</span>
       <button id="next" type="button" aria-label="Next page">&rarr;</button>
     </nav>
   </div>
