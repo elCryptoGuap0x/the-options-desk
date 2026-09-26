@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T23:38:41Z",
+  "generated_at": "2026-09-26T02:03:57Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84067,
-      "chg_pct": -0.43,
+      "last": 84024,
+      "chg_pct": -0.73,
       "history": [
         83937.525,
         83945.395,
@@ -472,14 +472,15 @@
         83806.945,
         83810.035,
         84088.475,
-        84067
+        84067,
+        84024
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2692.58,
-      "chg_pct": 0.05,
+      "last": 2689.24,
+      "chg_pct": -0.12,
       "history": [
         2693.585,
         2693.005,
@@ -511,14 +512,15 @@
         2680.265,
         2680.16,
         2693.815,
-        2692.58
+        2692.58,
+        2689.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 122.0,
-      "chg_pct": 4.17,
+      "last": 121.85,
+      "chg_pct": 3.6,
       "history": [
         122.085,
         122.055,
@@ -550,7 +552,8 @@
         121.16,
         121.13,
         122.345,
-        122.0
+        122.0,
+        121.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -945,10 +948,10 @@
   "news": [
     {
       "tag": "MARKETS",
-      "title": "Let\u2019s Take a Closer Look at Amazon\u2019s (AMZN) Debt-Fueled AI Buildout",
-      "summary": "Amazon.com Inc. (NASDAQ:AMZN) remains committed toward scaling up its cloud computing, logistics, artificial intelligence, and advanced manufacturing capabilities. The management recently announced its plans to extend over $100 million to e",
-      "url": "https://finance.yahoo.com/technology/ai/articles/let-closer-look-amazon-amzn-232034177.html?.tsrc=rss",
-      "ts": "2026-09-25T23:20:34Z"
+      "title": "If I Could Only Add 1 ETF to My Portfolio This Year, Here's Exactly What I'd Buy",
+      "summary": "This semiconductor ETF continues to look ripe for more gains.",
+      "url": "https://www.fool.com/investing/2026/09/25/if-i-could-only-add-1-etf-to-my-portfolio-this-yea/?.tsrc=rss",
+      "ts": "2026-09-26T01:35:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -966,10 +969,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "What Is Microsoft (MSFT) Planning With Its $10 Billion Gulf Cloud And AI Push?",
-      "summary": "Microsoft (NasdaqGS:MSFT) plans to invest over US$10b in cloud and AI infrastructure across Gulf countries by 2030. The program targets new subsea and terrestrial connectivity plus data center capacity aimed at regional digital resilience. ",
-      "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-msft-planning-10-billion-230941852.html?.tsrc=rss",
-      "ts": "2026-09-25T23:09:41Z"
+      "title": "The Auto Weekly: Tesla's Semi Play, Rivian's Cheaper Model Promise And Detroit's Market Share Threat",
+      "summary": "Tesla said high-volume Semi production is underway in Nevada, Rivian patched a camera-software defect across most of its fleet, and Ford cut F-150 shifts while Cox projected Hyundai Group to outsell Ford in Q3.",
+      "url": "https://stocktwits.com/news-articles/markets/equity/the-auto-weekly-tesla-s-semi-play-rivian-s-cheaper-model-promise-and-detroit-s-market-share-threat/cZMXzS0RBOF?.tsrc=rss",
+      "ts": "2026-09-26T01:30:50Z"
     },
     {
       "tag": "OPTIONS",
@@ -987,10 +990,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "S&P 500, Dow, Nasdaq End Week Higher On Chipmaker Strength, Easing Oil Amid Signs Of Easing US-Iran Conflict \u2014 META, COST, MSFT, CRWD, SKHY ",
-      "summary": "Iran pitched a seven-day roadmap to end conflict with the U.S., the New York Times reported.",
-      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-end-week-higher-on-chipmaker-strength-easing-oil-amid-signs-of-easing-us-iran-conflict-meta-cost-msft-crwd-skhy-in-focus/cZMOFkXRBOV?.tsrc=rss",
-      "ts": "2026-09-25T22:51:48Z"
+      "title": "Apple (AAPL) Took a Different Pricing Approach with its New iPhones in China",
+      "summary": "On September 10, 2026, CNBC reported that Apple Inc. (NASDAQ:AAPL)\u2019s iPhone Duo faces a tepid reception in China, where it is priced at 15,999 yuan, or about $2,230, positioning it above Xiaomi\u2019s newly launched 18 Fold at 10,999 yuan but be",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-took-different-pricing-012229936.html?.tsrc=rss",
+      "ts": "2026-09-26T01:22:29Z"
     },
     {
       "tag": "CRYPTO",
@@ -1288,10 +1291,10 @@
     ]
   },
   "btc_range": {
-    "last": 84063,
+    "last": 84006,
     "high_24h": 85208,
     "low_24h": 83230,
-    "chg_pct": -0.44
+    "chg_pct": -0.82
   },
   "macro": {
     "10Y": 5.18,
