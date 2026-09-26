@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tape Notes · Issue 01</title>
+  <style>
+    :root { --bg:#0c1014;--panel:#141a21;--line:#24303c;--ink:#e8edf2;--muted:#8b9aab;--dim:#5e6d7c;--gold:#c9b37a; }
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Iowan Old Style",Palatino,Georgia,serif}
+    .wrap{max-width:440px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
+    header.top{padding:14px 18px 8px;display:flex;justify-content:space-between;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+    .stage{flex:1;padding:8px 16px 12px}
+    article.page{display:none;background:var(--panel);border:1px solid var(--line);border-radius:14px;min-height:620px;padding:22px 20px 18px}
+    article.page.on{display:block}
+    .kicker{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+    h1{font-weight:500;font-size:24px;line-height:1.15;margin:0 0 12px}
+    h2{font-weight:500;font-size:19px;line-height:1.2;margin:0 0 10px}
+    p{font-size:15px;line-height:1.45;color:#d5dde6;margin:0 0 9px}
+    p.fine{font-size:12px;color:var(--muted);line-height:1.45}
+    ul{margin:0 0 10px;padding:0 0 0 16px}
+    li{margin:0 0 6px;font-size:14.5px;line-height:1.4;color:#d5dde6}
+    .box{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin:8px 0 10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;line-height:1.4}
+    .box b{color:var(--gold)}
+    table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;margin:8px 0 12px}
+    th,td{text-align:left;padding:5px 4px;border-bottom:1px solid var(--line);color:#d5dde6}
+    th{color:var(--dim);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    nav.bar{display:flex;align-items:center;gap:8px;padding:6px 16px 20px;font-family:ui-sans-serif,system-ui,sans-serif}
+    button{background:#1c242e;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:13px}
+    button:disabled{opacity:.35;cursor:default}
+    .dots{flex:1;display:flex;justify-content:center;gap:4px;flex-wrap:wrap}
+    .dots i{width:6px;height:6px;border-radius:50%;background:#2a3542;display:inline-block}
+    .dots i.on{background:var(--gold)}
+    .pg{color:var(--dim);font-size:11px;min-width:48px;text-align:right}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><span>The Options Desk</span><span>Issue 01 · Free</span></header>
+<div class="stage">
+
+<article class="page on">
+  <p class="kicker">Tape Notes · 01</p>
+  <h1>The number on the screen is not the fill</h1>
+  <p>Short-dated options do not lose only when you are wrong. They lose when you pay the market to get in and pay it again to get out. This issue is liquidity as a filter — not a ticker list.</p>
+  <div class="box"><b>Job:</b> know whether a contract is tradable before you care about the chart. Education only. Not advice.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">01 · Four prices</p>
+  <h2>Last, mid, bid, ask</h2>
+  <table>
+    <tr><th>Print</th><th>Use</th></tr>
+    <tr><td>Last</td><td>History. Can be a minute old. Not an exit.</td></tr>
+    <tr><td>Mid</td><td>Story. Nobody owes you this price.</td></tr>
+    <tr><td>Bid</td><td>What you can sell, now, if size exists.</td></tr>
+    <tr><td>Ask</td><td>What you pay to get long the contract.</td></tr>
+  </table>
+  <div class="box"><b>Yield:</b> mark-to-mid P&amp;L is entertainment. Mark-to-bid is the money that can leave the account.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">02 · Round-trip tax</p>
+  <h2>Do the arithmetic before the click</h2>
+  <p>Ask $1.60, bid $1.40. You lift one, dump one: −$20 per contract before the stock moves an inch. That is −12.5% on the $1.60 you paid.</p>
+  <ul>
+    <li>Need +15% on the contract just to get to even? Skip.</li>
+    <li>Need +30%? That is not a trade. That is a donation with a chart.</li>
+    <li>Penny-wide on SPY/QQQ is a different product than a $0.40-wide single-name 0DTE.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> spread ÷ ask is the first hurdle rate. If the idea cannot clear it fast, it is not an idea for this tenor.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">03 · Size on the book</p>
+  <h2>A tight quote with no size is a trap</h2>
+  <p>Bid 1.50 × 1, ask 1.52 × 1. Looks liquid. One contract eats the quote. The next print is 1.35 / 1.70.</p>
+  <ul>
+    <li>Check size on both sides, not just the pennies.</li>
+    <li>Your 2-lot can be the whole market on a thin strike.</li>
+    <li>After you buy, the bid you thought you had may vanish.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> if your order is a meaningful fraction of displayed size, you are the liquidity. Price will move because of you, not the stock.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">04 · Stale limits</p>
+  <h2>Waiting is not the same as being patient</h2>
+  <p>A working limit at "fair" mid while the ask walks away is how late fills happen. On 0DTE the walk takes seconds.</p>
+  <ul>
+    <li>If it does not fill in a few seconds on a liquid name, the market already left.</li>
+    <li>Chasing the new ask is a different trade than the one you approved.</li>
+    <li>Cancel-and-replace mid-impulse is how you buy the high of the bar.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> a missed fill is cheaper than a late fill. "I had to get it" is not a reason.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">05 · Stops on thin paper</p>
+  <h2>The option quote is not the stock</h2>
+  <p>A 0.4% dip in the underlying can print a 20% hole in a same-day contract. A resting stop on the option can fire on that noise even if the stock thesis is intact.</p>
+  <ul>
+    <li>Know whether you are stopped on the contract or on the underlying.</li>
+    <li>Wide option stops still die if the trigger is the bid flicking.</li>
+    <li>No resting stop at all is how a "quick look" becomes a disaster.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> the first risk on 0DTE is often the quote, not the trend. Size as if the bid can vanish.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">06 · Which names even have a market</p>
+  <h2>No chain, no opinion</h2>
+  <p>A beautiful chart on a name with Friday-only expiry, or $0.50-wide 1DTE, is a postcard. You cannot express it without paying a tax that eats the edge.</p>
+  <ul>
+    <li>Index products: usually the tightest same-day paper.</li>
+    <li>Mega-caps: sometimes. Check the actual strike, not the brand.</li>
+    <li>Story names up 8% with no near expiry: watch, don't invent a contract.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> liquidity is a gate. Chart quality does not override a dead chain.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">07 · After you are in</p>
+  <h2>Exit liquidity is worse than entry</h2>
+  <p>Everyone wants the same door when it is working or when it is dying. The bid you saw at entry is not a promise.</p>
+  <ul>
+    <li>Take the bid when you decided to leave. Mid-hope is how winners round-trip.</li>
+    <li>A limit to "get a better out" on a collapsing 0DTE is often a hold.</li>
+    <li>If size disappears, flatten at market. Pride is expensive.</li>
+  </ul>
+</article>
+
+<article class="page">
+  <p class="kicker">08 · Checklist</p>
+  <h2>Before any short-dated click</h2>
+  <ul>
+    <li>Bid and ask named. Size named.</li>
+    <li>Round-trip tax as a % of ask.</li>
+    <li>Can I exit 1 contract without moving the market?</li>
+    <li>Is the last print younger than a few seconds?</li>
+    <li>If this fills 15 seconds late, is it still the same trade?</li>
+  </ul>
+  <p class="fine">If any answer is "I don't know," you do not have a price. Issue 00 is the language. This issue is the tax. Not a setup list. Not advice.</p>
+</article>
+
+</div>
+<nav class="bar">
+  <button id="prev" type="button">Prev</button>
+  <div class="dots" id="dots"></div>
+  <span class="pg" id="pg">1 / 9</span>
+  <button id="next" type="button">Next</button>
+</nav>
+</div>
+<script>
+const pages=[...document.querySelectorAll("article.page")];
+const dots=document.getElementById("dots"),pg=document.getElementById("pg"),prev=document.getElementById("prev"),next=document.getElementById("next");
+let i=0; pages.forEach(()=>dots.appendChild(document.createElement("i")));
+function show(n){i=Math.max(0,Math.min(pages.length-1,n));pages.forEach((p,k)=>p.classList.toggle("on",k===i));[...dots.children].forEach((d,k)=>d.classList.toggle("on",k===i));pg.textContent=(i+1)+" / "+pages.length;prev.disabled=i===0;next.disabled=i===pages.length-1;}
+prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key===" "){e.preventDefault();show(i+1)}if(e.key==="ArrowLeft")show(i-1)});
+let x0=null;const st=document.querySelector(".stage");
+st.addEventListener("touchstart",e=>{x0=e.changedTouches[0].screenX},{passive:true});
+st.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].screenX-x0;if(dx<-40)show(i+1);if(dx>40)show(i-1);x0=null});
+show(0);
+</script>
+</body>
+</html>
