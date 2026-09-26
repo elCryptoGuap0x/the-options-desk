@@ -682,10 +682,6 @@
   .tape-notes-card .carousel-body { min-height: 0; }
   /* Titles-only list, no links -- see the HTML comment above this block
      for why these stay text, not <a> tags. */
-  .tape-notes-more { margin-top: 8px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border-soft); border-radius: 8px; }
-  .tape-notes-more-label { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-bottom: 6px; }
-  .tape-notes-more-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; color: var(--text-dim); padding: 4px 0; }
-  .tape-notes-req { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); }
   /* Added 9/18, real feedback: a headline with no way to actually read
      more than a 2-line blurb. Off-site tab only -- this site doesn't
      have the rights or the HTML to reproduce the article itself. */
@@ -885,39 +881,24 @@
            spectator on a quiet SCANNING day looks left for "what day is
            it," then "what is this desk." Static card, no carousel (one
            page, nothing to rotate); same chrome as Calendar/News via the
-           shared .carousel-card classes. -->
+           shared .carousel-card classes.
+           Restructured 9/26, real product call: one card per released
+           issue didn't scale (started duplicating with 01's release) --
+           Learn is now a single entry point into tape-notes-index.html,
+           a hub page listing every issue (00/01 open, 02-04 titles-only
+           "Request" rows, same as before just moved off this sidebar).
+           02-04 still never sit in this repo as real files -- same 9/23
+           reasoning, a "locked" link is fake the moment the HTML is on
+           GitHub Pages. -->
       <section>
         <div class="section-title">Learn</div>
-        <a class="carousel-card tape-notes-card" style="--accent: var(--good);" href="tape-notes.html" target="_blank" rel="noopener">
+        <a class="carousel-card tape-notes-card" style="--accent: var(--good);" href="tape-notes-index.html" target="_blank" rel="noopener">
           <div class="carousel-head">
-            <span class="carousel-tag">Tape Notes · 00</span>
+            <span class="carousel-tag">Tape Notes</span>
           </div>
           <div class="carousel-title">Short-dated options, in English.</div>
-          <div class="carousel-body">Free · 12 pages · not a signal</div>
+          <div class="carousel-body">2 free issues · 3 by request · not a signal</div>
         </a>
-        <!-- Added 9/26, real product call: 01 released free, same
-             reasoning as 00 -- once a file actually sits in the public
-             repo it's a real page, not a locked one, so it gets the
-             same open link and full card treatment rather than a fake
-             "unlock" gate. 02-04 stay titles-only, still deliberately
-             kept OUT of this repo entirely for the same reason 9/23's
-             note gives: a "locked" link is fake the moment the HTML
-             sits on GitHub Pages. Drip order (which of 02-04 comes
-             next) still tracks real requests via the footer note form,
-             not finished prose sitting around. -->
-        <a class="carousel-card tape-notes-card" style="--accent: var(--good);" href="tape-notes-01.html" target="_blank" rel="noopener">
-          <div class="carousel-head">
-            <span class="carousel-tag">Tape Notes · 01</span>
-          </div>
-          <div class="carousel-title">Spreads &amp; fills: the tax you pay to trade.</div>
-          <div class="carousel-body">Free · 9 pages · not a signal</div>
-        </a>
-        <div class="tape-notes-more">
-          <div class="tape-notes-more-label">More issues, by request</div>
-          <div class="tape-notes-more-row"><span>02 — Reading a loser</span><span class="tape-notes-req">Request</span></div>
-          <div class="tape-notes-more-row"><span>03 — Time of day</span><span class="tape-notes-req">Request</span></div>
-          <div class="tape-notes-more-row"><span>04 — Sample size</span><span class="tape-notes-req">Request</span></div>
-        </div>
       </section>
 
       <section>
