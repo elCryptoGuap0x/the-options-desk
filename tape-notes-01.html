@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tape Notes · Issue 01</title>
   <style>
-    :root { --bg:#0c1014;--panel:#141a21;--line:#24303c;--ink:#e8edf2;--muted:#8b9aab;--dim:#5e6d7c;--gold:#c9b37a; }
+    :root { --bg:#0c1014;--panel:#141a21;--line:#24303c;--ink:#e8edf2;--muted:#8b9aab;--dim:#5e6d7c;--gold:#c9b37a;--good:#3a8f5c;--bad:#a4483f; }
     *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Iowan Old Style",Palatino,Georgia,serif}
     .wrap{max-width:440px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
     header.top{padding:14px 18px 8px;display:flex;justify-content:space-between;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
@@ -25,12 +25,46 @@
     th,td{text-align:left;padding:5px 4px;border-bottom:1px solid var(--line);color:#d5dde6}
     th{color:var(--dim);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
     nav.bar{display:flex;align-items:center;gap:8px;padding:6px 16px 20px;font-family:ui-sans-serif,system-ui,sans-serif}
-    button{background:#1c242e;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:13px}
-    button:disabled{opacity:.35;cursor:default}
+    button{background:#1c242e;color:var(--ink);border:1px solid var(--line);border-radius:50%;width:34px;height:34px;padding:0;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center}
+    button:hover{border-color:var(--gold);color:var(--gold)}
+    button:disabled{opacity:.35;cursor:default;border-color:var(--line);color:var(--ink)}
     .dots{flex:1;display:flex;justify-content:center;gap:4px;flex-wrap:wrap}
     .dots i{width:6px;height:6px;border-radius:50%;background:#2a3542;display:inline-block}
     .dots i.on{background:var(--gold)}
     .pg{color:var(--dim);font-size:11px;min-width:48px;text-align:right}
+    .term{color:var(--gold);border-bottom:1px dashed var(--gold)}
+    dl.glossary dt{font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;color:var(--gold);margin:12px 0 2px}
+    dl.glossary dt:first-child{margin-top:0}
+    dl.glossary dd{margin:0 0 2px;font-size:13.5px;line-height:1.42;color:#d5dde6}
+    .ex-tag{display:inline-block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:8px}
+    .viz-caption{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--dim);text-align:center;margin:6px 0 12px}
+    .w1-row{display:flex;align-items:center;gap:10px;margin:5px 0}
+    .w1-lab{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;letter-spacing:.06em;color:var(--dim);width:62px;flex-shrink:0;text-transform:uppercase}
+    .w1-line{flex:1;height:26px}
+    .w1-line svg{width:100%;height:100%;display:block}
+    .w1-dots{flex:1;display:flex;gap:3px}
+    .w1-dots i{flex:1;height:18px;border-radius:3px}
+    .w1-dots i.g{background:var(--good)}
+    .w1-dots i.r{background:var(--bad)}
+    .w2{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:6px 0 4px}
+    .w2-cell{border:1px solid var(--line);border-radius:8px;padding:8px 3px;text-align:center}
+    .w2-cell.w2-last{opacity:.55}
+    .w2-cell.w2-mid{border-style:dashed}
+    .w2-cell.w2-bid{border-color:var(--good)}
+    .w2-cell.w2-ask{border-color:var(--gold)}
+    .w2-val{font-family:ui-sans-serif,system-ui,sans-serif;font-size:14px;font-weight:600}
+    .w2-tag{font-family:ui-sans-serif,system-ui,sans-serif;font-size:8px;letter-spacing:.08em;color:var(--dim);margin-top:2px}
+    .w2-note{font-family:ui-sans-serif,system-ui,sans-serif;font-size:7.5px;color:var(--muted);margin-top:1px}
+    .w3-bar{position:relative;height:30px;background:#1a222b;border:1px solid var(--line);border-radius:8px;margin:24px 0 8px}
+    .w3-fill{position:absolute;top:3px;bottom:3px;background:linear-gradient(90deg,rgba(164,72,63,.10),rgba(164,72,63,.35));border-radius:6px}
+    .w3-tick{position:absolute;top:0;bottom:0;width:1px;background:var(--dim)}
+    .w3-tick .t-lab{position:absolute;top:-19px;transform:translateX(-50%);font-family:ui-sans-serif,system-ui,sans-serif;font-size:9.5px;color:var(--gold);white-space:nowrap}
+    .w3-tick .t-sub{position:absolute;bottom:-17px;transform:translateX(-50%);font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;color:var(--dim);white-space:nowrap}
+    .hurdle{text-align:center;font-family:ui-sans-serif,system-ui,sans-serif;font-size:16px;color:var(--gold);margin:14px 0 4px;font-weight:600}
+    .walk{display:flex;justify-content:center;align-items:center;gap:10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:14px;margin:10px 0 4px}
+    .walk span{color:var(--dim)}
+    .walk b{color:var(--bad)}
+    .walk b.limit{color:var(--muted);font-weight:400;text-decoration:line-through;text-decoration-color:var(--dim);}
   </style>
 </head>
 <body>
@@ -47,86 +81,110 @@
 
 <article class="page">
   <p class="kicker">01 · Four prices</p>
+  <span class="ex-tag">Example · not a live ticket</span>
   <h2>Last, mid, bid, ask</h2>
+  <div class="w2">
+    <div class="w2-cell w2-last"><div class="w2-val">1.50</div><div class="w2-tag">LAST</div></div>
+    <div class="w2-cell w2-mid"><div class="w2-val">1.41</div><div class="w2-tag">MID</div></div>
+    <div class="w2-cell w2-bid"><div class="w2-val">1.40</div><div class="w2-tag">BID</div><div class="w2-note">you can sell</div></div>
+    <div class="w2-cell w2-ask"><div class="w2-val">1.42</div><div class="w2-tag">ASK</div><div class="w2-note">you pay</div></div>
+  </div>
+  <div class="viz-caption">Last is grayed out on purpose — it's history, not a price you can act on.</div>
   <table>
     <tr><th>Print</th><th>Use</th></tr>
     <tr><td>Last</td><td>History. Can be a minute old. Not an exit.</td></tr>
     <tr><td>Mid</td><td>Story. Nobody owes you this price.</td></tr>
-    <tr><td>Bid</td><td>What you can sell, now, if size exists.</td></tr>
+    <tr><td>Bid</td><td>What you can sell, now, if <span class="term">size</span> exists.</td></tr>
     <tr><td>Ask</td><td>What you pay to get long the contract.</td></tr>
   </table>
-  <div class="box"><b>Yield:</b> mark-to-mid P&amp;L is entertainment. Mark-to-bid is the money that can leave the account.</div>
+  <div class="box"><b>Yield:</b> <span class="term">mark-to-mid</span> P&amp;L is entertainment. Mark-to-bid is the money that can leave the account.</div>
 </article>
 
 <article class="page">
   <p class="kicker">02 · Round-trip tax</p>
+  <span class="ex-tag">Example · not a live ticket</span>
   <h2>Do the arithmetic before the click</h2>
-  <p>Ask $1.60, bid $1.40. You lift one, dump one: −$20 per contract before the stock moves an inch. That is −12.5% on the $1.60 you paid.</p>
-  <ul>
-    <li>Need +15% on the contract just to get to even? Skip.</li>
-    <li>Need +30%? That is not a trade. That is a donation with a chart.</li>
-    <li>Penny-wide on SPY/QQQ is a different product than a $0.40-wide single-name 0DTE.</li>
-  </ul>
-  <div class="box"><b>Yield:</b> spread ÷ ask is the first hurdle rate. If the idea cannot clear it fast, it is not an idea for this tenor.</div>
+  <div class="w3-bar">
+    <div class="w3-fill" style="left:24%; right:20%;"></div>
+    <div class="w3-tick" style="left:24%;"><span class="t-lab">$1.40</span><b class="t-sub">exit bid</b></div>
+    <div class="w3-tick" style="left:80%;"><span class="t-lab">$1.60</span><b class="t-sub">paid ask</b></div>
+  </div>
+  <div class="viz-caption" style="margin-top:20px;">−$20 / −12.5% before the stock moves an inch</div>
+  <div class="hurdle">spread ÷ ask = hurdle rate</div>
+  <p>Need +15% on the contract just to get to even? Skip. Need +30%? That is not a trade. That is a donation with a chart. Penny-wide on SPY/QQQ is a different product than a $0.40-wide single-name 0DTE.</p>
+  <div class="box"><b>Yield:</b> if the idea cannot clear the hurdle fast, it is not an idea for this tenor.</div>
 </article>
 
 <article class="page">
   <p class="kicker">03 · Size on the book</p>
+  <span class="ex-tag">Example · not a live ticket</span>
   <h2>A tight quote with no size is a trap</h2>
-  <p>Bid 1.50 × 1, ask 1.52 × 1. Looks liquid. One contract eats the quote. The next print is 1.35 / 1.70.</p>
-  <ul>
-    <li>Check size on both sides, not just the pennies.</li>
-    <li>Your 2-lot can be the whole market on a thin strike.</li>
-    <li>After you buy, the bid you thought you had may vanish.</li>
-  </ul>
-  <div class="box"><b>Yield:</b> if your order is a meaningful fraction of displayed size, you are the liquidity. Price will move because of you, not the stock.</div>
+  <div class="w2">
+    <div class="w2-cell w2-last"><div class="w2-val">—</div><div class="w2-tag">LAST</div></div>
+    <div class="w2-cell w2-mid"><div class="w2-val">1.51</div><div class="w2-tag">MID</div></div>
+    <div class="w2-cell w2-bid"><div class="w2-val">1.50 ×1</div><div class="w2-tag">BID</div></div>
+    <div class="w2-cell w2-ask"><div class="w2-val">1.52 ×1</div><div class="w2-tag">ASK</div></div>
+  </div>
+  <div class="viz-caption">Looks liquid. One contract is the whole quote.</div>
+  <div class="w2">
+    <div class="w2-cell w2-last"><div class="w2-val">—</div><div class="w2-tag">LAST</div></div>
+    <div class="w2-cell w2-mid"><div class="w2-val">1.52</div><div class="w2-tag">MID</div></div>
+    <div class="w2-cell w2-bid"><div class="w2-val">1.35</div><div class="w2-tag">BID</div></div>
+    <div class="w2-cell w2-ask"><div class="w2-val">1.70</div><div class="w2-tag">ASK</div></div>
+  </div>
+  <div class="viz-caption">After you buy the ×1: you were the liquidity. Next print moves on you, not the stock.</div>
+  <p>Check size on both sides, not just the pennies. Your 2-lot can be the whole market on a thin strike.</p>
+  <div class="box"><b>Yield:</b> if your order is a meaningful fraction of displayed size, you are the <span class="term">liquidity</span>.</div>
 </article>
 
 <article class="page">
   <p class="kicker">04 · Stale limits</p>
+  <span class="ex-tag">Example · not a live ticket</span>
   <h2>Waiting is not the same as being patient</h2>
-  <p>A working limit at "fair" mid while the ask walks away is how late fills happen. On 0DTE the walk takes seconds.</p>
-  <ul>
-    <li>If it does not fill in a few seconds on a liquid name, the market already left.</li>
-    <li>Chasing the new ask is a different trade than the one you approved.</li>
-    <li>Cancel-and-replace mid-impulse is how you buy the high of the bar.</li>
-  </ul>
+  <div class="walk"><b class="limit">1.52</b><span>→</span><b>1.58</b><span>→</span><b>1.64</b></div>
+  <div class="viz-caption">Ask walks right over three ticks. Your limit is still sitting at 1.52.</div>
+  <p>A working limit at "fair" mid while the ask walks away is how late fills happen. On 0DTE the walk takes seconds. If it does not fill in a few seconds on a liquid name, the market already left.</p>
   <div class="box"><b>Yield:</b> a missed fill is cheaper than a late fill. "I had to get it" is not a reason.</div>
 </article>
 
 <article class="page">
   <p class="kicker">05 · Stops on thin paper</p>
+  <span class="ex-tag">Example · not a live ticket</span>
   <h2>The option quote is not the stock</h2>
-  <p>A 0.4% dip in the underlying can print a 20% hole in a same-day contract. A resting stop on the option can fire on that noise even if the stock thesis is intact.</p>
-  <ul>
-    <li>Know whether you are stopped on the contract or on the underlying.</li>
-    <li>Wide option stops still die if the trigger is the bid flicking.</li>
-    <li>No resting stop at all is how a "quick look" becomes a disaster.</li>
-  </ul>
+  <div class="w1-row">
+    <span class="w1-lab">Underlying</span>
+    <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,10 20,11 40,10 60,13 75,12 100,11" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
+  </div>
+  <div class="w1-row">
+    <span class="w1-lab">Option</span>
+    <div class="w1-dots"><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+  </div>
+  <div class="viz-caption">Underlying −0.4% · contract −20%. Stop fires on the option row, not the stock.</div>
+  <p>A <span class="term">resting stop</span> on the option can fire on that noise even if the stock thesis is intact. Know whether you are stopped on the contract or on the underlying.</p>
   <div class="box"><b>Yield:</b> the first risk on 0DTE is often the quote, not the trend. Size as if the bid can vanish.</div>
 </article>
 
 <article class="page">
   <p class="kicker">06 · Which names even have a market</p>
   <h2>No chain, no opinion</h2>
-  <p>A beautiful chart on a name with Friday-only expiry, or $0.50-wide 1DTE, is a postcard. You cannot express it without paying a tax that eats the edge.</p>
-  <ul>
-    <li>Index products: usually the tightest same-day paper.</li>
-    <li>Mega-caps: sometimes. Check the actual strike, not the brand.</li>
-    <li>Story names up 8% with no near expiry: watch, don't invent a contract.</li>
-  </ul>
+  <table>
+    <tr><th>Expiry on the chain</th><th>Legal?</th></tr>
+    <tr><td>Today (0DTE)</td><td>—</td></tr>
+    <tr><td>Tomorrow (1DTE)</td><td>—</td></tr>
+    <tr><td>+2 sessions (2DTE)</td><td>—</td></tr>
+    <tr><td colspan="2" style="color:var(--bad); text-align:center;">no 0/1/2DTE listed — dead <span class="term">chain</span></td></tr>
+  </table>
+  <p>A beautiful chart on a name with Friday-only expiry, or $0.50-wide 1DTE, is a postcard. Index products: usually the tightest same-day paper. Mega-caps: sometimes — check the actual strike, not the brand.</p>
   <div class="box"><b>Yield:</b> liquidity is a gate. Chart quality does not override a dead chain.</div>
 </article>
 
 <article class="page">
   <p class="kicker">07 · After you are in</p>
+  <span class="ex-tag">Example · not a live ticket</span>
   <h2>Exit liquidity is worse than entry</h2>
-  <p>Everyone wants the same door when it is working or when it is dying. The bid you saw at entry is not a promise.</p>
-  <ul>
-    <li>Take the bid when you decided to leave. Mid-hope is how winners round-trip.</li>
-    <li>A limit to "get a better out" on a collapsing 0DTE is often a hold.</li>
-    <li>If size disappears, flatten at market. Pride is expensive.</li>
-  </ul>
+  <div class="walk"><b class="limit">1.48 ×12</b><span>→</span><b>1.22 ×1</b></div>
+  <div class="viz-caption">The bid you saw at entry is not a promise.</div>
+  <p>Take the bid when you decided to leave. A limit to "get a better out" on a collapsing 0DTE is often a hold. If size disappears, <span class="term">flatten</span> at market. Pride is expensive.</p>
 </article>
 
 <article class="page">
@@ -142,12 +200,25 @@
   <p class="fine">If any answer is "I don't know," you do not have a price. Issue 00 is the language. This issue is the tax. Not a setup list. Not advice.</p>
 </article>
 
+<article class="page">
+  <p class="kicker">Glossary · Issue 01</p>
+  <h2>Starred terms, in order</h2>
+  <dl class="glossary">
+    <dt>Size (on the book)</dt><dd>Contracts advertised at that bid or ask. ×1 is a postcard, not a market.</dd>
+    <dt>Mark-to-mid</dt><dd>Valuing the position at the midpoint. Feels better than what you can actually sell.</dd>
+    <dt>Liquidity</dt><dd>Ability to enter and exit at a known tax. Tight pennies with no size is fake liquidity.</dd>
+    <dt>Resting stop</dt><dd>A live order sitting at the broker that can fill without you watching.</dd>
+    <dt>Chain</dt><dd>The list of expiries and strikes that actually trade. No near expiry means no trade.</dd>
+    <dt>Flatten</dt><dd>Close the whole position. Flat means no option risk left.</dd>
+  </dl>
+</article>
+
 </div>
 <nav class="bar">
-  <button id="prev" type="button">Prev</button>
+  <button id="prev" type="button" aria-label="Previous page">&larr;</button>
   <div class="dots" id="dots"></div>
-  <span class="pg" id="pg">1 / 9</span>
-  <button id="next" type="button">Next</button>
+  <span class="pg" id="pg">1 / 10</span>
+  <button id="next" type="button" aria-label="Next page">&rarr;</button>
 </nav>
 </div>
 <script>

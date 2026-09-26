@@ -5,45 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tape Notes · Issue 00</title>
   <style>
-    :root {
-      --bg: #0c1014; --panel: #141a21; --line: #24303c;
-      --ink: #e8edf2; --muted: #8b9aab; --dim: #5e6d7c; --gold: #c9b37a;
-    }
+    :root { --bg:#0c1014; --panel:#141a21; --line:#24303c; --ink:#e8edf2; --muted:#8b9aab; --dim:#5e6d7c; --gold:#c9b37a; --good:#3a8f5c; --bad:#a4483f; }
     * { box-sizing: border-box; }
-    html, body { margin: 0; background: var(--bg); color: var(--ink);
-      font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Iowan Old Style", Palatino, Georgia, serif; }
     .wrap { max-width: 440px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
-    header.top { padding: 14px 18px 8px; display: flex; justify-content: space-between;
-      font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10px; letter-spacing: .16em;
-      text-transform: uppercase; color: var(--dim); }
+    header.top { padding: 14px 18px 8px; display: flex; justify-content: space-between; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); }
     .stage { flex: 1; padding: 8px 16px 12px; }
-    article.page { display: none; background: var(--panel); border: 1px solid var(--line);
-      border-radius: 14px; min-height: 620px; padding: 22px 20px 18px; }
+    article.page { display: none; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; min-height: 620px; padding: 22px 20px 18px; }
     article.page.on { display: block; }
-    .kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10px;
-      letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin: 0 0 8px; }
+    .kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin: 0 0 8px; }
     h1 { font-weight: 500; font-size: 24px; line-height: 1.15; margin: 0 0 12px; }
     h2 { font-weight: 500; font-size: 19px; line-height: 1.2; margin: 0 0 10px; }
     p { font-size: 15px; line-height: 1.45; color: #d5dde6; margin: 0 0 9px; }
     p.fine { font-size: 12px; color: var(--muted); line-height: 1.45; }
     ul { margin: 0 0 10px; padding: 0 0 0 16px; }
     li { margin: 0 0 6px; font-size: 14.5px; line-height: 1.4; color: #d5dde6; }
-    .box { border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; margin: 8px 0 10px;
-      font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; line-height: 1.4; }
+    .box { border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; margin: 8px 0 10px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; line-height: 1.4; }
     .box b { color: var(--gold); }
-    table { width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif;
-      font-size: 12.5px; margin: 8px 0 12px; }
+    table { width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12.5px; margin: 8px 0 12px; }
     th, td { text-align: left; padding: 5px 4px; border-bottom: 1px solid var(--line); color: #d5dde6; }
     th { color: var(--dim); font-weight: 600; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
-    nav.bar { display: flex; align-items: center; gap: 8px; padding: 6px 16px 20px;
-      font-family: ui-sans-serif, system-ui, sans-serif; }
-    button { background: #1c242e; color: var(--ink); border: 1px solid var(--line);
-      border-radius: 999px; padding: 8px 14px; cursor: pointer; font-size: 13px; }
-    button:disabled { opacity: .35; cursor: default; }
+    nav.bar { display: flex; align-items: center; gap: 8px; padding: 6px 16px 20px; font-family: ui-sans-serif, system-ui, sans-serif; }
+    button { background: #1c242e; color: var(--ink); border: 1px solid var(--line); border-radius: 50%; width: 34px; height: 34px; padding: 0; cursor: pointer; font-size: 17px; display: flex; align-items: center; justify-content: center; }
+    button:hover { border-color: var(--gold); color: var(--gold); }
+    button:disabled { opacity: .35; cursor: default; border-color: var(--line); color: var(--ink); }
     .dots { flex: 1; display: flex; justify-content: center; gap: 4px; flex-wrap: wrap; }
     .dots i { width: 6px; height: 6px; border-radius: 50%; background: #2a3542; display: inline-block; }
     .dots i.on { background: var(--gold); }
     .pg { color: var(--dim); font-size: 11px; min-width: 48px; text-align: right; }
+    .term { color: var(--gold); border-bottom: 1px dashed var(--gold); }
+    dl.glossary dt { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; color: var(--gold); margin: 12px 0 2px; }
+    dl.glossary dt:first-child { margin-top: 0; }
+    dl.glossary dd { margin: 0 0 2px; font-size: 13.5px; line-height: 1.42; color: #d5dde6; }
+    .ex-tag { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; margin-bottom: 8px; }
+    .viz-caption { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10.5px; color: var(--dim); text-align: center; margin: 6px 0 12px; }
+    /* Widget 1: two-clock strip */
+    .w1-row { display: flex; align-items: center; gap: 10px; margin: 5px 0; }
+    .w1-lab { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9px; letter-spacing: .06em; color: var(--dim); width: 62px; flex-shrink: 0; text-transform: uppercase; }
+    .w1-line { flex: 1; height: 26px; }
+    .w1-line svg { width: 100%; height: 100%; display: block; }
+    .w1-dots { flex: 1; display: flex; gap: 3px; }
+    .w1-dots i { flex: 1; height: 18px; border-radius: 3px; }
+    .w1-dots i.g { background: var(--good); }
+    .w1-dots i.r { background: var(--bad); }
+    /* Widget 2: quote tile */
+    .w2 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 6px 0 4px; }
+    .w2-cell { border: 1px solid var(--line); border-radius: 8px; padding: 8px 3px; text-align: center; }
+    .w2-cell.w2-last { opacity: .55; }
+    .w2-cell.w2-mid { border-style: dashed; }
+    .w2-cell.w2-bid { border-color: var(--good); }
+    .w2-cell.w2-ask { border-color: var(--gold); }
+    .w2-val { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+    .w2-tag { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8px; letter-spacing: .08em; color: var(--dim); margin-top: 2px; }
+    .w2-note { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 7.5px; color: var(--muted); margin-top: 1px; }
+    /* Widget 3: round-trip bar */
+    .w3-bar { position: relative; height: 30px; background: #1a222b; border: 1px solid var(--line); border-radius: 8px; margin: 24px 0 8px; }
+    .w3-fill { position: absolute; top: 3px; bottom: 3px; background: linear-gradient(90deg, rgba(164,72,63,.10), rgba(164,72,63,.35)); border-radius: 6px; }
+    .w3-tick { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--dim); }
+    .w3-tick .t-lab { position: absolute; top: -19px; transform: translateX(-50%); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9.5px; color: var(--gold); white-space: nowrap; }
+    .w3-tick .t-sub { position: absolute; bottom: -17px; transform: translateX(-50%); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9px; color: var(--dim); white-space: nowrap; }
+    .w3-hole { text-align: center; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; color: var(--bad); margin: 18px 0 4px; }
+    /* Widget 4: mini fuse */
+    .w4 { display: flex; gap: 3px; margin: 8px 0 4px; }
+    .w4 i { flex: 1; height: 18px; border-radius: 3px; }
+    .w4 i.g { background: var(--good); }
+    .w4 i.r { background: var(--bad); }
+    /* Widget 5: session ribbon */
+    .w5 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin: 6px 0 4px; }
+    .w5-block { border: 1px solid var(--line); border-radius: 8px; padding: 10px 5px; text-align: center; background: #1a222b; }
+    .w5-block b { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10.5px; color: var(--gold); margin-bottom: 4px; }
+    .w5-block span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 9px; color: var(--dim); }
+    /* Mock ticket card */
+    .mock-ticket { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12px; }
+    .mock-ticket .mt-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+    .mock-ticket .mt-row:last-child { margin-bottom: 0; }
+    .mock-ticket .mt-lab { color: var(--dim); }
+    .mock-ticket .mt-val { color: var(--ink); font-weight: 600; }
+    .mock-ticket .mt-val.bad { color: var(--bad); }
+    .mock-ticket .mt-val.good { color: var(--good); }
+    /* Tenor fill-level icons */
+    .w-tenor { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 6px 0 4px; }
+    .w-tenor-cell { text-align: center; }
+    .w-tenor-tube { position: relative; width: 20px; height: 44px; margin: 0 auto 6px; border: 1px solid var(--line); border-radius: 6px; background: #1a222b; overflow: hidden; }
+    .w-tenor-tube i { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(201,179,122,.55), rgba(201,179,122,.25)); }
+    .w-tenor-cell b { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10.5px; color: var(--gold); }
+    .w-tenor-cell span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8.5px; color: var(--dim); }
   </style>
 </head>
 <body>
@@ -53,169 +99,203 @@
 
       <article class="page on">
         <p class="kicker">Tape Notes · 00</p>
-        <h1>The premium dies first. The idea can still be right.</h1>
-        <p>This pamphlet is the free edge that does not belong to any desk: how short-dated options actually lose money. Twelve pages. No ticker. No setup to copy.</p>
-        <div class="box"><b>Use it for:</b> reading a public ticket, deciding whether a contract is even tradable, and not turning one green print into a larger account.</div>
-        <p class="fine">Education / entertainment. Not advice. Not signals. Not this desk's live rules. Same-day options can go to zero.</p>
+        <h1>The <span class="term">premium</span> dies first. The idea can still be right.</h1>
+        <p>Use this to read a public ticket, decide if a contract is even tradable, and not turn one green print into a larger account. Same-day options can go to zero.</p>
+        <div class="box"><b>Job:</b> the language, not a strategy. Education / entertainment only. Not advice. Not this desk's live rules.</div>
       </article>
 
       <article class="page">
         <p class="kicker">01 · Two clocks</p>
-        <h2>Stock clock vs option clock</h2>
+        <span class="ex-tag">Example · not a live ticket</span>
+        <h2>The stock's clock and the contract's clock</h2>
+        <div class="w1-row">
+          <span class="w1-lab">Underlying</span>
+          <div class="w1-line"><svg viewBox="0 0 100 26" preserveAspectRatio="none"><polyline points="0,18 15,17 30,16 45,15 60,14 75,13 90,11 100,10" fill="none" stroke="var(--dim)" stroke-width="1.5"/></svg></div>
+        </div>
+        <div class="w1-row">
+          <span class="w1-lab">Option</span>
+          <div class="w1-dots"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+        </div>
+        <div class="viz-caption">Stock +0.4% · contract −18%. Different clocks.</div>
         <p>The stock can grind your way for two hours and the contract can still be down. You rented a move <em>by a time</em>. If the move is late, small, or choppy, three things eat you before the thesis gets a vote:</p>
         <ul>
-          <li><b>Time</b> — every quiet minute is rent.</li>
-          <li><b>Spread</b> — you buy ask, sell bid. Mid is fiction.</li>
-          <li><b>Quote noise</b> — a 0.3% stock dip can print −20% on a same-day contract.</li>
+          <li><span class="term">Time</span> — every quiet minute is rent (<span class="term">theta</span>).</li>
+          <li><span class="term">Spread</span> — you buy the <span class="term">ask</span>, sell the <span class="term">bid</span>. <span class="term">Mid</span> is fiction.</li>
+          <li><span class="term">Quote noise</span> — a 0.3% dip in the <span class="term">underlying</span> can print −20% on a same-day contract.</li>
         </ul>
-        <div class="box"><b>Yield:</b> if the underlying has not done anything useful in the first several minutes, you are not "early." You are paying rent on a dead impulse.</div>
+        <div class="box"><b>Yield:</b> if the underlying has not done anything useful in the first several minutes, you are not "early." You are paying rent on a dead <span class="term">impulse</span>.</div>
       </article>
 
       <article class="page">
         <p class="kicker">02 · The fill is the first P&amp;L</p>
-        <h2>No spread, no trade</h2>
-        <table>
-          <tr><th>What you see</th><th>What it means</th></tr>
-          <tr><td>Bid 1.40 / ask 1.42</td><td>Tradable. Round-trip is pennies.</td></tr>
-          <tr><td>Bid 1.20 / ask 1.55</td><td>You start −20% if you lift and dump.</td></tr>
-          <tr><td>Last 1.50, bid 1.10</td><td>Last is a tombstone. You cannot exit there.</td></tr>
-        </table>
-        <ul>
-          <li>A limit sitting on a 40-second-old quote is a chase, not patience.</li>
-          <li>If you need a 30% contract win just to beat the spread, skip it.</li>
-          <li>Thin 0DTE singles whip more than SPY/QQQ. That is a filter.</li>
-        </ul>
+        <span class="ex-tag">Example · not a live ticket</span>
+        <h2>Bid, ask, last — before the chart matters</h2>
+        <div class="w2">
+          <div class="w2-cell w2-last"><div class="w2-val">1.50</div><div class="w2-tag">LAST</div></div>
+          <div class="w2-cell w2-mid"><div class="w2-val">1.41</div><div class="w2-tag">MID</div></div>
+          <div class="w2-cell w2-bid"><div class="w2-val">1.40</div><div class="w2-tag">BID</div><div class="w2-note">you can sell</div></div>
+          <div class="w2-cell w2-ask"><div class="w2-val">1.42</div><div class="w2-tag">ASK</div><div class="w2-note">you pay</div></div>
+        </div>
+        <div class="viz-caption">Tight: 2¢ wide. Tradable — round-trip tax is pennies.</div>
+        <div class="w2">
+          <div class="w2-cell w2-last"><div class="w2-val">—</div><div class="w2-tag">LAST</div></div>
+          <div class="w2-cell w2-mid"><div class="w2-val">1.38</div><div class="w2-tag">MID</div></div>
+          <div class="w2-cell w2-bid"><div class="w2-val">1.20</div><div class="w2-tag">BID</div></div>
+          <div class="w2-cell w2-ask"><div class="w2-val">1.55</div><div class="w2-tag">ASK</div></div>
+        </div>
+        <div class="viz-caption">Wide: lift the ask, dump the bid — start ~−20% before the stock moves.</div>
+        <div class="w2">
+          <div class="w2-cell w2-last"><div class="w2-val">1.50</div><div class="w2-tag">LAST</div></div>
+          <div class="w2-cell w2-mid"><div class="w2-val">1.30</div><div class="w2-tag">MID</div></div>
+          <div class="w2-cell w2-bid"><div class="w2-val">1.10</div><div class="w2-tag">BID</div></div>
+          <div class="w2-cell w2-ask"><div class="w2-val">1.50</div><div class="w2-tag">ASK</div></div>
+        </div>
+        <div class="viz-caption"><span class="term">Last</span> is a tombstone: 1.50 printed once. You cannot exit there.</div>
+        <p>A limit sitting on a 40-second-old quote is a chase, not patience. If you need a 30% contract win just to beat the spread, skip it. Thin 0DTE singles whip more than SPY/QQQ. That is a filter.</p>
         <div class="box"><b>Yield:</b> name the bid and the ask out loud before you care about the chart.</div>
       </article>
 
       <article class="page">
         <p class="kicker">03 · Tenor</p>
-        <h2>0 / 1 / 2 days is three products</h2>
-        <table>
-          <tr><th>Tenor</th><th>What you actually bought</th></tr>
-          <tr><td>0DTE</td><td>Minutes. Afternoon &ne; open. After 2pm ET this is a melting ice cube.</td></tr>
-          <tr><td>1DTE</td><td>Still fast. Overnight is a second bet you may not have meant.</td></tr>
-          <tr><td>2DTE</td><td>More room. Still not a swing. Weekend is another product.</td></tr>
-        </table>
-        <p>Holding to expiration is rarely the plan. If the idea needs "tomorrow" you bought the wrong contract — or you should be flat.</p>
+        <h2>What you actually bought</h2>
+        <div class="w-tenor">
+          <div class="w-tenor-cell"><div class="w-tenor-tube"><i style="height:14%;"></i></div><b><span class="term">0DTE</span></b><span>melts by the close</span></div>
+          <div class="w-tenor-cell"><div class="w-tenor-tube"><i style="height:48%;"></i></div><b>1DTE</b><span>+ one overnight</span></div>
+          <div class="w-tenor-cell"><div class="w-tenor-tube"><i style="height:85%;"></i></div><b>2DTE</b><span>+ a weekend, maybe</span></div>
+        </div>
+        <p>Minutes, not a swing. Afternoon on 0DTE is not the open. Holding to expiration is rarely the plan. If the idea needs "tomorrow," you bought the wrong contract — or you should be flat.</p>
         <div class="box"><b>Yield:</b> match hold time to tenor. A 3-hour thesis does not belong in a same-day option.</div>
       </article>
 
       <article class="page">
         <p class="kicker">04 · Side is not mood</p>
-        <h2>"Market is red" is not a put</h2>
-        <p>A call pays only if that strike's premium rises after decay and spread. A put is the mirror. Color of the session is a backdrop, not a trigger.</p>
-        <ul>
-          <li>Down 1% since the open can already be finished.</li>
-          <li>A second push that looks like the first is often the one that fails.</li>
-          <li>Index-tied names moving tick-for-tick with SPY are not "their own" trade.</li>
-        </ul>
-        <div class="box"><b>Yield:</b> trade a move that is happening or clearly failing. Do not invent a side from the day's P&amp;L.</div>
+        <h2>Trade the move, not the day's color</h2>
+        <p>A <span class="term">call</span> pays only if that contract's premium rises after decay and spread. A <span class="term">put</span> is the mirror. Color of the session is a backdrop, not a trigger.</p>
+        <p>Down 1% since the open can already be finished. A second push that looks like the first is often the one that fails. Index-tied names moving tick-for-tick with the market are not "their own" trade.</p>
+        <div class="box"><b>Yield:</b> trade a move that is happening or clearly failing — premium of <em>this</em> contract, not "market color."</div>
       </article>
 
       <article class="page">
         <p class="kicker">05 · Read a ticket in 20 seconds</p>
-        <h2>Four fields, then the dots</h2>
-        <ul>
-          <li><b>Side</b> — what the contract needed.</li>
-          <li><b>Minutes</b> — how long the idea was allowed to work.</li>
-          <li><b>In &rarr; out</b> — whether the fill was already a tax.</li>
-          <li><b>Contract %</b> — never account %, never stock %.</li>
-        </ul>
-        <p>Dots: green = option marked up that minute, red = down. A long red string right after entry usually means the impulse was over when the order landed.</p>
+        <span class="ex-tag">Example · not a live ticket</span>
+        <h2>Four fields, in order</h2>
+        <div class="mock-ticket">
+          <div class="mt-row"><span class="mt-lab">Side</span><span class="mt-val">Put</span></div>
+          <div class="mt-row"><span class="mt-lab">Minutes</span><span class="mt-val">24 min</span></div>
+          <div class="mt-row"><span class="mt-lab">In → out</span><span class="mt-val">$1.42 → $1.70</span></div>
+          <div class="mt-row"><span class="mt-lab">Contract %</span><span class="mt-val good">+19.7%</span></div>
+        </div>
+        <div class="w4"><i class="g"></i><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i></div>
+        <div class="viz-caption">Dots: green = marked up that minute, red = down.</div>
+        <p>A long red string right after entry usually means the impulse was over when the order landed.</p>
         <div class="box"><b>Yield:</b> 100% win rate on 1 ticket is "1 of 1." The week table is the adult number.</div>
       </article>
 
       <article class="page">
         <p class="kicker">06 · The free edge</p>
         <h2>Most names should never print</h2>
-        <p>Selectivity is not this desk's secret. It is available to anyone.</p>
+        <div class="mock-ticket" style="text-align:center;">
+          <div class="mt-row" style="justify-content:center; gap:16px;">
+            <span class="mt-val" style="font-size:15px;">12 looks</span><span class="mt-lab">·</span><span class="mt-val good" style="font-size:15px;">1 fill</span>
+          </div>
+        </div>
+        <div class="viz-caption">A good morning, not a slow one.</div>
         <ul>
           <li>Already extended — pass.</li>
           <li>Chop, no follow-through — pass.</li>
           <li>Cannot name a tight market — pass.</li>
-          <li>Already in a name — pass. One position.</li>
+          <li>Already in a name — pass.</li>
           <li>Need activity to feel like a trader — that is the leak.</li>
         </ul>
-        <div class="box"><b>Yield:</b> twelve looks and one fill is a good morning. Zero fills can be a perfect day. Activity is not skill.</div>
+        <div class="box"><b>Yield:</b> zero fills can be a perfect day. Activity is not skill.</div>
       </article>
 
       <article class="page">
         <p class="kicker">07 · Size</p>
-        <h2>A winner is not permission</h2>
-        <p>Same-day premium can lose half its value on a quote flick the stock barely felt. That is why size stays stupid-small until a large sample says otherwise — and a large sample is tens of tickets, not one green Wednesday.</p>
-        <ul>
-          <li>Cap <b>dollars</b>, not "I like this ticker."</li>
-          <li>One contract on a $2.00 option is $200 at risk before the stop, not "one lot."</li>
-          <li>If the plan changes because the last chip was green, there was no plan.</li>
-        </ul>
-        <div class="box"><b>Yield:</b> do not add size to celebrate. Add size only after weeks of process + a real sample. Most people never get there. That is fine.</div>
+        <h2>Cap dollars, not tickers</h2>
+        <div class="mock-ticket" style="text-align:center; font-size:15px;">
+          <b>$2.00</b> <span class="mt-lab">×</span> <b>1</b> <span class="mt-lab">=</span> <b style="color:var(--gold);">$200 at risk</b>
+        </div>
+        <div class="viz-caption">Not "one lot" — $200, before any stop.</div>
+        <p>Same-day premium can lose half its value on a quote flick the stock barely felt. Cap <b>dollars</b>, not "I like this ticker." If the plan changes because the last chip was green, there was no plan.</p>
+        <div class="box"><b>Yield:</b> do not add size to celebrate. Add size only after weeks of process and a real sample. Most people never get there. That is fine.</div>
       </article>
 
       <article class="page">
         <p class="kicker">08 · Three exits</p>
-        <h2>Hope is not a fourth</h2>
+        <h2>Decide the categories before the fill</h2>
         <ul>
           <li><b>Working</b> — lock some. Do not donate a winner back to noise.</li>
           <li><b>Not working</b> — several minutes with no new favorable extreme is information. Cut it.</li>
           <li><b>Broken</b> — if the underlying invalidates the idea, leave. Do not wait for the option quote to invent a reason.</li>
         </ul>
-        <p>Leaving extra on the table after a lock is normal. Riding a same-day winner "because it could go further" is how +20% becomes −30%.</p>
-        <div class="box"><b>Yield:</b> decide the exit categories before the fill. Inventing them mid-trade is revenge with extra steps.</div>
+        <div class="box"><b>Yield:</b> inventing exit categories mid-trade is revenge with extra steps.</div>
       </article>
 
       <article class="page">
         <p class="kicker">09 · Time of day</p>
-        <h2>The session is not one market</h2>
-        <table>
-          <tr><th>Window</th><th>What usually happens</th></tr>
-          <tr><td>Open ~30 min</td><td>Range + first impulse. Spreads widest. Easy to buy the climax.</td></tr>
-          <tr><td>Midday</td><td>Chop. Premium rots. Most "I should do something" fills live here.</td></tr>
-          <tr><td>Last 90 min</td><td>0DTE decay accelerates. New risk needs a better reason than boredom.</td></tr>
-        </table>
+        <h2>Same ticker, three products</h2>
+        <div class="w5">
+          <div class="w5-block"><b>Open</b><span>wide spreads</span></div>
+          <div class="w5-block"><b>Midday</b><span>chop · rent</span></div>
+          <div class="w5-block"><b>Last 90m</b><span>0DTE melts</span></div>
+        </div>
+        <p>Open ~30 min: range + first impulse, spreads widest, easy to buy the <span class="term">climax</span>. Midday: chop, premium rots, most "I should do something" fills live here. Last 90: 0DTE decay accelerates, new risk needs a better reason than boredom.</p>
         <p>A name still red on the day at 1pm is not, by itself, a put. The move may have finished at 10:15.</p>
       </article>
 
       <article class="page">
         <p class="kicker">10 · How losers actually look</p>
-        <h2>Clean vs sloppy</h2>
-        <p><b>Clean:</b> tight contract, idea never worked, cut on time or structure, small dollars. That is tuition.</p>
-        <p><b>Sloppy:</b> chased a late quote, wide spread, no stop, added size, held because "it should come back." That is how accounts end.</p>
-        <ul>
-          <li>Never green after entry &rarr; usually late, not "unlucky side."</li>
-          <li>Green then round-trip with no lock &rarr; exit plan was missing.</li>
-          <li>Stock recovered, option did not &rarr; you learned the two clocks.</li>
-        </ul>
+        <span class="ex-tag">Example · not a live ticket</span>
+        <h2>Grade the process first</h2>
+        <div class="viz-caption">Clean cut — never green, cut on time</div>
+        <div class="w4"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+        <div class="viz-caption" style="margin-top:14px;">Sloppy round-trip — worked, then given back, no lock</div>
+        <div class="w4"><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+        <p style="margin-top:10px;"><b>Clean:</b> tight contract, idea never worked, cut on time or structure, small dollars. Tuition.<br>
+        <b>Sloppy:</b> chased a late quote, wide spread, no stop, added size, held because "it should come back."</p>
         <div class="box"><b>Yield:</b> grade the ticket on process first. P&amp;L is the loudest and worst teacher on n=1.</div>
       </article>
 
       <article class="page">
-        <p class="kicker">11 · Watch this site</p>
-        <h2>A log is not a booth</h2>
-        <p>The tape is often delayed on purpose. You are not supposed to front-run a robot. You are supposed to see what a small book actually did.</p>
-        <ul>
-          <li>Judge: few tickets, tight contracts, fast cuts, small size.</li>
-          <li>Do not copy a fill. Do not scale off a 100% chip.</li>
-          <li>Tips buy nothing — no rules, no next trade, no chat.</li>
-        </ul>
-        <p>Deeper issues exist only if someone asks: more on fills, more on losers, more on samples. Until then this is the whole free book.</p>
-        <p class="fine">© The Options Desk · Tape Notes 00. Historical results on the live tape are not indicative of future performance.</p>
+        <p class="kicker">11 · A log is not a booth</p>
+        <h2>Watch, don't copy</h2>
+        <p>The tape is often delayed on purpose. Judge few tickets, tight contracts, fast cuts, small size. Do not copy a fill. Do not scale off a 100% chip.</p>
+        <p class="fine">This issue is the language. Later issues are fills, tenor timing, and reading a loser. Not advice.</p>
+      </article>
+
+      <article class="page">
+        <p class="kicker">Glossary · Issue 00</p>
+        <h2>Starred terms, in order</h2>
+        <dl class="glossary">
+          <dt>Premium</dt><dd>The price of the option contract. This is what you actually win or lose.</dd>
+          <dt>Theta</dt><dd>Daily (and intra-day) decay of that premium. Quiet minutes still charge rent.</dd>
+          <dt>Spread</dt><dd>Ask minus bid. You buy the high side, sell the low side.</dd>
+          <dt>Bid / ask</dt><dd>What you can sell at now / what you pay to buy now.</dd>
+          <dt>Mid</dt><dd>Halfway between bid and ask. A story, not a fill.</dd>
+          <dt>Last</dt><dd>Last reported trade. Can be stale. Not an exit.</dd>
+          <dt>Underlying</dt><dd>The stock or ETF the option is written on.</dd>
+          <dt>Quote noise</dt><dd>The option's bid/ask jumping without a real move in the underlying.</dd>
+          <dt>Impulse</dt><dd>A short, directional burst. If it is over, you are renting chop.</dd>
+          <dt>Round-trip</dt><dd>Buy then sell (or sell then buy). Both sides pay the spread.</dd>
+          <dt>0DTE / 1DTE / 2DTE (tenor)</dt><dd>Expires today / tomorrow / in two sessions.</dd>
+          <dt>Call / put</dt><dd>Contract that needs the underlying up / down enough, soon enough for this strike's premium to rise.</dd>
+          <dt>Climax</dt><dd>The last burst of a move, often the high or low of the push. Buying it as "the start" is the usual tax.</dd>
+        </dl>
       </article>
 
     </div>
     <nav class="bar">
-      <button id="prev" type="button">Prev</button>
+      <button id="prev" type="button" aria-label="Previous page">&larr;</button>
       <div class="dots" id="dots"></div>
-      <span class="pg" id="pg">1 / 12</span>
-      <button id="next" type="button">Next</button>
+      <span class="pg" id="pg">1 / 13</span>
+      <button id="next" type="button" aria-label="Next page">&rarr;</button>
     </nav>
   </div>
   <script>
     const pages = [...document.querySelectorAll("article.page")];
-    const dots = document.getElementById("dots");
-    const pg = document.getElementById("pg");
-    const prev = document.getElementById("prev");
-    const next = document.getElementById("next");
+    const dots = document.getElementById("dots"), pg = document.getElementById("pg"),
+      prev = document.getElementById("prev"), next = document.getElementById("next");
     let i = 0;
     pages.forEach(() => dots.appendChild(document.createElement("i")));
     function show(n) {
@@ -223,8 +303,7 @@
       pages.forEach((p, k) => p.classList.toggle("on", k === i));
       [...dots.children].forEach((d, k) => d.classList.toggle("on", k === i));
       pg.textContent = (i + 1) + " / " + pages.length;
-      prev.disabled = i === 0;
-      next.disabled = i === pages.length - 1;
+      prev.disabled = i === 0; next.disabled = i === pages.length - 1;
     }
     prev.onclick = () => show(i - 1);
     next.onclick = () => show(i + 1);

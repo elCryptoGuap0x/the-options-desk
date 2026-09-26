@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tape Notes · Issue 03</title>
+  <style>
+    :root { --bg:#0c1014;--panel:#141a21;--line:#24303c;--ink:#e8edf2;--muted:#8b9aab;--dim:#5e6d7c;--gold:#c9b37a;--good:#3a8f5c;--bad:#a4483f; }
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Iowan Old Style",Palatino,Georgia,serif}
+    .wrap{max-width:440px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
+    header.top{padding:14px 18px 8px;display:flex;justify-content:space-between;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+    .stage{flex:1;padding:8px 16px 12px}
+    article.page{display:none;background:var(--panel);border:1px solid var(--line);border-radius:14px;min-height:620px;padding:22px 20px 18px}
+    article.page.on{display:block}
+    .kicker{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+    h1{font-weight:500;font-size:24px;line-height:1.15;margin:0 0 12px}
+    h2{font-weight:500;font-size:19px;line-height:1.2;margin:0 0 10px}
+    p{font-size:15px;line-height:1.45;color:#d5dde6;margin:0 0 9px}
+    p.fine{font-size:12px;color:var(--muted);line-height:1.45}
+    ul{margin:0 0 10px;padding:0 0 0 16px}
+    li{margin:0 0 6px;font-size:14.5px;line-height:1.4;color:#d5dde6}
+    .box{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin:8px 0 10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;line-height:1.4}
+    .box b{color:var(--gold)}
+    table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;margin:8px 0 12px}
+    th,td{text-align:left;padding:5px 4px;border-bottom:1px solid var(--line);color:#d5dde6}
+    th{color:var(--dim);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    nav.bar{display:flex;align-items:center;gap:8px;padding:6px 16px 20px;font-family:ui-sans-serif,system-ui,sans-serif}
+    button{background:#1c242e;color:var(--ink);border:1px solid var(--line);border-radius:50%;width:34px;height:34px;padding:0;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center}
+    button:hover{border-color:var(--gold);color:var(--gold)}
+    button:disabled{opacity:.35;cursor:default;border-color:var(--line);color:var(--ink)}
+    .dots{flex:1;display:flex;justify-content:center;gap:4px;flex-wrap:wrap}
+    .dots i{width:6px;height:6px;border-radius:50%;background:#2a3542;display:inline-block}
+    .dots i.on{background:var(--gold)}
+    .pg{color:var(--dim);font-size:11px;min-width:48px;text-align:right}
+    .term{color:var(--gold);border-bottom:1px dashed var(--gold)}
+    dl.glossary dt{font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;color:var(--gold);margin:12px 0 2px}
+    dl.glossary dt:first-child{margin-top:0}
+    dl.glossary dd{margin:0 0 2px;font-size:13.5px;line-height:1.42;color:#d5dde6}
+    .viz-caption{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--dim);text-align:center;margin:6px 0 12px}
+    .w5{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:6px 0 10px}
+    .w5-block{border:1px solid var(--line);border-radius:8px;padding:10px 5px;text-align:center;background:#1a222b}
+    .w5-block b{display:block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--gold);margin-bottom:4px}
+    .w5-block span{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;color:var(--dim)}
+    .win{border:1px solid var(--line);border-radius:10px;padding:10px 10px 6px;margin:10px 0}
+    .win-lab{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+    .win svg{width:100%;height:48px;display:block}
+    .win-cap{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;color:var(--dim);text-align:center;margin-top:4px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><span>The Options Desk</span><span>Issue 03 · Free</span></header>
+<div class="stage">
+
+<article class="page on">
+  <p class="kicker">Tape Notes · 03</p>
+  <h1>The session is three markets wearing one ticker</h1>
+  <p>Open, midday, and last hour do not pay the same rent. Treating 10:00 and 2:30 as the same 0DTE product is how quiet afternoons get expensive.</p>
+  <div class="box"><b>Job:</b> know which clock you are on before you call something a setup. Not a timetable to copy. Education only.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">The session, at a glance</p>
+  <h2>Three products, one ticker</h2>
+  <div class="w5">
+    <div class="w5-block"><b>Open</b><span>range, then a spike</span></div>
+    <div class="w5-block"><b>Midday</b><span>flat, rent</span></div>
+    <div class="w5-block"><b>Last 90m</b><span>steep decay</span></div>
+  </div>
+  <div class="viz-caption">Same day. Not the same clock.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">01 · The open</p>
+  <span class="ex-tag" style="display:inline-block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:8px;">Example · not a live ticker</span>
+  <h2>Range, impulse, widest quotes</h2>
+  <div class="win">
+    <div class="win-lab">Underlying, first 30 min</div>
+    <svg viewBox="0 0 100 40" preserveAspectRatio="none"><polyline points="0,26 15,24 30,25 45,23 55,24 65,10 80,6 100,4" fill="none" stroke="var(--gold)" stroke-width="1.5"/></svg>
+    <div class="win-cap">Range, then a spike — easy to buy the climax</div>
+  </div>
+  <p>First half hour: ranges print, first drives happen, spreads are often worst. A gap-and-go with no pause is usually extended before you finish the sentence.</p>
+  <div class="box"><b>Yield:</b> the open is for recognition, not for proving you are awake.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">02 · Midday</p>
+  <h2>Where "I should do something" lives</h2>
+  <div class="win">
+    <div class="win-lab">Underlying + premium, midday</div>
+    <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+      <polyline points="0,18 25,19 50,18 75,20 100,19" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
+      <polyline points="0,30 25,32 50,34 75,35 100,37" fill="none" stroke="var(--bad)" stroke-width="1.5"/>
+    </svg>
+    <div class="win-cap">Underlying flat · premium decaying underneath it</div>
+  </div>
+  <p>Volume thins. Premium rots. The stock is still red or green on the day, so the brain invents a trade that should have been taken at 10:12.</p>
+  <ul>
+    <li>Still down 1% at noon is not a fresh put.</li>
+    <li>A 15-minute coil in a dead tape is often just lunch.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> midday default is pass. Activity here is usually a leak, not a missed calling.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">03 · Last 90 minutes</p>
+  <h2>0DTE is a different animal after lunch</h2>
+  <div class="win">
+    <div class="win-lab">Underlying flat · premium, last 90m</div>
+    <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+      <polyline points="0,18 30,19 60,18 100,19" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
+      <polyline points="0,22 30,26 60,32 100,38" fill="none" stroke="var(--bad)" stroke-width="1.5"/>
+    </svg>
+    <div class="win-cap">Flat stock, steep premium drop — the clock, not the tape</div>
+  </div>
+  <p>Same-day contracts decay faster into the close. A new idea now needs more follow-through, not less, because there is less clock left for it to be "a little late."</p>
+  <ul>
+    <li>A 40-minute thesis does not fit in a 50-minute life.</li>
+    <li>Holding 0DTE into the bell is a second decision. Make it on purpose or flatten.</li>
+  </ul>
+</article>
+
+<article class="page">
+  <p class="kicker">04 · Color of the day</p>
+  <h2>The open is not the session</h2>
+  <table>
+    <tr><th>What you see</th><th>What it is not</th></tr>
+    <tr><td>Index red since 9:31</td><td>A standing put for six hours</td></tr>
+    <tr><td>Name green +2%</td><td>A standing call after the move is three hours old</td></tr>
+    <tr><td>VIX up</td><td>Permission to size up</td></tr>
+  </table>
+  <p>Day color is context. It does not reset the "is this impulse fresh" question every hour.</p>
+</article>
+
+<article class="page">
+  <p class="kicker">05 · News windows</p>
+  <h2>The print is not the trade</h2>
+  <p>Scheduled numbers create a burst. The burst is often done in the first minutes. Trading "because there is news" after the spike is late by definition.</p>
+  <ul>
+    <li>If you did not have a plan before the number, you do not get one after.</li>
+    <li>Headlines arrive late on any public page. Do not use a delayed site as a news desk.</li>
+  </ul>
+  <div class="box"><b>Yield:</b> news explains why a range broke. It does not make a three-hour-old break fresh.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">06 · Overnight and 1DTE</p>
+  <h2>Holding past the session is a new bet</h2>
+  <p>A 1DTE that is quiet at 3:50 ET is not "more room." It is inventory into a gap you do not control. Weekend is another product on top of overnight.</p>
+  <div class="box"><b>Yield:</b> if the plan was an intraday burst, flatten. Do not discover you are a swing trader at 3:58.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">07 · Flatten as a habit</p>
+  <h2>Not fear. Inventory control.</h2>
+  <p>Books that trade same-day paper pick a time when new risk stops and open risk gets worked off. The idea is not optional: you do not want a melting 0DTE babysat by hope.</p>
+  <div class="box"><b>Yield:</b> "still looks good" at the end of the window is how leftovers become overnight accidents.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">08 · Spectator clock</p>
+  <h2>How to watch a quiet tape</h2>
+  <ul>
+    <li>Open: expect looks. Do not expect a ticket.</li>
+    <li>Midday: a long scanning stretch is the job working.</li>
+    <li>Late day: fewer new tickets is health, not a broken bot.</li>
+  </ul>
+  <p class="fine">If a public desk is flat for hours, that can be correct. Issue 00 is the language. This issue is the clock. Not advice. Not a schedule to copy.</p>
+</article>
+
+<article class="page">
+  <p class="kicker">Glossary · Issue 03</p>
+  <h2>Starred terms, in order</h2>
+  <dl class="glossary">
+    <dt>No new starred terms this issue</dt><dd>All words used here were defined in Issue 00 or 01.</dd>
+  </dl>
+</article>
+
+</div>
+<nav class="bar">
+  <button id="prev" type="button" aria-label="Previous page">&larr;</button>
+  <div class="dots" id="dots"></div>
+  <span class="pg" id="pg">1 / 11</span>
+  <button id="next" type="button" aria-label="Next page">&rarr;</button>
+</nav>
+</div>
+<script>
+const pages=[...document.querySelectorAll("article.page")];
+const dots=document.getElementById("dots"),pg=document.getElementById("pg"),prev=document.getElementById("prev"),next=document.getElementById("next");
+let i=0; pages.forEach(()=>dots.appendChild(document.createElement("i")));
+function show(n){i=Math.max(0,Math.min(pages.length-1,n));pages.forEach((p,k)=>p.classList.toggle("on",k===i));[...dots.children].forEach((d,k)=>d.classList.toggle("on",k===i));pg.textContent=(i+1)+" / "+pages.length;prev.disabled=i===0;next.disabled=i===pages.length-1;}
+prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key===" "){e.preventDefault();show(i+1)}if(e.key==="ArrowLeft")show(i-1)});
+let x0=null;const st=document.querySelector(".stage");
+st.addEventListener("touchstart",e=>{x0=e.changedTouches[0].screenX},{passive:true});
+st.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].screenX-x0;if(dx<-40)show(i+1);if(dx>40)show(i-1);x0=null});
+show(0);
+</script>
+</body>
+</html>

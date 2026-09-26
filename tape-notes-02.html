@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tape Notes · Issue 02</title>
+  <style>
+    :root { --bg:#0c1014;--panel:#141a21;--line:#24303c;--ink:#e8edf2;--muted:#8b9aab;--dim:#5e6d7c;--gold:#c9b37a;--good:#3a8f5c;--bad:#a4483f; }
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Iowan Old Style",Palatino,Georgia,serif}
+    .wrap{max-width:440px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
+    header.top{padding:14px 18px 8px;display:flex;justify-content:space-between;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+    .stage{flex:1;padding:8px 16px 12px}
+    article.page{display:none;background:var(--panel);border:1px solid var(--line);border-radius:14px;min-height:620px;padding:22px 20px 18px}
+    article.page.on{display:block}
+    .kicker{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+    h1{font-weight:500;font-size:24px;line-height:1.15;margin:0 0 12px}
+    h2{font-weight:500;font-size:19px;line-height:1.2;margin:0 0 10px}
+    p{font-size:15px;line-height:1.45;color:#d5dde6;margin:0 0 9px}
+    p.fine{font-size:12px;color:var(--muted);line-height:1.45}
+    ul{margin:0 0 10px;padding:0 0 0 16px}
+    li{margin:0 0 6px;font-size:14.5px;line-height:1.4;color:#d5dde6}
+    .box{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin:8px 0 10px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;line-height:1.4}
+    .box b{color:var(--gold)}
+    table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;margin:8px 0 12px}
+    th,td{text-align:left;padding:5px 4px;border-bottom:1px solid var(--line);color:#d5dde6}
+    th{color:var(--dim);font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    nav.bar{display:flex;align-items:center;gap:8px;padding:6px 16px 20px;font-family:ui-sans-serif,system-ui,sans-serif}
+    button{background:#1c242e;color:var(--ink);border:1px solid var(--line);border-radius:50%;width:34px;height:34px;padding:0;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center}
+    button:hover{border-color:var(--gold);color:var(--gold)}
+    button:disabled{opacity:.35;cursor:default;border-color:var(--line);color:var(--ink)}
+    .dots{flex:1;display:flex;justify-content:center;gap:4px;flex-wrap:wrap}
+    .dots i{width:6px;height:6px;border-radius:50%;background:#2a3542;display:inline-block}
+    .dots i.on{background:var(--gold)}
+    .pg{color:var(--dim);font-size:11px;min-width:48px;text-align:right}
+    .term{color:var(--gold);border-bottom:1px dashed var(--gold)}
+    dl.glossary dt{font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;color:var(--gold);margin:12px 0 2px}
+    dl.glossary dt:first-child{margin-top:0}
+    dl.glossary dd{margin:0 0 2px;font-size:13.5px;line-height:1.42;color:#d5dde6}
+    .ex-tag{display:inline-block;font-family:ui-sans-serif,system-ui,sans-serif;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:8px}
+    .viz-caption{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;color:var(--dim);text-align:center;margin:6px 0 12px}
+    .w1-row{display:flex;align-items:center;gap:10px;margin:5px 0}
+    .w1-lab{font-family:ui-sans-serif,system-ui,sans-serif;font-size:9px;letter-spacing:.06em;color:var(--dim);width:62px;flex-shrink:0;text-transform:uppercase}
+    .w1-line{flex:1;height:26px}
+    .w1-line svg{width:100%;height:100%;display:block}
+    .w1-dots{flex:1;display:flex;gap:3px}
+    .w1-dots i{flex:1;height:18px;border-radius:3px}
+    .w1-dots i.g{background:var(--good)}
+    .w1-dots i.r{background:var(--bad)}
+    .w4{display:flex;gap:3px;margin:8px 0 4px}
+    .w4 i{flex:1;height:18px;border-radius:3px}
+    .w4 i.g{background:var(--good)}
+    .w4 i.r{background:var(--bad)}
+    .grid4{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 4px}
+    .mini-ticket{border:1px solid var(--line);border-radius:8px;padding:8px 9px;font-family:ui-sans-serif,system-ui,sans-serif;font-size:10.5px;}
+    .mini-tag{display:inline-block;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-bottom:5px}
+    .mini-ticket .mrow{display:flex;justify-content:space-between;color:var(--dim);margin-bottom:2px}
+    .mini-ticket .mrow b{color:var(--ink);font-weight:600}
+    .mini-ticket .mcap{color:var(--muted);font-size:9.5px;margin-top:4px;line-height:1.3}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><span>The Options Desk</span><span>Issue 02 · Free</span></header>
+<div class="stage">
+
+<article class="page on">
+  <p class="kicker">Tape Notes · 02</p>
+  <h1>Reading a loser</h1>
+  <p>A red ticket is data. It is not a personality test. Not advice.</p>
+  <div class="box"><b>Job:</b> separate tuition from malpractice. Education only. Not a post-mortem of any live name.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">01 · Name the clock that killed it</p>
+  <span class="ex-tag">Example · not live tickets</span>
+  <h2>Four fake tickets, four different deaths</h2>
+  <div class="grid4">
+    <div class="mini-ticket"><span class="mini-tag">LATE</span>
+      <div class="mrow"><span>Side</span><b>Call</b></div>
+      <div class="mrow"><span>Fill</span><b>+9m after burst</b></div>
+      <div class="mcap">Impulse was over when the order landed.</div>
+    </div>
+    <div class="mini-ticket"><span class="mini-tag">THIN</span>
+      <div class="mrow"><span>Side</span><b>Put</b></div>
+      <div class="mrow"><span>Book</span><b>1.50×1 / 1.52×1</b></div>
+      <div class="mcap">Quote flicked, stock barely moved.</div>
+    </div>
+    <div class="mini-ticket"><span class="mini-tag">THESIS</span>
+      <div class="mrow"><span>Side</span><b>Call</b></div>
+      <div class="mrow"><span>Underlying</span><b>never broke level</b></div>
+      <div class="mcap">The stock never did the thing.</div>
+    </div>
+    <div class="mini-ticket"><span class="mini-tag">CLOCK</span>
+      <div class="mrow"><span>Side</span><b>Put</b></div>
+      <div class="mrow"><span>Underlying</span><b>right, late</b></div>
+      <div class="mcap">Stock finished the move after the contract died.</div>
+    </div>
+  </div>
+  <table>
+    <tr><th>What happened</th><th>Usual name</th><th>What it is</th></tr>
+    <tr><td>Underlying never did the thing</td><td>Thesis miss</td><td>Side or timing of the <em>stock</em></td></tr>
+    <tr><td>Underlying did it; premium did not</td><td>Two-clock miss</td><td>Decay, spread, or a move too small for this strike</td></tr>
+    <tr><td>Premium never printed green after entry</td><td>Late</td><td>Impulse was over at the fill</td></tr>
+  </table>
+  <div class="box"><b>Yield:</b> if you cannot put the ticket in one tag, you cannot learn from it. "Red" is not a diagnosis.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">02 · First minute is the tell</p>
+  <span class="ex-tag">Example · not a live ticket</span>
+  <h2>The fuse that never goes green</h2>
+  <div class="w4"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+  <div class="viz-caption">Never green after entry, on a liquid contract, is usually late — not unlucky side.</div>
+  <p>The stock can still be "in play." You bought the tail. A quick spike through +15% then a straight line to the stop is often <b>quote + no lock</b>, not "the idea was garbage."</p>
+  <p>Stock finishes green, option finishes red: you learned issue 00. Do not "prove it" by holding to expiration.</p>
+</article>
+
+<article class="page">
+  <p class="kicker">03 · Clean vs sloppy</p>
+  <h2>Grade the process</h2>
+  <p><b>Clean loser:</b> tight market, fill near the quote you approved, stop or time cut as planned, dollars inside the cap. Tuition. Keep the rulebook.</p>
+  <p><b>Sloppy loser:</b> wide open, chase, no stop, extra size, "it should come back," held into the last hour because the day was already red.</p>
+  <div class="box"><b>Yield:</b> process-clean and $-red can coexist. Process-sloppy and $-green is the dangerous one.</div>
+</article>
+
+<article class="page">
+  <p class="kicker">04 · Do not average the autopsy</p>
+  <h2>One hero winner is not the system</h2>
+  <p>One hero winner plus four sloppy losers is not "the system works if you ignore the noise." The hero is the noise if n is small.</p>
+  <p>Write one line per ticket: <em>late / thin / thesis / clock / exit</em>. If the same word shows up four times in a week, that word is the work — not a new indicator.</p>
+</article>
+
+<article class="page">
+  <p class="kicker">05 · What a loser is not</p>
+  <h2>Guardrails</h2>
+  <ul>
+    <li>Not proof the opposite side would have paid (hindsight).</li>
+    <li>Not proof you should loosen the next entry.</li>
+    <li>Not proof you should skip the next valid tape.</li>
+    <li>One red 0DTE is a sample of one.</li>
+  </ul>
+  <p class="fine">Issue 00 is the language. This issue is the <span class="term">autopsy</span>. Not advice.</p>
+</article>
+
+<article class="page">
+  <p class="kicker">Glossary · Issue 02</p>
+  <h2>Starred terms, in order</h2>
+  <dl class="glossary">
+    <dt>Thesis</dt><dd>The specific claim ("this push continues / this push is spent"). Not "I think the stock is good."</dd>
+    <dt>Late</dt><dd>Confirmation and fill happened after the burst that would have paid.</dd>
+    <dt>Autopsy</dt><dd>Review after the close, with fills and minutes, not mid-session rule rewriting.</dd>
+  </dl>
+</article>
+
+</div>
+<nav class="bar">
+  <button id="prev" type="button" aria-label="Previous page">&larr;</button>
+  <div class="dots" id="dots"></div>
+  <span class="pg" id="pg">1 / 7</span>
+  <button id="next" type="button" aria-label="Next page">&rarr;</button>
+</nav>
+</div>
+<script>
+const pages=[...document.querySelectorAll("article.page")];
+const dots=document.getElementById("dots"),pg=document.getElementById("pg"),prev=document.getElementById("prev"),next=document.getElementById("next");
+let i=0; pages.forEach(()=>dots.appendChild(document.createElement("i")));
+function show(n){i=Math.max(0,Math.min(pages.length-1,n));pages.forEach((p,k)=>p.classList.toggle("on",k===i));[...dots.children].forEach((d,k)=>d.classList.toggle("on",k===i));pg.textContent=(i+1)+" / "+pages.length;prev.disabled=i===0;next.disabled=i===pages.length-1;}
+prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+document.addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key===" "){e.preventDefault();show(i+1)}if(e.key==="ArrowLeft")show(i-1)});
+let x0=null;const st=document.querySelector(".stage");
+st.addEventListener("touchstart",e=>{x0=e.changedTouches[0].screenX},{passive:true});
+st.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].screenX-x0;if(dx<-40)show(i+1);if(dx>40)show(i-1);x0=null});
+show(0);
+</script>
+</body>
+</html>
