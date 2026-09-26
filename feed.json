@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-26T02:03:57Z",
+  "generated_at": "2026-09-26T07:35:33Z",
   "session": {
-    "day_label": "FRI",
-    "market_state": "CLOSED",
+    "day_label": "SAT",
+    "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-09-28T13:30:00Z",
     "position": "FLAT"
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84024,
-      "chg_pct": -0.73,
+      "last": 84001,
+      "chg_pct": 0.16,
       "history": [
         83937.525,
         83945.395,
@@ -473,14 +473,15 @@
         83810.035,
         84088.475,
         84067,
-        84024
+        84024,
+        84001
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2689.24,
-      "chg_pct": -0.12,
+      "last": 2689.64,
+      "chg_pct": 0.63,
       "history": [
         2693.585,
         2693.005,
@@ -513,14 +514,15 @@
         2680.16,
         2693.815,
         2692.58,
-        2689.24
+        2689.24,
+        2689.64
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.85,
-      "chg_pct": 3.6,
+      "last": 120.48,
+      "chg_pct": 3.8,
       "history": [
         122.085,
         122.055,
@@ -553,7 +555,8 @@
         121.13,
         122.345,
         122.0,
-        121.85
+        121.85,
+        120.48
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +951,10 @@
   "news": [
     {
       "tag": "MARKETS",
-      "title": "If I Could Only Add 1 ETF to My Portfolio This Year, Here's Exactly What I'd Buy",
-      "summary": "This semiconductor ETF continues to look ripe for more gains.",
-      "url": "https://www.fool.com/investing/2026/09/25/if-i-could-only-add-1-etf-to-my-portfolio-this-yea/?.tsrc=rss",
-      "ts": "2026-09-26T01:35:00Z"
+      "title": "How Investors May Respond To Apple (AAPL) Launching Its First Foldable iPhone With On\u2011Device AI",
+      "summary": "In recent days, Apple launched its first foldable iPhone Duo alongside the iPhone 18 Pro lineup, highlighting enhanced on-device Siri AI and privacy as key features while entering the competitive foldable smartphone market. This move not on",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-apple-aapl-071245138.html?.tsrc=rss",
+      "ts": "2026-09-26T07:12:45Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,45 +965,45 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
-      "summary": "The long-anticipated exit of the commissioner sometimes known as Crypto Mom is Oct. 2, announced as the agency was sending out its latest crypto work.",
-      "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
-      "ts": "2026-09-25T22:17:38Z"
+      "title": "Solana\u2019s 150-millisecond settlement upgrade reaches second public test network",
+      "summary": "Alpenglow is running on both public test networks, giving application teams a place to check their software before the live blockchain switches.",
+      "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
+      "ts": "2026-09-26T05:00:00Z"
     },
     {
       "tag": "MARKETS",
-      "title": "The Auto Weekly: Tesla's Semi Play, Rivian's Cheaper Model Promise And Detroit's Market Share Threat",
-      "summary": "Tesla said high-volume Semi production is underway in Nevada, Rivian patched a camera-software defect across most of its fleet, and Ford cut F-150 shifts while Cox projected Hyundai Group to outsell Ford in Q3.",
-      "url": "https://stocktwits.com/news-articles/markets/equity/the-auto-weekly-tesla-s-semi-play-rivian-s-cheaper-model-promise-and-detroit-s-market-share-threat/cZMXzS0RBOF?.tsrc=rss",
-      "ts": "2026-09-26T01:30:50Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 9/21/2026: Oil-Rates Correlation Jumps to a 35-Year High",
-      "summary": "While index volatility declined broadly last week, single stock volatility increased. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-9-21-2026-oil-rates-correlation-jumps-to-a-35-year-high/",
-      "ts": "2026-09-21T04:00:00Z"
+      "title": "Is Tesla\u2019s (TSLA) Stock Really Priced Like a Car Company?",
+      "summary": "Tesla, Inc. (NASDAQ:TSLA)\u2019s stock has been choppy over the last five years, with the stock falling 6% since November 2021. Tesla has been notorious for being one of the most difficult stocks to value because of its ambition to become someth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-stock-really-priced-050301615.html?.tsrc=rss",
+      "ts": "2026-09-26T05:03:01Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Another appeals court rules against prediction market provider Kalshi, says sports contracts are subject to state regulations",
-      "summary": "A Sixth Circuit Court of Appeals panel ruled that prediction markets' sports-related events contracts are not swaps, and therefore aren't subject to federal regulatory oversight.",
-      "url": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations",
-      "ts": "2026-09-25T21:17:30Z"
+      "title": "XRP Ledger\u2019s Batch upgrade slips to Oct. 9 after validator support resets",
+      "summary": "The feature would let users bundle up to eight transactions, including asset-and-payment transfers, but a brief drop below the network\u2019s 80% support threshold restarted its two-week activation clock.",
+      "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
+      "ts": "2026-09-26T04:30:00Z"
     },
     {
       "tag": "MARKETS",
-      "title": "Apple (AAPL) Took a Different Pricing Approach with its New iPhones in China",
-      "summary": "On September 10, 2026, CNBC reported that Apple Inc. (NASDAQ:AAPL)\u2019s iPhone Duo faces a tepid reception in China, where it is priced at 15,999 yuan, or about $2,230, positioning it above Xiaomi\u2019s newly launched 18 Fold at 10,999 yuan but be",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-took-different-pricing-012229936.html?.tsrc=rss",
-      "ts": "2026-09-26T01:22:29Z"
+      "title": "Robinhood Stock Once Fell 82% Below Its IPO Price. $10,000 Invested at the IPO Has Still More Than Tripled.",
+      "summary": "Anyone who held on had to go through an 82% drop first. What changed?",
+      "url": "https://www.fool.com/investing/2026/09/26/robinhood-stock-once-fell-82-below-its-ipo-price-usd10-000-invested-at-the-ipo-has-still-more-than-tripled/?.tsrc=rss",
+      "ts": "2026-09-26T05:01:02Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Blockchain Association sees leadership shift shortly after crypto Clarity Act fizzles",
-      "summary": "The trade group will be run again by its original CEO, Kristin Smith, when Summer Mersinger leaves at the end of a long congressional tussle.",
-      "url": "https://www.coindesk.com/policy/2026/09/25/blockchain-association-sees-leadership-shift-shortly-after-crypto-clarity-act-fizzles",
-      "ts": "2026-09-25T20:01:05Z"
+      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
+      "summary": "Researchers have mapped out private bitcoin-denominated transfers that run alongside Bitcoin, but the system still lacks a finished way to lock up real BTC and release it again.",
+      "url": "https://www.coindesk.com/tech/2026/09/26/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
+      "ts": "2026-09-26T04:02:13Z"
+    },
+    {
+      "tag": "MARKETS",
+      "title": "NVIDIA (NVDA) vs. Broadcom (AVGO): Which AI Chip Stock Has the Stronger Moat?",
+      "summary": "NVIDIA Corporation (NASDAQ:NVDA) and Broadcom Inc. (NASDAQ:AVGO) have both been beneficiaries of the AI boom. However, their competitive advantages come from very different places. NVIDIA has built an ecosystem around its GPUs and software,",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-vs-broadcom-avgo-045101419.html?.tsrc=rss",
+      "ts": "2026-09-26T04:51:01Z"
     }
   ],
   "calendar": [],
@@ -1291,17 +1294,17 @@
     ]
   },
   "btc_range": {
-    "last": 84006,
+    "last": 84001,
     "high_24h": 85208,
     "low_24h": 83230,
-    "chg_pct": -0.82
+    "chg_pct": 0.16
   },
   "macro": {
     "10Y": 5.18,
     "DXY": 101.03,
-    "WTI": 92.44,
+    "WTI": 92.41,
     "VIX": 14.87,
-    "asof": "2026-09-25T23:38:41Z"
+    "asof": "2026-09-26T07:35:33Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-25T20:00:50Z",
