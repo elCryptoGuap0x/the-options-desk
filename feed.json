@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T16:43:50Z",
+  "generated_at": "2026-09-26T19:28:15Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84136,
-      "chg_pct": 0.28,
+      "last": 84013,
+      "chg_pct": 0.07,
       "history": [
         83937.525,
         83945.395,
@@ -477,14 +477,15 @@
         84001,
         84109,
         84029,
-        84136
+        84136,
+        84013
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2692.48,
-      "chg_pct": 0.08,
+      "last": 2683.95,
+      "chg_pct": -0.27,
       "history": [
         2693.585,
         2693.005,
@@ -521,14 +522,15 @@
         2689.64,
         2689.83,
         2688.76,
-        2692.48
+        2692.48,
+        2683.95
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.57,
-      "chg_pct": -0.04,
+      "last": 121.2,
+      "chg_pct": -0.43,
       "history": [
         122.085,
         122.055,
@@ -565,7 +567,8 @@
         120.48,
         121.25,
         120.96,
-        121.57
+        121.57,
+        121.2
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -959,13 +962,6 @@
   },
   "news": [
     {
-      "tag": "OPTIONS",
-      "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
-      "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
-      "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
-      "ts": "2026-09-22T04:00:00Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Kraken\u2019s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
       "summary": "Kraken parent Payward is unifying trading, payments, asset management and institutional services on common rails, co-CEO Arjun Sethi said.",
@@ -1013,6 +1009,13 @@
       "summary": "The long-anticipated exit of the commissioner sometimes known as Crypto Mom is Oct. 2, announced as the agency was sending out its latest crypto work.",
       "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
       "ts": "2026-09-25T22:17:38Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Another appeals court rules against prediction market provider Kalshi, says sports contracts are subject to state regulations",
+      "summary": "A Sixth Circuit Court of Appeals panel ruled that prediction markets' sports-related events contracts are not swaps, and therefore aren't subject to federal regulatory oversight.",
+      "url": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations",
+      "ts": "2026-09-25T21:17:30Z"
     }
   ],
   "calendar": [
@@ -1319,10 +1322,10 @@
     ]
   },
   "btc_range": {
-    "last": 84136,
+    "last": 84013,
     "high_24h": 84296,
     "low_24h": 83627,
-    "chg_pct": 0.28
+    "chg_pct": 0.06
   },
   "macro": {
     "10Y": 5.18,
