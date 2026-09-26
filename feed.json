@@ -1012,7 +1012,23 @@
       "ts": "2026-09-25T22:17:38Z"
     }
   ],
-  "calendar": [],
+  "calendar": [
+    {
+      "what": "JOLTS job openings",
+      "when": "Tuesday, Sept 29, 8:30 ET",
+      "date": "2026-09-29"
+    },
+    {
+      "what": "Q2 GDP third estimate and PCE",
+      "when": "Wednesday, Sept 30, 8:30 ET",
+      "date": "2026-09-30"
+    },
+    {
+      "what": "Next FOMC meeting",
+      "when": "Oct 27-28",
+      "date": "2026-10-27"
+    }
+  ],
   "skip_summary_ticker_list": {
     "count": 26,
     "names": [
