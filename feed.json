@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T12:26:10Z",
+  "generated_at": "2026-09-26T14:54:25Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84109,
-      "chg_pct": -0.16,
+      "last": 84029,
+      "chg_pct": 0.37,
       "history": [
         83937.525,
         83945.395,
@@ -475,14 +475,15 @@
         84067,
         84024,
         84001,
-        84109
+        84109,
+        84029
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2689.83,
-      "chg_pct": -0.56,
+      "last": 2688.76,
+      "chg_pct": 0.1,
       "history": [
         2693.585,
         2693.005,
@@ -517,14 +518,15 @@
         2692.58,
         2689.24,
         2689.64,
-        2689.83
+        2689.83,
+        2688.76
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.25,
-      "chg_pct": 1.13,
+      "last": 120.96,
+      "chg_pct": 0.97,
       "history": [
         122.085,
         122.055,
@@ -559,7 +561,8 @@
         122.0,
         121.85,
         120.48,
-        121.25
+        121.25,
+        120.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -953,18 +956,32 @@
   },
   "news": [
     {
-      "tag": "MARKETS",
-      "title": "Amazon Is Spending $220 Billion on Data Centers. Here's Why That Makes The Stock an Incredible Buy",
-      "summary": "Investors don't need to be concerned about Amazon's spending, as it's providing tangible returns.",
-      "url": "https://www.fool.com/investing/2026/09/26/amazon-spend-billion-data-center-stock-buy/?.tsrc=rss",
-      "ts": "2026-09-26T12:05:00Z"
-    },
-    {
       "tag": "OPTIONS",
       "title": "Perpetual Futures versus 0DTE Options: Why the Comparison Doesn't Hold Up",
       "summary": "There are key differences between short-dated options and perpetual futures. Leverage and convexity are among the most notable differences in how investors can utilize the two derivatives products.",
       "url": "https://www.cboe.com/insights/posts/perpetual-futures-versus-0-dte-options-why-the-comparison-doesnt-hold-up/",
       "ts": "2026-09-22T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Kraken\u2019s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
+      "summary": "Kraken parent Payward is unifying trading, payments, asset management and institutional services on common rails, co-CEO Arjun Sethi said.",
+      "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
+      "ts": "2026-09-26T14:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
+      "summary": "The five-year deal could strengthen USDC\u2019s reach in emerging markets, though Tether\u2019s liquidity advantage remains hard to dislodge, analysts told CoinDesk.",
+      "url": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
+      "ts": "2026-09-26T13:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitget hacker moves $83 million in stolen XRP that Ripple cannot freeze",
+      "summary": "Two wallets have been almost emptied and a third is being drained, with about $75 million remaining across the five original holding accounts.",
+      "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
+      "ts": "2026-09-26T12:56:41Z"
     },
     {
       "tag": "CRYPTO",
@@ -974,25 +991,11 @@
       "ts": "2026-09-26T12:00:00Z"
     },
     {
-      "tag": "MARKETS",
-      "title": "Dow Jones Futures: Growth Stocks Shrug Off Surging Yields; Micron, SpaceX, Tesla, Key Economic Data Due",
-      "summary": "Growth stocks had a strong week despite surging Treasury yields. Micron earnings, SpaceX Starship, Tesla sales and big economic reports are ahead.",
-      "url": "https://finance.yahoo.com/m/473106f6-6763-38d5-b898-3f7ff08d4b61/dow-jones-futures%3A-growth.html?.tsrc=rss",
-      "ts": "2026-09-26T11:49:41Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Solana\u2019s 150-millisecond settlement upgrade reaches second public test network",
       "summary": "Alpenglow is running on both public test networks, giving application teams a place to check their software before the live blockchain switches.",
       "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
       "ts": "2026-09-26T05:00:00Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "Amazon Turned $1,000 Into $5,239 Over Ten Years but Recent Buyers Face a Rougher Reality",
-      "summary": "Amazon's ten-year run turned patient investors into big winners, but shareholders who bought in the last five years tell a much quieter story, and those counting on cash payouts got nothing at all.",
-      "url": "https://247wallst.com/investing/2026/09/26/amazon-turned-1000-into-5239-over-ten-years-but-recent-buyers-face-a-rougher-reality/?.tsrc=rss",
-      "ts": "2026-09-26T11:45:18Z"
     },
     {
       "tag": "CRYPTO",
@@ -1002,11 +1005,11 @@
       "ts": "2026-09-26T04:30:00Z"
     },
     {
-      "tag": "MARKETS",
-      "title": "Microsoft Copilot Is Turning Into An \u2018AI Operating System\u2019 \u2014 Here\u2019s What It Means For MSFT Stock, According To Oppenheimer\u2019s Brian Schwartz",
-      "summary": "During an interview with CNBC, Schwartz said Microsoft\u2019s Copilot announcement changes the narrative around the company as investors continue to search for clear winners in the AI era.",
-      "url": "https://stocktwits.com/news-articles/markets/equity/msft-copilot-operating-system-higher-engagement-monetization-oppenheinmer/cZMgQ8IRBOw?.tsrc=rss",
-      "ts": "2026-09-26T10:59:10Z"
+      "tag": "CRYPTO",
+      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
+      "summary": "The long-anticipated exit of the commissioner sometimes known as Crypto Mom is Oct. 2, announced as the agency was sending out its latest crypto work.",
+      "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
+      "ts": "2026-09-25T22:17:38Z"
     }
   ],
   "calendar": [],
@@ -1297,10 +1300,10 @@
     ]
   },
   "btc_range": {
-    "last": 84109,
-    "high_24h": 84539,
-    "low_24h": 83230,
-    "chg_pct": -0.15
+    "last": 84016,
+    "high_24h": 84296,
+    "low_24h": 83373,
+    "chg_pct": 0.45
   },
   "macro": {
     "10Y": 5.18,

@@ -260,9 +260,22 @@ _CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
 # killed in the first place. Reuters' public RSS is still dead (years
 # now) and CNBC still 403s a scripted request -- neither retested, no
 # reason either would have changed.
+# MARKETS (Yahoo per-ticker headlines) dropped 9/26, real feedback: this
+# feed syndicates third-party contributor pieces alongside real news --
+# a live weekend pull surfaced "Amazon Is Spending $220 Billion on Data
+# Centers... an Incredible Buy" from it, and this file's own 9/20
+# comment already flagged the feed's typical output as "Should You Buy
+# SpaceX Stock Before Its Next Earnings" style, which reads as an
+# affiliate stock pitch, not desk voice. It was diluted enough to not
+# stand out back when curated (scout-based) news usually filled most of
+# NEWS_LIMIT's slots; once a day genuinely has no curated news (see
+# site-build.py's 9/25 as_of staleness fix), merge_news() below fills
+# every remaining slot with RSS, making this feed's tone the majority of
+# what a viewer sees. FED/OPTIONS/CRYPTO stay -- each already reads as
+# desk-toned per this file's own 9/20 testing notes (monetary policy,
+# options-market commentary, crypto-desk news), not stock-pick copy.
 NEWS_FEEDS = [
     ("FED", "https://www.federalreserve.gov/feeds/press_all.xml", "Monetary Policy"),
-    ("MARKETS", "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SPY,QQQ,DIA,IWM,VIXY,AAPL,MSFT,NVDA,AMZN,META,GOOGL,TSLA,MSTR,COIN,HOOD,IBIT,IREN,XLK,XLF,XLE,XLV,GDX", None),
     ("OPTIONS", "https://www.cboe.com/insights/rss/", None),
     ("CRYPTO", "https://www.coindesk.com/arc/outboundfeeds/rss/", None),
 ]
