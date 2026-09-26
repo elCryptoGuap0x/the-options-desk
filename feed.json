@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T07:35:33Z",
+  "generated_at": "2026-09-26T12:26:10Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84001,
-      "chg_pct": 0.16,
+      "last": 84109,
+      "chg_pct": -0.16,
       "history": [
         83937.525,
         83945.395,
@@ -474,14 +474,15 @@
         84088.475,
         84067,
         84024,
-        84001
+        84001,
+        84109
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2689.64,
-      "chg_pct": 0.63,
+      "last": 2689.83,
+      "chg_pct": -0.56,
       "history": [
         2693.585,
         2693.005,
@@ -515,14 +516,15 @@
         2693.815,
         2692.58,
         2689.24,
-        2689.64
+        2689.64,
+        2689.83
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.48,
-      "chg_pct": 3.8,
+      "last": 121.25,
+      "chg_pct": 1.13,
       "history": [
         122.085,
         122.055,
@@ -556,7 +558,8 @@
         122.345,
         122.0,
         121.85,
-        120.48
+        120.48,
+        121.25
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -951,10 +954,10 @@
   "news": [
     {
       "tag": "MARKETS",
-      "title": "How Investors May Respond To Apple (AAPL) Launching Its First Foldable iPhone With On\u2011Device AI",
-      "summary": "In recent days, Apple launched its first foldable iPhone Duo alongside the iPhone 18 Pro lineup, highlighting enhanced on-device Siri AI and privacy as key features while entering the competitive foldable smartphone market. This move not on",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-apple-aapl-071245138.html?.tsrc=rss",
-      "ts": "2026-09-26T07:12:45Z"
+      "title": "Amazon Is Spending $220 Billion on Data Centers. Here's Why That Makes The Stock an Incredible Buy",
+      "summary": "Investors don't need to be concerned about Amazon's spending, as it's providing tangible returns.",
+      "url": "https://www.fool.com/investing/2026/09/26/amazon-spend-billion-data-center-stock-buy/?.tsrc=rss",
+      "ts": "2026-09-26T12:05:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -965,6 +968,20 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
+      "summary": "Researchers have mapped out private bitcoin-denominated transfers that run alongside Bitcoin, but the system still lacks a finished way to lock up real BTC and release it again.",
+      "url": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
+      "ts": "2026-09-26T12:00:00Z"
+    },
+    {
+      "tag": "MARKETS",
+      "title": "Dow Jones Futures: Growth Stocks Shrug Off Surging Yields; Micron, SpaceX, Tesla, Key Economic Data Due",
+      "summary": "Growth stocks had a strong week despite surging Treasury yields. Micron earnings, SpaceX Starship, Tesla sales and big economic reports are ahead.",
+      "url": "https://finance.yahoo.com/m/473106f6-6763-38d5-b898-3f7ff08d4b61/dow-jones-futures%3A-growth.html?.tsrc=rss",
+      "ts": "2026-09-26T11:49:41Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Solana\u2019s 150-millisecond settlement upgrade reaches second public test network",
       "summary": "Alpenglow is running on both public test networks, giving application teams a place to check their software before the live blockchain switches.",
       "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
@@ -972,10 +989,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Is Tesla\u2019s (TSLA) Stock Really Priced Like a Car Company?",
-      "summary": "Tesla, Inc. (NASDAQ:TSLA)\u2019s stock has been choppy over the last five years, with the stock falling 6% since November 2021. Tesla has been notorious for being one of the most difficult stocks to value because of its ambition to become someth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-stock-really-priced-050301615.html?.tsrc=rss",
-      "ts": "2026-09-26T05:03:01Z"
+      "title": "Amazon Turned $1,000 Into $5,239 Over Ten Years but Recent Buyers Face a Rougher Reality",
+      "summary": "Amazon's ten-year run turned patient investors into big winners, but shareholders who bought in the last five years tell a much quieter story, and those counting on cash payouts got nothing at all.",
+      "url": "https://247wallst.com/investing/2026/09/26/amazon-turned-1000-into-5239-over-ten-years-but-recent-buyers-face-a-rougher-reality/?.tsrc=rss",
+      "ts": "2026-09-26T11:45:18Z"
     },
     {
       "tag": "CRYPTO",
@@ -986,24 +1003,10 @@
     },
     {
       "tag": "MARKETS",
-      "title": "Robinhood Stock Once Fell 82% Below Its IPO Price. $10,000 Invested at the IPO Has Still More Than Tripled.",
-      "summary": "Anyone who held on had to go through an 82% drop first. What changed?",
-      "url": "https://www.fool.com/investing/2026/09/26/robinhood-stock-once-fell-82-below-its-ipo-price-usd10-000-invested-at-the-ipo-has-still-more-than-tripled/?.tsrc=rss",
-      "ts": "2026-09-26T05:01:02Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
-      "summary": "Researchers have mapped out private bitcoin-denominated transfers that run alongside Bitcoin, but the system still lacks a finished way to lock up real BTC and release it again.",
-      "url": "https://www.coindesk.com/tech/2026/09/26/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
-      "ts": "2026-09-26T04:02:13Z"
-    },
-    {
-      "tag": "MARKETS",
-      "title": "NVIDIA (NVDA) vs. Broadcom (AVGO): Which AI Chip Stock Has the Stronger Moat?",
-      "summary": "NVIDIA Corporation (NASDAQ:NVDA) and Broadcom Inc. (NASDAQ:AVGO) have both been beneficiaries of the AI boom. However, their competitive advantages come from very different places. NVIDIA has built an ecosystem around its GPUs and software,",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-vs-broadcom-avgo-045101419.html?.tsrc=rss",
-      "ts": "2026-09-26T04:51:01Z"
+      "title": "Microsoft Copilot Is Turning Into An \u2018AI Operating System\u2019 \u2014 Here\u2019s What It Means For MSFT Stock, According To Oppenheimer\u2019s Brian Schwartz",
+      "summary": "During an interview with CNBC, Schwartz said Microsoft\u2019s Copilot announcement changes the narrative around the company as investors continue to search for clear winners in the AI era.",
+      "url": "https://stocktwits.com/news-articles/markets/equity/msft-copilot-operating-system-higher-engagement-monetization-oppenheinmer/cZMgQ8IRBOw?.tsrc=rss",
+      "ts": "2026-09-26T10:59:10Z"
     }
   ],
   "calendar": [],
@@ -1294,10 +1297,10 @@
     ]
   },
   "btc_range": {
-    "last": 84001,
-    "high_24h": 85208,
+    "last": 84109,
+    "high_24h": 84539,
     "low_24h": 83230,
-    "chg_pct": 0.16
+    "chg_pct": -0.15
   },
   "macro": {
     "10Y": 5.18,
