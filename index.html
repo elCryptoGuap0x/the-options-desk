@@ -1223,7 +1223,15 @@
       el.textContent = caption;
     } else if (session && session.market_state !== "OPEN" && closedCaption) {
       var next = session.next_open ? (" Next open " + session.next_open + ".") : "";
-      el.textContent = closedCaption + next;
+      // Added 9/27, real feedback ("Saturday's frozen board looks
+      // abandoned by Sunday night"): on WEEKEND specifically, name when
+      // the loops actually arm, a few minutes ahead of the open itself --
+      // desk_arms is null on any other market_state, so this is a no-op
+      // Mon-Fri.
+      var arms = (session.market_state === "WEEKEND" && session.desk_arms)
+        ? (" Desk arms " + session.desk_arms + ".")
+        : "";
+      el.textContent = closedCaption + next + arms;
     } else {
       el.textContent = "";
     }

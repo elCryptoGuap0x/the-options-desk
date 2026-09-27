@@ -71,11 +71,18 @@ def build_session(now):
         target_date = (now + timedelta(days=days_ahead)).date()
         return datetime.combine(target_date, datetime.min.time(), tzinfo=CT).replace(hour=8, minute=30)
 
+    # Added 9/27, real feedback ("Saturday's frozen board looks abandoned
+    # by Sunday night"): desk_arms names when the automated loops actually
+    # start (real launchd time, confirmed live via ps aux: trader's own
+    # start-loop.sh fires 8:20 CT), a few minutes before next_open's 8:30
+    # market bell -- only meaningful on WEEKEND, so it's None otherwise.
+    desk_arms = None
     if weekday >= 5:
         market_state = "WEEKEND"
         days_to_mon = (7 - weekday) % 7
         next_open_dt = next_open_at(days_to_mon if days_to_mon else 1)
         next_open = f"{next_open_dt.strftime('%a').upper()} 8:30 CT"
+        desk_arms = f"{next_open_dt.strftime('%a').upper()} 8:20 CT"
     elif hhmm < 830:
         market_state = "CLOSED"
         next_open_dt = next_open_at(0)
@@ -98,6 +105,7 @@ def build_session(now):
         "next_open": next_open,
         "next_open_iso": next_open_dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "position": "FLAT",
+        "desk_arms": desk_arms,
     }
 
 
@@ -275,7 +283,12 @@ _CDATA_RE = re.compile(r"^<!\[CDATA\[(.*)\]\]>$", re.S)
 # desk-toned per this file's own 9/20 testing notes (monetary policy,
 # options-market commentary, crypto-desk news), not stock-pick copy.
 NEWS_FEEDS = [
-    ("FED", "https://www.federalreserve.gov/feeds/press_all.xml", "Monetary Policy"),
+    # Switched 9/27 from press_all.xml + client-side category filter to the
+    # Fed's own dedicated monetary-policy feed -- verified live (both URLs
+    # actually 200 as of this fix; the 404 found 9/26 looks like it was
+    # transient, not a real dead link), and this one needs no filter at
+    # all since the Fed itself already scopes it.
+    ("FED", "https://www.federalreserve.gov/feeds/press_monetary.xml", None),
     ("OPTIONS", "https://www.cboe.com/insights/rss/", None),
     ("CRYPTO", "https://www.coindesk.com/arc/outboundfeeds/rss/", None),
 ]
