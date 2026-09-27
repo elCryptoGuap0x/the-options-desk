@@ -218,6 +218,7 @@
      today") always sits right on the number so the sample size is never
      separated from the stat it describes. */
   .stat .n-note { display: block; font-family: var(--mono); font-size: 10px; font-weight: 400; color: var(--text-faint); }
+  .stat .n-sub { font-family: var(--mono); font-size: 12px; font-weight: 400; color: var(--text-faint); }
 
   .expectancy {
     display: grid;
@@ -680,6 +681,13 @@
   .tape-notes-card { display: block; text-decoration: none; transition: border-color 0.15s ease; }
   .tape-notes-card:hover { border-left-color: var(--gold); }
   .tape-notes-card .carousel-body { min-height: 0; }
+  /* Added 9/27, real feedback: card gave no preview of the 5 issues --
+     one click just to see the table of contents. Plain text rows, not
+     <a> tags -- the whole card is already one link to the hub. */
+  .tape-notes-toc { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border-soft); }
+  .tape-notes-toc div {
+    font-family: var(--mono); font-size: 11px; color: var(--text-faint); line-height: 1.7;
+  }
   /* Titles-only list, no links -- see the HTML comment above this block
      for why these stay text, not <a> tags. */
   /* Added 9/18, real feedback: a headline with no way to actually read
@@ -898,6 +906,18 @@
             <span class="carousel-tag">Tape Notes</span>
           </div>
           <div class="carousel-body">5 free issues · not a signal</div>
+          <!-- Added 9/27, real feedback: card only said "5 free issues"
+               with no preview of what they are -- one click just to see
+               the table of contents. Titles listed here, whole card
+               still one link to the hub (issue-level links live there,
+               not duplicated here as nested <a> tags). -->
+          <div class="tape-notes-toc">
+            <div>00 · How to read this desk</div>
+            <div>01 · What you bought</div>
+            <div>02 · The fill is a tax</div>
+            <div>03 · Two clocks</div>
+            <div>04 · Reading a loser</div>
+          </div>
         </a>
       </section>
 
@@ -1363,6 +1383,11 @@
         '<div class="stat"><div class="n">' + stats.record + '</div><div class="l">Record, this week</div></div>' +
         sessionHtml +
         '<div class="stat"><div class="n ' + winClass + '">' + stats.win_rate +
+          // Added 9/27, real feedback: a bare "100%" on a one-ticket week
+          // is honest but reads as a track record at a glance. n= makes
+          // the sample size part of the number itself, not a separate
+          // tile someone has to cross-reference.
+          (stats.trades_this_week ? '<span class="n-sub"> (n=' + stats.trades_this_week + ')</span>' : '') +
           (stats.today_record ? '<span class="n-note">' + stats.today_record + '</span>' : '') +
           '</div><div class="l">Win rate</div></div>' +
         '<div class="stat"><div class="n">' + stats.trades_this_week + '</div><div class="l">Trades this week</div></div>' +
@@ -2492,8 +2517,14 @@
     // narrative line. Replaces staring at "FLAT -- SCANNING" with why a
     // chunk of the board can't fill today regardless of setup quality.
     if (data.tenor_calendar) out.push(data.tenor_calendar);
+    // Weekend-gated 9/27, real feedback: this counts the real, full board
+    // (verified live -- no hidden subset, the up/down split just changes
+    // slowly on weekends since equity rows are frozen from Friday's
+    // close), but showing it as a live breadth stat on mostly-frozen data
+    // reads as more current than it is -- same principle as the other
+    // weekend-honesty fixes tonight.
     var board = data.market_board;
-    if (board) {
+    if (board && (!data.session || data.session.market_state !== "WEEKEND")) {
       var up = 0, down = 0;
       Object.keys(board).forEach(function (s) {
         var c = board[s].chg_pct;
