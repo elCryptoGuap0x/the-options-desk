@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T11:55:49Z",
+  "generated_at": "2026-09-27T16:54:13Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -439,10 +439,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84872,
-      "chg_pct": 0.84,
+      "last": 84388,
+      "chg_pct": 0.32,
       "history": [
-        83945.395,
         83935.205,
         83950.315,
         83930.885,
@@ -481,16 +480,16 @@
         84289,
         84341,
         84511,
-        84872
+        84872,
+        84388
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2709.33,
-      "chg_pct": 0.74,
+      "last": 2686.06,
+      "chg_pct": -0.17,
       "history": [
-        2693.005,
         2693.065,
         2691.135,
         2690.985,
@@ -529,16 +528,16 @@
         2688.19,
         2694.68,
         2705.93,
-        2709.33
+        2709.33,
+        2686.06
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 123.88,
-      "chg_pct": 2.05,
+      "last": 121.84,
+      "chg_pct": 0.25,
       "history": [
-        122.055,
         121.9,
         121.89,
         121.945,
@@ -577,7 +576,8 @@
         121.53,
         121.04,
         121.24,
-        123.88
+        123.88,
+        121.84
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -972,6 +972,20 @@
   "news": [
     {
       "tag": "CRYPTO",
+      "title": "Vitalik Buterin maps Ethereum\u2019s shift beyond a blockchain in sweeping 2030 vision",
+      "summary": "Buterin wants Ethereum to do far more work without forcing every computer on the network to repeat the same calculations.",
+      "url": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
+      "ts": "2026-09-27T14:29:13Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "How months of work on the Clarity Act all fell apart",
+      "summary": "Interviews with industry participants and legislative aides paint a picture of a blown bill-writing process, with sources pointing to nearly every facet of the bill's development and the debate around it as contributing factors to this mont",
+      "url": "https://www.coindesk.com/news-analysis/2026/09/27/how-months-of-work-on-the-clarity-act-all-fell-apart",
+      "ts": "2026-09-27T12:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Kraken\u2019s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
       "summary": "Kraken parent Payward is unifying trading, payments, asset management and institutional services on common rails, co-CEO Arjun Sethi said.",
       "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
@@ -1011,20 +1025,6 @@
       "summary": "The feature would let users bundle up to eight transactions, including asset-and-payment transfers, but a brief drop below the network\u2019s 80% support threshold restarted its two-week activation clock.",
       "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
       "ts": "2026-09-26T04:30:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
-      "summary": "The long-anticipated exit of the commissioner sometimes known as Crypto Mom is Oct. 2, announced as the agency was sending out its latest crypto work.",
-      "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
-      "ts": "2026-09-25T22:17:38Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Another appeals court rules against prediction market provider Kalshi, says sports contracts are subject to state regulations",
-      "summary": "A Sixth Circuit Court of Appeals panel ruled that prediction markets' sports-related events contracts are not swaps, and therefore aren't subject to federal regulatory oversight.",
-      "url": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations",
-      "ts": "2026-09-25T21:17:30Z"
     }
   ],
   "calendar": [
@@ -1331,10 +1331,10 @@
     ]
   },
   "btc_range": {
-    "last": 84872,
-    "high_24h": 85063,
+    "last": 84409,
+    "high_24h": 85089,
     "low_24h": 83835,
-    "chg_pct": 0.84
+    "chg_pct": 0.36
   },
   "macro": {
     "10Y": 5.18,
