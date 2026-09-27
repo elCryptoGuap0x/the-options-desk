@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T22:10:40Z",
+  "generated_at": "2026-09-27T00:42:31Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -439,8 +439,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84289,
-      "chg_pct": 0.47,
+      "last": 84341,
+      "chg_pct": 0.58,
       "history": [
         83937.525,
         83945.395,
@@ -479,14 +479,15 @@
         84029,
         84136,
         84013,
-        84289
+        84289,
+        84341
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2688.19,
-      "chg_pct": 0.14,
+      "last": 2694.68,
+      "chg_pct": 0.41,
       "history": [
         2693.585,
         2693.005,
@@ -525,14 +526,15 @@
         2688.76,
         2692.48,
         2683.95,
-        2688.19
+        2688.19,
+        2694.68
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.53,
-      "chg_pct": 0.16,
+      "last": 121.04,
+      "chg_pct": -0.32,
       "history": [
         122.085,
         122.055,
@@ -571,7 +573,8 @@
         120.96,
         121.57,
         121.2,
-        121.53
+        121.53,
+        121.04
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1325,10 +1328,10 @@
     ]
   },
   "btc_range": {
-    "last": 84308,
-    "high_24h": 84296,
-    "low_24h": 83790,
-    "chg_pct": 0.47
+    "last": 84339,
+    "high_24h": 84421,
+    "low_24h": 83835,
+    "chg_pct": 0.58
   },
   "macro": {
     "10Y": 5.18,
