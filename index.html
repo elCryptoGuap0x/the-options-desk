@@ -2332,8 +2332,21 @@
            "Desk is closed until " + (data.session.next_open || "MON 8:30 CT") + ". Crypto marks can move; tickets don't.")
         : "";
     }
-    document.getElementById("board-foot").innerHTML =
-      '<span>' + (data.session && data.session.market_state === "OPEN" ? "Live" : "As of last close") + ' · crypto stays live, 24/7</span>';
+    // Fixed 9/27, real feedback: this used to say "Live" / "As of last
+    // close" with no real timestamp, plus "crypto stays live, 24/7" --
+    // both overstated given the 24/7 refresh's own real cadence (2-6
+    // hours per run, not live, see this same evening's weekend-note
+    // fix). Now uses the exact same generated_at as the "Tape through"
+    // footer line, so the two can never disagree, with the day name
+    // included whenever it isn't obviously today.
+    var boardFootEl = document.getElementById("board-foot");
+    if (boardFootEl) {
+      var isOpen = data.session && data.session.market_state === "OPEN";
+      var boardText = isNaN(d.getTime()) ? "Board as of —" :
+        "Board as of " + (isOpen ? "" : d.toLocaleDateString("en-US", { weekday: "short", timeZone: "America/Chicago" }) + " ") +
+        d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT";
+      boardFootEl.innerHTML = "<span>" + boardText + "</span>";
+    }
   }
 
   // "Is it getting better?" view, added 9/2 -- one row per calendar week
