@@ -722,6 +722,8 @@
     padding-top: 22px; border-top: 1px solid var(--border-soft);
   }
   footer .tape-date { font-family: var(--mono); color: var(--text-faint); margin-bottom: 6px; }
+  footer .weekend-note { font-family: var(--mono); color: var(--text-faint); margin-bottom: 10px; }
+  footer .weekend-note:empty { margin-bottom: 0; }
 
   .tip-jar-wrap {
     text-align: center; margin-top: 20px; padding-top: 18px;
@@ -993,6 +995,16 @@
 
   <footer>
     <div class="tape-date" id="tape-date">—</div>
+    <!-- Added 9/27, real feedback: weekend viewers were reading a stale
+         "Tape through Sat 7:26 AM" line as a content bug. It's a real
+         GitHub Actions platform limit -- the 24/7 refresh's "every 15
+         min" cron actually fires every 2-6 hours in practice (checked
+         against real run history back through 9/25). Rather than fight
+         GitHub's own scheduler (a tighter external ping would mean
+         handing a new GitHub token to a third-party cron service, the
+         same class of exposure just closed on the git remote), just say
+         so -- weekend-only, so this line means nothing Mon-Fri. -->
+    <div class="weekend-note" id="weekend-note"></div>
     Educational and entertainment content only. Not investment advice.<br>
     Results shown are real but historical and not indicative of future performance.<br>
     Same-day options are high-risk; most positions are held under 24 hours.<br>
@@ -2313,6 +2325,13 @@
       "Tape through " + d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "America/Chicago" }) +
       " " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" }) + " CT";
     document.getElementById("tape-date").textContent = text;
+    var weekendNoteEl = document.getElementById("weekend-note");
+    if (weekendNoteEl) {
+      weekendNoteEl.textContent = (data.session && data.session.market_state === "WEEKEND")
+        ? ("Tape on weekends updates when GitHub runs the refresh — often hours, not every 15 minutes. " +
+           "Desk is closed until " + (data.session.next_open || "MON 8:30 CT") + ". Crypto marks can move; tickets don't.")
+        : "";
+    }
     document.getElementById("board-foot").innerHTML =
       '<span>' + (data.session && data.session.market_state === "OPEN" ? "Live" : "As of last close") + ' · crypto stays live, 24/7</span>';
   }
