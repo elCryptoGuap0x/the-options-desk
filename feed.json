@@ -41,7 +41,23 @@
       "entry": "8:44a",
       "exit": "8:55a",
       "dur": "11 min",
-      "dte": "0DTE"
+      "dte": "0DTE",
+      "fuse": {
+        "dots": [
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R"
+        ],
+        "peak_pct": 0.0
+      }
     },
     {
       "day": "Wed 9/23",
