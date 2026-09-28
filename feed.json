@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T07:36:07Z",
+  "generated_at": "2026-09-28T12:54:11Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -9,32 +9,25 @@
     "desk_arms": null
   },
   "stats": {
-    "record": "1-0",
-    "win_rate": "100%",
-    "trades_this_week": 1,
+    "record": "0-0",
+    "win_rate": "\u2014",
+    "trades_this_week": 0,
     "typical_hold": "0DTE-2DTE",
-    "avg_win": "+19.6%",
+    "avg_win": "\u2014",
     "avg_loss": "\u2014",
-    "net_per_ticket": "+19.6%",
-    "hold_typ": "~24 min",
-    "prior_week_record": "1-6",
+    "net_per_ticket": "\u2014",
+    "hold_typ": "\u2014",
+    "prior_week_record": "1-0",
     "session_pnl_usd": 11.0,
-    "prior_week_net_usd": -75,
+    "prior_week_net_usd": 11,
     "today_record": "0 of 0 today"
   },
   "sparkline_cum_pct": [
-    0.0,
-    19.6
+    0.0
   ],
   "prior_week_sparkline_cum_pct": [
     0.0,
-    -14.9,
-    -25.6,
-    -51.9,
-    -68.0,
-    -81.6,
-    -92.0,
-    -73.5
+    19.6
   ],
   "tickets": [
     {
@@ -375,7 +368,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "",
+  "roast": "Session over. +$11.",
   "streak_last8": [
     "L",
     "L",
@@ -435,176 +428,54 @@
       "avg_hold": "24 min",
       "disasters": 0,
       "product": "current system",
+      "locked": true
+    },
+    {
+      "week_label": "9/28\u2013\u2026",
+      "week_start": "2026-09-28",
+      "record": "0-0",
+      "net_usd": 0,
+      "avg_hold": "\u2014",
+      "disasters": 0,
+      "product": "current system",
       "locked": false
     }
   ],
   "market_board": {
     "BTC": {
-      "last": 82920,
-      "chg_pct": -1.93,
+      "last": 83518.59,
+      "chg_pct": 0.2,
       "history": [
-        83966.43,
-        83960.525,
-        84023.875,
-        83971.395,
-        83971.055,
-        84015.43,
-        83956.615,
-        83991.105,
-        83996.215,
-        83981.605,
-        84054.605,
-        83954.015,
-        83965.765,
-        84030.405,
-        84002.48,
-        84001.055,
-        84012.685,
-        83980.955,
-        83760.625,
-        83762.435,
-        83773.605,
-        83806.945,
-        83810.035,
-        84088.475,
-        84067,
-        84024,
-        84001,
-        84109,
-        84029,
-        84136,
-        84013,
-        84289,
-        84341,
-        84511,
-        84872,
-        84388,
-        84732,
-        84209,
-        84040,
-        82920
+        83350.325,
+        83518.585
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2642.65,
-      "chg_pct": -2.46,
+      "last": 2687.28,
+      "chg_pct": 0.24,
       "history": [
-        2692.705,
-        2695.055,
-        2693.85,
-        2692.5,
-        2693.255,
-        2691.045,
-        2692.865,
-        2691.725,
-        2691.26,
-        2695.395,
-        2690.75,
-        2691.125,
-        2694.965,
-        2695.305,
-        2693.605,
-        2692.62,
-        2692.3,
-        2680.205,
-        2680.415,
-        2680.735,
-        2681.115,
-        2680.265,
-        2680.16,
-        2693.815,
-        2692.58,
-        2689.24,
-        2689.64,
-        2689.83,
-        2688.76,
-        2692.48,
-        2683.95,
-        2688.19,
-        2694.68,
-        2705.93,
-        2709.33,
-        2686.06,
-        2692.26,
-        2674.86,
-        2673.09,
-        2642.65
+        2680.945,
+        2687.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.05,
-      "chg_pct": -3.23,
+      "last": 119.91,
+      "chg_pct": 0.35,
       "history": [
-        122.0,
-        122.1,
-        121.965,
-        121.93,
-        122.02,
-        121.72,
-        121.815,
-        121.77,
-        121.71,
-        121.97,
-        121.56,
-        121.585,
-        121.9,
-        121.815,
-        121.75,
-        121.785,
-        121.86,
-        121.125,
-        121.09,
-        121.175,
-        121.27,
-        121.16,
-        121.13,
-        122.345,
-        122.0,
-        121.85,
-        120.48,
-        121.25,
-        120.96,
-        121.57,
-        121.2,
-        121.53,
-        121.04,
-        121.24,
-        123.88,
-        121.84,
-        123.01,
-        121.43,
-        121.9,
-        118.05
+        119.495,
+        119.91
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
       "last": 771.39,
-      "chg_pct": 0.51,
+      "chg_pct": 0.0,
       "history": [
-        767.45,
-        770.95,
-        770.68,
-        770.9,
-        770.63,
-        771.03,
-        770.86,
-        770.63,
-        770.67,
-        770.78,
-        771.06,
-        770.79,
-        770.43,
-        770.38,
-        770.44,
-        770.94,
-        771.78,
-        772.0,
         771.39
       ],
       "status": "watching",
@@ -612,26 +483,8 @@
     },
     "QQQ": {
       "last": 744.51,
-      "chg_pct": 0.41,
+      "chg_pct": 0.0,
       "history": [
-        741.48,
-        744.81,
-        744.4,
-        744.51,
-        744.2,
-        744.72,
-        744.34,
-        744.01,
-        743.95,
-        744.49,
-        744.67,
-        744.41,
-        744.05,
-        743.84,
-        743.7,
-        744.27,
-        744.93,
-        745.22,
         744.51
       ],
       "status": "watching",
@@ -639,20 +492,8 @@
     },
     "DIA": {
       "last": 517.59,
-      "chg_pct": 0.86,
+      "chg_pct": 0.0,
       "history": [
-        513.17,
-        517.03,
-        516.81,
-        517.02,
-        517.22,
-        517.13,
-        516.73,
-        516.79,
-        517.07,
-        517.35,
-        517.665,
-        517.67,
         517.59
       ],
       "status": "no setup",
@@ -660,20 +501,8 @@
     },
     "IWM": {
       "last": 282.12,
-      "chg_pct": 0.11,
+      "chg_pct": 0.0,
       "history": [
-        281.82,
-        282.13,
-        282.09,
-        282.32,
-        282.47,
-        282.32,
-        282.27,
-        282.02,
-        282.12,
-        282.41,
-        282.62,
-        282.49,
         282.12
       ],
       "status": "watching",
@@ -681,18 +510,8 @@
     },
     "VIXY": {
       "last": 16.72,
-      "chg_pct": -0.88,
+      "chg_pct": 0.0,
       "history": [
-        16.8677,
-        16.666,
-        16.67,
-        16.66,
-        16.65,
-        16.63,
-        16.62,
-        16.59,
-        16.6,
-        16.61,
         16.72
       ],
       "status": "no setup",
@@ -700,20 +519,8 @@
     },
     "AAPL": {
       "last": 341.07,
-      "chg_pct": 1.11,
+      "chg_pct": 0.0,
       "history": [
-        337.328,
-        340.2,
-        340.33,
-        340.37,
-        340.4,
-        340.07,
-        339.97,
-        340.1,
-        340.12,
-        340.75,
-        341.125,
-        341.185,
         341.07
       ],
       "status": "no setup",
@@ -721,26 +528,8 @@
     },
     "MSFT": {
       "last": 516.65,
-      "chg_pct": 3.69,
+      "chg_pct": 0.0,
       "history": [
-        498.268,
-        517.51,
-        517.93,
-        518.44,
-        517.49,
-        517.77,
-        516.89,
-        516.275,
-        516.72,
-        516.93,
-        516.135,
-        516.52,
-        515.47,
-        516.14,
-        515.56,
-        516.01,
-        516.185,
-        516.5401,
         516.65
       ],
       "status": "watching",
@@ -748,26 +537,8 @@
     },
     "NVDA": {
       "last": 225.0,
-      "chg_pct": 0.32,
+      "chg_pct": 0.0,
       "history": [
-        224.29,
-        224.83,
-        224.39,
-        224.62,
-        224.24,
-        224.175,
-        224.03,
-        224.06,
-        223.95,
-        223.94,
-        224.2,
-        223.89,
-        223.67,
-        223.79,
-        224.02,
-        224.12,
-        224.52,
-        224.98,
         225.0
       ],
       "status": "no setup",
@@ -775,26 +546,8 @@
     },
     "META": {
       "last": 751.1,
-      "chg_pct": -3.44,
+      "chg_pct": 0.0,
       "history": [
-        777.87,
-        750.35,
-        750.31,
-        751.52,
-        751.225,
-        752.49,
-        752.855,
-        751.85,
-        751.76,
-        751.75,
-        751.635,
-        751.22,
-        751.72,
-        750.54,
-        751.85,
-        752.37,
-        753.26,
-        751.15,
         751.1
       ],
       "status": "no setup",
@@ -802,20 +555,8 @@
     },
     "GOOGL": {
       "last": 343.88,
-      "chg_pct": 0.4,
+      "chg_pct": 0.0,
       "history": [
-        342.52,
-        344.075,
-        344.21,
-        344.52,
-        344.39,
-        344.25,
-        343.94,
-        343.57,
-        343.62,
-        343.92,
-        343.98,
-        344.17,
         343.88
       ],
       "status": "watching",
@@ -823,20 +564,8 @@
     },
     "TSLA": {
       "last": 372.0,
-      "chg_pct": -2.08,
+      "chg_pct": 0.0,
       "history": [
-        379.89,
-        372.11,
-        371.8,
-        372.13,
-        372.145,
-        371.83,
-        371.9,
-        371.64,
-        371.26,
-        371.4,
-        372.05,
-        372.1,
         372.0
       ],
       "status": "no setup",
@@ -844,26 +573,8 @@
     },
     "MSTR": {
       "last": 158.63,
-      "chg_pct": -2.19,
+      "chg_pct": 0.0,
       "history": [
-        162.175,
-        158.65,
-        159.43,
-        159.71,
-        159.0,
-        158.92,
-        158.75,
-        159.04,
-        158.86,
-        159.6,
-        159.88,
-        159.82,
-        159.74,
-        159.8,
-        159.45,
-        159.01,
-        159.57,
-        159.005,
         158.63
       ],
       "status": "watching",
@@ -871,26 +582,8 @@
     },
     "COIN": {
       "last": 194.92,
-      "chg_pct": -2.26,
+      "chg_pct": 0.0,
       "history": [
-        199.42,
-        194.29,
-        195.17,
-        194.91,
-        194.885,
-        195.08,
-        194.85,
-        194.96,
-        194.91,
-        195.63,
-        195.7,
-        195.84,
-        195.68,
-        195.42,
-        195.08,
-        194.87,
-        195.4,
-        194.82,
         194.92
       ],
       "status": "watching",
@@ -898,24 +591,8 @@
     },
     "IBIT": {
       "last": 47.56,
-      "chg_pct": -0.62,
+      "chg_pct": 0.0,
       "history": [
-        47.855,
-        47.465,
-        47.51,
-        47.555,
-        47.515,
-        47.55,
-        47.53,
-        47.525,
-        47.565,
-        47.595,
-        47.56,
-        47.58,
-        47.59,
-        47.55,
-        47.575,
-        47.555,
         47.56
       ],
       "status": "watching",
@@ -923,26 +600,8 @@
     },
     "IREN": {
       "last": 44.14,
-      "chg_pct": -4.37,
+      "chg_pct": 0.0,
       "history": [
-        46.155,
-        43.901,
-        44.03,
-        43.98,
-        43.855,
-        43.94,
-        43.92,
-        43.955,
-        43.852,
-        44.075,
-        44.12,
-        44.23,
-        44.19,
-        44.14,
-        44.0,
-        43.87,
-        43.89,
-        43.965,
         44.14
       ],
       "status": "watching",
@@ -950,84 +609,15 @@
     },
     "XLE": {
       "last": 62.06,
-      "chg_pct": -0.91,
+      "chg_pct": 0.0,
       "history": [
-        62.63,
-        61.94,
-        61.95,
-        62.01,
-        62.1,
-        62.09,
-        62.02,
-        62.07,
-        62.04,
-        62.08,
-        62.11,
-        62.115,
         62.06
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     }
   },
-  "news": [
-    {
-      "tag": "CRYPTO",
-      "title": "California's Newsom signs memecoin ban and calls it 'The Opposite of Trump'",
-      "summary": "The California Governor signed AB 2409 as part of an anti-corruption package, framing it as a response to President Trump's $TRUMP fiasco.",
-      "url": "https://www.coindesk.com/markets/2026/09/28/california-s-newsom-signs-memecoin-ban-and-calls-it-the-opposite-of-trump",
-      "ts": "2026-09-28T06:21:52Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Solana ETFs draw record $188 million in a week as Bitwise takes two-thirds of inflows",
-      "summary": "All seven funds attracted money, while Friday\u2019s $87 million intake set a daily record.",
-      "url": "https://www.coindesk.com/markets/2026/09/28/solana-etfs-draw-record-usd188-million-in-a-week-as-bitwise-takes-two-thirds-of-inflows",
-      "ts": "2026-09-28T06:21:06Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin, Nasdaq futures decline as Trump won\u2019t rule out more Iran strikes",
-      "summary": "Trump on Sunday didn\u2019t rule out additional strikes on Iran before the midterm elections, even as he said the war could end soon.",
-      "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
-      "ts": "2026-09-28T03:58:52Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Vitalik Buterin maps Ethereum\u2019s shift beyond a blockchain in sweeping 2030 vision",
-      "summary": "Buterin wants Ethereum to do far more work without forcing every computer on the network to repeat the same calculations.",
-      "url": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
-      "ts": "2026-09-27T14:29:13Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "How months of work on the Clarity Act all fell apart",
-      "summary": "Interviews with industry participants and legislative aides paint a picture of a blown bill-writing process, with sources pointing to nearly every facet of the bill's development and the debate around it as contributing factors to this mont",
-      "url": "https://www.coindesk.com/news-analysis/2026/09/27/how-months-of-work-on-the-clarity-act-all-fell-apart",
-      "ts": "2026-09-27T12:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Kraken\u2019s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
-      "summary": "Kraken parent Payward is unifying trading, payments, asset management and institutional services on common rails, co-CEO Arjun Sethi said.",
-      "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
-      "ts": "2026-09-26T14:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
-      "summary": "The five-year deal could strengthen USDC\u2019s reach in emerging markets, though Tether\u2019s liquidity advantage remains hard to dislodge, analysts told CoinDesk.",
-      "url": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
-      "ts": "2026-09-26T13:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitget hacker moves $83 million in stolen XRP beyond reach of freeze controls",
-      "summary": "Two wallets have been almost emptied and a third is being drained, with about $75 million remaining across the five original holding accounts.",
-      "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
-      "ts": "2026-09-26T12:56:41Z"
-    }
-  ],
+  "news": [],
   "calendar": [
     {
       "what": "JOLTS job openings",
@@ -1046,270 +636,139 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 26,
-    "names": [
-      "AAPL",
-      "AKAM",
-      "AMD",
-      "COIN",
-      "COST",
-      "CRWD",
-      "DIA",
-      "GLD",
-      "GOOGL",
-      "IBIT",
-      "INTC",
-      "IREN",
-      "IWM",
-      "META",
-      "MSFT",
-      "MSTR",
-      "NVDA",
-      "ORCL",
-      "PANW",
-      "PAYX",
-      "QQQ",
-      "SPY",
-      "TSLA",
-      "USO",
-      "VIXY",
-      "XLE"
-    ],
-    "interesting": [
-      [
-        "AKAM",
-        "watching"
-      ],
-      [
-        "COIN",
-        "watching"
-      ],
-      [
-        "COST",
-        "watching"
-      ],
-      [
-        "CRWD",
-        "watching"
-      ],
-      [
-        "GLD",
-        "watching"
-      ],
-      [
-        "GOOGL",
-        "watching"
-      ],
-      [
-        "IBIT",
-        "watching"
-      ],
-      [
-        "INTC",
-        "watching"
-      ],
-      [
-        "IREN",
-        "watching"
-      ],
-      [
-        "IWM",
-        "watching"
-      ],
-      [
-        "MSFT",
-        "watching"
-      ],
-      [
-        "MSTR",
-        "watching"
-      ],
-      [
-        "ORCL",
-        "watching"
-      ],
-      [
-        "PANW",
-        "watching"
-      ],
-      [
-        "QQQ",
-        "watching"
-      ],
-      [
-        "SPY",
-        "watching"
-      ],
-      [
-        "USO",
-        "disqualified"
-      ],
-      [
-        "XLE",
-        "watching"
-      ]
-    ],
-    "no_shape_count": 8,
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0,
     "filled": 0
   },
-  "scan_log_public": "26 names on the list (8 quiet) \u00b7 0 tickets.",
+  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
-        "sym": "MSFT",
-        "chg_pct": 3.69
-      },
-      {
         "sym": "SOL",
-        "chg_pct": 1.21
+        "chg_pct": 0.35
       },
       {
-        "sym": "AAPL",
-        "chg_pct": 1.11
+        "sym": "ETH",
+        "chg_pct": 0.24
+      },
+      {
+        "sym": "BTC",
+        "chg_pct": 0.2
       }
     ],
-    "down": [
-      {
-        "sym": "IREN",
-        "chg_pct": -4.37
-      },
-      {
-        "sym": "META",
-        "chg_pct": -3.44
-      },
-      {
-        "sym": "COIN",
-        "chg_pct": -2.26
-      }
-    ]
+    "down": []
   },
   "desk_freshness": {
     "watch": "3:00",
-    "crypto": "5:41"
+    "crypto": "7:54"
   },
-  "desk_board": [
-    {
-      "sym": "USO",
-      "status": "OUT",
-      "why": "Not in play."
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
-  "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
+  "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
     "SPY": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "QQQ": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "IWM": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "XLE": [
       {
-        "t": "8:38 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "NVDA": [
-      {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "GOOGL": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "PANW": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "CRWD": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "GLD": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "MSTR": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "COIN": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "IBIT": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "IREN": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "ORCL": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "INTC": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "COST": [
       {
-        "t": "8:38 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "MSFT": [
       {
-        "t": "2:07 PM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
     "AKAM": [
       {
-        "t": "2:07 PM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
-      }
-    ],
-    "USO": [
-      {
-        "t": null,
-        "line": "Not in play."
       }
     ],
     "SOL": [
@@ -1318,13 +777,13 @@
         "line": "not a setup"
       }
     ],
-    "AAPL": [
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
       }
     ],
-    "META": [
+    "BTC": [
       {
         "t": null,
         "line": "not a setup"
@@ -1346,20 +805,13 @@
   },
   "pulse": {
     "last_look_iso": "2026-09-25T20:00:50Z",
-    "names": 26,
+    "names": 0,
     "tickets": 0,
-    "cadence_min": 4
+    "cadence_min": 30
   },
-  "today_label": "Fri 9/25",
-  "narrative_line": "Looked at 26 names. Nothing cleared. Still scanning.",
+  "today_label": "Mon 9/28",
+  "narrative_line": null,
   "session_caption": "No fills today. Scanning.",
-  "delayed_pass_lines": [
-    "AKAM \u2014 still watching, nothing confirmed.",
-    "COIN \u2014 still watching, nothing confirmed.",
-    "COST \u2014 still watching, nothing confirmed.",
-    "CRWD \u2014 still watching, nothing confirmed.",
-    "GLD \u2014 still watching, nothing confirmed.",
-    "GOOGL \u2014 still watching, nothing confirmed."
-  ],
-  "closed_caption": "Friday: desk printed no tickets. Week sits 1-0."
+  "delayed_pass_lines": [],
+  "closed_caption": "Monday: desk printed no tickets. Week sits 0-0."
 }
