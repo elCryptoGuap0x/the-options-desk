@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-28T13:42:27Z",
+  "generated_at": "2026-09-28T13:51:34Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-29T13:30:00Z",
-    "position": "FLAT",
+    "position": "OPEN",
     "desk_arms": null
   },
   "stats": {
@@ -443,8 +443,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83750.93,
-      "chg_pct": 0.48,
+      "last": 83468.35,
+      "chg_pct": 0.14,
       "history": [
         83350.325,
         83518.585,
@@ -455,14 +455,17 @@
         83450.795,
         83433.065,
         83753.185,
-        83750.935
+        83750.935,
+        83696.175,
+        83758.685,
+        83468.355
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2696.05,
-      "chg_pct": 0.56,
+      "last": 2687.13,
+      "chg_pct": 0.23,
       "history": [
         2680.945,
         2687.28,
@@ -473,14 +476,17 @@
         2684.415,
         2683.09,
         2693.495,
-        2696.045
+        2696.045,
+        2695.62,
+        2696.455,
+        2687.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.22,
-      "chg_pct": 0.61,
+      "last": 119.58,
+      "chg_pct": 0.07,
       "history": [
         119.495,
         119.91,
@@ -491,14 +497,17 @@
         119.55,
         119.565,
         120.185,
-        120.225
+        120.225,
+        120.07,
+        120.125,
+        119.575
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 767.55,
-      "chg_pct": -0.5,
+      "last": 767.47,
+      "chg_pct": -0.51,
       "history": [
         771.39,
         769.14,
@@ -506,14 +515,15 @@
         768.36,
         768.44,
         767.18,
-        767.55
+        767.55,
+        767.47
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 738.84,
-      "chg_pct": -0.76,
+      "last": 738.66,
+      "chg_pct": -0.79,
       "history": [
         744.51,
         741.05,
@@ -521,7 +531,8 @@
         740.43,
         741.08,
         738.29,
-        738.84
+        738.84,
+        738.66
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -602,15 +613,16 @@
       "why": "On the list. No ticket."
     },
     "AMZN": {
-      "last": 245.34,
-      "chg_pct": -0.93,
+      "last": 245.29,
+      "chg_pct": -0.95,
       "history": [
         247.64,
         247.0,
         246.7,
         246.05,
         245.71,
-        245.34
+        245.34,
+        245.29
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -924,8 +936,8 @@
         "chg_pct": 1.03
       },
       {
-        "sym": "SOL",
-        "chg_pct": 0.61
+        "sym": "AAPL",
+        "chg_pct": 0.52
       }
     ],
     "down": [
@@ -944,8 +956,8 @@
     ]
   },
   "desk_freshness": {
-    "watch": "8:39",
-    "crypto": "8:42"
+    "watch": "8:45",
+    "crypto": "8:51"
   },
   "desk_board": [
     {
@@ -964,13 +976,17 @@
       "why": "Not in play."
     }
   ],
-  "last_fill_at": "2026-09-23T14:10:57Z",
+  "last_fill_at": "2026-09-28T13:44:59Z",
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
     "SPY": [
       {
         "t": "8:35 AM ET",
         "line": "Added to the list."
+      },
+      {
+        "t": "09:45 AM ET",
+        "line": "Checked \u2014 no ticket."
       }
     ],
     "QQQ": [
@@ -1122,12 +1138,6 @@
         "t": "9:16 AM ET",
         "line": "Added to the list."
       }
-    ],
-    "SOL": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
     ]
   },
   "btc_range": {
@@ -1144,7 +1154,7 @@
     "asof": "2026-09-28T07:36:07Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-28T13:39:30Z",
+    "last_look_iso": "2026-09-28T13:45:30Z",
     "names": 27,
     "tickets": 0,
     "cadence_min": 3
