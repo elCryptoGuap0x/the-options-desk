@@ -1,35 +1,48 @@
 {
-  "generated_at": "2026-09-28T13:51:34Z",
+  "generated_at": "2026-09-28T14:00:41Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-29T13:30:00Z",
-    "position": "OPEN",
+    "position": "FLAT",
     "desk_arms": null
   },
   "stats": {
-    "record": "0-0",
-    "win_rate": "\u2014",
-    "trades_this_week": 0,
+    "record": "0-1",
+    "win_rate": "0%",
+    "trades_this_week": 1,
     "typical_hold": "0DTE-2DTE",
     "avg_win": "\u2014",
-    "avg_loss": "\u2014",
-    "net_per_ticket": "\u2014",
-    "hold_typ": "\u2014",
+    "avg_loss": "-26.2%",
+    "net_per_ticket": "-26.2%",
+    "hold_typ": "~11 min",
     "prior_week_record": "1-0",
     "session_pnl_usd": 11.0,
     "prior_week_net_usd": 11,
-    "today_record": "0 of 0 today"
+    "today_record": "0 of 1 today"
   },
   "sparkline_cum_pct": [
-    0.0
+    0.0,
+    -26.2
   ],
   "prior_week_sparkline_cum_pct": [
     0.0,
     19.6
   ],
   "tickets": [
+    {
+      "day": "Mon 9/28",
+      "sym": "SPY",
+      "dir": "put",
+      "pct": -26.2,
+      "entry_price": "1.07",
+      "exit_price": "0.79",
+      "entry": "8:44a",
+      "exit": "8:55a",
+      "dur": "11 min",
+      "dte": "0DTE"
+    },
     {
       "day": "Wed 9/23",
       "sym": "IWM",
@@ -375,9 +388,9 @@
     "L",
     "L",
     "L",
-    "L",
     "W",
-    "W"
+    "W",
+    "L"
   ],
   "weeks": [
     {
@@ -433,9 +446,9 @@
     {
       "week_label": "9/28\u2013\u2026",
       "week_start": "2026-09-28",
-      "record": "0-0",
-      "net_usd": 0,
-      "avg_hold": "\u2014",
+      "record": "0-1",
+      "net_usd": -28,
+      "avg_hold": "11 min",
       "disasters": 0,
       "product": "current system",
       "locked": false
@@ -443,8 +456,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83468.35,
-      "chg_pct": 0.14,
+      "last": 83536.55,
+      "chg_pct": 0.22,
       "history": [
         83350.325,
         83518.585,
@@ -458,14 +471,17 @@
         83750.935,
         83696.175,
         83758.685,
-        83468.355
+        83468.355,
+        83683.305,
+        83659.205,
+        83536.555
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2687.13,
-      "chg_pct": 0.23,
+      "last": 2687.55,
+      "chg_pct": 0.25,
       "history": [
         2680.945,
         2687.28,
@@ -479,14 +495,17 @@
         2696.045,
         2695.62,
         2696.455,
-        2687.13
+        2687.13,
+        2692.835,
+        2691.655,
+        2687.545
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.58,
-      "chg_pct": 0.07,
+      "last": 119.66,
+      "chg_pct": 0.14,
       "history": [
         119.495,
         119.91,
@@ -500,14 +519,17 @@
         120.225,
         120.07,
         120.125,
-        119.575
+        119.575,
+        119.935,
+        119.915,
+        119.66
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 767.47,
-      "chg_pct": -0.51,
+      "last": 767.75,
+      "chg_pct": -0.47,
       "history": [
         771.39,
         769.14,
@@ -516,14 +538,15 @@
         768.44,
         767.18,
         767.55,
-        767.47
+        767.47,
+        767.75
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 738.66,
-      "chg_pct": -0.79,
+      "last": 738.42,
+      "chg_pct": -0.82,
       "history": [
         744.51,
         741.05,
@@ -532,7 +555,8 @@
         741.08,
         738.29,
         738.84,
-        738.66
+        738.66,
+        738.42
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -568,8 +592,8 @@
       "why": "Looked 8:54 AM ET \u2014 no break, quiet tape."
     },
     "AAPL": {
-      "last": 342.85,
-      "chg_pct": 0.52,
+      "last": 342.14,
+      "chg_pct": 0.31,
       "history": [
         341.07,
         340.19,
@@ -577,14 +601,15 @@
         340.45,
         341.85,
         341.6,
-        342.85
+        342.85,
+        342.14
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "MSFT": {
-      "last": 503.61,
-      "chg_pct": -2.52,
+      "last": 507.07,
+      "chg_pct": -1.85,
       "history": [
         516.65,
         511.53,
@@ -592,14 +617,15 @@
         505.5,
         504.75,
         503.31,
-        503.61
+        503.61,
+        507.072
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "NVDA": {
-      "last": 232.16,
-      "chg_pct": 3.18,
+      "last": 232.31,
+      "chg_pct": 3.25,
       "history": [
         225.0,
         229.8,
@@ -607,14 +633,15 @@
         229.73,
         231.99,
         232.82,
-        232.16
+        232.16,
+        232.31
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "AMZN": {
-      "last": 245.29,
-      "chg_pct": -0.95,
+      "last": 245.83,
+      "chg_pct": -0.73,
       "history": [
         247.64,
         247.0,
@@ -622,14 +649,15 @@
         246.05,
         245.71,
         245.34,
-        245.29
+        245.29,
+        245.83
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "META": {
-      "last": 723.11,
-      "chg_pct": -3.73,
+      "last": 720.49,
+      "chg_pct": -4.08,
       "history": [
         751.1,
         741.19,
@@ -637,7 +665,8 @@
         749.0,
         731.46,
         726.42,
-        723.11
+        723.11,
+        720.49
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -653,8 +682,8 @@
       "why": "On the list. No ticket."
     },
     "TSLA": {
-      "last": 365.6,
-      "chg_pct": -1.72,
+      "last": 363.07,
+      "chg_pct": -2.4,
       "history": [
         372.0,
         370.7,
@@ -662,51 +691,56 @@
         368.02,
         365.22,
         365.5,
-        365.6
+        365.6,
+        363.075
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "MSTR": {
-      "last": 157.43,
-      "chg_pct": -0.76,
+      "last": 159.28,
+      "chg_pct": 0.41,
       "history": [
         158.63,
-        157.43
+        157.43,
+        159.28
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "COIN": {
-      "last": 194.2,
-      "chg_pct": -0.37,
+      "last": 196.18,
+      "chg_pct": 0.65,
       "history": [
         194.92,
-        194.2
+        194.2,
+        196.18
       ],
       "status": "ruled out",
       "why": "Not in play."
     },
     "IBIT": {
-      "last": 47.45,
-      "chg_pct": -0.23,
+      "last": 47.37,
+      "chg_pct": -0.4,
       "history": [
         47.56,
         47.29,
         47.25,
         47.28,
         47.26,
-        47.45
+        47.45,
+        47.37
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "IREN": {
-      "last": 43.28,
-      "chg_pct": -1.95,
+      "last": 43.51,
+      "chg_pct": -1.44,
       "history": [
         44.14,
-        43.28
+        43.28,
+        43.505
       ],
       "status": "ruled out",
       "why": "Not in play."
@@ -921,43 +955,43 @@
       ]
     ],
     "no_shape_count": 3,
-    "filled": 0
+    "filled": 1
   },
-  "scan_log_public": "27 names on the list (3 quiet) \u00b7 0 tickets.",
+  "scan_log_public": "Closed <span class=\"desk-tag bad\">SPY</span> -26.2%.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
         "sym": "NVDA",
-        "chg_pct": 3.18
+        "chg_pct": 3.25
       },
       {
         "sym": "XLE",
         "chg_pct": 1.03
       },
       {
-        "sym": "AAPL",
-        "chg_pct": 0.52
+        "sym": "COIN",
+        "chg_pct": 0.65
       }
     ],
     "down": [
       {
         "sym": "META",
-        "chg_pct": -3.73
+        "chg_pct": -4.08
+      },
+      {
+        "sym": "TSLA",
+        "chg_pct": -2.4
       },
       {
         "sym": "MSFT",
-        "chg_pct": -2.52
-      },
-      {
-        "sym": "IREN",
-        "chg_pct": -1.95
+        "chg_pct": -1.85
       }
     ]
   },
   "desk_freshness": {
-    "watch": "8:45",
-    "crypto": "8:51"
+    "watch": "8:57",
+    "crypto": "9:00"
   },
   "desk_board": [
     {
@@ -976,7 +1010,7 @@
       "why": "Not in play."
     }
   ],
-  "last_fill_at": "2026-09-28T13:44:59Z",
+  "last_fill_at": "2026-09-28T13:55:34Z",
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
     "SPY": [
@@ -1154,14 +1188,14 @@
     "asof": "2026-09-28T07:36:07Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-28T13:45:30Z",
+    "last_look_iso": "2026-09-28T13:57:30Z",
     "names": 27,
-    "tickets": 0,
+    "tickets": 1,
     "cadence_min": 3
   },
   "today_label": "Mon 9/28",
-  "narrative_line": "Looked at 27 names. Nothing cleared. Still scanning.",
-  "session_caption": "No fills today. Scanning.",
+  "narrative_line": null,
+  "session_caption": "1 fill today. SPY put. -26.2%. Scanning.",
   "delayed_pass_lines": [
     "AAPL \u2014 still watching, nothing confirmed.",
     "AKAM \u2014 still watching, nothing confirmed.",
@@ -1170,5 +1204,5 @@
     "COIN \u2014 no tradeable contract today.",
     "COST \u2014 still watching, nothing confirmed."
   ],
-  "closed_caption": "Monday: desk printed no tickets. Week sits 0-0."
+  "closed_caption": "Monday: desk printed one ticket, a -26.2% loser on SPY. Week sits 0-1."
 }
