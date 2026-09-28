@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T16:22:39Z",
+  "generated_at": "2026-09-28T16:31:45Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -456,12 +456,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83749.05,
-      "chg_pct": 0.48,
+      "last": 84005.4,
+      "chg_pct": 0.79,
       "history": [
-        82977.295,
-        82950.815,
-        82937.145,
         82737.775,
         82863.7,
         82955.66,
@@ -488,18 +485,18 @@
         83405.295,
         83377.065,
         83525.405,
-        83749.055
+        83749.055,
+        83847.105,
+        84059.695,
+        84005.405
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2691.35,
-      "chg_pct": 0.39,
+      "last": 2694.07,
+      "chg_pct": 0.49,
       "history": [
-        2668.485,
-        2663.96,
-        2663.245,
         2654.96,
         2662.345,
         2665.68,
@@ -526,18 +523,18 @@
         2674.455,
         2672.435,
         2679.085,
-        2691.35
+        2691.35,
+        2691.815,
+        2695.325,
+        2694.065
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.81,
-      "chg_pct": 0.26,
+      "last": 120.06,
+      "chg_pct": 0.48,
       "history": [
-        118.17,
-        118.205,
-        118.29,
         117.62,
         117.96,
         118.05,
@@ -564,7 +561,10 @@
         118.71,
         118.66,
         119.045,
-        119.805
+        119.805,
+        119.84,
+        120.19,
+        120.065
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1227,7 +1227,7 @@
       },
       {
         "sym": "BTC",
-        "chg_pct": 0.48
+        "chg_pct": 0.79
       }
     ],
     "down": [
@@ -1247,7 +1247,7 @@
   },
   "desk_freshness": {
     "watch": "11:16",
-    "crypto": "11:22"
+    "crypto": "11:31"
   },
   "desk_board": [
     {
@@ -1504,7 +1504,7 @@
   "narrative_line": null,
   "session_caption": "1 fill today. SPY put. -26.2%. Scanning.",
   "delayed_pass_lines": [
-    "AAPL \u2014 quiet, no shape yet.",
+    "AAPL \u2014 still watching, nothing confirmed.",
     "AKAM \u2014 still watching, nothing confirmed.",
     "AMD \u2014 quiet, no shape yet.",
     "AMZN \u2014 quiet, no shape yet.",
