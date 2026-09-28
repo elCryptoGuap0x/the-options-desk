@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-28T01:34:38Z",
+  "generated_at": "2026-09-28T07:36:07Z",
   "session": {
-    "day_label": "SUN",
-    "market_state": "WEEKEND",
-    "next_open": "MON 8:30 CT",
+    "day_label": "MON",
+    "market_state": "CLOSED",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-09-28T13:30:00Z",
     "position": "FLAT",
-    "desk_arms": "MON 8:20 CT"
+    "desk_arms": null
   },
   "stats": {
     "record": "1-0",
@@ -440,10 +440,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84040,
-      "chg_pct": -0.31,
+      "last": 82920,
+      "chg_pct": -1.93,
       "history": [
-        83927.255,
         83966.43,
         83960.525,
         84023.875,
@@ -482,16 +481,16 @@
         84388,
         84732,
         84209,
-        84040
+        84040,
+        82920
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2673.09,
-      "chg_pct": -0.67,
+      "last": 2642.65,
+      "chg_pct": -2.46,
       "history": [
-        2693.145,
         2692.705,
         2695.055,
         2693.85,
@@ -530,16 +529,16 @@
         2686.06,
         2692.26,
         2674.86,
-        2673.09
+        2673.09,
+        2642.65
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.9,
-      "chg_pct": 0.91,
+      "last": 118.05,
+      "chg_pct": -3.23,
       "history": [
-        122.045,
         122.0,
         122.1,
         121.965,
@@ -578,7 +577,8 @@
         121.84,
         123.01,
         121.43,
-        121.9
+        121.9,
+        118.05
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -973,6 +973,27 @@
   "news": [
     {
       "tag": "CRYPTO",
+      "title": "California's Newsom signs memecoin ban and calls it 'The Opposite of Trump'",
+      "summary": "The California Governor signed AB 2409 as part of an anti-corruption package, framing it as a response to President Trump's $TRUMP fiasco.",
+      "url": "https://www.coindesk.com/markets/2026/09/28/california-s-newsom-signs-memecoin-ban-and-calls-it-the-opposite-of-trump",
+      "ts": "2026-09-28T06:21:52Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Solana ETFs draw record $188 million in a week as Bitwise takes two-thirds of inflows",
+      "summary": "All seven funds attracted money, while Friday\u2019s $87 million intake set a daily record.",
+      "url": "https://www.coindesk.com/markets/2026/09/28/solana-etfs-draw-record-usd188-million-in-a-week-as-bitwise-takes-two-thirds-of-inflows",
+      "ts": "2026-09-28T06:21:06Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin, Nasdaq futures decline as Trump won\u2019t rule out more Iran strikes",
+      "summary": "Trump on Sunday didn\u2019t rule out additional strikes on Iran before the midterm elections, even as he said the war could end soon.",
+      "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+      "ts": "2026-09-28T03:58:52Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Vitalik Buterin maps Ethereum\u2019s shift beyond a blockchain in sweeping 2030 vision",
       "summary": "Buterin wants Ethereum to do far more work without forcing every computer on the network to repeat the same calculations.",
       "url": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision",
@@ -1001,31 +1022,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitget hacker moves $83 million in stolen XRP that Ripple cannot freeze",
+      "title": "Bitget hacker moves $83 million in stolen XRP beyond reach of freeze controls",
       "summary": "Two wallets have been almost emptied and a third is being drained, with about $75 million remaining across the five original holding accounts.",
       "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
       "ts": "2026-09-26T12:56:41Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin could soon get Zcash-style 'shielded' privacy without changing its rules",
-      "summary": "Researchers have mapped out private bitcoin-denominated transfers that run alongside Bitcoin, but the system still lacks a finished way to lock up real BTC and release it again.",
-      "url": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules",
-      "ts": "2026-09-26T12:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Solana\u2019s 150-millisecond settlement upgrade reaches second public test network",
-      "summary": "Alpenglow is running on both public test networks, giving application teams a place to check their software before the live blockchain switches.",
-      "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
-      "ts": "2026-09-26T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "XRP Ledger\u2019s Batch upgrade slips to Oct. 9 after validator support resets",
-      "summary": "The feature would let users bundle up to eight transactions, including asset-and-payment transfers, but a brief drop below the network\u2019s 80% support threshold restarted its two-week activation clock.",
-      "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
-      "ts": "2026-09-26T04:30:00Z"
     }
   ],
   "calendar": [
@@ -1332,17 +1332,17 @@
     ]
   },
   "btc_range": {
-    "last": 84040,
+    "last": 82933,
     "high_24h": 85089,
-    "low_24h": 84058,
-    "chg_pct": -0.31
+    "low_24h": 82778,
+    "chg_pct": -1.92
   },
   "macro": {
     "10Y": 5.18,
-    "DXY": 101.03,
-    "WTI": 93.49,
-    "VIX": 14.87,
-    "asof": "2026-09-28T01:34:38Z"
+    "DXY": 101.15,
+    "WTI": 94.33,
+    "VIX": 16.14,
+    "asof": "2026-09-28T07:36:07Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-25T20:00:50Z",
