@@ -576,6 +576,7 @@
   .wk-net.bad { color: var(--bad); }
   .wk-pending { color: var(--text-faint); font-style: italic; }
   .weeks-row .wk-disasters { color: var(--text-dim); }
+  .weeks-row .wk-n { font-family: var(--mono); font-size: 11px; color: var(--text-faint); font-weight: 400; }
   .ticket .time { font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: right; }
   .ticket .dur { font-family: var(--mono); font-size: 10px; color: var(--text-faint); text-align: right; min-width: 40px; }
   .ticket .pct { font-family: var(--mono); font-weight: 700; font-size: 14.5px; text-align: right; min-width: 62px; font-variant-numeric: tabular-nums; }
@@ -2403,17 +2404,24 @@
     // this change. The wk-pending/-- fallbacks below stay as defensive
     // code for a future week that's added before being backfilled.
     var html = '<div class="weeks-header"><span>Week</span><span>Record</span>' +
-      '<span>Net</span><span>Avg hold</span><span>Disasters</span></div>';
+      '<span>Net</span><span>Avg hold</span><span>Floors</span></div>';
     weeks.forEach(function (w) {
       var hasNet = w.net_usd !== null && w.net_usd !== undefined;
       var netHtml = hasNet
         ? '<span class="wk-net ' + (w.net_usd >= 0 ? "good" : "bad") + '">' + (w.net_usd >= 0 ? "+$" : "-$") + Math.abs(w.net_usd) + '</span>'
         : '<span class="wk-pending">pending</span>';
       var hasDisasters = w.disasters !== null && w.disasters !== undefined;
-      var disastersText = hasDisasters ? (w.disasters + " disaster" + (w.disasters === 1 ? "" : "s")) : "—";
+      var disastersText = hasDisasters ? (w.disasters + " floor" + (w.disasters === 1 ? "" : "s")) : "—";
+      // n added 9/28, real feedback: a lone "1-0" row (one ticket) reads
+      // like a breakout week without a visible sample size right next to
+      // it. Parsed from record's own "W-L" string -- no new backend
+      // field needed, record already carries the real counts.
+      var recordParts = /^(\d+)-(\d+)$/.exec(w.record || "");
+      var n = recordParts ? (parseInt(recordParts[1], 10) + parseInt(recordParts[2], 10)) : null;
+      var recordHtml = w.record + (n !== null ? ' <span class="wk-n">· n=' + n + '</span>' : '');
       html += '<div class="weeks-row' + (w.locked === false ? " current" : "") + '">' +
         '<span class="wk-label">' + w.week_label + '</span>' +
-        '<span class="wk-record">' + w.record + '</span>' +
+        '<span class="wk-record">' + recordHtml + '</span>' +
         netHtml +
         '<span>' + (w.avg_hold || "—") + '</span>' +
         '<span class="wk-disasters">' + disastersText + '</span>' +
