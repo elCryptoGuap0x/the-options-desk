@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T13:16:31Z",
+  "generated_at": "2026-09-28T13:24:15Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -443,34 +443,37 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83418.21,
-      "chg_pct": 0.08,
+      "last": 83391.66,
+      "chg_pct": 0.05,
       "history": [
         83350.325,
         83518.585,
-        83418.205
+        83418.205,
+        83391.665
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2686.26,
-      "chg_pct": 0.2,
+      "last": 2683.99,
+      "chg_pct": 0.11,
       "history": [
         2680.945,
         2687.28,
-        2686.265
+        2686.265,
+        2683.99
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.6,
-      "chg_pct": 0.09,
+      "last": 119.56,
+      "chg_pct": 0.06,
       "history": [
         119.495,
         119.91,
-        119.6
+        119.6,
+        119.565
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -856,8 +859,8 @@
         "chg_pct": 1.03
       },
       {
-        "sym": "ETH",
-        "chg_pct": 0.2
+        "sym": "VIXY",
+        "chg_pct": 0.12
       }
     ],
     "down": [
@@ -877,7 +880,7 @@
   },
   "desk_freshness": {
     "watch": "7:54",
-    "crypto": "8:16"
+    "crypto": "8:24"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
@@ -1039,7 +1042,7 @@
         "line": "Added to the list."
       }
     ],
-    "ETH": [
+    "VIXY": [
       {
         "t": null,
         "line": "not a setup"
