@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T16:02:00Z",
+  "generated_at": "2026-09-28T16:13:32Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -456,13 +456,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83331.01,
-      "chg_pct": -0.02,
+      "last": 83405.29,
+      "chg_pct": 0.07,
       "history": [
-        83447.475,
-        83545.525,
-        83364.845,
-        83279.295,
         83227.5,
         83409.845,
         83401.505,
@@ -488,19 +484,19 @@
         83210.18,
         83216.19,
         83245.895,
-        83331.005
+        83331.005,
+        83275.085,
+        83313.305,
+        83406.795,
+        83405.295
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2675.72,
-      "chg_pct": -0.19,
+      "last": 2674.45,
+      "chg_pct": -0.24,
       "history": [
-        2682.9,
-        2685.485,
-        2678.34,
-        2673.165,
         2671.895,
         2680.07,
         2680.355,
@@ -526,19 +522,19 @@
         2674.81,
         2675.985,
         2675.795,
-        2675.725
+        2675.725,
+        2672.655,
+        2673.85,
+        2676.795,
+        2674.455
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.56,
-      "chg_pct": -0.78,
+      "last": 118.71,
+      "chg_pct": -0.66,
       "history": [
-        119.25,
-        119.365,
-        119.015,
-        118.725,
         118.645,
         119.04,
         119.03,
@@ -564,14 +560,18 @@
         118.515,
         118.455,
         118.52,
-        118.565
+        118.565,
+        118.305,
+        118.485,
+        118.61,
+        118.71
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 764.91,
-      "chg_pct": -0.84,
+      "last": 765.6,
+      "chg_pct": -0.75,
       "history": [
         771.39,
         769.14,
@@ -599,14 +599,17 @@
         764.78,
         765.07,
         765.34,
-        764.915
+        764.915,
+        765.23,
+        765.35,
+        765.6
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 734.43,
-      "chg_pct": -1.35,
+      "last": 735.62,
+      "chg_pct": -1.19,
       "history": [
         744.51,
         741.05,
@@ -634,7 +637,10 @@
         734.26,
         734.94,
         735.26,
-        734.43
+        734.43,
+        735.225,
+        735.31,
+        735.62
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -670,8 +676,8 @@
       "why": "Looked 8:54 AM ET \u2014 no break, quiet tape."
     },
     "AAPL": {
-      "last": 341.11,
-      "chg_pct": 0.01,
+      "last": 340.37,
+      "chg_pct": -0.21,
       "history": [
         341.07,
         340.19,
@@ -698,14 +704,17 @@
         340.84,
         341.27,
         341.17,
-        341.11
+        341.11,
+        340.77,
+        340.765,
+        340.37
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "MSFT": {
-      "last": 509.15,
-      "chg_pct": -1.45,
+      "last": 510.78,
+      "chg_pct": -1.14,
       "history": [
         516.65,
         511.53,
@@ -732,14 +741,17 @@
         509.36,
         509.42,
         509.215,
-        509.155
+        509.155,
+        510.05,
+        510.485,
+        510.78
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "NVDA": {
-      "last": 229.9,
-      "chg_pct": 2.18,
+      "last": 230.19,
+      "chg_pct": 2.31,
       "history": [
         225.0,
         229.8,
@@ -766,14 +778,17 @@
         229.975,
         230.155,
         230.325,
-        229.9
+        229.9,
+        229.81,
+        230.105,
+        230.195
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "AMZN": {
-      "last": 246.52,
-      "chg_pct": -0.45,
+      "last": 246.33,
+      "chg_pct": -0.53,
       "history": [
         247.64,
         247.0,
@@ -800,14 +815,17 @@
         246.81,
         246.63,
         246.82,
-        246.52
+        246.52,
+        246.32,
+        246.24,
+        246.33
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "META": {
-      "last": 719.07,
-      "chg_pct": -4.26,
+      "last": 719.47,
+      "chg_pct": -4.21,
       "history": [
         751.1,
         741.19,
@@ -834,7 +852,10 @@
         720.0,
         720.115,
         720.9,
-        719.0679
+        719.0679,
+        719.335,
+        720.115,
+        719.47
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -850,8 +871,8 @@
       "why": "On the list. No ticket."
     },
     "TSLA": {
-      "last": 359.62,
-      "chg_pct": -3.33,
+      "last": 360.13,
+      "chg_pct": -3.19,
       "history": [
         372.0,
         370.7,
@@ -878,7 +899,10 @@
         360.54,
         360.13,
         360.09,
-        359.62
+        359.62,
+        360.145,
+        360.34,
+        360.13
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -919,8 +943,8 @@
       "why": "Not in play."
     },
     "IBIT": {
-      "last": 47.14,
-      "chg_pct": -0.88,
+      "last": 47.23,
+      "chg_pct": -0.69,
       "history": [
         47.56,
         47.29,
@@ -945,7 +969,10 @@
         46.9183,
         46.9999,
         47.11,
-        47.1401
+        47.1401,
+        47.18,
+        47.155,
+        47.23
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -1185,7 +1212,7 @@
     "up": [
       {
         "sym": "NVDA",
-        "chg_pct": 2.18
+        "chg_pct": 2.31
       },
       {
         "sym": "XLE",
@@ -1203,17 +1230,17 @@
       },
       {
         "sym": "META",
-        "chg_pct": -4.26
+        "chg_pct": -4.21
       },
       {
         "sym": "TSLA",
-        "chg_pct": -3.33
+        "chg_pct": -3.19
       }
     ]
   },
   "desk_freshness": {
-    "watch": "10:43",
-    "crypto": "11:02"
+    "watch": "11:11",
+    "crypto": "11:13"
   },
   "desk_board": [
     {
@@ -1461,7 +1488,7 @@
     "asof": "2026-09-28T07:36:07Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-28T15:43:00Z",
+    "last_look_iso": "2026-09-28T16:11:00Z",
     "names": 27,
     "tickets": 1,
     "cadence_min": 4
@@ -1472,7 +1499,7 @@
   "delayed_pass_lines": [
     "AAPL \u2014 still watching, nothing confirmed.",
     "AKAM \u2014 still watching, nothing confirmed.",
-    "AMD \u2014 quiet, no shape yet.",
+    "AMD \u2014 still watching, nothing confirmed.",
     "AMZN \u2014 still watching, nothing confirmed.",
     "COIN \u2014 no tradeable contract today.",
     "COST \u2014 still watching, nothing confirmed."
