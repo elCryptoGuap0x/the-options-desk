@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T20:01:15Z",
+  "generated_at": "2026-09-28T21:52:48Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -472,8 +472,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83372.59,
-      "chg_pct": 0.03,
+      "last": 83377,
+      "chg_pct": -1.51,
       "history": [
         83780.325,
         83853.615,
@@ -504,14 +504,15 @@
         83350.59,
         83343.105,
         83351.375,
-        83372.585
+        83372.585,
+        83377
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2674.11,
-      "chg_pct": -0.26,
+      "last": 2677.49,
+      "chg_pct": -0.25,
       "history": [
         2688.135,
         2690.405,
@@ -542,14 +543,15 @@
         2673.335,
         2674.27,
         2673.84,
-        2674.105
+        2674.105,
+        2677.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.37,
-      "chg_pct": -0.94,
+      "last": 117.96,
+      "chg_pct": -3.98,
       "history": [
         119.365,
         119.525,
@@ -580,7 +582,8 @@
         118.415,
         118.41,
         118.32,
-        118.37
+        118.37,
+        117.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1090,6 +1093,27 @@
       "tag": "Macro",
       "title": "Quiet data morning ahead of a heavy week",
       "summary": "No major US print this morning; Dallas Fed manufacturing lands at 10:30 ET. The rest of the week fills in fast: JOLTS and consumer confidence Tuesday, PCE and the third look at Q2 GDP Wednesday, and payrolls Friday."
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 9/28/2026: Equities Unfazed by Spike in Rates Volatility",
+      "summary": "US bond yields climbed to a two-decade high last week, yet reaction in the cross-asset vol market was mixed. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-9-28-2026-equities-unfazed-by-spike-in-rates-volatility/",
+      "ts": "2026-09-28T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Goldman Sachs brings $100 billion Treasury fund into crypto\u2019s institutional plumbing",
+      "summary": "The bank is bringing its roughly $100 billion Treasury fund to institutional crypto firms without creating a tokenized version of it.",
+      "url": "https://www.coindesk.com/markets/2026/09/28/goldman-sachs-brings-usd100-billion-treasury-fund-into-crypto-s-institutional-plumbing",
+      "ts": "2026-09-28T18:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "The restaking gold rush is over, and top protocols are barely making a profit",
+      "summary": "As restaking yields dried up and smart-contract risks mounted, Ethereum's top liquid restaking protocol walked away from its core business to build a crypto neobank instead.",
+      "url": "https://www.coindesk.com/business/2026/09/28/the-restaking-gold-rush-is-over-and-top-protocols-are-barely-making-a-profit",
+      "ts": "2026-09-28T16:24:51Z"
     }
   ],
   "calendar": [
@@ -1559,17 +1583,17 @@
     ]
   },
   "btc_range": {
-    "last": 82933,
-    "high_24h": 85089,
-    "low_24h": 82778,
-    "chg_pct": -1.92
+    "last": 83371,
+    "high_24h": 84945,
+    "low_24h": 82581,
+    "chg_pct": -1.51
   },
   "macro": {
-    "10Y": 5.18,
-    "DXY": 101.15,
-    "WTI": 94.33,
-    "VIX": 16.14,
-    "asof": "2026-09-28T07:36:07Z"
+    "10Y": 5.24,
+    "DXY": 101.19,
+    "WTI": 93.29,
+    "VIX": 16.07,
+    "asof": "2026-09-28T21:52:48Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-28T19:57:15Z",
