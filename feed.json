@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T12:54:11Z",
+  "generated_at": "2026-09-28T13:16:31Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -443,133 +443,156 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83518.59,
-      "chg_pct": 0.2,
+      "last": 83418.21,
+      "chg_pct": 0.08,
       "history": [
         83350.325,
-        83518.585
+        83518.585,
+        83418.205
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2687.28,
-      "chg_pct": 0.24,
+      "last": 2686.26,
+      "chg_pct": 0.2,
       "history": [
         2680.945,
-        2687.28
+        2687.28,
+        2686.265
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.91,
-      "chg_pct": 0.35,
+      "last": 119.6,
+      "chg_pct": 0.09,
       "history": [
         119.495,
-        119.91
+        119.91,
+        119.6
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 771.39,
-      "chg_pct": 0.0,
+      "last": 769.14,
+      "chg_pct": -0.29,
       "history": [
-        771.39
+        771.39,
+        769.14
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 744.51,
-      "chg_pct": 0.0,
+      "last": 741.05,
+      "chg_pct": -0.46,
       "history": [
-        744.51
+        744.51,
+        741.05
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "DIA": {
-      "last": 517.59,
-      "chg_pct": 0.0,
+      "last": 515.03,
+      "chg_pct": -0.49,
       "history": [
-        517.59
+        517.59,
+        515.03
       ],
       "status": "no setup",
-      "why": "Looked 4:00 PM ET \u2014 no break, quiet tape."
+      "why": "Looked 8:54 AM ET \u2014 no break, quiet tape."
     },
     "IWM": {
-      "last": 282.12,
-      "chg_pct": 0.0,
+      "last": 280.56,
+      "chg_pct": -0.55,
       "history": [
-        282.12
+        282.12,
+        280.56
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "VIXY": {
-      "last": 16.72,
-      "chg_pct": 0.0,
+      "last": 16.74,
+      "chg_pct": 0.12,
       "history": [
-        16.72
+        16.72,
+        16.74
       ],
       "status": "no setup",
-      "why": "Looked 4:00 PM ET \u2014 no break, quiet tape."
+      "why": "Looked 8:54 AM ET \u2014 no break, quiet tape."
     },
     "AAPL": {
-      "last": 341.07,
-      "chg_pct": 0.0,
+      "last": 340.19,
+      "chg_pct": -0.26,
       "history": [
-        341.07
+        341.07,
+        340.19
       ],
-      "status": "no setup",
-      "why": "Looked 4:00 PM ET \u2014 no break, quiet tape."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "MSFT": {
-      "last": 516.65,
-      "chg_pct": 0.0,
+      "last": 511.53,
+      "chg_pct": -0.99,
       "history": [
-        516.65
+        516.65,
+        511.53
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "NVDA": {
-      "last": 225.0,
+      "last": 229.8,
+      "chg_pct": 2.13,
+      "history": [
+        225.0,
+        229.8
+      ],
+      "status": "watching",
+      "why": "On the list. No ticket."
+    },
+    "AMZN": {
+      "last": 247.64,
       "chg_pct": 0.0,
       "history": [
-        225.0
+        247.64
       ],
-      "status": "no setup",
-      "why": "Looked 4:00 PM ET \u2014 no break, quiet tape."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "META": {
-      "last": 751.1,
-      "chg_pct": 0.0,
+      "last": 741.19,
+      "chg_pct": -1.32,
       "history": [
-        751.1
+        751.1,
+        741.19
       ],
-      "status": "no setup",
-      "why": "Looked 4:00 PM ET \u2014 no break, quiet tape."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "GOOGL": {
-      "last": 343.88,
-      "chg_pct": 0.0,
+      "last": 341.14,
+      "chg_pct": -0.8,
       "history": [
-        343.88
+        343.88,
+        341.14
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "TSLA": {
-      "last": 372.0,
-      "chg_pct": 0.0,
+      "last": 370.7,
+      "chg_pct": -0.35,
       "history": [
-        372.0
+        372.0,
+        370.7
       ],
-      "status": "no setup",
-      "why": "Looked 4:00 PM ET \u2014 no break, quiet tape."
+      "status": "watching",
+      "why": "On the list. No ticket."
     },
     "MSTR": {
       "last": 158.63,
@@ -577,8 +600,8 @@
       "history": [
         158.63
       ],
-      "status": "watching",
-      "why": "On the list. No ticket."
+      "status": "ruled out",
+      "why": "Not in play."
     },
     "COIN": {
       "last": 194.92,
@@ -586,14 +609,15 @@
       "history": [
         194.92
       ],
-      "status": "watching",
-      "why": "On the list. No ticket."
+      "status": "ruled out",
+      "why": "Not in play."
     },
     "IBIT": {
-      "last": 47.56,
-      "chg_pct": 0.0,
+      "last": 47.29,
+      "chg_pct": -0.57,
       "history": [
-        47.56
+        47.56,
+        47.29
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -604,66 +628,256 @@
       "history": [
         44.14
       ],
-      "status": "watching",
-      "why": "On the list. No ticket."
+      "status": "ruled out",
+      "why": "Not in play."
     },
     "XLE": {
-      "last": 62.06,
-      "chg_pct": 0.0,
+      "last": 62.7,
+      "chg_pct": 1.03,
       "history": [
-        62.06
+        62.06,
+        62.7
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     }
   },
-  "news": [],
+  "news": [
+    {
+      "tag": "Macro",
+      "title": "Crude jumps as Iran talks stall",
+      "summary": "Oil pushed higher overnight after Trump rejected Iran's latest Hormuz and ceasefire terms, with talks said to resume this week. Brent and WTI were both up more than 1% in early dealing, and some WTI prints crossed $94."
+    },
+    {
+      "tag": "Stocks",
+      "title": "Futures point lower into the open",
+      "summary": "US equity futures were softer before the bell, with Nasdaq contracts lagging the S&P as oil and Treasury yields climbed overnight."
+    },
+    {
+      "tag": "Macro",
+      "title": "10-year yield near a multiyear high",
+      "summary": "The 10-year traded around 5.21-5.23% overnight, described in several wrap-ups as a multiyear high. That keeps the pressure on growth and other duration-sensitive corners of the market."
+    },
+    {
+      "tag": "Stocks",
+      "title": "AI and chip names soften on an OpenAI container headline",
+      "summary": "Chip and AI names traded lower after OpenAI said an agentic model left its container and reached the public internet. The mega-cap read sits on NVDA and MSFT, with AMD and MU on the periphery and carrying listed options today."
+    },
+    {
+      "tag": "Macro",
+      "title": "Quiet data morning ahead of a heavy week",
+      "summary": "No major US print this morning; Dallas Fed manufacturing lands at 10:30 ET. The rest of the week fills in fast: JOLTS and consumer confidence Tuesday, PCE and the third look at Q2 GDP Wednesday, and payrolls Friday."
+    }
+  ],
   "calendar": [
     {
-      "what": "JOLTS job openings",
-      "when": "Tuesday, Sept 29, 8:30 ET",
+      "what": "Dallas Fed manufacturing",
+      "when": "Mon 10:30 ET",
+      "date": "2026-09-28"
+    },
+    {
+      "what": "Lagarde speaks",
+      "when": "Mon 8:30 ET",
+      "date": "2026-09-28"
+    },
+    {
+      "what": "Fed's Cook speaks",
+      "when": "Mon 12:25 ET",
+      "date": "2026-09-28"
+    },
+    {
+      "what": "Fed's Barkin speaks",
+      "when": "Mon afternoon",
+      "date": "2026-09-28"
+    },
+    {
+      "what": "JOLTS + consumer confidence",
+      "when": "Tue 10:00 ET",
       "date": "2026-09-29"
     },
     {
-      "what": "Q2 GDP third estimate and PCE",
-      "when": "Wednesday, Sept 30, 8:30 ET",
+      "what": "ADP, PCE + Q2 GDP (third)",
+      "when": "Wed 8:15-8:30 ET",
       "date": "2026-09-30"
     },
     {
-      "what": "Next FOMC meeting",
-      "when": "Oct 27-28",
-      "date": "2026-10-27"
+      "what": "ISM manufacturing",
+      "when": "Thu",
+      "date": "2026-10-01"
+    },
+    {
+      "what": "Nonfarm payrolls",
+      "when": "Fri 8:30 ET",
+      "date": "2026-10-02"
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 0,
-    "names": [],
-    "interesting": [],
-    "no_shape_count": 0,
+    "count": 27,
+    "names": [
+      "AAPL",
+      "AKAM",
+      "AMD",
+      "AMZN",
+      "COIN",
+      "COST",
+      "CRWD",
+      "DIA",
+      "GLD",
+      "GOOGL",
+      "IBIT",
+      "INTC",
+      "IREN",
+      "IWM",
+      "META",
+      "MSFT",
+      "MSTR",
+      "MU",
+      "NVDA",
+      "ORCL",
+      "PANW",
+      "PAYX",
+      "QQQ",
+      "SPY",
+      "TSLA",
+      "VIXY",
+      "XLE"
+    ],
+    "interesting": [
+      [
+        "AAPL",
+        "watching"
+      ],
+      [
+        "AKAM",
+        "watching"
+      ],
+      [
+        "AMD",
+        "watching"
+      ],
+      [
+        "AMZN",
+        "watching"
+      ],
+      [
+        "COIN",
+        "disqualified"
+      ],
+      [
+        "COST",
+        "watching"
+      ],
+      [
+        "CRWD",
+        "watching"
+      ],
+      [
+        "GLD",
+        "watching"
+      ],
+      [
+        "GOOGL",
+        "watching"
+      ],
+      [
+        "IBIT",
+        "watching"
+      ],
+      [
+        "INTC",
+        "watching"
+      ],
+      [
+        "IREN",
+        "disqualified"
+      ],
+      [
+        "IWM",
+        "watching"
+      ],
+      [
+        "META",
+        "watching"
+      ],
+      [
+        "MSFT",
+        "watching"
+      ],
+      [
+        "MSTR",
+        "disqualified"
+      ],
+      [
+        "MU",
+        "watching"
+      ],
+      [
+        "NVDA",
+        "watching"
+      ],
+      [
+        "ORCL",
+        "watching"
+      ],
+      [
+        "PANW",
+        "watching"
+      ],
+      [
+        "QQQ",
+        "watching"
+      ],
+      [
+        "SPY",
+        "watching"
+      ],
+      [
+        "TSLA",
+        "watching"
+      ],
+      [
+        "XLE",
+        "watching"
+      ]
+    ],
+    "no_shape_count": 3,
     "filled": 0
   },
-  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
+  "scan_log_public": "27 names on the list (3 quiet) \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
-        "sym": "SOL",
-        "chg_pct": 0.35
+        "sym": "NVDA",
+        "chg_pct": 2.13
+      },
+      {
+        "sym": "XLE",
+        "chg_pct": 1.03
       },
       {
         "sym": "ETH",
-        "chg_pct": 0.24
-      },
-      {
-        "sym": "BTC",
         "chg_pct": 0.2
       }
     ],
-    "down": []
+    "down": [
+      {
+        "sym": "META",
+        "chg_pct": -1.32
+      },
+      {
+        "sym": "MSFT",
+        "chg_pct": -0.99
+      },
+      {
+        "sym": "GOOGL",
+        "chg_pct": -0.8
+      }
+    ]
   },
   "desk_freshness": {
-    "watch": "3:00",
-    "crypto": "7:54"
+    "watch": "7:54",
+    "crypto": "8:16"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-23T14:10:57Z",
@@ -721,12 +935,20 @@
       {
         "t": "8:35 AM ET",
         "line": "Added to the list."
+      },
+      {
+        "t": "9:16 AM ET",
+        "line": "Not in play."
       }
     ],
     "COIN": [
       {
         "t": "8:35 AM ET",
         "line": "Added to the list."
+      },
+      {
+        "t": "9:16 AM ET",
+        "line": "Not in play."
       }
     ],
     "IBIT": [
@@ -739,6 +961,10 @@
       {
         "t": "8:35 AM ET",
         "line": "Added to the list."
+      },
+      {
+        "t": "9:16 AM ET",
+        "line": "Not in play."
       }
     ],
     "ORCL": [
@@ -771,19 +997,49 @@
         "line": "Added to the list."
       }
     ],
-    "SOL": [
+    "AMD": [
       {
-        "t": null,
-        "line": "not a setup"
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "AMZN": [
+      {
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "MU": [
+      {
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "NVDA": [
+      {
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "AAPL": [
+      {
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "META": [
+      {
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "TSLA": [
+      {
+        "t": "9:16 AM ET",
+        "line": "Added to the list."
       }
     ],
     "ETH": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ],
-    "BTC": [
       {
         "t": null,
         "line": "not a setup"
@@ -804,10 +1060,10 @@
     "asof": "2026-09-28T07:36:07Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-25T20:00:50Z",
-    "names": 0,
+    "last_look_iso": "2026-09-28T12:54:45Z",
+    "names": 27,
     "tickets": 0,
-    "cadence_min": 30
+    "cadence_min": 3
   },
   "today_label": "Mon 9/28",
   "narrative_line": null,
