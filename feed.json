@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T17:08:11Z",
+  "generated_at": "2026-09-28T17:17:17Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -18,7 +18,7 @@
     "net_per_ticket": "-26.2%",
     "hold_typ": "~11 min",
     "prior_week_record": "1-0",
-    "session_pnl_usd": 11.0,
+    "session_pnl_usd": -28.0,
     "prior_week_net_usd": 11,
     "today_record": "0 of 1 today"
   },
@@ -456,12 +456,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83590.79,
-      "chg_pct": 0.29,
+      "last": 84247.68,
+      "chg_pct": 1.08,
       "history": [
-        83066.555,
-        83010.145,
-        83039.635,
         83188.635,
         83210.18,
         83216.19,
@@ -488,18 +485,18 @@
         83673.595,
         83573.12,
         83625.465,
-        83590.795
+        83590.795,
+        83569.095,
+        84161.405,
+        84247.675
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2683.28,
-      "chg_pct": 0.09,
+      "last": 2716.89,
+      "chg_pct": 1.34,
       "history": [
-        2667.525,
-        2666.69,
-        2668.015,
         2674.67,
         2674.81,
         2675.985,
@@ -526,18 +523,18 @@
         2685.865,
         2682.615,
         2684.085,
-        2683.285
+        2683.285,
+        2681.68,
+        2714.525,
+        2716.895
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.71,
-      "chg_pct": -0.66,
+      "last": 120.53,
+      "chg_pct": 0.86,
       "history": [
-        118.245,
-        118.13,
-        118.165,
         118.45,
         118.515,
         118.455,
@@ -564,16 +561,18 @@
         119.2,
         118.905,
         118.84,
-        118.71
+        118.71,
+        118.63,
+        120.255,
+        120.525
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
-      "last": 766.81,
-      "chg_pct": -0.59,
+      "last": 766.62,
+      "chg_pct": -0.62,
       "history": [
-        767.47,
         767.75,
         768.32,
         767.71,
@@ -602,16 +601,16 @@
         766.88,
         767.19,
         767.09,
-        766.806
+        766.806,
+        766.62
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "QQQ": {
-      "last": 737.12,
-      "chg_pct": -0.99,
+      "last": 736.72,
+      "chg_pct": -1.05,
       "history": [
-        738.66,
         738.42,
         738.4,
         737.495,
@@ -640,7 +639,8 @@
         737.56,
         737.65,
         737.63,
-        737.115
+        737.115,
+        736.72
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -676,10 +676,9 @@
       "why": "Looked 8:54 AM ET \u2014 no break, quiet tape."
     },
     "AAPL": {
-      "last": 340.45,
-      "chg_pct": -0.18,
+      "last": 340.34,
+      "chg_pct": -0.21,
       "history": [
-        342.85,
         342.14,
         342.39,
         342.13,
@@ -708,16 +707,16 @@
         340.527,
         340.885,
         340.83,
-        340.446
+        340.446,
+        340.34
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "MSFT": {
-      "last": 511.83,
-      "chg_pct": -0.93,
+      "last": 512.18,
+      "chg_pct": -0.87,
       "history": [
-        503.61,
         507.072,
         509.33,
         507.46,
@@ -746,16 +745,16 @@
         511.95,
         512.335,
         512.26,
-        511.83
+        511.83,
+        512.18
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "NVDA": {
-      "last": 230.65,
-      "chg_pct": 2.51,
+      "last": 230.71,
+      "chg_pct": 2.54,
       "history": [
-        232.16,
         232.31,
         231.72,
         231.34,
@@ -784,16 +783,16 @@
         231.07,
         231.075,
         230.955,
-        230.645
+        230.645,
+        230.71
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "AMZN": {
-      "last": 246.6,
-      "chg_pct": -0.42,
+      "last": 246.54,
+      "chg_pct": -0.44,
       "history": [
-        245.29,
         245.83,
         245.94,
         245.66,
@@ -822,16 +821,16 @@
         246.63,
         246.905,
         246.78,
-        246.605
+        246.605,
+        246.54
       ],
       "status": "watching",
       "why": "On the list. No ticket."
     },
     "META": {
-      "last": 722.53,
-      "chg_pct": -3.8,
+      "last": 723.03,
+      "chg_pct": -3.74,
       "history": [
-        723.11,
         720.49,
         726.03,
         723.8,
@@ -860,7 +859,8 @@
         720.88,
         722.995,
         722.72,
-        722.53
+        722.53,
+        723.03
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -876,10 +876,9 @@
       "why": "On the list. No ticket."
     },
     "TSLA": {
-      "last": 359.52,
-      "chg_pct": -3.35,
+      "last": 360.2,
+      "chg_pct": -3.17,
       "history": [
-        365.6,
         363.075,
         362.765,
         362.36,
@@ -908,7 +907,8 @@
         359.701,
         359.765,
         359.68,
-        359.52
+        359.52,
+        360.2
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -955,10 +955,9 @@
       "why": "Not in play."
     },
     "IBIT": {
-      "last": 47.34,
-      "chg_pct": -0.46,
+      "last": 47.45,
+      "chg_pct": -0.23,
       "history": [
-        47.28,
         47.26,
         47.45,
         47.37,
@@ -987,7 +986,8 @@
         47.385,
         47.35,
         47.38,
-        47.34
+        47.34,
+        47.4485
       ],
       "status": "watching",
       "why": "On the list. No ticket."
@@ -1230,15 +1230,15 @@
     "up": [
       {
         "sym": "NVDA",
-        "chg_pct": 2.51
+        "chg_pct": 2.54
       },
       {
-        "sym": "XLE",
-        "chg_pct": 1.03
+        "sym": "ETH",
+        "chg_pct": 1.34
       },
       {
-        "sym": "MSTR",
-        "chg_pct": 0.45
+        "sym": "BTC",
+        "chg_pct": 1.08
       }
     ],
     "down": [
@@ -1248,17 +1248,17 @@
       },
       {
         "sym": "META",
-        "chg_pct": -3.8
+        "chg_pct": -3.74
       },
       {
         "sym": "TSLA",
-        "chg_pct": -3.35
+        "chg_pct": -3.17
       }
     ]
   },
   "desk_freshness": {
-    "watch": "12:06",
-    "crypto": "12:08"
+    "watch": "12:15",
+    "crypto": "12:17"
   },
   "desk_board": [
     {
@@ -1484,6 +1484,18 @@
         "t": "9:16 AM ET",
         "line": "Added to the list."
       }
+    ],
+    "ETH": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "BTC": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
     ]
   },
   "btc_range": {
@@ -1500,7 +1512,7 @@
     "asof": "2026-09-28T07:36:07Z"
   },
   "pulse": {
-    "last_look_iso": "2026-09-28T17:06:00Z",
+    "last_look_iso": "2026-09-28T17:15:00Z",
     "names": 27,
     "tickets": 1,
     "cadence_min": 4
