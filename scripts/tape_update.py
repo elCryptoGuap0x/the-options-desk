@@ -491,7 +491,31 @@ def main():
     session = build_session(now)
 
     if session["market_state"] == "OPEN":
-        print("[tape_update] market_state=OPEN -- the private loop owns this window, not touching feed.json.")
+        # Real gap found and fixed 9/28: this used to refuse ALL work
+        # during RTH, reasoning "the private loop owns this window" --
+        # true for session/market_board's crypto rows/news, all of which
+        # site-build.py (the private loop) actively manages during RTH.
+        # NOT true for macro (10Y/DXY/WTI/VIX, Yahoo) or btc_range
+        # (CoinGecko): site-build.py has zero code touching either field
+        # (confirmed by grep), so deferring them to "the private loop"
+        # just meant nobody updated them for the entire trading session,
+        # every day -- the macro strip's own asof stamp was frozen at
+        # whatever printed right before the open and stayed there until
+        # close. These two fields have no overlap with anything the
+        # private loop tracks, so there is no race to avoid. Still
+        # leaves session/generated_at/market_board/news fully alone --
+        # only macro and btc_range get a real refresh in this branch.
+        print("[tape_update] market_state=OPEN -- session/crypto-board/news deferred to the private loop; refreshing macro/btc_range only (no overlap, no race).")
+        btc_range = fetch_btc_range()
+        macro = fetch_macro()
+        if dry_run:
+            print(json.dumps({"btc_range": btc_range, "macro": macro}, indent=2))
+            return
+        if btc_range:
+            feed["btc_range"] = btc_range
+        feed["macro"] = merge_macro(feed.get("macro"), macro, feed["generated_at"])
+        FEED_PATH.write_text(json.dumps(feed, indent=2))
+        print("[tape_update] wrote feed.json (OPEN-window partial refresh -- macro/btc_range only)")
         return
 
     crypto = fetch_crypto()
