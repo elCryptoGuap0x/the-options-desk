@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T16:19:38Z",
+  "generated_at": "2026-09-28T16:22:39Z",
   "session": {
     "day_label": "MON",
     "market_state": "OPEN",
@@ -456,10 +456,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83525.4,
-      "chg_pct": 0.21,
+      "last": 83749.05,
+      "chg_pct": 0.48,
       "history": [
-        83401.505,
         82977.295,
         82950.815,
         82937.145,
@@ -488,16 +487,16 @@
         83406.795,
         83405.295,
         83377.065,
-        83525.405
+        83525.405,
+        83749.055
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2679.09,
-      "chg_pct": -0.07,
+      "last": 2691.35,
+      "chg_pct": 0.39,
       "history": [
-        2680.355,
         2668.485,
         2663.96,
         2663.245,
@@ -526,16 +525,16 @@
         2676.795,
         2674.455,
         2672.435,
-        2679.085
+        2679.085,
+        2691.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.05,
-      "chg_pct": -0.38,
+      "last": 119.81,
+      "chg_pct": 0.26,
       "history": [
-        119.03,
         118.17,
         118.205,
         118.29,
@@ -564,7 +563,8 @@
         118.61,
         118.71,
         118.66,
-        119.045
+        119.045,
+        119.805
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1227,7 +1227,7 @@
       },
       {
         "sym": "BTC",
-        "chg_pct": 0.21
+        "chg_pct": 0.48
       }
     ],
     "down": [
@@ -1247,7 +1247,7 @@
   },
   "desk_freshness": {
     "watch": "11:16",
-    "crypto": "11:19"
+    "crypto": "11:22"
   },
   "desk_board": [
     {
@@ -1504,10 +1504,10 @@
   "narrative_line": null,
   "session_caption": "1 fill today. SPY put. -26.2%. Scanning.",
   "delayed_pass_lines": [
-    "AAPL \u2014 still watching, nothing confirmed.",
+    "AAPL \u2014 quiet, no shape yet.",
     "AKAM \u2014 still watching, nothing confirmed.",
-    "AMD \u2014 still watching, nothing confirmed.",
-    "AMZN \u2014 still watching, nothing confirmed.",
+    "AMD \u2014 quiet, no shape yet.",
+    "AMZN \u2014 quiet, no shape yet.",
     "COIN \u2014 no tradeable contract today.",
     "COST \u2014 still watching, nothing confirmed."
   ],
