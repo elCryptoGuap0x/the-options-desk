@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-29T14:11:34Z",
+  "generated_at": "2026-09-29T14:29:52Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
     "next_open": "TOMORROW 8:30 CT",
     "next_open_iso": "2026-09-30T13:30:00Z",
-    "position": "FLAT",
+    "position": "OPEN",
     "desk_arms": null
   },
   "stats": {
@@ -472,8 +472,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83908.96,
-      "chg_pct": -0.39,
+      "last": 83932.35,
+      "chg_pct": -0.37,
       "history": [
         84241.485,
         84271.635,
@@ -492,14 +492,20 @@
         84042.355,
         83997.775,
         83957.995,
-        83908.955
+        83908.955,
+        83926.485,
+        83926.065,
+        84031.495,
+        83873.92,
+        84017.335,
+        83932.345
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2717.93,
-      "chg_pct": -0.82,
+      "last": 2716.09,
+      "chg_pct": -0.89,
       "history": [
         2740.445,
         2735.42,
@@ -517,14 +523,21 @@
         2724.055,
         2722.06,
         2720.075,
-        2717.935
+        2717.935,
+        2719.025,
+        2716.265,
+        2721.945,
+        2720.84,
+        2714.165,
+        2718.14,
+        2716.095
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.52,
-      "chg_pct": 0.23,
+      "last": 120.58,
+      "chg_pct": 0.29,
       "history": [
         120.235,
         120.325,
@@ -543,7 +556,13 @@
         120.875,
         120.77,
         120.615,
-        120.515
+        120.515,
+        120.575,
+        120.565,
+        121.005,
+        120.61,
+        120.665,
+        120.58
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1024,7 +1043,7 @@
   },
   "desk_freshness": {
     "watch": "9:00",
-    "crypto": "9:11"
+    "crypto": "9:29"
   },
   "desk_board": [
     {
@@ -1231,9 +1250,9 @@
   "delayed_pass_lines": [
     "AAPL \u2014 still watching, nothing confirmed.",
     "AKAM \u2014 still watching, nothing confirmed.",
-    "AMD \u2014 still watching, nothing confirmed.",
+    "AMD \u2014 close, but not clean enough yet.",
     "AMZN \u2014 still watching, nothing confirmed.",
-    "AVGO \u2014 still watching, nothing confirmed.",
+    "AVGO \u2014 quiet, no shape yet.",
     "COIN \u2014 no tradeable contract today."
   ],
   "closed_caption": "Tuesday: desk printed no tickets. Week sits 0-1."
