@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T15:15:42Z",
+  "generated_at": "2026-09-29T15:24:48Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -472,12 +472,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83448.7,
-      "chg_pct": -0.94,
+      "last": 83116.7,
+      "chg_pct": -1.34,
       "history": [
-        84097.545,
-        84193.615,
-        84309.655,
         84425.695,
         84207.615,
         84042.355,
@@ -504,18 +501,18 @@
         83485.725,
         83543.505,
         83488.305,
-        83448.695
+        83448.695,
+        83355.135,
+        83270.115,
+        83116.695
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2695.51,
-      "chg_pct": -1.64,
+      "last": 2680.71,
+      "chg_pct": -2.18,
       "history": [
-        2725.375,
-        2730.615,
-        2734.655,
         2726.855,
         2724.055,
         2722.06,
@@ -542,18 +539,18 @@
         2695.745,
         2699.435,
         2696.81,
-        2695.505
+        2695.505,
+        2691.14,
+        2687.385,
+        2680.71
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.47,
-      "chg_pct": -0.64,
+      "last": 118.38,
+      "chg_pct": -1.54,
       "history": [
-        120.98,
-        121.115,
-        121.445,
         121.6,
         120.915,
         120.875,
@@ -580,7 +577,10 @@
         119.46,
         119.57,
         119.615,
-        119.465
+        119.465,
+        119.29,
+        118.915,
+        118.38
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1047,21 +1047,21 @@
     "down": [
       {
         "sym": "ETH",
-        "chg_pct": -1.64
+        "chg_pct": -2.18
       },
       {
         "sym": "AAPL",
         "chg_pct": -1.56
       },
       {
-        "sym": "TSLA",
-        "chg_pct": -1.41
+        "sym": "SOL",
+        "chg_pct": -1.54
       }
     ]
   },
   "desk_freshness": {
     "watch": "9:00",
-    "crypto": "10:15"
+    "crypto": "10:24"
   },
   "desk_board": [
     {
@@ -1243,6 +1243,12 @@
       }
     ],
     "ETH": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "SOL": [
       {
         "t": null,
         "line": "not a setup"
