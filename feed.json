@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T19:30:39Z",
+  "generated_at": "2026-09-29T23:10:10Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -1264,9 +1264,9 @@
   "macro": {
     "10Y": 5.25,
     "DXY": 101.38,
-    "WTI": 89.25,
+    "WTI": 89.3,
     "VIX": 16.04,
-    "asof": "2026-09-29T19:30:39Z"
+    "asof": "2026-09-29T23:10:10Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-29T14:00:30Z",
