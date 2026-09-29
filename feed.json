@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T13:35:08Z",
+  "generated_at": "2026-09-29T13:44:15Z",
   "session": {
     "day_label": "TUE",
     "market_state": "OPEN",
@@ -472,42 +472,51 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84086.8,
-      "chg_pct": -0.18,
+      "last": 84165.38,
+      "chg_pct": -0.09,
       "history": [
         84241.485,
         84271.635,
         84239.565,
         84407.865,
         84405.985,
-        84086.805
+        84086.805,
+        84111.995,
+        84138.815,
+        84165.375
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2726.83,
-      "chg_pct": -0.5,
+      "last": 2724.86,
+      "chg_pct": -0.57,
       "history": [
         2740.445,
         2735.42,
         2734.0,
         2733.815,
-        2726.83
+        2726.83,
+        2727.125,
+        2726.63,
+        2724.855
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.86,
-      "chg_pct": 0.52,
+      "last": 121.06,
+      "chg_pct": 0.68,
       "history": [
         120.235,
         120.325,
         120.915,
         121.25,
         121.195,
-        120.865
+        120.865,
+        120.985,
+        120.99,
+        121.055
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -912,15 +921,31 @@
       },
       {
         "sym": "ETH",
-        "chg_pct": -0.5
+        "chg_pct": -0.57
       }
     ]
   },
   "desk_freshness": {
     "watch": "8:11",
-    "crypto": "8:35"
+    "crypto": "8:44"
   },
-  "desk_board": [],
+  "desk_board": [
+    {
+      "sym": "COIN",
+      "status": "OUT",
+      "why": "Not in play."
+    },
+    {
+      "sym": "IREN",
+      "status": "OUT",
+      "why": "Not in play."
+    },
+    {
+      "sym": "MSTR",
+      "status": "OUT",
+      "why": "Not in play."
+    }
+  ],
   "last_fill_at": "2026-09-28T13:55:34Z",
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
@@ -1107,8 +1132,15 @@
     "cadence_min": 3
   },
   "today_label": "Tue 9/29",
-  "narrative_line": null,
+  "narrative_line": "Looked at 28 names. Nothing cleared. Still scanning.",
   "session_caption": "No fills today. Scanning.",
-  "delayed_pass_lines": [],
+  "delayed_pass_lines": [
+    "AAPL \u2014 still watching, nothing confirmed.",
+    "AKAM \u2014 still watching, nothing confirmed.",
+    "AMD \u2014 still watching, nothing confirmed.",
+    "AMZN \u2014 still watching, nothing confirmed.",
+    "AVGO \u2014 still watching, nothing confirmed.",
+    "COIN \u2014 no tradeable contract today."
+  ],
   "closed_caption": "Tuesday: desk printed no tickets. Week sits 0-1."
 }
