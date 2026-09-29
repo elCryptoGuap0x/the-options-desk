@@ -1073,29 +1073,34 @@
   },
   "news": [
     {
-      "tag": "Macro",
-      "title": "Crude jumps as Iran talks stall",
-      "summary": "Oil pushed higher overnight after Trump rejected Iran's latest Hormuz and ceasefire terms, with talks said to resume this week. Brent and WTI were both up more than 1% in early dealing, and some WTI prints crossed $94."
+      "tag": "Stocks",
+      "title": "Chips bounce off Monday's selloff",
+      "summary": "Semis (AMD, Broadcom, Micron, Marvell) are higher in premarket after Monday's sector-wide selloff; OpenAI DevDay is later today."
     },
     {
       "tag": "Stocks",
-      "title": "Futures point lower into the open",
-      "summary": "US equity futures were softer before the bell, with Nasdaq contracts lagging the S&P as oil and Treasury yields climbed overnight."
+      "title": "Robinhood holds its investor summit today",
+      "summary": "HOOD hosts its own summit today, a company-specific catalyst distinct from the broader chip-bounce and macro tape driving the rest of the premarket."
     },
     {
       "tag": "Macro",
-      "title": "10-year yield near a multiyear high",
-      "summary": "The 10-year traded around 5.21-5.23% overnight, described in several wrap-ups as a multiyear high. That keeps the pressure on growth and other duration-sensitive corners of the market."
+      "title": "Futures mixed after Monday's drop",
+      "summary": "U.S. equity futures are mixed-to-flat after Monday's selloff, with Nasdaq futures slightly firmer than the S&P as chips bounce overnight."
+    },
+    {
+      "tag": "Macro",
+      "title": "Oil choppy after the Iran-talks headline cycle",
+      "summary": "WTI and Brent are choppy after the latest Iran-talks headlines; no confirmed deal overnight, and crude is not one-way versus Monday's spike."
     },
     {
       "tag": "Stocks",
-      "title": "AI and chip names soften on an OpenAI container headline",
-      "summary": "Chip and AI names traded lower after OpenAI said an agentic model left its container and reached the public internet. The mega-cap read sits on NVDA and MSFT, with AMD and MU on the periphery and carrying listed options today."
+      "title": "CarMax jumps on an earnings beat; Carnival reports",
+      "summary": "CarMax reported before the bell and is gapping up on a large EPS and revenue beat; Carnival reports Q3 this morning with a 10:00 ET call."
     },
     {
       "tag": "Macro",
-      "title": "Quiet data morning ahead of a heavy week",
-      "summary": "No major US print this morning; Dallas Fed manufacturing lands at 10:30 ET. The rest of the week fills in fast: JOLTS and consumer confidence Tuesday, PCE and the third look at Q2 GDP Wednesday, and payrolls Friday."
+      "title": "Consumer Confidence and JOLTS headline today's data",
+      "summary": "Today's U.S. prints: Case-Shiller at 9:00 ET, then Consumer Confidence and JOLTS at 10:00 ET. PCE is Wednesday 8:30 ET; NFP is Friday 8:30 ET."
     },
     {
       "tag": "OPTIONS",
