@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T13:21:20Z",
+  "generated_at": "2026-09-29T13:35:08Z",
   "session": {
     "day_label": "TUE",
-    "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-09-29T13:30:00Z",
+    "market_state": "OPEN",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-09-30T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -397,7 +397,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "Session over. -$28.",
+  "roast": "",
   "streak_last8": [
     "L",
     "L",
@@ -472,39 +472,42 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84405.99,
-      "chg_pct": 0.2,
+      "last": 84086.8,
+      "chg_pct": -0.18,
       "history": [
         84241.485,
         84271.635,
         84239.565,
         84407.865,
-        84405.985
+        84405.985,
+        84086.805
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2733.82,
-      "chg_pct": -0.24,
+      "last": 2726.83,
+      "chg_pct": -0.5,
       "history": [
         2740.445,
         2735.42,
         2734.0,
-        2733.815
+        2733.815,
+        2726.83
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.19,
-      "chg_pct": 0.8,
+      "last": 120.86,
+      "chg_pct": 0.52,
       "history": [
         120.235,
         120.325,
         120.915,
         121.25,
-        121.195
+        121.195,
+        120.865
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -908,14 +911,14 @@
         "chg_pct": -1.04
       },
       {
-        "sym": "AAPL",
-        "chg_pct": -0.37
+        "sym": "ETH",
+        "chg_pct": -0.5
       }
     ]
   },
   "desk_freshness": {
     "watch": "8:11",
-    "crypto": "8:21"
+    "crypto": "8:35"
   },
   "desk_board": [],
   "last_fill_at": "2026-09-28T13:55:34Z",
@@ -1072,6 +1075,12 @@
       }
     ],
     "VIXY": [
+      {
+        "t": null,
+        "line": "not a setup"
+      }
+    ],
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
