@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T07:36:33Z",
+  "generated_at": "2026-09-29T13:05:04Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -18,9 +18,9 @@
     "net_per_ticket": "-26.2%",
     "hold_typ": "~11 min",
     "prior_week_record": "1-0",
-    "session_pnl_usd": -28.0,
+    "session_pnl_usd": 11.0,
     "prior_week_net_usd": 11,
-    "today_record": "0 of 1 today"
+    "today_record": "0 of 0 today"
   },
   "sparkline_cum_pct": [
     0.0,
@@ -397,7 +397,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "Session over. -$28.",
+  "roast": "Session over. +$11.",
   "streak_last8": [
     "L",
     "L",
@@ -472,158 +472,41 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82971,
-      "chg_pct": -0.84,
+      "last": 84239.57,
+      "chg_pct": -0.0,
       "history": [
-        83780.325,
-        83853.615,
-        83810.805,
-        83825.775,
-        83802.355,
-        83853.605,
-        83864.695,
-        83979.385,
-        84009.505,
-        84000.615,
-        83951.375,
-        83757.805,
-        83656.225,
-        83643.105,
-        83645.52,
-        83669.715,
-        83648.025,
-        83654.365,
-        83653.505,
-        83600.605,
-        83500.005,
-        83397.155,
-        83177.785,
-        83205.965,
-        83332.685,
-        83275.075,
-        83350.59,
-        83343.105,
-        83351.375,
-        83372.585,
-        83377,
-        82971
+        84241.485,
+        84271.635,
+        84239.565
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2663.65,
-      "chg_pct": 0.3,
+      "last": 2735.42,
+      "chg_pct": -0.18,
       "history": [
-        2688.135,
-        2690.405,
-        2688.725,
-        2688.225,
-        2688.045,
-        2690.545,
-        2691.475,
-        2696.665,
-        2698.42,
-        2698.775,
-        2696.875,
-        2689.065,
-        2685.11,
-        2683.38,
-        2683.115,
-        2683.175,
-        2682.9,
-        2681.75,
-        2681.945,
-        2680.515,
-        2675.94,
-        2672.355,
-        2666.04,
-        2668.995,
-        2673.03,
-        2670.17,
-        2673.335,
-        2674.27,
-        2673.84,
-        2674.105,
-        2677.49,
-        2663.65
+        2740.445,
+        2735.42
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.02,
-      "chg_pct": -2.91,
+      "last": 120.92,
+      "chg_pct": 0.57,
       "history": [
-        119.365,
-        119.525,
-        119.505,
-        119.515,
-        119.54,
-        119.585,
-        119.725,
-        119.995,
-        119.965,
-        119.94,
-        119.83,
-        119.325,
-        119.08,
-        119.055,
-        119.07,
-        119.015,
-        119.045,
-        118.975,
-        118.965,
-        118.82,
-        118.67,
-        118.365,
-        118.12,
-        118.175,
-        118.42,
-        118.22,
-        118.415,
-        118.41,
-        118.32,
-        118.37,
-        117.96,
-        117.02
+        120.235,
+        120.325,
+        120.915
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SPY": {
       "last": 765.22,
-      "chg_pct": -0.8,
+      "chg_pct": 0.0,
       "history": [
-        766.806,
-        766.62,
-        768.89,
-        767.285,
-        767.06,
-        767.18,
-        767.19,
-        767.36,
-        767.34,
-        767.41,
-        767.3,
-        767.46,
-        767.17,
-        767.01,
-        766.69,
-        766.35,
-        767.08,
-        767.02,
-        767.0,
-        766.58,
-        766.6,
-        766.04,
-        765.89,
-        765.93,
-        765.96,
-        766.01,
-        765.16,
-        765.57,
-        765.36,
         765.22
       ],
       "status": "ruled out",
@@ -631,37 +514,8 @@
     },
     "QQQ": {
       "last": 736.2,
-      "chg_pct": -1.12,
+      "chg_pct": 0.0,
       "history": [
-        736.72,
-        739.67,
-        737.75,
-        737.81,
-        738.25,
-        738.155,
-        738.07,
-        738.18,
-        738.2,
-        738.37,
-        738.23,
-        738.51,
-        738.09,
-        738.01,
-        737.61,
-        737.02,
-        737.99,
-        738.1,
-        738.38,
-        737.81,
-        737.82,
-        737.1,
-        737.07,
-        737.25,
-        737.31,
-        737.18,
-        736.14,
-        736.63,
-        736.45,
         736.2
       ],
       "status": "watching",
@@ -669,15 +523,8 @@
     },
     "DIA": {
       "last": 513.86,
-      "chg_pct": -0.72,
+      "chg_pct": 0.0,
       "history": [
-        517.59,
-        515.03,
-        514.15,
-        514.27,
-        514.0,
-        514.21,
-        513.99,
         513.86
       ],
       "status": "no setup",
@@ -685,15 +532,8 @@
     },
     "IWM": {
       "last": 279.92,
-      "chg_pct": -0.78,
+      "chg_pct": 0.0,
       "history": [
-        282.12,
-        280.56,
-        280.29,
-        280.42,
-        280.165,
-        280.11,
-        280.07,
         279.915
       ],
       "status": "watching",
@@ -701,15 +541,8 @@
     },
     "VIXY": {
       "last": 16.77,
-      "chg_pct": 0.33,
+      "chg_pct": 0.0,
       "history": [
-        16.72,
-        16.74,
-        16.73,
-        16.75,
-        16.81,
-        16.785,
-        16.7823,
         16.775
       ],
       "status": "no setup",
@@ -717,37 +550,8 @@
     },
     "AAPL": {
       "last": 338.35,
-      "chg_pct": -0.8,
+      "chg_pct": 0.0,
       "history": [
-        340.446,
-        340.34,
-        340.4,
-        340.04,
-        340.06,
-        340.13,
-        339.99,
-        339.69,
-        339.76,
-        339.51,
-        339.84,
-        339.92,
-        340.01,
-        339.93,
-        339.77,
-        339.825,
-        339.65,
-        339.85,
-        339.93,
-        339.56,
-        339.3,
-        339.19,
-        338.84,
-        338.61,
-        338.635,
-        338.34,
-        338.31,
-        338.4,
-        338.81,
         338.35
       ],
       "status": "watching",
@@ -755,37 +559,8 @@
     },
     "MSFT": {
       "last": 509.1,
-      "chg_pct": -1.46,
+      "chg_pct": 0.0,
       "history": [
-        512.18,
-        512.98,
-        511.7,
-        511.94,
-        512.14,
-        512.04,
-        511.84,
-        512.22,
-        512.05,
-        511.51,
-        511.75,
-        511.77,
-        511.36,
-        511.54,
-        511.02,
-        510.89,
-        512.095,
-        511.46,
-        511.32,
-        510.98,
-        510.79,
-        510.1,
-        509.82,
-        510.0,
-        510.62,
-        510.12,
-        508.94,
-        509.44,
-        509.52,
         509.1
       ],
       "status": "watching",
@@ -793,37 +568,8 @@
     },
     "NVDA": {
       "last": 228.7,
-      "chg_pct": 1.64,
+      "chg_pct": 0.0,
       "history": [
-        230.71,
-        231.33,
-        230.44,
-        230.16,
-        230.51,
-        230.12,
-        230.3,
-        230.15,
-        230.19,
-        230.17,
-        230.09,
-        230.305,
-        230.23,
-        229.91,
-        229.805,
-        229.58,
-        229.84,
-        229.99,
-        230.04,
-        229.8,
-        229.91,
-        230.01,
-        229.9,
-        229.78,
-        229.335,
-        229.3,
-        228.35,
-        228.66,
-        228.59,
         228.7
       ],
       "status": "watching",
@@ -831,37 +577,8 @@
     },
     "AMZN": {
       "last": 246.27,
-      "chg_pct": -0.55,
+      "chg_pct": 0.0,
       "history": [
-        246.605,
-        246.54,
-        247.66,
-        246.94,
-        246.985,
-        247.1,
-        247.205,
-        247.22,
-        247.41,
-        247.2,
-        247.14,
-        247.19,
-        247.13,
-        246.93,
-        246.75,
-        246.74,
-        246.91,
-        246.72,
-        246.61,
-        246.27,
-        246.15,
-        245.81,
-        246.03,
-        246.08,
-        246.19,
-        246.34,
-        246.05,
-        246.15,
-        246.02,
         246.27
       ],
       "status": "watching",
@@ -869,37 +586,8 @@
     },
     "META": {
       "last": 714.47,
-      "chg_pct": -4.88,
+      "chg_pct": 0.0,
       "history": [
-        723.03,
-        723.49,
-        721.0,
-        721.28,
-        722.5,
-        722.515,
-        722.66,
-        722.92,
-        722.41,
-        721.91,
-        722.01,
-        721.895,
-        721.11,
-        723.04,
-        721.445,
-        721.0867,
-        722.4201,
-        721.11,
-        721.35,
-        720.08,
-        720.23,
-        718.24,
-        718.58,
-        717.965,
-        718.53,
-        716.9,
-        717.03,
-        717.55,
-        716.08,
         714.47
       ],
       "status": "watching",
@@ -907,15 +595,8 @@
     },
     "GOOGL": {
       "last": 342.65,
-      "chg_pct": -0.36,
+      "chg_pct": 0.0,
       "history": [
-        343.88,
-        341.14,
-        341.82,
-        342.2,
-        342.08,
-        342.26,
-        342.36,
         342.655
       ],
       "status": "watching",
@@ -923,37 +604,8 @@
     },
     "TSLA": {
       "last": 357.72,
-      "chg_pct": -3.84,
+      "chg_pct": 0.0,
       "history": [
-        360.2,
-        360.21,
-        359.645,
-        359.25,
-        359.02,
-        359.4,
-        359.345,
-        359.22,
-        359.25,
-        359.71,
-        359.8,
-        359.95,
-        359.72,
-        359.33,
-        359.07,
-        358.915,
-        359.15,
-        359.13,
-        359.48,
-        358.23,
-        357.97,
-        357.4,
-        357.8,
-        358.2,
-        357.835,
-        357.68,
-        357.95,
-        358.22,
-        357.49,
         357.72
       ],
       "status": "watching",
@@ -961,20 +613,8 @@
     },
     "MSTR": {
       "last": 159.34,
-      "chg_pct": 0.45,
+      "chg_pct": 0.0,
       "history": [
-        158.63,
-        157.43,
-        159.28,
-        159.12,
-        156.13,
-        155.86,
-        156.44,
-        155.85,
-        156.44,
-        156.245,
-        158.95,
-        158.705,
         159.345
       ],
       "status": "ruled out",
@@ -982,19 +622,8 @@
     },
     "COIN": {
       "last": 193.27,
-      "chg_pct": -0.85,
+      "chg_pct": 0.0,
       "history": [
-        194.92,
-        194.2,
-        196.18,
-        196.52,
-        192.36,
-        191.68,
-        192.5,
-        191.33,
-        191.76,
-        193.07,
-        193.05,
         193.27
       ],
       "status": "ruled out",
@@ -1002,37 +631,8 @@
     },
     "IBIT": {
       "last": 47.21,
-      "chg_pct": -0.73,
+      "chg_pct": 0.0,
       "history": [
-        47.34,
-        47.4485,
-        47.715,
-        47.555,
-        47.5533,
-        47.515,
-        47.55,
-        47.525,
-        47.51,
-        47.485,
-        47.53,
-        47.52,
-        47.53,
-        47.52,
-        47.455,
-        47.435,
-        47.455,
-        47.4963,
-        47.5537,
-        47.53,
-        47.435,
-        47.36,
-        47.385,
-        47.365,
-        47.345,
-        47.27,
-        47.042,
-        47.175,
-        47.195,
         47.2125
       ],
       "status": "watching",
@@ -1040,19 +640,8 @@
     },
     "IREN": {
       "last": 42.4,
-      "chg_pct": -3.95,
+      "chg_pct": 0.0,
       "history": [
-        44.14,
-        43.28,
-        43.505,
-        43.615,
-        42.265,
-        42.29,
-        42.34,
-        42.07,
-        42.0,
-        42.493,
-        42.46,
         42.395
       ],
       "status": "ruled out",
@@ -1060,11 +649,8 @@
     },
     "XLE": {
       "last": 62.09,
-      "chg_pct": 0.06,
+      "chg_pct": 0.0,
       "history": [
-        62.06,
-        62.7,
-        62.07,
         62.095
       ],
       "status": "watching",
@@ -1074,77 +660,46 @@
   "news": [
     {
       "tag": "Stocks",
-      "title": "Chips bounce off Monday's selloff",
-      "summary": "Semis (AMD, Broadcom, Micron, Marvell) are higher in premarket after Monday's sector-wide selloff; OpenAI DevDay is later today."
+      "title": "**AMD** \u2014 off-board semi bounce after Monday's chip selloff; not on standing list",
+      "summary": "GATE PASS \u2014 live RH chain lists 2026-09-30 (nearest; no 2026-09-29)."
     },
     {
       "tag": "Stocks",
-      "title": "Robinhood holds its investor summit today",
-      "summary": "HOOD hosts its own summit today, a company-specific catalyst distinct from the broader chip-bounce and macro tape driving the rest of the premarket."
-    },
-    {
-      "tag": "Macro",
-      "title": "Futures mixed after Monday's drop",
-      "summary": "U.S. equity futures are mixed-to-flat after Monday's selloff, with Nasdaq futures slightly firmer than the S&P as chips bounce overnight."
-    },
-    {
-      "tag": "Macro",
-      "title": "Oil choppy after the Iran-talks headline cycle",
-      "summary": "WTI and Brent are choppy after the latest Iran-talks headlines; no confirmed deal overnight, and crude is not one-way versus Monday's spike."
+      "title": "**AVGO** \u2014 same chip-tape bounce (Reuters: ~+1% premarket with MU/MRVL)",
+      "summary": "GATE PASS \u2014 live RH chain lists 2026-09-30."
     },
     {
       "tag": "Stocks",
-      "title": "CarMax jumps on an earnings beat; Carnival reports",
-      "summary": "CarMax reported before the bell and is gapping up on a large EPS and revenue beat; Carnival reports Q3 this morning with a 10:00 ET call."
+      "title": "**CCL** \u2014 same-day Q3 earnings BMO / call 10:00 ET; cruise name Watch does not own",
+      "summary": "GATE FAIL \u2014 nearest listed expiry 2026-10-02 (no today/tomorrow). Cash/earnings only, not an options poke."
+    },
+    {
+      "tag": "Stocks",
+      "title": "**KMX** \u2014 BMO print already out (EPS $1.16 vs ~$0.70-0.75 est; rev beat); premarket ~$59.59 vs $56.55 close",
+      "summary": "GATE FAIL \u2014 nearest 2026-10-16. Cash only."
+    },
+    {
+      "tag": "Stocks",
+      "title": "**MU / MRVL** \u2014 chip bounce color; GATE FAIL \u2014 nearest 2026-10-02",
+      "summary": "Named cash context only; do not seat as always-full-test."
+    },
+    {
+      "tag": "Stocks",
+      "title": "HOOD holds its own investor summit today -- company-specific catalyst, separate from the broader chip-bounce/macro tape",
+      "summary": "No live RH chain/gate check run on HOOD this pass (not previously on the named list); treat as situational awareness only unless it starts moving and gets named for a real gate check."
+    },
+    {
+      "tag": "Stocks",
+      "title": "10:00 ET Conference Board Consumer Confidence (est",
+      "summary": "~89-90) + JOLTS openings Aug (est. ~7.2M) \u2014 not out yet."
     },
     {
       "tag": "Macro",
-      "title": "Consumer Confidence and JOLTS headline today's data",
-      "summary": "Today's U.S. prints: Case-Shiller at 9:00 ET, then Consumer Confidence and JOLTS at 10:00 ET. PCE is Wednesday 8:30 ET; NFP is Friday 8:30 ET."
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 9/28/2026: Equities Unfazed by Spike in Rates Volatility",
-      "summary": "US bond yields climbed to a two-decade high last week, yet reaction in the cross-asset vol market was mixed. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-9-28-2026-equities-unfazed-by-spike-in-rates-volatility/",
-      "ts": "2026-09-28T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Near Intents blocks $50 million in Bitget hacker swaps, here's what happened",
-      "summary": "The swap service identified more than $50 million in attempted transfers, although most rejected funds subsequently moved through other providers.",
-      "url": "https://www.coindesk.com/tech/2026/09/29/usd50-million-in-bitget-hacker-swaps-puts-near-intents-permissionless-claim-to-the-test",
-      "ts": "2026-09-29T06:23:47Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Anthropic plans to spend $518 billion on AI infrastructure. Pre-IPO perps barely blink.",
-      "summary": "Anthropic's prospectus seen by Reuters shows big spending plans despite heavy losses. Still, pre-IPO perps barely moved on cryptocurrency exchanges.",
-      "url": "https://www.coindesk.com/markets/2026/09/29/anthropic-plans-to-spend-usd518-billion-on-ai-infrastructure-pre-ipo-perps-barely-blink",
-      "ts": "2026-09-29T05:31:44Z"
+      "title": "Not today: Wed 9/30 08:30 ET PCE + Q2 GDP third estimate",
+      "summary": "Fri 10/2 08:30 ET NFP."
     }
   ],
   "calendar": [
-    {
-      "what": "Dallas Fed manufacturing",
-      "when": "Mon 10:30 ET",
-      "date": "2026-09-28"
-    },
-    {
-      "what": "Lagarde speaks",
-      "when": "Mon 8:30 ET",
-      "date": "2026-09-28"
-    },
-    {
-      "what": "Fed's Cook speaks",
-      "when": "Mon 12:25 ET",
-      "date": "2026-09-28"
-    },
-    {
-      "what": "Fed's Barkin speaks",
-      "when": "Mon afternoon",
-      "date": "2026-09-28"
-    },
     {
       "what": "JOLTS + consumer confidence",
       "when": "Tue 10:00 ET",
@@ -1167,293 +722,93 @@
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 27,
-    "names": [
-      "AAPL",
-      "AKAM",
-      "AMD",
-      "AMZN",
-      "COIN",
-      "COST",
-      "CRWD",
-      "DIA",
-      "GLD",
-      "GOOGL",
-      "IBIT",
-      "INTC",
-      "IREN",
-      "IWM",
-      "META",
-      "MSFT",
-      "MSTR",
-      "MU",
-      "NVDA",
-      "ORCL",
-      "PANW",
-      "PAYX",
-      "QQQ",
-      "SPY",
-      "TSLA",
-      "VIXY",
-      "XLE"
-    ],
-    "interesting": [
-      [
-        "AAPL",
-        "watching"
-      ],
-      [
-        "AKAM",
-        "watching"
-      ],
-      [
-        "AMD",
-        "disqualified"
-      ],
-      [
-        "AMZN",
-        "watching"
-      ],
-      [
-        "COIN",
-        "disqualified"
-      ],
-      [
-        "COST",
-        "watching"
-      ],
-      [
-        "CRWD",
-        "watching"
-      ],
-      [
-        "GLD",
-        "watching"
-      ],
-      [
-        "GOOGL",
-        "watching"
-      ],
-      [
-        "IBIT",
-        "watching"
-      ],
-      [
-        "INTC",
-        "watching"
-      ],
-      [
-        "IREN",
-        "disqualified"
-      ],
-      [
-        "IWM",
-        "watching"
-      ],
-      [
-        "META",
-        "watching"
-      ],
-      [
-        "MSFT",
-        "watching"
-      ],
-      [
-        "MSTR",
-        "disqualified"
-      ],
-      [
-        "MU",
-        "watching"
-      ],
-      [
-        "NVDA",
-        "watching"
-      ],
-      [
-        "ORCL",
-        "watching"
-      ],
-      [
-        "PANW",
-        "watching"
-      ],
-      [
-        "QQQ",
-        "watching"
-      ],
-      [
-        "SPY",
-        "disqualified"
-      ],
-      [
-        "TSLA",
-        "watching"
-      ],
-      [
-        "XLE",
-        "watching"
-      ]
-    ],
-    "no_shape_count": 3,
-    "filled": 1
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0,
+    "filled": 0
   },
-  "scan_log_public": "Closed <span class=\"desk-tag bad\">SPY</span> -26.2%.",
+  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
       {
-        "sym": "NVDA",
-        "chg_pct": 1.64
-      },
-      {
-        "sym": "MSTR",
-        "chg_pct": 0.45
-      },
-      {
-        "sym": "VIXY",
-        "chg_pct": 0.33
+        "sym": "SOL",
+        "chg_pct": 0.57
       }
     ],
     "down": [
       {
-        "sym": "META",
-        "chg_pct": -4.88
-      },
-      {
-        "sym": "IREN",
-        "chg_pct": -3.95
-      },
-      {
-        "sym": "TSLA",
-        "chg_pct": -3.84
+        "sym": "ETH",
+        "chg_pct": -0.18
       }
     ]
   },
   "desk_freshness": {
     "watch": "2:57",
-    "crypto": "3:01"
+    "crypto": "8:05"
   },
-  "desk_board": [
-    {
-      "sym": "AMD",
-      "status": "OUT",
-      "why": "Looked \u2014 clock had already run out."
-    },
-    {
-      "sym": "AMZN",
-      "status": "WATCH",
-      "why": "Looked \u2014 clock had already run out."
-    },
-    {
-      "sym": "COIN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "IREN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "MSTR",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "MU",
-      "status": "WATCH",
-      "why": "Looked \u2014 clock had already run out."
-    },
-    {
-      "sym": "QQQ",
-      "status": "WATCH",
-      "why": "Looked \u2014 clock had already run out."
-    },
-    {
-      "sym": "SPY",
-      "status": "OUT",
-      "why": "Looked \u2014 clock had already run out."
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-28T13:55:34Z",
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {
-    "SPY": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "09:45 AM ET",
-        "line": "Checked \u2014 no ticket."
-      },
-      {
-        "t": "11:09 AM ET",
-        "line": "Looked \u2014 clock had already run out."
-      },
-      {
-        "t": "1:20 PM ET",
-        "line": "Not in play."
-      }
-    ],
-    "AMZN": [
-      {
-        "t": "9:16 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "10:45 AM ET",
-        "line": "Looked \u2014 clock had already run out."
-      },
-      {
-        "t": "1:20 PM ET",
-        "line": "Not in play."
-      },
-      {
-        "t": "1:26 PM ET",
-        "line": "Added to the list."
-      }
-    ],
     "QQQ": [
       {
         "t": "8:35 AM ET",
         "line": "Added to the list."
-      },
-      {
-        "t": "11:10 AM ET",
-        "line": "Looked \u2014 clock had already run out."
       }
     ],
-    "AMD": [
+    "AMZN": [
       {
-        "t": "9:16 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
-      },
-      {
-        "t": "11:14 AM ET",
-        "line": "Looked \u2014 clock had already run out."
-      },
-      {
-        "t": "1:20 PM ET",
-        "line": "Not in play."
       }
     ],
     "MU": [
       {
-        "t": "9:16 AM ET",
+        "t": "8:35 AM ET",
         "line": "Added to the list."
-      },
+      }
+    ],
+    "NVDA": [
       {
-        "t": "11:26 AM ET",
-        "line": "Looked \u2014 clock had already run out."
-      },
+        "t": "8:35 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "MSFT": [
       {
-        "t": "1:20 PM ET",
-        "line": "Not in play."
-      },
+        "t": "8:35 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "AAPL": [
       {
-        "t": "1:26 PM ET",
+        "t": "8:35 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "META": [
+      {
+        "t": "8:35 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "TSLA": [
+      {
+        "t": "8:35 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "IBIT": [
+      {
+        "t": "8:35 AM ET",
+        "line": "Added to the list."
+      }
+    ],
+    "GLD": [
+      {
+        "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
@@ -1487,48 +842,6 @@
         "line": "Added to the list."
       }
     ],
-    "GLD": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "MSTR": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:16 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "COIN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:16 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "IBIT": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "IREN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:16 AM ET",
-        "line": "Not in play."
-      }
-    ],
     "ORCL": [
       {
         "t": "8:35 AM ET",
@@ -1547,43 +860,19 @@
         "line": "Added to the list."
       }
     ],
-    "MSFT": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
     "AKAM": [
       {
         "t": "8:35 AM ET",
         "line": "Added to the list."
       }
     ],
-    "NVDA": [
+    "SOL": [
       {
-        "t": "9:16 AM ET",
-        "line": "Added to the list."
+        "t": null,
+        "line": "not a setup"
       }
     ],
-    "AAPL": [
-      {
-        "t": "9:16 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "META": [
-      {
-        "t": "9:16 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "TSLA": [
-      {
-        "t": "9:16 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "VIXY": [
+    "ETH": [
       {
         "t": null,
         "line": "not a setup"
@@ -1605,20 +894,13 @@
   },
   "pulse": {
     "last_look_iso": "2026-09-28T19:57:15Z",
-    "names": 27,
-    "tickets": 1,
-    "cadence_min": 4
+    "names": 0,
+    "tickets": 0,
+    "cadence_min": 30
   },
-  "today_label": "Mon 9/28",
+  "today_label": "Tue 9/29",
   "narrative_line": null,
-  "session_caption": "1 fill today. SPY put. -26.2%. Scanning.",
-  "delayed_pass_lines": [
-    "AAPL \u2014 still watching, nothing confirmed.",
-    "AKAM \u2014 still watching, nothing confirmed.",
-    "AMD \u2014 move already extended.",
-    "AMZN \u2014 still watching, nothing confirmed.",
-    "COIN \u2014 no tradeable contract today.",
-    "COST \u2014 still watching, nothing confirmed."
-  ],
-  "closed_caption": "Monday: desk printed one ticket, a -26.2% loser on SPY. Week sits 0-1."
+  "session_caption": "No fills today. Scanning.",
+  "delayed_pass_lines": [],
+  "closed_caption": "Tuesday: desk printed no tickets. Week sits 0-1."
 }
