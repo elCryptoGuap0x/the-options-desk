@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-29T01:50:21Z",
+  "generated_at": "2026-09-29T07:36:33Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-09-29T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -1106,17 +1106,17 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Goldman Sachs brings $100 billion Treasury fund into crypto\u2019s institutional plumbing",
-      "summary": "The bank is bringing its roughly $100 billion Treasury fund to institutional crypto firms without creating a tokenized version of it.",
-      "url": "https://www.coindesk.com/markets/2026/09/28/goldman-sachs-brings-usd100-billion-treasury-fund-into-crypto-s-institutional-plumbing",
-      "ts": "2026-09-28T18:00:00Z"
+      "title": "Near Intents blocks $50 million in Bitget hacker swaps, here's what happened",
+      "summary": "The swap service identified more than $50 million in attempted transfers, although most rejected funds subsequently moved through other providers.",
+      "url": "https://www.coindesk.com/tech/2026/09/29/usd50-million-in-bitget-hacker-swaps-puts-near-intents-permissionless-claim-to-the-test",
+      "ts": "2026-09-29T06:23:47Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "The restaking gold rush is over, and top protocols are barely making a profit",
-      "summary": "As restaking yields dried up and smart-contract risks mounted, Ethereum's top liquid restaking protocol walked away from its core business to build a crypto neobank instead.",
-      "url": "https://www.coindesk.com/business/2026/09/28/the-restaking-gold-rush-is-over-and-top-protocols-are-barely-making-a-profit",
-      "ts": "2026-09-28T16:24:51Z"
+      "title": "Anthropic plans to spend $518 billion on AI infrastructure. Pre-IPO perps barely blink.",
+      "summary": "Anthropic's prospectus seen by Reuters shows big spending plans despite heavy losses. Still, pre-IPO perps barely moved on cryptocurrency exchanges.",
+      "url": "https://www.coindesk.com/markets/2026/09/29/anthropic-plans-to-spend-usd518-billion-on-ai-infrastructure-pre-ipo-perps-barely-blink",
+      "ts": "2026-09-29T05:31:44Z"
     }
   ],
   "calendar": [
@@ -1593,10 +1593,10 @@
   },
   "macro": {
     "10Y": 5.24,
-    "DXY": 101.23,
-    "WTI": 93.91,
-    "VIX": 16.07,
-    "asof": "2026-09-29T01:50:21Z"
+    "DXY": 101.29,
+    "WTI": 93.53,
+    "VIX": 16.14,
+    "asof": "2026-09-29T07:36:33Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-28T19:57:15Z",
