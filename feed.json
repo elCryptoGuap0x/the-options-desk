@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-30T02:11:32Z",
+  "generated_at": "2026-09-30T08:43:12Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-09-30T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -472,8 +472,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83492,
-      "chg_pct": 0.68,
+      "last": 83099,
+      "chg_pct": -0.94,
       "history": [
         84425.695,
         84207.615,
@@ -505,14 +505,15 @@
         83355.135,
         83270.115,
         83116.695,
-        83492
+        83492,
+        83099
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2673.41,
-      "chg_pct": 0.58,
+      "last": 2668.09,
+      "chg_pct": -1.65,
       "history": [
         2726.855,
         2724.055,
@@ -544,14 +545,15 @@
         2691.14,
         2687.385,
         2680.71,
-        2673.41
+        2673.41,
+        2668.09
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.77,
-      "chg_pct": 2.67,
+      "last": 117.97,
+      "chg_pct": -1.07,
       "history": [
         121.6,
         120.915,
@@ -583,7 +585,8 @@
         119.29,
         118.915,
         118.38,
-        119.77
+        119.77,
+        117.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1259,17 +1262,17 @@
     ]
   },
   "btc_range": {
-    "last": 83561,
+    "last": 83099,
     "high_24h": 84486,
-    "low_24h": 82864,
-    "chg_pct": 0.73
+    "low_24h": 82911,
+    "chg_pct": -0.99
   },
   "macro": {
     "10Y": 5.25,
-    "DXY": 101.38,
-    "WTI": 89.55,
-    "VIX": 16.04,
-    "asof": "2026-09-30T02:11:32Z"
+    "DXY": 101.24,
+    "WTI": 89.72,
+    "VIX": 15.92,
+    "asof": "2026-09-30T08:43:12Z"
   },
   "pulse": {
     "last_look_iso": "2026-09-29T14:00:30Z",
