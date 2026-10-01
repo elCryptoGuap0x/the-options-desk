@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T11:51:33Z",
+  "generated_at": "2026-10-01T12:56:32Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -847,205 +847,84 @@
   "news": [
     {
       "tag": "Stocks",
-      "title": "**AMD** \u2014 off-board semi bounce after Monday's chip selloff; not on standing list",
-      "summary": "GATE PASS \u2014 live RH chain lists 2026-09-30 (nearest; no 2026-09-29)."
+      "title": "Micron's beat lifts the chip group",
+      "summary": "Micron reported after the close with $54.2B in revenue and a guide near $61.5B for next quarter, and talked up tight memory supply into 2028. Nvidia is up nearly 1% before the bell while Micron itself is slightly lower, so traders are reading it as confirmation for the group rather than a Micron story."
     },
     {
       "tag": "Stocks",
-      "title": "**AVGO** \u2014 same chip-tape bounce (Reuters: ~+1% premarket with MU/MRVL)",
-      "summary": "GATE PASS \u2014 live RH chain lists 2026-09-30."
+      "title": "Alphabet jumps on Gemini 4",
+      "summary": "Google launched Gemini 4 Argon, a new flagship model it says beats rivals on coding and cybersecurity at lower prices. Alphabet is up about 2% in premarket trading."
     },
     {
       "tag": "Stocks",
-      "title": "**CCL** \u2014 same-day Q3 earnings BMO / call 10:00 ET; cruise name Watch does not own",
-      "summary": "GATE FAIL \u2014 nearest listed expiry 2026-10-02 (no today/tomorrow). Cash/earnings only, not an options poke."
+      "title": "Accenture beats and gaps higher",
+      "summary": "Fiscal fourth-quarter earnings of $3.29 a share and $18.7B in revenue topped estimates of $3.19 and $18.05B, and the stock is sharply higher before the open."
     },
     {
       "tag": "Stocks",
-      "title": "**KMX** \u2014 BMO print already out (EPS $1.16 vs ~$0.70-0.75 est; rev beat); premarket ~$59.59 vs $56.55 close",
-      "summary": "GATE FAIL \u2014 nearest 2026-10-16. Cash only."
+      "title": "Rocket Lab signs its biggest launch deal",
+      "summary": "The company announced the largest single commercial launch agreement in its history, and the stock is up about 4% premarket."
     },
     {
       "tag": "Stocks",
-      "title": "**MU / MRVL** \u2014 chip bounce color; GATE FAIL \u2014 nearest 2026-10-02",
-      "summary": "Named cash context only; do not seat as always-full-test."
-    },
-    {
-      "tag": "Stocks",
-      "title": "HOOD holds its own investor summit today -- company-specific catalyst, separate from the broader chip-bounce/macro tape",
-      "summary": "No live RH chain/gate check run on HOOD this pass (not previously on the named list); treat as situational awareness only unless it starts moving and gets named for a real gate check."
-    },
-    {
-      "tag": "Stocks",
-      "title": "10:00 ET Conference Board Consumer Confidence (est",
-      "summary": "~89-90) + JOLTS openings Aug (est. ~7.2M) \u2014 not out yet."
+      "title": "Citi turns bearish on Moderna",
+      "summary": "Citi cut Moderna to Sell from Neutral, citing valuation after a big 2026 rally. The stock is down in premarket trading."
     },
     {
       "tag": "Macro",
-      "title": "Not today: Wed 9/30 08:30 ET PCE + Q2 GDP third estimate",
-      "summary": "Fri 10/2 08:30 ET NFP."
+      "title": "Yields and oil pull against the chip bid",
+      "summary": "The 10-year Treasury yield is near 5.3%, a multi-decade high, and oil prints are conflicting around $92 with Iran-talk headlines still live. Nasdaq futures are the strength overnight while S&P futures are roughly flat, so the open looks two-way rather than a broad gap up."
     }
   ],
   "calendar": [
     {
-      "what": "JOLTS + consumer confidence",
-      "when": "Tue 10:00 ET",
-      "date": "2026-09-29"
+      "what": "Jobless claims",
+      "when": "Thu 8:30 ET",
+      "date": "2026-10-01"
     },
     {
-      "what": "ADP, PCE + Q2 GDP (third)",
-      "when": "Wed 8:15-8:30 ET",
-      "date": "2026-09-30"
+      "what": "Fed's Barkin, Collins and Schmid speak",
+      "when": "Thu around 9:05 ET",
+      "date": "2026-10-01"
     },
     {
-      "what": "ISM manufacturing",
-      "when": "Thu",
+      "what": "ISM manufacturing PMI + construction spending",
+      "when": "Thu 10:00 ET",
+      "date": "2026-10-01"
+    },
+    {
+      "what": "Fed's Williams speaks",
+      "when": "Thu 3:30 ET",
+      "date": "2026-10-01"
+    },
+    {
+      "what": "Nike earnings",
+      "when": "Thu after the close",
       "date": "2026-10-01"
     },
     {
       "what": "Nonfarm payrolls",
       "when": "Fri 8:30 ET",
       "date": "2026-10-02"
+    },
+    {
+      "what": "CPI",
+      "when": "Wed 8:30 ET",
+      "date": "2026-10-14"
+    },
+    {
+      "what": "FOMC rate decision",
+      "when": "Wed 2:00 ET",
+      "date": "2026-10-28"
     }
   ],
   "skip_summary_ticker_list": {
-    "count": 28,
-    "names": [
-      "AAPL",
-      "AKAM",
-      "AMD",
-      "AMZN",
-      "AVGO",
-      "COIN",
-      "COST",
-      "CRWD",
-      "DIA",
-      "GLD",
-      "GOOGL",
-      "IBIT",
-      "INTC",
-      "IREN",
-      "IWM",
-      "META",
-      "MSFT",
-      "MSTR",
-      "MU",
-      "NVDA",
-      "ORCL",
-      "PANW",
-      "PAYX",
-      "QQQ",
-      "SPY",
-      "TSLA",
-      "VIXY",
-      "XLE"
-    ],
-    "interesting": [
-      [
-        "AAPL",
-        "watching"
-      ],
-      [
-        "AKAM",
-        "watching"
-      ],
-      [
-        "AMD",
-        "watching"
-      ],
-      [
-        "AMZN",
-        "watching"
-      ],
-      [
-        "AVGO",
-        "watching"
-      ],
-      [
-        "COIN",
-        "disqualified"
-      ],
-      [
-        "COST",
-        "watching"
-      ],
-      [
-        "CRWD",
-        "watching"
-      ],
-      [
-        "GLD",
-        "watching"
-      ],
-      [
-        "GOOGL",
-        "watching"
-      ],
-      [
-        "IBIT",
-        "watching"
-      ],
-      [
-        "INTC",
-        "watching"
-      ],
-      [
-        "IREN",
-        "disqualified"
-      ],
-      [
-        "IWM",
-        "watching"
-      ],
-      [
-        "META",
-        "watching"
-      ],
-      [
-        "MSFT",
-        "watching"
-      ],
-      [
-        "MSTR",
-        "disqualified"
-      ],
-      [
-        "MU",
-        "disqualified"
-      ],
-      [
-        "NVDA",
-        "watching"
-      ],
-      [
-        "ORCL",
-        "watching"
-      ],
-      [
-        "PANW",
-        "watching"
-      ],
-      [
-        "QQQ",
-        "watching"
-      ],
-      [
-        "SPY",
-        "watching"
-      ],
-      [
-        "TSLA",
-        "watching"
-      ],
-      [
-        "XLE",
-        "watching"
-      ]
-    ],
-    "no_shape_count": 3,
-    "filled": 0
+    "count": 0,
+    "names": [],
+    "interesting": [],
+    "no_shape_count": 0
   },
-  "scan_log_public": "28 names on the list (3 quiet) \u00b7 0 tickets.",
+  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1078,201 +957,13 @@
     ]
   },
   "desk_freshness": {
-    "watch": "9:00",
-    "crypto": "10:24"
+    "watch": "--",
+    "crypto": "7:56"
   },
-  "desk_board": [
-    {
-      "sym": "COIN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "IREN",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "MSTR",
-      "status": "OUT",
-      "why": "Not in play."
-    },
-    {
-      "sym": "MU",
-      "status": "OUT",
-      "why": "Not in play."
-    }
-  ],
+  "desk_board": [],
   "last_fill_at": "2026-09-28T13:55:34Z",
-  "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
-  "desk_events": {
-    "QQQ": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "AMZN": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "MU": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      },
-      {
-        "t": "9:47 AM ET",
-        "line": "Not in play."
-      }
-    ],
-    "NVDA": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "MSFT": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "AAPL": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "META": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "TSLA": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "IBIT": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "GLD": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "IWM": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "XLE": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "GOOGL": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "PANW": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "CRWD": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "ORCL": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "INTC": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "COST": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "AKAM": [
-      {
-        "t": "8:35 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "SPY": [
-      {
-        "t": "9:20 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "AMD": [
-      {
-        "t": "9:20 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "AVGO": [
-      {
-        "t": "9:20 AM ET",
-        "line": "Added to the list."
-      }
-    ],
-    "COIN": [
-      {
-        "t": null,
-        "line": "Not in play."
-      }
-    ],
-    "IREN": [
-      {
-        "t": null,
-        "line": "Not in play."
-      }
-    ],
-    "MSTR": [
-      {
-        "t": null,
-        "line": "Not in play."
-      }
-    ],
-    "ETH": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ],
-    "SOL": [
-      {
-        "t": null,
-        "line": "not a setup"
-      }
-    ]
-  },
+  "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
+  "desk_events": {},
   "btc_range": {
     "last": 83958,
     "high_24h": 85518,
@@ -1286,22 +977,10 @@
     "VIX": 16.47,
     "asof": "2026-10-01T11:51:33Z"
   },
-  "pulse": {
-    "last_look_iso": "2026-09-29T14:00:30Z",
-    "names": 28,
-    "tickets": 0,
-    "cadence_min": 4
-  },
-  "today_label": "Tue 9/29",
-  "narrative_line": "Looked at 28 names. Nothing cleared. Still scanning.",
+  "pulse": null,
+  "today_label": "Thu 10/1",
+  "narrative_line": null,
   "session_caption": "No fills today. Scanning.",
-  "delayed_pass_lines": [
-    "AAPL \u2014 still watching, nothing confirmed.",
-    "AKAM \u2014 still watching, nothing confirmed.",
-    "AMD \u2014 close, but not clean enough yet.",
-    "AMZN \u2014 still watching, nothing confirmed.",
-    "AVGO \u2014 quiet, no shape yet.",
-    "COIN \u2014 no tradeable contract today."
-  ],
-  "closed_caption": "Tuesday: desk printed no tickets. Week sits 0-1."
+  "delayed_pass_lines": [],
+  "closed_caption": "Thursday: desk printed no tickets. Week sits 0-1."
 }
