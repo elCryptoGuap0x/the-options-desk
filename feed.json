@@ -977,17 +977,17 @@
   "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83958,
-    "high_24h": 85518,
+    "last": 84975,
+    "high_24h": 84543,
     "low_24h": 83182,
-    "chg_pct": 0.12
+    "chg_pct": 1.21
   },
   "macro": {
-    "10Y": 5.29,
-    "DXY": 101.75,
-    "WTI": 92.14,
-    "VIX": 16.47,
-    "asof": "2026-10-01T11:51:33Z"
+    "10Y": 5.21,
+    "DXY": 102.09,
+    "WTI": 91.72,
+    "VIX": 16.26,
+    "asof": "2026-10-01T17:37:07Z"
   },
   "pulse": null,
   "today_label": "Thu 10/1",
