@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T20:02:18Z",
+  "generated_at": "2026-10-01T22:01:14Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -484,8 +484,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83956,
-      "chg_pct": 0.12,
+      "last": 84529,
+      "chg_pct": 0.96,
       "history": [
         84425.695,
         84207.615,
@@ -522,14 +522,15 @@
         83608,
         83550,
         84262,
-        83956
+        83956,
+        84529
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2704.37,
-      "chg_pct": 0.33,
+      "last": 2693.04,
+      "chg_pct": 0.37,
       "history": [
         2726.855,
         2724.055,
@@ -566,14 +567,15 @@
         2673.14,
         2684.07,
         2716.45,
-        2704.37
+        2704.37,
+        2693.04
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.97,
-      "chg_pct": -1.27,
+      "last": 117.67,
+      "chg_pct": -0.27,
       "history": [
         121.6,
         120.915,
@@ -610,7 +612,8 @@
         117.54,
         118.01,
         119.44,
-        117.97
+        117.97,
+        117.67
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -886,6 +889,20 @@
       "tag": "Macro",
       "title": "Yields and oil pull against the chip bid",
       "summary": "The 10-year Treasury yield is near 5.3%, a multi-decade high, and oil prints are conflicting around $92 with Iran-talk headlines still live. Nasdaq futures are the strength overnight while S&P futures are roughly flat, so the open looks two-way rather than a broad gap up."
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
+      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
+      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
+      "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "SEC proposes new crypto custody rules for investment advisers and funds",
+      "summary": "The regulator issued a proposed rule for custody, marking a swan song for its inaugural Crypto Task Force chief, Commissioner Hester Peirce, who exits this week.",
+      "url": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
+      "ts": "2026-10-01T20:20:04Z"
     }
   ],
   "calendar": [
@@ -977,17 +994,17 @@
   "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84975,
-    "high_24h": 84543,
+    "last": 84519,
+    "high_24h": 85183,
     "low_24h": 83182,
-    "chg_pct": 1.21
+    "chg_pct": 0.96
   },
   "macro": {
-    "10Y": 5.21,
-    "DXY": 102.09,
-    "WTI": 91.72,
-    "VIX": 16.26,
-    "asof": "2026-10-01T17:37:07Z"
+    "10Y": 5.24,
+    "DXY": 102.04,
+    "WTI": 92.91,
+    "VIX": 16.39,
+    "asof": "2026-10-01T22:01:14Z"
   },
   "pulse": null,
   "today_label": "Thu 10/1",
