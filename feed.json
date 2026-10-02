@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:27:38Z",
+  "generated_at": "2026-10-02T12:35:01Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -20,7 +20,7 @@
     "prior_week_record": "1-0",
     "session_pnl_usd": 6.0,
     "prior_week_net_usd": 11,
-    "today_record": "1 of 1 today"
+    "today_record": "0 of 0 today"
   },
   "sparkline_cum_pct": [
     0.0,
@@ -922,78 +922,8 @@
       "why": "On the list. No ticket."
     }
   },
-  "news": [
-    {
-      "tag": "Stocks",
-      "title": "Micron's beat lifts the chip group",
-      "summary": "Micron reported after the close with $54.2B in revenue and a guide near $61.5B for next quarter, and talked up tight memory supply into 2028. Nvidia is up nearly 1% before the bell while Micron itself is slightly lower, so traders are reading it as confirmation for the group rather than a Micron story."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Alphabet jumps on Gemini 4",
-      "summary": "Google launched Gemini 4 Argon, a new flagship model it says beats rivals on coding and cybersecurity at lower prices. Alphabet is up about 2% in premarket trading."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Accenture beats and gaps higher",
-      "summary": "Fiscal fourth-quarter earnings of $3.29 a share and $18.7B in revenue topped estimates of $3.19 and $18.05B, and the stock is sharply higher before the open."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Rocket Lab signs its biggest launch deal",
-      "summary": "The company announced the largest single commercial launch agreement in its history, and the stock is up about 4% premarket."
-    },
-    {
-      "tag": "Stocks",
-      "title": "Citi turns bearish on Moderna",
-      "summary": "Citi cut Moderna to Sell from Neutral, citing valuation after a big 2026 rally. The stock is down in premarket trading."
-    },
-    {
-      "tag": "Macro",
-      "title": "Yields and oil pull against the chip bid",
-      "summary": "The 10-year Treasury yield is near 5.3%, a multi-decade high, and oil prints are conflicting around $92 with Iran-talk headlines still live. Nasdaq futures are the strength overnight while S&P futures are roughly flat, so the open looks two-way rather than a broad gap up."
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
-      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
-      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
-      "ts": "2026-10-01T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Cboe wants to turn VIX into a never-ending trade",
-      "summary": "Your day-ahead look for Oct. 2, 2026",
-      "url": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
-      "ts": "2026-10-02T11:30:00Z"
-    }
-  ],
+  "news": [],
   "calendar": [
-    {
-      "what": "Jobless claims",
-      "when": "Thu 8:30 ET",
-      "date": "2026-10-01"
-    },
-    {
-      "what": "Fed's Barkin, Collins and Schmid speak",
-      "when": "Thu around 9:05 ET",
-      "date": "2026-10-01"
-    },
-    {
-      "what": "ISM manufacturing PMI + construction spending",
-      "when": "Thu 10:00 ET",
-      "date": "2026-10-01"
-    },
-    {
-      "what": "Fed's Williams speaks",
-      "when": "Thu 3:30 ET",
-      "date": "2026-10-01"
-    },
-    {
-      "what": "Nike earnings",
-      "when": "Thu after the close",
-      "date": "2026-10-01"
-    },
     {
       "what": "Nonfarm payrolls",
       "when": "Fri 8:30 ET",
@@ -1016,7 +946,7 @@
     "interesting": [],
     "no_shape_count": 0
   },
-  "scan_log_public": "Closed <span class=\"desk-tag good\">XLE</span> +15.4%.",
+  "scan_log_public": "0 names on the list \u00b7 0 tickets.",
   "news_public": "Anthropic's Dario Amodei published an essay arguing the pace of frontier AI development should slow, and OpenAI's Sam Altman and xAI's Elon Musk publicly agreed \u2014 no filing, no rule, just a positioning statement. The tape read it straight through to the money that builds AI: chipmakers and datacenter suppliers sold off overnight in Asia and stayed down through the US session, while the companies that merely use AI traded green. The odd winner was cybersecurity, on the logic that an AI-risk story means more spending on protection, not less \u2014 that group roughly doubled its early gain by midday and was the strongest thing on the board.",
   "board_movers": {
     "up": [
@@ -1050,11 +980,11 @@
   },
   "desk_freshness": {
     "watch": "--",
-    "crypto": "7:30"
+    "crypto": "7:35"
   },
   "desk_board": [],
   "last_fill_at": "2026-10-01T14:36:54Z",
-  "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
+  "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
     "last": 86614,
@@ -1070,9 +1000,9 @@
     "asof": "2026-10-02T12:27:38Z"
   },
   "pulse": null,
-  "today_label": "Thu 10/1",
+  "today_label": "Fri 10/2",
   "narrative_line": null,
-  "session_caption": "1 fill today. XLE call. +15.4%. Scanning.",
+  "session_caption": "No fills today. Scanning.",
   "delayed_pass_lines": [],
-  "closed_caption": "Thursday: desk printed one ticket, a +15.4% winner on XLE. Week sits 1-1."
+  "closed_caption": "Friday: desk printed no tickets. Week sits 1-1."
 }
