@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T21:13:12Z",
+  "generated_at": "2026-10-02T21:28:19Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84507,
+      "last": 84477,
       "chg_pct": -0.12,
       "history": [
-        83873.92,
         84017.335,
         83932.345,
         83959.21,
@@ -580,16 +579,16 @@
         84483,
         84410,
         84387,
-        84507
+        84507,
+        84477
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2664.6,
-      "chg_pct": -1.18,
+      "last": 2661.18,
+      "chg_pct": -1.25,
       "history": [
-        2714.165,
         2718.14,
         2716.095,
         2716.925,
@@ -628,16 +627,16 @@
         2668.83,
         2667.69,
         2661.44,
-        2664.6
+        2664.6,
+        2661.18
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.09,
-      "chg_pct": 0.11,
+      "last": 117.93,
+      "chg_pct": 0.01,
       "history": [
-        120.61,
         120.665,
         120.58,
         120.565,
@@ -676,7 +675,8 @@
         118.18,
         117.99,
         117.8,
-        118.09
+        118.09,
+        117.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
-      "summary": "The potential agreement could span digital assets, custody, trading, payments and other financial-market infrastructure.",
-      "url": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
-      "ts": "2026-10-02T17:34:40Z"
+      "title": "Bank group sues U.S. regulator over granting crypto trust charters",
+      "summary": "The Independent Community Bankers of America sued the Office of the Comptroller of the Currency, accusing the regulator of overstepping its legal authority.",
+      "url": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
+      "ts": "2026-10-02T21:23:20Z"
     },
     {
       "tag": "OPTIONS",
@@ -946,10 +946,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Once a $2 billion Ethereum layer-2, Blast is shutting down after assets plunge 98%",
-      "summary": "Once home to more than $2 billion in crypto assets, Blast is shutting down as activity fades, costs rise, and bigger platforms like Coinbase and Robinhood build networks of their own.",
-      "url": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
-      "ts": "2026-10-02T17:15:35Z"
+      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
+      "summary": "The potential agreement could span digital assets, custody, trading, payments and other financial-market infrastructure.",
+      "url": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
+      "ts": "2026-10-02T17:34:40Z"
     },
     {
       "tag": "OPTIONS",
@@ -960,10 +960,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Trump\u2019s potential AI czar, Jay Clayton, helped pioneer the SEC\u2019s crypto crackdown",
-      "summary": "The former SEC chairman who may be tapped to oversee the Trump administration's AI work has a potentially divisive history as a watchdog of tech innovation.",
-      "url": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
-      "ts": "2026-10-02T17:12:48Z"
+      "title": "Once a $2 billion Ethereum layer-2, Blast is shutting down after assets plunge 98%",
+      "summary": "Once home to more than $2 billion in crypto assets, Blast is shutting down as activity fades, costs rise, and bigger platforms like Coinbase and Robinhood build networks of their own.",
+      "url": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
+      "ts": "2026-10-02T17:15:35Z"
     },
     {
       "tag": "OPTIONS",
@@ -974,10 +974,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "America at a crossroads: Commissioner Peirce\u2019s parting challenge",
-      "summary": "It is incumbent upon us to continue Commissioner Peirce\u2019s mission, writes Will Schwartz, policy associate at the Blockchain Association.",
-      "url": "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
-      "ts": "2026-10-02T13:22:19Z"
+      "title": "Trump\u2019s potential AI czar, Jay Clayton, helped pioneer the SEC\u2019s crypto crackdown",
+      "summary": "The former SEC chairman who may be tapped to oversee the Trump administration's AI work has a potentially divisive history as a watchdog of tech innovation.",
+      "url": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
+      "ts": "2026-10-02T17:12:48Z"
     }
   ],
   "calendar": [
@@ -1044,7 +1044,7 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84503,
+    "last": 84478,
     "high_24h": 87086,
     "low_24h": 83898,
     "chg_pct": -0.12
