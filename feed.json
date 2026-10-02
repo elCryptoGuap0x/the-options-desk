@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T22:01:14Z",
+  "generated_at": "2026-10-02T00:30:34Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -18,7 +18,7 @@
     "net_per_ticket": "-5.4%",
     "hold_typ": "~29 min",
     "prior_week_record": "1-0",
-    "session_pnl_usd": -28.0,
+    "session_pnl_usd": 6.0,
     "prior_week_net_usd": 11,
     "today_record": "1 of 1 today"
   },
@@ -41,7 +41,61 @@
       "exit_price": "0.45",
       "entry": "8:50a",
       "exit": "9:36a",
-      "dur": "46 min"
+      "dur": "46 min",
+      "dte": "1DTE",
+      "fuse": {
+        "dots": [
+          "R",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "R",
+          "G",
+          "G",
+          "G",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G",
+          "G"
+        ],
+        "peak_pct": 33.3
+      },
+      "thesis": "Energy broke a quiet morning range and held above it. Bought a next-day call."
     },
     {
       "day": "Mon 9/28",
@@ -409,7 +463,7 @@
       "reason": "The one name with same-week contracts, and it is +0.07% on its own session. Flat all day."
     }
   ],
-  "roast": "",
+  "roast": "Session over. +$6.",
   "streak_last8": [
     "L",
     "L",
@@ -889,20 +943,6 @@
       "tag": "Macro",
       "title": "Yields and oil pull against the chip bid",
       "summary": "The 10-year Treasury yield is near 5.3%, a multi-decade high, and oil prints are conflicting around $92 with Iran-talk headlines still live. Nasdaq futures are the strength overnight while S&P futures are roughly flat, so the open looks two-way rather than a broad gap up."
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
-      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
-      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
-      "ts": "2026-10-01T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "SEC proposes new crypto custody rules for investment advisers and funds",
-      "summary": "The regulator issued a proposed rule for custody, marking a swan song for its inaugural Crypto Task Force chief, Commissioner Hester Peirce, who exits this week.",
-      "url": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
-      "ts": "2026-10-01T20:20:04Z"
     }
   ],
   "calendar": [
@@ -987,7 +1027,7 @@
   },
   "desk_freshness": {
     "watch": "--",
-    "crypto": "3:02"
+    "crypto": "7:30"
   },
   "desk_board": [],
   "last_fill_at": "2026-10-01T14:36:54Z",
