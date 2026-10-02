@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T07:33:55Z",
+  "generated_at": "2026-10-02T12:12:32Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85897,
-      "chg_pct": 2.89,
+      "last": 86449,
+      "chg_pct": 2.95,
       "history": [
-        84207.615,
         84042.355,
         83997.775,
         83957.995,
@@ -580,16 +579,16 @@
         84767,
         84571,
         84593,
-        85897
+        85897,
+        86449
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2724.91,
-      "chg_pct": 1.42,
+      "last": 2747.43,
+      "chg_pct": 1.53,
       "history": [
-        2724.055,
         2722.06,
         2720.075,
         2717.935,
@@ -628,16 +627,16 @@
         2705.17,
         2700.11,
         2700.39,
-        2724.91
+        2724.91,
+        2747.43
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.13,
-      "chg_pct": 2.77,
+      "last": 121.89,
+      "chg_pct": 3.42,
       "history": [
-        120.915,
         120.875,
         120.77,
         120.615,
@@ -676,7 +675,8 @@
         119.06,
         118.67,
         118.72,
-        121.13
+        121.13,
+        121.89
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -955,17 +955,17 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Markets Waver as 10-year Yields Hit 14-year Peak",
+      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
-      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-14-year-peak/",
+      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "SEC proposes new crypto custody rules for investment advisers and funds",
-      "summary": "The regulator issued a proposed rule for custody, marking a swan song for its inaugural Crypto Task Force chief, Commissioner Hester Peirce, who exits this week.",
-      "url": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda",
-      "ts": "2026-10-01T20:20:04Z"
+      "title": "Cboe wants to turn VIX into a never-ending trade",
+      "summary": "Your day-ahead look for Oct. 2, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/02/wall-street-s-fear-gauge-vix-could-get-a-crypto-style-makeover",
+      "ts": "2026-10-02T11:30:00Z"
     }
   ],
   "calendar": [
@@ -1057,17 +1057,17 @@
   "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85901,
+    "last": 86449,
     "high_24h": 86794,
-    "low_24h": 83182,
-    "chg_pct": 2.89
+    "low_24h": 83457,
+    "chg_pct": 2.95
   },
   "macro": {
     "10Y": 5.24,
-    "DXY": 101.87,
-    "WTI": 91.34,
-    "VIX": 16.21,
-    "asof": "2026-10-02T07:33:55Z"
+    "DXY": 102.05,
+    "WTI": 89.58,
+    "VIX": 16.07,
+    "asof": "2026-10-02T12:12:32Z"
   },
   "pulse": null,
   "today_label": "Thu 10/1",
