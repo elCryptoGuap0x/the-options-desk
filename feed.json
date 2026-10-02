@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T20:02:02Z",
+  "generated_at": "2026-10-02T20:12:46Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84107,
-      "chg_pct": -0.79,
+      "last": 84347,
+      "chg_pct": -0.47,
       "history": [
-        83957.995,
         83908.955,
         83926.485,
         83926.065,
@@ -580,16 +579,16 @@
         85897,
         86449,
         86549,
-        84107
+        84107,
+        84347
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2663.9,
-      "chg_pct": -1.43,
+      "last": 2667.35,
+      "chg_pct": -1.18,
       "history": [
-        2717.935,
         2719.025,
         2716.265,
         2721.945,
@@ -628,16 +627,16 @@
         2724.91,
         2747.43,
         2745.2,
-        2663.9
+        2663.9,
+        2667.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 117.81,
-      "chg_pct": -0.54,
+      "last": 118.04,
+      "chg_pct": -0.2,
       "history": [
-        120.615,
         120.515,
         120.575,
         120.565,
@@ -676,7 +675,8 @@
         121.13,
         121.89,
         121.8,
-        117.81
+        117.81,
+        118.04
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -922,7 +922,64 @@
       "why": "On the list. No ticket."
     }
   },
-  "news": [],
+  "news": [
+    {
+      "tag": "OPTIONS",
+      "title": "Market Gains Momentum after Soft Jobs Report",
+      "summary": "In a sign of how the markets often don\u2019t reflect the economy, stocks moved higher and Treasury yields fell after the monthly jobs report signaled weakness that could put interest rate hikes on pause.",
+      "url": "https://www.cboe.com/insights/posts/market-gains-momentum-after-soft-jobs-report/",
+      "ts": "2026-10-02T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
+      "summary": "The potential agreement could span digital assets, custody, trading, payments and other financial-market infrastructure.",
+      "url": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
+      "ts": "2026-10-02T17:34:40Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
+      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
+      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
+      "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Once a $2 billion Ethereum layer-2, Blast is shutting down after assets plunge 98%",
+      "summary": "Once home to more than $2 billion in crypto assets, Blast is shutting down as activity fades, costs rise, and bigger platforms like Coinbase and Robinhood build networks of their own.",
+      "url": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
+      "ts": "2026-10-02T17:15:35Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Markets Move Mostly Higher after PCE Report",
+      "summary": "",
+      "url": "https://www.cboe.com/insights/posts/markets-move-mostly-higher-after-pce-report/",
+      "ts": "2026-09-30T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Trump\u2019s potential AI czar, Jay Clayton, helped pioneer the SEC\u2019s crypto crackdown",
+      "summary": "The former SEC chairman who may be tapped to oversee the Trump administration's AI work has a potentially divisive history as a watchdog of tech innovation.",
+      "url": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
+      "ts": "2026-10-02T17:12:48Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Markets Struggle as Treasury Yields Climb and Oil Slips",
+      "summary": "The three major indices are in negative territory in early trading after attempting to recover at least some of Monday\u2019s pullback that was prompted by rising crude oil prices and Treasury yields.",
+      "url": "https://www.cboe.com/insights/posts/markets-struggle-as-treasury-yields-climb-and-oil-slips/",
+      "ts": "2026-09-29T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "America at a crossroads: Commissioner Peirce\u2019s parting challenge",
+      "summary": "It is incumbent upon us to continue Commissioner Peirce\u2019s mission, writes Will Schwartz, policy associate at the Blockchain Association.",
+      "url": "https://www.coindesk.com/opinion/2026/10/01/america-at-a-crossroads-commissioner-peirce-s-parting-challenge",
+      "ts": "2026-10-02T13:22:19Z"
+    }
+  ],
   "calendar": [
     {
       "what": "Nonfarm payrolls",
@@ -987,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84091,
+    "last": 84347,
     "high_24h": 87086,
     "low_24h": 83898,
-    "chg_pct": -0.76
+    "chg_pct": -0.48
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 101.94,
-    "WTI": 90.98,
-    "VIX": 15.54,
-    "asof": "2026-10-02T19:16:16Z"
+    "DXY": 101.88,
+    "WTI": 91.48,
+    "VIX": 15.43,
+    "asof": "2026-10-02T20:12:46Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
