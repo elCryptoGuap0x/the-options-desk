@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T14:38:37Z",
+  "generated_at": "2026-10-02T14:47:41Z",
   "session": {
     "day_label": "FRI",
     "market_state": "OPEN",
@@ -980,7 +980,7 @@
   },
   "desk_freshness": {
     "watch": "--",
-    "crypto": "9:38"
+    "crypto": "9:47"
   },
   "desk_board": [],
   "last_fill_at": "2026-10-01T14:36:54Z",
