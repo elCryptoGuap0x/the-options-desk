@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T01:37:19Z",
+  "generated_at": "2026-10-02T01:42:00Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -538,8 +538,8 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84571,
-      "chg_pct": 1.31,
+      "last": 84593,
+      "chg_pct": 1.27,
       "history": [
         84425.695,
         84207.615,
@@ -579,14 +579,15 @@
         83956,
         84529,
         84767,
-        84571
+        84571,
+        84593
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2700.11,
-      "chg_pct": 0.45,
+      "last": 2700.39,
+      "chg_pct": 0.43,
       "history": [
         2726.855,
         2724.055,
@@ -626,14 +627,15 @@
         2704.37,
         2693.04,
         2705.17,
-        2700.11
+        2700.11,
+        2700.39
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.67,
-      "chg_pct": 0.52,
+      "last": 118.72,
+      "chg_pct": 0.49,
       "history": [
         121.6,
         120.915,
@@ -673,7 +675,8 @@
         117.97,
         117.67,
         119.06,
-        118.67
+        118.67,
+        118.72
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -952,9 +955,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
+      "title": "Markets Waver as 10-year Yields Hit 14-year Peak",
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
-      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
+      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-14-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
     },
     {
@@ -1054,17 +1057,17 @@
   "tenor_calendar": "weeklies 1DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84605,
+    "last": 84593,
     "high_24h": 85183,
     "low_24h": 83182,
-    "chg_pct": 1.35
+    "chg_pct": 1.27
   },
   "macro": {
     "10Y": 5.24,
-    "DXY": 102.11,
-    "WTI": 93.01,
+    "DXY": 102.12,
+    "WTI": 92.9,
     "VIX": 16.39,
-    "asof": "2026-10-02T01:37:19Z"
+    "asof": "2026-10-02T01:42:00Z"
   },
   "pulse": null,
   "today_label": "Thu 10/1",
