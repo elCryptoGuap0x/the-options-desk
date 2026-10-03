@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T13:18:41Z",
+  "generated_at": "2026-10-03T17:26:34Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84827,
-      "chg_pct": -2.16,
+      "last": 84944,
+      "chg_pct": 0.31,
       "history": [
-        83642.995,
         83485.725,
         83543.505,
         83488.305,
@@ -580,16 +579,16 @@
         84542,
         84616,
         84577,
-        84827
+        84827,
+        84944
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2680.54,
-      "chg_pct": -2.55,
+      "last": 2685.76,
+      "chg_pct": 0.17,
       "history": [
-        2707.265,
         2695.745,
         2699.435,
         2696.81,
@@ -628,16 +627,16 @@
         2667.9,
         2680.0,
         2682.48,
-        2680.54
+        2680.54,
+        2685.76
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.49,
-      "chg_pct": -2.41,
+      "last": 119.92,
+      "chg_pct": 0.25,
       "history": [
-        120.01,
         119.46,
         119.57,
         119.615,
@@ -676,7 +675,8 @@
         118.49,
         119.23,
         119.44,
-        119.49
+        119.49,
+        119.92
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -925,17 +925,17 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Market Gains Momentum after Soft Jobs Report",
+      "title": "Market Gain Momentum after Soft Jobs Report",
       "summary": "In a sign of how the markets often don\u2019t reflect the economy, stocks moved higher and Treasury yields fell after the monthly jobs report signaled weakness that could put interest rate hikes on pause.",
-      "url": "https://www.cboe.com/insights/posts/market-gains-momentum-after-soft-jobs-report/",
+      "url": "https://www.cboe.com/insights/posts/market-gain-momentum-after-soft-jobs-report/",
       "ts": "2026-10-02T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto's Sisyphean struggle",
-      "summary": "Progress will effectively reset when the new Congress is sworn in, because key senators who quarterbacked the bill will not be on the ballot again, writes the Cato Institute's Ryan Chan-Wei.",
-      "url": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
-      "ts": "2026-10-03T13:00:00Z"
+      "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
+      "summary": "CEO Iana Dimitrova said OpenPayd aims to launch in the U.S. by April 2027 and is eyeing deals to add licenses and technology.",
+      "url": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
+      "ts": "2026-10-03T16:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -946,10 +946,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
-      "summary": "Tokenization is not just about putting individual stocks and funds onchain. The next step could be entire investment portfolios that can be traded, rebalanced and eventually managed in real-time.",
-      "url": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
-      "ts": "2026-10-03T13:00:00Z"
+      "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
+      "summary": "Finance, engineering and trading led hiring demand, while Bitcoin, Ethereum and Solana were the most frequently requested blockchain skills.",
+      "url": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
+      "ts": "2026-10-03T16:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -960,10 +960,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bank group sues U.S. regulator over granting crypto trust charters",
-      "summary": "The Independent Community Bankers of America sued the Office of the Comptroller of the Currency, accusing the regulator of overstepping its legal authority.",
-      "url": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
-      "ts": "2026-10-02T21:23:20Z"
+      "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
+      "summary": "As AI agents evolve from answering questions to spending real money, investors and tech giants are scrambling to control the financial networks powering machine-driven commerce.",
+      "url": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
+      "ts": "2026-10-03T15:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -974,10 +974,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
-      "summary": "The potential agreement could span digital assets, custody, trading, payments and other financial-market infrastructure.",
-      "url": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
-      "ts": "2026-10-02T17:34:40Z"
+      "title": "Crypto's Sisyphean struggle",
+      "summary": "Progress will effectively reset when the new Congress is sworn in, because key senators who quarterbacked the bill will not be on the ballot again, writes the Cato Institute's Ryan Chan-Wei.",
+      "url": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
+      "ts": "2026-10-03T13:00:00Z"
     }
   ],
   "calendar": [
@@ -1044,10 +1044,10 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84827,
-    "high_24h": 86796,
+    "last": 84945,
+    "high_24h": 84924,
     "low_24h": 83898,
-    "chg_pct": -2.14
+    "chg_pct": 0.3
   },
   "macro": {
     "10Y": 5.28,
