@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T07:59:59Z",
+  "generated_at": "2026-10-03T13:18:41Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84577,
-      "chg_pct": -1.7,
+      "last": 84827,
+      "chg_pct": -2.16,
       "history": [
-        83718.525,
         83642.995,
         83485.725,
         83543.505,
@@ -580,16 +579,16 @@
         84479,
         84542,
         84616,
-        84577
+        84577,
+        84827
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2682.48,
-      "chg_pct": -2.04,
+      "last": 2680.54,
+      "chg_pct": -2.55,
       "history": [
-        2710.285,
         2707.265,
         2695.745,
         2699.435,
@@ -628,16 +627,16 @@
         2665.78,
         2667.9,
         2680.0,
-        2682.48
+        2682.48,
+        2680.54
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.44,
-      "chg_pct": -1.79,
+      "last": 119.49,
+      "chg_pct": -2.41,
       "history": [
-        120.15,
         120.01,
         119.46,
         119.57,
@@ -676,7 +675,8 @@
         118.33,
         118.49,
         119.23,
-        119.44
+        119.44,
+        119.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bank group sues U.S. regulator over granting crypto trust charters",
-      "summary": "The Independent Community Bankers of America sued the Office of the Comptroller of the Currency, accusing the regulator of overstepping its legal authority.",
-      "url": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
-      "ts": "2026-10-02T21:23:20Z"
+      "title": "Crypto's Sisyphean struggle",
+      "summary": "Progress will effectively reset when the new Congress is sworn in, because key senators who quarterbacked the bill will not be on the ballot again, writes the Cato Institute's Ryan Chan-Wei.",
+      "url": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
+      "ts": "2026-10-03T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -946,10 +946,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
-      "summary": "The potential agreement could span digital assets, custody, trading, payments and other financial-market infrastructure.",
-      "url": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
-      "ts": "2026-10-02T17:34:40Z"
+      "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
+      "summary": "Tokenization is not just about putting individual stocks and funds onchain. The next step could be entire investment portfolios that can be traded, rebalanced and eventually managed in real-time.",
+      "url": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
+      "ts": "2026-10-03T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -960,10 +960,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Once a $2 billion Ethereum layer-2, Blast is shutting down after assets plunge 98%",
-      "summary": "Once home to more than $2 billion in crypto assets, Blast is shutting down as activity fades, costs rise, and bigger platforms like Coinbase and Robinhood build networks of their own.",
-      "url": "https://www.coindesk.com/tech/2026/10/02/once-a-usd2-billion-ethereum-layer-2-blast-is-shutting-down-after-assets-plunge-98",
-      "ts": "2026-10-02T17:15:35Z"
+      "title": "Bank group sues U.S. regulator over granting crypto trust charters",
+      "summary": "The Independent Community Bankers of America sued the Office of the Comptroller of the Currency, accusing the regulator of overstepping its legal authority.",
+      "url": "https://www.coindesk.com/policy/2026/10/02/bank-group-sues-u-s-regulator-over-granting-crypto-trust-charters",
+      "ts": "2026-10-02T21:23:20Z"
     },
     {
       "tag": "OPTIONS",
@@ -974,10 +974,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Trump\u2019s potential AI czar, Jay Clayton, helped pioneer the SEC\u2019s crypto crackdown",
-      "summary": "The former SEC chairman who may be tapped to oversee the Trump administration's AI work has a potentially divisive history as a watchdog of tech innovation.",
-      "url": "https://www.coindesk.com/news-analysis/2026/10/02/possible-next-crypto-czar-jay-clayton-began-crypto-s-regulation-by-enforcement-at-sec",
-      "ts": "2026-10-02T17:12:48Z"
+      "title": "BNY in talks with Kraken parent Payward over infrastructure partnership",
+      "summary": "The potential agreement could span digital assets, custody, trading, payments and other financial-market infrastructure.",
+      "url": "https://www.coindesk.com/business/2026/09/30/bny-in-talks-with-kraken-parent-payward-over-infrastructure-partnership",
+      "ts": "2026-10-02T17:34:40Z"
     }
   ],
   "calendar": [
@@ -1044,10 +1044,10 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84577,
-    "high_24h": 87086,
+    "last": 84827,
+    "high_24h": 86796,
     "low_24h": 83898,
-    "chg_pct": -1.7
+    "chg_pct": -2.14
   },
   "macro": {
     "10Y": 5.28,
