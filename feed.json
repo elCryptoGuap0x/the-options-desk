@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T17:26:34Z",
+  "generated_at": "2026-10-03T20:09:51Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84944,
-      "chg_pct": 0.31,
+      "last": 84869,
+      "chg_pct": 0.59,
       "history": [
-        83485.725,
         83543.505,
         83488.305,
         83448.695,
@@ -580,16 +579,16 @@
         84616,
         84577,
         84827,
-        84944
+        84944,
+        84869
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2685.76,
-      "chg_pct": 0.17,
+      "last": 2686.99,
+      "chg_pct": 0.73,
       "history": [
-        2695.745,
         2699.435,
         2696.81,
         2695.505,
@@ -628,16 +627,16 @@
         2680.0,
         2682.48,
         2680.54,
-        2685.76
+        2685.76,
+        2686.99
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 119.92,
-      "chg_pct": 0.25,
+      "last": 119.93,
+      "chg_pct": 1.61,
       "history": [
-        119.46,
         119.57,
         119.615,
         119.465,
@@ -676,7 +675,8 @@
         119.23,
         119.44,
         119.49,
-        119.92
+        119.92,
+        119.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -925,9 +925,9 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Market Gain Momentum after Soft Jobs Report",
+      "title": "Market Gains Momentum after Soft Jobs Report",
       "summary": "In a sign of how the markets often don\u2019t reflect the economy, stocks moved higher and Treasury yields fell after the monthly jobs report signaled weakness that could put interest rate hikes on pause.",
-      "url": "https://www.cboe.com/insights/posts/market-gain-momentum-after-soft-jobs-report/",
+      "url": "https://www.cboe.com/insights/posts/market-gains-momentum-after-soft-jobs-report/",
       "ts": "2026-10-02T04:00:00Z"
     },
     {
@@ -1044,10 +1044,10 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84945,
-    "high_24h": 84924,
-    "low_24h": 83898,
-    "chg_pct": 0.3
+    "last": 84868,
+    "high_24h": 85014,
+    "low_24h": 84412,
+    "chg_pct": 0.57
   },
   "macro": {
     "10Y": 5.28,
