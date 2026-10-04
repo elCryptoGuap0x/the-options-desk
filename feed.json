@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-04T02:44:37Z",
+  "generated_at": "2026-10-04T08:51:38Z",
   "session": {
-    "day_label": "SAT",
+    "day_label": "SUN",
     "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-10-05T13:30:00Z",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84797,
-      "chg_pct": 0.15,
+      "last": 85099,
+      "chg_pct": 0.56,
       "history": [
-        83448.695,
         83355.135,
         83270.115,
         83116.695,
@@ -580,16 +579,16 @@
         84944,
         84869,
         84753,
-        84797
+        84797,
+        85099
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2692.32,
-      "chg_pct": 0.42,
+      "last": 2698.83,
+      "chg_pct": 0.62,
       "history": [
-        2695.505,
         2691.14,
         2687.385,
         2680.71,
@@ -628,16 +627,16 @@
         2685.76,
         2686.99,
         2685.13,
-        2692.32
+        2692.32,
+        2698.83
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.13,
-      "chg_pct": 0.84,
+      "last": 120.89,
+      "chg_pct": 1.37,
       "history": [
-        119.465,
         119.29,
         118.915,
         118.38,
@@ -676,7 +675,8 @@
         119.92,
         119.93,
         119.61,
-        120.13
+        120.13,
+        120.89
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -966,17 +966,17 @@
       "ts": "2026-10-03T15:00:00Z"
     },
     {
-      "tag": "OPTIONS",
-      "title": "Markets Struggle as Treasury Yields Climb and Oil Slips",
-      "summary": "The three major indices are in negative territory in early trading after attempting to recover at least some of Monday\u2019s pullback that was prompted by rising crude oil prices and Treasury yields.",
-      "url": "https://www.cboe.com/insights/posts/markets-struggle-as-treasury-yields-climb-and-oil-slips/",
-      "ts": "2026-09-29T04:00:00Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Crypto's Sisyphean struggle",
       "summary": "Progress will effectively reset when the new Congress is sworn in, because key senators who quarterbacked the bill will not be on the ballot again, writes the Cato Institute's Ryan Chan-Wei.",
       "url": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
+      "ts": "2026-10-03T13:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
+      "summary": "Tokenization is not just about putting individual stocks and funds onchain. The next step could be entire investment portfolios that can be traded, rebalanced and eventually managed in real-time.",
+      "url": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
       "ts": "2026-10-03T13:00:00Z"
     }
   ],
@@ -1044,10 +1044,10 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84796,
-    "high_24h": 85014,
-    "low_24h": 84518,
-    "chg_pct": 0.15
+    "last": 85094,
+    "high_24h": 85140,
+    "low_24h": 84556,
+    "chg_pct": 0.56
   },
   "macro": {
     "10Y": 5.28,
