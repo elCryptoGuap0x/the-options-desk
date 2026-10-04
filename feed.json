@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T08:51:38Z",
+  "generated_at": "2026-10-04T14:31:11Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85099,
-      "chg_pct": 0.56,
+      "last": 85174,
+      "chg_pct": 0.43,
       "history": [
-        83355.135,
         83270.115,
         83116.695,
         83492,
@@ -580,16 +579,16 @@
         84869,
         84753,
         84797,
-        85099
+        85099,
+        85174
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2698.83,
-      "chg_pct": 0.62,
+      "last": 2695.62,
+      "chg_pct": 0.55,
       "history": [
-        2691.14,
         2687.385,
         2680.71,
         2673.41,
@@ -628,16 +627,16 @@
         2686.99,
         2685.13,
         2692.32,
-        2698.83
+        2698.83,
+        2695.62
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.89,
-      "chg_pct": 1.37,
+      "last": 121.42,
+      "chg_pct": 1.65,
       "history": [
-        119.29,
         118.915,
         118.38,
         119.77,
@@ -676,7 +675,8 @@
         119.93,
         119.61,
         120.13,
-        120.89
+        120.89,
+        121.42
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
-      "summary": "CEO Iana Dimitrova said OpenPayd aims to launch in the U.S. by April 2027 and is eyeing deals to add licenses and technology.",
-      "url": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
-      "ts": "2026-10-03T16:00:00Z"
+      "title": "Crypto poured years into new products. The next challenge is keeping users",
+      "summary": "Crypto firms have spent years building financial products on blockchains. Getting people to use them \u2014 and keep using them \u2014 is becoming the next challenge.",
+      "url": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
+      "ts": "2026-10-04T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -946,10 +946,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
-      "summary": "Finance, engineering and trading led hiring demand, while Bitcoin, Ethereum and Solana were the most frequently requested blockchain skills.",
-      "url": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
-      "ts": "2026-10-03T16:00:00Z"
+      "title": "The Clarity Act stalled. Bankers aren\u2019t hitting the brakes yet on crypto dealmaking",
+      "summary": "Crypto M&A has hit record levels, but the Clarity Act\u2019s Senate setback leaves dealmakers weighing how much regulatory uncertainty still matters.",
+      "url": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
+      "ts": "2026-10-04T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -960,24 +960,24 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
+      "summary": "CEO Iana Dimitrova said OpenPayd aims to launch in the U.S. by April 2027 and is eyeing deals to add licenses and technology.",
+      "url": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
+      "ts": "2026-10-03T16:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto job postings triple to over 1,200 in September, but applications fall",
+      "summary": "Finance, engineering and trading led hiring demand, while Bitcoin, Ethereum and Solana were the most frequently requested blockchain skills.",
+      "url": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
+      "ts": "2026-10-03T16:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
       "summary": "As AI agents evolve from answering questions to spending real money, investors and tech giants are scrambling to control the financial networks powering machine-driven commerce.",
       "url": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
       "ts": "2026-10-03T15:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto's Sisyphean struggle",
-      "summary": "Progress will effectively reset when the new Congress is sworn in, because key senators who quarterbacked the bill will not be on the ballot again, writes the Cato Institute's Ryan Chan-Wei.",
-      "url": "https://www.coindesk.com/opinion/2026/10/03/crypto-s-sisyphean-struggle",
-      "ts": "2026-10-03T13:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "BlackRock offers a glimpse of how tokenization may change your investment portfolio",
-      "summary": "Tokenization is not just about putting individual stocks and funds onchain. The next step could be entire investment portfolios that can be traded, rebalanced and eventually managed in real-time.",
-      "url": "https://www.coindesk.com/business/2026/10/03/blackrock-offers-a-glimpse-of-how-tokenization-may-change-your-investment-portfolio",
-      "ts": "2026-10-03T13:00:00Z"
     }
   ],
   "calendar": [
@@ -1044,10 +1044,10 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85094,
-    "high_24h": 85140,
-    "low_24h": 84556,
-    "chg_pct": 0.56
+    "last": 85174,
+    "high_24h": 85401,
+    "low_24h": 84572,
+    "chg_pct": 0.43
   },
   "macro": {
     "10Y": 5.28,
