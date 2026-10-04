@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T18:20:26Z",
+  "generated_at": "2026-10-04T20:26:12Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85317,
-      "chg_pct": 0.43,
+      "last": 85463,
+      "chg_pct": 0.69,
       "history": [
-        83116.695,
         83492,
         83099,
         83608,
@@ -580,16 +579,16 @@
         84797,
         85099,
         85174,
-        85317
+        85317,
+        85463
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2701.35,
-      "chg_pct": 0.59,
+      "last": 2701.85,
+      "chg_pct": 0.54,
       "history": [
-        2680.71,
         2673.41,
         2668.09,
         2673.14,
@@ -628,16 +627,16 @@
         2692.32,
         2698.83,
         2695.62,
-        2701.35
+        2701.35,
+        2701.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.39,
-      "chg_pct": 1.31,
+      "last": 120.9,
+      "chg_pct": 0.77,
       "history": [
-        118.38,
         119.77,
         117.97,
         117.54,
@@ -676,7 +675,8 @@
         120.13,
         120.89,
         121.42,
-        121.39
+        121.39,
+        120.9
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto poured years into new products. The next challenge is keeping users",
-      "summary": "Crypto firms have spent years building financial products on blockchains. Getting people to use them \u2014 and keep using them \u2014 is becoming the next challenge.",
-      "url": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
-      "ts": "2026-10-04T14:00:00Z"
+      "title": "There's an election next month: State of Crypto",
+      "summary": "Congress is gone from Washington for the final pre-election recess, and it's time to take stock of what's going on ahead of November.",
+      "url": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
+      "ts": "2026-10-04T18:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -946,10 +946,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "The Clarity Act stalled. Bankers aren\u2019t hitting the brakes yet on crypto dealmaking",
-      "summary": "Crypto M&A has hit record levels, but the Clarity Act\u2019s Senate setback leaves dealmakers weighing how much regulatory uncertainty still matters.",
-      "url": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
-      "ts": "2026-10-04T13:00:00Z"
+      "title": "Crypto poured years into new products. The next challenge is keeping users",
+      "summary": "Crypto firms have spent years building financial products on blockchains. Getting people to use them \u2014 and keep using them \u2014 is becoming the next challenge.",
+      "url": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
+      "ts": "2026-10-04T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -957,6 +957,13 @@
       "summary": "",
       "url": "https://www.cboe.com/insights/posts/markets-move-mostly-higher-after-pce-report/",
       "ts": "2026-09-30T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "The Clarity Act stalled. Bankers aren\u2019t hitting the brakes yet on crypto dealmaking",
+      "summary": "Crypto M&A has hit record levels, but the Clarity Act\u2019s Senate setback leaves dealmakers weighing how much regulatory uncertainty still matters.",
+      "url": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
+      "ts": "2026-10-04T13:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -971,13 +978,6 @@
       "summary": "Finance, engineering and trading led hiring demand, while Bitcoin, Ethereum and Solana were the most frequently requested blockchain skills.",
       "url": "https://www.coindesk.com/business/2026/10/03/crypto-job-postings-triple-to-over-1-200-in-september-but-applications-fall",
       "ts": "2026-10-03T16:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Cathie Wood says smart investors need to start watching where AI agents spend money",
-      "summary": "As AI agents evolve from answering questions to spending real money, investors and tech giants are scrambling to control the financial networks powering machine-driven commerce.",
-      "url": "https://www.coindesk.com/markets/2026/10/01/cathie-wood-says-smart-investors-need-to-start-watching-where-ai-agents-spend-money",
-      "ts": "2026-10-03T15:00:00Z"
     }
   ],
   "calendar": [
@@ -1044,10 +1044,10 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85318,
-    "high_24h": 85435,
+    "last": 85459,
+    "high_24h": 85518,
     "low_24h": 84572,
-    "chg_pct": 0.42
+    "chg_pct": 0.69
   },
   "macro": {
     "10Y": 5.28,
