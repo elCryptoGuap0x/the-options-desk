@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T04:41:28Z",
+  "generated_at": "2026-10-05T04:56:34Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85571,
-      "chg_pct": 0.91,
+      "last": 85549,
+      "chg_pct": 0.88,
       "history": [
-        84470,
         84526,
         84498,
         84535,
@@ -580,16 +579,16 @@
         86315,
         86235,
         85843,
-        85571
+        85571,
+        85549
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2700.92,
-      "chg_pct": 0.34,
+      "last": 2703.02,
+      "chg_pct": 0.45,
       "history": [
-        2663.23,
         2663.31,
         2665.3,
         2667.84,
@@ -628,16 +627,16 @@
         2725.01,
         2719.93,
         2711.8,
-        2700.92
+        2700.92,
+        2703.02
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.26,
-      "chg_pct": -0.29,
+      "last": 120.39,
+      "chg_pct": -0.16,
       "history": [
-        118.11,
         118.18,
         118.37,
         118.52,
@@ -676,7 +675,8 @@
         120.89,
         120.63,
         120.35,
-        120.26
+        120.26,
+        120.39
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin zooms toward $87,000, nearly setting an eight-month high, then reverses",
-      "summary": "Bitcoin came within about $500 of its late-September peak before sellers pushed it back under $86,000. It's the second rally in a week to stall.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
-      "ts": "2026-10-05T04:23:25Z"
+      "title": "Joint venture of OKX and NYSE parent ICE files for 24/7 tokenized U.S. stock trading",
+      "summary": "OKXICE, the joint venture of OKX and ICE, plans to launch tokenized U.S. stocks under SEC's new innovation exemption.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
+      "ts": "2026-10-05T04:45:03Z"
     },
     {
       "tag": "OPTIONS",
@@ -943,6 +943,20 @@
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
       "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Zcash\u2019s 25-second blocks go live on public testnet ahead of schedule",
+      "summary": "NU7 cuts the target block time from 75 seconds to 25, giving exchanges, wallets and developers a live rehearsal before a planned November mainnet launch.",
+      "url": "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
+      "ts": "2026-10-05T04:41:35Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin zooms toward $87,000, nearly setting an eight-month high, then reverses",
+      "summary": "Bitcoin came within about $500 of its late-September peak before sellers pushed it back under $86,000. It's the second rally in a week to stall.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
+      "ts": "2026-10-05T04:23:25Z"
     },
     {
       "tag": "CRYPTO",
@@ -964,20 +978,6 @@
       "summary": "Crypto firms have spent years building financial products on blockchains. Getting people to use them \u2014 and keep using them \u2014 is becoming the next challenge.",
       "url": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
       "ts": "2026-10-04T14:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "The Clarity Act stalled. Bankers aren\u2019t hitting the brakes yet on crypto dealmaking",
-      "summary": "Crypto M&A has hit record levels, but the Clarity Act\u2019s Senate setback leaves dealmakers weighing how much regulatory uncertainty still matters.",
-      "url": "https://www.coindesk.com/business/2026/10/04/the-clarity-act-stalled-crypto-dealmakers-aren-t-hitting-the-brakes-yet",
-      "ts": "2026-10-04T13:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Payments firm OpenPayd targets year-end Nasdaq listing to fund U.S. expansion and acquisitions",
-      "summary": "CEO Iana Dimitrova said OpenPayd aims to launch in the U.S. by April 2027 and is eyeing deals to add licenses and technology.",
-      "url": "https://www.coindesk.com/business/2026/10/03/openpayd-targets-year-end-nasdaq-listing-to-fund-u-s-expansion-and-acquisitions",
-      "ts": "2026-10-03T16:00:00Z"
     }
   ],
   "calendar": [
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85561,
+    "last": 85535,
     "high_24h": 86949,
     "low_24h": 84801,
-    "chg_pct": 0.89
+    "chg_pct": 0.86
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.48,
-    "WTI": 89.94,
+    "DXY": 102.44,
+    "WTI": 90.34,
     "VIX": 15.31,
-    "asof": "2026-10-05T04:41:28Z"
+    "asof": "2026-10-05T04:56:34Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
