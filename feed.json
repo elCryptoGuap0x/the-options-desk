@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T10:43:28Z",
+  "generated_at": "2026-10-05T10:58:34Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86054,
-      "chg_pct": 0.85,
+      "last": 86146,
+      "chg_pct": 1.0,
       "history": [
-        86492,
         86421,
         86433,
         86408,
@@ -580,16 +579,16 @@
         85926,
         85956,
         85994,
-        86054
+        86054,
+        86146
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2713.47,
-      "chg_pct": 0.41,
+      "last": 2717.79,
+      "chg_pct": 0.57,
       "history": [
-        2726.56,
         2724.84,
         2724.23,
         2725.56,
@@ -628,16 +627,16 @@
         2718.83,
         2716.72,
         2717.64,
-        2713.47
+        2713.47,
+        2717.79
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.56,
-      "chg_pct": -0.66,
+      "last": 120.77,
+      "chg_pct": -0.45,
       "history": [
-        121.53,
         121.39,
         121.34,
         121.3,
@@ -676,7 +675,8 @@
         120.68,
         120.63,
         120.65,
-        120.56
+        120.56,
+        120.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin above $86,000 as traders price out an October Fed hike",
-      "summary": "A weak September jobs report took a rate hike off the table, but bitcoin is still stuck below $87,000, with FOMC minutes due Wednesday.",
-      "url": "https://www.coindesk.com/business/2026/10/05/live-updates-bitcoin-above-usd86-000-as-traders-price-out-an-october-fed-hike",
-      "ts": "2026-10-05T10:39:57Z"
+      "title": "Metaplanet added 1,000 bitcoin net in the third quarter bringing holdings to 44,000 BTC",
+      "summary": "The Japanese firm sold 10,000 BTC before buying 11,000 BTC, demonstrating liquidity as it seeks recurring income from preferred securities.",
+      "url": "https://www.coindesk.com/business/2026/10/05/metaplanet-adds-1-000-bitcoin-after-sale-and-repurchase-launches-income-strategy",
+      "ts": "2026-10-05T10:58:03Z"
     },
     {
       "tag": "OPTIONS",
@@ -943,6 +943,20 @@
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
       "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "U.S. dollar climbs to 18-month high as bitcoin holds firm around $86,000",
+      "summary": "A stronger dollar and rising bond yields are testing bitcoin\u2019s resilience as fiscal concerns in France and political uncertainty in Spain weigh on the euro.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/u-s-dollar-climbs-to-18-month-high-as-bitcoin-holds-firm-around-usd86-000",
+      "ts": "2026-10-05T10:44:55Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Live updates: Bitcoin above $86,000 as traders price out an October Fed hike",
+      "summary": "A weak September jobs report took a rate hike off the table, but bitcoin is still stuck below $87,000, with FOMC minutes due Wednesday.",
+      "url": "https://www.coindesk.com/business/2026/10/05/live-updates-bitcoin-above-usd86-000-as-traders-price-out-an-october-fed-hike",
+      "ts": "2026-10-05T10:39:57Z"
     },
     {
       "tag": "CRYPTO",
@@ -964,20 +978,6 @@
       "summary": "The two firms will initially roll out the digital assets settlement service to select institutional clients in Asia and the Gulf region with around-the-clock U.S. dollar settlement.",
       "url": "https://www.coindesk.com/business/2026/10/05/kraken-operator-payward-and-singapore-gulf-bank-platform-for-24-7-institutional-crypto-settlement",
       "ts": "2026-10-05T09:26:24Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin is about to get a major bullish signal it hasn't had in over a year",
-      "summary": "Key price averages are on the verge of confirming a major bullish configuration for the first time in over a year.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/bitcoin-is-about-to-get-a-major-bullish-signal-it-hasn-t-had-in-over-a-year",
-      "ts": "2026-10-05T06:57:40Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Ethereum investors are stuck in a two-week staking exit line. Here's why.",
-      "summary": "Ether waiting to enter staking has fallen by more than a quarter since early September, while the exit queue hit its longest of 2026.",
-      "url": "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
-      "ts": "2026-10-05T06:40:29Z"
     }
   ],
   "calendar": [
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 86013,
+    "last": 86146,
     "high_24h": 86949,
     "low_24h": 85098,
-    "chg_pct": 0.85
+    "chg_pct": 1.0
   },
   "macro": {
     "10Y": 5.28,
     "DXY": 102.2,
-    "WTI": 90.76,
-    "VIX": 16.29,
-    "asof": "2026-10-05T10:43:28Z"
+    "WTI": 90.61,
+    "VIX": 16.3,
+    "asof": "2026-10-05T10:58:34Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
