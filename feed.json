@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T06:27:03Z",
+  "generated_at": "2026-10-05T06:42:10Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85954,
-      "chg_pct": 1.21,
+      "last": 85839,
+      "chg_pct": 1.02,
       "history": [
-        84616,
         84577,
         84827,
         84944,
@@ -580,16 +579,16 @@
         85702,
         85723,
         85728,
-        85954
+        85954,
+        85839
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2713.36,
-      "chg_pct": 0.79,
+      "last": 2711.87,
+      "chg_pct": 0.73,
       "history": [
-        2680.0,
         2682.48,
         2680.54,
         2685.76,
@@ -628,16 +627,16 @@
         2703.12,
         2703.95,
         2704.61,
-        2713.36
+        2713.36,
+        2711.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.88,
-      "chg_pct": 0.11,
+      "last": 120.86,
+      "chg_pct": -0.01,
       "history": [
-        119.23,
         119.44,
         119.49,
         119.92,
@@ -676,7 +675,8 @@
         120.36,
         120.32,
         120.35,
-        120.88
+        120.88,
+        120.86
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Joint venture of OKX and NYSE parent ICE files for 24/7 tokenized U.S. stock trading",
-      "summary": "OKXICE, the joint venture of OKX and ICE, plans to launch tokenized U.S. stocks under SEC's new innovation exemption.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
-      "ts": "2026-10-05T04:45:03Z"
+      "title": "Ethereum has a 25-day wait to start staking, with nearly 1.5 million ETH in line",
+      "summary": "Ether waiting to enter staking has fallen by more than a quarter since early September, while the exit queue hit its longest of 2026.",
+      "url": "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
+      "ts": "2026-10-05T06:40:29Z"
     },
     {
       "tag": "OPTIONS",
@@ -943,6 +943,13 @@
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
       "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Joint venture of OKX and NYSE parent ICE files for 24/7 tokenized U.S. stock trading",
+      "summary": "OKXICE, the joint venture of OKX and ICE, plans to launch tokenized U.S. stocks under SEC's new innovation exemption.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
+      "ts": "2026-10-05T04:45:03Z"
     },
     {
       "tag": "CRYPTO",
@@ -971,13 +978,6 @@
       "summary": "Congress is gone from Washington for the final pre-election recess, and it's time to take stock of what's going on ahead of November.",
       "url": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
       "ts": "2026-10-04T18:30:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto poured years into new products. The next challenge is keeping users",
-      "summary": "Crypto firms have spent years building financial products on blockchains. Getting people to use them \u2014 and keep using them \u2014 is becoming the next challenge.",
-      "url": "https://www.coindesk.com/business/2026/10/04/crypto-poured-years-into-new-products-the-next-challenge-is-keeping-users",
-      "ts": "2026-10-04T14:00:00Z"
     }
   ],
   "calendar": [
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85954,
+    "last": 85819,
     "high_24h": 86949,
     "low_24h": 84916,
-    "chg_pct": 1.23
+    "chg_pct": 1.0
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.27,
-    "WTI": 89.7,
+    "DXY": 102.34,
+    "WTI": 90.04,
     "VIX": 15.31,
-    "asof": "2026-10-05T06:27:03Z"
+    "asof": "2026-10-05T06:42:10Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
