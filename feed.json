@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T10:13:24Z",
+  "generated_at": "2026-10-05T10:43:28Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85994,
-      "chg_pct": 0.9,
+      "last": 86054,
+      "chg_pct": 0.85,
       "history": [
-        86502,
         86492,
         86421,
         86433,
@@ -580,16 +579,16 @@
         85890,
         85926,
         85956,
-        85994
+        85994,
+        86054
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2717.64,
-      "chg_pct": 0.59,
+      "last": 2713.47,
+      "chg_pct": 0.41,
       "history": [
-        2726.11,
         2726.56,
         2724.84,
         2724.23,
@@ -628,16 +627,16 @@
         2719.53,
         2718.83,
         2716.72,
-        2717.64
+        2717.64,
+        2713.47
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.65,
-      "chg_pct": -0.62,
+      "last": 120.56,
+      "chg_pct": -0.66,
       "history": [
-        121.55,
         121.53,
         121.39,
         121.34,
@@ -676,7 +675,8 @@
         120.72,
         120.68,
         120.63,
-        120.65
+        120.65,
+        120.56
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Technicals signal bitcoin shift, Ethereum gears up for Glamsterdam: Crypto Week Ahead",
-      "summary": "Your look at what's coming in the week starting Oct. 5.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/technicals-signal-bitcoin-shift-ethereum-gears-up-for-glamsterdam-crypto-week-ahead",
-      "ts": "2026-10-05T09:37:13Z"
+      "title": "Live updates: Bitcoin above $86,000 as traders price out an October Fed hike",
+      "summary": "A weak September jobs report took a rate hike off the table, but bitcoin is still stuck below $87,000, with FOMC minutes due Wednesday.",
+      "url": "https://www.coindesk.com/business/2026/10/05/live-updates-bitcoin-above-usd86-000-as-traders-price-out-an-october-fed-hike",
+      "ts": "2026-10-05T10:39:57Z"
     },
     {
       "tag": "OPTIONS",
@@ -943,6 +943,20 @@
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
       "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Cardano's ADA leads gains in narrow range-bound market",
+      "summary": "In traditional markets, the U.S. Dollar Index jumped to 102.53 early today, the highest since April 2025, extending its rise from the Sept. 9 low of 98.60.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/cardano-s-ada-leads-gains-in-narrow-range-bound-market",
+      "ts": "2026-10-05T10:37:30Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Technicals signal bitcoin shift, Ethereum gears up for Glamsterdam: Crypto Week Ahead",
+      "summary": "Your look at what's coming in the week starting Oct. 5.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/technicals-signal-bitcoin-shift-ethereum-gears-up-for-glamsterdam-crypto-week-ahead",
+      "ts": "2026-10-05T09:37:13Z"
     },
     {
       "tag": "CRYPTO",
@@ -964,20 +978,6 @@
       "summary": "Ether waiting to enter staking has fallen by more than a quarter since early September, while the exit queue hit its longest of 2026.",
       "url": "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
       "ts": "2026-10-05T06:40:29Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Joint venture of OKX and NYSE parent ICE files for 24/7 tokenized U.S. stock trading",
-      "summary": "OKXICE, the joint venture of OKX and ICE, plans to launch tokenized U.S. stocks under SEC's new innovation exemption.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/okx-and-nyse-s-owner-file-for-round-the-clock-tokenized-trading-in-u-s-stocks",
-      "ts": "2026-10-05T04:45:03Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Zcash\u2019s 25-second blocks go live on public testnet ahead of schedule",
-      "summary": "NU7 cuts the target block time from 75 seconds to 25, giving exchanges, wallets and developers a live rehearsal before a planned November mainnet launch.",
-      "url": "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule",
-      "ts": "2026-10-05T04:41:35Z"
     }
   ],
   "calendar": [
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85994,
+    "last": 86013,
     "high_24h": 86949,
     "low_24h": 85098,
-    "chg_pct": 0.93
+    "chg_pct": 0.85
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.19,
-    "WTI": 90.81,
+    "DXY": 102.2,
+    "WTI": 90.76,
     "VIX": 16.29,
-    "asof": "2026-10-05T10:13:24Z"
+    "asof": "2026-10-05T10:43:28Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
