@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-05T03:56:17Z",
+  "generated_at": "2026-10-05T04:26:22Z",
   "session": {
-    "day_label": "SUN",
-    "market_state": "WEEKEND",
-    "next_open": "MON 8:30 CT",
+    "day_label": "MON",
+    "market_state": "CLOSED",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-05T13:30:00Z",
     "position": "FLAT",
-    "desk_arms": "MON 8:20 CT"
+    "desk_arms": null
   },
   "stats": {
     "record": "1-1",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86235,
-      "chg_pct": 1.65,
+      "last": 85843,
+      "chg_pct": 1.23,
       "history": [
-        84519,
         84506,
         84470,
         84526,
@@ -580,16 +579,16 @@
         86425,
         86385,
         86315,
-        86235
+        86235,
+        85843
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2719.93,
-      "chg_pct": 0.96,
+      "last": 2711.8,
+      "chg_pct": 0.7,
       "history": [
-        2661.28,
         2664.66,
         2663.23,
         2663.31,
@@ -628,16 +627,16 @@
         2727.71,
         2723.43,
         2725.01,
-        2719.93
+        2719.93,
+        2711.8
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.63,
-      "chg_pct": -0.1,
+      "last": 120.35,
+      "chg_pct": -0.2,
       "history": [
-        118.04,
         118.16,
         118.11,
         118.18,
@@ -676,7 +675,8 @@
         121.03,
         120.88,
         120.89,
-        120.63
+        120.63,
+        120.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ether's bitcoin-beating Q3 rally came with a catch. Liquidity thinned.",
-      "summary": "Ether beat bitcoin in the third quarter, but its market liquidity got thinner, according to Coingecko.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned",
-      "ts": "2026-10-05T03:50:29Z"
+      "title": "Bitcoin zooms toward $87,000, nearly setting an eight-month high, then reverses",
+      "summary": "Bitcoin came within about $500 of its late-September peak before sellers pushed it back under $86,000. It's the second rally in a week to stall.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/bitcoin-zooms-toward-usd87-000-nearly-setting-an-eight-month-high-then-reverses",
+      "ts": "2026-10-05T04:23:25Z"
     },
     {
       "tag": "OPTIONS",
@@ -946,17 +946,17 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Ether's bitcoin-beating Q3 rally came with a catch. Liquidity thinned.",
+      "summary": "Ether beat bitcoin in the third quarter, but its market liquidity got thinner, according to Coingecko.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/ether-s-bitcoin-beating-q3-rally-came-with-a-catch-liquidity-thinned",
+      "ts": "2026-10-05T03:50:29Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "There's an election next month: State of Crypto",
       "summary": "Congress is gone from Washington for the final pre-election recess, and it's time to take stock of what's going on ahead of November.",
       "url": "https://www.coindesk.com/policy/2026/10/04/there-s-an-election-next-month-state-of-crypto",
       "ts": "2026-10-04T18:30:00Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Markets Move Mostly Higher after PCE Report",
-      "summary": "",
-      "url": "https://www.cboe.com/insights/posts/markets-move-mostly-higher-after-pce-report/",
-      "ts": "2026-09-30T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 86242,
+    "last": 85764,
     "high_24h": 86949,
-    "low_24h": 84798,
-    "chg_pct": 1.65
+    "low_24h": 84801,
+    "chg_pct": 1.16
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.45,
-    "WTI": 90.03,
+    "DXY": 102.48,
+    "WTI": 89.91,
     "VIX": 15.31,
-    "asof": "2026-10-05T03:56:17Z"
+    "asof": "2026-10-05T04:26:22Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
