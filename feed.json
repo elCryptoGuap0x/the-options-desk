@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T11:13:40Z",
+  "generated_at": "2026-10-05T11:28:47Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85916,
-      "chg_pct": 0.77,
+      "last": 86036,
+      "chg_pct": 0.86,
       "history": [
-        86433,
         86408,
         86276,
         86625,
@@ -580,16 +579,16 @@
         85994,
         86054,
         86146,
-        85916
+        85916,
+        86036
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2711.56,
-      "chg_pct": 0.37,
+      "last": 2715.77,
+      "chg_pct": 0.46,
       "history": [
-        2724.23,
         2725.56,
         2718.99,
         2728.53,
@@ -628,16 +627,16 @@
         2717.64,
         2713.47,
         2717.79,
-        2711.56
+        2711.56,
+        2715.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.49,
-      "chg_pct": -0.66,
+      "last": 120.76,
+      "chg_pct": -0.54,
       "history": [
-        121.34,
         121.3,
         120.95,
         121.3,
@@ -676,7 +675,8 @@
         120.65,
         120.56,
         120.77,
-        120.49
+        120.49,
+        120.76
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -932,10 +932,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Treasury crackdown exposes crypto's role in $2 million Hamas fundraising network",
-      "summary": "The Treasury Department said the network raised more than $2 million through purported humanitarian charities, including hundreds of thousands of dollars sent in crypto.",
-      "url": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network",
-      "ts": "2026-10-05T11:08:03Z"
+      "title": "SEC approves a 3x fix for bitcoin and ether traders who miss the wild swings",
+      "summary": "Your day-ahead look for Oct. 5, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/05/sec-approves-a-3x-fix-for-bitcoin-and-ether-traders-who-miss-the-wild-swings",
+      "ts": "2026-10-05T11:14:35Z"
     },
     {
       "tag": "OPTIONS",
@@ -943,6 +943,13 @@
       "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
       "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
       "ts": "2026-10-01T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Treasury crackdown exposes crypto's role in $2 million Hamas fundraising network",
+      "summary": "The Treasury Department said the network raised more than $2 million through purported humanitarian charities, including hundreds of thousands of dollars sent in crypto.",
+      "url": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network",
+      "ts": "2026-10-05T11:08:03Z"
     },
     {
       "tag": "CRYPTO",
@@ -971,13 +978,6 @@
       "summary": "In traditional markets, the U.S. Dollar Index jumped to 102.53 early today, the highest since April 2025, extending its rise from the Sept. 9 low of 98.60.",
       "url": "https://www.coindesk.com/markets/2026/10/05/cardano-s-ada-leads-gains-in-narrow-range-bound-market",
       "ts": "2026-10-05T10:37:30Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Technicals signal bitcoin shift, Ethereum gears up for Glamsterdam: Crypto Week Ahead",
-      "summary": "Your look at what's coming in the week starting Oct. 5.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/technicals-signal-bitcoin-shift-ethereum-gears-up-for-glamsterdam-crypto-week-ahead",
-      "ts": "2026-10-05T09:37:13Z"
     }
   ],
   "calendar": [
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85916,
+    "last": 86036,
     "high_24h": 86949,
     "low_24h": 85098,
-    "chg_pct": 0.79
+    "chg_pct": 0.88
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.23,
-    "WTI": 90.64,
-    "VIX": 16.19,
-    "asof": "2026-10-05T11:13:40Z"
+    "DXY": 102.25,
+    "WTI": 90.29,
+    "VIX": 16.23,
+    "asof": "2026-10-05T11:28:47Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
