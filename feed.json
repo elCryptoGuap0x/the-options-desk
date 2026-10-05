@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T07:42:30Z",
+  "generated_at": "2026-10-05T07:57:36Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -538,10 +538,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 86236,
-      "chg_pct": 1.52,
+      "last": 86272,
+      "chg_pct": 1.48,
       "history": [
-        84869,
         84753,
         84797,
         85099,
@@ -580,16 +579,16 @@
         85839,
         86260,
         86314,
-        86236
+        86236,
+        86272
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2724.35,
-      "chg_pct": 1.11,
+      "last": 2724.59,
+      "chg_pct": 0.97,
       "history": [
-        2686.99,
         2685.13,
         2692.32,
         2698.83,
@@ -628,16 +627,16 @@
         2711.87,
         2723.95,
         2728.37,
-        2724.35
+        2724.35,
+        2724.59
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 121.64,
-      "chg_pct": 0.49,
+      "last": 121.73,
+      "chg_pct": 0.63,
       "history": [
-        119.93,
         119.61,
         120.13,
         120.89,
@@ -676,7 +675,8 @@
         120.86,
         121.55,
         121.73,
-        121.64
+        121.64,
+        121.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -946,7 +946,7 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ethereum has a 25-day wait to start staking, with nearly 1.5 million ETH in line",
+      "title": "Ethereum investors are stuck in a two-week staking exit line. Here's why.",
       "summary": "Ether waiting to enter staking has fallen by more than a quarter since early September, while the exit queue hit its longest of 2026.",
       "url": "https://www.coindesk.com/tech/2026/10/05/ethereum-has-a-25-day-wait-to-start-staking-with-nearly-1-5-million-eth-in-line",
       "ts": "2026-10-05T06:40:29Z"
@@ -1044,17 +1044,17 @@
   "tenor_calendar": "weeklies 0DTE live \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 86236,
+    "last": 86260,
     "high_24h": 86949,
     "low_24h": 85026,
-    "chg_pct": 1.52
+    "chg_pct": 1.48
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.27,
-    "WTI": 89.74,
+    "DXY": 102.18,
+    "WTI": 89.67,
     "VIX": 16.3,
-    "asof": "2026-10-05T07:42:30Z"
+    "asof": "2026-10-05T07:57:36Z"
   },
   "pulse": null,
   "today_label": "Fri 10/2",
