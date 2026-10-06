@@ -991,17 +991,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85940,
-    "high_24h": 86662,
+    "last": 86015,
+    "high_24h": 86625,
     "low_24h": 85010,
-    "chg_pct": -0.32
+    "chg_pct": 0.88
   },
   "macro": {
-    "10Y": 5.31,
-    "DXY": 101.99,
-    "WTI": 88.03,
-    "VIX": 15.45,
-    "asof": "2026-10-06T08:53:28Z"
+    "10Y": 5.26,
+    "DXY": 101.8,
+    "WTI": 88.8,
+    "VIX": 15.29,
+    "asof": "2026-10-06T15:51:08Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
