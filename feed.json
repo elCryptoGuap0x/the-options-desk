@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T21:36:20Z",
+  "generated_at": "2026-10-06T01:52:59Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85868,
-      "chg_pct": -0.04,
+      "last": 85667,
+      "chg_pct": -1.1,
       "history": [
-        86500,
         86789,
         86680,
         86606,
@@ -589,16 +588,16 @@
         86036,
         86162,
         86097,
-        85868
+        85868,
+        85667
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2715.07,
-      "chg_pct": 0.37,
+      "last": 2708.44,
+      "chg_pct": -0.57,
       "history": [
-        2725.36,
         2729.74,
         2724.19,
         2724.2,
@@ -637,16 +636,16 @@
         2715.77,
         2718.06,
         2715.46,
-        2715.07
+        2715.07,
+        2708.44
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.72,
-      "chg_pct": -0.59,
+      "last": 120.61,
+      "chg_pct": -0.38,
       "history": [
-        121.15,
         121.44,
         121.04,
         121.06,
@@ -685,7 +684,8 @@
         120.76,
         120.86,
         120.54,
-        120.72
+        120.72,
+        120.61
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,9 +934,9 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Week of 10/5/2026: Equity Markets Remain Resilient Amidst Continued Yield Surge",
-      "summary": "Cross-asset implied volatilities edged higher as cooler-than-expected core inflation and weak job growth momentarily quelled escalating bond yields. Learn more in this week\u2019s Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-10-5-2026-equity-markets-remain-resilient-amidst-continued-yield-surge/",
+      "title": "Mixed Markets as Traders Look for Catalysts",
+      "summary": "There aren\u2019t many catalysts moving the markets in the early going as we await the onset of earnings season. After Friday\u2019s weaker-than-expected jobs report that helped lift the markets, today\u2019s moves are mixed.",
+      "url": "https://www.cboe.com/insights/posts/mixed-markets-as-traders-look-for-catalysts/",
       "ts": "2026-10-05T04:00:00Z"
     },
     {
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Mixed Markets as Traders Look for Catalysts",
-      "summary": "There aren\u2019t many catalysts moving the markets in the early going as we await the onset of earnings season. After Friday\u2019s weaker-than-expected jobs report that helped lift the markets, today\u2019s moves are mixed.",
-      "url": "https://www.cboe.com/insights/posts/mixed-markets-as-traders-look-for-catalysts/",
-      "ts": "2026-10-05T04:00:00Z"
+      "title": "Market Gains Momentum after Soft Jobs Report",
+      "summary": "In a sign of how the markets often don\u2019t reflect the economy, stocks moved higher and Treasury yields fell after the monthly jobs report signaled weakness that could put interest rate hikes on pause.",
+      "url": "https://www.cboe.com/insights/posts/market-gains-momentum-after-soft-jobs-report/",
+      "ts": "2026-10-02T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Gains Momentum after Soft Jobs Report",
-      "summary": "In a sign of how the markets often don\u2019t reflect the economy, stocks moved higher and Treasury yields fell after the monthly jobs report signaled weakness that could put interest rate hikes on pause.",
-      "url": "https://www.cboe.com/insights/posts/market-gains-momentum-after-soft-jobs-report/",
-      "ts": "2026-10-02T04:00:00Z"
+      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
+      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
+      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
+      "ts": "2026-10-01T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -975,18 +975,18 @@
       "ts": "2026-10-05T15:54:23Z"
     },
     {
-      "tag": "OPTIONS",
-      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
-      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
-      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
-      "ts": "2026-10-01T04:00:00Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Stripe to expand stablecoin cards to over 100 countries by the end of the year",
       "summary": "The payments giant is planning a major global expansion for its stablecoin cards business, and is exploring tokenized deposits and DeFi use cases, new crypto head Henri Stern said.",
       "url": "https://www.coindesk.com/business/2026/10/01/stripe-to-expand-stablecoin-cards-to-over-100-countries-by-the-end-of-the-year",
       "ts": "2026-10-05T13:46:31Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "An XRP treasury SPAC surges nearly 300% ahead of Evernorth merger",
+      "summary": "Armada Acquisition Corp. II rose about 270% last week, leaving the thinly traded shell at nearly four times its roughly $10.50 trust value before merging with Evernorth, an XPR treasury company.",
+      "url": "https://www.coindesk.com/markets/2026/10/05/xrp-treasury-spac-surges-nearly-300-ahead-of-evernorth-merger",
+      "ts": "2026-10-05T12:28:35Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85822,
-    "high_24h": 86949,
+    "last": 85667,
+    "high_24h": 86700,
     "low_24h": 85010,
-    "chg_pct": -0.05
+    "chg_pct": -1.1
   },
   "macro": {
     "10Y": 5.31,
-    "DXY": 102.12,
-    "WTI": 89.3,
+    "DXY": 102.09,
+    "WTI": 89.48,
     "VIX": 15.52,
-    "asof": "2026-10-05T21:36:20Z"
+    "asof": "2026-10-06T01:52:59Z"
   },
   "pulse": null,
   "today_label": "Mon 10/5",
