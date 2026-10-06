@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T01:52:59Z",
+  "generated_at": "2026-10-06T08:53:28Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-06T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85667,
-      "chg_pct": -1.1,
+      "last": 85940,
+      "chg_pct": -0.34,
       "history": [
-        86789,
         86680,
         86606,
         86653,
@@ -589,16 +588,16 @@
         86162,
         86097,
         85868,
-        85667
+        85667,
+        85940
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2708.44,
-      "chg_pct": -0.57,
+      "last": 2714.48,
+      "chg_pct": -0.22,
       "history": [
-        2729.74,
         2724.19,
         2724.2,
         2728.75,
@@ -637,16 +636,16 @@
         2718.06,
         2715.46,
         2715.07,
-        2708.44
+        2708.44,
+        2714.48
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.61,
-      "chg_pct": -0.38,
+      "last": 120.49,
+      "chg_pct": -0.51,
       "history": [
-        121.44,
         121.04,
         121.06,
         121.37,
@@ -685,7 +684,8 @@
         120.86,
         120.54,
         120.72,
-        120.61
+        120.61,
+        120.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto's campaign arm, Fairshake, sets lists of U.S. House favorites it'll spend on",
-      "summary": "The super PAC shared a list of more than 30 incumbent candidates it's backing, with about a million dollars going to three names from each party.",
-      "url": "https://www.coindesk.com/policy/2026/10/05/crypto-s-campaign-arm-fairshake-sets-lists-of-u-s-house-favorites-it-ll-spend-on",
-      "ts": "2026-10-05T19:21:06Z"
+      "title": "Why bitcoin is down 'just' 32% a year after its record high of $126,000",
+      "summary": "This shallower decline isn\u2019t limited to the one-year anniversary. The bear market itself has been milder with past downturns seeing prices plummet 77% to 85%.",
+      "url": "https://www.coindesk.com/markets/2026/10/06/from-retail-leverage-to-etf-flows-a-year-after-its-record-high-bitcoin-is-down-just-32",
+      "ts": "2026-10-06T08:27:43Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,38 +955,38 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "More than 60 U.S. stocks including Nvidia and Tesla are headed onchain. Here\u2019s how it works",
-      "summary": "The planned 24/7 venue will offer dozens of tokenized U.S. stocks, with trades conducted against stablecoins through blockchain-based liquidity pools rather than a traditional order book.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/more-than-60-u-s-stocks-including-nvidia-and-tesla-are-headed-onchain-here-s-how-it-works",
-      "ts": "2026-10-05T17:18:14Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Markets Waver as 10-year Yields Hit 24-year Peak",
-      "summary": "Hello to the fourth quarter, a historically robust period for trading, especially after a third quarter challenged by market blips. Typically, a handful of drivers move the markets, such as holiday spikes in consumer spending, year-end inst",
-      "url": "https://www.cboe.com/insights/posts/markets-waver-as-10-year-yields-hit-24-year-peak/",
-      "ts": "2026-10-01T04:00:00Z"
+      "title": "U.S. scraps proposed $10,000 reporting rule for for crypto sent to private wallets",
+      "summary": "FinCEN withdrew two proposals that had hung over self-custody and crypto mixers for years without ever taking effect.",
+      "url": "https://www.coindesk.com/policy/2026/10/06/u-s-scraps-proposed-usd10-000-reporting-rule-for-for-crypto-sent-to-private-wallets",
+      "ts": "2026-10-06T04:55:36Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. CFTC joins SEC in proposing crypto regulations, though spot-market gap lingers",
-      "summary": "The derivatives regulator is proposing two rules meant to cover the waterfront of crypto activity and exchanges, as long as it's not simple, direct trading.",
-      "url": "https://www.coindesk.com/policy/2026/10/05/u-s-cftc-joins-sec-in-proposing-crypto-regulations-though-spot-market-gap-lingers",
-      "ts": "2026-10-05T15:54:23Z"
+      "title": "Ethereum\u2019s Glamsterdam test gets last-minute fix before major capacity jump",
+      "summary": "One of Ethereum\u2019s main validator clients updated its software hours before a Sepolia test that will raise the amount of work each block can hold to 200 million gas.",
+      "url": "https://www.coindesk.com/tech/2026/10/06/ethereum-s-glamsterdam-test-gets-last-minute-fix-before-major-capacity-jump",
+      "ts": "2026-10-06T04:49:05Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Stripe to expand stablecoin cards to over 100 countries by the end of the year",
-      "summary": "The payments giant is planning a major global expansion for its stablecoin cards business, and is exploring tokenized deposits and DeFi use cases, new crypto head Henri Stern said.",
-      "url": "https://www.coindesk.com/business/2026/10/01/stripe-to-expand-stablecoin-cards-to-over-100-countries-by-the-end-of-the-year",
-      "ts": "2026-10-05T13:46:31Z"
+      "title": "Bitcoin keeps getting rejected at $87,000 as stocks hover near records",
+      "summary": "BTC fell back to about $85,600 after sellers turned it away from $87,000 for the third time since Sept. 23, while Nasdaq closed at a record and Treasury yields kept climbing.",
+      "url": "https://www.coindesk.com/markets/2026/10/06/bitcoin-keeps-getting-rejected-at-usd87-000-as-stocks-hover-near-records",
+      "ts": "2026-10-06T04:41:10Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "An XRP treasury SPAC surges nearly 300% ahead of Evernorth merger",
-      "summary": "Armada Acquisition Corp. II rose about 270% last week, leaving the thinly traded shell at nearly four times its roughly $10.50 trust value before merging with Evernorth, an XPR treasury company.",
-      "url": "https://www.coindesk.com/markets/2026/10/05/xrp-treasury-spac-surges-nearly-300-ahead-of-evernorth-merger",
-      "ts": "2026-10-05T12:28:35Z"
+      "title": "Solana Foundation unveils a program to settle institutional trades in seconds. JPMorgan gave input",
+      "summary": "Solana Foundation launched an open-source program that lets institutions settle trades in seconds, not days. JPMorgan provided key inputs.",
+      "url": "https://www.coindesk.com/markets/2026/10/06/solana-foundation-unveils-a-program-to-settle-institutional-trades-in-seconds-with-jpmorgan-s-inputs",
+      "ts": "2026-10-06T04:23:45Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto's campaign arm, Fairshake, sets lists of U.S. House favorites it'll spend on",
+      "summary": "The super PAC shared a list of more than 30 incumbent candidates it's backing, with about a million dollars going to three names from each party.",
+      "url": "https://www.coindesk.com/policy/2026/10/05/crypto-s-campaign-arm-fairshake-sets-lists-of-u-s-house-favorites-it-ll-spend-on",
+      "ts": "2026-10-05T19:21:06Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85667,
-    "high_24h": 86700,
+    "last": 85940,
+    "high_24h": 86662,
     "low_24h": 85010,
-    "chg_pct": -1.1
+    "chg_pct": -0.32
   },
   "macro": {
     "10Y": 5.31,
-    "DXY": 102.09,
-    "WTI": 89.48,
-    "VIX": 15.52,
-    "asof": "2026-10-06T01:52:59Z"
+    "DXY": 101.99,
+    "WTI": 88.03,
+    "VIX": 15.45,
+    "asof": "2026-10-06T08:53:28Z"
   },
   "pulse": null,
   "today_label": "Mon 10/5",
