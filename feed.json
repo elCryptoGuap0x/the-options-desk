@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-07T06:35:55Z",
+  "generated_at": "2026-10-07T19:55:28Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-07T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-08T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84231,
-      "chg_pct": -1.25,
+      "last": 83312,
+      "chg_pct": -2.65,
       "history": [
-        85954,
         85839,
         86260,
         86314,
@@ -589,16 +588,16 @@
         85527,
         85438,
         85467,
-        84231
+        84231,
+        83312
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2617.97,
-      "chg_pct": -2.83,
+      "last": 2567.6,
+      "chg_pct": -4.54,
       "history": [
-        2713.36,
         2711.87,
         2723.95,
         2728.37,
@@ -637,16 +636,16 @@
         2697.26,
         2694.79,
         2694.84,
-        2617.97
+        2617.97,
+        2567.6
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 118.7,
-      "chg_pct": -0.81,
+      "last": 115.73,
+      "chg_pct": -4.19,
       "history": [
-        120.88,
         120.86,
         121.55,
         121.73,
@@ -685,7 +684,8 @@
         120.47,
         120.37,
         120.43,
-        118.7
+        118.7,
+        115.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,6 +933,13 @@
   },
   "news": [
     {
+      "tag": "FED",
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "ts": "2026-10-07T18:00:00Z"
+    },
+    {
       "tag": "OPTIONS",
       "title": "Markets Take Off as Tech Stocks Rally",
       "summary": "When traders take a breather from the noise surrounding them \u2014much of it negative in recent months \u2014 and look closer at what\u2019s happening in the markets, it becomes clear the U.S. stock market is the best place to park their money compared w",
@@ -941,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. government moves over $100 million in BTC and BNB. A sale hasn't been confirmed",
-      "summary": "Wallets linked to the U.S. government moved millions in crypto on Tuesday, according to data tracked by Arkham.",
-      "url": "https://www.coindesk.com/markets/2026/10/07/u-s-government-moves-over-usd100-million-in-btc-and-bnb-a-sale-hasn-t-been-confirmed",
-      "ts": "2026-10-07T05:58:25Z"
+      "title": "Wells Fargo in talks with Kraken parent Payward for crypto trading liquidity",
+      "summary": "The discussions would see Payward supply liquidity for crypto trading as major banks deepen their involvement in digital assets.",
+      "url": "https://www.coindesk.com/business/2026/10/05/wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
+      "ts": "2026-10-07T18:59:32Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Pudgy Penguins\u2019 Abstract becomes second Ethereum layer 2 to shut in a week",
-      "summary": "The consumer-focused blockchain will close Dec. 15 after Igloo spent tens of millions supporting it, days after Blast said its own network was no longer worth operating.",
-      "url": "https://www.coindesk.com/tech/2026/10/07/pudgy-penguins-abstract-becomes-second-ethereum-layer-2-to-shut-in-a-week",
-      "ts": "2026-10-07T04:31:14Z"
+      "title": "Polygon taps TRON\u2019s $94 billion stablecoin supply for seamless cross-border transfers",
+      "summary": "Polygon said businesses can also move the world\u2019s largest stablecoin USDT between TRON and EVM networks without connecting to a wallet provider, bridge or fiat-ramp operator.",
+      "url": "https://www.coindesk.com/business/2026/10/07/polygon-and-tron-partner-to-bridge-usd94-billion-usdt-ecosystem-with-u-s-banking-rails",
+      "ts": "2026-10-07T16:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +976,17 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cardano gives token issuers power to freeze, seize and restrict assets",
-      "summary": "The new standard is aimed at regulated stablecoins, funds and bonds whose issuers need identity checks, sanctions controls and other transfer rules built into the asset itself.",
-      "url": "https://www.coindesk.com/tech/2026/10/07/cardano-gives-token-issuers-power-to-freeze-seize-and-restrict-assets",
-      "ts": "2026-10-07T04:11:33Z"
+      "title": "Gate bets all-in-one money app is crypto\u2019s biggest consumer trend this year and next",
+      "summary": "Gate rebrands around Gate Money, which combines accounts, asset conversion, savings and card payments as the exchange broadens beyond its trading base.",
+      "url": "https://www.coindesk.com/business/2026/10/07/gate-bets-all-in-one-money-app-is-crypto-s-biggest-consumer-trend-this-year-and-next",
+      "ts": "2026-10-07T15:13:15Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin dips below $84,000 as oil jumps on Iranian tanker attacks",
-      "summary": "Bitcoin briefly broke under the level analysts flagged as the point where sellers take over. Oil and the dollar both climbed.",
-      "url": "https://www.coindesk.com/markets/2026/10/07/bitcoin-dips-below-usd84-000-as-oil-jumps-on-iranian-tanker-attacks",
-      "ts": "2026-10-07T04:00:51Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Peter Thiel-backed Founders Fund leads a $5 million token buy in crypto collateral protocol Anvil",
-      "summary": "Pantera Capital and Bullish also participated in the ANVL purchase as Anvil rolls out software designed to make its collateral protocol easier for businesses to integrate.",
-      "url": "https://www.coindesk.com/business/2026/10/06/peter-thiel-backed-founders-fund-leads-a-usd5-million-token-buy-in-crypto-collateral-protocol-anvil",
-      "ts": "2026-10-06T17:00:00Z"
+      "title": "Crypto Long & Short: Zcash and the case for privacy in the age of AI",
+      "summary": "AI has made it cheap to link wallet addresses to the people behind them, and the permanence of the blockchain means records don\u2019t age out. Michael Zhao of Grayscale Research explains how Zcash\u2019s shielded transactions address this problem, a",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/10/07/crypto-long-and-short-zcash-and-the-case-for-privacy-in-the-age-of-ai",
+      "ts": "2026-10-07T15:03:54Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83245,
-    "high_24h": 86648,
-    "low_24h": 83409,
-    "chg_pct": -3.67
+    "last": 83314,
+    "high_24h": 85659,
+    "low_24h": 82823,
+    "chg_pct": -2.63
   },
   "macro": {
-    "10Y": 5.36,
-    "DXY": 102.41,
-    "WTI": 90.92,
-    "VIX": 15.93,
-    "asof": "2026-10-07T06:35:55Z"
+    "10Y": 5.28,
+    "DXY": 102.28,
+    "WTI": 88.99,
+    "VIX": 15.03,
+    "asof": "2026-10-07T19:55:28Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
