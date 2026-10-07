@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-07T00:37:44Z",
+  "generated_at": "2026-10-07T06:35:55Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-07T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 85467,
-      "chg_pct": -0.38,
+      "last": 84231,
+      "chg_pct": -1.25,
       "history": [
-        85728,
         85954,
         85839,
         86260,
@@ -589,16 +588,16 @@
         85491,
         85527,
         85438,
-        85467
+        85467,
+        84231
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2694.84,
-      "chg_pct": -0.66,
+      "last": 2617.97,
+      "chg_pct": -2.83,
       "history": [
-        2704.61,
         2713.36,
         2711.87,
         2723.95,
@@ -637,16 +636,16 @@
         2695.4,
         2697.26,
         2694.79,
-        2694.84
+        2694.84,
+        2617.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 120.43,
-      "chg_pct": -0.34,
+      "last": 118.7,
+      "chg_pct": -0.81,
       "history": [
-        120.35,
         120.88,
         120.86,
         121.55,
@@ -685,7 +684,8 @@
         120.52,
         120.47,
         120.37,
-        120.43
+        120.43,
+        118.7
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Peter Thiel-backed Founders Fund leads a $5 million token buy in crypto collateral protocol Anvil",
-      "summary": "Pantera Capital and Bullish also participated in the ANVL purchase as Anvil rolls out software designed to make its collateral protocol easier for businesses to integrate.",
-      "url": "https://www.coindesk.com/business/2026/10/06/peter-thiel-backed-founders-fund-leads-a-usd5-million-token-buy-in-crypto-collateral-protocol-anvil",
-      "ts": "2026-10-06T17:00:00Z"
+      "title": "U.S. government moves over $100 million in BTC and BNB. A sale hasn't been confirmed",
+      "summary": "Wallets linked to the U.S. government moved millions in crypto on Tuesday, according to data tracked by Arkham.",
+      "url": "https://www.coindesk.com/markets/2026/10/07/u-s-government-moves-over-usd100-million-in-btc-and-bnb-a-sale-hasn-t-been-confirmed",
+      "ts": "2026-10-07T05:58:25Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto is expanding the boundaries of what can be priced",
-      "summary": "The future of crypto may therefore depend less on creating the next novel asset and more on building the infrastructure required to price a growing universe of existing ones, argues Altius co-founder and CEO Annabelle Huang.",
-      "url": "https://www.coindesk.com/opinion/2026/10/06/crypto-is-expanding-the-boundaries-of-what-can-be-priced",
-      "ts": "2026-10-06T16:50:26Z"
+      "title": "Pudgy Penguins\u2019 Abstract becomes second Ethereum layer 2 to shut in a week",
+      "summary": "The consumer-focused blockchain will close Dec. 15 after Igloo spent tens of millions supporting it, days after Blast said its own network was no longer worth operating.",
+      "url": "https://www.coindesk.com/tech/2026/10/07/pudgy-penguins-abstract-becomes-second-ethereum-layer-2-to-shut-in-a-week",
+      "ts": "2026-10-07T04:31:14Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +969,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "OKX draws investment from StanChart, Circle, Ripple as it pushes beyond crypto exchange roots",
-      "summary": "The exchange is increasingly aiming to position itself as a global financial tech platform spanning crypto, payments and tokenized assets, following an investment and joint venture with NYSE parent ICE.",
-      "url": "https://www.coindesk.com/business/2026/10/06/okx-draws-investment-from-stanchart-circle-ripple-as-it-pushes-beyond-crypto-exchange-roots",
-      "ts": "2026-10-06T15:20:30Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Market Gains Momentum after Soft Jobs Report",
-      "summary": "In a sign of how the markets often don\u2019t reflect the economy, stocks moved higher and Treasury yields fell after the monthly jobs report signaled weakness that could put interest rate hikes on pause.",
-      "url": "https://www.cboe.com/insights/posts/market-gains-momentum-after-soft-jobs-report/",
-      "ts": "2026-10-02T04:00:00Z"
+      "title": "Cardano gives token issuers power to freeze, seize and restrict assets",
+      "summary": "The new standard is aimed at regulated stablecoins, funds and bonds whose issuers need identity checks, sanctions controls and other transfer rules built into the asset itself.",
+      "url": "https://www.coindesk.com/tech/2026/10/07/cardano-gives-token-issuers-power-to-freeze-seize-and-restrict-assets",
+      "ts": "2026-10-07T04:11:33Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Arbitrum joins Paxos-led stablecoin group Global Dollar to capture digital dollar growth",
-      "summary": "The Ethereum layer-2 is backing Paxos-issued USDG to earn a share of reserve income as new stablecoin alliances compete for distribution, users and reserve economics.",
-      "url": "https://www.coindesk.com/business/2026/10/05/arbitrum-joins-paxos-led-stablecoin-group-global-dollar-to-capture-digital-dollar-growth",
-      "ts": "2026-10-06T13:02:33Z"
+      "title": "Bitcoin dips below $84,000 as oil jumps on Iranian tanker attacks",
+      "summary": "Bitcoin briefly broke under the level analysts flagged as the point where sellers take over. Oil and the dollar both climbed.",
+      "url": "https://www.coindesk.com/markets/2026/10/07/bitcoin-dips-below-usd84-000-as-oil-jumps-on-iranian-tanker-attacks",
+      "ts": "2026-10-07T04:00:51Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Peter Thiel-backed Founders Fund leads a $5 million token buy in crypto collateral protocol Anvil",
+      "summary": "Pantera Capital and Bullish also participated in the ANVL purchase as Anvil rolls out software designed to make its collateral protocol easier for businesses to integrate.",
+      "url": "https://www.coindesk.com/business/2026/10/06/peter-thiel-backed-founders-fund-leads-a-usd5-million-token-buy-in-crypto-collateral-protocol-anvil",
+      "ts": "2026-10-06T17:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 85467,
+    "last": 84202,
     "high_24h": 86648,
-    "low_24h": 85122,
-    "chg_pct": -0.38
+    "low_24h": 83648,
+    "chg_pct": -1.26
   },
   "macro": {
     "10Y": 5.27,
-    "DXY": 101.94,
-    "WTI": 90.3,
+    "DXY": 102.13,
+    "WTI": 90.24,
     "VIX": 15.01,
-    "asof": "2026-10-07T00:37:44Z"
+    "asof": "2026-10-07T06:35:55Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
