@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T00:08:31Z",
+  "generated_at": "2026-10-08T06:18:41Z",
   "session": {
-    "day_label": "WED",
+    "day_label": "THU",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-08T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83214,
-      "chg_pct": -2.64,
+      "last": 82873,
+      "chg_pct": -1.61,
       "history": [
-        86260,
         86314,
         86236,
         86272,
@@ -589,16 +588,16 @@
         85467,
         84231,
         83312,
-        83214
+        83214,
+        82873
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2571.26,
-      "chg_pct": -4.62,
+      "last": 2569.77,
+      "chg_pct": -1.78,
       "history": [
-        2723.95,
         2728.37,
         2724.35,
         2724.59,
@@ -637,16 +636,16 @@
         2694.84,
         2617.97,
         2567.6,
-        2571.26
+        2571.26,
+        2569.77
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 116.16,
-      "chg_pct": -3.57,
+      "last": 115.32,
+      "chg_pct": -2.72,
       "history": [
-        121.55,
         121.73,
         121.64,
         121.73,
@@ -685,7 +684,8 @@
         120.43,
         118.7,
         115.73,
-        116.16
+        116.16,
+        115.32
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Wells Fargo in talks with Kraken parent Payward for crypto trading liquidity",
-      "summary": "The discussions would see Payward supply liquidity for crypto trading as major banks deepen their involvement in digital assets.",
-      "url": "https://www.coindesk.com/business/2026/10/05/wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
-      "ts": "2026-10-07T18:59:32Z"
+      "title": "Ripple is earning fees financing leveraged stock bets, a business long run by banks",
+      "summary": "The crypto company's $1.25 billion acquisition of Hidden Road has opened a corner of Wall Street where funds pay to amplify daily moves in stocks such as Nvidia and Sandisk.",
+      "url": "https://www.coindesk.com/markets/2026/10/08/ripple-is-earning-fees-financing-leveraged-stock-bets-a-business-long-run-by-banks",
+      "ts": "2026-10-08T06:17:13Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Polygon taps TRON\u2019s $94 billion stablecoin supply for seamless cross-border transfers",
-      "summary": "Polygon said businesses can also move the world\u2019s largest stablecoin USDT between TRON and EVM networks without connecting to a wallet provider, bridge or fiat-ramp operator.",
-      "url": "https://www.coindesk.com/business/2026/10/07/polygon-and-tron-partner-to-bridge-usd94-billion-usdt-ecosystem-with-u-s-banking-rails",
-      "ts": "2026-10-07T16:30:00Z"
+      "title": "Bitcoin loans are paying for tuition and working capital, not just trades, lenders say",
+      "summary": "Bitcoin-backed lending is evolving into a mainstream source of credit, with borrowers using BTC to access liquidity without selling.",
+      "url": "https://www.coindesk.com/markets/2026/10/08/bitcoin-loans-are-paying-for-tuition-and-working-capital-not-just-trades-lenders-say",
+      "ts": "2026-10-08T05:40:41Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,17 +976,17 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Gate bets all-in-one money app is crypto\u2019s biggest consumer trend this year and next",
-      "summary": "Gate rebrands around Gate Money, which combines accounts, asset conversion, savings and card payments as the exchange broadens beyond its trading base.",
-      "url": "https://www.coindesk.com/business/2026/10/07/gate-bets-all-in-one-money-app-is-crypto-s-biggest-consumer-trend-this-year-and-next",
-      "ts": "2026-10-07T15:13:15Z"
+      "title": "Ethereum\u2019s Glamsterdam test runs near 200 million gas per block after upgrade",
+      "summary": "The Sepolia rehearsal has raised its processing budget more than threefold, but sampled blocks used less than half that allowance.",
+      "url": "https://www.coindesk.com/tech/2026/10/08/ethereum-s-glamsterdam-test-runs-near-200-million-gas-per-block-after-upgrade",
+      "ts": "2026-10-08T04:23:23Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto Long & Short: Zcash and the case for privacy in the age of AI",
-      "summary": "AI has made it cheap to link wallet addresses to the people behind them, and the permanence of the blockchain means records don\u2019t age out. Michael Zhao of Grayscale Research explains how Zcash\u2019s shielded transactions address this problem, a",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/10/07/crypto-long-and-short-zcash-and-the-case-for-privacy-in-the-age-of-ai",
-      "ts": "2026-10-07T15:03:54Z"
+      "title": "Bitcoin breaks below $83,000 as oil jumps on Iran strike-plan report",
+      "summary": "Bitcoin has slipped under a level FxPro says opens a \"quick path to $80,000.\" Brent crude climbed above $102 and pushed Treasury yields back toward their highest since 2002.",
+      "url": "https://www.coindesk.com/markets/2026/10/08/bitcoin-breaks-below-usd83-000-as-oil-jumps-on-iran-strike-plan-report",
+      "ts": "2026-10-08T04:00:07Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83214,
-    "high_24h": 85527,
-    "low_24h": 82823,
-    "chg_pct": -2.65
+    "last": 82873,
+    "high_24h": 84283,
+    "low_24h": 82318,
+    "chg_pct": -1.61
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.25,
-    "WTI": 88.95,
+    "DXY": 102.33,
+    "WTI": 90.39,
     "VIX": 15.08,
-    "asof": "2026-10-08T00:08:31Z"
+    "asof": "2026-10-08T06:18:41Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
