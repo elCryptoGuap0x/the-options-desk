@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T06:18:41Z",
+  "generated_at": "2026-10-08T19:31:10Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-08T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-09T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82873,
-      "chg_pct": -1.61,
+      "last": 81645,
+      "chg_pct": -2.13,
       "history": [
-        86314,
         86236,
         86272,
         86443,
@@ -589,16 +588,16 @@
         84231,
         83312,
         83214,
-        82873
+        82873,
+        81645
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2569.77,
-      "chg_pct": -1.78,
+      "last": 2456.8,
+      "chg_pct": -4.2,
       "history": [
-        2728.37,
         2724.35,
         2724.59,
         2733.19,
@@ -637,16 +636,16 @@
         2617.97,
         2567.6,
         2571.26,
-        2569.77
+        2569.77,
+        2456.8
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.32,
-      "chg_pct": -2.72,
+      "last": 108.93,
+      "chg_pct": -6.3,
       "history": [
-        121.73,
         121.64,
         121.73,
         121.9,
@@ -685,7 +684,8 @@
         118.7,
         115.73,
         116.16,
-        115.32
+        115.32,
+        108.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Markets Struggle as Middle East Conflict Heats Up",
+      "summary": "We\u2019ve seen this picture before: Markets are falling as the Middle East conflict worsens and continues to curtail oil shipping, fueling inflation fears and driving Treasury yields higher.",
+      "url": "https://www.cboe.com/insights/posts/markets-struggle-as-middle-east-conflict-heats-up/",
+      "ts": "2026-10-08T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto crumbles as anniversary of flash crash nears",
+      "summary": "It was October 10, 2025, when bitcoin plunged from about $122,000 to $105,000, with much of the decline occurring within minutes.",
+      "url": "https://www.coindesk.com/markets/2026/10/08/crypto-crumbles-as-anniversary-of-flash-crash-nears",
+      "ts": "2026-10-08T18:14:39Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Markets Take Off as Tech Stocks Rally",
       "summary": "When traders take a breather from the noise surrounding them \u2014much of it negative in recent months \u2014 and look closer at what\u2019s happening in the markets, it becomes clear the U.S. stock market is the best place to park their money compared w",
       "url": "https://www.cboe.com/insights/posts/markets-take-off-as-tech-stocks-rally/",
@@ -948,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ripple is earning fees financing leveraged stock bets, a business long run by banks",
-      "summary": "The crypto company's $1.25 billion acquisition of Hidden Road has opened a corner of Wall Street where funds pay to amplify daily moves in stocks such as Nvidia and Sandisk.",
-      "url": "https://www.coindesk.com/markets/2026/10/08/ripple-is-earning-fees-financing-leveraged-stock-bets-a-business-long-run-by-banks",
-      "ts": "2026-10-08T06:17:13Z"
+      "title": "NFL joins pushback against prediction markets as U.S. Supreme Court asked to act",
+      "summary": "In opposition to federal oversight of the prediction markets, the National Football League has sided with states, Gary Gensler and one of the authors of the relevant law.",
+      "url": "https://www.coindesk.com/policy/2026/10/08/nfl-joins-pushback-against-prediction-markets-as-u-s-supreme-court-asked-to-act",
+      "ts": "2026-10-08T18:06:41Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin loans are paying for tuition and working capital, not just trades, lenders say",
-      "summary": "Bitcoin-backed lending is evolving into a mainstream source of credit, with borrowers using BTC to access liquidity without selling.",
-      "url": "https://www.coindesk.com/markets/2026/10/08/bitcoin-loans-are-paying-for-tuition-and-working-capital-not-just-trades-lenders-say",
-      "ts": "2026-10-08T05:40:41Z"
+      "title": "U.S. government moves $1 billion in bitcoin tied to Bitfinex hack, with no sign of sale",
+      "summary": "Arkham data shows the 12,267 BTC went to unlabeled wallets rather than an exchange, a day after $383 million hit Coinbase Prime.",
+      "url": "https://www.coindesk.com/business/2026/10/08/u-s-government-moves-usd1-billion-in-bitcoin-from-bitfinex-hack-wallet-no-sale-indicated",
+      "ts": "2026-10-08T15:43:04Z"
     },
     {
       "tag": "OPTIONS",
@@ -973,20 +987,6 @@
       "summary": "Cross-asset implied volatilities edged higher as cooler-than-expected core inflation and weak job growth momentarily quelled escalating bond yields. Learn more in this week\u2019s Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-10-5-2026-equity-markets-remain-resilient-amidst-continued-yield-surge/",
       "ts": "2026-10-05T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Ethereum\u2019s Glamsterdam test runs near 200 million gas per block after upgrade",
-      "summary": "The Sepolia rehearsal has raised its processing budget more than threefold, but sampled blocks used less than half that allowance.",
-      "url": "https://www.coindesk.com/tech/2026/10/08/ethereum-s-glamsterdam-test-runs-near-200-million-gas-per-block-after-upgrade",
-      "ts": "2026-10-08T04:23:23Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin breaks below $83,000 as oil jumps on Iran strike-plan report",
-      "summary": "Bitcoin has slipped under a level FxPro says opens a \"quick path to $80,000.\" Brent crude climbed above $102 and pushed Treasury yields back toward their highest since 2002.",
-      "url": "https://www.coindesk.com/markets/2026/10/08/bitcoin-breaks-below-usd83-000-as-oil-jumps-on-iran-strike-plan-report",
-      "ts": "2026-10-08T04:00:07Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82019,
-    "high_24h": 83616,
-    "low_24h": 82115,
-    "chg_pct": -1.34
+    "last": 81645,
+    "high_24h": 83563,
+    "low_24h": 80427,
+    "chg_pct": -2.13
   },
   "macro": {
-    "10Y": 5.29,
-    "DXY": 102.29,
-    "WTI": 92.13,
-    "VIX": 15.52,
-    "asof": "2026-10-08T06:18:41Z"
+    "10Y": 5.23,
+    "DXY": 102.11,
+    "WTI": 91.33,
+    "VIX": 15.63,
+    "asof": "2026-10-08T19:31:10Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
