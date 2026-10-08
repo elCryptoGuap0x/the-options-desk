@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T19:55:28Z",
+  "generated_at": "2026-10-08T00:08:31Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83312,
-      "chg_pct": -2.65,
+      "last": 83214,
+      "chg_pct": -2.64,
       "history": [
-        85839,
         86260,
         86314,
         86236,
@@ -589,16 +588,16 @@
         85438,
         85467,
         84231,
-        83312
+        83312,
+        83214
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2567.6,
-      "chg_pct": -4.54,
+      "last": 2571.26,
+      "chg_pct": -4.62,
       "history": [
-        2711.87,
         2723.95,
         2728.37,
         2724.35,
@@ -637,16 +636,16 @@
         2694.79,
         2694.84,
         2617.97,
-        2567.6
+        2567.6,
+        2571.26
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 115.73,
-      "chg_pct": -4.19,
+      "last": 116.16,
+      "chg_pct": -3.57,
       "history": [
-        120.86,
         121.55,
         121.73,
         121.64,
@@ -685,7 +684,8 @@
         120.37,
         120.43,
         118.7,
-        115.73
+        115.73,
+        116.16
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83314,
-    "high_24h": 85659,
+    "last": 83214,
+    "high_24h": 85527,
     "low_24h": 82823,
-    "chg_pct": -2.63
+    "chg_pct": -2.65
   },
   "macro": {
     "10Y": 5.28,
-    "DXY": 102.28,
-    "WTI": 88.99,
-    "VIX": 15.03,
-    "asof": "2026-10-07T19:55:28Z"
+    "DXY": 102.25,
+    "WTI": 88.95,
+    "VIX": 15.08,
+    "asof": "2026-10-08T00:08:31Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
