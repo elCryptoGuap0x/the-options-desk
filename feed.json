@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:31:10Z",
+  "generated_at": "2026-10-08T23:55:22Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81645,
-      "chg_pct": -2.13,
+      "last": 81690,
+      "chg_pct": -1.87,
       "history": [
-        86236,
         86272,
         86443,
         86344,
@@ -589,16 +588,16 @@
         83312,
         83214,
         82873,
-        81645
+        81645,
+        81690
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2456.8,
-      "chg_pct": -4.2,
+      "last": 2472.2,
+      "chg_pct": -3.92,
       "history": [
-        2724.35,
         2724.59,
         2733.19,
         2725.66,
@@ -637,16 +636,16 @@
         2567.6,
         2571.26,
         2569.77,
-        2456.8
+        2456.8,
+        2472.2
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 108.93,
-      "chg_pct": -6.3,
+      "last": 109.66,
+      "chg_pct": -5.61,
       "history": [
-        121.64,
         121.73,
         121.9,
         121.61,
@@ -685,7 +684,8 @@
         115.73,
         116.16,
         115.32,
-        108.93
+        108.93,
+        109.66
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto crumbles as anniversary of flash crash nears",
-      "summary": "It was October 10, 2025, when bitcoin plunged from about $122,000 to $105,000, with much of the decline occurring within minutes.",
-      "url": "https://www.coindesk.com/markets/2026/10/08/crypto-crumbles-as-anniversary-of-flash-crash-nears",
-      "ts": "2026-10-08T18:14:39Z"
+      "title": "Top Democrat among Senate investigators probes ties between Cantor Fitzgerald, Tether",
+      "summary": "As Democrats steadily rise in their potential to take back a Senate majority, Senator Richard Blumenthal is digging into Tether's U.S. financial partnership.",
+      "url": "https://www.coindesk.com/policy/2026/10/08/top-democrat-among-senate-investigators-probes-ties-between-cantor-fitzgerald-tether",
+      "ts": "2026-10-08T21:22:58Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "NFL joins pushback against prediction markets as U.S. Supreme Court asked to act",
-      "summary": "In opposition to federal oversight of the prediction markets, the National Football League has sided with states, Gary Gensler and one of the authors of the relevant law.",
-      "url": "https://www.coindesk.com/policy/2026/10/08/nfl-joins-pushback-against-prediction-markets-as-u-s-supreme-court-asked-to-act",
-      "ts": "2026-10-08T18:06:41Z"
+      "title": "Wall Street's tokenization boom could have bigger winners than bitcoin and ether, Citrini says",
+      "summary": "The research firm sees tokenized stocks, bonds and loans creating new markets for trading and lending, with fee-generating platforms and companies poised to benefit.",
+      "url": "https://www.coindesk.com/markets/2026/10/08/wall-street-s-tokenization-boom-could-have-bigger-winners-than-bitcoin-and-ether-citrini-says",
+      "ts": "2026-10-08T19:46:15Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. government moves $1 billion in bitcoin tied to Bitfinex hack, with no sign of sale",
-      "summary": "Arkham data shows the 12,267 BTC went to unlabeled wallets rather than an exchange, a day after $383 million hit Coinbase Prime.",
-      "url": "https://www.coindesk.com/business/2026/10/08/u-s-government-moves-usd1-billion-in-bitcoin-from-bitfinex-hack-wallet-no-sale-indicated",
-      "ts": "2026-10-08T15:43:04Z"
+      "title": "Crypto crumbles as anniversary of flash crash nears",
+      "summary": "It was October 10, 2025, when bitcoin plunged from about $122,000 to $105,000, with much of the decline occurring within minutes.",
+      "url": "https://www.coindesk.com/markets/2026/10/08/crypto-crumbles-as-anniversary-of-flash-crash-nears",
+      "ts": "2026-10-08T18:14:39Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81645,
-    "high_24h": 83563,
+    "last": 81695,
+    "high_24h": 83459,
     "low_24h": 80427,
-    "chg_pct": -2.13
+    "chg_pct": -1.88
   },
   "macro": {
     "10Y": 5.23,
-    "DXY": 102.11,
-    "WTI": 91.33,
-    "VIX": 15.63,
-    "asof": "2026-10-08T19:31:10Z"
+    "DXY": 102.14,
+    "WTI": 91.15,
+    "VIX": 15.41,
+    "asof": "2026-10-08T23:55:22Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
