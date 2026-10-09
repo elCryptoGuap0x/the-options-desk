@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-09T05:59:19Z",
+  "generated_at": "2026-10-09T22:59:05Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-09T13:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-10-12T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82312,
-      "chg_pct": -0.43,
+      "last": 82561,
+      "chg_pct": 0.93,
       "history": [
-        86443,
         86344,
         86210,
         86046,
@@ -589,16 +588,16 @@
         82873,
         81645,
         81690,
-        82312
+        82312,
+        82561
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2489.35,
-      "chg_pct": -2.82,
+      "last": 2488.1,
+      "chg_pct": 0.6,
       "history": [
-        2733.19,
         2725.66,
         2719.05,
         2719.26,
@@ -637,16 +636,16 @@
         2569.77,
         2456.8,
         2472.2,
-        2489.35
+        2489.35,
+        2488.1
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.31,
-      "chg_pct": -3.97,
+      "last": 109.19,
+      "chg_pct": -0.93,
       "history": [
-        121.9,
         121.61,
         121.0,
         120.96,
@@ -685,7 +684,8 @@
         115.32,
         108.93,
         109.66,
-        110.31
+        110.31,
+        109.19
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
+      "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
+      "url": "https://www.cboe.com/insights/posts/markets-rebound-as-geopolitical-tensions-ease-and-oil-prices-fall/",
+      "ts": "2026-10-09T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
+      "summary": "The derivatives regulator is proposing a formal rule to include certain contracts traded on platforms like Kalshi's as swaps that require the agency's oversight.",
+      "url": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
+      "ts": "2026-10-09T21:21:54Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Markets Struggle as Middle East Conflict Heats Up",
       "summary": "We\u2019ve seen this picture before: Markets are falling as the Middle East conflict worsens and continues to curtail oil shipping, fueling inflation fears and driving Treasury yields higher.",
       "url": "https://www.cboe.com/insights/posts/markets-struggle-as-middle-east-conflict-heats-up/",
@@ -948,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "XRP Ledger adds new controls for banks, stablecoins and tokenized funds",
-      "summary": "The feature lets businesses give separate accounts limited powers such as approving customers or making payments, while keeping the keys that control their main holdings offline.",
-      "url": "https://www.coindesk.com/tech/2026/10/09/xrp-ledger-adds-new-controls-for-banks-stablecoins-and-tokenized-funds",
-      "ts": "2026-10-09T04:21:36Z"
+      "title": "Robinhood Chain considers technology that gives paying traders priority",
+      "summary": "Arbitrum recently replaced its Timeboost transaction-ordering system with a new model called Priority Gas Auctions.",
+      "url": "https://www.coindesk.com/business/2026/10/09/robinhood-chain-considers-technology-that-gives-paying-traders-priority",
+      "ts": "2026-10-09T18:11:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ether bets were wiped out at six times bitcoin\u2019s rate in crypto\u2019s $1 billion flush",
-      "summary": "About $356 million in ETH positions were liquidated over 24 hours, more than bitcoin despite ether\u2019s market value being less than a fifth as large.",
-      "url": "https://www.coindesk.com/markets/2026/10/09/ether-bets-were-wiped-out-at-six-times-bitcoin-s-rate-in-crypto-s-usd1-billion-flush",
-      "ts": "2026-10-09T04:04:36Z"
+      "title": "New York AG secures up to $35 million and lifetime crypto ban from Celsius\u2019 Alex Mashinsky",
+      "summary": "Alex Mashinsky, already serving 12 years for fraud, settled New York\u2019s civil case over claims he misled Celsius customers about the failed crypto lender\u2019s safety.",
+      "url": "https://www.coindesk.com/policy/2026/10/09/new-york-ag-secures-up-to-usd35-million-and-lifetime-crypto-ban-from-celsius-alex-mashinsky",
+      "ts": "2026-10-09T14:55:23Z"
     },
     {
       "tag": "OPTIONS",
@@ -973,20 +987,6 @@
       "summary": "When traders take a breather from the noise surrounding them \u2014much of it negative in recent months \u2014 and look closer at what\u2019s happening in the markets, it becomes clear the U.S. stock market is the best place to park their money compared w",
       "url": "https://www.cboe.com/insights/posts/markets-take-off-as-tech-stocks-rally/",
       "ts": "2026-10-06T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin rebounds to $82,000 as Trump rules out Iran strikes, oil drops",
-      "summary": "Bitcoin rebounded to $82,000 as Trump ruled out an Iran strike before the midterms, while crypto security experts pushed back on \u201cbunker mode\u201d fears.",
-      "url": "https://www.coindesk.com/markets/2026/10/09/bitcoin-rebounds-to-usd82-000-as-trump-rules-out-iran-strikes",
-      "ts": "2026-10-09T03:27:38Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Mixed Markets as Traders Look for Catalysts",
-      "summary": "There aren\u2019t many catalysts moving the markets in the early going as we await the onset of earnings season. After Friday\u2019s weaker-than-expected jobs report that helped lift the markets, today\u2019s moves are mixed.",
-      "url": "https://www.cboe.com/insights/posts/mixed-markets-as-traders-look-for-catalysts/",
-      "ts": "2026-10-05T04:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82423,
+    "last": 82559,
     "high_24h": 83398,
-    "low_24h": 81407,
-    "chg_pct": 1.24
+    "low_24h": 81572,
+    "chg_pct": 0.95
   },
   "macro": {
-    "10Y": 5.25,
-    "DXY": 102.24,
-    "WTI": 91.58,
-    "VIX": 14.87,
-    "asof": "2026-10-09T05:59:19Z"
+    "10Y": 5.24,
+    "DXY": 102.23,
+    "WTI": 91.66,
+    "VIX": 14.84,
+    "asof": "2026-10-09T22:59:05Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
