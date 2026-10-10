@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T14:48:40Z",
+  "generated_at": "2026-10-10T18:57:16Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82976,
-      "chg_pct": 0.06,
+      "last": 82972,
+      "chg_pct": 0.7,
       "history": [
-        85890,
         85926,
         85956,
         85994,
@@ -589,16 +588,16 @@
         82561,
         82620,
         82754,
-        82976
+        82976,
+        82972
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2509.42,
-      "chg_pct": 0.87,
+      "last": 2509.6,
+      "chg_pct": 1.17,
       "history": [
-        2719.53,
         2718.83,
         2716.72,
         2717.64,
@@ -637,16 +636,16 @@
         2488.1,
         2493.04,
         2492.64,
-        2509.42
+        2509.42,
+        2509.6
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.63,
-      "chg_pct": 0.59,
+      "last": 110.21,
+      "chg_pct": 0.8,
       "history": [
-        120.72,
         120.68,
         120.63,
         120.65,
@@ -685,7 +684,8 @@
         109.19,
         109.78,
         109.84,
-        110.63
+        110.63,
+        110.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,13 +933,6 @@
   },
   "news": [
     {
-      "tag": "FED",
-      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "ts": "2026-10-07T18:00:00Z"
-    },
-    {
       "tag": "OPTIONS",
       "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
       "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
@@ -987,6 +980,13 @@
       "summary": "When traders take a breather from the noise surrounding them \u2014much of it negative in recent months \u2014 and look closer at what\u2019s happening in the markets, it becomes clear the U.S. stock market is the best place to park their money compared w",
       "url": "https://www.cboe.com/insights/posts/markets-take-off-as-tech-stocks-rally/",
       "ts": "2026-10-06T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin's volatility has plunged, but extreme price swings are more frequent than in 2018",
+      "summary": "CoinDesk analysis finds 10 unusually large trading days in 2026, raising questions about how investors measure risk in an increasingly institutional crypto market.",
+      "url": "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018",
+      "ts": "2026-10-10T05:43:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82957,
-    "high_24h": 83003,
+    "last": 82972,
+    "high_24h": 83094,
     "low_24h": 82229,
-    "chg_pct": 0.03
+    "chg_pct": 0.67
   },
   "macro": {
     "10Y": 5.24,
