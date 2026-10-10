@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T22:59:05Z",
+  "generated_at": "2026-10-10T02:16:11Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82561,
-      "chg_pct": 0.93,
+      "last": 82620,
+      "chg_pct": 0.81,
       "history": [
-        86344,
         86210,
         86046,
         85890,
@@ -589,16 +588,16 @@
         81645,
         81690,
         82312,
-        82561
+        82561,
+        82620
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2488.1,
-      "chg_pct": 0.6,
+      "last": 2493.04,
+      "chg_pct": 0.5,
       "history": [
-        2725.66,
         2719.05,
         2719.26,
         2719.53,
@@ -637,16 +636,16 @@
         2456.8,
         2472.2,
         2489.35,
-        2488.1
+        2488.1,
+        2493.04
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 109.19,
-      "chg_pct": -0.93,
+      "last": 109.78,
+      "chg_pct": 0.2,
       "history": [
-        121.61,
         121.0,
         120.96,
         120.72,
@@ -685,7 +684,8 @@
         108.93,
         109.66,
         110.31,
-        109.19
+        109.19,
+        109.78
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,9 +941,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
-      "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
-      "url": "https://www.cboe.com/insights/posts/markets-rebound-as-geopolitical-tensions-ease-and-oil-prices-fall/",
+      "title": "Index Insights: September 2026",
+      "summary": "U.S. equities pulled back modestly in September as leadership rotated back toward mega-cap technology after August's broad-based rally.",
+      "url": "https://www.cboe.com/insights/posts/index-insights-september-2026/",
       "ts": "2026-10-09T04:00:00Z"
     },
     {
@@ -955,10 +955,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Markets Struggle as Middle East Conflict Heats Up",
-      "summary": "We\u2019ve seen this picture before: Markets are falling as the Middle East conflict worsens and continues to curtail oil shipping, fueling inflation fears and driving Treasury yields higher.",
-      "url": "https://www.cboe.com/insights/posts/markets-struggle-as-middle-east-conflict-heats-up/",
-      "ts": "2026-10-08T04:00:00Z"
+      "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
+      "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
+      "url": "https://www.cboe.com/insights/posts/markets-rebound-as-geopolitical-tensions-ease-and-oil-prices-fall/",
+      "ts": "2026-10-09T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Markets Take Off as Tech Stocks Rally",
-      "summary": "When traders take a breather from the noise surrounding them \u2014much of it negative in recent months \u2014 and look closer at what\u2019s happening in the markets, it becomes clear the U.S. stock market is the best place to park their money compared w",
-      "url": "https://www.cboe.com/insights/posts/markets-take-off-as-tech-stocks-rally/",
-      "ts": "2026-10-06T04:00:00Z"
+      "title": "Markets Struggle as Middle East Conflict Heats Up",
+      "summary": "We\u2019ve seen this picture before: Markets are falling as the Middle East conflict worsens and continues to curtail oil shipping, fueling inflation fears and driving Treasury yields higher.",
+      "url": "https://www.cboe.com/insights/posts/markets-struggle-as-middle-east-conflict-heats-up/",
+      "ts": "2026-10-08T04:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82559,
+    "last": 82640,
     "high_24h": 83398,
-    "low_24h": 81572,
-    "chg_pct": 0.95
+    "low_24h": 82004,
+    "chg_pct": 0.82
   },
   "macro": {
     "10Y": 5.24,
