@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T22:26:34Z",
+  "generated_at": "2026-10-11T01:12:38Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82931,
-      "chg_pct": 0.57,
+      "last": 82914,
+      "chg_pct": 0.41,
       "history": [
-        85956,
         85994,
         86054,
         86146,
@@ -589,16 +588,16 @@
         82754,
         82976,
         82972,
-        82931
+        82931,
+        82914
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2505.99,
-      "chg_pct": 0.83,
+      "last": 2504.03,
+      "chg_pct": 0.61,
       "history": [
-        2716.72,
         2717.64,
         2713.47,
         2717.79,
@@ -637,16 +636,16 @@
         2492.64,
         2509.42,
         2509.6,
-        2505.99
+        2505.99,
+        2504.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.21,
-      "chg_pct": 1.08,
+      "last": 109.85,
+      "chg_pct": 0.31,
       "history": [
-        120.63,
         120.65,
         120.56,
         120.77,
@@ -685,7 +684,8 @@
         109.84,
         110.63,
         110.21,
-        110.21
+        110.21,
+        109.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,9 +934,9 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Index Insights: September 2026",
-      "summary": "U.S. equities pulled back modestly in September as leadership rotated back toward mega-cap technology after August's broad-based rally.",
-      "url": "https://www.cboe.com/insights/posts/index-insights-september-2026/",
+      "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
+      "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
+      "url": "https://www.cboe.com/insights/posts/markets-rebound-as-geopolitical-tensions-ease-and-oil-prices-fall/",
       "ts": "2026-10-09T04:00:00Z"
     },
     {
@@ -948,9 +948,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
-      "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
-      "url": "https://www.cboe.com/insights/posts/markets-rebound-as-geopolitical-tensions-ease-and-oil-prices-fall/",
+      "title": "Index Insights: September 2026",
+      "summary": "U.S. equities pulled back modestly in September as leadership rotated back toward mega-cap technology after August's broad-based rally.",
+      "url": "https://www.cboe.com/insights/posts/index-insights-september-2026/",
       "ts": "2026-10-09T04:00:00Z"
     },
     {
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82931,
+    "last": 82911,
     "high_24h": 83094,
-    "low_24h": 82483,
-    "chg_pct": 0.57
+    "low_24h": 82494,
+    "chg_pct": 0.41
   },
   "macro": {
     "10Y": 5.24,
