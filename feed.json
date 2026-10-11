@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T07:19:35Z",
+  "generated_at": "2026-10-11T14:12:31Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83072,
-      "chg_pct": 0.57,
+      "last": 82999,
+      "chg_pct": 0.34,
       "history": [
-        86054,
         86146,
         85916,
         86036,
@@ -589,16 +588,16 @@
         82972,
         82931,
         82914,
-        83072
+        83072,
+        82999
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2502.71,
-      "chg_pct": 0.44,
+      "last": 2499.63,
+      "chg_pct": 0.19,
       "history": [
-        2713.47,
         2717.79,
         2711.56,
         2715.77,
@@ -637,16 +636,16 @@
         2509.6,
         2505.99,
         2504.03,
-        2502.71
+        2502.71,
+        2499.63
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 109.61,
-      "chg_pct": -0.19,
+      "last": 109.31,
+      "chg_pct": -0.31,
       "history": [
-        120.56,
         120.77,
         120.49,
         120.76,
@@ -685,7 +684,8 @@
         110.21,
         110.21,
         109.85,
-        109.61
+        109.61,
+        109.31
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "One year after 10/10 flash crash, bitcoin and ether liquidity have rebuilt, but altcoins still face risks",
-      "summary": "Bitcoin and ether order books are deeper than before the crash, while altcoin liquidity keeps eroding and spot trading remains well below its October 2025 peak.",
-      "url": "https://www.coindesk.com/markets/2026/10/10/one-year-after-10-10-bitcoin-and-ether-liquidity-have-rebuilt-but-other-altcoins-still-face-risks",
-      "ts": "2026-10-10T12:00:00Z"
+      "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
+      "summary": "Investors are using blockchain-based shares for smaller and after-hours trades. The IMF says liquidity, legal rules and settlement systems have not caught up.",
+      "url": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
+      "ts": "2026-10-11T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,9 +955,9 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Tokenized commodities look beyond gold as lending and oil open new markets",
-      "summary": "Paxos Labs, Theo and Energy Substantiation execs see growth coming from putting physical assets to work, with precious metals leading and energy presenting a tougher test.",
-      "url": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets",
+      "title": "One year after 10/10 flash crash, bitcoin and ether liquidity have rebuilt, but altcoins still face risks",
+      "summary": "Bitcoin and ether order books are deeper than before the crash, while altcoin liquidity keeps eroding and spot trading remains well below its October 2025 peak.",
+      "url": "https://www.coindesk.com/markets/2026/10/10/one-year-after-10-10-bitcoin-and-ether-liquidity-have-rebuilt-but-other-altcoins-still-face-risks",
       "ts": "2026-10-10T12:00:00Z"
     },
     {
@@ -966,6 +966,13 @@
       "summary": "A year ago, I returned to Cboe to lead our Global Derivatives business, energized by the opportunities ahead for our company and the broader industry. Over more than two decades in derivatives, I have witnessed the global financial crisis, ",
       "url": "https://www.cboe.com/insights/posts/pioneering-options-for-the-next-generation/",
       "ts": "2026-10-08T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Tokenized commodities look beyond gold as lending and oil open new markets",
+      "summary": "Paxos Labs, Theo and Energy Substantiation execs see growth coming from putting physical assets to work, with precious metals leading and energy presenting a tougher test.",
+      "url": "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets",
+      "ts": "2026-10-10T12:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -980,13 +987,6 @@
       "summary": "CoinDesk analysis finds 10 unusually large trading days in 2026, raising questions about how investors measure risk in an increasingly institutional crypto market.",
       "url": "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018",
       "ts": "2026-10-10T05:43:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Robinhood Chain slowdown spreads from fees to trading as transactions fall more than 40%",
-      "summary": "Daily activity has dropped from 10.8 million transactions to 6.2 million since mid-September even as Robinhood keeps paying network fees on customer swaps.",
-      "url": "https://www.coindesk.com/markets/2026/10/10/robinhood-chain-slowdown-spreads-from-fees-to-trading-as-transactions-fall-more-than-40",
-      "ts": "2026-10-10T04:44:35Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83072,
-    "high_24h": 83117,
-    "low_24h": 82712,
-    "chg_pct": 0.57
+    "last": 83000,
+    "high_24h": 83167,
+    "low_24h": 82735,
+    "chg_pct": 0.35
   },
   "macro": {
     "10Y": 5.24,
