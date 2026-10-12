@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-12T01:51:37Z",
+  "generated_at": "2026-10-12T08:19:49Z",
   "session": {
-    "day_label": "SUN",
-    "market_state": "WEEKEND",
-    "next_open": "MON 8:30 CT",
+    "day_label": "MON",
+    "market_state": "CLOSED",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-12T13:30:00Z",
     "position": "FLAT",
-    "desk_arms": "MON 8:20 CT"
+    "desk_arms": null
   },
   "stats": {
     "record": "0-0",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83472,
-      "chg_pct": 0.61,
+      "last": 83551,
+      "chg_pct": 0.69,
       "history": [
-        86162,
         86097,
         85868,
         85667,
@@ -589,16 +588,16 @@
         82999,
         83573,
         83604,
-        83472
+        83472,
+        83551
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2533.83,
-      "chg_pct": 1.03,
+      "last": 2552.29,
+      "chg_pct": 2.1,
       "history": [
-        2718.06,
         2715.46,
         2715.07,
         2708.44,
@@ -637,16 +636,16 @@
         2499.63,
         2530.49,
         2532.76,
-        2533.83
+        2533.83,
+        2552.29
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 110.97,
-      "chg_pct": 0.86,
+      "last": 111.97,
+      "chg_pct": 2.43,
       "history": [
-        120.86,
         120.54,
         120.72,
         120.61,
@@ -685,7 +684,8 @@
         109.31,
         111.33,
         111.2,
-        110.97
+        110.97,
+        111.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
-      "summary": "The U.S. Supreme Court hasn't yet indicated whether it will take up cases surrounding prediction markets, but there are now several amicus briefs, an interim final rule and a rule proposal.",
-      "url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
-      "ts": "2026-10-11T18:30:00Z"
+      "title": "Ledger says unauthorized implant found in at least one device sold by CryptoBilis",
+      "summary": "Ledger confirmed an unauthorized hardware implant in a device linked to crypto losses at CryptoBilis, a Southeast Asian reseller. The company says confirmed cases are limited and its internal systems remain unaffected.",
+      "url": "https://www.coindesk.com/tech/2026/10/12/ledger-says-unauthorized-implant-found-in-at-least-one-device-sold-by-cryptobilis",
+      "ts": "2026-10-12T07:49:40Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
-      "summary": "Executives see openings for tokenization, DeFi and dealmaking, while lawyers warn agency action leaves spot-market oversight and lasting certainty unresolved.",
-      "url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
-      "ts": "2026-10-11T16:00:00Z"
+      "title": "Bitcoin shrugs off ETF outflows to trade above $84,000 as oil falls",
+      "summary": "Bitcoin is holding on to its weekend gains as oil trades lower. ETFs lost over $600 million in outflows last week.",
+      "url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls",
+      "ts": "2026-10-12T04:49:30Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "President Trump declares 'energy ceasefire' between Russia and Ukraine",
-      "summary": "\"Ukraine supports the ceasefire, and it is important that Russia support it as well,\" said Ukrainian President Zelensky.",
-      "url": "https://www.coindesk.com/markets/2026/10/11/president-trump-declares-energy-ceasefire-between-russia-and-ukraine",
-      "ts": "2026-10-11T15:40:47Z"
+      "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
+      "summary": "The U.S. Supreme Court hasn't yet indicated whether it will take up cases surrounding prediction markets, but there are now several amicus briefs, an interim final rule and a rule proposal.",
+      "url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
+      "ts": "2026-10-11T18:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
-      "summary": "Investors are using blockchain-based shares for smaller and after-hours trades. The IMF says liquidity, legal rules and settlement systems have not caught up.",
-      "url": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
-      "ts": "2026-10-11T13:00:00Z"
+      "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
+      "summary": "Executives see openings for tokenization, DeFi and dealmaking, while lawyers warn agency action leaves spot-market oversight and lasting certainty unresolved.",
+      "url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
+      "ts": "2026-10-11T16:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83497,
-    "high_24h": 84072,
-    "low_24h": 82735,
-    "chg_pct": 0.65
+    "last": 83559,
+    "high_24h": 84231,
+    "low_24h": 82894,
+    "chg_pct": 0.69
   },
   "macro": {
     "10Y": 5.24,
-    "DXY": 102.14,
-    "WTI": 90.47,
-    "VIX": 14.84,
-    "asof": "2026-10-12T01:51:37Z"
+    "DXY": 102.29,
+    "WTI": 91.43,
+    "VIX": 15.39,
+    "asof": "2026-10-12T08:19:49Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
