@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T20:37:12Z",
+  "generated_at": "2026-10-13T23:58:39Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83123,
-      "chg_pct": 0.15,
+      "last": 83108,
+      "chg_pct": 1.59,
       "history": [
-        85940,
         85607,
         85634,
         85621,
@@ -589,16 +588,16 @@
         83551,
         81283,
         83704,
-        83123
+        83123,
+        83108
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2504.67,
-      "chg_pct": -0.66,
+      "last": 2496.59,
+      "chg_pct": 2.12,
       "history": [
-        2714.48,
         2692.15,
         2693.34,
         2695.92,
@@ -637,16 +636,16 @@
         2552.29,
         2419.55,
         2532.62,
-        2504.67
+        2504.67,
+        2496.59
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 107.2,
-      "chg_pct": -1.23,
+      "last": 106.75,
+      "chg_pct": 1.08,
       "history": [
-        120.49,
         120.8,
         121.02,
         120.99,
@@ -685,7 +684,8 @@
         111.97,
         103.73,
         108.45,
-        107.2
+        107.2,
+        106.75
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto exchange MNX takes on OKX, Bitget offering pre-IPO futures for AI giants",
-      "summary": "MNX is offering a different way to trade the future valuations of private AI companies, including OpenAI, Anthropic and DeepSeek.",
-      "url": "https://www.coindesk.com/business/2026/10/13/new-crypto-exchange-takes-on-okx-bitget-with-unique-way-to-trade-ai-giants",
-      "ts": "2026-10-13T15:52:09Z"
+      "title": "Strive raising $500 million to buy additional bitcoin with new preferred share class",
+      "summary": "SATS will offer a fixed 15% dividend yield at par and be junior to the company's existing SATA, which pays a variable rate (currently 13%).",
+      "url": "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury",
+      "ts": "2026-10-13T23:23:05Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "UK crypto trader says almost $800,000 lost in knife assault as wrench attacks proliferate",
-      "summary": "A crypto trader in the U.K. claimed masked intruders stole nearly $800,000 in cryptocurrency at knifepoint, furthering concerns of \"wrench attacks\" spreading in the country.",
-      "url": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion",
-      "ts": "2026-10-13T15:24:52Z"
+      "title": "BNY, Citadel Securities test tokenized U.S. Treasuries to speed up Wall Street financing",
+      "summary": "The transaction shows how blockchain-based government bonds could help trading firms move collateral faster between settlement and financing.",
+      "url": "https://www.coindesk.com/business/2026/10/13/bny-citadel-securities-test-tokenized-u-s-treasuries-to-speed-up-wall-street-financing",
+      "ts": "2026-10-13T21:52:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "South Korea blocks 27 crypto exchanges, including Bitmart and Kucoin",
-      "summary": "The country\u2019s regulators are stepping up their earlier restrictions on mobile apps to websites, targeting unregistered exchanges before investors report losses.",
-      "url": "https://www.coindesk.com/policy/2026/10/13/south-korea-blocks-27-crypto-exchanges-including-bitmart-and-kucoin",
-      "ts": "2026-10-13T11:58:04Z"
+      "title": "Crypto exchange MNX takes on OKX, Bitget offering pre-IPO futures for AI giants",
+      "summary": "MNX is offering a different way to trade the future valuations of private AI companies, including OpenAI, Anthropic and DeepSeek.",
+      "url": "https://www.coindesk.com/business/2026/10/13/new-crypto-exchange-takes-on-okx-bitget-with-unique-way-to-trade-ai-giants",
+      "ts": "2026-10-13T15:52:09Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83123,
+    "last": 83089,
     "high_24h": 84074,
     "low_24h": 81018,
-    "chg_pct": 0.15
+    "chg_pct": 1.6
   },
   "macro": {
     "10Y": 5.22,
-    "DXY": 102.21,
-    "WTI": 94.93,
+    "DXY": 102.19,
+    "WTI": 94.84,
     "VIX": 15.27,
-    "asof": "2026-10-13T20:37:12Z"
+    "asof": "2026-10-13T23:58:39Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
