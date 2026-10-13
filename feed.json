@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-12T08:19:49Z",
+  "generated_at": "2026-10-13T00:34:08Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-12T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-13T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83551,
-      "chg_pct": 0.69,
+      "last": 81283,
+      "chg_pct": -3.0,
       "history": [
-        86097,
         85868,
         85667,
         85940,
@@ -589,16 +588,16 @@
         83573,
         83604,
         83472,
-        83551
+        83551,
+        81283
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2552.29,
-      "chg_pct": 2.1,
+      "last": 2419.55,
+      "chg_pct": -4.75,
       "history": [
-        2715.46,
         2715.07,
         2708.44,
         2714.48,
@@ -637,16 +636,16 @@
         2530.49,
         2532.76,
         2533.83,
-        2552.29
+        2552.29,
+        2419.55
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 111.97,
-      "chg_pct": 2.43,
+      "last": 103.73,
+      "chg_pct": -6.78,
       "history": [
-        120.54,
         120.72,
         120.61,
         120.49,
@@ -685,7 +684,8 @@
         111.33,
         111.2,
         110.97,
-        111.97
+        111.97,
+        103.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Volatilities Fall on Oil/Yield Reprieve as the S&P Rallies Into Earnings Season",
+      "summary": "Implied volatilities among the major asset classes declined across the board as the primary drivers of cross-asset volatility contagion, rates and oil, both eased. Interest-rate volatilities declined with the MOVE Index retreating -9pts fro",
+      "url": "https://www.cboe.com/insights/posts/volatilities-fall-on-oil-yield-reprieve-as-the-s-p-rallies-into-earnings-season/",
+      "ts": "2026-10-12T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Palantir's Europe head warns the region is 'missing the boat' on AI just as it did with the internet",
+      "summary": "The Palantir UK chief said the U.S. is racing ahead on enterprise AI while Europe hesitates, and explained why he thinks the company faces intense political attacks.",
+      "url": "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet",
+      "ts": "2026-10-12T16:18:03Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Markets Rebound as Geopolitical Tensions Ease and Oil Prices Fall",
       "summary": "It\u2019s been a tough week for traders with a variety of headlines that have negatively impacted the markets, crude oil prices and Treasury yields. Early trading suggests we could end the week to the upside, but it won\u2019t likely be enough to und",
       "url": "https://www.cboe.com/insights/posts/markets-rebound-as-geopolitical-tensions-ease-and-oil-prices-fall/",
@@ -941,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ledger says unauthorized implant found in at least one device sold by CryptoBilis",
-      "summary": "Ledger confirmed an unauthorized hardware implant in a device linked to crypto losses at CryptoBilis, a Southeast Asian reseller. The company says confirmed cases are limited and its internal systems remain unaffected.",
-      "url": "https://www.coindesk.com/tech/2026/10/12/ledger-says-unauthorized-implant-found-in-at-least-one-device-sold-by-cryptobilis",
-      "ts": "2026-10-12T07:49:40Z"
+      "title": "Tom Lee sees $2 trillion wealth transfer fueling crypto demand as Bitmine buys more ether",
+      "summary": "The Bitmine chairman said he expects younger investors to drive demand for digital assets as his ether treasury company inches closer to owning 5% of the total supply.",
+      "url": "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether",
+      "ts": "2026-10-12T15:27:09Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin shrugs off ETF outflows to trade above $84,000 as oil falls",
-      "summary": "Bitcoin is holding on to its weekend gains as oil trades lower. ETFs lost over $600 million in outflows last week.",
-      "url": "https://www.coindesk.com/markets/2026/10/12/bitcoin-shrugs-off-etf-outflows-to-trade-above-usd84-000-as-oil-falls",
-      "ts": "2026-10-12T04:49:30Z"
+      "title": "Tokenized catastrophe bonds target the disaster-insurance gap",
+      "summary": "A planned Bermuda issuance would put legal ownership onchain and seek capital for disaster risks that remain costly to insure.",
+      "url": "https://www.coindesk.com/business/2026/10/12/tokenized-catastrophe-bonds-target-the-disaster-insurance-gap",
+      "ts": "2026-10-12T15:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Everyone wants SCOTUS to take up prediction markets: State of Crypto",
-      "summary": "The U.S. Supreme Court hasn't yet indicated whether it will take up cases surrounding prediction markets, but there are now several amicus briefs, an interim final rule and a rule proposal.",
-      "url": "https://www.coindesk.com/policy/2026/10/11/everyone-wants-scotus-to-take-up-prediction-markets-state-of-crypto",
-      "ts": "2026-10-11T18:30:00Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Markets Struggle as Middle East Conflict Heats Up",
-      "summary": "We\u2019ve seen this picture before: Markets are falling as the Middle East conflict worsens and continues to curtail oil shipping, fueling inflation fears and driving Treasury yields higher.",
-      "url": "https://www.cboe.com/insights/posts/markets-struggle-as-middle-east-conflict-heats-up/",
-      "ts": "2026-10-08T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Clarity's failure could speed crypto innovation while shielding incumbents",
-      "summary": "Executives see openings for tokenization, DeFi and dealmaking, while lawyers warn agency action leaves spot-market oversight and lasting certainty unresolved.",
-      "url": "https://www.coindesk.com/policy/2026/10/11/clarity-s-failure-could-speed-crypto-innovation-while-shielding-incumbents",
-      "ts": "2026-10-11T16:00:00Z"
+      "title": "Standard Chartered offers RLUSD custody in Dubai and plans LMAX collateral link",
+      "summary": "Ripple previously gave LMAX $150 million in financing to integrate RLUSD into its institutional infrastructure.",
+      "url": "https://www.coindesk.com/business/2026/10/12/standard-chartered-offers-rlusd-custody-in-dubai-and-plans-lmax-collateral-link",
+      "ts": "2026-10-12T12:09:09Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82462,
+    "last": 81317,
     "high_24h": 84231,
-    "low_24h": 82379,
-    "chg_pct": -1.57
+    "low_24h": 81728,
+    "chg_pct": -2.94
   },
   "macro": {
     "10Y": 5.24,
-    "DXY": 102.58,
-    "WTI": 93.81,
-    "VIX": 15.19,
-    "asof": "2026-10-12T08:19:49Z"
+    "DXY": 102.54,
+    "WTI": 92.91,
+    "VIX": 15.21,
+    "asof": "2026-10-13T00:34:08Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
