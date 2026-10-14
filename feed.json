@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T04:44:43Z",
+  "generated_at": "2026-10-14T09:47:23Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83807,
-      "chg_pct": 0.5,
+      "last": 83204,
+      "chg_pct": -0.32,
       "history": [
-        85634,
         85621,
         85623,
         85622,
@@ -589,16 +588,16 @@
         83704,
         83123,
         83108,
-        83807
+        83807,
+        83204
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2518.47,
-      "chg_pct": 0.18,
+      "last": 2497.07,
+      "chg_pct": -0.36,
       "history": [
-        2693.34,
         2695.92,
         2697.36,
         2697.71,
@@ -637,16 +636,16 @@
         2532.62,
         2504.67,
         2496.59,
-        2518.47
+        2518.47,
+        2497.07
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 108.01,
-      "chg_pct": 0.12,
+      "last": 106.64,
+      "chg_pct": -0.22,
       "history": [
-        121.02,
         120.99,
         120.98,
         121.03,
@@ -685,7 +684,8 @@
         108.45,
         107.2,
         106.75,
-        108.01
+        108.01,
+        106.64
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Solana sets Oct. 21 for Alpenglow upgrade targeting 150-millisecond finality",
-      "summary": "The switch will replace Solana\u2019s existing validator voting system, remove vote transactions from blocks and could sharply change headline transaction counts even if user activity stays flat.",
-      "url": "https://www.coindesk.com/tech/2026/10/14/solana-sets-oct-21-for-alpenglow-upgrade-targeting-150-millisecond-finality",
-      "ts": "2026-10-14T04:11:16Z"
+      "title": "Live updates: Bitcoin tumbles from near $84,000 ahead of U.S. inflation data",
+      "summary": "A brief run at $84,000 faded within the hour as tech stocks stalled and the chip selloff rolled on. Traders are waiting on the September CPI print.",
+      "url": "https://www.coindesk.com/business/2026/10/14/live-updates-bitcoin-tumbles-from-near-usd84-000-ahead-of-u-s-inflation-data",
+      "ts": "2026-10-14T09:45:53Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin climbs toward $84,000 after Fed\u2019s Williams sees no rate hikes in 2027",
-      "summary": "ZEC led a broad bounce among major tokens, and Korean chipmakers snapped a five-day losing streak ahead of Thursday\u2019s U.S. inflation data.",
-      "url": "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027",
-      "ts": "2026-10-14T03:50:54Z"
+      "title": "Proposed French tax on regulated stablecoins could drive crypto traders offshore",
+      "summary": "Chainalysis CEO in France Francois Volpoet warned the proposed 31.4% tax on regulated stablecoins could push traders toward unmonitored offshore channels.",
+      "url": "https://www.coindesk.com/policy/2026/10/14/proposed-french-tax-on-regulated-stablecoins-could-drive-crypto-traders-offshore",
+      "ts": "2026-10-14T08:48:11Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Largest Philippines crypto exchange, Coins.ph, said to face central bank regulatory action",
-      "summary": "The exchange, which has over 18 million customers, is said to have handled business transactions involving restricted offshore gaming and gambling companies.",
-      "url": "https://www.coindesk.com/policy/2026/10/13/largest-philippines-crypto-exchange-coins-ph-said-to-face-central-bank-regulatory-action",
-      "ts": "2026-10-14T01:00:00Z"
+      "title": "Standard Chartered unlocks direct bitcoin and ether trading for affluent UAE clients",
+      "summary": "The bank manages custody and settlement in-house via a closed-loop model, removing the need for separate crypto wallets.",
+      "url": "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients",
+      "ts": "2026-10-14T08:10:07Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83807,
-    "high_24h": 84074,
+    "last": 83201,
+    "high_24h": 84025,
     "low_24h": 82919,
-    "chg_pct": 0.5
+    "chg_pct": -0.42
   },
   "macro": {
     "10Y": 5.22,
-    "DXY": 102.1,
-    "WTI": 94.61,
-    "VIX": 15.27,
-    "asof": "2026-10-14T04:44:43Z"
+    "DXY": 102.23,
+    "WTI": 94.78,
+    "VIX": 15.22,
+    "asof": "2026-10-14T09:47:23Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
