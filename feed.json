@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T19:04:16Z",
+  "generated_at": "2026-10-15T22:11:45Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82345,
-      "chg_pct": 0.9,
+      "last": 82358,
+      "chg_pct": 0.97,
       "history": [
-        85602,
         85575,
         85619,
         85595,
@@ -589,16 +588,16 @@
         81682,
         81366,
         81168,
-        82345
+        82345,
+        82358
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2450.06,
-      "chg_pct": 1.05,
+      "last": 2460.13,
+      "chg_pct": 2.09,
       "history": [
-        2697.92,
         2696.17,
         2698.9,
         2697.06,
@@ -637,16 +636,16 @@
         2423.78,
         2371.75,
         2372.39,
-        2450.06
+        2450.06,
+        2460.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 105.98,
-      "chg_pct": 1.83,
+      "last": 105.97,
+      "chg_pct": 1.54,
       "history": [
-        121.16,
         120.96,
         121.27,
         121.25,
@@ -685,7 +684,8 @@
         104.39,
         103.17,
         103.04,
-        105.98
+        105.98,
+        105.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -955,9 +955,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
-      "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
-      "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
+      "title": "From the HOOD Summit: The Evolution of Options Trader",
+      "summary": "Speed, precision and round-the-clock access are rewriting the rules of options trading, according to a panel of industry leaders who traced the industry's transformation from paper trading floors to pushes for an always-on, potentially AI-a",
+      "url": "https://www.cboe.com/insights/posts/from-the-hood-summit-the-evolution-of-options-trader/",
       "ts": "2026-10-14T04:00:00Z"
     },
     {
@@ -969,9 +969,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "From the HOOD Summit: The Evolution of Options Trader",
-      "summary": "Speed, precision and round-the-clock access are rewriting the rules of options trading, according to a panel of industry leaders who traced the industry's transformation from paper trading floors to pushes for an always-on, potentially AI-a",
-      "url": "https://www.cboe.com/insights/posts/from-the-hood-summit-the-evolution-of-options-trader/",
+      "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
+      "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
+      "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
       "ts": "2026-10-14T04:00:00Z"
     },
     {
@@ -983,9 +983,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Banks and Tech Stocks Dominate",
-      "summary": "Bank and technology stocks pressured the markets but were a big yawn range-wise, with nothing too exciting or too boring happening in either direction.",
-      "url": "https://www.cboe.com/insights/posts/banks-and-tech-stocks-dominate/",
+      "title": "What the HOOD Summit Told Me About Today\u2019s Retail Traders",
+      "summary": "I recently spent a few days with retail traders at Robinhood\u2019s HOOD Summit in Houston. It was a jam-packed conference that really highlighted the engagement and enthusiasm of this group of retail traders who in many ways represent the next ",
+      "url": "https://www.cboe.com/insights/posts/what-the-hood-summit-told-me-about-todays-retail-traders/",
       "ts": "2026-10-13T04:00:00Z"
     }
   ],
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82345,
+    "last": 82358,
     "high_24h": 82508,
     "low_24h": 79806,
-    "chg_pct": 0.86
+    "chg_pct": 1.0
   },
   "macro": {
-    "10Y": 5.08,
-    "DXY": 102.05,
-    "WTI": 96.42,
-    "VIX": 16.66,
-    "asof": "2026-10-15T19:04:16Z"
+    "10Y": 5.09,
+    "DXY": 102.0,
+    "WTI": 96.28,
+    "VIX": 16.46,
+    "asof": "2026-10-15T22:11:45Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
