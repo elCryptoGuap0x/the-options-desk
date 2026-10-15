@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T05:10:41Z",
+  "generated_at": "2026-10-15T10:04:56Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81366,
-      "chg_pct": -2.73,
+      "last": 81168,
+      "chg_pct": -2.34,
       "history": [
-        85571,
         85524,
         85602,
         85575,
@@ -589,16 +588,16 @@
         83204,
         81567,
         81682,
-        81366
+        81366,
+        81168
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2371.75,
-      "chg_pct": -5.49,
+      "last": 2372.39,
+      "chg_pct": -4.55,
       "history": [
-        2697.51,
         2695.12,
         2697.92,
         2696.17,
@@ -637,16 +636,16 @@
         2497.07,
         2410.61,
         2423.78,
-        2371.75
+        2371.75,
+        2372.39
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.17,
-      "chg_pct": -3.79,
+      "last": 103.04,
+      "chg_pct": -3.06,
       "history": [
-        120.97,
         120.7,
         121.16,
         120.96,
@@ -685,7 +684,8 @@
         106.64,
         104.36,
         104.39,
-        103.17
+        103.17,
+        103.04
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,20 +941,6 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "From the HOOD Summit: The Evolution of Options Trader",
-      "summary": "Speed, precision and round-the-clock access are rewriting the rules of options trading, according to a panel of industry leaders who traced the industry's transformation from paper trading floors to pushes for an always-on, potentially AI-a",
-      "url": "https://www.cboe.com/insights/posts/from-the-hood-summit-the-evolution-of-options-trader/",
-      "ts": "2026-10-14T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
-      "summary": "Ether accounted for nearly 60% of the forced closures across the two largest cryptocurrencies, falling roughly twice as much as bitcoin.",
-      "url": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide",
-      "ts": "2026-10-15T04:25:15Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
       "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
       "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
@@ -962,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin mining pool once handling 2.3% of network shuts after hashrate falls 65%",
-      "summary": "Computing power directed at Binance Pool has fallen from 26 EH/s in December to about 9 EH/s. Its remaining miners must choose another provider before a Nov. 10 cutoff.",
-      "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65",
-      "ts": "2026-10-15T04:13:56Z"
+      "title": "Hyperliquid founder wants U.S. oversight of trading platforms, not his blockchain",
+      "summary": "Jeff Yan told Bloomberg that U.S. regulatory oversight should apply to the firms using the blockchain, not to the underlying network itself.",
+      "url": "https://www.coindesk.com/policy/2026/10/15/hyperliquid-founder-wants-u-s-oversight-of-trading-platforms-not-his-blockchain",
+      "ts": "2026-10-15T10:00:56Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
-      "summary": "Bets on an October Fed rate hike briefly spiked to nearly 50% after Wednesday\u2019s inflation report, but have since cooled.",
-      "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs",
-      "ts": "2026-10-15T03:57:45Z"
+      "title": "Australia\u2019s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
+      "summary": "The country\u2019s regulator, ASIC, has proposed tougher rules to protect users\u2019 digital assets, crypto trading and to safeguard the country\u2019s financial stability.",
+      "url": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline",
+      "ts": "2026-10-15T09:53:37Z"
     },
     {
       "tag": "OPTIONS",
@@ -987,6 +973,20 @@
       "summary": "Bank and technology stocks pressured the markets but were a big yawn range-wise, with nothing too exciting or too boring happening in either direction.",
       "url": "https://www.cboe.com/insights/posts/banks-and-tech-stocks-dominate/",
       "ts": "2026-10-13T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Hex founder Richard Heart arrested in Istanbul, Turkish media report",
+      "summary": "Police reportedly seized $4 million in cash and 64 luxury watches during a raid on the crypto founder's Istanbul residence.",
+      "url": "https://www.coindesk.com/policy/2026/10/15/hex-founder-richard-heart-arrested-in-istanbul-turkish-media-report",
+      "ts": "2026-10-15T09:20:57Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Low Volume Marks Columbus Day Session",
+      "summary": "Today is Columbus Day and not only is the bond market closed, but so are government offices, many businesses and most schools, leading to low volume that typically means a slow trading day.",
+      "url": "https://www.cboe.com/insights/posts/low-volume-marks-columbus-day-session/",
+      "ts": "2026-10-12T04:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81399,
-    "high_24h": 84025,
+    "last": 81174,
+    "high_24h": 83791,
     "low_24h": 80444,
-    "chg_pct": -2.71
+    "chg_pct": -2.38
   },
   "macro": {
     "10Y": 5.19,
-    "DXY": 102.08,
-    "WTI": 94.0,
-    "VIX": 16.87,
-    "asof": "2026-10-15T05:10:41Z"
+    "DXY": 102.01,
+    "WTI": 93.45,
+    "VIX": 17.51,
+    "asof": "2026-10-15T10:04:56Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
