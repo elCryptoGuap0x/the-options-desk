@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-15T10:04:56Z",
+  "generated_at": "2026-10-15T19:04:16Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-15T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-16T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81168,
-      "chg_pct": -2.34,
+      "last": 82345,
+      "chg_pct": 0.9,
       "history": [
-        85524,
         85602,
         85575,
         85619,
@@ -589,16 +588,16 @@
         81567,
         81682,
         81366,
-        81168
+        81168,
+        82345
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2372.39,
-      "chg_pct": -4.55,
+      "last": 2450.06,
+      "chg_pct": 1.05,
       "history": [
-        2695.12,
         2697.92,
         2696.17,
         2698.9,
@@ -637,16 +636,16 @@
         2410.61,
         2423.78,
         2371.75,
-        2372.39
+        2372.39,
+        2450.06
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.04,
-      "chg_pct": -3.06,
+      "last": 105.98,
+      "chg_pct": 1.83,
       "history": [
-        120.7,
         121.16,
         120.96,
         121.27,
@@ -685,7 +684,8 @@
         104.36,
         104.39,
         103.17,
-        103.04
+        103.04,
+        105.98
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
+      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "ts": "2026-10-15T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "At the White House, crypto policy vacancy looms large",
+      "summary": "The departure of President Donald Trump's crypto adviser, Patrick Witt, leaves the digital assets office vacant and its policy aims uncertain.",
+      "url": "https://www.coindesk.com/news-analysis/2026/10/15/at-the-white-house-crypto-policy-vacancy-looms-large",
+      "ts": "2026-10-15T18:48:02Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
       "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
       "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
@@ -948,24 +962,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Hyperliquid founder wants U.S. oversight of trading platforms, not his blockchain",
-      "summary": "Jeff Yan told Bloomberg that U.S. regulatory oversight should apply to the firms using the blockchain, not to the underlying network itself.",
-      "url": "https://www.coindesk.com/policy/2026/10/15/hyperliquid-founder-wants-u-s-oversight-of-trading-platforms-not-his-blockchain",
-      "ts": "2026-10-15T10:00:56Z"
+      "title": "Crypto for Advisors: Wall Street is done waiting on Congress for crypto rules",
+      "summary": "",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/10/15/crypto-for-advisors-wall-street-is-done-waiting-on-congress-for-crypto-rules",
+      "ts": "2026-10-15T15:00:00Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "What the HOOD Summit Told Me About Today\u2019s Retail Traders",
-      "summary": "I recently spent a few days with retail traders at Robinhood\u2019s HOOD Summit in Houston. It was a jam-packed conference that really highlighted the engagement and enthusiasm of this group of retail traders who in many ways represent the next ",
-      "url": "https://www.cboe.com/insights/posts/what-the-hood-summit-told-me-about-todays-retail-traders/",
-      "ts": "2026-10-13T04:00:00Z"
+      "title": "From the HOOD Summit: The Evolution of Options Trader",
+      "summary": "Speed, precision and round-the-clock access are rewriting the rules of options trading, according to a panel of industry leaders who traced the industry's transformation from paper trading floors to pushes for an always-on, potentially AI-a",
+      "url": "https://www.cboe.com/insights/posts/from-the-hood-summit-the-evolution-of-options-trader/",
+      "ts": "2026-10-14T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Australia\u2019s financial watchdog seeks stiffer rules for crypto exchanges ahead of licensing deadline",
-      "summary": "The country\u2019s regulator, ASIC, has proposed tougher rules to protect users\u2019 digital assets, crypto trading and to safeguard the country\u2019s financial stability.",
-      "url": "https://www.coindesk.com/policy/2026/10/15/australia-s-financial-watchdog-seeks-stiffer-rules-for-crypto-exchanges-ahead-of-licensing-deadline",
-      "ts": "2026-10-15T09:53:37Z"
+      "title": "How Brooklyn prosecutors and the FBI took down a massive crypto fraud network targeting Russian speakers",
+      "summary": "The scheme allegedly stole tens of millions through Russian-language Facebook ads and fake advisers, then went after victims again with fake recovery offers.",
+      "url": "https://www.coindesk.com/business/2026/10/15/how-brooklyn-prosecutors-and-the-fbi-took-down-a-massive-crypto-fraud-network-targeting-russian-speakers",
+      "ts": "2026-10-15T12:35:24Z"
     },
     {
       "tag": "OPTIONS",
@@ -973,20 +987,6 @@
       "summary": "Bank and technology stocks pressured the markets but were a big yawn range-wise, with nothing too exciting or too boring happening in either direction.",
       "url": "https://www.cboe.com/insights/posts/banks-and-tech-stocks-dominate/",
       "ts": "2026-10-13T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Hex founder Richard Heart arrested in Istanbul, Turkish media report",
-      "summary": "Police reportedly seized $4 million in cash and 64 luxury watches during a raid on the crypto founder's Istanbul residence.",
-      "url": "https://www.coindesk.com/policy/2026/10/15/hex-founder-richard-heart-arrested-in-istanbul-turkish-media-report",
-      "ts": "2026-10-15T09:20:57Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Low Volume Marks Columbus Day Session",
-      "summary": "Today is Columbus Day and not only is the bond market closed, but so are government offices, many businesses and most schools, leading to low volume that typically means a slow trading day.",
-      "url": "https://www.cboe.com/insights/posts/low-volume-marks-columbus-day-session/",
-      "ts": "2026-10-12T04:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81747,
-    "high_24h": 82011,
+    "last": 82345,
+    "high_24h": 82508,
     "low_24h": 79806,
-    "chg_pct": 0.05
+    "chg_pct": 0.86
   },
   "macro": {
-    "10Y": 5.04,
-    "DXY": 102.08,
-    "WTI": 95.31,
-    "VIX": 17.19,
-    "asof": "2026-10-15T10:04:56Z"
+    "10Y": 5.08,
+    "DXY": 102.05,
+    "WTI": 96.42,
+    "VIX": 16.66,
+    "asof": "2026-10-15T19:04:16Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
