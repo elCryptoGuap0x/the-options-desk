@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T00:36:19Z",
+  "generated_at": "2026-10-15T05:10:41Z",
   "session": {
-    "day_label": "WED",
+    "day_label": "THU",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-15T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81682,
-      "chg_pct": -2.11,
+      "last": 81366,
+      "chg_pct": -2.73,
       "history": [
-        85622,
         85571,
         85524,
         85602,
@@ -589,16 +588,16 @@
         83807,
         83204,
         81567,
-        81682
+        81682,
+        81366
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2423.78,
-      "chg_pct": -3.51,
+      "last": 2371.75,
+      "chg_pct": -5.49,
       "history": [
-        2697.71,
         2697.51,
         2695.12,
         2697.92,
@@ -637,16 +636,16 @@
         2518.47,
         2497.07,
         2410.61,
-        2423.78
+        2423.78,
+        2371.75
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.39,
-      "chg_pct": -2.99,
+      "last": 103.17,
+      "chg_pct": -3.79,
       "history": [
-        121.03,
         120.97,
         120.7,
         121.16,
@@ -685,7 +684,8 @@
         108.01,
         106.64,
         104.36,
-        104.39
+        104.39,
+        103.17
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Kalshi CEO says state-led oversight of U.S. prediction markets would push them out",
-      "summary": "CEO Tarek Mansour said he feels \"pretty good\" about the pending outcome of the current legal fight over who has the right to regulate prediction markets.",
-      "url": "https://www.coindesk.com/policy/2026/10/14/kalshi-ceo-says-state-led-oversight-of-u-s-prediction-markets-would-push-them-out",
-      "ts": "2026-10-14T16:34:53Z"
+      "title": "Nearly $1 billion in crypto bets liquidated as bitcoin, ether and XRP slide",
+      "summary": "Ether accounted for nearly 60% of the forced closures across the two largest cryptocurrencies, falling roughly twice as much as bitcoin.",
+      "url": "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide",
+      "ts": "2026-10-15T04:25:15Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "AI agents make 138 million crypto payments as U.S. dominates spending on AI models",
-      "summary": "U.S.-linked wallets account for just over 88% of tracked AI model payments, dwarfing China\u2019s 0.1% share, according to new Chainalysis research.",
-      "url": "https://www.coindesk.com/business/2026/10/14/ai-agents-make-138-million-crypto-payments-as-u-s-dominates-spending-on-ai-models",
-      "ts": "2026-10-14T15:35:36Z"
+      "title": "Bitcoin mining pool once handling 2.3% of network shuts after hashrate falls 65%",
+      "summary": "Computing power directed at Binance Pool has fallen from 26 EH/s in December to about 9 EH/s. Its remaining miners must choose another provider before a Nov. 10 cutoff.",
+      "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65",
+      "ts": "2026-10-15T04:13:56Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto Long & Short: Why gold and bitcoin belong in the same portfolio",
-      "summary": "",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio",
-      "ts": "2026-10-14T15:05:15Z"
+      "title": "Bitcoin wilts as Fed rate uncertainty weighs. Kospi plunges 8%",
+      "summary": "Bets on an October Fed rate hike briefly spiked to nearly 50% after Wednesday\u2019s inflation report, but have since cooled.",
+      "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs",
+      "ts": "2026-10-15T03:57:45Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81689,
+    "last": 81399,
     "high_24h": 84025,
-    "low_24h": 81376,
-    "chg_pct": -2.1
+    "low_24h": 80444,
+    "chg_pct": -2.71
   },
   "macro": {
     "10Y": 5.19,
-    "DXY": 102.22,
-    "WTI": 94.64,
+    "DXY": 102.08,
+    "WTI": 94.0,
     "VIX": 16.87,
-    "asof": "2026-10-15T00:36:19Z"
+    "asof": "2026-10-15T05:10:41Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
