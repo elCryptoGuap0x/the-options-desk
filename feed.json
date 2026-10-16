@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T21:22:59Z",
+  "generated_at": "2026-10-16T23:50:24Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81657,
-      "chg_pct": -0.66,
+      "last": 81540,
+      "chg_pct": -0.7,
       "history": [
-        85491,
         85527,
         85438,
         85467,
@@ -589,16 +588,16 @@
         82201,
         81975,
         82081,
-        81657
+        81657,
+        81540
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2415.26,
-      "chg_pct": -1.61,
+      "last": 2421.13,
+      "chg_pct": -0.73,
       "history": [
-        2695.4,
         2697.26,
         2694.79,
         2694.84,
@@ -637,16 +636,16 @@
         2439.7,
         2440.09,
         2450.3,
-        2415.26
+        2415.26,
+        2421.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.23,
-      "chg_pct": -1.57,
+      "last": 104.31,
+      "chg_pct": -0.99,
       "history": [
-        120.52,
         120.47,
         120.37,
         120.43,
@@ -685,7 +684,8 @@
         105.3,
         105.37,
         106.48,
-        104.23
+        104.23,
+        104.31
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,10 +934,10 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
-      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
-      "ts": "2026-10-15T04:00:00Z"
+      "title": "Tough Trading Leaves Indices in the Red",
+      "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
+      "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
+      "ts": "2026-10-16T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "From the HOOD Summit: The Evolution of Options Trader",
-      "summary": "Speed, precision and round-the-clock access are rewriting the rules of options trading, according to a panel of industry leaders who traced the industry's transformation from paper trading floors to pushes for an always-on, potentially AI-a",
-      "url": "https://www.cboe.com/insights/posts/from-the-hood-summit-the-evolution-of-options-trader/",
-      "ts": "2026-10-14T04:00:00Z"
+      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
+      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "ts": "2026-10-15T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
-      "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
-      "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
-      "ts": "2026-10-14T04:00:00Z"
+      "title": "Market Rotation Starts to Take Hold",
+      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
+      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
+      "ts": "2026-10-15T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "What the HOOD Summit Told Me About Today\u2019s Retail Traders",
-      "summary": "I recently spent a few days with retail traders at Robinhood\u2019s HOOD Summit in Houston. It was a jam-packed conference that really highlighted the engagement and enthusiasm of this group of retail traders who in many ways represent the next ",
-      "url": "https://www.cboe.com/insights/posts/what-the-hood-summit-told-me-about-todays-retail-traders/",
-      "ts": "2026-10-13T04:00:00Z"
+      "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
+      "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
+      "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
+      "ts": "2026-10-14T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81657,
+    "last": 81540,
     "high_24h": 82816,
     "low_24h": 80761,
-    "chg_pct": -0.66
+    "chg_pct": -0.7
   },
   "macro": {
     "10Y": 5.1,
