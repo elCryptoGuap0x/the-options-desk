@@ -1048,16 +1048,16 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82079,
-    "high_24h": 82508,
-    "low_24h": 79806,
-    "chg_pct": 1.06
+    "last": 82262,
+    "high_24h": 82816,
+    "low_24h": 81634,
+    "chg_pct": 1.27
   },
   "macro": {
-    "10Y": 5.09,
-    "DXY": 101.71,
-    "WTI": 95.36,
-    "VIX": 16.0,
+    "10Y": 5.08,
+    "DXY": 101.63,
+    "WTI": 95.86,
+    "VIX": 15.93,
     "asof": "2026-10-16T09:41:46Z"
   },
   "pulse": null,
