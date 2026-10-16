@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T00:29:34Z",
+  "generated_at": "2026-10-16T04:56:21Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-16T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82201,
-      "chg_pct": 0.62,
+      "last": 81975,
+      "chg_pct": 0.51,
       "history": [
-        85619,
         85595,
         85602,
         85491,
@@ -589,16 +588,16 @@
         81168,
         82345,
         82358,
-        82201
+        82201,
+        81975
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2439.7,
-      "chg_pct": 0.6,
+      "last": 2440.09,
+      "chg_pct": 2.44,
       "history": [
-        2698.9,
         2697.06,
         2699.76,
         2695.4,
@@ -637,16 +636,16 @@
         2372.39,
         2450.06,
         2460.13,
-        2439.7
+        2439.7,
+        2440.09
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 105.3,
-      "chg_pct": 0.9,
+      "last": 105.37,
+      "chg_pct": 1.41,
       "history": [
-        121.27,
         121.25,
         120.9,
         120.52,
@@ -685,7 +684,8 @@
         103.04,
         105.98,
         105.97,
-        105.3
+        105.3,
+        105.37
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,38 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Market Rotation Starts to Take Hold",
+      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
+      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
+      "ts": "2026-10-15T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "An OpenAI agent ran out of Ethereum funds, and took from a wallet it did not own",
+      "summary": "The research model derived funded Sepolia addresses from public seed phrases, questioned whether using the money was ethical, then called the funds \u201ceffectively abandoned\u201d and used them anyway.",
+      "url": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+      "ts": "2026-10-16T04:29:19Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
       "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
       "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
       "ts": "2026-10-15T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound",
+      "summary": "Bitcoin tore back to $82,500 within two hours of dipping under $80,000, and chipmakers in Seoul recovered from their worst close since April.",
+      "url": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound",
+      "ts": "2026-10-16T04:14:22Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
+      "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
+      "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
+      "ts": "2026-10-14T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -959,34 +987,6 @@
       "summary": "Speed, precision and round-the-clock access are rewriting the rules of options trading, according to a panel of industry leaders who traced the industry's transformation from paper trading floors to pushes for an always-on, potentially AI-a",
       "url": "https://www.cboe.com/insights/posts/from-the-hood-summit-the-evolution-of-options-trader/",
       "ts": "2026-10-14T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto for Advisors: Wall Street is done waiting on Congress for crypto rules",
-      "summary": "",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/10/15/crypto-for-advisors-wall-street-is-done-waiting-on-congress-for-crypto-rules",
-      "ts": "2026-10-15T15:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
-      "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
-      "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
-      "ts": "2026-10-14T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "How Brooklyn prosecutors and the FBI took down a massive crypto fraud network targeting Russian speakers",
-      "summary": "The scheme allegedly stole tens of millions through Russian-language Facebook ads and fake advisers, then went after victims again with fake recovery offers.",
-      "url": "https://www.coindesk.com/business/2026/10/15/how-brooklyn-prosecutors-and-the-fbi-took-down-a-massive-crypto-fraud-network-targeting-russian-speakers",
-      "ts": "2026-10-15T12:35:24Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "What the HOOD Summit Told Me About Today\u2019s Retail Traders",
-      "summary": "I recently spent a few days with retail traders at Robinhood\u2019s HOOD Summit in Houston. It was a jam-packed conference that really highlighted the engagement and enthusiasm of this group of retail traders who in many ways represent the next ",
-      "url": "https://www.cboe.com/insights/posts/what-the-hood-summit-told-me-about-todays-retail-traders/",
-      "ts": "2026-10-13T04:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82203,
+    "last": 81975,
     "high_24h": 82508,
     "low_24h": 79806,
-    "chg_pct": 0.62
+    "chg_pct": 0.56
   },
   "macro": {
     "10Y": 5.09,
-    "DXY": 102.07,
-    "WTI": 96.09,
+    "DXY": 101.89,
+    "WTI": 95.89,
     "VIX": 16.46,
-    "asof": "2026-10-16T00:29:34Z"
+    "asof": "2026-10-16T04:56:21Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
