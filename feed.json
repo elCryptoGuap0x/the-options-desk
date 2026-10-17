@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T11:17:13Z",
+  "generated_at": "2026-10-17T14:16:39Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81548,
-      "chg_pct": -1.18,
+      "last": 81397,
+      "chg_pct": -0.88,
       "history": [
-        84231,
         83312,
         83214,
         82873,
@@ -589,16 +588,16 @@
         81540,
         81467,
         81506,
-        81548
+        81548,
+        81397
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2436.21,
-      "chg_pct": -1.85,
+      "last": 2420.49,
+      "chg_pct": -1.91,
       "history": [
-        2617.97,
         2567.6,
         2571.26,
         2569.77,
@@ -637,16 +636,16 @@
         2421.13,
         2417.45,
         2429.43,
-        2436.21
+        2436.21,
+        2420.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.71,
-      "chg_pct": -2.09,
+      "last": 103.86,
+      "chg_pct": -2.02,
       "history": [
-        118.7,
         115.73,
         116.16,
         115.32,
@@ -685,7 +684,8 @@
         104.31,
         104.18,
         104.73,
-        104.71
+        104.71,
+        103.86
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "\u2018Wow, it\u2019s a real discovery\u2019: Claude cracks a 25-year NSA number mystery",
-      "summary": "Numbers the spy agency handed over in the 1990s, long suspected of hiding a backdoor, turn out to have come from a basic computer program. Bitcoin was never on that list, and its quantum problem hasn\u2019t gone anywhere.",
-      "url": "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery",
-      "ts": "2026-10-17T06:39:48Z"
+      "title": "Polygon sees Coinme acquisition as entry to payments sector dominated by Visa, Stripe",
+      "summary": "CEO Marc Boiron said the Coinme acquisition will help Polygon control customer relationships and capture revenue that previously went to payment intermediaries.",
+      "url": "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
+      "ts": "2026-10-17T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Satoshi-era bitcoin faces a bigger quantum threat after Google\u2019s new Willow breakthrough",
-      "summary": "Google says its Willow chip can prepare the special quantum states needed for advanced calculations with about 40 times fewer errors, reducing one of the hardware bottlenecks behind any future attempt to crack bitcoin wallets.",
-      "url": "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough",
-      "ts": "2026-10-17T02:30:00Z"
+      "title": "Banks could slow stablecoin growth by paying savers more, BIS paper finds",
+      "summary": "A BIS working paper found a 1 basis point rise in U.S. bank deposit rates predicted slower stablecoin growth, cutting ten-week growth from 15% to 12%.",
+      "url": "https://www.coindesk.com/business/2026/10/14/banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-paper-finds",
+      "ts": "2026-10-17T12:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Big Tech's AI auditors will only see what they're shown",
-      "summary": "If the White House accord's audits are going to be worth anything, auditors should be able to choose what they test, writes Samuel Vance-Law, head of research at the Decentralization Research Center.",
-      "url": "https://www.coindesk.com/opinion/2026/10/16/big-tech-s-ai-auditors-will-only-see-what-they-re-shown",
-      "ts": "2026-10-16T14:58:22Z"
+      "title": "\u2018Wow, it\u2019s a real discovery\u2019: Claude cracks a 25-year NSA number mystery",
+      "summary": "Numbers the spy agency handed over in the 1990s, long suspected of hiding a backdoor, turn out to have come from a basic computer program. Bitcoin was never on that list, and its quantum problem hasn\u2019t gone anywhere.",
+      "url": "https://www.coindesk.com/tech/2026/10/17/wow-it-s-a-real-discovery-claude-cracks-a-25-year-nsa-number-mystery",
+      "ts": "2026-10-17T06:39:48Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Traders will soon be able to bet on whether Coinbase, Robinhood and Marathon will hit their targets",
-      "summary": "Your day-ahead look for Oct. 16, 2026",
-      "url": "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets",
-      "ts": "2026-10-16T11:15:00Z"
+      "title": "Satoshi-era bitcoin faces a bigger quantum threat after Google\u2019s new Willow breakthrough",
+      "summary": "Google says its Willow chip can prepare the special quantum states needed for advanced calculations with about 40 times fewer errors, reducing one of the hardware bottlenecks behind any future attempt to crack bitcoin wallets.",
+      "url": "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough",
+      "ts": "2026-10-17T02:30:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81550,
-    "high_24h": 82574,
+    "last": 81397,
+    "high_24h": 81895,
     "low_24h": 80761,
-    "chg_pct": -1.18
+    "chg_pct": -0.89
   },
   "macro": {
     "10Y": 5.1,
