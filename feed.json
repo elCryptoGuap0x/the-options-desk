@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T18:02:13Z",
+  "generated_at": "2026-10-18T20:34:11Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81127,
-      "chg_pct": -0.23,
+      "last": 80895,
+      "chg_pct": -0.81,
       "history": [
-        82976,
         82972,
         82931,
         82914,
@@ -589,16 +588,16 @@
         81629,
         81970,
         81041,
-        81127
+        81127,
+        80895
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2368.03,
-      "chg_pct": -1.75,
+      "last": 2349.91,
+      "chg_pct": -2.81,
       "history": [
-        2509.42,
         2509.6,
         2505.99,
         2504.03,
@@ -637,16 +636,16 @@
         2409.45,
         2415.17,
         2374.34,
-        2368.03
+        2368.03,
+        2349.91
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 102.02,
-      "chg_pct": -1.33,
+      "last": 101.17,
+      "chg_pct": -2.79,
       "history": [
-        110.63,
         110.21,
         110.21,
         109.85,
@@ -685,7 +684,8 @@
         103.49,
         103.96,
         102.01,
-        102.02
+        102.02,
+        101.17
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "The White House's crypto chief departs: State of Crypto",
+      "summary": "Patrick Witt announced his departure from the White House last week.",
+      "url": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
+      "ts": "2026-10-18T18:30:00Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
+      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "ts": "2026-10-15T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Wall Street freaked out Friday. VIX and bitcoin say the fear may fade Monday.",
       "summary": "Wall Street's fear gauge, the VIX index, spiked on Friday as stocks dropped. History says Friday panics usually fade on Monday. Seasonality and calm bitcoin suggest the same.",
       "url": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
@@ -948,9 +962,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
-      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "title": "Market Rotation Starts to Take Hold",
+      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
+      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
       "ts": "2026-10-15T04:00:00Z"
     },
     {
@@ -962,20 +976,6 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Rotation Starts to Take Hold",
-      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
-      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
-      "ts": "2026-10-15T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
-      "summary": "Analytics firm Allium said stablecoin payments hit $482 billion this year so far, up 45%, as card spending surges and global payment firms add crypto rails.",
-      "url": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
-      "ts": "2026-10-18T14:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
       "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
       "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin\u2019s $100,000 year-end hope divides analysts as inflation clouds outlook",
-      "summary": "Bitwise sees a potential return above $100,000, while LO:TECH expects a narrower trading range as interest-rate uncertainty weighs on the market.",
-      "url": "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook",
-      "ts": "2026-10-18T13:00:00Z"
+      "title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
+      "summary": "Analytics firm Allium said stablecoin payments hit $482 billion this year so far, up 45%, as card spending surges and global payment firms add crypto rails.",
+      "url": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
+      "ts": "2026-10-18T14:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81115,
+    "last": 80888,
     "high_24h": 82178,
-    "low_24h": 80823,
-    "chg_pct": -0.24
+    "low_24h": 80753,
+    "chg_pct": -0.81
   },
   "macro": {
     "10Y": 5.1,
