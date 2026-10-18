@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:39:43Z",
+  "generated_at": "2026-10-18T14:54:03Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81970,
-      "chg_pct": 0.59,
+      "last": 81041,
+      "chg_pct": -0.55,
       "history": [
-        82620,
         82754,
         82976,
         82972,
@@ -589,16 +588,16 @@
         81213,
         81522,
         81629,
-        81970
+        81970,
+        81041
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2415.17,
-      "chg_pct": -0.73,
+      "last": 2374.34,
+      "chg_pct": -2.11,
       "history": [
-        2493.04,
         2492.64,
         2509.42,
         2509.6,
@@ -637,16 +636,16 @@
         2391.96,
         2404.88,
         2409.45,
-        2415.17
+        2415.17,
+        2374.34
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.96,
-      "chg_pct": -0.61,
+      "last": 102.01,
+      "chg_pct": -2.13,
       "history": [
-        109.78,
         109.84,
         110.63,
         110.21,
@@ -685,7 +684,8 @@
         102.96,
         103.58,
         103.49,
-        103.96
+        103.96,
+        102.01
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Chip-stock bets lost $52 million in 10 minutes with Wall Street shut",
-      "summary": "A 10-minute flush hit round-the-clock chip-stock contracts while U.S. markets were shut, leaving traders with no real share price to lean on.",
-      "url": "https://www.coindesk.com/markets/2026/10/18/chip-stock-bets-lost-usd52-million-in-10-minutes-with-wall-street-shut",
-      "ts": "2026-10-18T07:13:32Z"
+      "title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
+      "summary": "Analytics firm Allium said stablecoin payments hit $482 billion this year so far, up 45%, as card spending surges and global payment firms add crypto rails.",
+      "url": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
+      "ts": "2026-10-18T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
-      "summary": "Coinbase, Circle\u2019s largest USDC partner, also backs Open USD, a rival network that passes reserve income to partners after a management fee.",
-      "url": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
-      "ts": "2026-10-18T01:06:35Z"
+      "title": "Bitcoin\u2019s $100,000 year-end hope divides analysts as inflation clouds outlook",
+      "summary": "Bitwise sees a potential return above $100,000, while LO:TECH expects a narrower trading range as interest-rate uncertainty weighs on the market.",
+      "url": "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook",
+      "ts": "2026-10-18T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Goldman, Wells Fargo, Morgan Stanley see tokenization as a growth play, not a threat",
-      "summary": "The largest banks in the world are eyeing new trading opportunities, speeding up payments and a role for advisers as tokenization takes root in Wall Street.",
-      "url": "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat",
-      "ts": "2026-10-17T17:00:00Z"
+      "title": "Crypto audits give investors false sense of security as Q3 hacks cost $1.18 billion, Hacken says",
+      "summary": "The security firm found that 77% of third-quarter losses involved compromised suppliers, delayed fixes or systems outside the latest security reviews.",
+      "url": "https://www.coindesk.com/tech/2026/10/18/crypto-audits-give-investors-false-sense-of-security-as-q3-hacks-cost-usd1-18-billion-hacken-says",
+      "ts": "2026-10-18T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Citrini sees a tokenization boom. The harder question is who profits",
-      "summary": "The influential research firm says real-world assets could finally give blockchains a clear role in finance. For investors, the next challenge is figuring out which companies, networks and protocols capture the revenue.",
-      "url": "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
-      "ts": "2026-10-17T15:00:00Z"
+      "title": "Crypto exchanges Binance, Coinbase join West Africa scam sweep that flagged $11 million",
+      "summary": "Private-sector partners flagged $11 million in funds that could be frozen, while officials reported cryptocurrency seizures without disclosing their value.",
+      "url": "https://www.coindesk.com/business/2026/10/14/crypto-exchanges-binance-coinbase-join-west-africa-scam-sweep-that-flagged-usd11-million",
+      "ts": "2026-10-18T12:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81980,
+    "last": 81041,
     "high_24h": 82178,
     "low_24h": 80823,
-    "chg_pct": 0.59
+    "chg_pct": -0.54
   },
   "macro": {
     "10Y": 5.1,
