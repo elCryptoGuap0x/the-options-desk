@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T23:30:59Z",
+  "generated_at": "2026-10-18T01:29:23Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81213,
-      "chg_pct": -0.46,
+      "last": 81522,
+      "chg_pct": 0.05,
       "history": [
-        81690,
         82312,
         82561,
         82620,
@@ -589,16 +588,16 @@
         81184,
         81421,
         80954,
-        81213
+        81213,
+        81522
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2391.96,
-      "chg_pct": -1.2,
+      "last": 2404.88,
+      "chg_pct": -0.59,
       "history": [
-        2472.2,
         2489.35,
         2488.1,
         2493.04,
@@ -637,16 +636,16 @@
         2402.64,
         2412.33,
         2370.36,
-        2391.96
+        2391.96,
+        2404.88
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 102.96,
-      "chg_pct": -1.2,
+      "last": 103.58,
+      "chg_pct": -0.84,
       "history": [
-        109.66,
         110.31,
         109.19,
         109.78,
@@ -685,7 +684,8 @@
         103.12,
         103.81,
         101.75,
-        102.96
+        102.96,
+        103.58
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
+      "summary": "Coinbase, Circle\u2019s largest USDC partner, also backs Open USD, a rival network that passes reserve income to partners after a management fee.",
+      "url": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
+      "ts": "2026-10-18T01:06:35Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
+      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "ts": "2026-10-15T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Goldman, Wells Fargo, Morgan Stanley see tokenization as a growth play, not a threat",
       "summary": "The largest banks in the world are eyeing new trading opportunities, speeding up payments and a role for advisers as tokenization takes root in Wall Street.",
       "url": "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat",
@@ -948,9 +962,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
-      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "title": "Market Rotation Starts to Take Hold",
+      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
+      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
       "ts": "2026-10-15T04:00:00Z"
     },
     {
@@ -962,20 +976,6 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Rotation Starts to Take Hold",
-      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
-      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
-      "ts": "2026-10-15T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Polygon sees Coinme acquisition as entry to payments sector dominated by Visa, Stripe",
-      "summary": "CEO Marc Boiron said the Coinme acquisition will help Polygon control customer relationships and capture revenue that previously went to payment intermediaries.",
-      "url": "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
-      "ts": "2026-10-17T14:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
       "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
       "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Banks could slow stablecoin growth by paying savers more, BIS paper finds",
-      "summary": "A BIS working paper found a 1 basis point rise in U.S. bank deposit rates predicted slower stablecoin growth, cutting ten-week growth from 15% to 12%.",
-      "url": "https://www.coindesk.com/business/2026/10/14/banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-paper-finds",
-      "ts": "2026-10-17T12:00:00Z"
+      "title": "Polygon sees Coinme acquisition as entry to payments sector dominated by Visa, Stripe",
+      "summary": "CEO Marc Boiron said the Coinme acquisition will help Polygon control customer relationships and capture revenue that previously went to payment intermediaries.",
+      "url": "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
+      "ts": "2026-10-17T14:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81209,
+    "last": 81528,
     "high_24h": 81655,
     "low_24h": 80823,
-    "chg_pct": -0.4
+    "chg_pct": 0.05
   },
   "macro": {
     "10Y": 5.1,
