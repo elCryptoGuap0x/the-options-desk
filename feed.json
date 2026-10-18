@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T06:33:07Z",
+  "generated_at": "2026-10-18T11:39:43Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81629,
-      "chg_pct": 0.16,
+      "last": 81970,
+      "chg_pct": 0.59,
       "history": [
-        82561,
         82620,
         82754,
         82976,
@@ -589,16 +588,16 @@
         80954,
         81213,
         81522,
-        81629
+        81629,
+        81970
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2409.45,
-      "chg_pct": -0.78,
+      "last": 2415.17,
+      "chg_pct": -0.73,
       "history": [
-        2488.1,
         2493.04,
         2492.64,
         2509.42,
@@ -637,16 +636,16 @@
         2370.36,
         2391.96,
         2404.88,
-        2409.45
+        2409.45,
+        2415.17
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.49,
-      "chg_pct": -1.19,
+      "last": 103.96,
+      "chg_pct": -0.61,
       "history": [
-        109.19,
         109.78,
         109.84,
         110.63,
@@ -685,7 +684,8 @@
         101.75,
         102.96,
         103.58,
-        103.49
+        103.49,
+        103.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Chip-stock bets lost $52 million in 10 minutes with Wall Street shut",
+      "summary": "A 10-minute flush hit round-the-clock chip-stock contracts while U.S. markets were shut, leaving traders with no real share price to lean on.",
+      "url": "https://www.coindesk.com/markets/2026/10/18/chip-stock-bets-lost-usd52-million-in-10-minutes-with-wall-street-shut",
+      "ts": "2026-10-18T07:13:32Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
+      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "ts": "2026-10-15T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Circle defends USDC economics as stablecoin rivals court its partners with bigger cut",
       "summary": "Coinbase, Circle\u2019s largest USDC partner, also backs Open USD, a rival network that passes reserve income to partners after a management fee.",
       "url": "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut",
@@ -948,9 +962,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
-      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
+      "title": "Market Rotation Starts to Take Hold",
+      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
+      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
       "ts": "2026-10-15T04:00:00Z"
     },
     {
@@ -962,20 +976,6 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Rotation Starts to Take Hold",
-      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
-      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
-      "ts": "2026-10-15T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Citrini sees a tokenization boom. The harder question is who profits",
-      "summary": "The influential research firm says real-world assets could finally give blockchains a clear role in finance. For investors, the next challenge is figuring out which companies, networks and protocols capture the revenue.",
-      "url": "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
-      "ts": "2026-10-17T15:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "CPI Pressures Markets and Fed Reserve\u2019s Move on Interest Rates",
       "summary": "The hotter-than-expected inflation report pulled the markets to the downside and accelerated Treasury yields as investors feared higher interest rates might come sooner than expected only a day ago.",
       "url": "https://www.cboe.com/insights/posts/cpi-pressures-markets-and-fed-reserves-move-on-interest-rates/",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Polygon sees Coinme acquisition as entry to payments sector dominated by Visa, Stripe",
-      "summary": "CEO Marc Boiron said the Coinme acquisition will help Polygon control customer relationships and capture revenue that previously went to payment intermediaries.",
-      "url": "https://www.coindesk.com/business/2026/10/17/polygon-sees-coinme-acquisition-as-entry-to-payments-sector-dominated-by-visa-stripe",
-      "ts": "2026-10-17T14:00:00Z"
+      "title": "Citrini sees a tokenization boom. The harder question is who profits",
+      "summary": "The influential research firm says real-world assets could finally give blockchains a clear role in finance. For investors, the next challenge is figuring out which companies, networks and protocols capture the revenue.",
+      "url": "https://www.coindesk.com/business/2026/10/17/citrini-sees-a-tokenization-boom-the-harder-question-is-who-profits",
+      "ts": "2026-10-17T15:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81625,
-    "high_24h": 81978,
+    "last": 81980,
+    "high_24h": 82178,
     "low_24h": 80823,
-    "chg_pct": 0.14
+    "chg_pct": 0.59
   },
   "macro": {
     "10Y": 5.1,
