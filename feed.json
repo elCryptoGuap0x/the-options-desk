@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T22:35:01Z",
+  "generated_at": "2026-10-19T00:27:59Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81472,
-      "chg_pct": 0.31,
+      "last": 82079,
+      "chg_pct": 0.81,
       "history": [
-        82931,
         82914,
         83072,
         82999,
@@ -589,16 +588,16 @@
         81041,
         81127,
         80895,
-        81472
+        81472,
+        82079
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2383.43,
-      "chg_pct": -0.18,
+      "last": 2406.04,
+      "chg_pct": 0.21,
       "history": [
-        2505.99,
         2504.03,
         2502.71,
         2499.63,
@@ -637,16 +636,16 @@
         2374.34,
         2368.03,
         2349.91,
-        2383.43
+        2383.43,
+        2406.04
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.08,
-      "chg_pct": 0.35,
+      "last": 103.87,
+      "chg_pct": 0.52,
       "history": [
-        110.21,
         109.85,
         109.61,
         109.31,
@@ -685,7 +684,8 @@
         102.01,
         102.02,
         101.17,
-        103.08
+        103.08,
+        103.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "The White House's crypto chief departs: State of Crypto",
-      "summary": "Patrick Witt announced his departure from the White House last week.",
-      "url": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
-      "ts": "2026-10-18T18:30:00Z"
+      "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
+      "summary": "Eight more companies objected to trading on the planned OKX-ICE venue, while Nasdaq has separately said it would opt out under the SEC\u2019s framework.",
+      "url": "https://www.coindesk.com/business/2026/10/18/sec-tokenized-stock-framework-faces-issuer-pushback-as-broadcom-verizon-object-to-okx-ice-listing",
+      "ts": "2026-10-18T23:28:06Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Wall Street freaked out Friday. VIX and bitcoin say the fear may fade Monday.",
-      "summary": "Wall Street's fear gauge, the VIX index, spiked on Friday as stocks dropped. History says Friday panics usually fade on Monday. Seasonality and calm bitcoin suggest the same.",
-      "url": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
-      "ts": "2026-10-18T16:33:00Z"
+      "title": "The White House's crypto chief departs: State of Crypto",
+      "summary": "Patrick Witt announced his departure from the White House last week.",
+      "url": "https://www.coindesk.com/policy/2026/10/18/the-white-house-s-crypto-chief-departs-state-of-crypto",
+      "ts": "2026-10-18T18:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
-      "summary": "Parliament passed a law taxing crypto withdrawals above deposits rather than individual trades, featuring a one-time declaration mechanism.",
-      "url": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation",
-      "ts": "2026-10-18T16:00:00Z"
+      "title": "Wall Street freaked out Friday, but VIX and bitcoin trades say the fear may fade Monday.",
+      "summary": "Wall Street's fear gauge, the VIX index, spiked on Friday as stocks dropped. History says Friday panics usually fade on Monday. Seasonality and calm bitcoin markets suggest the same.",
+      "url": "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last",
+      "ts": "2026-10-18T16:33:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Stablecoin supply stalls, but payments jump 45% as Visa, Mastercard and Stripe connect crypto to cash",
-      "summary": "Analytics firm Allium said stablecoin payments hit $482 billion this year so far, up 45%, as card spending surges and global payment firms add crypto rails.",
-      "url": "https://www.coindesk.com/business/2026/10/18/stablecoin-supply-stalls-but-payments-jump-45-as-visa-mastercard-and-stripe-connect-crypto-to-cash",
-      "ts": "2026-10-18T14:00:00Z"
+      "title": "Latvia eyes crypto tax payments in 2027 as parliament overhauls crypto taxation",
+      "summary": "Parliament passed a law taxing crypto withdrawals above deposits rather than individual trades, featuring a one-time declaration mechanism.",
+      "url": "https://www.coindesk.com/policy/2026/10/18/latvia-eyes-crypto-tax-payments-in-2027-as-parliament-overhauls-crypto-taxation",
+      "ts": "2026-10-18T16:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81469,
+    "last": 82079,
     "high_24h": 82178,
     "low_24h": 80672,
-    "chg_pct": 0.31
+    "chg_pct": 0.81
   },
   "macro": {
     "10Y": 5.1,
     "DXY": 101.79,
-    "WTI": 98.42,
+    "WTI": 97.61,
     "VIX": 19.99,
-    "asof": "2026-10-18T22:35:01Z"
+    "asof": "2026-10-19T00:27:59Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
