@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-19T10:56:18Z",
+  "generated_at": "2026-10-19T21:43:56Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-19T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-20T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82398,
-      "chg_pct": 0.44,
+      "last": 81964,
+      "chg_pct": 1.14,
       "history": [
-        82999,
         83573,
         83604,
         83472,
@@ -589,16 +588,16 @@
         81472,
         82079,
         82591,
-        82398
+        82398,
+        81964
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2425.22,
-      "chg_pct": 0.3,
+      "last": 2401.21,
+      "chg_pct": 1.68,
       "history": [
-        2499.63,
         2530.49,
         2532.76,
         2533.83,
@@ -637,16 +636,16 @@
         2383.43,
         2406.04,
         2424.38,
-        2425.22
+        2425.22,
+        2401.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.9,
-      "chg_pct": 0.93,
+      "last": 104.66,
+      "chg_pct": 2.94,
       "history": [
-        109.31,
         111.33,
         111.2,
         110.97,
@@ -685,7 +684,8 @@
         103.08,
         103.87,
         105.37,
-        104.9
+        104.9,
+        104.66
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Why Trade Options Around Earnings Season",
+      "summary": "Every quarter, hundreds of companies report earnings results within a compressed window, and the market's reaction can be swift and significant. For traders holding stock, that means binary outcomes with full exposure to a potential move in",
+      "url": "https://www.cboe.com/insights/posts/why-trade-options-around-earnings-season/",
+      "ts": "2026-10-19T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
+      "summary": "The stablecoin issuer's CEO, Paolo Ardoino, has been defending against accusations that the firm's stablecoins have fueled financial activity in Iran.",
+      "url": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
+      "ts": "2026-10-19T20:21:13Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Tough Trading Leaves Indices in the Red",
       "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
       "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
@@ -941,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin extends bounce above $82,000 as stocks rebound, DeFi tokens lead altcoin gains",
-      "summary": "Bitcoin rose 0.8% to around $82,700 as China\u2019s GDP beat estimates and Nasdaq futures rebounded, while the CoinDesk 80 gained 1.3% and DeFi led gains.",
-      "url": "https://www.coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains",
-      "ts": "2026-10-19T10:26:33Z"
+      "title": "U.S. CFTC rebuffs CME legal stance in consequential fight over perpetual futures",
+      "summary": "The future of perps in the U.S. may be at stake as the CFTC argues that CME hasn't shown the new policy is hurting it after the agency OK'd its first bitcoin perp.",
+      "url": "https://www.coindesk.com/policy/2026/10/19/u-s-cftc-rebuffs-cme-legal-stance-in-consequential-fight-over-perpetual-futures",
+      "ts": "2026-10-19T16:47:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "JPMorgan's JPM Coin, representing dollar deposits, is coming to Ethereum: Bloomberg",
-      "summary": "JPMorgan's dollar deposit token is heading to Ethereum as the lender looks to offer it to wider selection of institutional clients.",
-      "url": "https://www.coindesk.com/markets/2026/10/19/jpmorgan-s-jpm-coin-representing-dollar-deposits-is-coming-to-ethereum-bloomberg",
-      "ts": "2026-10-19T10:03:47Z"
+      "title": "Zerohash rolls out a new tool to move crypto without copying wallet addresses",
+      "summary": "The launch comes as Zerohash bids for a federal trust charter.",
+      "url": "https://www.coindesk.com/business/2026/10/19/zerohash-rolls-out-a-new-tool-to-move-crypto-without-copying-wallet-addresses",
+      "ts": "2026-10-19T14:58:40Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto vault deposits top $10 billion as lending risks draw regulatory scrutiny",
-      "summary": "Curator-managed lending strategies are attracting institutional capital, while exposing depositors to collateral, liquidity and smart-contract risks.",
-      "url": "https://www.coindesk.com/markets/2026/10/19/crypto-vault-deposits-top-usd10-billion-as-lending-risks-draw-regulatory-scrutiny",
-      "ts": "2026-10-19T09:32:38Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "CME\u2019s bitcoin cash, uniswap futures, global PMIs: Crypto Week Ahead",
-      "summary": "Your look at what's coming in the week starting Oct. 19.",
-      "url": "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead",
-      "ts": "2026-10-19T09:12:39Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin whale moves $34 million in BTC it got in 2013 when coins traded at $131",
-      "summary": "A bitcoin wallet dormant since 2013 moved 411 BTC, now worth about $34 million. It is one of several long-dormant wallets to wake up recently.",
-      "url": "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131",
-      "ts": "2026-10-19T06:23:16Z"
+      "title": "Cardano founder Charles Hoskinson is building a new programming language for the network",
+      "summary": "Hoskinson said on X the language will bundle transaction requests with cryptographic proofs. He hasn\u2019t shared a name, specs or a release date.",
+      "url": "https://www.coindesk.com/tech/2026/10/19/cardano-founder-charles-hoskinson-is-building-a-new-programming-language-for-the-network",
+      "ts": "2026-10-19T12:16:58Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81968,
+    "last": 81969,
     "high_24h": 83035,
-    "low_24h": 80672,
-    "chg_pct": 1.06
+    "low_24h": 81152,
+    "chg_pct": 1.12
   },
   "macro": {
-    "10Y": 5.15,
-    "DXY": 102.0,
-    "WTI": 99.22,
-    "VIX": 18.48,
-    "asof": "2026-10-19T10:56:18Z"
+    "10Y": 5.14,
+    "DXY": 101.98,
+    "WTI": 98.24,
+    "VIX": 18.44,
+    "asof": "2026-10-19T21:43:56Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
