@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T00:44:36Z",
+  "generated_at": "2026-10-20T05:26:01Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-20T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81642,
-      "chg_pct": -0.82,
+      "last": 81960,
+      "chg_pct": -0.73,
       "history": [
-        83604,
         83472,
         83551,
         81283,
@@ -589,16 +588,16 @@
         82591,
         82398,
         81964,
-        81642
+        81642,
+        81960
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2398.54,
-      "chg_pct": -0.61,
+      "last": 2406.96,
+      "chg_pct": -0.69,
       "history": [
-        2532.76,
         2533.83,
         2552.29,
         2419.55,
@@ -637,16 +636,16 @@
         2424.38,
         2425.22,
         2401.21,
-        2398.54
+        2398.54,
+        2406.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.73,
-      "chg_pct": 0.44,
+      "last": 104.98,
+      "chg_pct": -0.45,
       "history": [
-        111.2,
         110.97,
         111.97,
         103.73,
@@ -685,7 +684,8 @@
         105.37,
         104.9,
         104.66,
-        104.73
+        104.73,
+        104.98
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Investors Bought the Dips",
-      "summary": "",
-      "url": "https://www.cboe.com/insights/posts/tech-investors-bought-the-dips/",
-      "ts": "2026-10-19T04:00:00Z"
+      "title": "Tough Trading Leaves Indices in the Red",
+      "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
+      "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
+      "ts": "2026-10-16T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -961,13 +961,6 @@
       "ts": "2026-10-19T16:47:00Z"
     },
     {
-      "tag": "OPTIONS",
-      "title": "Prepare for any Market Environment: Using Options to Help Manage Tail Risk",
-      "summary": "In today\u2019s volatile market environment, investment advisors are increasingly turning to listed options and volatility tools to manage risk, fueling demand for capital-efficient protection.",
-      "url": "https://www.cboe.com/insights/posts/prepare-for-any-market-environment-using-options-to-help-manage-tail-risk/",
-      "ts": "2026-10-19T04:00:00Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Zerohash rolls out a new tool to move crypto without copying wallet addresses",
       "summary": "The launch comes as Zerohash bids for a federal trust charter.",
@@ -975,18 +968,25 @@
       "ts": "2026-10-19T14:58:40Z"
     },
     {
-      "tag": "OPTIONS",
-      "title": "Week of 10/19/2026: Scramble for Downside Hedges Fuels VIX Surge Ahead of MegaCap Earnings",
-      "summary": "Implied volatilities were mixed across major asset classes last week as hotter-than-expected September CPI and PPI reports revived Fed rate-hike fears and collided with mounting worries about debt-funded AI spending. Learn more in this week",
-      "url": "https://www.cboe.com/insights/posts/week-of-10-19-2026-scramble-for-downside-hedges-fuels-vix-surge-ahead-of-mega-cap-earnings/",
-      "ts": "2026-10-19T04:00:00Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Cardano founder Charles Hoskinson is building a new programming language for the network",
       "summary": "Hoskinson said on X the language will bundle transaction requests with cryptographic proofs. He hasn\u2019t shared a name, specs or a release date.",
       "url": "https://www.coindesk.com/tech/2026/10/19/cardano-founder-charles-hoskinson-is-building-a-new-programming-language-for-the-network",
       "ts": "2026-10-19T12:16:58Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Strategy's price chart is about to flash a major bullish signal weeks after bitcoin did",
+      "summary": "Your day-ahead look for Oct. 19, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal",
+      "ts": "2026-10-19T11:15:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Live updates: Bitcoin holds near $82,000 as Nasdaq rebounds more than 1%",
+      "summary": "Bitcoin treasury company Strive continued to add large numbers of BTC to its balance sheet, while far larger peer Strategy acquired only a small amount.",
+      "url": "https://www.coindesk.com/markets/2026/10/19/live-updates-bitcoin-tags-usd83-000-and-slips-back-as-chip-stocks-lead-a-rebound",
+      "ts": "2026-10-19T11:05:54Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81617,
+    "last": 81965,
     "high_24h": 83035,
-    "low_24h": 81737,
-    "chg_pct": -0.84
+    "low_24h": 81155,
+    "chg_pct": -0.72
   },
   "macro": {
     "10Y": 5.14,
-    "DXY": 101.93,
-    "WTI": 98.43,
+    "DXY": 101.79,
+    "WTI": 98.88,
     "VIX": 18.44,
-    "asof": "2026-10-20T00:44:36Z"
+    "asof": "2026-10-20T05:26:01Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
