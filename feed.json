@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T05:26:01Z",
+  "generated_at": "2026-10-20T10:23:03Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81960,
-      "chg_pct": -0.73,
+      "last": 81562,
+      "chg_pct": -1.06,
       "history": [
-        83472,
         83551,
         81283,
         83704,
@@ -589,16 +588,16 @@
         82398,
         81964,
         81642,
-        81960
+        81960,
+        81562
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2406.96,
-      "chg_pct": -0.69,
+      "last": 2387.65,
+      "chg_pct": -1.61,
       "history": [
-        2533.83,
         2552.29,
         2419.55,
         2532.62,
@@ -637,16 +636,16 @@
         2425.22,
         2401.21,
         2398.54,
-        2406.96
+        2406.96,
+        2387.65
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.98,
-      "chg_pct": -0.45,
+      "last": 104.13,
+      "chg_pct": -0.85,
       "history": [
-        110.97,
         111.97,
         103.73,
         108.45,
@@ -685,7 +684,8 @@
         104.9,
         104.66,
         104.73,
-        104.98
+        104.98,
+        104.13
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,52 +941,52 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Live updates: Market jitters persist as the AI selloff deepens",
+      "summary": "South Korea\u2019s KOSPI fell almost 4%, accompanied by one of the weakest IPO debuts in the country\u2019s history, with data centre company Elice tumbling around 30%.",
+      "url": "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens",
+      "ts": "2026-10-20T10:14:19Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Tech Investors Bought the Dips",
+      "summary": "",
+      "url": "https://www.cboe.com/insights/posts/tech-investors-bought-the-dips/",
+      "ts": "2026-10-19T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
+      "summary": "Elice\u2019s debut slump added to concerns over AI infrastructure valuations, while rising oil prices compounded market uncertainty.",
+      "url": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111",
+      "ts": "2026-10-20T09:32:24Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Prepare for any Market Environment: Using Options to Help Manage Tail Risk",
+      "summary": "In today\u2019s volatile market environment, investment advisors are increasingly turning to listed options and volatility tools to manage risk, fueling demand for capital-efficient protection.",
+      "url": "https://www.cboe.com/insights/posts/prepare-for-any-market-environment-using-options-to-help-manage-tail-risk/",
+      "ts": "2026-10-19T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin ETFs just saw their biggest day in a month thanks entirely to BlackRock",
+      "summary": "Fidelity's FBTC and Grayscale's GBTC saw outflows of $83.6 million and $54.9 million, respectively.",
+      "url": "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock",
+      "ts": "2026-10-20T08:24:01Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Week of 10/19/2026: Scramble for Downside Hedges Fuels VIX Surge Ahead of MegaCap Earnings",
+      "summary": "Implied volatilities were mixed across major asset classes last week as hotter-than-expected September CPI and PPI reports revived Fed rate-hike fears and collided with mounting worries about debt-funded AI spending. Learn more in this week",
+      "url": "https://www.cboe.com/insights/posts/week-of-10-19-2026-scramble-for-downside-hedges-fuels-vix-surge-ahead-of-mega-cap-earnings/",
+      "ts": "2026-10-19T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
       "summary": "The stablecoin issuer's CEO, Paolo Ardoino, has been defending against accusations that the firm's stablecoins have fueled financial activity in Iran.",
       "url": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
       "ts": "2026-10-19T20:21:13Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Tough Trading Leaves Indices in the Red",
-      "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
-      "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
-      "ts": "2026-10-16T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "U.S. CFTC rebuffs CME legal stance in consequential fight over perpetual futures",
-      "summary": "The future of perps in the U.S. may be at stake as the CFTC argues that CME hasn't shown the new policy is hurting it after the agency OK'd its first bitcoin perp.",
-      "url": "https://www.coindesk.com/policy/2026/10/19/u-s-cftc-rebuffs-cme-legal-stance-in-consequential-fight-over-perpetual-futures",
-      "ts": "2026-10-19T16:47:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Zerohash rolls out a new tool to move crypto without copying wallet addresses",
-      "summary": "The launch comes as Zerohash bids for a federal trust charter.",
-      "url": "https://www.coindesk.com/business/2026/10/19/zerohash-rolls-out-a-new-tool-to-move-crypto-without-copying-wallet-addresses",
-      "ts": "2026-10-19T14:58:40Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Cardano founder Charles Hoskinson is building a new programming language for the network",
-      "summary": "Hoskinson said on X the language will bundle transaction requests with cryptographic proofs. He hasn\u2019t shared a name, specs or a release date.",
-      "url": "https://www.coindesk.com/tech/2026/10/19/cardano-founder-charles-hoskinson-is-building-a-new-programming-language-for-the-network",
-      "ts": "2026-10-19T12:16:58Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Strategy's price chart is about to flash a major bullish signal weeks after bitcoin did",
-      "summary": "Your day-ahead look for Oct. 19, 2026",
-      "url": "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal",
-      "ts": "2026-10-19T11:15:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin holds near $82,000 as Nasdaq rebounds more than 1%",
-      "summary": "Bitcoin treasury company Strive continued to add large numbers of BTC to its balance sheet, while far larger peer Strategy acquired only a small amount.",
-      "url": "https://www.coindesk.com/markets/2026/10/19/live-updates-bitcoin-tags-usd83-000-and-slips-back-as-chip-stocks-lead-a-rebound",
-      "ts": "2026-10-19T11:05:54Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81965,
-    "high_24h": 83035,
+    "last": 81562,
+    "high_24h": 82667,
     "low_24h": 81155,
-    "chg_pct": -0.72
+    "chg_pct": -1.18
   },
   "macro": {
     "10Y": 5.14,
-    "DXY": 101.79,
-    "WTI": 98.88,
-    "VIX": 18.44,
-    "asof": "2026-10-20T05:26:01Z"
+    "DXY": 101.84,
+    "WTI": 100.65,
+    "VIX": 18.71,
+    "asof": "2026-10-20T10:23:03Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
