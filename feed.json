@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T21:43:56Z",
+  "generated_at": "2026-10-20T00:44:36Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81964,
-      "chg_pct": 1.14,
+      "last": 81642,
+      "chg_pct": -0.82,
       "history": [
-        83573,
         83604,
         83472,
         83551,
@@ -589,16 +588,16 @@
         82079,
         82591,
         82398,
-        81964
+        81964,
+        81642
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2401.21,
-      "chg_pct": 1.68,
+      "last": 2398.54,
+      "chg_pct": -0.61,
       "history": [
-        2530.49,
         2532.76,
         2533.83,
         2552.29,
@@ -637,16 +636,16 @@
         2406.04,
         2424.38,
         2425.22,
-        2401.21
+        2401.21,
+        2398.54
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.66,
-      "chg_pct": 2.94,
+      "last": 104.73,
+      "chg_pct": 0.44,
       "history": [
-        111.33,
         111.2,
         110.97,
         111.97,
@@ -685,7 +684,8 @@
         103.87,
         105.37,
         104.9,
-        104.66
+        104.66,
+        104.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tough Trading Leaves Indices in the Red",
-      "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
-      "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
-      "ts": "2026-10-16T04:00:00Z"
+      "title": "Tech Investors Bought the Dips",
+      "summary": "",
+      "url": "https://www.cboe.com/insights/posts/tech-investors-bought-the-dips/",
+      "ts": "2026-10-19T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX September Volume Highlights",
-      "summary": "In September 2026, Cboe FX Spot Average Daily Volume (ADV) reached $61.6 billion, a 25.6% increase versus September 2025's ADV of $49.1 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-september-volume-highlights/",
-      "ts": "2026-10-15T04:00:00Z"
+      "title": "Prepare for any Market Environment: Using Options to Help Manage Tail Risk",
+      "summary": "In today\u2019s volatile market environment, investment advisors are increasingly turning to listed options and volatility tools to manage risk, fueling demand for capital-efficient protection.",
+      "url": "https://www.cboe.com/insights/posts/prepare-for-any-market-environment-using-options-to-help-manage-tail-risk/",
+      "ts": "2026-10-19T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Market Rotation Starts to Take Hold",
-      "summary": "Market activity throughout Thursday\u2019s session show marks of a rotation cycle when investors unload heavy positions in one sector and flee to others considered safe havens.",
-      "url": "https://www.cboe.com/insights/posts/market-rotation-starts-to-take-hold/",
-      "ts": "2026-10-15T04:00:00Z"
+      "title": "Week of 10/19/2026: Scramble for Downside Hedges Fuels VIX Surge Ahead of MegaCap Earnings",
+      "summary": "Implied volatilities were mixed across major asset classes last week as hotter-than-expected September CPI and PPI reports revived Fed rate-hike fears and collided with mounting worries about debt-funded AI spending. Learn more in this week",
+      "url": "https://www.cboe.com/insights/posts/week-of-10-19-2026-scramble-for-downside-hedges-fuels-vix-surge-ahead-of-mega-cap-earnings/",
+      "ts": "2026-10-19T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81969,
+    "last": 81617,
     "high_24h": 83035,
-    "low_24h": 81152,
-    "chg_pct": 1.12
+    "low_24h": 81737,
+    "chg_pct": -0.84
   },
   "macro": {
     "10Y": 5.14,
-    "DXY": 101.98,
-    "WTI": 98.24,
+    "DXY": 101.93,
+    "WTI": 98.43,
     "VIX": 18.44,
-    "asof": "2026-10-19T21:43:56Z"
+    "asof": "2026-10-20T00:44:36Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
