@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-20T10:23:03Z",
+  "generated_at": "2026-10-20T19:25:22Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-20T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-21T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81562,
-      "chg_pct": -1.06,
+      "last": 82350,
+      "chg_pct": 0.52,
       "history": [
-        83551,
         81283,
         83704,
         83123,
@@ -589,16 +588,16 @@
         81964,
         81642,
         81960,
-        81562
+        81562,
+        82350
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2387.65,
-      "chg_pct": -1.61,
+      "last": 2426.27,
+      "chg_pct": 1.1,
       "history": [
-        2552.29,
         2419.55,
         2532.62,
         2504.67,
@@ -637,16 +636,16 @@
         2401.21,
         2398.54,
         2406.96,
-        2387.65
+        2387.65,
+        2426.27
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.13,
-      "chg_pct": -0.85,
+      "last": 105.39,
+      "chg_pct": 1.27,
       "history": [
-        111.97,
         103.73,
         108.45,
         107.2,
@@ -685,7 +684,8 @@
         104.66,
         104.73,
         104.98,
-        104.13
+        104.13,
+        105.39
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,52 +941,52 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Live updates: Market jitters persist as the AI selloff deepens",
-      "summary": "South Korea\u2019s KOSPI fell almost 4%, accompanied by one of the weakest IPO debuts in the country\u2019s history, with data centre company Elice tumbling around 30%.",
-      "url": "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens",
-      "ts": "2026-10-20T10:14:19Z"
+      "title": "OKX-ICE co-chair Andrew Cuomo calls corporate objections a \u2018natural response\u2019 to tokenized stock plans",
+      "summary": "The former NY governor, who co-chairs the joint venture between the crypto exchange and Intercontinental Exchange, said companies were expected to take a wait-and-see approach.",
+      "url": "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
+      "ts": "2026-10-20T18:26:29Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Investors Bought the Dips",
-      "summary": "",
-      "url": "https://www.cboe.com/insights/posts/tech-investors-bought-the-dips/",
-      "ts": "2026-10-19T04:00:00Z"
+      "title": "Tough Trading Leaves Indices in the Red",
+      "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
+      "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
+      "ts": "2026-10-16T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "South Korean IPO slump adds to AI market jitters as Brent crude tops $111",
-      "summary": "Elice\u2019s debut slump added to concerns over AI infrastructure valuations, while rising oil prices compounded market uncertainty.",
-      "url": "https://www.coindesk.com/markets/2026/10/20/south-korean-ipo-plunge-deepens-ai-market-jitters-as-brent-tops-usd111",
-      "ts": "2026-10-20T09:32:24Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Prepare for any Market Environment: Using Options to Help Manage Tail Risk",
-      "summary": "In today\u2019s volatile market environment, investment advisors are increasingly turning to listed options and volatility tools to manage risk, fueling demand for capital-efficient protection.",
-      "url": "https://www.cboe.com/insights/posts/prepare-for-any-market-environment-using-options-to-help-manage-tail-risk/",
-      "ts": "2026-10-19T04:00:00Z"
+      "title": "The Coinbase allegations expose Bitcoin's corporate governance gap",
+      "summary": "Corporate adoption of bitcoin will stall as long as companies can't show who controls the money, who approves its movement, or whether it's still there, argues Onramp CEO Michael Tanguma.",
+      "url": "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap",
+      "ts": "2026-10-20T17:02:31Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin ETFs just saw their biggest day in a month thanks entirely to BlackRock",
-      "summary": "Fidelity's FBTC and Grayscale's GBTC saw outflows of $83.6 million and $54.9 million, respectively.",
-      "url": "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock",
-      "ts": "2026-10-20T08:24:01Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 10/19/2026: Scramble for Downside Hedges Fuels VIX Surge Ahead of MegaCap Earnings",
-      "summary": "Implied volatilities were mixed across major asset classes last week as hotter-than-expected September CPI and PPI reports revived Fed rate-hike fears and collided with mounting worries about debt-funded AI spending. Learn more in this week",
-      "url": "https://www.cboe.com/insights/posts/week-of-10-19-2026-scramble-for-downside-hedges-fuels-vix-surge-ahead-of-mega-cap-earnings/",
-      "ts": "2026-10-19T04:00:00Z"
+      "title": "BlackRock seeks to shield bitcoin investors from losses after rival fund weathers 50% crash",
+      "summary": "BlackRock's proposed fund follows similar products from Calamos that helped investors avoid steep losses during bitcoin's selloff.",
+      "url": "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash",
+      "ts": "2026-10-20T14:28:39Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Tether: Senator's investigation misses positive work that's led to lower Iran volumes",
-      "summary": "The stablecoin issuer's CEO, Paolo Ardoino, has been defending against accusations that the firm's stablecoins have fueled financial activity in Iran.",
-      "url": "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes",
-      "ts": "2026-10-19T20:21:13Z"
+      "title": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
+      "summary": "The court injunctions apply strictly to users within the AIFC and do not extend across the rest of Kazakhstan.",
+      "url": "https://www.coindesk.com/business/2026/10/20/kazakhstan-court-bars-coinbase-five-others-from-unlicensed-crypto-services-in-astana-international-financial-centre",
+      "ts": "2026-10-20T13:35:08Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",
+      "summary": "Seven more issuers have opted out of being listed on the planned tokenized stock venue under the SEC's framework, bringing its disclosed objection count to 16.",
+      "url": "https://www.coindesk.com/business/2026/10/19/microsoft-alphabet-and-goldman-sachs-join-objections-to-okx-ice-tokenized-stock-trading",
+      "ts": "2026-10-20T12:40:17Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "France's parliament approves vote to hit stablecoin trades with 31% capital gains tax",
+      "summary": "Amendment I-3898 removes tax deferral for MiCA-compliant stablecoins starting January 2027.",
+      "url": "https://www.coindesk.com/policy/2026/10/20/france-s-parliament-approves-vote-to-hit-crypto-to-stablecoin-trades-with-31-levy",
+      "ts": "2026-10-20T11:25:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82522,
+    "last": 82350,
     "high_24h": 83249,
     "low_24h": 81155,
-    "chg_pct": 0.39
+    "chg_pct": 0.57
   },
   "macro": {
-    "10Y": 5.1,
-    "DXY": 101.67,
-    "WTI": 96.39,
-    "VIX": 17.62,
-    "asof": "2026-10-20T10:23:03Z"
+    "10Y": 5.12,
+    "DXY": 101.73,
+    "WTI": 98.13,
+    "VIX": 17.44,
+    "asof": "2026-10-20T19:25:22Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
