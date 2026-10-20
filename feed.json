@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T19:25:22Z",
+  "generated_at": "2026-10-20T22:36:26Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82350,
-      "chg_pct": 0.52,
+      "last": 82993,
+      "chg_pct": 1.19,
       "history": [
-        81283,
         83704,
         83123,
         83108,
@@ -589,16 +588,16 @@
         81642,
         81960,
         81562,
-        82350
+        82350,
+        82993
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2426.27,
-      "chg_pct": 1.1,
+      "last": 2456.34,
+      "chg_pct": 2.11,
       "history": [
-        2419.55,
         2532.62,
         2504.67,
         2496.59,
@@ -637,16 +636,16 @@
         2398.54,
         2406.96,
         2387.65,
-        2426.27
+        2426.27,
+        2456.34
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 105.39,
-      "chg_pct": 1.27,
+      "last": 106.9,
+      "chg_pct": 1.76,
       "history": [
-        103.73,
         108.45,
         107.2,
         106.75,
@@ -685,7 +684,8 @@
         104.73,
         104.98,
         104.13,
-        105.39
+        105.39,
+        106.9
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,9 +934,23 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Why Trade Options Around Earnings Season",
-      "summary": "Every quarter, hundreds of companies report earnings results within a compressed window, and the market's reaction can be swift and significant. For traders holding stock, that means binary outcomes with full exposure to a potential move in",
-      "url": "https://www.cboe.com/insights/posts/why-trade-options-around-earnings-season/",
+      "title": "Choppy Trading Leaves Dow Higher and Nasdaq Flat",
+      "summary": "Most stocks recovered from their opening lows through a choppy day of trading that also saw crude oil prices fall in tandem with Treasury yields.",
+      "url": "https://www.cboe.com/insights/posts/choppy-trading-leaves-dow-higher-and-nasdaq-flat/",
+      "ts": "2026-10-20T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
+      "summary": "A Commodity Futures Trading Commission task force is scheduled for October 28 to talk about how the latest \"super intelligence\" technology may impact markets.",
+      "url": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
+      "ts": "2026-10-20T21:12:21Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "State of the Options Industry Q3 2026: Volume Growth Concentrated in Index and ETF Options",
+      "summary": "Options activity moderated in the third quarter of 2026 as macroeconomic factors including higher interest rates and energy costs impacted equities. Market-wide average daily option volume (ADV) was 70.6 million contracts daily, four percen",
+      "url": "https://www.cboe.com/insights/posts/state-of-the-options-industry-q-3-2026-volume-growth-concentrated-in-index-and-etf-options/",
       "ts": "2026-10-19T04:00:00Z"
     },
     {
@@ -948,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tough Trading Leaves Indices in the Red",
-      "summary": "What a week! Wall Street appeared to get a blunt reality check with a three-prong attack that pressured all three major indices, pushing the technology-heavy indices to the downside for the week.",
-      "url": "https://www.cboe.com/insights/posts/tough-trading-leaves-indices-in-the-red/",
-      "ts": "2026-10-16T04:00:00Z"
+      "title": "Why Trade Options Around Earnings Season",
+      "summary": "Every quarter, hundreds of companies report earnings results within a compressed window, and the market's reaction can be swift and significant. For traders holding stock, that means binary outcomes with full exposure to a potential move in",
+      "url": "https://www.cboe.com/insights/posts/why-trade-options-around-earnings-season/",
+      "ts": "2026-10-19T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -961,32 +975,18 @@
       "ts": "2026-10-20T17:02:31Z"
     },
     {
+      "tag": "OPTIONS",
+      "title": "Tech Investors Bought the Dips",
+      "summary": "",
+      "url": "https://www.cboe.com/insights/posts/tech-investors-bought-the-dips/",
+      "ts": "2026-10-19T04:00:00Z"
+    },
+    {
       "tag": "CRYPTO",
       "title": "BlackRock seeks to shield bitcoin investors from losses after rival fund weathers 50% crash",
       "summary": "BlackRock's proposed fund follows similar products from Calamos that helped investors avoid steep losses during bitcoin's selloff.",
       "url": "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash",
       "ts": "2026-10-20T14:28:39Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Kazakhstan court bars Coinbase, five others from unlicensed crypto services in Astana International Financial Centre",
-      "summary": "The court injunctions apply strictly to users within the AIFC and do not extend across the rest of Kazakhstan.",
-      "url": "https://www.coindesk.com/business/2026/10/20/kazakhstan-court-bars-coinbase-five-others-from-unlicensed-crypto-services-in-astana-international-financial-centre",
-      "ts": "2026-10-20T13:35:08Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Microsoft, Alphabet and Goldman Sachs join objections to OKX-ICE tokenized stock trading",
-      "summary": "Seven more issuers have opted out of being listed on the planned tokenized stock venue under the SEC's framework, bringing its disclosed objection count to 16.",
-      "url": "https://www.coindesk.com/business/2026/10/19/microsoft-alphabet-and-goldman-sachs-join-objections-to-okx-ice-tokenized-stock-trading",
-      "ts": "2026-10-20T12:40:17Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "France's parliament approves vote to hit stablecoin trades with 31% capital gains tax",
-      "summary": "Amendment I-3898 removes tax deferral for MiCA-compliant stablecoins starting January 2027.",
-      "url": "https://www.coindesk.com/policy/2026/10/20/france-s-parliament-approves-vote-to-hit-crypto-to-stablecoin-trades-with-31-levy",
-      "ts": "2026-10-20T11:25:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82350,
+    "last": 82993,
     "high_24h": 83249,
     "low_24h": 81155,
-    "chg_pct": 0.57
+    "chg_pct": 1.19
   },
   "macro": {
     "10Y": 5.12,
     "DXY": 101.73,
-    "WTI": 98.13,
-    "VIX": 17.44,
-    "asof": "2026-10-20T19:25:22Z"
+    "WTI": 97.93,
+    "VIX": 17.31,
+    "asof": "2026-10-20T22:36:26Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
