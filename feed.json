@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T05:57:42Z",
+  "generated_at": "2026-10-21T11:39:47Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 82608,
-      "chg_pct": 1.03,
+      "last": 83368,
+      "chg_pct": 2.33,
       "history": [
-        83108,
         83807,
         83204,
         81567,
@@ -589,16 +588,16 @@
         82350,
         82993,
         83105,
-        82608
+        82608,
+        83368
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2437.96,
-      "chg_pct": 1.62,
+      "last": 2459.28,
+      "chg_pct": 3.12,
       "history": [
-        2496.59,
         2518.47,
         2497.07,
         2410.61,
@@ -637,16 +636,16 @@
         2426.27,
         2456.34,
         2455.7,
-        2437.96
+        2437.96,
+        2459.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 105.67,
-      "chg_pct": 1.01,
+      "last": 106.66,
+      "chg_pct": 2.42,
       "history": [
-        106.75,
         108.01,
         106.64,
         104.36,
@@ -685,7 +684,8 @@
         105.39,
         106.9,
         106.78,
-        105.67
+        105.67,
+        106.66
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ripple brings Wall Street into 24/7 stock bets, but HSBC warns markets are still thin",
-      "summary": "Institutions can trade through Ripple Prime and post RLUSD as collateral. Finding enough buyers and sellers for large positions could prove harder.",
-      "url": "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin",
-      "ts": "2026-10-21T05:25:57Z"
+      "title": "Bitcoin risk management grows more popular as the 'just bet on price' era fades",
+      "summary": "Your day-ahead look for Oct. 21, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades",
+      "ts": "2026-10-21T11:15:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Solana\u2019s Alpenglow, its biggest network overhaul since 2020, goes live Wednesday",
-      "summary": "Alpenglow will replace the voting system Solana has used since 2020, targeting roughly 150-millisecond finality after months of testing that included a failed migration and rollback.",
-      "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
-      "ts": "2026-10-21T04:35:52Z"
+      "title": "OCC's final rule to start fresh in weighing stablecoin rewards against GENIUS Act ban",
+      "summary": "The U.S. Office of the Comptroller of the Currency is the first of several federal agencies to finish writing regulations under the act.",
+      "url": "https://www.coindesk.com/policy/2026/10/21/occ-s-final-rule-to-start-fresh-in-weighing-stablecoin-rewards-against-genius-act-ban",
+      "ts": "2026-10-21T11:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "A company that vouches for websites had secret keys so weak that 8 of them were cracked",
-      "summary": "Eight secret keys at eMudhra, an Indian firm that vouches for websites, were compromised. Browsers and software makers are rushing out fixes.",
-      "url": "https://www.coindesk.com/tech/2026/10/21/a-company-that-vouches-for-websites-had-secret-keys-so-weak-that-8-of-them-were-cracked",
-      "ts": "2026-10-21T04:11:58Z"
+      "title": "Crypto rises with Asian tech stocks, zcash extends gain after setting upgrade date",
+      "summary": "Bitcoin rose to a one-week high as Asian tech stocks rebounded and SpaceX and Tesla formed committees to explore a merger.",
+      "url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date",
+      "ts": "2026-10-21T10:34:37Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin hovers around $83,000 as AI earnings revive tech, ZEC jumps 11%",
-      "summary": "Strong results from SpaceX and Super Micro sent Asian chip stocks surging, and ZEC led crypto higher after developers set a date for its next network upgrade.",
-      "url": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11",
-      "ts": "2026-10-21T04:07:07Z"
+      "title": "Live updates: Bitcoin clings to $82,500 as SpaceX results lift stock futures",
+      "summary": "SpaceX\u2019s blowout quarter revived the AI trade, but oil topped $110 again. XS.com warns that losing $82,500 opens a path toward $70,000.",
+      "url": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures",
+      "ts": "2026-10-21T10:30:40Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 82608,
-    "high_24h": 83249,
+    "last": 83368,
+    "high_24h": 83568,
     "low_24h": 81273,
-    "chg_pct": 1.03
+    "chg_pct": 2.33
   },
   "macro": {
     "10Y": 5.12,
-    "DXY": 101.78,
-    "WTI": 99.21,
-    "VIX": 17.31,
-    "asof": "2026-10-21T05:57:42Z"
+    "DXY": 101.69,
+    "WTI": 98.74,
+    "VIX": 17.32,
+    "asof": "2026-10-21T11:39:47Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
