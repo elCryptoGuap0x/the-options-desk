@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T20:14:36Z",
+  "generated_at": "2026-10-21T23:27:13Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 84498,
-      "chg_pct": 2.34,
+      "last": 84307,
+      "chg_pct": 1.75,
       "history": [
-        83204,
         81567,
         81682,
         81366,
@@ -589,16 +588,16 @@
         83105,
         82608,
         83368,
-        84498
+        84498,
+        84307
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2493.31,
-      "chg_pct": 2.3,
+      "last": 2477.22,
+      "chg_pct": 1.33,
       "history": [
-        2497.07,
         2410.61,
         2423.78,
         2371.75,
@@ -637,16 +636,16 @@
         2455.7,
         2437.96,
         2459.28,
-        2493.31
+        2493.31,
+        2477.22
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 108.18,
-      "chg_pct": 2.01,
+      "last": 107.1,
+      "chg_pct": 0.68,
       "history": [
-        106.64,
         104.36,
         104.39,
         103.17,
@@ -685,7 +684,8 @@
         106.78,
         105.67,
         106.66,
-        108.18
+        108.18,
+        107.1
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,10 +934,10 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Choppy Trading Leaves Dow Higher and Nasdaq Flat",
-      "summary": "Most stocks recovered from their opening lows through a choppy day of trading that also saw crude oil prices fall in tandem with Treasury yields.",
-      "url": "https://www.cboe.com/insights/posts/choppy-trading-leaves-dow-higher-and-nasdaq-flat/",
-      "ts": "2026-10-20T04:00:00Z"
+      "title": "Technology Stocks Pop, Lead Nasdaq Higher",
+      "summary": "The topsy-turvy trading world of technology stocks got a pick-me-up Wednesday after dual earnings reports eased some artificial intelligence (AI) investment fears. Post-session earnings reports may do so again tomorrow.",
+      "url": "https://www.cboe.com/insights/posts/technology-stocks-pop-lead-nasdaq-higher/",
+      "ts": "2026-10-21T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "State of the Options Industry Q3 2026: Volume Growth Concentrated in Index and ETF Options",
-      "summary": "Options activity moderated in the third quarter of 2026 as macroeconomic factors including higher interest rates and energy costs impacted equities. Market-wide average daily option volume (ADV) was 70.6 million contracts daily, four percen",
-      "url": "https://www.cboe.com/insights/posts/state-of-the-options-industry-q-3-2026-volume-growth-concentrated-in-index-and-etf-options/",
-      "ts": "2026-10-19T04:00:00Z"
+      "title": "Choppy Trading Leaves Dow Higher and Nasdaq Flat",
+      "summary": "Most stocks recovered from their opening lows through a choppy day of trading that also saw crude oil prices fall in tandem with Treasury yields.",
+      "url": "https://www.cboe.com/insights/posts/choppy-trading-leaves-dow-higher-and-nasdaq-flat/",
+      "ts": "2026-10-20T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,9 +962,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Why Trade Options Around Earnings Season",
-      "summary": "Every quarter, hundreds of companies report earnings results within a compressed window, and the market's reaction can be swift and significant. For traders holding stock, that means binary outcomes with full exposure to a potential move in",
-      "url": "https://www.cboe.com/insights/posts/why-trade-options-around-earnings-season/",
+      "title": "Prepare for any Market Environment: Using Options to Help Manage Tail Risk",
+      "summary": "In today\u2019s volatile market environment, investment advisors are increasingly turning to listed options and volatility tools to manage risk, fueling demand for capital-efficient protection.",
+      "url": "https://www.cboe.com/insights/posts/prepare-for-any-market-environment-using-options-to-help-manage-tail-risk/",
       "ts": "2026-10-19T04:00:00Z"
     },
     {
@@ -976,9 +976,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Investors Bought the Dips",
-      "summary": "",
-      "url": "https://www.cboe.com/insights/posts/tech-investors-bought-the-dips/",
+      "title": "Why Trade Options Around Earnings Season",
+      "summary": "Every quarter, hundreds of companies report earnings results within a compressed window, and the market's reaction can be swift and significant. For traders holding stock, that means binary outcomes with full exposure to a potential move in",
+      "url": "https://www.cboe.com/insights/posts/why-trade-options-around-earnings-season/",
       "ts": "2026-10-19T04:00:00Z"
     },
     {
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 84498,
+    "last": 84306,
     "high_24h": 84808,
     "low_24h": 82567,
-    "chg_pct": 2.34
+    "chg_pct": 1.75
   },
   "macro": {
     "10Y": 5.15,
-    "DXY": 101.7,
-    "WTI": 97.86,
-    "VIX": 16.67,
-    "asof": "2026-10-21T20:14:36Z"
+    "DXY": 101.69,
+    "WTI": 97.82,
+    "VIX": 16.68,
+    "asof": "2026-10-21T23:27:13Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
