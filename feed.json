@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T00:55:43Z",
+  "generated_at": "2026-10-21T05:57:42Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-21T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 83105,
-      "chg_pct": 1.91,
+      "last": 82608,
+      "chg_pct": 1.03,
       "history": [
-        83123,
         83108,
         83807,
         83204,
@@ -589,16 +588,16 @@
         81562,
         82350,
         82993,
-        83105
+        83105,
+        82608
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2455.7,
-      "chg_pct": 2.52,
+      "last": 2437.96,
+      "chg_pct": 1.62,
       "history": [
-        2504.67,
         2496.59,
         2518.47,
         2497.07,
@@ -637,16 +636,16 @@
         2387.65,
         2426.27,
         2456.34,
-        2455.7
+        2455.7,
+        2437.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 106.78,
-      "chg_pct": 2.1,
+      "last": 105.67,
+      "chg_pct": 1.01,
       "history": [
-        107.2,
         106.75,
         108.01,
         106.64,
@@ -685,7 +684,8 @@
         104.13,
         105.39,
         106.9,
-        106.78
+        106.78,
+        105.67
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
-      "summary": "A Commodity Futures Trading Commission task force is scheduled for October 28 to talk about how the latest \"super intelligence\" technology may impact markets.",
-      "url": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
-      "ts": "2026-10-20T21:12:21Z"
+      "title": "Ripple brings Wall Street into 24/7 stock bets, but HSBC warns markets are still thin",
+      "summary": "Institutions can trade through Ripple Prime and post RLUSD as collateral. Finding enough buyers and sellers for large positions could prove harder.",
+      "url": "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin",
+      "ts": "2026-10-21T05:25:57Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "OKX-ICE co-chair Andrew Cuomo calls corporate objections a \u2018natural response\u2019 to tokenized stock plans",
-      "summary": "The former NY governor, who co-chairs the joint venture between the crypto exchange and Intercontinental Exchange, said companies were expected to take a wait-and-see approach.",
-      "url": "https://www.coindesk.com/business/2026/10/20/okx-ice-s-andrew-cuomo-calls-issuer-objections-a-natural-response-to-tokenized-stock-plans",
-      "ts": "2026-10-20T18:26:29Z"
+      "title": "Solana\u2019s Alpenglow, its biggest network overhaul since 2020, goes live Wednesday",
+      "summary": "Alpenglow will replace the voting system Solana has used since 2020, targeting roughly 150-millisecond finality after months of testing that included a failed migration and rollback.",
+      "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday",
+      "ts": "2026-10-21T04:35:52Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "The Coinbase allegations expose Bitcoin's corporate governance gap",
-      "summary": "Corporate adoption of bitcoin will stall as long as companies can't show who controls the money, who approves its movement, or whether it's still there, argues Onramp CEO Michael Tanguma.",
-      "url": "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap",
-      "ts": "2026-10-20T17:02:31Z"
+      "title": "A company that vouches for websites had secret keys so weak that 8 of them were cracked",
+      "summary": "Eight secret keys at eMudhra, an Indian firm that vouches for websites, were compromised. Browsers and software makers are rushing out fixes.",
+      "url": "https://www.coindesk.com/tech/2026/10/21/a-company-that-vouches-for-websites-had-secret-keys-so-weak-that-8-of-them-were-cracked",
+      "ts": "2026-10-21T04:11:58Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "BlackRock seeks to shield bitcoin investors from losses after rival fund weathers 50% crash",
-      "summary": "BlackRock's proposed fund follows similar products from Calamos that helped investors avoid steep losses during bitcoin's selloff.",
-      "url": "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash",
-      "ts": "2026-10-20T14:28:39Z"
+      "title": "Bitcoin hovers around $83,000 as AI earnings revive tech, ZEC jumps 11%",
+      "summary": "Strong results from SpaceX and Super Micro sent Asian chip stocks surging, and ZEC led crypto higher after developers set a date for its next network upgrade.",
+      "url": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11",
+      "ts": "2026-10-21T04:07:07Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 83123,
+    "last": 82608,
     "high_24h": 83249,
-    "low_24h": 81155,
-    "chg_pct": 1.91
+    "low_24h": 81273,
+    "chg_pct": 1.03
   },
   "macro": {
     "10Y": 5.12,
     "DXY": 101.78,
-    "WTI": 98.4,
+    "WTI": 99.21,
     "VIX": 17.31,
-    "asof": "2026-10-21T00:55:43Z"
+    "asof": "2026-10-21T05:57:42Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
