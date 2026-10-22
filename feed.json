@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T20:47:04Z",
+  "generated_at": "2026-10-22T23:40:39Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81205,
-      "chg_pct": -4.08,
+      "last": 81231,
+      "chg_pct": -3.56,
       "history": [
-        81168,
         82345,
         82358,
         82201,
@@ -589,16 +588,16 @@
         84307,
         83729,
         82492,
-        81205
+        81205,
+        81231
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2380.79,
-      "chg_pct": -4.52,
+      "last": 2380.2,
+      "chg_pct": -3.82,
       "history": [
-        2372.39,
         2450.06,
         2460.13,
         2439.7,
@@ -637,16 +636,16 @@
         2477.22,
         2456.91,
         2430.21,
-        2380.79
+        2380.79,
+        2380.2
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.11,
-      "chg_pct": -4.72,
+      "last": 103.28,
+      "chg_pct": -3.39,
       "history": [
-        103.04,
         105.98,
         105.97,
         105.3,
@@ -685,7 +684,8 @@
         107.1,
         106.33,
         104.59,
-        103.11
+        103.11,
+        103.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Tech Sell-Off Leads to Uptick in Defensive Stocks",
+      "summary": "The sell-off happened quickly today as investors fled technology stocks for more defensive sectors such as classic blue-chip stocks.",
+      "url": "https://www.cboe.com/insights/posts/tech-sell-off-leads-to-uptick-in-defensive-stocks/",
+      "ts": "2026-10-22T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Senate's top Democratic investigator looking into Tether payments to Bo Hines' firm",
+      "summary": "Senator Richard Blumenthal, the ranking Democrat on the investigations subcommittee, added a probe of the ex-White House crypto adviser to his list of crypto interests.",
+      "url": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
+      "ts": "2026-10-22T22:43:36Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Technology Stocks Pop, Lead Nasdaq Higher",
       "summary": "The topsy-turvy trading world of technology stocks got a pick-me-up Wednesday after dual earnings reports eased some artificial intelligence (AI) investment fears. Post-session earnings reports may do so again tomorrow.",
       "url": "https://www.cboe.com/insights/posts/technology-stocks-pop-lead-nasdaq-higher/",
@@ -962,9 +976,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Prepare for any Market Environment: Using Options to Help Manage Tail Risk",
-      "summary": "In today\u2019s volatile market environment, investment advisors are increasingly turning to listed options and volatility tools to manage risk, fueling demand for capital-efficient protection.",
-      "url": "https://www.cboe.com/insights/posts/prepare-for-any-market-environment-using-options-to-help-manage-tail-risk/",
+      "title": "Week of 10/19/2026: Scramble for Downside Hedges Fuels VIX Surge Ahead of MegaCap Earnings",
+      "summary": "Implied volatilities were mixed across major asset classes last week as hotter-than-expected September CPI and PPI reports revived Fed rate-hike fears and collided with mounting worries about debt-funded AI spending. Learn more in this week",
+      "url": "https://www.cboe.com/insights/posts/week-of-10-19-2026-scramble-for-downside-hedges-fuels-vix-surge-ahead-of-mega-cap-earnings/",
       "ts": "2026-10-19T04:00:00Z"
     },
     {
@@ -973,20 +987,6 @@
       "summary": "",
       "url": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
       "ts": "2026-10-22T14:58:31Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Why Trade Options Around Earnings Season",
-      "summary": "Every quarter, hundreds of companies report earnings results within a compressed window, and the market's reaction can be swift and significant. For traders holding stock, that means binary outcomes with full exposure to a potential move in",
-      "url": "https://www.cboe.com/insights/posts/why-trade-options-around-earnings-season/",
-      "ts": "2026-10-19T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto custody specialist Fireblocks denies it's in talks to be acquired by Visa",
-      "summary": "The company is in talks with Visa over a potential $2.5 billion acquisition, Axios reported.",
-      "url": "https://www.coindesk.com/business/2026/10/22/crypto-custody-specialist-fireblocks-denies-its-in-talks-to-be-acquired-by-visa",
-      "ts": "2026-10-22T14:37:12Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81205,
-    "high_24h": 84788,
+    "last": 81229,
+    "high_24h": 84306,
     "low_24h": 80989,
-    "chg_pct": -4.08
+    "chg_pct": -3.62
   },
   "macro": {
     "10Y": 4.95,
-    "DXY": 101.66,
-    "WTI": 99.04,
+    "DXY": 101.62,
+    "WTI": 99.57,
     "VIX": 19.03,
-    "asof": "2026-10-22T20:47:04Z"
+    "asof": "2026-10-22T23:40:39Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
