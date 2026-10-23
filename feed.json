@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T02:01:52Z",
+  "generated_at": "2026-10-23T07:22:58Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-23T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81265,
-      "chg_pct": -2.53,
+      "last": 81655,
+      "chg_pct": -0.68,
       "history": [
-        82358,
         82201,
         81975,
         82081,
@@ -589,16 +588,16 @@
         82492,
         81205,
         81231,
-        81265
+        81265,
+        81655
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2389.46,
-      "chg_pct": -2.5,
+      "last": 2401.46,
+      "chg_pct": -1.01,
       "history": [
-        2460.13,
         2439.7,
         2440.09,
         2450.3,
@@ -637,16 +636,16 @@
         2430.21,
         2380.79,
         2380.2,
-        2389.46
+        2389.46,
+        2401.46
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.92,
-      "chg_pct": -2.09,
+      "last": 104.41,
+      "chg_pct": 0.08,
       "history": [
-        105.97,
         105.3,
         105.37,
         106.48,
@@ -685,7 +684,8 @@
         104.59,
         103.11,
         103.28,
-        103.92
+        103.92,
+        104.41
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Senate's top Democratic investigator looking into Tether payments to Bo Hines' firm",
-      "summary": "Senator Richard Blumenthal, the ranking Democrat on the investigations subcommittee, added a probe of the ex-White House crypto adviser to his list of crypto interests.",
-      "url": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm",
-      "ts": "2026-10-22T22:43:36Z"
+      "title": "Polymarket has reportedly fired its marketing chief, also a close friend of the CEO",
+      "summary": "Matthew Modabber was reportedly ousted after an internal probe of several instances of misconduct, according to the New York Post.",
+      "url": "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
+      "ts": "2026-10-23T05:01:19Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "A16z is the latest VC giant to widen bets beyond crypto and into AI and emerging tech",
-      "summary": "The venture investor behind early bets on Coinbase, Solana and Uniswap said is broadening its focus, joining other crypto investment firms looking beyond blockchain to artificial intelligence and tech themes.",
-      "url": "https://www.coindesk.com/business/2026/10/22/a16z-is-the-latest-vc-giant-to-widen-bets-beyond-crypto-and-into-ai-and-emerging-tech",
-      "ts": "2026-10-22T18:30:57Z"
+      "title": "Ethereum delays Glamsterdam test after security devs flag risk to existing contracts",
+      "summary": "Developers canceled Monday's Hoodi activation after researchers showed how new gas rules could let smart contracts permanently record failed operations.",
+      "url": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
+      "ts": "2026-10-23T04:59:34Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Irish central bank fines Coinbase Ireland $3.6 million over fund safeguarding failures",
-      "summary": "When Silvergate was on the verge of collapse in 2023, Coinbase instructed 30 customers to deposit funds into an alternate account held by Coinbase at another U.S. bank.",
-      "url": "https://www.coindesk.com/policy/2026/10/22/irish-central-bank-fines-coinbase-ireland-usd3-6-million-over-fund-safeguarding-failures",
-      "ts": "2026-10-22T15:40:25Z"
+      "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
+      "summary": "Toto Finance wants 22 million ADA from Cardano\u2019s treasury to buy tokenized copper, and the metal would have to trade well above its all-time high for holders to get their money back.",
+      "url": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
+      "ts": "2026-10-23T04:36:51Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto for Advisors: Stablecoins are ready for prime time",
-      "summary": "",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/10/22/crypto-for-advisors-stablecoins-are-ready-for-prime-time",
-      "ts": "2026-10-22T14:58:31Z"
+      "title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
+      "summary": "Bitcoin and gold pared early losses as the yen gave up gains and Asian stocks rebounded, though oil near $100 keeps inflation risks in focus.",
+      "url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100",
+      "ts": "2026-10-23T03:13:01Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81266,
-    "high_24h": 82919,
+    "last": 81643,
+    "high_24h": 82183,
     "low_24h": 80989,
-    "chg_pct": -2.53
+    "chg_pct": -0.7
   },
   "macro": {
     "10Y": 4.95,
-    "DXY": 101.62,
-    "WTI": 100.18,
+    "DXY": 101.74,
+    "WTI": 100.76,
     "VIX": 19.03,
-    "asof": "2026-10-23T02:01:52Z"
+    "asof": "2026-10-23T07:22:58Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
