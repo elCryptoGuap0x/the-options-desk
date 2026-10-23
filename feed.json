@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T20:37:28Z",
+  "generated_at": "2026-10-23T23:34:38Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81327,
-      "chg_pct": 0.11,
+      "last": 80817,
+      "chg_pct": -0.54,
       "history": [
-        81975,
         82081,
         81657,
         81540,
@@ -589,16 +588,16 @@
         81231,
         81265,
         81655,
-        81327
+        81327,
+        80817
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2395.87,
-      "chg_pct": 0.67,
+      "last": 2373.52,
+      "chg_pct": -0.31,
       "history": [
-        2440.09,
         2450.3,
         2415.26,
         2421.13,
@@ -637,16 +636,16 @@
         2380.2,
         2389.46,
         2401.46,
-        2395.87
+        2395.87,
+        2373.52
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 103.52,
-      "chg_pct": 0.5,
+      "last": 102.38,
+      "chg_pct": -0.83,
       "history": [
-        105.37,
         106.48,
         104.23,
         104.31,
@@ -685,7 +684,8 @@
         103.28,
         103.92,
         104.41,
-        103.52
+        103.52,
+        102.38
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,10 +934,10 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Tech Sell-Off Leads to Uptick in Defensive Stocks",
-      "summary": "The sell-off happened quickly today as investors fled technology stocks for more defensive sectors such as classic blue-chip stocks.",
-      "url": "https://www.cboe.com/insights/posts/tech-sell-off-leads-to-uptick-in-defensive-stocks/",
-      "ts": "2026-10-22T04:00:00Z"
+      "title": "Sell-off Widens as Oil Rallies Amid Middle East Conflict",
+      "summary": "The stock market concluded a highly volatile week with mixed results as a combination of escalating oil prices and the ongoing concerns about how companies are funding artificial intelligence (AI) infrastructure kept markets in check.",
+      "url": "https://www.cboe.com/insights/posts/sell-off-widens-as-oil-rallies-amid-middle-east-conflict/",
+      "ts": "2026-10-23T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Technology Stocks Pop, Lead Nasdaq Higher",
-      "summary": "The topsy-turvy trading world of technology stocks got a pick-me-up Wednesday after dual earnings reports eased some artificial intelligence (AI) investment fears. Post-session earnings reports may do so again tomorrow.",
-      "url": "https://www.cboe.com/insights/posts/technology-stocks-pop-lead-nasdaq-higher/",
-      "ts": "2026-10-21T04:00:00Z"
+      "title": "Tech Sell-Off Leads to Uptick in Defensive Stocks",
+      "summary": "The sell-off happened quickly today as investors fled technology stocks for more defensive sectors such as classic blue-chip stocks.",
+      "url": "https://www.cboe.com/insights/posts/tech-sell-off-leads-to-uptick-in-defensive-stocks/",
+      "ts": "2026-10-22T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Choppy Trading Leaves Dow Higher and Nasdaq Flat",
-      "summary": "Most stocks recovered from their opening lows through a choppy day of trading that also saw crude oil prices fall in tandem with Treasury yields.",
-      "url": "https://www.cboe.com/insights/posts/choppy-trading-leaves-dow-higher-and-nasdaq-flat/",
-      "ts": "2026-10-20T04:00:00Z"
+      "title": "Technology Stocks Pop, Lead Nasdaq Higher",
+      "summary": "The topsy-turvy trading world of technology stocks got a pick-me-up Wednesday after dual earnings reports eased some artificial intelligence (AI) investment fears. Post-session earnings reports may do so again tomorrow.",
+      "url": "https://www.cboe.com/insights/posts/technology-stocks-pop-lead-nasdaq-higher/",
+      "ts": "2026-10-21T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Week of 10/19/2026: Scramble for Downside Hedges Fuels VIX Surge Ahead of MegaCap Earnings",
-      "summary": "Implied volatilities were mixed across major asset classes last week as hotter-than-expected September CPI and PPI reports revived Fed rate-hike fears and collided with mounting worries about debt-funded AI spending. Learn more in this week",
-      "url": "https://www.cboe.com/insights/posts/week-of-10-19-2026-scramble-for-downside-hedges-fuels-vix-surge-ahead-of-mega-cap-earnings/",
-      "ts": "2026-10-19T04:00:00Z"
+      "title": "Choppy Trading Leaves Dow Higher and Nasdaq Flat",
+      "summary": "Most stocks recovered from their opening lows through a choppy day of trading that also saw crude oil prices fall in tandem with Treasury yields.",
+      "url": "https://www.cboe.com/insights/posts/choppy-trading-leaves-dow-higher-and-nasdaq-flat/",
+      "ts": "2026-10-20T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81327,
+    "last": 80853,
     "high_24h": 81939,
-    "low_24h": 81048,
-    "chg_pct": 0.1
+    "low_24h": 80548,
+    "chg_pct": -0.54
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 101.81,
-    "WTI": 103.2,
+    "DXY": 101.75,
+    "WTI": 103.44,
     "VIX": 19.45,
-    "asof": "2026-10-23T20:37:28Z"
+    "asof": "2026-10-23T23:34:38Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
