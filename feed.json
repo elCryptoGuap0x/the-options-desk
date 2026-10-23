@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-23T07:22:58Z",
+  "generated_at": "2026-10-23T20:37:28Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-23T13:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-10-26T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81655,
-      "chg_pct": -0.68,
+      "last": 81327,
+      "chg_pct": 0.11,
       "history": [
-        82201,
         81975,
         82081,
         81657,
@@ -589,16 +588,16 @@
         81205,
         81231,
         81265,
-        81655
+        81655,
+        81327
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2401.46,
-      "chg_pct": -1.01,
+      "last": 2395.87,
+      "chg_pct": 0.67,
       "history": [
-        2439.7,
         2440.09,
         2450.3,
         2415.26,
@@ -637,16 +636,16 @@
         2380.79,
         2380.2,
         2389.46,
-        2401.46
+        2401.46,
+        2395.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 104.41,
-      "chg_pct": 0.08,
+      "last": 103.52,
+      "chg_pct": 0.5,
       "history": [
-        105.3,
         105.37,
         106.48,
         104.23,
@@ -685,7 +684,8 @@
         103.11,
         103.28,
         103.92,
-        104.41
+        104.41,
+        103.52
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Polymarket has reportedly fired its marketing chief, also a close friend of the CEO",
-      "summary": "Matthew Modabber was reportedly ousted after an internal probe of several instances of misconduct, according to the New York Post.",
-      "url": "https://www.coindesk.com/markets/2026/10/23/polymarket-has-reportedly-fired-its-marketing-chief-also-a-close-friend-of-the-ceo",
-      "ts": "2026-10-23T05:01:19Z"
+      "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
+      "summary": "The company's head of futures and prediction markets said bitcoin, gold and oil contracts are among its fastest-growing prediction markets.",
+      "url": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
+      "ts": "2026-10-23T13:58:56Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ethereum delays Glamsterdam test after security devs flag risk to existing contracts",
-      "summary": "Developers canceled Monday's Hoodi activation after researchers showed how new gas rules could let smart contracts permanently record failed operations.",
-      "url": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts",
-      "ts": "2026-10-23T04:59:34Z"
+      "title": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
+      "summary": "Developers merged a policy change that ends the months-long embargo for flaws a chatbot could rediscover, after a summer in which AI found hundreds of bitcoin bugs before the humans did.",
+      "url": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
+      "ts": "2026-10-23T12:03:53Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cardano holders are being asked to bet $5 million on copper hitting a new record",
-      "summary": "Toto Finance wants 22 million ADA from Cardano\u2019s treasury to buy tokenized copper, and the metal would have to trade well above its all-time high for holders to get their money back.",
-      "url": "https://www.coindesk.com/markets/2026/10/23/cardano-holders-are-being-asked-to-bet-usd5-million-on-copper-hitting-a-new-record",
-      "ts": "2026-10-23T04:36:51Z"
+      "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
+      "summary": "Your day-ahead look for Oct. 23, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
+      "ts": "2026-10-23T11:22:33Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin, gold trim early losses as yen gives up gains. Oil stays near $100",
-      "summary": "Bitcoin and gold pared early losses as the yen gave up gains and Asian stocks rebounded, though oil near $100 keeps inflation risks in focus.",
-      "url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100",
-      "ts": "2026-10-23T03:13:01Z"
+      "title": "Live updates: Bitcoin holds above $81,000 as oil prices hit six-month high",
+      "summary": "Brent crude oil surged above $116 per barrel for the first time since late April.",
+      "url": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs",
+      "ts": "2026-10-23T11:13:01Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81531,
+    "last": 81327,
     "high_24h": 81939,
-    "low_24h": 80989,
-    "chg_pct": 0.27
+    "low_24h": 81048,
+    "chg_pct": 0.1
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 101.82,
-    "WTI": 102.9,
-    "VIX": 20.2,
-    "asof": "2026-10-23T07:22:58Z"
+    "DXY": 101.81,
+    "WTI": 103.2,
+    "VIX": 19.45,
+    "asof": "2026-10-23T20:37:28Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
