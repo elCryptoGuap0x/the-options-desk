@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-24T01:56:39Z",
+  "generated_at": "2026-10-24T07:13:03Z",
   "session": {
-    "day_label": "FRI",
-    "market_state": "CLOSED",
+    "day_label": "SAT",
+    "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-10-26T13:30:00Z",
     "position": "FLAT",
-    "desk_arms": null
+    "desk_arms": "MON 8:20 CT"
   },
   "stats": {
     "record": "0-0",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80865,
-      "chg_pct": -0.65,
+      "last": 80740,
+      "chg_pct": -1.2,
       "history": [
-        81657,
         81540,
         81467,
         81506,
@@ -589,16 +588,16 @@
         81655,
         81327,
         80817,
-        80865
+        80865,
+        80740
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2380.28,
-      "chg_pct": -0.49,
+      "last": 2377.34,
+      "chg_pct": -1.11,
       "history": [
-        2415.26,
         2421.13,
         2417.45,
         2429.43,
@@ -637,16 +636,16 @@
         2401.46,
         2395.87,
         2373.52,
-        2380.28
+        2380.28,
+        2377.34
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 102.53,
-      "chg_pct": -1.46,
+      "last": 102.14,
+      "chg_pct": -2.28,
       "history": [
-        104.23,
         104.31,
         104.18,
         104.73,
@@ -685,7 +684,8 @@
         104.41,
         103.52,
         102.38,
-        102.53
+        102.53,
+        102.14
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
-      "summary": "The company's head of futures and prediction markets said bitcoin, gold and oil contracts are among its fastest-growing prediction markets.",
-      "url": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
-      "ts": "2026-10-23T13:58:56Z"
+      "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+      "summary": "Two subscriptions on Thursday nearly quadrupled the fund\u2019s tokens on the network. The receiving wallet shares its authorized signers with the issuer.",
+      "url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+      "ts": "2026-10-24T04:45:43Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
-      "summary": "Developers merged a policy change that ends the months-long embargo for flaws a chatbot could rediscover, after a summer in which AI found hundreds of bitcoin bugs before the humans did.",
-      "url": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
-      "ts": "2026-10-23T12:03:53Z"
+      "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
+      "summary": "The company's head of futures and prediction markets said bitcoin, gold and oil contracts are among its fastest-growing prediction markets.",
+      "url": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
+      "ts": "2026-10-23T13:58:56Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
-      "summary": "Your day-ahead look for Oct. 23, 2026",
-      "url": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
-      "ts": "2026-10-23T11:22:33Z"
+      "title": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
+      "summary": "Developers merged a policy change that ends the months-long embargo for flaws a chatbot could rediscover, after a summer in which AI found hundreds of bitcoin bugs before the humans did.",
+      "url": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
+      "ts": "2026-10-23T12:03:53Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin holds above $81,000 as oil prices hit six-month high",
-      "summary": "Brent crude oil surged above $116 per barrel for the first time since late April.",
-      "url": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs",
-      "ts": "2026-10-23T11:13:01Z"
+      "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
+      "summary": "Your day-ahead look for Oct. 23, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
+      "ts": "2026-10-23T11:22:33Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80868,
+    "last": 80736,
     "high_24h": 81939,
     "low_24h": 80455,
-    "chg_pct": -0.68
+    "chg_pct": -1.2
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 101.75,
-    "WTI": 103.44,
+    "DXY": 101.81,
+    "WTI": 103.27,
     "VIX": 19.45,
-    "asof": "2026-10-23T23:34:38Z"
+    "asof": "2026-10-24T07:13:03Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
