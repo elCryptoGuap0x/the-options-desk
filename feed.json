@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:52:01Z",
+  "generated_at": "2026-10-24T18:29:58Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 79486,
-      "chg_pct": -2.49,
+      "last": 80324,
+      "chg_pct": -1.41,
       "history": [
-        81506,
         81548,
         81397,
         81184,
@@ -589,16 +588,16 @@
         80865,
         80740,
         80502,
-        79486
+        79486,
+        80324
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2295.3,
-      "chg_pct": -4.47,
+      "last": 2328.9,
+      "chg_pct": -3.1,
       "history": [
-        2429.43,
         2436.21,
         2420.49,
         2402.64,
@@ -637,16 +636,16 @@
         2380.28,
         2377.34,
         2361.73,
-        2295.3
+        2295.3,
+        2328.9
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 99.22,
-      "chg_pct": -5.08,
+      "last": 100.89,
+      "chg_pct": -3.1,
       "history": [
-        104.73,
         104.71,
         103.86,
         103.12,
@@ -685,7 +684,8 @@
         102.53,
         102.14,
         101.3,
-        99.22
+        99.22,
+        100.89
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
-      "summary": "Reactions split between amazement at how human it sounds and fears it could fuel scams and deception, with CZ eyeing uses in children\u2019s education.",
-      "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
-      "ts": "2026-10-24T15:21:06Z"
+      "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
+      "summary": "The securities have financed purchases of nearly 136,000 bitcoin, opening a funding channel that analysts expect to complement the larger ETF market.",
+      "url": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
+      "ts": "2026-10-24T16:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
-      "summary": "Bitcoin has sunk to its weakest level in more than one month.",
-      "url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations",
-      "ts": "2026-10-24T15:11:24Z"
+      "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
+      "summary": "Reactions split between amazement at how human it sounds and fears it could fuel scams and deception, with CZ eyeing uses in children\u2019s education.",
+      "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
+      "ts": "2026-10-24T15:21:06Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Why McDonalds, Microsoft and Google saying no to tokenized stocks isn't a dealbreaker",
-      "summary": "Some of the world's biggest companies objected to being listed on the first tokenized securities trading venue under the SEC's innovation exemption. But the early pushback may say more about issuer caution than about rejection of tokenizati",
-      "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
-      "ts": "2026-10-24T15:00:00Z"
+      "title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
+      "summary": "Bitcoin has sunk to its weakest level in more than one month.",
+      "url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations",
+      "ts": "2026-10-24T15:11:24Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
-      "summary": "The judge found that Milei's promotion of LIBRA did not constitute fraud, despite the attention his support drew to the token.",
-      "url": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
-      "ts": "2026-10-24T14:38:47Z"
+      "title": "Why McDonalds, Microsoft and Google saying no to tokenized stocks isn't a dealbreaker",
+      "summary": "Some of the world's biggest companies objected to being listed on the first tokenized securities trading venue under the SEC's innovation exemption. But the early pushback may say more about issuer caution than about rejection of tokenizati",
+      "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
+      "ts": "2026-10-24T15:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 79486,
-    "high_24h": 81749,
-    "low_24h": 79859,
-    "chg_pct": -2.48
+    "last": 80324,
+    "high_24h": 81417,
+    "low_24h": 79263,
+    "chg_pct": -1.41
   },
   "macro": {
     "10Y": 4.99,
