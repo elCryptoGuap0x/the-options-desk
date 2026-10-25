@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T12:06:52Z",
+  "generated_at": "2026-10-25T16:11:05Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80468,
-      "chg_pct": -0.07,
+      "last": 80525,
+      "chg_pct": 1.02,
       "history": [
-        81213,
         81522,
         81629,
         81970,
@@ -589,16 +588,16 @@
         80487,
         80722,
         80443,
-        80468
+        80468,
+        80525
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2335.9,
-      "chg_pct": -1.12,
+      "last": 2342.69,
+      "chg_pct": 1.68,
       "history": [
-        2391.96,
         2404.88,
         2409.45,
         2415.17,
@@ -637,16 +636,16 @@
         2341.06,
         2354.99,
         2342.29,
-        2335.9
+        2335.9,
+        2342.69
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 101.1,
-      "chg_pct": -0.21,
+      "last": 101.43,
+      "chg_pct": 1.68,
       "history": [
-        102.96,
         103.58,
         103.49,
         103.96,
@@ -685,7 +684,8 @@
         101.48,
         102.2,
         101.46,
-        101.1
+        101.1,
+        101.43
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
-      "summary": "The securities have financed purchases of nearly 136,000 bitcoin, opening a funding channel that analysts expect to complement the larger ETF market.",
-      "url": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
-      "ts": "2026-10-24T16:00:00Z"
+      "title": "Latvia targets tokenization rules in 2027 with commercial property in focus",
+      "summary": "Economics Minister Viktors Valainis says rules could arrive in the first half of next year, but an overdue assessment remains unfinished and no sovereign-bond issuance was identified.",
+      "url": "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus",
+      "ts": "2026-10-25T15:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
-      "summary": "Reactions split between amazement at how human it sounds and fears it could fuel scams and deception, with CZ eyeing uses in children\u2019s education.",
-      "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
-      "ts": "2026-10-24T15:21:06Z"
+      "title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
+      "summary": "The U.K. claims to aspire to become a global cryptocurrency hub, an ambition that would appear to be at odds with the attitude to crypto purchases of its major banks.",
+      "url": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions",
+      "ts": "2026-10-25T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +969,24 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
+      "summary": "The securities have financed purchases of nearly 136,000 bitcoin, opening a funding channel that analysts expect to complement the larger ETF market.",
+      "url": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
+      "ts": "2026-10-24T16:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
+      "summary": "Reactions split between amazement at how human it sounds and fears it could fuel scams and deception, with CZ eyeing uses in children\u2019s education.",
+      "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
+      "ts": "2026-10-24T15:21:06Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
       "summary": "Bitcoin has sunk to its weakest level in more than one month.",
       "url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations",
       "ts": "2026-10-24T15:11:24Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Why McDonalds, Microsoft and Google saying no to tokenized stocks isn't a dealbreaker",
-      "summary": "Some of the world's biggest companies objected to being listed on the first tokenized securities trading venue under the SEC's innovation exemption. But the early pushback may say more about issuer caution than about rejection of tokenizati",
-      "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
-      "ts": "2026-10-24T15:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
-      "summary": "The judge found that Milei's promotion of LIBRA did not constitute fraud, despite the attention his support drew to the token.",
-      "url": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
-      "ts": "2026-10-24T14:38:47Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80472,
+    "last": 80520,
     "high_24h": 80949,
-    "low_24h": 79263,
-    "chg_pct": -0.07
+    "low_24h": 80035,
+    "chg_pct": 1.07
   },
   "macro": {
     "10Y": 4.99,
