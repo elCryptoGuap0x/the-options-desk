@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-25T01:33:17Z",
+  "generated_at": "2026-10-25T06:47:24Z",
   "session": {
-    "day_label": "SAT",
+    "day_label": "SUN",
     "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-10-26T13:30:00Z",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80722,
-      "chg_pct": 0.03,
+      "last": 80443,
+      "chg_pct": -0.31,
       "history": [
-        81421,
         80954,
         81213,
         81522,
@@ -589,16 +588,16 @@
         80324,
         80367,
         80487,
-        80722
+        80722,
+        80443
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2354.99,
-      "chg_pct": -0.72,
+      "last": 2342.29,
+      "chg_pct": -1.4,
       "history": [
-        2412.33,
         2370.36,
         2391.96,
         2404.88,
@@ -637,16 +636,16 @@
         2328.9,
         2340.44,
         2341.06,
-        2354.99
+        2354.99,
+        2342.29
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 102.2,
-      "chg_pct": -0.07,
+      "last": 101.46,
+      "chg_pct": -0.54,
       "history": [
-        103.81,
         101.75,
         102.96,
         103.58,
@@ -685,7 +684,8 @@
         100.89,
         101.35,
         101.48,
-        102.2
+        102.2,
+        101.46
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -975,18 +975,18 @@
       "ts": "2026-10-24T15:11:24Z"
     },
     {
-      "tag": "OPTIONS",
-      "title": "Choppy Trading Leaves Dow Higher and Nasdaq Flat",
-      "summary": "Most stocks recovered from their opening lows through a choppy day of trading that also saw crude oil prices fall in tandem with Treasury yields.",
-      "url": "https://www.cboe.com/insights/posts/choppy-trading-leaves-dow-higher-and-nasdaq-flat/",
-      "ts": "2026-10-20T04:00:00Z"
-    },
-    {
       "tag": "CRYPTO",
       "title": "Why McDonalds, Microsoft and Google saying no to tokenized stocks isn't a dealbreaker",
       "summary": "Some of the world's biggest companies objected to being listed on the first tokenized securities trading venue under the SEC's innovation exemption. But the early pushback may say more about issuer caution than about rejection of tokenizati",
       "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
       "ts": "2026-10-24T15:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Argentina drops criminal probe into President Milei over crashed memecoin LIBRA",
+      "summary": "The judge found that Milei's promotion of LIBRA did not constitute fraud, despite the attention his support drew to the token.",
+      "url": "https://www.coindesk.com/business/2026/10/24/argentina-drops-criminal-probe-into-president-milei-over-crashed-memecoin-libra",
+      "ts": "2026-10-24T14:38:47Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80722,
-    "high_24h": 81002,
+    "last": 80450,
+    "high_24h": 80949,
     "low_24h": 79263,
-    "chg_pct": 0.03
+    "chg_pct": -0.3
   },
   "macro": {
     "10Y": 4.99,
