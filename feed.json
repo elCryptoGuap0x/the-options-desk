@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-26T10:59:26Z",
+  "generated_at": "2026-10-26T21:41:26Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-26T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-27T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80340,
-      "chg_pct": 0.2,
+      "last": 80019,
+      "chg_pct": -0.42,
       "history": [
-        80895,
         81472,
         82079,
         82591,
@@ -589,16 +588,16 @@
         80264,
         80063,
         79985,
-        80340
+        80340,
+        80019
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2328.0,
-      "chg_pct": 0.23,
+      "last": 2313.45,
+      "chg_pct": -1.0,
       "history": [
-        2349.91,
         2383.43,
         2406.04,
         2424.38,
@@ -637,16 +636,16 @@
         2332.96,
         2329.47,
         2317.01,
-        2328.0
+        2328.0,
+        2313.45
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 101.35,
-      "chg_pct": 0.72,
+      "last": 100.61,
+      "chg_pct": -0.71,
       "history": [
-        101.17,
         103.08,
         103.87,
         105.37,
@@ -685,7 +684,8 @@
         101.18,
         101.4,
         101.15,
-        101.35
+        101.35,
+        100.61
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Week of 10/26/2026: Tech Risk Premium Rising Ahead of Key Earnings",
+      "summary": "Implied volatilities rose across asset classes last week as oil prices gained on rising geopolitical tensions and investors pulled back from Tech stocks ahead of key earnings. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-10-26-2026-tech-risk-premium-rising-ahead-of-key-earnings/",
+      "ts": "2026-10-26T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Tom Lee's Bitmine favors share buybacks to ether purchases as crypto declines",
+      "summary": "The Ethereum treasury firm spent $46 million buying back shares as Chairman Tom Lee said crypto has held up better than AI stocks during the recent market pullback.",
+      "url": "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines",
+      "ts": "2026-10-26T16:05:12Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Sell-off Widens as Oil Rallies Amid Middle East Conflict",
       "summary": "The stock market concluded a highly volatile week with mixed results as a combination of escalating oil prices and the ongoing concerns about how companies are funding artificial intelligence (AI) infrastructure kept markets in check.",
       "url": "https://www.cboe.com/insights/posts/sell-off-widens-as-oil-rallies-amid-middle-east-conflict/",
@@ -941,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Calpers pulls back from big tech as AI jitters deepen neocloud sell-off",
-      "summary": "California\u2019s pension fund shifts toward private equity as investors question tech valuations and the payoff from soaring AI spending.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/calpers-pulls-back-from-big-tech-as-ai-jitters-deepen-neocloud-sell-off",
-      "ts": "2026-10-26T10:33:00Z"
+      "title": "NBA joins pro sports leagues on CFTC prediction markets bandwagon while NFL balks",
+      "summary": "The U.S. derivatives regulator, which has championed the arrival of prediction market firms such as Kalshi, has been gathering allied sports leagues.",
+      "url": "https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks",
+      "ts": "2026-10-26T15:59:55Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,38 +969,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Fed, ECB and BOJ interest-rate decisions, Coinbase earnings: Crypto Week Ahead",
-      "summary": "Your look at what's coming in the week starting Oct. 26.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/fed-ecb-and-boj-interest-rate-decisions-coinbase-earnings-crypto-week-ahead",
-      "ts": "2026-10-26T09:14:47Z"
+      "title": "OCC calls on community banks to enter the stablecoin payments market",
+      "summary": "The U.S. banking regulator is encouraging smaller lenders to develop stablecoin services as new federal licensing requirements approach.",
+      "url": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market",
+      "ts": "2026-10-26T15:45:51Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Over 11 million bitcoin has no known owner. Here's what it means",
-      "summary": "The large number of coins held in unidentified wallets shows that retail investors have been in this market for years, observers said. But this interpretation comes with a caveat.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
-      "ts": "2026-10-26T07:18:24Z"
+      "title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
+      "summary": "Officials are concerned users of domestic exchanges would bear the tax burden because the U.S. won\u2019t share crypto trading data until 2029.",
+      "url": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029",
+      "ts": "2026-10-26T14:51:07Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "India's largest crypto exchange absorbs $16 million loss from internal process failure tied to retired wallet",
-      "summary": "The Mumbai-based exchange initially dismissed reports of suspicious outflows as a false alarm. It now says it lost $16 million and will absorb the loss.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet",
-      "ts": "2026-10-26T05:39:17Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments",
-      "summary": "Attackers replaced legitimate transactions with fake ones, then waited for users to approve higher fees. At least one person lost bitcoin before developers patched the flaw.",
-      "url": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
-      "ts": "2026-10-26T05:15:20Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
-      "summary": "Ether and XRP led losses among the majors as the AI trade took another hit in Asia, where Goldman Sachs cut its Kospi target by 25%.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
-      "ts": "2026-10-26T04:37:02Z"
+      "title": "Canada opens consultation on draft stablecoin rules, maintains ban on yields",
+      "summary": "Under the draft rules, non-bank stablecoin issuers must back tokens 1:1 with reserves held at qualified Canadian institutions and settle redemptions within three business days.",
+      "url": "https://www.coindesk.com/policy/2026/10/26/canada-opens-consultation-on-draft-stablecoin-rules-maintains-ban-on-yields",
+      "ts": "2026-10-26T14:23:41Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80429,
-    "high_24h": 80724,
+    "last": 80008,
+    "high_24h": 80680,
     "low_24h": 79332,
-    "chg_pct": -0.4
+    "chg_pct": -0.42
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 101.97,
-    "WTI": 102.34,
-    "VIX": 18.29,
-    "asof": "2026-10-26T10:59:26Z"
+    "DXY": 102.01,
+    "WTI": 101.25,
+    "VIX": 18.39,
+    "asof": "2026-10-26T21:41:26Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
