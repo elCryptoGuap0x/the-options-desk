@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:59:35Z",
+  "generated_at": "2026-10-26T10:59:26Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 79985,
-      "chg_pct": -1.08,
+      "last": 80340,
+      "chg_pct": 0.2,
       "history": [
-        81127,
         80895,
         81472,
         82079,
@@ -589,16 +588,16 @@
         80581,
         80264,
         80063,
-        79985
+        79985,
+        80340
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2317.01,
-      "chg_pct": -2.07,
+      "last": 2328.0,
+      "chg_pct": 0.23,
       "history": [
-        2368.03,
         2349.91,
         2383.43,
         2406.04,
@@ -637,16 +636,16 @@
         2352.19,
         2332.96,
         2329.47,
-        2317.01
+        2317.01,
+        2328.0
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 101.15,
-      "chg_pct": -1.37,
+      "last": 101.35,
+      "chg_pct": 0.72,
       "history": [
-        102.02,
         101.17,
         103.08,
         103.87,
@@ -685,7 +684,8 @@
         101.7,
         101.18,
         101.4,
-        101.15
+        101.15,
+        101.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
-      "summary": "Ether and XRP led losses among the majors as the AI trade took another hit in Asia, where Goldman Sachs cut its Kospi target by 25%.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
-      "ts": "2026-10-26T04:37:02Z"
+      "title": "Calpers pulls back from big tech as AI jitters deepen neocloud sell-off",
+      "summary": "California\u2019s pension fund shifts toward private equity as investors question tech valuations and the payoff from soaring AI spending.",
+      "url": "https://www.coindesk.com/markets/2026/10/26/calpers-pulls-back-from-big-tech-as-ai-jitters-deepen-neocloud-sell-off",
+      "ts": "2026-10-26T10:33:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,38 +955,38 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Elon Musk issues a warning for 'AI neoclouds' as SpaceX borrows $40 billion for chips",
-      "summary": "SpaceX has raised $40 billion in debt to buy GPUs, while Musk predicts a major shakeout among smaller AI cloud providers.",
-      "url": "https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout",
-      "ts": "2026-10-26T03:11:39Z"
+      "title": "Fed, ECB and BOJ interest-rate decisions, Coinbase earnings: Crypto Week Ahead",
+      "summary": "Your look at what's coming in the week starting Oct. 26.",
+      "url": "https://www.coindesk.com/markets/2026/10/26/fed-ecb-and-boj-interest-rate-decisions-coinbase-earnings-crypto-week-ahead",
+      "ts": "2026-10-26T09:14:47Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Latvia targets tokenization rules in 2027 with commercial property in focus",
-      "summary": "Economics Minister Viktors Valainis says rules could arrive in the first half of next year, but an overdue assessment remains unfinished and no sovereign-bond issuance was identified.",
-      "url": "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus",
-      "ts": "2026-10-25T15:00:00Z"
+      "title": "Over 11 million bitcoin has no known owner. Here's what it means",
+      "summary": "The large number of coins held in unidentified wallets shows that retail investors have been in this market for years, observers said. But this interpretation comes with a caveat.",
+      "url": "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
+      "ts": "2026-10-26T07:18:24Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "UK banks face 10,000 complaints in 3 months over crypto restrictions",
-      "summary": "The U.K. claims to aspire to become a global cryptocurrency hub, an ambition that would appear to be at odds with the attitude to crypto purchases of its major banks.",
-      "url": "https://www.coindesk.com/policy/2026/10/22/uk-banks-face-10-000-complaints-in-3-months-over-crypto-restrictions",
-      "ts": "2026-10-25T13:00:00Z"
+      "title": "India's largest crypto exchange absorbs $16 million loss from internal process failure tied to retired wallet",
+      "summary": "The Mumbai-based exchange initially dismissed reports of suspicious outflows as a false alarm. It now says it lost $16 million and will absorb the loss.",
+      "url": "https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet",
+      "ts": "2026-10-26T05:39:17Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
-      "summary": "The securities have financed purchases of nearly 136,000 bitcoin, opening a funding channel that analysts expect to complement the larger ETF market.",
-      "url": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
-      "ts": "2026-10-24T16:00:00Z"
+      "title": "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments",
+      "summary": "Attackers replaced legitimate transactions with fake ones, then waited for users to approve higher fees. At least one person lost bitcoin before developers patched the flaw.",
+      "url": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
+      "ts": "2026-10-26T05:15:20Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
-      "summary": "Reactions split between amazement at how human it sounds and fears it could fuel scams and deception, with CZ eyeing uses in children\u2019s education.",
-      "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
-      "ts": "2026-10-24T15:21:06Z"
+      "title": "Bitcoin slips under $80,000 as traders de-risk ahead of Fed meeting",
+      "summary": "Ether and XRP led losses among the majors as the AI trade took another hit in Asia, where Goldman Sachs cut its Kospi target by 25%.",
+      "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting",
+      "ts": "2026-10-26T04:37:02Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 79983,
-    "high_24h": 80852,
+    "last": 80332,
+    "high_24h": 80825,
     "low_24h": 79332,
-    "chg_pct": -1.11
+    "chg_pct": 0.19
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 101.65,
-    "WTI": 101.0,
-    "VIX": 19.45,
-    "asof": "2026-10-26T04:59:35Z"
+    "DXY": 101.86,
+    "WTI": 101.2,
+    "VIX": 19.57,
+    "asof": "2026-10-26T10:59:26Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
