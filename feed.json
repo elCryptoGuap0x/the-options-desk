@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-27T12:27:00Z",
+  "generated_at": "2026-10-27T22:25:06Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-27T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-28T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 79982,
-      "chg_pct": -0.39,
+      "last": 80856,
+      "chg_pct": 1.21,
       "history": [
-        82398,
         81964,
         81642,
         81960,
@@ -589,16 +588,16 @@
         80019,
         80123,
         79847,
-        79982
+        79982,
+        80856
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2318.31,
-      "chg_pct": -0.45,
+      "last": 2349.16,
+      "chg_pct": 1.75,
       "history": [
-        2425.22,
         2401.21,
         2398.54,
         2406.96,
@@ -637,16 +636,16 @@
         2313.45,
         2324.25,
         2310.91,
-        2318.31
+        2318.31,
+        2349.16
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 100.21,
-      "chg_pct": -1.43,
+      "last": 101.19,
+      "chg_pct": 0.94,
       "history": [
-        104.9,
         104.66,
         104.73,
         104.98,
@@ -685,7 +684,8 @@
         100.61,
         100.75,
         99.95,
-        100.21
+        100.21,
+        101.19
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,34 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Nasdaq Advances for Second Straight Day",
+      "summary": "Many investors embraced technology and semiconductor stocks Tuesday as the afterglow of Monday's Anthropic initial public offering (IPO) filing appeared strong, pushing the Nasdaq Composite and the S&P 500 Index meaningfully higher while th",
+      "url": "https://www.cboe.com/insights/posts/nasdaq-advances-for-second-straight-day/",
+      "ts": "2026-10-27T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
+      "summary": "Speaking at Ripple's conference, the U.S. Treasury Secretary said the SEC and CFTC action could help fill the gap left by the Clarity Act's failure, while curbing crypto debanking.",
+      "url": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top",
+      "ts": "2026-10-27T20:41:33Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Anthropic S-1 Registration Dominates, Leads Nasdaq Higher",
+      "summary": "The market started a big week with a bundle of news mostly surrounding artificial intelligence (AI) buildouts and Anthropic\u2019s initial public offering (IPO) plans. Moreover, this is just the first day of the busiest earnings week this quarte",
+      "url": "https://www.cboe.com/insights/posts/anthropic-s-1-registration-dominates-leads-nasdaq-higher/",
+      "ts": "2026-10-26T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Robinhood's crypto revenue fell 55% from last year, but topped Street forecasts",
+      "summary": "Crypto trading volume fell 38% from year-ago levels, but the firm's overall blockchain business gained traction.",
+      "url": "https://www.coindesk.com/markets/2026/10/27/robinhood-s-crypto-revenue-plunges-55-even-as-trading-platform-posts-record-sales",
+      "ts": "2026-10-27T20:32:21Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Week of 10/26/2026: Tech Risk Premium Rising Ahead of Key Earnings",
       "summary": "Implied volatilities rose across asset classes last week as oil prices gained on rising geopolitical tensions and investors pulled back from Tech stocks ahead of key earnings. Learn more in this week's Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-10-26-2026-tech-risk-premium-rising-ahead-of-key-earnings/",
@@ -941,52 +969,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin shows signs of weakness while Ripple's bank win fails to bolster XRP",
-      "summary": "Your day-ahead look for Oct. 27, 2026",
-      "url": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp",
-      "ts": "2026-10-27T12:00:39Z"
+      "title": "U.S. agency hits Utah with lawsuit to shield Kalshi's ability to offer betting there",
+      "summary": "The U.S. Commodity Futures Trading Commission has pursued more than a dozen legal actions to protect what its chief sees as its sole power over prediction markets.",
+      "url": "https://www.coindesk.com/policy/2026/10/27/u-s-agency-hits-utah-with-lawsuit-to-shield-kalshi-s-ability-to-offer-betting-there",
+      "ts": "2026-10-27T19:07:59Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "Sell-off Widens as Oil Rallies Amid Middle East Conflict",
-      "summary": "The stock market concluded a highly volatile week with mixed results as a combination of escalating oil prices and the ongoing concerns about how companies are funding artificial intelligence (AI) infrastructure kept markets in check.",
-      "url": "https://www.cboe.com/insights/posts/sell-off-widens-as-oil-rallies-amid-middle-east-conflict/",
-      "ts": "2026-10-23T04:00:00Z"
+      "title": "GTH Week One: Volume Builds, and Cboe Leads on Market Share",
+      "summary": "New Global Trading Hours (GTH) and Curb sessions for options on 24 of the most active single stocks and five ETFs went live on Monday, October 19 with a smooth rollout of electronic trading on Cboe Options Exchange (C1) and NYSE American Op",
+      "url": "https://www.cboe.com/insights/posts/gth-week-one-volume-builds-and-cboe-leads-on-market-share/",
+      "ts": "2026-10-26T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin holds below $80,000 as AI buildout draws investor attention and capital",
-      "summary": "Interest rates and oil are slipping and equities are rising, but crypto remains under pressure.",
-      "url": "https://www.coindesk.com/tech/2026/10/27/live-updates-bitcoin-holds-below-usd80-000-as-ai-buildout-draws-more-capital",
-      "ts": "2026-10-27T11:40:50Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Japan's top yen stablecoin falls short of its target in a disappointing first year",
-      "summary": "CEO Noritaka Okabe blamed a 1 million yen per-transaction cap for Type II funds transfer providers, which has slowed corporate adoption.",
-      "url": "https://www.coindesk.com/business/2026/10/27/japan-s-top-yen-stablecoin-falls-short-of-its-target-in-a-disappointing-first-year",
-      "ts": "2026-10-27T11:37:52Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin drops below $80,000 as crypto ignores Asian tech rally, Fed meeting begins",
-      "summary": "Bitcoin fell 0.4% to around $79,700 since midnight UTC while Asian tech stocks rallied. The DeFi index dropped 1.8%, and the Fed is set to begin a two-day meeting.",
-      "url": "https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins",
-      "ts": "2026-10-27T11:32:45Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto wallet maker Keystone to destroy almost 19,000 devices after security breach",
-      "summary": "The breach exposed 25,964 buyer records, some kept past Keystone\u2019s 180-day deletion policy after an automated tool failed without the firm noticing.",
-      "url": "https://www.coindesk.com/business/2026/10/27/crypto-wallet-maker-keystone-to-destroy-almost-19-000-devices-after-security-breach",
-      "ts": "2026-10-27T11:13:54Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Investor who called for AI pivot in 2023 says bitcoin is going to $57,000",
-      "summary": "Jason Calacanis wants investors to sell bitcoin and back artificial intelligence. He is also holding TAO, the cryptocurrency behind AI network Bittensor.",
-      "url": "https://www.coindesk.com/markets/2026/10/27/investor-who-called-for-ai-pivot-in-2023-says-bitcoin-is-going-to-usd57-000",
-      "ts": "2026-10-27T10:57:51Z"
+      "title": "Intel, Oracle, IBM join growing list of firms objecting to OKX\u2013ICE tokenized stock plans",
+      "summary": "The latest notice added four objections, bringing the total to 26 as the joint venture prepares to test the SEC\u2019s new framework for blockchain-based stock trading.",
+      "url": "https://www.coindesk.com/business/2026/10/27/intel-oracle-ibm-join-growing-list-of-firms-objecting-to-okx-ice-tokenized-stock-plans",
+      "ts": "2026-10-27T18:13:02Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80439,
-    "high_24h": 80723,
+    "last": 80854,
+    "high_24h": 81159,
     "low_24h": 79416,
-    "chg_pct": 0.28
+    "chg_pct": 1.18
   },
   "macro": {
-    "10Y": 5.0,
-    "DXY": 102.32,
-    "WTI": 99.8,
-    "VIX": 17.72,
-    "asof": "2026-10-27T12:27:00Z"
+    "10Y": 4.99,
+    "DXY": 102.36,
+    "WTI": 100.0,
+    "VIX": 17.52,
+    "asof": "2026-10-27T22:25:06Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
