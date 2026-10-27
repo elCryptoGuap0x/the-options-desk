@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T06:12:10Z",
+  "generated_at": "2026-10-27T12:27:00Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 79847,
-      "chg_pct": -0.19,
+      "last": 79982,
+      "chg_pct": -0.39,
       "history": [
-        82591,
         82398,
         81964,
         81642,
@@ -589,16 +588,16 @@
         80340,
         80019,
         80123,
-        79847
+        79847,
+        79982
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2310.91,
-      "chg_pct": -0.24,
+      "last": 2318.31,
+      "chg_pct": -0.45,
       "history": [
-        2424.38,
         2425.22,
         2401.21,
         2398.54,
@@ -637,16 +636,16 @@
         2328.0,
         2313.45,
         2324.25,
-        2310.91
+        2310.91,
+        2318.31
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 99.95,
-      "chg_pct": -1.0,
+      "last": 100.21,
+      "chg_pct": -1.43,
       "history": [
-        105.37,
         104.9,
         104.66,
         104.73,
@@ -685,7 +684,8 @@
         101.35,
         100.61,
         100.75,
-        99.95
+        99.95,
+        100.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,24 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ripple gets a final go-ahead to launch its own U.S. national trust bank",
-      "summary": "The Office of the Comptroller of the Currency has approved Ripple National Trust Bank (RNTB), Ripple's CEO Brad Garlinghouse announced on X.",
-      "url": "https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank",
-      "ts": "2026-10-27T04:28:49Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "GTH Week One: Volume Builds, and Cboe Leads on Market Share",
-      "summary": "New Global Trading Hours (GTH) and Curb sessions for options on 24 of the most active single stocks and five ETFs went live on Monday, October 19 with a smooth rollout of electronic trading on Cboe Options Exchange (C1) and NYSE American Op",
-      "url": "https://www.cboe.com/insights/posts/gth-week-one-volume-builds-and-cboe-leads-on-market-share/",
-      "ts": "2026-10-26T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Tom Lee's Bitmine favors share buybacks to ether purchases as crypto declines",
-      "summary": "The Ethereum treasury firm spent $46 million buying back shares as Chairman Tom Lee said crypto has held up better than AI stocks during the recent market pullback.",
-      "url": "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines",
-      "ts": "2026-10-26T16:05:12Z"
+      "title": "Bitcoin shows signs of weakness while Ripple's bank win fails to bolster XRP",
+      "summary": "Your day-ahead look for Oct. 27, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp",
+      "ts": "2026-10-27T12:00:39Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +955,38 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "NBA joins pro sports leagues on CFTC prediction markets bandwagon while NFL balks",
-      "summary": "The U.S. derivatives regulator, which has championed the arrival of prediction market firms such as Kalshi, has been gathering allied sports leagues.",
-      "url": "https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks",
-      "ts": "2026-10-26T15:59:55Z"
+      "title": "Live updates: Bitcoin holds below $80,000 as AI buildout draws investor attention and capital",
+      "summary": "Interest rates and oil are slipping and equities are rising, but crypto remains under pressure.",
+      "url": "https://www.coindesk.com/tech/2026/10/27/live-updates-bitcoin-holds-below-usd80-000-as-ai-buildout-draws-more-capital",
+      "ts": "2026-10-27T11:40:50Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "OCC calls on community banks to enter the stablecoin payments market",
-      "summary": "The U.S. banking regulator is encouraging smaller lenders to develop stablecoin services as new federal licensing requirements approach.",
-      "url": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market",
-      "ts": "2026-10-26T15:45:51Z"
+      "title": "Japan's top yen stablecoin falls short of its target in a disappointing first year",
+      "summary": "CEO Noritaka Okabe blamed a 1 million yen per-transaction cap for Type II funds transfer providers, which has slowed corporate adoption.",
+      "url": "https://www.coindesk.com/business/2026/10/27/japan-s-top-yen-stablecoin-falls-short-of-its-target-in-a-disappointing-first-year",
+      "ts": "2026-10-27T11:37:52Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
-      "summary": "Officials are concerned users of domestic exchanges would bear the tax burden because the U.S. won\u2019t share crypto trading data until 2029.",
-      "url": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029",
-      "ts": "2026-10-26T14:51:07Z"
+      "title": "Bitcoin drops below $80,000 as crypto ignores Asian tech rally, Fed meeting begins",
+      "summary": "Bitcoin fell 0.4% to around $79,700 since midnight UTC while Asian tech stocks rallied. The DeFi index dropped 1.8%, and the Fed is set to begin a two-day meeting.",
+      "url": "https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins",
+      "ts": "2026-10-27T11:32:45Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto wallet maker Keystone to destroy almost 19,000 devices after security breach",
+      "summary": "The breach exposed 25,964 buyer records, some kept past Keystone\u2019s 180-day deletion policy after an automated tool failed without the firm noticing.",
+      "url": "https://www.coindesk.com/business/2026/10/27/crypto-wallet-maker-keystone-to-destroy-almost-19-000-devices-after-security-breach",
+      "ts": "2026-10-27T11:13:54Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Investor who called for AI pivot in 2023 says bitcoin is going to $57,000",
+      "summary": "Jason Calacanis wants investors to sell bitcoin and back artificial intelligence. He is also holding TAO, the cryptocurrency behind AI network Bittensor.",
+      "url": "https://www.coindesk.com/markets/2026/10/27/investor-who-called-for-ai-pivot-in-2023-says-bitcoin-is-going-to-usd57-000",
+      "ts": "2026-10-27T10:57:51Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 79805,
+    "last": 79969,
     "high_24h": 80680,
-    "low_24h": 79421,
-    "chg_pct": -0.2
+    "low_24h": 79416,
+    "chg_pct": -0.4
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 102.09,
-    "WTI": 100.97,
-    "VIX": 18.39,
-    "asof": "2026-10-27T06:12:10Z"
+    "DXY": 102.16,
+    "WTI": 100.98,
+    "VIX": 17.82,
+    "asof": "2026-10-27T12:27:00Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
