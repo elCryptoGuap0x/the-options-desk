@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T21:41:26Z",
+  "generated_at": "2026-10-27T00:54:32Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80019,
-      "chg_pct": -0.42,
+      "last": 80123,
+      "chg_pct": 0.26,
       "history": [
-        81472,
         82079,
         82591,
         82398,
@@ -589,16 +588,16 @@
         80063,
         79985,
         80340,
-        80019
+        80019,
+        80123
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2313.45,
-      "chg_pct": -1.0,
+      "last": 2324.25,
+      "chg_pct": 0.2,
       "history": [
-        2383.43,
         2406.04,
         2424.38,
         2425.22,
@@ -637,16 +636,16 @@
         2329.47,
         2317.01,
         2328.0,
-        2313.45
+        2313.45,
+        2324.25
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 100.61,
-      "chg_pct": -0.71,
+      "last": 100.75,
+      "chg_pct": -0.37,
       "history": [
-        103.08,
         103.87,
         105.37,
         104.9,
@@ -685,7 +684,8 @@
         101.4,
         101.15,
         101.35,
-        100.61
+        100.61,
+        100.75
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Sell-off Widens as Oil Rallies Amid Middle East Conflict",
-      "summary": "The stock market concluded a highly volatile week with mixed results as a combination of escalating oil prices and the ongoing concerns about how companies are funding artificial intelligence (AI) infrastructure kept markets in check.",
-      "url": "https://www.cboe.com/insights/posts/sell-off-widens-as-oil-rallies-amid-middle-east-conflict/",
-      "ts": "2026-10-23T04:00:00Z"
+      "title": "Anthropic S-1 Registration Dominates, Leads Nasdaq Higher",
+      "summary": "The market started a big week with a bundle of news mostly surrounding artificial intelligence (AI) buildouts and Anthropic\u2019s initial public offering (IPO) plans. Moreover, this is just the first day of the busiest earnings week this quarte",
+      "url": "https://www.cboe.com/insights/posts/anthropic-s-1-registration-dominates-leads-nasdaq-higher/",
+      "ts": "2026-10-26T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Sell-Off Leads to Uptick in Defensive Stocks",
-      "summary": "The sell-off happened quickly today as investors fled technology stocks for more defensive sectors such as classic blue-chip stocks.",
-      "url": "https://www.cboe.com/insights/posts/tech-sell-off-leads-to-uptick-in-defensive-stocks/",
-      "ts": "2026-10-22T04:00:00Z"
+      "title": "GTH Week One: Volume Builds, and Cboe Leads on Market Share",
+      "summary": "New Global Trading Hours (GTH) and Curb sessions for options on 24 of the most active single stocks and five ETFs went live on Monday, October 19 with a smooth rollout of electronic trading on Cboe Options Exchange (C1) and NYSE American Op",
+      "url": "https://www.cboe.com/insights/posts/gth-week-one-volume-builds-and-cboe-leads-on-market-share/",
+      "ts": "2026-10-26T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -975,18 +975,18 @@
       "ts": "2026-10-26T15:45:51Z"
     },
     {
+      "tag": "OPTIONS",
+      "title": "Sell-off Widens as Oil Rallies Amid Middle East Conflict",
+      "summary": "The stock market concluded a highly volatile week with mixed results as a combination of escalating oil prices and the ongoing concerns about how companies are funding artificial intelligence (AI) infrastructure kept markets in check.",
+      "url": "https://www.cboe.com/insights/posts/sell-off-widens-as-oil-rallies-amid-middle-east-conflict/",
+      "ts": "2026-10-23T04:00:00Z"
+    },
+    {
       "tag": "CRYPTO",
       "title": "South Korea weighs fourth delay on its crypto gains tax, pushing it to 2029",
       "summary": "Officials are concerned users of domestic exchanges would bear the tax burden because the U.S. won\u2019t share crypto trading data until 2029.",
       "url": "https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029",
       "ts": "2026-10-26T14:51:07Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Canada opens consultation on draft stablecoin rules, maintains ban on yields",
-      "summary": "Under the draft rules, non-bank stablecoin issuers must back tokens 1:1 with reserves held at qualified Canadian institutions and settle redemptions within three business days.",
-      "url": "https://www.coindesk.com/policy/2026/10/26/canada-opens-consultation-on-draft-stablecoin-rules-maintains-ban-on-yields",
-      "ts": "2026-10-26T14:23:41Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80008,
+    "last": 80123,
     "high_24h": 80680,
     "low_24h": 79332,
-    "chg_pct": -0.42
+    "chg_pct": 0.26
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 102.01,
-    "WTI": 101.25,
+    "DXY": 102.03,
+    "WTI": 101.19,
     "VIX": 18.39,
-    "asof": "2026-10-26T21:41:26Z"
+    "asof": "2026-10-27T00:54:32Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
