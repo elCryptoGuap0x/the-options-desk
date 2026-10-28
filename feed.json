@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T01:38:37Z",
+  "generated_at": "2026-10-28T07:33:00Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-10-28T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80732,
-      "chg_pct": 0.82,
+      "last": 80843,
+      "chg_pct": 1.53,
       "history": [
-        81642,
         81960,
         81562,
         82350,
@@ -589,16 +588,16 @@
         79847,
         79982,
         80856,
-        80732
+        80732,
+        80843
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2348.52,
-      "chg_pct": 1.19,
+      "last": 2351.74,
+      "chg_pct": 1.99,
       "history": [
-        2398.54,
         2406.96,
         2387.65,
         2426.27,
@@ -637,16 +636,16 @@
         2310.91,
         2318.31,
         2349.16,
-        2348.52
+        2348.52,
+        2351.74
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 101.32,
-      "chg_pct": 0.76,
+      "last": 101.87,
+      "chg_pct": 2.25,
       "history": [
-        104.73,
         104.98,
         104.13,
         105.39,
@@ -685,7 +684,8 @@
         99.95,
         100.21,
         101.19,
-        101.32
+        101.32,
+        101.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -935,16 +935,16 @@
     {
       "tag": "OPTIONS",
       "title": "Nasdaq Advances for Second Straight Day",
-      "summary": "Many investors embraced technology and semiconductor stocks Tuesday as the afterglow of Monday's Anthropic initial public offering (IPO) filing appeared strong, pushing the Nasdaq Composite and the S&P 500 Index meaningfully higher while th",
+      "summary": "Market activity got a boost from a decline in oil prices amid talks about ending the war between the U.S. and Iran. WTI Crude Oil fell below $100 a barrel, down about 2%.",
       "url": "https://www.cboe.com/insights/posts/nasdaq-advances-for-second-straight-day/",
       "ts": "2026-10-27T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Treasury's Bessent sees crypto as America's next tool for keeping the U.S. dollar on top",
-      "summary": "Speaking at Ripple's conference, the U.S. Treasury Secretary said the SEC and CFTC action could help fill the gap left by the Clarity Act's failure, while curbing crypto debanking.",
-      "url": "https://www.coindesk.com/policy/2026/10/27/treasury-s-bessent-sees-crypto-as-america-s-next-tool-for-keeping-the-u-s-dollar-on-top",
-      "ts": "2026-10-27T20:41:33Z"
+      "title": "Bitcoin treasury Datavault AI plunges 50% after firm says it can\u2019t access its BTC",
+      "summary": "The company said the accounting correction will cut reported assets by $92.2 million at the end of 2025 after bitcoin held on Biconomy could not be withdrawn.",
+      "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
+      "ts": "2026-10-28T05:28:13Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Robinhood's crypto revenue fell 55% from last year, but topped Street forecasts",
-      "summary": "Crypto trading volume fell 38% from year-ago levels, but the firm's overall blockchain business gained traction.",
-      "url": "https://www.coindesk.com/markets/2026/10/27/robinhood-s-crypto-revenue-plunges-55-even-as-trading-platform-posts-record-sales",
-      "ts": "2026-10-27T20:32:21Z"
+      "title": "Bithumb hacked through employee system as South Korean financial firms face cyberattacks",
+      "summary": "The breach hit an internal employee system that Bithumb says is separate from its trading platform, while the exchange is still determining whether customer information was exposed.",
+      "url": "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
+      "ts": "2026-10-28T05:10:36Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. agency hits Utah with lawsuit to shield Kalshi's ability to offer betting there",
-      "summary": "The U.S. Commodity Futures Trading Commission has pursued more than a dozen legal actions to protect what its chief sees as its sole power over prediction markets.",
-      "url": "https://www.coindesk.com/policy/2026/10/27/u-s-agency-hits-utah-with-lawsuit-to-shield-kalshi-s-ability-to-offer-betting-there",
-      "ts": "2026-10-27T19:07:59Z"
+      "title": "Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8%",
+      "summary": "Majors outpaced bitcoin across the board as tech stocks extended a climb.",
+      "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8",
+      "ts": "2026-10-28T04:15:20Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Intel, Oracle, IBM join growing list of firms objecting to OKX\u2013ICE tokenized stock plans",
-      "summary": "The latest notice added four objections, bringing the total to 26 as the joint venture prepares to test the SEC\u2019s new framework for blockchain-based stock trading.",
-      "url": "https://www.coindesk.com/business/2026/10/27/intel-oracle-ibm-join-growing-list-of-firms-objecting-to-okx-ice-tokenized-stock-plans",
-      "ts": "2026-10-27T18:13:02Z"
+      "title": "Coinbase says user funds are safe after third-party vendor exposes customer contact info",
+      "summary": "The crypto exchange says an incident at analytics firm Amplitude exposed some customer contact information, but insists its own systems were not breached.",
+      "url": "https://www.coindesk.com/tech/2026/10/28/coinbase-says-customer-funds-are-safe-after-third-party-vendor-exposes-customer-contact-info",
+      "ts": "2026-10-28T03:11:14Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80684,
+    "last": 80833,
     "high_24h": 81159,
     "low_24h": 79416,
-    "chg_pct": 0.76
+    "chg_pct": 1.55
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 102.38,
-    "WTI": 101.01,
-    "VIX": 17.52,
-    "asof": "2026-10-28T01:38:37Z"
+    "DXY": 102.47,
+    "WTI": 101.91,
+    "VIX": 17.5,
+    "asof": "2026-10-28T07:33:00Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
