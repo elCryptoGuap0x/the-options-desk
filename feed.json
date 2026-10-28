@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-28T07:33:00Z",
+  "generated_at": "2026-10-28T19:49:58Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-28T13:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-10-29T13:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80843,
-      "chg_pct": 1.53,
+      "last": 81314,
+      "chg_pct": 0.82,
       "history": [
-        81960,
         81562,
         82350,
         82993,
@@ -589,16 +588,16 @@
         79982,
         80856,
         80732,
-        80843
+        80843,
+        81314
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2351.74,
-      "chg_pct": 1.99,
+      "last": 2362.89,
+      "chg_pct": 0.71,
       "history": [
-        2406.96,
         2387.65,
         2426.27,
         2456.34,
@@ -637,16 +636,16 @@
         2318.31,
         2349.16,
         2348.52,
-        2351.74
+        2351.74,
+        2362.89
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 101.87,
-      "chg_pct": 2.25,
+      "last": 102.46,
+      "chg_pct": 1.38,
       "history": [
-        104.98,
         104.13,
         105.39,
         106.9,
@@ -685,7 +684,8 @@
         100.21,
         101.19,
         101.32,
-        101.87
+        101.87,
+        102.46
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,6 +933,13 @@
   },
   "news": [
     {
+      "tag": "FED",
+      "title": "Federal Reserve issues FOMC statement",
+      "summary": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "ts": "2026-10-28T18:00:00Z"
+    },
+    {
       "tag": "OPTIONS",
       "title": "Nasdaq Advances for Second Straight Day",
       "summary": "Market activity got a boost from a decline in oil prices amid talks about ending the war between the U.S. and Iran. WTI Crude Oil fell below $100 a barrel, down about 2%.",
@@ -941,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin treasury Datavault AI plunges 50% after firm says it can\u2019t access its BTC",
-      "summary": "The company said the accounting correction will cut reported assets by $92.2 million at the end of 2025 after bitcoin held on Biconomy could not be withdrawn.",
-      "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-treasury-datavault-ai-plunges-50-after-firm-says-it-can-t-access-its-btc",
-      "ts": "2026-10-28T05:28:13Z"
+      "title": "CFTC chief poses questions about policing AI but calls it a road to 'autonomous trading'",
+      "summary": "The U.S. Commodity Futures Trading Commission held a forum in which the chairman, Mike Selig, suggested AI agents may usher in a financial revolution.",
+      "url": "https://www.coindesk.com/policy/2026/10/28/cftc-chief-poses-questions-about-policing-ai-but-calls-it-a-road-to-autonomous-trading",
+      "ts": "2026-10-28T19:01:53Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bithumb hacked through employee system as South Korean financial firms face cyberattacks",
-      "summary": "The breach hit an internal employee system that Bithumb says is separate from its trading platform, while the exchange is still determining whether customer information was exposed.",
-      "url": "https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks",
-      "ts": "2026-10-28T05:10:36Z"
+      "title": "Crypto isn\u2019t a partisan fight, proven by data",
+      "summary": "Treating crypto as a political battleground only makes it harder to build the secure, transparent, American-made financial system that most Americans say they want, argues DeFi Education Fund\u2019s Jennifer Rosenthal.",
+      "url": "https://www.coindesk.com/opinion/2026/10/28/crypto-isn-t-a-partisan-fight-proven-by-data",
+      "ts": "2026-10-28T18:11:31Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8%",
-      "summary": "Majors outpaced bitcoin across the board as tech stocks extended a climb.",
-      "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8",
-      "ts": "2026-10-28T04:15:20Z"
+      "title": "Fed leaves interest rates unchanged, as expected",
+      "summary": "A rate hike in December remains likely as the U.S. central bank continues to focus on inflation, which remains well above its 2% target.",
+      "url": "https://www.coindesk.com/markets/2026/10/28/fed-leaves-interest-rates-unchanged-as-expected",
+      "ts": "2026-10-28T18:00:42Z"
     },
     {
       "tag": "OPTIONS",
@@ -980,13 +987,6 @@
       "summary": "New Global Trading Hours (GTH) and Curb sessions for options on 24 of the most active single stocks and five ETFs went live on Monday, October 19 with a smooth rollout of electronic trading on Cboe Options Exchange (C1) and NYSE American Op",
       "url": "https://www.cboe.com/insights/posts/gth-week-one-volume-builds-and-cboe-leads-on-market-share/",
       "ts": "2026-10-26T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Coinbase says user funds are safe after third-party vendor exposes customer contact info",
-      "summary": "The crypto exchange says an incident at analytics firm Amplitude exposed some customer contact information, but insists its own systems were not breached.",
-      "url": "https://www.coindesk.com/tech/2026/10/28/coinbase-says-customer-funds-are-safe-after-third-party-vendor-exposes-customer-contact-info",
-      "ts": "2026-10-28T03:11:14Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80417,
+    "last": 81306,
     "high_24h": 81636,
-    "low_24h": 80153,
-    "chg_pct": 0.57
+    "low_24h": 80334,
+    "chg_pct": 0.82
   },
   "macro": {
-    "10Y": 5.01,
-    "DXY": 102.4,
-    "WTI": 102.11,
-    "VIX": 17.38,
-    "asof": "2026-10-28T07:33:00Z"
+    "10Y": 5.04,
+    "DXY": 102.17,
+    "WTI": 102.84,
+    "VIX": 16.97,
+    "asof": "2026-10-28T19:49:58Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
