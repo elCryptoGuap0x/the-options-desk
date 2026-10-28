@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T19:49:58Z",
+  "generated_at": "2026-10-28T23:40:25Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 81314,
-      "chg_pct": 0.82,
+      "last": 81231,
+      "chg_pct": 0.55,
       "history": [
-        81562,
         82350,
         82993,
         83105,
@@ -589,16 +588,16 @@
         80856,
         80732,
         80843,
-        81314
+        81314,
+        81231
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2362.89,
-      "chg_pct": 0.71,
+      "last": 2357.69,
+      "chg_pct": 0.46,
       "history": [
-        2387.65,
         2426.27,
         2456.34,
         2455.7,
@@ -637,16 +636,16 @@
         2349.16,
         2348.52,
         2351.74,
-        2362.89
+        2362.89,
+        2357.69
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 102.46,
-      "chg_pct": 1.38,
+      "last": 102.32,
+      "chg_pct": 1.14,
       "history": [
-        104.13,
         105.39,
         106.9,
         106.78,
@@ -685,7 +684,8 @@
         101.19,
         101.32,
         101.87,
-        102.46
+        102.46,
+        102.32
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,8 +941,22 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Market Stays Muted after Fed Decision to Keep Rates Steady",
+      "summary": "The market barely budged after the Federal Reserve said it would keep interest rates unchanged, exactly what traders expected.",
+      "url": "https://www.cboe.com/insights/posts/market-stays-muted-after-fed-decision-to-keep-rates-steady/",
+      "ts": "2026-10-28T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin-backed mortgages are coming to Canada, but borrowers are still unaware of the cost",
+      "summary": "Prospective borrowers face collateral liquidation risks if bitcoin prices drop, though APX said property and crypto collateral will be handled distinctly.",
+      "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-backed-mortgages-are-coming-to-canada-but-borrowers-are-still-unaware-of-the-cost",
+      "ts": "2026-10-28T21:13:44Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Nasdaq Advances for Second Straight Day",
-      "summary": "Market activity got a boost from a decline in oil prices amid talks about ending the war between the U.S. and Iran. WTI Crude Oil fell below $100 a barrel, down about 2%.",
+      "summary": "Many investors embraced technology and semiconductor stocks Tuesday as the afterglow of Monday's Anthropic initial public offering (IPO) filing appeared strong, pushing the Nasdaq Composite and the S&P 500 Index meaningfully higher while th",
       "url": "https://www.cboe.com/insights/posts/nasdaq-advances-for-second-straight-day/",
       "ts": "2026-10-27T04:00:00Z"
     },
@@ -972,20 +986,6 @@
       "title": "Week of 10/26/2026: Tech Risk Premium Rising Ahead of Key Earnings",
       "summary": "Implied volatilities rose across asset classes last week as oil prices gained on rising geopolitical tensions and investors pulled back from Tech stocks ahead of key earnings. Learn more in this week's Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-10-26-2026-tech-risk-premium-rising-ahead-of-key-earnings/",
-      "ts": "2026-10-26T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Fed leaves interest rates unchanged, as expected",
-      "summary": "A rate hike in December remains likely as the U.S. central bank continues to focus on inflation, which remains well above its 2% target.",
-      "url": "https://www.coindesk.com/markets/2026/10/28/fed-leaves-interest-rates-unchanged-as-expected",
-      "ts": "2026-10-28T18:00:42Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "GTH Week One: Volume Builds, and Cboe Leads on Market Share",
-      "summary": "New Global Trading Hours (GTH) and Curb sessions for options on 24 of the most active single stocks and five ETFs went live on Monday, October 19 with a smooth rollout of electronic trading on Cboe Options Exchange (C1) and NYSE American Op",
-      "url": "https://www.cboe.com/insights/posts/gth-week-one-volume-builds-and-cboe-leads-on-market-share/",
       "ts": "2026-10-26T04:00:00Z"
     }
   ],
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 81306,
-    "high_24h": 81636,
+    "last": 81260,
+    "high_24h": 81698,
     "low_24h": 80334,
-    "chg_pct": 0.82
+    "chg_pct": 0.59
   },
   "macro": {
     "10Y": 5.04,
-    "DXY": 102.17,
-    "WTI": 102.84,
-    "VIX": 16.97,
-    "asof": "2026-10-28T19:49:58Z"
+    "DXY": 102.16,
+    "WTI": 101.97,
+    "VIX": 16.91,
+    "asof": "2026-10-28T23:40:25Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
