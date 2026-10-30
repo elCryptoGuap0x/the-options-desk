@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-30T07:18:35Z",
+  "generated_at": "2026-10-30T19:32:43Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-10-30T13:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-11-02T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 78348,
-      "chg_pct": -1.83,
+      "last": 76509,
+      "chg_pct": -5.3,
       "history": [
-        84498,
         84307,
         83729,
         82492,
@@ -589,16 +588,16 @@
         80107,
         79316,
         77078,
-        78348
+        78348,
+        76509
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2246.82,
-      "chg_pct": -2.56,
+      "last": 2227.79,
+      "chg_pct": -4.46,
       "history": [
-        2493.31,
         2477.22,
         2456.91,
         2430.21,
@@ -637,16 +636,16 @@
         2318.17,
         2278.3,
         2215.24,
-        2246.82
+        2246.82,
+        2227.79
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 97.9,
-      "chg_pct": -1.8,
+      "last": 94.3,
+      "chg_pct": -5.86,
       "history": [
-        108.18,
         107.1,
         106.33,
         104.59,
@@ -685,7 +684,8 @@
         100.06,
         97.29,
         94.24,
-        97.9
+        97.9,
+        94.3
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin, ether and XRP selloff wipes out $1.5 billion in leveraged crypto bets",
-      "summary": "Bets on rising prices accounted for nearly 84% of forced closures, with Binance handling almost half the total. A rebound has since started catching short sellers.",
-      "url": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets",
-      "ts": "2026-10-30T06:22:00Z"
+      "title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
+      "summary": "CEO Richard Teng said hackers erased evidence and bypassed security checks. Binance plans to publish its proof of reserves Monday.",
+      "url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
+      "ts": "2026-10-30T16:31:17Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "XRP Ledger developers tighten the rules for who can hold 'restricted' tokens",
-      "summary": "A set of fixes would tighten who can hold permissioned tokens on the network. The XRP Ledger Foundation says no users were affected.",
-      "url": "https://www.coindesk.com/tech/2026/10/30/xrp-ledger-developers-tighten-the-rules-for-who-can-hold-restricted-tokens",
-      "ts": "2026-10-30T05:45:27Z"
+      "title": "Wall Street analysts urge investors to buy crypto stocks after $6.3 billion Binance hack",
+      "summary": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the $6.3 billion Binance hack is unlikely to derail the crypto market's recovery.",
+      "url": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack",
+      "ts": "2026-10-30T14:13:34Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
-      "summary": "CoinDCX has restricted new futures positions after Binance\u2019s security incident disrupted a key liquidity provider. Deposits, withdrawals and customer funds remain unaffected, the exchange said.",
-      "url": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
-      "ts": "2026-10-30T05:43:07Z"
+      "title": "Binance arranges $6.34 billion to cover losses from record crypto hack",
+      "summary": "Binance said it reserved its own funds to cover the $6.3 billion hack, including freezes of roughly $3 billion in stolen assets.",
+      "url": "https://www.coindesk.com/business/2026/10/30/binance-arranges-usd6-34-billion-to-cover-losses-from-record-crypto-hack",
+      "ts": "2026-10-30T12:13:02Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 78344,
-    "high_24h": 81840,
-    "low_24h": 76443,
-    "chg_pct": -1.85
+    "last": 76442,
+    "high_24h": 80769,
+    "low_24h": 76339,
+    "chg_pct": -5.3
   },
   "macro": {
-    "10Y": 4.99,
-    "DXY": 101.82,
-    "WTI": 103.22,
-    "VIX": 17.2,
-    "asof": "2026-10-30T07:18:35Z"
+    "10Y": 4.92,
+    "DXY": 101.88,
+    "WTI": 104.27,
+    "VIX": 21.88,
+    "asof": "2026-10-30T19:32:43Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
