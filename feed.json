@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T21:23:26Z",
+  "generated_at": "2026-10-30T01:19:33Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 79316,
-      "chg_pct": -2.5,
+      "last": 77078,
+      "chg_pct": -4.71,
       "history": [
-        82608,
         83368,
         84498,
         84307,
@@ -589,16 +588,16 @@
         81231,
         79845,
         80107,
-        79316
+        79316,
+        77078
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2278.3,
-      "chg_pct": -3.74,
+      "last": 2215.24,
+      "chg_pct": -5.57,
       "history": [
-        2437.96,
         2459.28,
         2493.31,
         2477.22,
@@ -637,16 +636,16 @@
         2357.69,
         2306.09,
         2318.17,
-        2278.3
+        2278.3,
+        2215.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 97.29,
-      "chg_pct": -5.36,
+      "last": 94.24,
+      "chg_pct": -7.17,
       "history": [
-        105.67,
         106.66,
         108.18,
         107.1,
@@ -685,7 +684,8 @@
         102.32,
         99.9,
         100.06,
-        97.29
+        97.29,
+        94.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Alphabet Suffers Record Drop, Pulls Other Tech Stocks Lower",
+      "summary": "If it looks like d\u00e9j\u00e0 vu all over again \u2013 technology stocks fall as investors question artificial intelligence (AI) spending and retreat yet again \u2013 then Yogi Berra\u2019s quip fits.",
+      "url": "https://www.cboe.com/insights/posts/alphabet-suffers-record-drop-pulls-other-tech-stocks-lower/",
+      "ts": "2026-10-29T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Binance hack drained wallets backing customer assets, reserve data shows",
+      "summary": "Binance\u2019s own reserve data lists the drained wallets as backing customer balances, leaving its ether backing an estimated 6% short until the exchange replaces what was stolen.",
+      "url": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
+      "ts": "2026-10-30T00:17:10Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Market Stays Muted after Fed Decision to Keep Rates Steady",
       "summary": "The market barely budged after the Federal Reserve said it would keep interest rates unchanged, exactly what traders expected.",
       "url": "https://www.cboe.com/insights/posts/market-stays-muted-after-fed-decision-to-keep-rates-steady/",
@@ -948,8 +962,8 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Multi-billion Binance hack hitting crypto markets",
-      "summary": "Crypto prices are sliding on the news, led by BNB coin, down 6% in the last hour.",
+      "title": "Binance loses $5.7 billion in 'biggest crypto hack in history'",
+      "summary": "Crypto prices are sliding on the news, with bitcoin falling back to $77,000, though Binance's co-CEO said it would cover all losses.",
       "url": "https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets",
       "ts": "2026-10-29T21:12:45Z"
     },
@@ -972,20 +986,6 @@
       "title": "Anthropic S-1 Registration Dominates, Leads Nasdaq Higher",
       "summary": "The market started a big week with a bundle of news mostly surrounding artificial intelligence (AI) buildouts and Anthropic\u2019s initial public offering (IPO) plans. Moreover, this is just the first day of the busiest earnings week this quarte",
       "url": "https://www.cboe.com/insights/posts/anthropic-s-1-registration-dominates-leads-nasdaq-higher/",
-      "ts": "2026-10-26T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Stanley Druckenmiller's first X post backs Hyperliquid venture after $23 million indirect investment",
-      "summary": "The billionaire investor disclosed an investment in Trade[XYZ] as the platform teams up with the NYSE's parent company. His family office previously reported owning shares in a HYPE-focused treasury company.",
-      "url": "https://www.coindesk.com/business/2026/10/29/stanley-druckenmiller-s-first-x-post-backs-hyperliquid-venture-after-usd23-million-indirect-investment",
-      "ts": "2026-10-29T17:04:19Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 10/26/2026: Tech Risk Premium Rising Ahead of Key Earnings",
-      "summary": "Implied volatilities rose across asset classes last week as oil prices gained on rising geopolitical tensions and investors pulled back from Tech stocks ahead of key earnings. Learn more in this week's Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-10-26-2026-tech-risk-premium-rising-ahead-of-key-earnings/",
       "ts": "2026-10-26T04:00:00Z"
     }
   ],
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 79381,
+    "last": 77071,
     "high_24h": 81840,
-    "low_24h": 78475,
-    "chg_pct": -2.45
+    "low_24h": 76776,
+    "chg_pct": -4.71
   },
   "macro": {
     "10Y": 4.99,
-    "DXY": 101.91,
-    "WTI": 102.86,
+    "DXY": 101.64,
+    "WTI": 102.69,
     "VIX": 17.2,
-    "asof": "2026-10-29T21:23:26Z"
+    "asof": "2026-10-30T01:19:33Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
