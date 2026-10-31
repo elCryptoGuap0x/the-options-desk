@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T23:10:25Z",
+  "generated_at": "2026-10-31T02:30:55Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 76902,
-      "chg_pct": -2.24,
+      "last": 77398,
+      "chg_pct": 0.32,
       "history": [
-        83729,
         82492,
         81205,
         81231,
@@ -589,16 +588,16 @@
         77078,
         78348,
         76509,
-        76902
+        76902,
+        77398
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2237.5,
-      "chg_pct": -1.14,
+      "last": 2242.18,
+      "chg_pct": 1.42,
       "history": [
-        2456.91,
         2430.21,
         2380.79,
         2380.2,
@@ -637,16 +636,16 @@
         2215.24,
         2246.82,
         2227.79,
-        2237.5
+        2237.5,
+        2242.18
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 95.91,
-      "chg_pct": -0.51,
+      "last": 96.61,
+      "chg_pct": 1.69,
       "history": [
-        106.33,
         104.59,
         103.11,
         103.28,
@@ -685,7 +684,8 @@
         94.24,
         97.9,
         94.3,
-        95.91
+        95.91,
+        96.61
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
-      "summary": "Tether, Circle and others moved within hours to block billions in stolen crypto, but legal experts question whether smaller victims would get the same protection.",
-      "url": "https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter",
-      "ts": "2026-10-30T19:55:00Z"
+      "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
+      "summary": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday.",
+      "url": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
+      "ts": "2026-10-31T00:48:56Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
-      "summary": "CEO Richard Teng said hackers erased evidence and bypassed security checks. Binance plans to publish its proof of reserves Monday.",
-      "url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
-      "ts": "2026-10-30T16:31:17Z"
+      "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
+      "summary": "Tether, Circle and others moved within hours to block billions in stolen crypto, but legal experts question whether smaller victims would get the same protection.",
+      "url": "https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter",
+      "ts": "2026-10-30T19:55:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Wall Street analysts urge investors to buy crypto stocks after $6.3 billion Binance hack",
-      "summary": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the $6.3 billion Binance hack is unlikely to derail the crypto market's recovery.",
-      "url": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack",
-      "ts": "2026-10-30T14:13:34Z"
+      "title": "Binance uncovers wider breach in $6.3 billion exploit, targets Sunday withdrawal restart",
+      "summary": "CEO Richard Teng said hackers erased evidence and bypassed security checks. Binance plans to publish its proof of reserves Monday.",
+      "url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart",
+      "ts": "2026-10-30T16:31:17Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 76898,
+    "last": 77398,
     "high_24h": 78638,
     "low_24h": 76338,
-    "chg_pct": -2.21
+    "chg_pct": 0.33
   },
   "macro": {
     "10Y": 4.93,
