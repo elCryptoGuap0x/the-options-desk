@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T08:49:45Z",
+  "generated_at": "2026-10-31T14:51:40Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 77214,
-      "chg_pct": -0.84,
+      "last": 77452,
+      "chg_pct": 0.59,
       "history": [
-        81205,
         81231,
         81265,
         81655,
@@ -589,16 +588,16 @@
         76509,
         76902,
         77398,
-        77214
+        77214,
+        77452
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2239.33,
-      "chg_pct": 0.72,
+      "last": 2250.49,
+      "chg_pct": 0.82,
       "history": [
-        2380.79,
         2380.2,
         2389.46,
         2401.46,
@@ -637,16 +636,16 @@
         2227.79,
         2237.5,
         2242.18,
-        2239.33
+        2239.33,
+        2250.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 95.33,
-      "chg_pct": -1.72,
+      "last": 95.74,
+      "chg_pct": 1.09,
       "history": [
-        103.11,
         103.28,
         103.92,
         104.41,
@@ -685,7 +684,8 @@
         94.3,
         95.91,
         96.61,
-        95.33
+        95.33,
+        95.74
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin stolen from Binance tops Tesla\u2019s holdings and is over twice El Salvador\u2019s reserve",
-      "summary": "The 18,270 BTC haul is worth about $1.4 billion and comes within 442 coins of SpaceX\u2019s disclosed holdings. Blockchain investigators link the attack to North Korea.",
-      "url": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve",
-      "ts": "2026-10-31T05:01:32Z"
+      "title": "Uber tests how tokenization can put idle cash to work with HSBC, Franklin Templeton",
+      "summary": "The pilot let Uber keep funds invested in money market products while accessing cash for payments, even on weekends.",
+      "url": "https://www.coindesk.com/business/2026/10/31/uber-tests-how-tokenization-can-put-idle-cash-to-work-with-hsbc-franklin-templeton",
+      "ts": "2026-10-31T14:40:29Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "OpenAI reportedly cuts fundraising and valuation targets amid AI jitters",
-      "summary": "Anxiety about the AI boom has sent the Nasdaq 100 slumping by about 10% in just three weeks since hitting a record high on October 6, including a 4.5% drop on Friday.",
-      "url": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters",
-      "ts": "2026-10-31T00:48:56Z"
+      "title": "As big bitcoin miners chase AI profits, individuals get another shot at the rewards",
+      "summary": "Several companies offer access to bitcoin mining without the hassle of running equipment, but high costs and the 2028 reward halving make profits uncertain.",
+      "url": "https://www.coindesk.com/tech/2026/10/31/as-big-bitcoin-miners-chase-ai-profits-individuals-get-another-shot-at-the-rewards",
+      "ts": "2026-10-31T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Experts divided over Binance hack asset freezes, warn recovery is another matter",
-      "summary": "Tether, Circle and others moved within hours to block billions in stolen crypto, but legal experts question whether smaller victims would get the same protection.",
-      "url": "https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter",
-      "ts": "2026-10-30T19:55:00Z"
+      "title": "18 years in, what has Bitcoin truly done?",
+      "summary": "The Bitcoin white paper achieved a lot of what Satoshi Nakamoto set out to accomplish, but the cultural impact it had may outweigh Bitcoin itself, writes CoinDesk's Nikhilesh De.",
+      "url": "https://www.coindesk.com/opinion/2026/10/31/18-years-in-what-has-bitcoin-truly-done",
+      "ts": "2026-10-31T13:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 77214,
-    "high_24h": 77943,
+    "last": 77452,
+    "high_24h": 77932,
     "low_24h": 76338,
-    "chg_pct": -0.84
+    "chg_pct": 0.59
   },
   "macro": {
     "10Y": 4.93,
