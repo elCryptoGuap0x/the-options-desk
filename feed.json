@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T14:51:40Z",
+  "generated_at": "2026-10-31T18:56:42Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 77452,
-      "chg_pct": 0.59,
+      "last": 77577,
+      "chg_pct": 1.6,
       "history": [
-        81231,
         81265,
         81655,
         81327,
@@ -589,16 +588,16 @@
         76902,
         77398,
         77214,
-        77452
+        77452,
+        77577
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2250.49,
-      "chg_pct": 0.82,
+      "last": 2254.06,
+      "chg_pct": 1.21,
       "history": [
-        2380.2,
         2389.46,
         2401.46,
         2395.87,
@@ -637,16 +636,16 @@
         2237.5,
         2242.18,
         2239.33,
-        2250.49
+        2250.49,
+        2254.06
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 95.74,
-      "chg_pct": 1.09,
+      "last": 95.96,
+      "chg_pct": 2.02,
       "history": [
-        103.28,
         103.92,
         104.41,
         103.52,
@@ -685,7 +684,8 @@
         95.91,
         96.61,
         95.33,
-        95.74
+        95.74,
+        95.96
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,13 +933,6 @@
   },
   "news": [
     {
-      "tag": "FED",
-      "title": "Federal Reserve issues FOMC statement",
-      "summary": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "ts": "2026-10-28T18:00:00Z"
-    },
-    {
       "tag": "OPTIONS",
       "title": "Tech Selloff Wipes Out $1 Trillion in Value J",
       "summary": "What a day, what a week! The market has been wrestling for months with the appeal of the potential productivity of artificial intelligence (AI) versus the economics of the billions of dollars invested to get there.",
@@ -948,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Uber tests how tokenization can put idle cash to work with HSBC, Franklin Templeton",
-      "summary": "The pilot let Uber keep funds invested in money market products while accessing cash for payments, even on weekends.",
-      "url": "https://www.coindesk.com/business/2026/10/31/uber-tests-how-tokenization-can-put-idle-cash-to-work-with-hsbc-franklin-templeton",
-      "ts": "2026-10-31T14:40:29Z"
+      "title": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
+      "summary": "Eighteen years after Satoshi published the Bitcoin white paper, business owners are still covering the cost of a system built on bailouts, and they can protect part of their surplus by keeping it in bitcoin, argues Onramp CEO Michael Tangum",
+      "url": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
+      "ts": "2026-10-31T18:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "As big bitcoin miners chase AI profits, individuals get another shot at the rewards",
-      "summary": "Several companies offer access to bitcoin mining without the hassle of running equipment, but high costs and the 2028 reward halving make profits uncertain.",
-      "url": "https://www.coindesk.com/tech/2026/10/31/as-big-bitcoin-miners-chase-ai-profits-individuals-get-another-shot-at-the-rewards",
-      "ts": "2026-10-31T14:00:00Z"
+      "title": "A stolen iPhone, $14,000 in losses and London's crypto theft problem",
+      "summary": "Two strangers befriended Magnus Ahmad outside a London bar. Hours later, thieves had emptied his crypto wallets, accessed his bank accounts and disabled his laptop.",
+      "url": "https://www.coindesk.com/business/2026/11/01/a-stolen-iphone-usd14-000-in-losses-and-london-s-crypto-theft-problem",
+      "ts": "2026-10-31T16:09:30Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "18 years in, what has Bitcoin truly done?",
-      "summary": "The Bitcoin white paper achieved a lot of what Satoshi Nakamoto set out to accomplish, but the cultural impact it had may outweigh Bitcoin itself, writes CoinDesk's Nikhilesh De.",
-      "url": "https://www.coindesk.com/opinion/2026/10/31/18-years-in-what-has-bitcoin-truly-done",
-      "ts": "2026-10-31T13:00:00Z"
+      "title": "Traders are already placing leveraged bets on Anthropic\u2019s IPO using crypto contracts",
+      "summary": "Trade.xyz\u2019s new ANT contract fell about 20% in its first hour on Hyperliquid. There are no shares behind it, and U.S. traders are locked out.",
+      "url": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
+      "ts": "2026-10-31T16:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -987,6 +980,13 @@
       "summary": "The market barely budged after the Federal Reserve said it would keep interest rates unchanged, exactly what traders expected.",
       "url": "https://www.cboe.com/insights/posts/market-stays-muted-after-fed-decision-to-keep-rates-steady/",
       "ts": "2026-10-28T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
+      "summary": "Binance is absorbing all losses through corporate funds, futures reserves, and SAFU, keeping user balances intact.",
+      "url": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
+      "ts": "2026-10-31T15:24:10Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 77452,
-    "high_24h": 77932,
+    "last": 77577,
+    "high_24h": 77657,
     "low_24h": 76338,
-    "chg_pct": 0.59
+    "chg_pct": 1.6
   },
   "macro": {
     "10Y": 4.93,
