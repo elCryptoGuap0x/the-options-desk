@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T22:25:28Z",
+  "generated_at": "2026-11-01T01:25:52Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 77543,
-      "chg_pct": 1.09,
+      "last": 77627,
+      "chg_pct": 0.26,
       "history": [
-        81655,
         81327,
         80817,
         80865,
@@ -589,16 +588,16 @@
         77214,
         77452,
         77577,
-        77543
+        77543,
+        77627
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2258.54,
-      "chg_pct": 1.14,
+      "last": 2265.59,
+      "chg_pct": 1.0,
       "history": [
-        2401.46,
         2395.87,
         2373.52,
         2380.28,
@@ -637,16 +636,16 @@
         2239.33,
         2250.49,
         2254.06,
-        2258.54
+        2258.54,
+        2265.59
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 95.84,
-      "chg_pct": 0.36,
+      "last": 95.73,
+      "chg_pct": -0.85,
       "history": [
-        104.41,
         103.52,
         102.38,
         102.53,
@@ -685,7 +684,8 @@
         95.33,
         95.74,
         95.96,
-        95.84
+        95.84,
+        95.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
+      "summary": "While the FBI listed hundreds of addresses in its notice, Chainalysis said the Binance attackers have already used \"thousands addresses,\" and expects this number to continue growing.",
+      "url": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+      "ts": "2026-11-01T01:10:05Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Alphabet Suffers Record Drop, Pulls Other Tech Stocks Lower",
+      "summary": "If it looks like d\u00e9j\u00e0 vu all over again \u2013 technology stocks fall as investors question artificial intelligence (AI) spending and retreat yet again \u2013 then Yogi Berra\u2019s quip fits.",
+      "url": "https://www.cboe.com/insights/posts/alphabet-suffers-record-drop-pulls-other-tech-stocks-lower/",
+      "ts": "2026-10-29T04:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Bitcoin's white paper turns 18, and small businesses are still paying for the bailouts it answered",
       "summary": "Eighteen years after Satoshi published the Bitcoin white paper, business owners are still covering the cost of a system built on bailouts, and they can protect part of their surplus by keeping it in bitcoin, argues Onramp CEO Michael Tangum",
       "url": "https://www.coindesk.com/opinion/2026/10/31/bitcoin-s-white-paper-turns-18-and-small-businesses-are-still-paying-for-the-bailouts-it-answered",
@@ -948,9 +962,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Alphabet Suffers Record Drop, Pulls Other Tech Stocks Lower",
-      "summary": "If it looks like d\u00e9j\u00e0 vu all over again \u2013 technology stocks fall as investors question artificial intelligence (AI) spending and retreat yet again \u2013 then Yogi Berra\u2019s quip fits.",
-      "url": "https://www.cboe.com/insights/posts/alphabet-suffers-record-drop-pulls-other-tech-stocks-lower/",
+      "title": "Governor JB Pritzker Rings the Opening Bell at Cboe",
+      "summary": "Illinois Governor JB Pritzker joined Cboe to ring the Opening Bell, recognizing Chicago\u2019s leadership as a global center for financial markets and innovation. Governor Pritzker was joined on stage by senior executives from Cboe, XFA, Optiver",
+      "url": "https://www.cboe.com/insights/posts/governor-jb-pritzker-rings-the-opening-bell-at-cboe/",
       "ts": "2026-10-29T04:00:00Z"
     },
     {
@@ -962,20 +976,6 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Governor JB Pritzker Rings the Opening Bell at Cboe",
-      "summary": "Illinois Governor JB Pritzker joined Cboe to ring the Opening Bell, recognizing Chicago\u2019s leadership as a global center for financial markets and innovation. Governor Pritzker was joined on stage by senior executives from Cboe, XFA, Optiver",
-      "url": "https://www.cboe.com/insights/posts/governor-jb-pritzker-rings-the-opening-bell-at-cboe/",
-      "ts": "2026-10-29T04:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Traders are already placing leveraged bets on Anthropic\u2019s IPO using crypto contracts",
-      "summary": "Trade.xyz\u2019s new ANT contract fell about 20% in its first hour on Hyperliquid. There are no shares behind it, and U.S. traders are locked out.",
-      "url": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
-      "ts": "2026-10-31T16:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "Market Stays Muted after Fed Decision to Keep Rates Steady",
       "summary": "The market barely budged after the Federal Reserve said it would keep interest rates unchanged, exactly what traders expected.",
       "url": "https://www.cboe.com/insights/posts/market-stays-muted-after-fed-decision-to-keep-rates-steady/",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
-      "summary": "Binance is absorbing all losses through corporate funds, futures reserves, and SAFU, keeping user balances intact.",
-      "url": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
-      "ts": "2026-10-31T15:24:10Z"
+      "title": "Traders are already placing leveraged bets on Anthropic\u2019s IPO using crypto contracts",
+      "summary": "Trade.xyz\u2019s new ANT contract fell about 20% in its first hour on Hyperliquid. There are no shares behind it, and U.S. traders are locked out.",
+      "url": "https://www.coindesk.com/business/2026/10/31/traders-are-already-placing-leveraged-bets-on-anthropic-s-ipo-using-crypto-contracts",
+      "ts": "2026-10-31T16:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 77545,
+    "last": 77621,
     "high_24h": 77657,
-    "low_24h": 76854,
-    "chg_pct": 1.15
+    "low_24h": 77051,
+    "chg_pct": 0.26
   },
   "macro": {
     "10Y": 4.93,
