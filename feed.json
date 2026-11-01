@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T01:25:52Z",
+  "generated_at": "2026-11-01T08:04:46Z",
   "session": {
-    "day_label": "SAT",
+    "day_label": "SUN",
     "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-11-02T14:30:00Z",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 77627,
-      "chg_pct": 0.26,
+      "last": 77872,
+      "chg_pct": 0.81,
       "history": [
-        81327,
         80817,
         80865,
         80740,
@@ -589,16 +588,16 @@
         77452,
         77577,
         77543,
-        77627
+        77627,
+        77872
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2265.59,
-      "chg_pct": 1.0,
+      "last": 2269.12,
+      "chg_pct": 1.28,
       "history": [
-        2395.87,
         2373.52,
         2380.28,
         2377.34,
@@ -637,16 +636,16 @@
         2250.49,
         2254.06,
         2258.54,
-        2265.59
+        2265.59,
+        2269.12
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 95.73,
-      "chg_pct": -0.85,
+      "last": 95.49,
+      "chg_pct": -0.01,
       "history": [
-        103.52,
         102.38,
         102.53,
         102.14,
@@ -685,7 +684,8 @@
         95.74,
         95.96,
         95.84,
-        95.73
+        95.73,
+        95.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 77621,
-    "high_24h": 77657,
-    "low_24h": 77051,
-    "chg_pct": 0.26
+    "last": 77872,
+    "high_24h": 77933,
+    "low_24h": 77271,
+    "chg_pct": 0.81
   },
   "macro": {
     "10Y": 4.93,
