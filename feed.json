@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T09:59:22Z",
+  "generated_at": "2026-11-03T22:34:56Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-03T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-04T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 76956,
-      "chg_pct": -1.37,
+      "last": 77710,
+      "chg_pct": 1.29,
       "history": [
-        80722,
         80443,
         80468,
         80525,
@@ -589,16 +588,16 @@
         78068,
         76814,
         76876,
-        76956
+        76956,
+        77710
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2265.63,
-      "chg_pct": -1.05,
+      "last": 2286.68,
+      "chg_pct": 1.74,
       "history": [
-        2354.99,
         2342.29,
         2335.9,
         2342.69,
@@ -637,16 +636,16 @@
         2290.3,
         2248.23,
         2253.86,
-        2265.63
+        2265.63,
+        2286.68
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 92.26,
-      "chg_pct": -2.18,
+      "last": 93.28,
+      "chg_pct": 1.78,
       "history": [
-        102.2,
         101.46,
         101.1,
         101.43,
@@ -685,7 +684,8 @@
         94.46,
         91.57,
         92.07,
-        92.26
+        92.26,
+        93.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Index Insights: October 2026",
+      "summary": "U.S. equities pulled back in October as a month-end selloff erased early gains and mega-cap technology gave back its recent lead. The S&P 500 Index (SPX) fell 0.9% to 7,580.07, up 10.7% year-to-date after touching highs near 7,819 on Octobe",
+      "url": "https://www.cboe.com/insights/posts/index-insights-october-2026/",
+      "ts": "2026-11-03T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+      "summary": "A group backed by Citadel Securities and other firms sued the U.S. derivatives regulator for opening a path for perps that it argued belong in the SEC's hands.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version",
+      "ts": "2026-11-03T22:14:44Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Week of 11/2/2026: Tech Rout, Muted Vol: Bullish Positioning Unwinds",
       "summary": "While equities sold off last week on disappointing Tech earnings, implied vols were fairly muted across asset classes. Learn more in this week's Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-11-2-2026-tech-rout-muted-vol-bullish-positioning-unwinds/",
@@ -941,52 +955,38 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Live news: Bitcoin faces fifth weekly loss as midterm elections weigh on markets",
-      "summary": "A fifth straight weekly decline would mark bitcoin\u2019s joint third-longest losing streak, as oil rebounds and Apple\u2019s margin warning adds to investor caution ahead of the U.S. midterms.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets",
-      "ts": "2026-11-03T09:50:16Z"
+      "title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
+      "summary": "The Tron founder says World Liberty failed to disclose its UAE ties until months into his lawsuit over $45 million in WLFI tokens.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties",
+      "ts": "2026-11-03T16:55:10Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Selloff Wipes Out $1 Trillion in Value J",
+      "title": "Nasdaq and S&P 500 Index Lose Momentum, Pull Down Market",
+      "summary": "Another day, another focus on technology and semiconductor companies that investors still don\u2019t seem to fully embrace. The market initially regained some footing after Friday\u2019s selloff, but lost momentum as the clock ticked down.",
+      "url": "https://www.cboe.com/insights/posts/nasdaq-and-s-p-500-index-lose-momentum-pull-down-market/",
+      "ts": "2026-11-02T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "South Korea's president says country needs a \u2018cybersecurity czar\u2019 following $6.3 billion Binance hack",
+      "summary": "Lee Jae Myung said he wants a government-wide agency to tackle cyberattacks as AI raises security concerns across financial institutions and critical infrastructure.",
+      "url": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack",
+      "ts": "2026-11-03T16:49:56Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Tech Selloff Wipes Out $1 Trillion in Value",
       "summary": "What a day, what a week! The market has been wrestling for months with the appeal of the potential productivity of artificial intelligence (AI) versus the economics of the billions of dollars invested to get there.",
-      "url": "https://www.cboe.com/insights/posts/tech-selloff-wipes-out-1-trillion-in-value-j/",
+      "url": "https://www.cboe.com/insights/posts/tech-selloff-wipes-out-1-trillion-in-value/",
       "ts": "2026-10-30T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "North Korea denies role in $6.4 billion Binance hack after FBI points to TraderTraitor",
-      "summary": "The high-profile denial follows FBI alerts identifying North Korean-controlled wallet addresses tied to the largest cryptocurrency exploit in history.",
-      "url": "https://www.coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor",
-      "ts": "2026-11-03T09:40:32Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack",
-      "summary": "Partners like Tether, Circle, and Chainalysis helped freeze $11M of the stolen assets.",
-      "url": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack",
-      "ts": "2026-11-03T08:56:48Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin\u2019s latest chart signal looks a lot like the ones before its big crashes",
-      "summary": "The Guppy Multiple Moving Average bands signal a bearish momentum, even as seasonality and post-midterm history lean bullish.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-s-price-chart-is-flashing-a-red-signal",
-      "ts": "2026-11-03T08:50:56Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Binance has spent half its SAFU bitcoin, about $580 million worth, data shows",
-      "summary": "The user protection fund now sits below the $800 million level that Binance\u2019s own rules say triggers a top-up, and the exchange hasn\u2019t said when it will refill it.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/binance-has-spent-half-its-safu-bitcoin-about-usd580-million-worth-data-shows",
-      "ts": "2026-11-03T05:36:56Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin miner Cipher posts $31 million profit as AI pivot begins",
-      "summary": "The company's revenue dropped 63% in the third quarter, while a $127 million accounting gain helped turn an operating loss into a reported profit.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-miner-cipher-posts-usd31-million-profit-as-ai-pivot-begins",
-      "ts": "2026-11-03T05:29:48Z"
+      "title": "Amazon, Tesla and SpaceX join OKX\u2013ICE tokenized stock objections as deadline looms",
+      "summary": "Objections have reached 56 companies, with nearly 80% of the venture\u2019s initial stock selection opting out.",
+      "url": "https://www.coindesk.com/business/2026/11/03/amazon-tesla-and-spacex-join-okx-ice-tokenized-stock-objections-as-deadline-looms",
+      "ts": "2026-11-03T16:17:51Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 77629,
-    "high_24h": 77708,
+    "last": 77710,
+    "high_24h": 77966,
     "low_24h": 76303,
-    "chg_pct": 0.89
+    "chg_pct": 1.29
   },
   "macro": {
-    "10Y": 4.96,
-    "DXY": 101.8,
-    "WTI": 95.89,
-    "VIX": 20.73,
-    "asof": "2026-11-03T09:59:22Z"
+    "10Y": 4.95,
+    "DXY": 101.87,
+    "WTI": 96.76,
+    "VIX": 20.83,
+    "asof": "2026-11-03T22:34:56Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
