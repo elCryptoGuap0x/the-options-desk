@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-03T02:27:38Z",
+  "generated_at": "2026-11-03T09:59:22Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-03T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 76876,
-      "chg_pct": -1.91,
+      "last": 76956,
+      "chg_pct": -1.37,
       "history": [
-        80487,
         80722,
         80443,
         80468,
@@ -589,16 +588,16 @@
         78418,
         78068,
         76814,
-        76876
+        76876,
+        76956
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2253.86,
-      "chg_pct": -1.63,
+      "last": 2265.63,
+      "chg_pct": -1.05,
       "history": [
-        2341.06,
         2354.99,
         2342.29,
         2335.9,
@@ -637,16 +636,16 @@
         2292.94,
         2290.3,
         2248.23,
-        2253.86
+        2253.86,
+        2265.63
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 92.07,
-      "chg_pct": -2.99,
+      "last": 92.26,
+      "chg_pct": -2.18,
       "history": [
-        101.48,
         102.2,
         101.46,
         101.1,
@@ -685,7 +684,8 @@
         95.01,
         94.46,
         91.57,
-        92.07
+        92.07,
+        92.26
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,20 +934,6 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Nasdaq and S&P 500 Index Lose Momentum, Pull Down Market",
-      "summary": "Another day, another focus on technology and semiconductor companies that investors still don\u2019t seem to fully embrace. The market initially regained some footing after Friday\u2019s selloff, but lost momentum as the clock ticked down.",
-      "url": "https://www.cboe.com/insights/posts/nasdaq-and-s-p-500-index-lose-momentum-pull-down-market/",
-      "ts": "2026-11-02T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Big crypto wants the one thing it can\u2019t buy: your vote",
-      "summary": "Our loyalty has been to the technology. This election, the trap is to let the biggest intermediaries claim it for themselves, argues Berkeley Law lecturer Hermine Wong.",
-      "url": "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
-      "ts": "2026-11-02T21:38:53Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "Week of 11/2/2026: Tech Rout, Muted Vol: Bullish Positioning Unwinds",
       "summary": "While equities sold off last week on disappointing Tech earnings, implied vols were fairly muted across asset classes. Learn more in this week's Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-11-2-2026-tech-rout-muted-vol-bullish-positioning-unwinds/",
@@ -955,38 +941,52 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin traders eye post-election rally as exchange outflows point to supply squeeze",
-      "summary": "Bulls are watching short positions, exchange withdrawals and key price levels for signs of a rebound after the midterms.",
-      "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze",
-      "ts": "2026-11-02T18:13:57Z"
+      "title": "Live news: Bitcoin faces fifth weekly loss as midterm elections weigh on markets",
+      "summary": "A fifth straight weekly decline would mark bitcoin\u2019s joint third-longest losing streak, as oil rebounds and Apple\u2019s margin warning adds to investor caution ahead of the U.S. midterms.",
+      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets",
+      "ts": "2026-11-03T09:50:16Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Selloff Wipes Out $1 Trillion in Value",
+      "title": "Tech Selloff Wipes Out $1 Trillion in Value J",
       "summary": "What a day, what a week! The market has been wrestling for months with the appeal of the potential productivity of artificial intelligence (AI) versus the economics of the billions of dollars invested to get there.",
-      "url": "https://www.cboe.com/insights/posts/tech-selloff-wipes-out-1-trillion-in-value/",
+      "url": "https://www.cboe.com/insights/posts/tech-selloff-wipes-out-1-trillion-in-value-j/",
       "ts": "2026-10-30T04:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "EU entity suspected of losing $106 million from crypto exchange accounts, ZachXBT says",
-      "summary": "The unidentified attacker moved funds through ether, instant exchanges and Monero, but the victim and affected exchanges remain unknown.",
-      "url": "https://www.coindesk.com/tech/2026/11/02/eu-entity-suspected-of-losing-usd106-million-from-crypto-exchange-accounts-zachxbt-says",
-      "ts": "2026-11-02T17:21:04Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Governor JB Pritzker Rings the Opening Bell at Cboe",
-      "summary": "Illinois Governor JB Pritzker joined Cboe to ring the Opening Bell, recognizing Chicago\u2019s leadership as a global center for financial markets and innovation. Governor Pritzker was joined on stage by senior executives from Cboe, XFA, Optiver",
-      "url": "https://www.cboe.com/insights/posts/governor-jb-pritzker-rings-the-opening-bell-at-cboe/",
-      "ts": "2026-10-29T04:00:00Z"
+      "title": "North Korea denies role in $6.4 billion Binance hack after FBI points to TraderTraitor",
+      "summary": "The high-profile denial follows FBI alerts identifying North Korean-controlled wallet addresses tied to the largest cryptocurrency exploit in history.",
+      "url": "https://www.coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor",
+      "ts": "2026-11-03T09:40:32Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "NYSE tokenized stock plans take shape as four more transfer agents join",
-      "summary": "Broadridge, Computershare, Equiniti and Superstate join the exchange's planned blockchain market, bringing shareholder records and voting services onchain.",
-      "url": "https://www.coindesk.com/business/2026/11/02/nyse-taps-wall-street-giant-broadridge-to-bring-shareholder-voting-onto-blockchain-rails",
-      "ts": "2026-11-02T16:41:46Z"
+      "title": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack",
+      "summary": "Partners like Tether, Circle, and Chainalysis helped freeze $11M of the stolen assets.",
+      "url": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack",
+      "ts": "2026-11-03T08:56:48Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin\u2019s latest chart signal looks a lot like the ones before its big crashes",
+      "summary": "The Guppy Multiple Moving Average bands signal a bearish momentum, even as seasonality and post-midterm history lean bullish.",
+      "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-s-price-chart-is-flashing-a-red-signal",
+      "ts": "2026-11-03T08:50:56Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Binance has spent half its SAFU bitcoin, about $580 million worth, data shows",
+      "summary": "The user protection fund now sits below the $800 million level that Binance\u2019s own rules say triggers a top-up, and the exchange hasn\u2019t said when it will refill it.",
+      "url": "https://www.coindesk.com/markets/2026/11/03/binance-has-spent-half-its-safu-bitcoin-about-usd580-million-worth-data-shows",
+      "ts": "2026-11-03T05:36:56Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin miner Cipher posts $31 million profit as AI pivot begins",
+      "summary": "The company's revenue dropped 63% in the third quarter, while a $127 million accounting gain helped turn an operating loss into a reported profit.",
+      "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-miner-cipher-posts-usd31-million-profit-as-ai-pivot-begins",
+      "ts": "2026-11-03T05:29:48Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 76867,
-    "high_24h": 78728,
-    "low_24h": 76592,
-    "chg_pct": -1.91
+    "last": 76953,
+    "high_24h": 78120,
+    "low_24h": 76303,
+    "chg_pct": -1.37
   },
   "macro": {
     "10Y": 4.89,
-    "DXY": 101.85,
-    "WTI": 96.52,
-    "VIX": 21.15,
-    "asof": "2026-11-03T02:27:38Z"
+    "DXY": 101.78,
+    "WTI": 97.71,
+    "VIX": 21.45,
+    "asof": "2026-11-03T09:59:22Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
