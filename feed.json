@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T22:34:56Z",
+  "generated_at": "2026-11-04T02:41:01Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 77710,
-      "chg_pct": 1.29,
+      "last": 76619,
+      "chg_pct": -0.29,
       "history": [
-        80443,
         80468,
         80525,
         80581,
@@ -589,16 +588,16 @@
         76814,
         76876,
         76956,
-        77710
+        77710,
+        76619
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2286.68,
-      "chg_pct": 1.74,
+      "last": 2251.86,
+      "chg_pct": -0.22,
       "history": [
-        2342.29,
         2335.9,
         2342.69,
         2352.19,
@@ -637,16 +636,16 @@
         2248.23,
         2253.86,
         2265.63,
-        2286.68
+        2286.68,
+        2251.86
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 93.28,
-      "chg_pct": 1.78,
+      "last": 91.34,
+      "chg_pct": -0.82,
       "history": [
-        101.46,
         101.1,
         101.43,
         101.7,
@@ -685,7 +684,8 @@
         91.57,
         92.07,
         92.26,
-        93.28
+        93.28,
+        91.34
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
-      "summary": "A group backed by Citadel Securities and other firms sued the U.S. derivatives regulator for opening a path for perps that it argued belong in the SEC's hands.",
-      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version",
-      "ts": "2026-11-03T22:14:44Z"
+      "title": "Live updates: Crypto's big election gamble faces voters as Democrats gain ground",
+      "summary": "Voters are choosing who will represent them in the House, Senate and state-wide seats.",
+      "url": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog",
+      "ts": "2026-11-04T00:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
-      "summary": "The Tron founder says World Liberty failed to disclose its UAE ties until months into his lawsuit over $45 million in WLFI tokens.",
-      "url": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties",
-      "ts": "2026-11-03T16:55:10Z"
+      "title": "What voters said about their views on crypto",
+      "summary": "A CoinDesk-commissioned poll from April sheds light on how voters \u2014 who aren't necessarily part of the crypto sector \u2014 view this industry.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/what-voters-said-about-their-views-on-crypto",
+      "ts": "2026-11-03T23:19:44Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "South Korea's president says country needs a \u2018cybersecurity czar\u2019 following $6.3 billion Binance hack",
-      "summary": "Lee Jae Myung said he wants a government-wide agency to tackle cyberattacks as AI raises security concerns across financial institutions and critical infrastructure.",
-      "url": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack",
-      "ts": "2026-11-03T16:49:56Z"
+      "title": "What happens if North Korea steals Wall Street's tokenized assets next",
+      "summary": "The $6.3 billion Binance hack showed how quickly cryptocurrencies can disappear on blockchain rails. Tokenized securities may offer better recourse than crypto after a theft, but the markets around them can still break down when stress hits",
+      "url": "https://www.coindesk.com/business/2026/11/03/what-happens-if-north-korea-steals-wall-street-s-tokenized-assets-next",
+      "ts": "2026-11-03T23:00:07Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Amazon, Tesla and SpaceX join OKX\u2013ICE tokenized stock objections as deadline looms",
-      "summary": "Objections have reached 56 companies, with nearly 80% of the venture\u2019s initial stock selection opting out.",
-      "url": "https://www.coindesk.com/business/2026/11/03/amazon-tesla-and-spacex-join-okx-ice-tokenized-stock-objections-as-deadline-looms",
-      "ts": "2026-11-03T16:17:51Z"
+      "title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+      "summary": "A group backed by Citadel Securities and other firms sued the U.S. derivatives regulator for opening a path for perps that it argued belong in the SEC's hands.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version",
+      "ts": "2026-11-03T22:14:44Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 77710,
+    "last": 76640,
     "high_24h": 77966,
     "low_24h": 76303,
-    "chg_pct": 1.29
+    "chg_pct": -0.29
   },
   "macro": {
     "10Y": 4.95,
-    "DXY": 101.87,
-    "WTI": 96.76,
+    "DXY": 101.36,
+    "WTI": 95.31,
     "VIX": 20.83,
-    "asof": "2026-11-03T22:34:56Z"
+    "asof": "2026-11-04T02:41:01Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
