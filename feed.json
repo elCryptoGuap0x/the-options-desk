@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T03:42:28Z",
+  "generated_at": "2026-11-05T11:38:17Z",
   "session": {
-    "day_label": "WED",
+    "day_label": "THU",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-05T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80664,
-      "chg_pct": 5.93,
+      "last": 80296,
+      "chg_pct": 2.17,
       "history": [
-        80581,
         80264,
         80063,
         79985,
@@ -589,16 +588,16 @@
         77710,
         76619,
         80436,
-        80664
+        80664,
+        80296
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2430.21,
-      "chg_pct": 8.51,
+      "last": 2418.07,
+      "chg_pct": 3.68,
       "history": [
-        2352.19,
         2332.96,
         2329.47,
         2317.01,
@@ -637,16 +636,16 @@
         2286.68,
         2251.86,
         2423.33,
-        2430.21
+        2430.21,
+        2418.07
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 96.86,
-      "chg_pct": 6.87,
+      "last": 96.49,
+      "chg_pct": 2.75,
       "history": [
-        101.7,
         101.18,
         101.4,
         101.15,
@@ -685,7 +684,8 @@
         93.28,
         91.34,
         95.47,
-        96.86
+        96.86,
+        96.49
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Tokenization and stablecoins may weather Democrats' sweep as broader crypto rules face uncertainty",
-      "summary": "Wall Street's push to bring finance onto blockchain rails may continue under existing laws, though the SEC and CFTC face tougher oversight and questions over how long their rules will last, experts said.",
-      "url": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty",
-      "ts": "2026-11-04T22:55:00Z"
+      "title": "Bitcoin holds above $80,000 after Wednesday\u2019s jump as injective rallies on staked ETF listing",
+      "summary": "Bitcoin slipped 0.2% to around $80,250 since midnight UTC, holding above $80,000 after Wednesday\u2019s jump, as spot ETFs ended a three-day outflow streak.",
+      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing",
+      "ts": "2026-11-05T11:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto's Washington hopes fade, but Grayscale and BlackRock see growth ahead",
-      "summary": "The asset manager says global demand and institutional adoption will sustain the industry despite a political setback, while BlackRock sees little impact on its crypto business.",
-      "url": "https://www.coindesk.com/business/2026/11/04/crypto-s-washington-hopes-fade-but-grayscale-and-blackrock-see-growth-ahead",
-      "ts": "2026-11-04T22:51:42Z"
+      "title": "Live updates: Bitcoin steady around $80,000 as markets rally after Democratic sweep",
+      "summary": "Ether jumped 4% and crypto ETFs drew fresh money after Wall Street turned higher and Brent crude fell nearly 9%.",
+      "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep",
+      "ts": "2026-11-05T10:57:11Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto's powerhouse super PAC suffers costly setback as Democrats sweep Congress",
-      "summary": "The industry's primary campaign arm had cultivated a reputation as an unstoppable force, but more than a third of its spending failed to hit the mark, especially in Ohio.",
-      "url": "https://www.coindesk.com/news-analysis/2026/11/04/crypto-s-powerhouse-super-pac-fairshake-found-its-kryptonite",
-      "ts": "2026-11-04T20:29:12Z"
+      "title": "Mercado Bitcoin hack continued hours after exchange said attack was contained, report finds",
+      "summary": "The same attacker took about $391,000, mostly from wallets Bitquery ties to BitMart, whose founder confirmed a Nov. 2 hack and suspects a link.",
+      "url": "https://www.coindesk.com/business/2026/11/05/mercado-bitcoin-hack-continued-hours-after-exchange-said-attack-was-contained-report-finds",
+      "ts": "2026-11-05T10:44:54Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. Democratic sweep could be the final nail in the \u2018Clarity Act\u2019s coffin\u2019",
-      "summary": "Industry experts warn the Clarity Act is likely dead in its current form as incoming Democratic majorities eye tighter scrutiny of crypto markets and tokenized stocks.",
-      "url": "https://www.coindesk.com/policy/2026/11/04/u-s-democratic-sweep-could-be-the-final-nail-in-the-clarity-act-s-coffin",
-      "ts": "2026-11-04T16:11:29Z"
+      "title": "Bitcoin miner Riot could pay Anthropic 12% interest under $28 billion AI deal",
+      "summary": "Riot has sold most of its bitcoin to fund its move into data centers. Its latest agreement gives Anthropic a way to finance part of the build and collect interest through rent deductions.",
+      "url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-miner-riot-could-pay-anthropic-12-interest-under-usd28-billion-ai-deal",
+      "ts": "2026-11-05T09:36:32Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 80665,
+    "last": 80296,
     "high_24h": 81004,
-    "low_24h": 76357,
-    "chg_pct": 5.98
+    "low_24h": 77949,
+    "chg_pct": 2.17
   },
   "macro": {
     "10Y": 4.89,
-    "DXY": 101.26,
-    "WTI": 86.89,
-    "VIX": 16.61,
-    "asof": "2026-11-05T03:42:28Z"
+    "DXY": 101.56,
+    "WTI": 88.95,
+    "VIX": 16.79,
+    "asof": "2026-11-05T11:38:17Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
