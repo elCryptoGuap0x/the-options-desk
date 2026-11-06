@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-06T07:00:00Z",
+  "generated_at": "2026-11-06T20:50:04Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-06T14:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-11-09T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 75636,
-      "chg_pct": -6.14,
+      "last": 75828,
+      "chg_pct": -0.43,
       "history": [
-        79985,
         80340,
         80019,
         80123,
@@ -589,16 +588,16 @@
         80664,
         80296,
         76085,
-        75636
+        75636,
+        75828
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2226.93,
-      "chg_pct": -8.28,
+      "last": 2231.23,
+      "chg_pct": -0.75,
       "history": [
-        2317.01,
         2328.0,
         2313.45,
         2324.25,
@@ -637,16 +636,16 @@
         2430.21,
         2418.07,
         2239.1,
-        2226.93
+        2226.93,
+        2231.23
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 89.59,
-      "chg_pct": -6.81,
+      "last": 89.89,
+      "chg_pct": -0.2,
       "history": [
-        101.15,
         101.35,
         100.61,
         100.75,
@@ -685,7 +684,8 @@
         96.86,
         96.49,
         89.5,
-        89.59
+        89.59,
+        89.89
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Zcash\u2019s landmark NU7 upgrade goes live, speeding up private payments",
-      "summary": "NU7 cuts the target time between blocks to 25 seconds, reduces the work wallets must do to find private payments and sets aside fees for future miners.",
-      "url": "https://www.coindesk.com/tech/2026/11/06/zcash-s-landmark-nu7-upgrade-goes-live-speeding-up-private-payments",
-      "ts": "2026-11-06T05:14:48Z"
+      "title": "Apple, Meta reject OKX\u2013ICE tokenized stock plans, leaving crypto firms as the ones to watch",
+      "summary": "Strategy, Coinbase, Circle and Robinhood are among six companies from the venture\u2019s initial selection with no disclosed objection, after 90% of issuers opted out.",
+      "url": "https://www.coindesk.com/policy/2026/11/06/apple-meta-reject-okx-ice-tokenized-stock-plans-leaving-crypto-firms-as-the-ones-to-watch",
+      "ts": "2026-11-06T20:09:18Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Hyperliquid treasury firm seeking U.S. regulatory nod as a domestic futures platform",
-      "summary": "The company said it's trying to establish a U.S. \"futures commission merchant\" with full compliance for activity with U.S. clients, though the timing is uncertain.",
-      "url": "https://www.coindesk.com/policy/2026/11/05/hyperliquid-treasury-firm-seeking-u-s-regulatory-nod-as-a-domestic-futures-platform",
-      "ts": "2026-11-06T02:24:23Z"
+      "title": "U.S. prediction markets regulator issues demand that clashes directly with courts",
+      "summary": "The Commodity Futures Trading Commission said regulated exchanges can't cut off customers state-by-state, but firms like Kalshi are under court orders to do so.",
+      "url": "https://www.coindesk.com/policy/2026/11/06/u-s-prediction-markets-regulator-issues-demand-that-clashes-directly-with-courts",
+      "ts": "2026-11-06T17:42:28Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin developer proposes \u2018landmines\u2019 to make quantum thieves lose their own BTC",
-      "summary": "Anyone trying to move vulnerable bitcoin would have to put up matching collateral, giving prepared owners a chance to take both.",
-      "url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc",
-      "ts": "2026-11-06T01:30:00Z"
+      "title": "The crypto industry has found new ways to grow. Making money from them is another story",
+      "summary": "Coinbase, Robinhood and Circle are expanding into stablecoins, payments and prediction markets, but their latest earnings show how hard it is to escape crypto's boom-and-bust cycles.",
+      "url": "https://www.coindesk.com/markets/2026/11/05/the-crypto-industry-has-found-new-ways-to-grow-making-money-from-them-is-another-story",
+      "ts": "2026-11-06T15:26:38Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
-      "summary": "The new DOJ task force will aid the recently designated U.S. \"SI Force\" by warding off bad actors backed by other nations, criminal groups or corporate fraud.",
-      "url": "https://www.coindesk.com/policy/2026/11/05/u-s-justice-department-assembles-force-to-shield-against-foreign-ai-threats",
-      "ts": "2026-11-05T18:59:45Z"
+      "title": "Thailand moves to block Bitget as crypto exchange's local acquisition faces uncertainty",
+      "summary": "Thailand\u2019s SEC filed a criminal complaint against Bitget\u2019s operator, alleging it ran an unlicensed crypto exchange for Thai users from 2022 to 2025.",
+      "url": "https://www.coindesk.com/business/2026/11/05/thailand-moves-to-block-bitget-as-crypto-exchange-s-local-acquisition-faces-uncertainty",
+      "ts": "2026-11-06T14:33:49Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 75703,
-    "high_24h": 78172,
-    "low_24h": 75230,
-    "chg_pct": -3.46
+    "last": 75828,
+    "high_24h": 76302,
+    "low_24h": 74921,
+    "chg_pct": -0.48
   },
   "macro": {
-    "10Y": 4.88,
-    "DXY": 102.24,
-    "WTI": 90.52,
-    "VIX": 24.81,
-    "asof": "2026-11-06T07:00:00Z"
+    "10Y": 4.86,
+    "DXY": 102.31,
+    "WTI": 90.73,
+    "VIX": 24.26,
+    "asof": "2026-11-06T20:50:04Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
