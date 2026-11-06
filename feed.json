@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-06T00:09:03Z",
+  "generated_at": "2026-11-06T07:00:00Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-06T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 76085,
-      "chg_pct": -5.51,
+      "last": 75636,
+      "chg_pct": -6.14,
       "history": [
-        80063,
         79985,
         80340,
         80019,
@@ -589,16 +588,16 @@
         80436,
         80664,
         80296,
-        76085
+        76085,
+        75636
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2239.1,
-      "chg_pct": -7.45,
+      "last": 2226.93,
+      "chg_pct": -8.28,
       "history": [
-        2329.47,
         2317.01,
         2328.0,
         2313.45,
@@ -637,16 +636,16 @@
         2423.33,
         2430.21,
         2418.07,
-        2239.1
+        2239.1,
+        2226.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 89.5,
-      "chg_pct": -6.15,
+      "last": 89.59,
+      "chg_pct": -6.81,
       "history": [
-        101.4,
         101.15,
         101.35,
         100.61,
@@ -685,7 +684,8 @@
         95.47,
         96.86,
         96.49,
-        89.5
+        89.5,
+        89.59
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
-      "summary": "The new DOJ task force will aid the recently designated U.S. \"SI Force\" by warding off bad actors backed by other nations, criminal groups or corporate fraud.",
-      "url": "https://www.coindesk.com/policy/2026/11/05/u-s-justice-department-assembles-force-to-shield-against-foreign-ai-threats",
-      "ts": "2026-11-05T18:59:45Z"
+      "title": "Zcash\u2019s landmark NU7 upgrade goes live, speeding up private payments",
+      "summary": "NU7 cuts the target time between blocks to 25 seconds, reduces the work wallets must do to find private payments and sets aside fees for future miners.",
+      "url": "https://www.coindesk.com/tech/2026/11/06/zcash-s-landmark-nu7-upgrade-goes-live-speeding-up-private-payments",
+      "ts": "2026-11-06T05:14:48Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcion tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
-      "summary": "The post-election rally quickly reversed as AI stocks plunged, but cryptocurrencies held up relatively better despite a $1 billion liquidation wave.",
-      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full",
-      "ts": "2026-11-05T18:48:40Z"
+      "title": "Hyperliquid treasury firm seeking U.S. regulatory nod as a domestic futures platform",
+      "summary": "The company said it's trying to establish a U.S. \"futures commission merchant\" with full compliance for activity with U.S. clients, though the timing is uncertain.",
+      "url": "https://www.coindesk.com/policy/2026/11/05/hyperliquid-treasury-firm-seeking-u-s-regulatory-nod-as-a-domestic-futures-platform",
+      "ts": "2026-11-06T02:24:23Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist?",
-      "summary": "The hacking group has been behind some of the crypto industry's most recent high-profile thefts.",
-      "url": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist",
-      "ts": "2026-11-05T16:58:21Z"
+      "title": "Bitcoin developer proposes \u2018landmines\u2019 to make quantum thieves lose their own BTC",
+      "summary": "Anyone trying to move vulnerable bitcoin would have to put up matching collateral, giving prepared owners a chance to take both.",
+      "url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc",
+      "ts": "2026-11-06T01:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
-      "summary": "Soter also received backing of 500 BTC and 2000 ETH, worth another $43 million at current prices.",
-      "url": "https://www.coindesk.com/business/2026/11/05/soter-raises-usd23-5m-plus-btc-and-eth-as-banks-demand-theft-protection",
-      "ts": "2026-11-05T16:49:08Z"
+      "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
+      "summary": "The new DOJ task force will aid the recently designated U.S. \"SI Force\" by warding off bad actors backed by other nations, criminal groups or corporate fraud.",
+      "url": "https://www.coindesk.com/policy/2026/11/05/u-s-justice-department-assembles-force-to-shield-against-foreign-ai-threats",
+      "ts": "2026-11-05T18:59:45Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 76102,
-    "high_24h": 80828,
+    "last": 75654,
+    "high_24h": 80721,
     "low_24h": 75230,
-    "chg_pct": -5.46
+    "chg_pct": -6.08
   },
   "macro": {
     "10Y": 4.84,
-    "DXY": 101.57,
-    "WTI": 91.28,
+    "DXY": 101.89,
+    "WTI": 91.65,
     "VIX": 28.18,
-    "asof": "2026-11-06T00:09:03Z"
+    "asof": "2026-11-06T07:00:00Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
