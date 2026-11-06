@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-05T11:38:17Z",
+  "generated_at": "2026-11-06T00:09:03Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-05T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-06T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 80296,
-      "chg_pct": 2.17,
+      "last": 76085,
+      "chg_pct": -5.51,
       "history": [
-        80264,
         80063,
         79985,
         80340,
@@ -589,16 +588,16 @@
         76619,
         80436,
         80664,
-        80296
+        80296,
+        76085
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2418.07,
-      "chg_pct": 3.68,
+      "last": 2239.1,
+      "chg_pct": -7.45,
       "history": [
-        2332.96,
         2329.47,
         2317.01,
         2328.0,
@@ -637,16 +636,16 @@
         2251.86,
         2423.33,
         2430.21,
-        2418.07
+        2418.07,
+        2239.1
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 96.49,
-      "chg_pct": 2.75,
+      "last": 89.5,
+      "chg_pct": -6.15,
       "history": [
-        101.18,
         101.4,
         101.15,
         101.35,
@@ -685,7 +684,8 @@
         91.34,
         95.47,
         96.86,
-        96.49
+        96.49,
+        89.5
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: Cboe FX October Volume Highlights",
+      "summary": "In October 2026, Cboe FX Spot Average Daily Volume (ADV) reached $56.1billion, an 8.4% increase from October 2025's ADV of $51.8 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-october-volume-highlights/",
+      "ts": "2026-11-05T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
+      "summary": "The new DOJ task force will aid the recently designated U.S. \"SI Force\" by warding off bad actors backed by other nations, criminal groups or corporate fraud.",
+      "url": "https://www.coindesk.com/policy/2026/11/05/u-s-justice-department-assembles-force-to-shield-against-foreign-ai-threats",
+      "ts": "2026-11-05T18:59:45Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Cboe FLEX Options Hit Record Volume in Q3 2026",
       "summary": "FLexible EXchange\u00ae (FLEX\u00ae) options were created more than 30 years ago as a customizable portfolio management tool allowing users to specify key contract terms, including exercise prices, styles (American or European style) and expiration d",
       "url": "https://www.cboe.com/insights/posts/cboe-flex-options-hit-record-volume-in-q-3-2026/",
@@ -941,24 +955,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin holds above $80,000 after Wednesday\u2019s jump as injective rallies on staked ETF listing",
-      "summary": "Bitcoin slipped 0.2% to around $80,250 since midnight UTC, holding above $80,000 after Wednesday\u2019s jump, as spot ETFs ended a three-day outflow streak.",
-      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing",
-      "ts": "2026-11-05T11:30:00Z"
+      "title": "Bitcion tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
+      "summary": "The post-election rally quickly reversed as AI stocks plunged, but cryptocurrencies held up relatively better despite a $1 billion liquidation wave.",
+      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full",
+      "ts": "2026-11-05T18:48:40Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "Index Insights: October 2026",
-      "summary": "U.S. equities pulled back in October as a month-end selloff erased early gains and mega-cap technology gave back its recent lead. The S&P 500 Index (SPX) fell 0.9% to 7,580.07, up 10.7% year-to-date after touching highs near 7,819 on Octobe",
-      "url": "https://www.cboe.com/insights/posts/index-insights-october-2026/",
-      "ts": "2026-11-03T05:00:00Z"
+      "title": "Blue Wave Paints the Market Green",
+      "summary": "Wow \u2013 what a day! The market reaction to the election results was fast and furious, with trading volume markedly higher as the so-called midterm \u201cblue wave\u201d provided what some would call a surprising rally.",
+      "url": "https://www.cboe.com/insights/posts/blue-wave-paints-the-market-green/",
+      "ts": "2026-11-04T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin steady around $80,000 as markets rally after Democratic sweep",
-      "summary": "Ether jumped 4% and crypto ETFs drew fresh money after Wall Street turned higher and Brent crude fell nearly 9%.",
-      "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep",
-      "ts": "2026-11-05T10:57:11Z"
+      "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist?",
+      "summary": "The hacking group has been behind some of the crypto industry's most recent high-profile thefts.",
+      "url": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist",
+      "ts": "2026-11-05T16:58:21Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Mercado Bitcoin hack continued hours after exchange said attack was contained, report finds",
-      "summary": "The same attacker took about $391,000, mostly from wallets Bitquery ties to BitMart, whose founder confirmed a Nov. 2 hack and suspects a link.",
-      "url": "https://www.coindesk.com/business/2026/11/05/mercado-bitcoin-hack-continued-hours-after-exchange-said-attack-was-contained-report-finds",
-      "ts": "2026-11-05T10:44:54Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Nasdaq and S&P 500 Index Lose Momentum, Pull Down Market",
-      "summary": "Another day, another focus on technology and semiconductor companies that investors still don\u2019t seem to fully embrace. The market initially regained some footing after Friday\u2019s selloff, but lost momentum as the clock ticked down.",
-      "url": "https://www.cboe.com/insights/posts/nasdaq-and-s-p-500-index-lose-momentum-pull-down-market/",
-      "ts": "2026-11-02T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin miner Riot could pay Anthropic 12% interest under $28 billion AI deal",
-      "summary": "Riot has sold most of its bitcoin to fund its move into data centers. Its latest agreement gives Anthropic a way to finance part of the build and collect interest through rent deductions.",
-      "url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-miner-riot-could-pay-anthropic-12-interest-under-usd28-billion-ai-deal",
-      "ts": "2026-11-05T09:36:32Z"
+      "title": "Standard Chartered and SBI back crypto insurer Soter as funding reaches $23.5 million",
+      "summary": "Soter also received backing of 500 BTC and 2000 ETH, worth another $43 million at current prices.",
+      "url": "https://www.coindesk.com/business/2026/11/05/soter-raises-usd23-5m-plus-btc-and-eth-as-banks-demand-theft-protection",
+      "ts": "2026-11-05T16:49:08Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 76007,
-    "high_24h": 80882,
-    "low_24h": 75573,
-    "chg_pct": -5.19
+    "last": 76102,
+    "high_24h": 80828,
+    "low_24h": 75230,
+    "chg_pct": -5.46
   },
   "macro": {
-    "10Y": 4.83,
-    "DXY": 101.53,
-    "WTI": 90.1,
-    "VIX": 26.68,
-    "asof": "2026-11-05T11:38:17Z"
+    "10Y": 4.84,
+    "DXY": 101.57,
+    "WTI": 91.28,
+    "VIX": 28.18,
+    "asof": "2026-11-06T00:09:03Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
