@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T20:50:04Z",
+  "generated_at": "2026-11-07T00:28:03Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 75828,
-      "chg_pct": -0.43,
+      "last": 75902,
+      "chg_pct": -0.24,
       "history": [
-        80340,
         80019,
         80123,
         79847,
@@ -589,16 +588,16 @@
         80296,
         76085,
         75636,
-        75828
+        75828,
+        75902
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2231.23,
-      "chg_pct": -0.75,
+      "last": 2240.27,
+      "chg_pct": 0.0,
       "history": [
-        2328.0,
         2313.45,
         2324.25,
         2310.91,
@@ -637,16 +636,16 @@
         2418.07,
         2239.1,
         2226.93,
-        2231.23
+        2231.23,
+        2240.27
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 89.89,
-      "chg_pct": -0.2,
+      "last": 90.24,
+      "chg_pct": 0.38,
       "history": [
-        101.35,
         100.61,
         100.75,
         99.95,
@@ -685,7 +684,8 @@
         96.49,
         89.5,
         89.59,
-        89.89
+        89.89,
+        90.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,10 +934,10 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX October Volume Highlights",
-      "summary": "In October 2026, Cboe FX Spot Average Daily Volume (ADV) reached $56.1billion, an 8.4% increase from October 2025's ADV of $51.8 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-october-volume-highlights/",
-      "ts": "2026-11-05T05:00:00Z"
+      "title": "Tech Stocks Rebound but Nasdaq Is Still in Correction Territory",
+      "summary": "Phew! A trading week marked by three straight sessions of whiplash and two of heightened volatility is over, ending with a technology rebound that could still be tested.",
+      "url": "https://www.cboe.com/insights/posts/tech-stocks-rebound-but-nasdaq-is-still-in-correction-territory/",
+      "ts": "2026-11-06T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Cboe FLEX Options Hit Record Volume in Q3 2026",
-      "summary": "FLexible EXchange\u00ae (FLEX\u00ae) options were created more than 30 years ago as a customizable portfolio management tool allowing users to specify key contract terms, including exercise prices, styles (American or European style) and expiration d",
-      "url": "https://www.cboe.com/insights/posts/cboe-flex-options-hit-record-volume-in-q-3-2026/",
-      "ts": "2026-11-04T05:00:00Z"
+      "title": "Market Metrics That Matter: Cboe FX October Volume Highlights",
+      "summary": "In October 2026, Cboe FX Spot Average Daily Volume (ADV) reached $56.1billion, an 8.4% increase from October 2025's ADV of $51.8 billion.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-october-volume-highlights/",
+      "ts": "2026-11-05T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Blue Wave Paints the Market Green",
-      "summary": "Wow \u2013 what a day! The market reaction to the election results was fast and furious, with trading volume markedly higher as the so-called midterm \u201cblue wave\u201d provided what some would call a surprising rally.",
-      "url": "https://www.cboe.com/insights/posts/blue-wave-paints-the-market-green/",
-      "ts": "2026-11-04T05:00:00Z"
+      "title": "Market Swims in a Sea of Red",
+      "summary": "Traders slammed stocks tied to artificial intelligence (AI) in a broad-based selloff that more than wiped out Wednesday\u2019s post-election euphoria.",
+      "url": "https://www.cboe.com/insights/posts/market-swims-in-a-sea-of-red/",
+      "ts": "2026-11-05T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Stocks Rebound to Take Center Stage \u2013 Again",
-      "summary": "Bells seem to be ringing for investors on both sides of technology and semiconductor stock trading today, as those tapping into buying opportunities lifted some stocks while those holding off appeared wary that the artificial intelligence (",
-      "url": "https://www.cboe.com/insights/posts/tech-stocks-rebound-to-take-center-stage-again/",
-      "ts": "2026-11-03T05:00:00Z"
+      "title": "Blue Wave Paints the Market Green",
+      "summary": "Wow \u2013 what a day! The market reaction to the election results was fast and furious, with trading volume markedly higher as the so-called midterm \u201cblue wave\u201d provided what some would call a surprising rally.",
+      "url": "https://www.cboe.com/insights/posts/blue-wave-paints-the-market-green/",
+      "ts": "2026-11-04T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 75828,
-    "high_24h": 76302,
+    "last": 75902,
+    "high_24h": 76280,
     "low_24h": 74921,
-    "chg_pct": -0.48
+    "chg_pct": -0.24
   },
   "macro": {
     "10Y": 4.86,
-    "DXY": 102.31,
-    "WTI": 90.73,
-    "VIX": 24.26,
-    "asof": "2026-11-06T20:50:04Z"
+    "DXY": 102.28,
+    "WTI": 90.34,
+    "VIX": 25.64,
+    "asof": "2026-11-07T00:28:03Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
