@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T19:04:25Z",
+  "generated_at": "2026-11-08T22:49:25Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 75834,
-      "chg_pct": 0.1,
+      "last": 74209,
+      "chg_pct": -1.97,
       "history": [
-        81231,
         79845,
         80107,
         79316,
@@ -589,16 +588,16 @@
         75711,
         75762,
         75825,
-        75834
+        75834,
+        74209
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2232.7,
-      "chg_pct": -0.08,
+      "last": 2118.54,
+      "chg_pct": -5.11,
       "history": [
-        2357.69,
         2306.09,
         2318.17,
         2278.3,
@@ -637,16 +636,16 @@
         2232.88,
         2233.22,
         2234.68,
-        2232.7
+        2232.7,
+        2118.54
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 89.36,
-      "chg_pct": -0.37,
+      "last": 85.73,
+      "chg_pct": -3.92,
       "history": [
-        102.32,
         99.9,
         100.06,
         97.29,
@@ -685,7 +684,8 @@
         89.34,
         88.99,
         89.04,
-        89.36
+        89.36,
+        85.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
-      "summary": "A Finnish startup has 30 bitcoin mining systems working as central heating, and at today\u2019s prices each one earns slightly more than the electricity it burns.",
-      "url": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
-      "ts": "2026-11-08T12:55:59Z"
+      "title": "What the election results mean for crypto: State of Crypto",
+      "summary": "Democrats had an astoundingly good night, smashing all expectations. Is that actually bad news for the industry?",
+      "url": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
+      "ts": "2026-11-08T19:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
-      "summary": "Affected accounts are reportedly set to close on Dec. 31. Users in Spain, France, and Poland say they've received similar notices.",
-      "url": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
-      "ts": "2026-11-07T19:13:16Z"
+      "title": "Stablecoin growth has stalled. The payments boom hasn't",
+      "summary": "Stablecoin supply has barely grown this year, even as payments using the tokens surge. Circle's latest earnings offer another example of the divergence between dollars outstanding and activity on blockchain networks.",
+      "url": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+      "ts": "2026-11-08T19:16:42Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. Treasury moves to cut off crypto exchange MEXC over $16 billion in alleged illicit flows",
-      "summary": "Treasury billed the move as part of its campaign against Iran, but the order rests on MEXC's alleged role in Russian illicit finance.",
-      "url": "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
-      "ts": "2026-11-07T17:36:46Z"
+      "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
+      "summary": "A Finnish startup has 30 bitcoin mining systems working as central heating, and at today\u2019s prices each one earns slightly more than the electricity it burns.",
+      "url": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
+      "ts": "2026-11-08T12:55:59Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Gnosis Pay breach exposes card numbers, home addresses and linked crypto wallets",
-      "summary": "One user said the exposed data tied his home address and card number to every crypto wallet linked to his account, raising the risk of targeted scams.",
-      "url": "https://www.coindesk.com/business/2026/11/07/gnosis-pay-breach-exposes-card-numbers-home-addresses-and-linked-crypto-wallets",
-      "ts": "2026-11-07T16:51:00Z"
+      "title": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
+      "summary": "Affected accounts are reportedly set to close on Dec. 31. Users in Spain, France, and Poland say they've received similar notices.",
+      "url": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
+      "ts": "2026-11-07T19:13:16Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 75836,
+    "last": 74230,
     "high_24h": 76106,
-    "low_24h": 75541,
-    "chg_pct": 0.09
+    "low_24h": 73963,
+    "chg_pct": -1.95
   },
   "macro": {
     "10Y": 4.86,
