@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-09T09:43:59Z",
+  "generated_at": "2026-11-09T20:12:24Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-09T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-10T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 74243,
-      "chg_pct": -2.14,
+      "last": 74839,
+      "chg_pct": -1.26,
       "history": [
-        79316,
         77078,
         78348,
         76509,
@@ -589,16 +588,16 @@
         75834,
         74209,
         75114,
-        74243
+        74243,
+        74839
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2107.15,
-      "chg_pct": -5.74,
+      "last": 2126.62,
+      "chg_pct": -4.45,
       "history": [
-        2278.3,
         2215.24,
         2246.82,
         2227.79,
@@ -637,16 +636,16 @@
         2232.7,
         2118.54,
         2140.71,
-        2107.15
+        2107.15,
+        2126.62
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 86.73,
-      "chg_pct": -2.78,
+      "last": 86.51,
+      "chg_pct": -3.14,
       "history": [
-        97.29,
         94.24,
         97.9,
         94.3,
@@ -685,7 +684,8 @@
         89.36,
         85.73,
         87.75,
-        86.73
+        86.73,
+        86.51
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Week of 11/9/2026: No Contagion (Yet): Equity Vol Spikes, Macro Vol Fades",
+      "summary": "Implied volatilities declined across most asset classes last week after Democrats swept Congress and US economic data came out better than expected. Learn more in this week\u2019s Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-11-9-2026-no-contagion-yet-equity-vol-spikes-macro-vol-fades/",
+      "ts": "2026-11-09T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Robinhood backs tokenization of its stock on OKX\u2013ICE platform even as most companies opt out",
+      "summary": "The brokerage firm said it would rather help build tokenized markets than sit on the sidelines, following a wave of early corporate pushback to the Intercontinental Exchange and OKX joint venture.",
+      "url": "https://www.coindesk.com/business/2026/11/09/robinhood-backs-tokenization-of-its-stock-on-okx-ice-platform-even-as-most-companies-opt-out",
+      "ts": "2026-11-09T19:36:15Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Tech Stocks Rebound but Nasdaq Is Still in Correction Territory",
       "summary": "Phew! A trading week marked by three straight sessions of whiplash and two of heightened volatility is over, ending with a technology rebound that could still be tested.",
       "url": "https://www.cboe.com/insights/posts/tech-stocks-rebound-but-nasdaq-is-still-in-correction-territory/",
@@ -941,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. inflation, corporate earnings: Crypto Week Ahead",
-      "summary": "Your look at what\u2019s coming in the week starting Nov. 9.",
-      "url": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead",
-      "ts": "2026-11-09T09:33:27Z"
+      "title": "A Bitcoin block just neared a 2015 transaction record, but paid only $180 in fees",
+      "summary": "The AntPool block came within 984 transactions of Bitcoin\u2019s 2015 record, even as fees made up less than 0.1% of the miner\u2019s payout.",
+      "url": "https://www.coindesk.com/tech/2026/11/09/a-bitcoin-block-just-neared-a-2015-transaction-record-but-paid-only-usd180-in-fees",
+      "ts": "2026-11-09T16:19:45Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "SpaceX proposes a $24 billion Texas supercomputer worth 17 times its bitcoin pile",
-      "summary": "The $24 billion project, which includes an AI supercomputer in Texas with its own gas-fired power plant, is about 17 times the value of SpaceX's bitcoin holdings.",
-      "url": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile",
-      "ts": "2026-11-09T06:54:41Z"
+      "title": "Google\u2019s AI chip push adds more pressure on Nvidia",
+      "summary": "Google\u2019s specialised AI chips threaten greater competition as Nvidia faces a leadership investigation.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/google-s-ai-chip-push-adds-more-pressure-on-nvidia",
+      "ts": "2026-11-09T15:20:05Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Solana moves to scrap the transaction feature used in the $270 million Drift hack",
-      "summary": "A draft proposal would end the 'durable nonces' feature no earlier than May 5, 2027, forcing custodians that sign offline to rebuild how they move coins.",
-      "url": "https://www.coindesk.com/tech/2026/11/09/solana-moves-to-scrap-the-transaction-feature-used-in-the-usd270-million-drift-hack",
-      "ts": "2026-11-09T06:36:45Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Two rival Ethereum proposals aim to stop Glamsterdam breaking old contracts",
-      "summary": "The proposals aim to keep Ethereum\u2019s planned gas changes from breaking existing contracts, using different approaches to what contracts see and what users pay.",
-      "url": "https://www.coindesk.com/tech/2026/11/09/two-rival-ethereum-proposals-aim-to-stop-glamsterdam-breaking-old-contracts",
-      "ts": "2026-11-09T05:16:54Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Binance's bitcoin mining pool finds just one block in a week as shutdown nears",
-      "summary": "The exchange's once significant mining operation has nearly disappeared from Bitcoin's block-production rankings ahead of its November 10 closure.",
-      "url": "https://www.coindesk.com/tech/2026/11/09/binance-s-bitcoin-mining-pool-finds-just-one-block-in-a-week-as-shutdown-nears",
-      "ts": "2026-11-09T04:54:39Z"
+      "title": "North Korean hackers are creating memecoins to wash loot from $6.3 billion Binance hack",
+      "summary": "North Korean hackers used six homemade memecoins to launder 117,000 NEAR, worth about $430,000, from the $6.3 billion Binance hack, Elliptic says.",
+      "url": "https://www.coindesk.com/business/2026/11/09/north-korean-hackers-are-creating-memecoins-to-wash-loot-from-usd6-3-billion-binance-hack",
+      "ts": "2026-11-09T15:00:44Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 74243,
-    "high_24h": 76106,
+    "last": 74837,
+    "high_24h": 75703,
     "low_24h": 73709,
-    "chg_pct": -2.15
+    "chg_pct": -1.26
   },
   "macro": {
-    "10Y": 4.86,
-    "DXY": 101.89,
-    "WTI": 90.06,
-    "VIX": 24.62,
-    "asof": "2026-11-09T09:43:59Z"
+    "10Y": 4.87,
+    "DXY": 101.67,
+    "WTI": 85.86,
+    "VIX": 20.01,
+    "asof": "2026-11-09T20:12:24Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
