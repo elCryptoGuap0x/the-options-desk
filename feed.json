@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-09T02:06:59Z",
+  "generated_at": "2026-11-09T09:43:59Z",
   "session": {
-    "day_label": "SUN",
-    "market_state": "WEEKEND",
-    "next_open": "MON 8:30 CT",
+    "day_label": "MON",
+    "market_state": "CLOSED",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-09T14:30:00Z",
     "position": "FLAT",
-    "desk_arms": "MON 8:20 CT"
+    "desk_arms": null
   },
   "stats": {
     "record": "0-0",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 75114,
-      "chg_pct": -0.7,
+      "last": 74243,
+      "chg_pct": -2.14,
       "history": [
-        80107,
         79316,
         77078,
         78348,
@@ -589,16 +588,16 @@
         75825,
         75834,
         74209,
-        75114
+        75114,
+        74243
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2140.71,
-      "chg_pct": -4.02,
+      "last": 2107.15,
+      "chg_pct": -5.74,
       "history": [
-        2318.17,
         2278.3,
         2215.24,
         2246.82,
@@ -637,16 +636,16 @@
         2234.68,
         2232.7,
         2118.54,
-        2140.71
+        2140.71,
+        2107.15
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 87.75,
-      "chg_pct": -1.38,
+      "last": 86.73,
+      "chg_pct": -2.78,
       "history": [
-        100.06,
         97.29,
         94.24,
         97.9,
@@ -685,7 +684,8 @@
         89.04,
         89.36,
         85.73,
-        87.75
+        87.75,
+        86.73
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "What the election results mean for crypto: State of Crypto",
-      "summary": "Democrats had an astoundingly good night, smashing all expectations. Is that actually bad news for the industry?",
-      "url": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
-      "ts": "2026-11-08T19:30:00Z"
+      "title": "U.S. inflation, corporate earnings: Crypto Week Ahead",
+      "summary": "Your look at what\u2019s coming in the week starting Nov. 9.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead",
+      "ts": "2026-11-09T09:33:27Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Stablecoin growth has stalled. The payments boom hasn't",
-      "summary": "Stablecoin supply has barely grown this year, even as payments using the tokens surge. Circle's latest earnings offer another example of the divergence between dollars outstanding and activity on blockchain networks.",
-      "url": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
-      "ts": "2026-11-08T19:16:42Z"
+      "title": "SpaceX proposes a $24 billion Texas supercomputer worth 17 times its bitcoin pile",
+      "summary": "The $24 billion project, which includes an AI supercomputer in Texas with its own gas-fired power plant, is about 17 times the value of SpaceX's bitcoin holdings.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile",
+      "ts": "2026-11-09T06:54:41Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +969,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
-      "summary": "A Finnish startup has 30 bitcoin mining systems working as central heating, and at today\u2019s prices each one earns slightly more than the electricity it burns.",
-      "url": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
-      "ts": "2026-11-08T12:55:59Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Blue Wave Paints the Market Green",
-      "summary": "Wow \u2013 what a day! The market reaction to the election results was fast and furious, with trading volume markedly higher as the so-called midterm \u201cblue wave\u201d provided what some would call a surprising rally.",
-      "url": "https://www.cboe.com/insights/posts/blue-wave-paints-the-market-green/",
-      "ts": "2026-11-04T05:00:00Z"
+      "title": "Solana moves to scrap the transaction feature used in the $270 million Drift hack",
+      "summary": "A draft proposal would end the 'durable nonces' feature no earlier than May 5, 2027, forcing custodians that sign offline to rebuild how they move coins.",
+      "url": "https://www.coindesk.com/tech/2026/11/09/solana-moves-to-scrap-the-transaction-feature-used-in-the-usd270-million-drift-hack",
+      "ts": "2026-11-09T06:36:45Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Binance users in some European countries told to pull crypto before fees kick in, with accounts closing by year end",
-      "summary": "Affected accounts are reportedly set to close on Dec. 31. Users in Spain, France, and Poland say they've received similar notices.",
-      "url": "https://www.coindesk.com/business/2026/11/07/binance-users-in-some-european-countries-told-to-pull-crypto-before-fees-kick-in-with-accounts-closing-by-year-end",
-      "ts": "2026-11-07T19:13:16Z"
+      "title": "Two rival Ethereum proposals aim to stop Glamsterdam breaking old contracts",
+      "summary": "The proposals aim to keep Ethereum\u2019s planned gas changes from breaking existing contracts, using different approaches to what contracts see and what users pay.",
+      "url": "https://www.coindesk.com/tech/2026/11/09/two-rival-ethereum-proposals-aim-to-stop-glamsterdam-breaking-old-contracts",
+      "ts": "2026-11-09T05:16:54Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Binance's bitcoin mining pool finds just one block in a week as shutdown nears",
+      "summary": "The exchange's once significant mining operation has nearly disappeared from Bitcoin's block-production rankings ahead of its November 10 closure.",
+      "url": "https://www.coindesk.com/tech/2026/11/09/binance-s-bitcoin-mining-pool-finds-just-one-block-in-a-week-as-shutdown-nears",
+      "ts": "2026-11-09T04:54:39Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 75114,
+    "last": 74243,
     "high_24h": 76106,
-    "low_24h": 73963,
-    "chg_pct": -0.71
+    "low_24h": 73709,
+    "chg_pct": -2.15
   },
   "macro": {
     "10Y": 4.86,
-    "DXY": 102.15,
-    "WTI": 90.25,
-    "VIX": 25.64,
-    "asof": "2026-11-09T02:06:59Z"
+    "DXY": 101.89,
+    "WTI": 90.06,
+    "VIX": 24.62,
+    "asof": "2026-11-09T09:43:59Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
