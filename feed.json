@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-10T02:47:40Z",
+  "generated_at": "2026-11-10T10:30:11Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-10T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 74758,
-      "chg_pct": -0.77,
+      "last": 74170,
+      "chg_pct": -0.09,
       "history": [
-        78348,
         76509,
         76902,
         77398,
@@ -589,16 +588,16 @@
         75114,
         74243,
         74839,
-        74758
+        74758,
+        74170
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2117.35,
-      "chg_pct": -1.61,
+      "last": 2088.14,
+      "chg_pct": -0.9,
       "history": [
-        2246.82,
         2227.79,
         2237.5,
         2242.18,
@@ -637,16 +636,16 @@
         2140.71,
         2107.15,
         2126.62,
-        2117.35
+        2117.35,
+        2088.14
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 85.97,
-      "chg_pct": -2.46,
+      "last": 85.03,
+      "chg_pct": -1.37,
       "history": [
-        97.9,
         94.3,
         95.91,
         96.61,
@@ -685,7 +684,8 @@
         87.75,
         86.73,
         86.51,
-        85.97
+        85.97,
+        85.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,20 +934,6 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Stocks Stage a Broad-Based Relief Rally",
-      "summary": "It looks like the bulls are back in town. The market staged a striking turnaround immediately after the morning bell today, posting significant gains after last week\u2019s drubbing and putting technology stocks back in the driver\u2019s seat.",
-      "url": "https://www.cboe.com/insights/posts/stocks-stage-a-broad-based-relief-rally/",
-      "ts": "2026-11-09T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
-      "summary": "The tokenization firm unveiled an acquisition and a $50 million stock buyback as quarterly revenue rose 13%. SECZ shares jumped 10% after hours.",
-      "url": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
-      "ts": "2026-11-09T22:56:27Z"
-    },
-    {
-      "tag": "OPTIONS",
       "title": "Week of 11/9/2026: No Contagion (Yet): Equity Vol Spikes, Macro Vol Fades",
       "summary": "Implied volatilities declined across most asset classes last week after Democrats swept Congress and US economic data came out better than expected. Learn more in this week\u2019s Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-11-9-2026-no-contagion-yet-equity-vol-spikes-macro-vol-fades/",
@@ -955,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Robinhood backs tokenization of its stock on OKX\u2013ICE platform even as most companies opt out",
-      "summary": "The brokerage firm said it would rather help build tokenized markets than sit on the sidelines, following a wave of early corporate pushback to the Intercontinental Exchange and OKX joint venture.",
-      "url": "https://www.coindesk.com/business/2026/11/09/robinhood-backs-tokenization-of-its-stock-on-okx-ice-platform-even-as-most-companies-opt-out",
-      "ts": "2026-11-09T19:36:15Z"
+      "title": "The crypto wallet that grew up inside Telegram is striking out on its own",
+      "summary": "The app will offer crypto trading, tokenized U.S. stocks and ETFs, and perpetual futures, all already available through Telegram.",
+      "url": "https://www.coindesk.com/business/2026/11/10/the-crypto-wallet-that-grew-up-inside-telegram-is-striking-out-on-its-own",
+      "ts": "2026-11-10T09:59:17Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,24 +955,38 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "A Bitcoin block just neared a 2015 transaction record, but paid only $180 in fees",
-      "summary": "The AntPool block came within 984 transactions of Bitcoin\u2019s 2015 record, even as fees made up less than 0.1% of the miner\u2019s payout.",
-      "url": "https://www.coindesk.com/tech/2026/11/09/a-bitcoin-block-just-neared-a-2015-transaction-record-but-paid-only-usd180-in-fees",
-      "ts": "2026-11-09T16:19:45Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Cboe FX October Volume Highlights",
-      "summary": "In October 2026, Cboe FX Spot Average Daily Volume (ADV) reached $56.1billion, an 8.4% increase from October 2025's ADV of $51.8 billion.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-cboe-fx-october-volume-highlights/",
-      "ts": "2026-11-05T05:00:00Z"
+      "title": "Coinbase, Kalshi, Kraken parent back CFTC in legal fight over stock perpetual futures",
+      "summary": "The Capital Markets Alliance argues that the products fall under the Securities and Exchange Commission\u2019s jurisdiction.",
+      "url": "https://www.coindesk.com/policy/2026/11/10/coinbase-kalshi-kraken-parent-back-cftc-in-legal-fight-over-stock-perpetual-futures",
+      "ts": "2026-11-10T09:14:30Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Google\u2019s AI chip push adds more pressure on Nvidia",
-      "summary": "Google\u2019s specialised AI chips threaten greater competition as Nvidia faces a leadership investigation.",
-      "url": "https://www.coindesk.com/markets/2026/11/09/google-s-ai-chip-push-adds-more-pressure-on-nvidia",
-      "ts": "2026-11-09T15:20:05Z"
+      "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
+      "summary": "Bots spotted a wallet from Ethereum\u2019s 2015 launch the moment it stirred and planted lookalike addresses in its history, but the owner sent the money to the right place anyway.",
+      "url": "https://www.coindesk.com/tech/2026/11/10/an-11-year-old-ethereum-wallet-moved-usd4-6-million-and-dodged-a-scam-set-up-in-minutes",
+      "ts": "2026-11-10T07:01:06Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin miner MARA sold 13,597 BTC for $1.1 billion in six weeks, plans to sell more",
+      "summary": "MARA paid off every loan backed by its bitcoin and says the rest of its coins can fund AI datacenters.",
+      "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more",
+      "ts": "2026-11-10T05:18:31Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "XRP Ledger maps out quantum-proof accounts, with no extra fees for users",
+      "summary": "The XRP Ledger Foundation\u2019s design lets owners add a quantum-resistant key and switch off the old one, part of a roadmap that puts the network on track for a full transition by 2028.",
+      "url": "https://www.coindesk.com/tech/2026/11/10/xrp-ledger-maps-out-quantum-proof-accounts-with-no-extra-fees-for-users",
+      "ts": "2026-11-10T04:51:20Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin faces U.S. CPI test as analysts warn inflation relief may not be enough",
+      "summary": "Bitcoin trades below $75,000 ahead of the October inflation data. Analysts warning that sustainable recovery depends on improving liquidity and spot ETF demand rather than temporary macro relief.",
+      "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough",
+      "ts": "2026-11-10T03:22:26Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 74769,
+    "last": 74199,
     "high_24h": 75477,
-    "low_24h": 73709,
-    "chg_pct": -0.74
+    "low_24h": 73999,
+    "chg_pct": -0.04
   },
   "macro": {
     "10Y": 4.86,
-    "DXY": 101.71,
-    "WTI": 86.21,
-    "VIX": 19.92,
-    "asof": "2026-11-10T02:47:40Z"
+    "DXY": 101.73,
+    "WTI": 84.78,
+    "VIX": 19.87,
+    "asof": "2026-11-10T10:30:11Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
