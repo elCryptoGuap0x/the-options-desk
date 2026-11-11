@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T23:32:51Z",
+  "generated_at": "2026-11-11T02:58:29Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 73620,
-      "chg_pct": -2.04,
+      "last": 73572,
+      "chg_pct": -1.63,
       "history": [
-        76902,
         77398,
         77214,
         77452,
@@ -589,16 +588,16 @@
         74839,
         74758,
         74170,
-        73620
+        73620,
+        73572
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2048.29,
-      "chg_pct": -3.82,
+      "last": 2056.9,
+      "chg_pct": -2.99,
       "history": [
-        2237.5,
         2242.18,
         2239.33,
         2250.49,
@@ -637,16 +636,16 @@
         2126.62,
         2117.35,
         2088.14,
-        2048.29
+        2048.29,
+        2056.9
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 82.99,
-      "chg_pct": -4.08,
+      "last": 83.2,
+      "chg_pct": -3.33,
       "history": [
-        95.91,
         96.61,
         95.33,
         95.74,
@@ -685,7 +684,8 @@
         86.51,
         85.97,
         85.03,
-        82.99
+        82.99,
+        83.2
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Week of 11/9/2026: No Contagion (Yet): Equity Vol Spikes, Macro Vol Fades",
-      "summary": "Implied volatilities declined across most asset classes last week after Democrats swept Congress and US economic data came out better than expected. Learn more in this week\u2019s Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-11-9-2026-no-contagion-yet-equity-vol-spikes-macro-vol-fades/",
-      "ts": "2026-11-09T05:00:00Z"
+      "title": "Hot CPI Report Puts Fire under Interest Rate Hike Possibilities",
+      "summary": "Another hot inflation report today took the wind out of the sails of an impressive rally with potential staying power on Monday as investors appeared to rethink what direction interest rates might take in December.",
+      "url": "https://www.cboe.com/insights/posts/hot-cpi-report-puts-fire-under-interest-rate-hike-possibilities/",
+      "ts": "2026-11-10T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,9 +962,9 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Stocks Stage a Broad-Based Relief Rally",
-      "summary": "It looks like the bulls are back in town. The market staged a striking turnaround immediately after the morning bell today, posting significant gains after last week\u2019s drubbing and putting technology stocks back in the driver\u2019s seat.",
-      "url": "https://www.cboe.com/insights/posts/stocks-stage-a-broad-based-relief-rally/",
+      "title": "Week of 11/9/2026: No Contagion (Yet): Equity Vol Spikes, Macro Vol Fades",
+      "summary": "Implied volatilities declined across most asset classes last week after Democrats swept Congress and US economic data came out better than expected. Learn more in this week\u2019s Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-11-9-2026-no-contagion-yet-equity-vol-spikes-macro-vol-fades/",
       "ts": "2026-11-09T05:00:00Z"
     },
     {
@@ -976,10 +976,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Tech Stocks Rebound but Nasdaq Is Still in Correction Territory",
-      "summary": "Phew! A trading week marked by three straight sessions of whiplash and two of heightened volatility is over, ending with a technology rebound that could still be tested.",
-      "url": "https://www.cboe.com/insights/posts/tech-stocks-rebound-but-nasdaq-is-still-in-correction-territory/",
-      "ts": "2026-11-06T05:00:00Z"
+      "title": "Stocks Stage a Broad-Based Relief Rally",
+      "summary": "It looks like the bulls are back in town. The market staged a striking turnaround immediately after the morning bell today, posting significant gains after last week\u2019s drubbing and putting technology stocks back in the driver\u2019s seat.",
+      "url": "https://www.cboe.com/insights/posts/stocks-stage-a-broad-based-relief-rally/",
+      "ts": "2026-11-09T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 73620,
-    "high_24h": 75328,
+    "last": 73567,
+    "high_24h": 74896,
     "low_24h": 72744,
-    "chg_pct": -2.04
+    "chg_pct": -1.63
   },
   "macro": {
     "10Y": 4.98,
-    "DXY": 102.22,
-    "WTI": 86.19,
+    "DXY": 102.26,
+    "WTI": 86.7,
     "VIX": 19.46,
-    "asof": "2026-11-10T23:32:51Z"
+    "asof": "2026-11-11T02:58:29Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
