@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T02:58:29Z",
+  "generated_at": "2026-11-11T10:45:03Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-11T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 73572,
-      "chg_pct": -1.63,
+      "last": 73972,
+      "chg_pct": -0.18,
       "history": [
-        77398,
         77214,
         77452,
         77577,
@@ -589,16 +588,16 @@
         74758,
         74170,
         73620,
-        73572
+        73572,
+        73972
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2056.9,
-      "chg_pct": -2.99,
+      "last": 2059.57,
+      "chg_pct": -1.26,
       "history": [
-        2242.18,
         2239.33,
         2250.49,
         2254.06,
@@ -637,16 +636,16 @@
         2117.35,
         2088.14,
         2048.29,
-        2056.9
+        2056.9,
+        2059.57
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 83.2,
-      "chg_pct": -3.33,
+      "last": 83.85,
+      "chg_pct": -0.66,
       "history": [
-        96.61,
         95.33,
         95.74,
         95.96,
@@ -685,7 +684,8 @@
         85.97,
         85.03,
         82.99,
-        83.2
+        83.2,
+        83.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 73567,
-    "high_24h": 74896,
+    "last": 73986,
+    "high_24h": 74689,
     "low_24h": 72744,
-    "chg_pct": -1.63
+    "chg_pct": -0.16
   },
   "macro": {
     "10Y": 4.98,
-    "DXY": 102.26,
-    "WTI": 86.7,
-    "VIX": 19.46,
-    "asof": "2026-11-11T02:58:29Z"
+    "DXY": 102.46,
+    "WTI": 87.32,
+    "VIX": 18.59,
+    "asof": "2026-11-11T10:45:03Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
