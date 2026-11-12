@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-11T10:45:03Z",
+  "generated_at": "2026-11-12T00:51:07Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-11T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-12T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 73972,
-      "chg_pct": -0.18,
+      "last": 74114,
+      "chg_pct": 0.86,
       "history": [
-        77214,
         77452,
         77577,
         77543,
@@ -589,16 +588,16 @@
         74170,
         73620,
         73572,
-        73972
+        73972,
+        74114
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2059.57,
-      "chg_pct": -1.26,
+      "last": 2062.84,
+      "chg_pct": 0.67,
       "history": [
-        2239.33,
         2250.49,
         2254.06,
         2258.54,
@@ -637,16 +636,16 @@
         2088.14,
         2048.29,
         2056.9,
-        2059.57
+        2059.57,
+        2062.84
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 83.85,
-      "chg_pct": -0.66,
+      "last": 83.69,
+      "chg_pct": 0.66,
       "history": [
-        95.33,
         95.74,
         95.96,
         95.84,
@@ -685,7 +684,8 @@
         85.03,
         82.99,
         83.2,
-        83.85
+        83.85,
+        83.69
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,34 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: Derivatives October 2026 Volume Highlights",
+      "summary": "October was a record month for Cboe\u2019s Global Derivatives business with Cboe's proprietary index options setting a monthly Average Daily Volume (ADV) record of 6.9 million contracts, driven by a record monthly ADV in S&P 500\u00ae Index Options (",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-derivatives-october-2026-volume-highlights/",
+      "ts": "2026-11-11T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Crypto Long & Short: The GENIUS Act\u2019s guarantees don\u2019t cover DeFi lending",
+      "summary": "Institutions weighing DeFi lending tend to ask which markets are safest. Mike Hathaway and Joseph Quintilian of Ajna argue the better question is who can change a loan\u2019s terms after the money is lent, and why a fully backed stablecoin offer",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/11/11/crypto-long-and-short-the-genius-act-s-guarantees-don-t-cover-defi-lending",
+      "ts": "2026-11-11T16:00:45Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "CoreWeave Earnings Alleviate Some AI Spending Fears",
+      "summary": "Technology and semiconductor stocks drove a sharp market rebound Wednesday, powered by CoreWeave\u2019s better-than-expected quarterly results that helped ease worries about artificial intelligence (AI) investment spending.",
+      "url": "https://www.cboe.com/insights/posts/core-weave-earnings-alleviate-some-ai-spending-fears/",
+      "ts": "2026-11-11T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "OKXICE to debut tokenized stock trading with Strategy, Coinbase, Circle this month",
+      "summary": "After initial issuer pushback, the blockchain venue is set to start trading on Nov. 23 and said will list over 70 assets, including Strategy\u2019s common and preferred shares and 59 of Direxion's ETFs.",
+      "url": "https://www.coindesk.com/business/2026/11/10/okxice-to-debut-tokenized-stock-trading-with-strategy-coinbase-circle-this-month",
+      "ts": "2026-11-11T13:00:00Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Corporate KPI Binary Options: A New Way to Trade Earnings",
       "summary": "Picture this: a stock reports earnings, beats on both EPS and revenue, yet falls on higher than expected capex guidance. Sound familiar? Many investors have been in this position when trading company earnings \u2013 they made the right fundament",
       "url": "https://www.cboe.com/insights/posts/corporate-kpi-binary-options-a-new-way-to-trade-earnings/",
@@ -941,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
-      "summary": "U.S. Senator Elizabeth Warren argued the administration is not doing enough about staff insider trading, questioning whether CFTC enforcement action was sufficient.",
-      "url": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
-      "ts": "2026-11-10T20:36:33Z"
+      "title": "Meet Spiko, the largest tokenized fund in the world you\u2019ve probably never heard about",
+      "summary": "The firm\u2019s flagship Spiko Amundi Overnight Swap Fund (SAFO) held $2.39 billion in assets under management as of late last month.",
+      "url": "https://www.coindesk.com/business/2026/11/11/meet-spiko-the-largest-tokenized-fund-in-the-world-you-ve-probably-never-heard-about",
+      "ts": "2026-11-11T12:57:36Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,38 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
-      "summary": "Stacey Cunningham, who recently joined digital asset platform Bullish as President, sees the company\u2019s planned Equiniti acquisition and focus on stock issuers as key to its tokenization ambitions.",
-      "url": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
-      "ts": "2026-11-10T20:15:08Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Week of 11/9/2026: No Contagion (Yet): Equity Vol Spikes, Macro Vol Fades",
-      "summary": "Implied volatilities declined across most asset classes last week after Democrats swept Congress and US economic data came out better than expected. Learn more in this week\u2019s Macro Volatility Digest.",
-      "url": "https://www.cboe.com/insights/posts/week-of-11-9-2026-no-contagion-yet-equity-vol-spikes-macro-vol-fades/",
-      "ts": "2026-11-09T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
-      "summary": "The venture, known as Project Faro, plans to issue a dollar-denominated stablecoin and is expected to be incorporated in the U.S.",
-      "url": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
-      "ts": "2026-11-10T17:32:22Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Stocks Stage a Broad-Based Relief Rally",
-      "summary": "It looks like the bulls are back in town. The market staged a striking turnaround immediately after the morning bell today, posting significant gains after last week\u2019s drubbing and putting technology stocks back in the driver\u2019s seat.",
-      "url": "https://www.cboe.com/insights/posts/stocks-stage-a-broad-based-relief-rally/",
-      "ts": "2026-11-09T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto is now teamed up with U.S. government in two legal battles over perps",
-      "summary": "Twice now, crypto firms have found themselves on the side of the U.S. Commodity Futures Trading Commission in holding that perpetual futures aren't swaps.",
-      "url": "https://www.coindesk.com/news-analysis/2026/11/10/crypto-teams-up-with-u-s-government-to-defend-stock-perps-in-legal-fight",
-      "ts": "2026-11-10T17:07:22Z"
+      "title": "Live news: Bitcoin remains under pressure as CoreWeave, Nvidia lead AI rebound",
+      "summary": "The DRAM ETF jumps 8% and semiconductor stocks gain more than 4%, while bitcoin continues to test its 200-day moving average.",
+      "url": "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
+      "ts": "2026-11-11T12:21:24Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 74351,
-    "high_24h": 74613,
+    "last": 74030,
+    "high_24h": 74695,
     "low_24h": 73202,
-    "chg_pct": 1.5
+    "chg_pct": 0.75
   },
   "macro": {
     "10Y": 5.0,
-    "DXY": 102.92,
-    "WTI": 87.0,
-    "VIX": 17.61,
-    "asof": "2026-11-11T10:45:03Z"
+    "DXY": 102.86,
+    "WTI": 86.18,
+    "VIX": 17.49,
+    "asof": "2026-11-12T00:51:07Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
