@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T22:26:11Z",
+  "generated_at": "2026-11-13T02:53:05Z",
   "session": {
     "day_label": "THU",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 71391,
-      "chg_pct": -3.98,
+      "last": 70157,
+      "chg_pct": -4.92,
       "history": [
-        77543,
         77627,
         77872,
         77973,
@@ -589,16 +588,16 @@
         73972,
         74114,
         73550,
-        71391
+        71391,
+        70157
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 2012.06,
-      "chg_pct": -3.06,
+      "last": 1987.83,
+      "chg_pct": -3.36,
       "history": [
-        2258.54,
         2265.59,
         2269.12,
         2269.95,
@@ -637,16 +636,16 @@
         2059.57,
         2062.84,
         2047.6,
-        2012.06
+        2012.06,
+        1987.83
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 81.31,
-      "chg_pct": -3.88,
+      "last": 80.07,
+      "chg_pct": -3.95,
       "history": [
-        95.84,
         95.73,
         95.49,
         94.92,
@@ -685,7 +684,8 @@
         83.85,
         83.69,
         82.86,
-        81.31
+        81.31,
+        80.07
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Kalshi ends Donald Trump Jr.\u2019s advisory contract over 1789 Capital\u2019s Polymarket investment",
-      "summary": "Trump Jr. joined Kalshi as a strategic adviser in January 2025, helping the prediction market expand its customer base and strengthen its market presence.",
-      "url": "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment",
-      "ts": "2026-11-12T21:07:49Z"
+      "title": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
+      "summary": "Federal authorities say they've taken infrastructure used in the FaceStealer scheme used to steal as much as $400 million in crypto assets.",
+      "url": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto",
+      "ts": "2026-11-12T22:55:52Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
-      "summary": "The legal battle to head off the crypto transaction tax in Illinois has drawn up a hefty roster of industry opposition, and they're saying the tax won't work.",
-      "url": "https://www.coindesk.com/policy/2026/11/12/illinois-crypto-tax-is-impossible-to-enforce-as-written-crypto-industry-tells-court",
-      "ts": "2026-11-12T16:45:52Z"
+      "title": "U.S. President Trump names CFTC, SEC nominees for first time in a year",
+      "summary": "U.S. President Donald Trump has named two potential commissioners each to the Securities and Exchange Commission and Commodity Futures Trading Commission.",
+      "url": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year",
+      "ts": "2026-11-12T22:47:41Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "DTCC adds Solana to Wall Street tokenization plans, targeting 2027 rollout",
-      "summary": "The securities infrastructure giant plans to bring tokenized stocks, ETFs and U.S. Treasuries to Solana as it expands next year's roadmap beyond Stellar and Arc.",
-      "url": "https://www.coindesk.com/business/2026/11/12/dtcc-adds-solana-to-wall-street-tokenization-plans-targeting-2027-rollout",
-      "ts": "2026-11-12T15:45:48Z"
+      "title": "Kalshi ends Donald Trump Jr.\u2019s advisory contract over 1789 Capital\u2019s Polymarket investment",
+      "summary": "Trump Jr. joined Kalshi as a strategic adviser in January 2025, helping the prediction market expand its customer base and strengthen its market presence.",
+      "url": "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment",
+      "ts": "2026-11-12T21:07:49Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 71357,
-    "high_24h": 74125,
-    "low_24h": 71238,
-    "chg_pct": -4.01
+    "last": 70182,
+    "high_24h": 73788,
+    "low_24h": 70729,
+    "chg_pct": -4.88
   },
   "macro": {
     "10Y": 5.1,
     "DXY": 103.18,
-    "WTI": 88.7,
+    "WTI": 88.53,
     "VIX": 18.7,
-    "asof": "2026-11-12T22:26:11Z"
+    "asof": "2026-11-13T02:53:05Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
