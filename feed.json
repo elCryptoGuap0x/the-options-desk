@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-13T10:50:31Z",
+  "generated_at": "2026-11-13T23:42:25Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-13T14:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-11-16T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 69302,
-      "chg_pct": -5.58,
+      "last": 68107,
+      "chg_pct": -4.3,
       "history": [
-        77872,
         77973,
         77742,
         77799,
@@ -589,16 +588,16 @@
         73550,
         71391,
         70157,
-        69302
+        69302,
+        68107
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1950.23,
-      "chg_pct": -4.61,
+      "last": 1922.88,
+      "chg_pct": -4.47,
       "history": [
-        2269.12,
         2269.95,
         2257.54,
         2259.49,
@@ -637,16 +636,16 @@
         2047.6,
         2012.06,
         1987.83,
-        1950.23
+        1950.23,
+        1922.88
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 80.33,
-      "chg_pct": -3.17,
+      "last": 77.85,
+      "chg_pct": -4.51,
       "history": [
-        95.49,
         94.92,
         93.85,
         93.75,
@@ -685,7 +684,8 @@
         82.86,
         81.31,
         80.07,
-        80.33
+        80.33,
+        77.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Market Metrics That Matter: U.S. Cash Equities October Volume Briefing",
+      "summary": "Total Consolidated Volume (TCV) increased 2.67% month-over-month in October to an Average Daily Volume (ADV) of 17.3 billion shares. Trade Reporting Facility (TRF) volume as a percent of TCV declined slightly to 49.9%.",
+      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-u-s-cash-equities-october-volume-briefing/",
+      "ts": "2026-11-13T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
+      "summary": "Contracts that sell power to a 4% slice of the world\u2019s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay\u2019s state utility calls the date final, and it has just signed a 15-year deal to power a Founders Fund-backed AI ca",
+      "url": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
+      "ts": "2026-11-13T23:30:00Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Market Metrics That Matter: Derivatives October 2026 Volume Highlights",
       "summary": "October was a record month for Cboe\u2019s Global Derivatives business with Cboe's proprietary index options setting a monthly Average Daily Volume (ADV) record of 6.9 million contracts, driven by a record monthly ADV in S&P 500\u00ae Index Options (",
       "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-derivatives-october-2026-volume-highlights/",
@@ -948,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Live news: Bitcoin drops below 200-week moving average as dollar strength pressures risk assets",
-      "summary": "Bitcoin fell below its 200-week moving average as the Dollar Index held above 103, while gold struggled to recover and oil prices rebounded.",
-      "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets",
-      "ts": "2026-11-13T09:16:58Z"
+      "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
+      "summary": "Analysts see no direct link between Nvidia and bitcoin's decline, pointing instead to investor capital headed into Anthropic as well as a broader risk-off move.",
+      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
+      "ts": "2026-11-13T18:39:58Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,24 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ethereum treasury firm BTCS sold ether at a loss to keep $64 million Aave loan healthy",
-      "summary": "The Nasdaq-listed company has 46,676 ETH backing its borrowings, and the loan could become eligible for liquidation if ether slides to around $1,700.",
-      "url": "https://www.coindesk.com/markets/2026/11/13/ethereum-treasury-firm-btcs-sold-ether-at-a-loss-to-keep-usd64-million-aave-loan-healthy",
-      "ts": "2026-11-13T07:05:29Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Corporate KPI Binary Options: A New Way to Trade Earnings",
-      "summary": "Picture this: a stock reports earnings, beats on both EPS and revenue, yet falls on higher than expected capex guidance. Sound familiar? Many investors have been in this position when trading company earnings \u2013 they made the right fundament",
-      "url": "https://www.cboe.com/insights/posts/corporate-kpi-binary-options-a-new-way-to-trade-earnings/",
-      "ts": "2026-11-10T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin firm Nakamoto owes Kraken $165 million, more than its entire market value",
-      "summary": "About 70% of the bitcoin treasury firm\u2019s coins are pledged to the exchange, bought at roughly $118,000 each, and bitcoin now trades under $69,000.",
-      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-firm-nakamoto-owes-kraken-usd165-million-more-than-its-entire-market-value",
-      "ts": "2026-11-13T06:03:41Z"
+      "title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
+      "summary": "The committee that needs to advance President Donald Trump's nominees responded quickly to set his SEC picks for review next week.",
+      "url": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
+      "ts": "2026-11-13T17:05:43Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 68780,
-    "high_24h": 71690,
+    "last": 68117,
+    "high_24h": 71426,
     "low_24h": 67922,
-    "chg_pct": -4.31
+    "chg_pct": -4.3
   },
   "macro": {
-    "10Y": 5.14,
-    "DXY": 103.4,
-    "WTI": 88.7,
-    "VIX": 19.7,
-    "asof": "2026-11-13T10:50:31Z"
+    "10Y": 5.15,
+    "DXY": 103.41,
+    "WTI": 88.92,
+    "VIX": 19.3,
+    "asof": "2026-11-13T23:42:25Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
