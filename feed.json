@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-13T02:53:05Z",
+  "generated_at": "2026-11-13T10:50:31Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-13T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 70157,
-      "chg_pct": -4.92,
+      "last": 69302,
+      "chg_pct": -5.58,
       "history": [
-        77627,
         77872,
         77973,
         77742,
@@ -589,16 +588,16 @@
         74114,
         73550,
         71391,
-        70157
+        70157,
+        69302
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1987.83,
-      "chg_pct": -3.36,
+      "last": 1950.23,
+      "chg_pct": -4.61,
       "history": [
-        2265.59,
         2269.12,
         2269.95,
         2257.54,
@@ -637,16 +636,16 @@
         2062.84,
         2047.6,
         2012.06,
-        1987.83
+        1987.83,
+        1950.23
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 80.07,
-      "chg_pct": -3.95,
+      "last": 80.33,
+      "chg_pct": -3.17,
       "history": [
-        95.73,
         95.49,
         94.92,
         93.85,
@@ -685,7 +684,8 @@
         83.69,
         82.86,
         81.31,
-        80.07
+        80.07,
+        80.33
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "North Korea's Binance hack faces U.S. crackdown as DOJ targets $1.2 billion in stolen crypto",
-      "summary": "Federal authorities say they've taken infrastructure used in the FaceStealer scheme used to steal as much as $400 million in crypto assets.",
-      "url": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto",
-      "ts": "2026-11-12T22:55:52Z"
+      "title": "Live news: Bitcoin drops below 200-week moving average as dollar strength pressures risk assets",
+      "summary": "Bitcoin fell below its 200-week moving average as the Dollar Index held above 103, while gold struggled to recover and oil prices rebounded.",
+      "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets",
+      "ts": "2026-11-13T09:16:58Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "CoreWeave Earnings Alleviate Some AI Spending Fears",
+      "summary": "Technology and semiconductor stocks drove a sharp market rebound Wednesday, powered by CoreWeave\u2019s better-than-expected quarterly results that helped ease worries about artificial intelligence (AI) investment spending.",
+      "url": "https://www.cboe.com/insights/posts/core-weave-earnings-alleviate-some-ai-spending-fears/",
+      "ts": "2026-11-11T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Ethereum treasury firm BTCS sold ether at a loss to keep $64 million Aave loan healthy",
+      "summary": "The Nasdaq-listed company has 46,676 ETH backing its borrowings, and the loan could become eligible for liquidation if ether slides to around $1,700.",
+      "url": "https://www.coindesk.com/markets/2026/11/13/ethereum-treasury-firm-btcs-sold-ether-at-a-loss-to-keep-usd64-million-aave-loan-healthy",
+      "ts": "2026-11-13T07:05:29Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. President Trump names CFTC, SEC nominees for first time in a year",
-      "summary": "U.S. President Donald Trump has named two potential commissioners each to the Securities and Exchange Commission and Commodity Futures Trading Commission.",
-      "url": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year",
-      "ts": "2026-11-12T22:47:41Z"
+      "title": "Bitcoin firm Nakamoto owes Kraken $165 million, more than its entire market value",
+      "summary": "About 70% of the bitcoin treasury firm\u2019s coins are pledged to the exchange, bought at roughly $118,000 each, and bitcoin now trades under $69,000.",
+      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-firm-nakamoto-owes-kraken-usd165-million-more-than-its-entire-market-value",
+      "ts": "2026-11-13T06:03:41Z"
     },
     {
       "tag": "OPTIONS",
@@ -973,20 +987,6 @@
       "summary": "Another hot inflation report today took the wind out of the sails of an impressive rally with potential staying power on Monday as investors appeared to rethink what direction interest rates might take in December.",
       "url": "https://www.cboe.com/insights/posts/hot-cpi-report-puts-fire-under-interest-rate-hike-possibilities/",
       "ts": "2026-11-10T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Kalshi ends Donald Trump Jr.\u2019s advisory contract over 1789 Capital\u2019s Polymarket investment",
-      "summary": "Trump Jr. joined Kalshi as a strategic adviser in January 2025, helping the prediction market expand its customer base and strengthen its market presence.",
-      "url": "https://www.coindesk.com/policy/2026/11/12/kalshi-ends-donald-trump-jr-s-advisory-contract-over-1789-capital-s-polymarket-investment",
-      "ts": "2026-11-12T21:07:49Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Stocks Stage a Broad-Based Relief Rally",
-      "summary": "It looks like the bulls are back in town. The market staged a striking turnaround immediately after the morning bell today, posting significant gains after last week\u2019s drubbing and putting technology stocks back in the driver\u2019s seat.",
-      "url": "https://www.cboe.com/insights/posts/stocks-stage-a-broad-based-relief-rally/",
-      "ts": "2026-11-09T05:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 70182,
-    "high_24h": 73788,
-    "low_24h": 70729,
-    "chg_pct": -4.88
+    "last": 69308,
+    "high_24h": 73402,
+    "low_24h": 67922,
+    "chg_pct": -5.58
   },
   "macro": {
     "10Y": 5.1,
-    "DXY": 103.18,
-    "WTI": 88.53,
-    "VIX": 18.7,
-    "asof": "2026-11-13T02:53:05Z"
+    "DXY": 103.22,
+    "WTI": 87.87,
+    "VIX": 18.45,
+    "asof": "2026-11-13T10:50:31Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
