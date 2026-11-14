@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T03:38:16Z",
+  "generated_at": "2026-11-14T10:59:29Z",
   "session": {
-    "day_label": "FRI",
-    "market_state": "CLOSED",
+    "day_label": "SAT",
+    "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-11-16T14:30:00Z",
     "position": "FLAT",
-    "desk_arms": null
+    "desk_arms": "MON 8:20 CT"
   },
   "stats": {
     "record": "0-0",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 66862,
-      "chg_pct": -3.37,
+      "last": 67230,
+      "chg_pct": -3.03,
       "history": [
-        77742,
         77799,
         78418,
         78068,
@@ -589,16 +588,16 @@
         70157,
         69302,
         68107,
-        66862
+        66862,
+        67230
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1890.28,
-      "chg_pct": -3.42,
+      "last": 1906.78,
+      "chg_pct": -2.27,
       "history": [
-        2257.54,
         2259.49,
         2292.94,
         2290.3,
@@ -637,16 +636,16 @@
         1987.83,
         1950.23,
         1922.88,
-        1890.28
+        1890.28,
+        1906.78
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 75.31,
-      "chg_pct": -4.79,
+      "last": 75.64,
+      "chg_pct": -5.98,
       "history": [
-        93.85,
         93.75,
         95.01,
         94.46,
@@ -685,7 +684,8 @@
         80.07,
         80.33,
         77.85,
-        75.31
+        75.31,
+        75.64
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
-      "summary": "Contracts that sell power to a 4% slice of the world\u2019s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay\u2019s state utility calls the date final, and it has just signed a 15-year deal to power a Founders Fund-backed AI ca",
-      "url": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
-      "ts": "2026-11-13T23:30:00Z"
+      "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
+      "summary": "The roughly $5 million transfer also spent the tiny payment used to deliver a court notice to the address in May.",
+      "url": "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
+      "ts": "2026-11-14T04:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
-      "summary": "Analysts see no direct link between Nvidia and bitcoin's decline, pointing instead to investor capital headed into Anthropic as well as a broader risk-off move.",
-      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
-      "ts": "2026-11-13T18:39:58Z"
+      "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
+      "summary": "Contracts that sell power to a 4% slice of the world\u2019s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay\u2019s state utility calls the date final, and it has just signed a 15-year deal to power a Founders Fund-backed AI ca",
+      "url": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
+      "ts": "2026-11-13T23:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
-      "summary": "The committee that needs to advance President Donald Trump's nominees responded quickly to set his SEC picks for review next week.",
-      "url": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
-      "ts": "2026-11-13T17:05:43Z"
+      "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
+      "summary": "Analysts see no direct link between Nvidia and bitcoin's decline, pointing instead to investor capital headed into Anthropic as well as a broader risk-off move.",
+      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
+      "ts": "2026-11-13T18:39:58Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 66862,
+    "last": 67245,
     "high_24h": 70045,
-    "low_24h": 67032,
-    "chg_pct": -3.37
+    "low_24h": 66492,
+    "chg_pct": -3.02
   },
   "macro": {
     "10Y": 5.15,
     "DXY": 103.41,
-    "WTI": 88.92,
+    "WTI": 88.56,
     "VIX": 19.3,
-    "asof": "2026-11-13T23:42:25Z"
+    "asof": "2026-11-14T10:59:29Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
