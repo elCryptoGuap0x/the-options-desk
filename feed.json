@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T07:56:13Z",
+  "generated_at": "2026-11-15T15:36:31Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 63854,
-      "chg_pct": -5.02,
+      "last": 64699,
+      "chg_pct": -0.84,
       "history": [
-        76876,
         76956,
         77710,
         76619,
@@ -589,16 +588,16 @@
         65384,
         64567,
         62952,
-        63854
+        63854,
+        64699
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1776.6,
-      "chg_pct": -6.49,
+      "last": 1810.72,
+      "chg_pct": -1.2,
       "history": [
-        2253.86,
         2265.63,
         2286.68,
         2251.86,
@@ -637,16 +636,16 @@
         1825.5,
         1776.87,
         1732.99,
-        1776.6
+        1776.6,
+        1810.72
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 69.71,
-      "chg_pct": -7.53,
+      "last": 71.3,
+      "chg_pct": -3.17,
       "history": [
-        92.07,
         92.26,
         93.28,
         91.34,
@@ -685,7 +684,8 @@
         72.51,
         70.23,
         69.19,
-        69.71
+        69.71,
+        71.3
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
-      "summary": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
-      "url": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
-      "ts": "2026-11-15T02:50:57Z"
+      "title": "Crypto insiders aren't counting on silver linings in Congress' 'lame duck' session",
+      "summary": "With ascendent Democrats ready to pursue their own crypto and tech agendas next year, the final weeks of this session probably won't produce crypto surprises.",
+      "url": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
+      "ts": "2026-11-15T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
-      "summary": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
-      "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
-      "ts": "2026-11-14T16:33:29Z"
+      "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
+      "summary": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
+      "url": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
+      "ts": "2026-11-15T02:50:57Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,17 +976,17 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
+      "summary": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
+      "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
+      "ts": "2026-11-14T16:33:29Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Ethereum scaling project MegaETH slashes staff by 20% as it pursues AI business",
       "summary": "Decentralized Finance total value locked on MegaETH dropped significantly from over $245 million to $8.8 million.",
       "url": "https://www.coindesk.com/business/2026/11/14/ethereum-scaling-project-megaeth-slashes-staff-by-20-as-it-pursues-ai-business",
       "ts": "2026-11-14T16:33:23Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Kazakhstan plans tokenized government bonds in first quarter after $22 million note sale",
-      "summary": "The plan follows Kazakhstan's first sale of tokenized central bank notes as the country expands its crypto market.",
-      "url": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
-      "ts": "2026-11-14T15:38:27Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 63809,
-    "high_24h": 67442,
+    "last": 64691,
+    "high_24h": 66005,
     "low_24h": 62081,
-    "chg_pct": -5.02
+    "chg_pct": -0.76
   },
   "macro": {
     "10Y": 5.15,
