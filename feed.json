@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T21:23:46Z",
+  "generated_at": "2026-11-15T01:16:11Z",
   "session": {
     "day_label": "SAT",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 64567,
-      "chg_pct": -5.44,
+      "last": 62952,
+      "chg_pct": -7.65,
       "history": [
-        78068,
         76814,
         76876,
         76956,
@@ -589,16 +588,16 @@
         66862,
         67230,
         65384,
-        64567
+        64567,
+        62952
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1776.87,
-      "chg_pct": -7.85,
+      "last": 1732.99,
+      "chg_pct": -10.07,
       "history": [
-        2290.3,
         2248.23,
         2253.86,
         2265.63,
@@ -637,16 +636,16 @@
         1890.28,
         1906.78,
         1825.5,
-        1776.87
+        1776.87,
+        1732.99
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 70.23,
-      "chg_pct": -11.12,
+      "last": 69.19,
+      "chg_pct": -10.52,
       "history": [
-        94.46,
         91.57,
         92.07,
         92.26,
@@ -685,7 +684,8 @@
         75.31,
         75.64,
         72.51,
-        70.23
+        70.23,
+        69.19
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,7 +948,7 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin slides to 3-month low of $65,000 as analyst flags fourth capitulation wave",
+      "title": "Bitcoin crashes to 3-month low below $64,000 as analyst flags fourth capitulation wave",
       "summary": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
       "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
       "ts": "2026-11-14T16:33:29Z"
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 64567,
-    "high_24h": 68407,
-    "low_24h": 64770,
-    "chg_pct": -5.55
+    "last": 62923,
+    "high_24h": 68253,
+    "low_24h": 63355,
+    "chg_pct": -7.65
   },
   "macro": {
     "10Y": 5.15,
