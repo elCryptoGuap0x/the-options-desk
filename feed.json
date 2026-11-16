@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-16T00:20:14Z",
+  "generated_at": "2026-11-16T06:52:55Z",
   "session": {
-    "day_label": "SUN",
-    "market_state": "WEEKEND",
-    "next_open": "MON 8:30 CT",
+    "day_label": "MON",
+    "market_state": "CLOSED",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-16T14:30:00Z",
     "position": "FLAT",
-    "desk_arms": "MON 8:20 CT"
+    "desk_arms": null
   },
   "stats": {
     "record": "0-0",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 64997,
-      "chg_pct": 0.99,
+      "last": 64612,
+      "chg_pct": 0.35,
       "history": [
-        76619,
         80436,
         80664,
         80296,
@@ -589,16 +588,16 @@
         63854,
         64699,
         64901,
-        64997
+        64997,
+        64612
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1824.81,
-      "chg_pct": 3.09,
+      "last": 1813.35,
+      "chg_pct": 1.22,
       "history": [
-        2251.86,
         2423.33,
         2430.21,
         2418.07,
@@ -637,16 +636,16 @@
         1776.6,
         1810.72,
         1825.08,
-        1824.81
+        1824.81,
+        1813.35
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 72.22,
-      "chg_pct": 2.47,
+      "last": 71.24,
+      "chg_pct": 1.22,
       "history": [
-        91.34,
         95.47,
         96.86,
         96.49,
@@ -685,7 +684,8 @@
         69.71,
         71.3,
         71.65,
-        72.22
+        72.22,
+        71.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,17 +941,31 @@
     },
     {
       "tag": "CRYPTO",
+      "title": "Cardano holders vote down $5 million bid to buy warehouse copper",
+      "summary": "Toto Finance\u2019s 22 million ADA treasury request expired Sunday with about 20 million ADA in favor, and none of Cardano\u2019s seven constitutional committee members voted yes.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/cardano-holders-vote-down-usd5-million-bid-to-buy-warehouse-copper",
+      "ts": "2026-11-16T06:27:42Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Trump administration to name Nvidia, OpenAI and several others as AI national champions",
+      "summary": "The Wall Street Journal reported that the move aims to help the firms expand overseas and compete with global rivals, though nothing has been confirmed.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/trump-administration-to-name-nvidia-openai-and-several-others-as-u-s-ai-national-champions",
+      "ts": "2026-11-16T06:01:41Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin\u2019s biggest bet is now a drop below $60,000, not a rally above $100,000",
+      "summary": "The $60,000 put has replaced the $100,000 call as bitcoin\u2019s biggest options bet on Deribit, with $900 million in open interest after the recent slide.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000",
+      "ts": "2026-11-16T05:01:17Z"
+    },
+    {
+      "tag": "CRYPTO",
       "title": "Did prediction markets call the U.S. midterm election?: State of Crypto",
       "summary": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses.",
       "url": "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
       "ts": "2026-11-15T19:30:00Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: Derivatives October 2026 Volume Highlights",
-      "summary": "October was a record month for Cboe\u2019s Global Derivatives business with Cboe's proprietary index options setting a monthly Average Daily Volume (ADV) record of 6.9 million contracts, driven by a record monthly ADV in S&P 500\u00ae Index Options (",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-derivatives-october-2026-volume-highlights/",
-      "ts": "2026-11-11T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -959,13 +973,6 @@
       "summary": "With ascendent Democrats ready to pursue their own crypto and tech agendas next year, the final weeks of this session probably won't produce crypto surprises.",
       "url": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
       "ts": "2026-11-15T14:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "CoreWeave Earnings Alleviate Some AI Spending Fears",
-      "summary": "Technology and semiconductor stocks drove a sharp market rebound Wednesday, powered by CoreWeave\u2019s better-than-expected quarterly results that helped ease worries about artificial intelligence (AI) investment spending.",
-      "url": "https://www.cboe.com/insights/posts/core-weave-earnings-alleviate-some-ai-spending-fears/",
-      "ts": "2026-11-11T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -980,13 +987,6 @@
       "summary": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
       "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
       "ts": "2026-11-14T16:33:29Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Ethereum scaling project MegaETH slashes staff by 20% as it pursues AI business",
-      "summary": "Decentralized Finance total value locked on MegaETH dropped significantly from over $245 million to $8.8 million.",
-      "url": "https://www.coindesk.com/business/2026/11/14/ethereum-scaling-project-megaeth-slashes-staff-by-20-as-it-pursues-ai-business",
-      "ts": "2026-11-14T16:33:23Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 64997,
+    "last": 64612,
     "high_24h": 65980,
-    "low_24h": 62081,
-    "chg_pct": 1.04
+    "low_24h": 63777,
+    "chg_pct": 0.35
   },
   "macro": {
     "10Y": 5.15,
-    "DXY": 103.38,
-    "WTI": 88.61,
+    "DXY": 103.47,
+    "WTI": 89.34,
     "VIX": 19.3,
-    "asof": "2026-11-16T00:20:14Z"
+    "asof": "2026-11-16T06:52:55Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
