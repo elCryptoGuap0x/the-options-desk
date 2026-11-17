@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T06:52:55Z",
+  "generated_at": "2026-11-17T00:45:38Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-16T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-17T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 64612,
-      "chg_pct": 0.35,
+      "last": 64552,
+      "chg_pct": -0.26,
       "history": [
-        80436,
         80664,
         80296,
         76085,
@@ -589,16 +588,16 @@
         64699,
         64901,
         64997,
-        64612
+        64612,
+        64552
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1813.35,
-      "chg_pct": 1.22,
+      "last": 1813.64,
+      "chg_pct": 0.31,
       "history": [
-        2423.33,
         2430.21,
         2418.07,
         2239.1,
@@ -637,16 +636,16 @@
         1810.72,
         1825.08,
         1824.81,
-        1813.35
+        1813.35,
+        1813.64
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 71.24,
-      "chg_pct": 1.22,
+      "last": 71.56,
+      "chg_pct": 0.11,
       "history": [
-        95.47,
         96.86,
         96.49,
         89.5,
@@ -685,7 +684,8 @@
         71.3,
         71.65,
         72.22,
-        71.24
+        71.24,
+        71.56
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,34 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Week of 11/16/2026: Retail Turns Bearish on NVDA Ahead of Earnings",
+      "summary": "Implied volatilities were mixed across asset classes last week. While stocks rebounded, bonds sold off on higher real yields as the Fed turned more hawkish. Learn more in this week's Macro Volatility Digest.",
+      "url": "https://www.cboe.com/insights/posts/week-of-11-16-2026-retail-turns-bearish-on-nvda-ahead-of-earnings/",
+      "ts": "2026-11-16T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Former Robinhood engineer pleads guilty to insider trading scheme on Hyperliquid",
+      "summary": "Huaisong Xiang admitted using confidential crypto listing information to make $125,523 trading perpetual futures on Hyperliquid.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/former-robinhood-engineer-pleads-guilty-to-insider-trading-scheme-on-hyperliquid",
+      "ts": "2026-11-16T21:51:04Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Option Volume During Global Trading Hours Continues to Build",
+      "summary": "Options trading in extended hours has grown every week since the new Global Trading Hours (GTH) and Curb sessions launched on October 19 for 24 single stocks and five ETFs.",
+      "url": "https://www.cboe.com/insights/posts/option-volume-during-global-trading-hours-continues-to-build/",
+      "ts": "2026-11-16T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Bitcoin risks falling below $60,000 as Nvidia earnings threaten to deepen crypto sell-off",
+      "summary": "Rising bond yields, ETF outflows and forced selling are weighing on bitcoin as traders brace for more losses.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-risks-falling-below-usd60-000-as-nvidia-earnings-threaten-to-deepen-crypto-sell-off",
+      "ts": "2026-11-16T20:35:21Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Market Metrics That Matter: U.S. Cash Equities October Volume Briefing",
       "summary": "Total Consolidated Volume (TCV) increased 2.67% month-over-month in October to an Average Daily Volume (ADV) of 17.3 billion shares. Trade Reporting Facility (TRF) volume as a percent of TCV declined slightly to 49.9%.",
       "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-u-s-cash-equities-october-volume-briefing/",
@@ -941,52 +969,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cardano holders vote down $5 million bid to buy warehouse copper",
-      "summary": "Toto Finance\u2019s 22 million ADA treasury request expired Sunday with about 20 million ADA in favor, and none of Cardano\u2019s seven constitutional committee members voted yes.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/cardano-holders-vote-down-usd5-million-bid-to-buy-warehouse-copper",
-      "ts": "2026-11-16T06:27:42Z"
+      "title": "U.S. Senate Democrats tell CFTC to back off its demand prediction markets defy bans",
+      "summary": "The Commodity Futures Trading Commission directed platforms such as Kalshi to defy state bans, but the Democrats want it to reverse course, citing court orders.",
+      "url": "https://www.coindesk.com/policy/2026/11/16/u-s-senate-democrats-tell-cftc-to-back-off-its-demand-prediction-markets-defy-bans",
+      "ts": "2026-11-16T18:54:19Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Small Caps, Mighty Liquidity: Inside the Russell 2000 Derivatives Ecosystem",
+      "summary": "A large, liquid, and fast-growing market: The Russell 2000 index has been the standard gauge of US small caps since 1984 and the primary venue for investors to express, hedge, or monetize small-cap risk.",
+      "url": "https://www.cboe.com/insights/posts/small-caps-mighty-liquidity-inside-the-russell-2000-derivatives-ecosystem/",
+      "ts": "2026-11-12T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Trump administration to name Nvidia, OpenAI and several others as AI national champions",
-      "summary": "The Wall Street Journal reported that the move aims to help the firms expand overseas and compete with global rivals, though nothing has been confirmed.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/trump-administration-to-name-nvidia-openai-and-several-others-as-u-s-ai-national-champions",
-      "ts": "2026-11-16T06:01:41Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin\u2019s biggest bet is now a drop below $60,000, not a rally above $100,000",
-      "summary": "The $60,000 put has replaced the $100,000 call as bitcoin\u2019s biggest options bet on Deribit, with $900 million in open interest after the recent slide.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000",
-      "ts": "2026-11-16T05:01:17Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Did prediction markets call the U.S. midterm election?: State of Crypto",
-      "summary": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses.",
-      "url": "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
-      "ts": "2026-11-15T19:30:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Crypto insiders aren't counting on silver linings in Congress' 'lame duck' session",
-      "summary": "With ascendent Democrats ready to pursue their own crypto and tech agendas next year, the final weeks of this session probably won't produce crypto surprises.",
-      "url": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
-      "ts": "2026-11-15T14:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
-      "summary": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
-      "url": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
-      "ts": "2026-11-15T02:50:57Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
-      "summary": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
-      "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
-      "ts": "2026-11-14T16:33:29Z"
+      "title": "Lighter suspends all withdrawals after $10.4 million crypto exploit",
+      "summary": "The decentralized exchange blamed a leaked trading API key and said its smart contracts were unaffected, while investigators traced funds to Hyperliquid.",
+      "url": "https://www.coindesk.com/tech/2026/11/16/lighter-suspends-all-withdrawals-after-usd10-4-million-crypto-exploit",
+      "ts": "2026-11-16T16:41:42Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 64603,
+    "last": 64535,
     "high_24h": 65502,
     "low_24h": 63879,
-    "chg_pct": 0.07
+    "chg_pct": -0.25
   },
   "macro": {
-    "10Y": 5.14,
-    "DXY": 103.53,
-    "WTI": 86.69,
-    "VIX": 21.04,
-    "asof": "2026-11-16T06:52:55Z"
+    "10Y": 5.12,
+    "DXY": 103.59,
+    "WTI": 85.31,
+    "VIX": 22.91,
+    "asof": "2026-11-17T00:45:38Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
