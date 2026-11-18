@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-18T07:42:37Z",
+  "generated_at": "2026-11-18T23:10:11Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-18T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-19T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 64501,
-      "chg_pct": -0.08,
+      "last": 62486,
+      "chg_pct": -3.86,
       "history": [
-        75636,
         75828,
         75902,
         75985,
@@ -589,16 +588,16 @@
         64552,
         64346,
         64885,
-        64501
+        64501,
+        62486
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1808.25,
-      "chg_pct": -1.0,
+      "last": 1767.03,
+      "chg_pct": -2.91,
       "history": [
-        2226.93,
         2231.23,
         2240.27,
         2243.82,
@@ -637,16 +636,16 @@
         1813.64,
         1822.45,
         1821.68,
-        1808.25
+        1808.25,
+        1767.03
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 74.84,
-      "chg_pct": 2.85,
+      "last": 73.08,
+      "chg_pct": -2.68,
       "history": [
-        89.59,
         89.89,
         90.24,
         90.08,
@@ -685,7 +684,8 @@
         71.56,
         72.39,
         74.97,
-        74.84
+        74.84,
+        73.08
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,6 +933,27 @@
   },
   "news": [
     {
+      "tag": "FED",
+      "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "summary": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+      "ts": "2026-11-18T19:00:00Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Nasdaq Breaks Losing Streak as Dow and S&P Slide Again",
+      "summary": "What might a day of trading without Nvidia in the spotlight look like? We may not know for some time, but Wednesday\u2019s mixed session might have offered a glimpse of what happens when investors look beyond the chipmaker for direction.",
+      "url": "https://www.cboe.com/insights/posts/nasdaq-breaks-losing-streak-as-dow-and-s-p-slide-again/",
+      "ts": "2026-11-18T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO\u2019s venture capital business, Tribe",
+      "summary": "Sethi, who was appointed co-CEO of Kraken in October 2024, is also the chairman of Tribe Capital.",
+      "url": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
+      "ts": "2026-11-18T22:30:00Z"
+    },
+    {
       "tag": "OPTIONS",
       "title": "Nvidia\u2019s Earnings and Guidance Soothe Investor Worries",
       "summary": "The wait is over: Nvidia delivered a solid third-quarter earnings report and upbeat revenue guidance that immediately lifted its shares, and those of other artificial intelligence (AI) and semiconductor companies, in after-hours trading Tue",
@@ -941,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Google finds self-running AI hacking tool with Russian comments in its files",
-      "summary": "Google spots an AI that can find and exploit software flaws on its own, no human needed.",
-      "url": "https://www.coindesk.com/tech/2026/11/18/google-finds-self-running-ai-hacking-tool-with-russian-comments-in-its-files",
-      "ts": "2026-11-18T07:37:59Z"
+      "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
+      "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange.",
+      "url": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
+      "ts": "2026-11-18T17:22:03Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,24 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin stuck near $65,000 as popular 'basis trade' returns dry up",
-      "summary": "XRP edged toward $1 and SOL rose 3%, while a Talos report showed crypto\u2019s favorite carry trade now pays about what Treasuries do.",
-      "url": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up",
-      "ts": "2026-11-18T07:27:48Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Nvidia Tugs Market Lower Again",
-      "summary": "Nvidia dragged the market lower again on Monday, with shares falling another 4% and extending a selloff that has increasingly weighed on technology and semiconductor stocks.",
-      "url": "https://www.cboe.com/insights/posts/nvidia-tugs-market-lower-again/",
-      "ts": "2026-11-16T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "U.S. judge says Ethereum has \u2018no terms of use,\u2019 clears MIT brothers of $25 million fraud",
-      "summary": "A federal judge acquitted Anton and James Peraire-Bueno, ruling that their 2023 trade against Ethereum trading bots involved no lie that anyone relied on, and closing the U.S. government\u2019s first criminal case over the practice known as MEV.",
-      "url": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud",
-      "ts": "2026-11-18T05:30:10Z"
+      "title": "Crypto Long & Short: Crypto exchanges shouldn\u2019t double as the vault",
+      "summary": "A single breach moved billions out of Binance in minutes, exposing how much client money sits with the venue that trades it. Darren Jordan of Komainu argues institutions should keep trading and custody separate, as traditional markets have ",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
+      "ts": "2026-11-18T16:02:54Z"
     },
     {
       "tag": "OPTIONS",
@@ -980,13 +987,6 @@
       "summary": "Options trading in extended hours has grown every week since the new Global Trading Hours (GTH) and Curb sessions launched on October 19 for 24 single stocks and five ETFs.",
       "url": "https://www.cboe.com/insights/posts/option-volume-during-global-trading-hours-continues-to-build/",
       "ts": "2026-11-16T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin's 12% slide through key support looks scary, but history says give it 3 months.",
-      "summary": "Bitcoin broke below its 200-week average with a 12% drop. Only three similar crashes have occurred since 2013. Here\u2019s what happened next.",
-      "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record",
-      "ts": "2026-11-18T04:34:21Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 62316,
-    "high_24h": 65166,
-    "low_24h": 62992,
-    "chg_pct": -2.18
+    "last": 62463,
+    "high_24h": 64918,
+    "low_24h": 62068,
+    "chg_pct": -3.82
   },
   "macro": {
     "10Y": 5.07,
-    "DXY": 103.88,
-    "WTI": 82.54,
-    "VIX": 25.24,
-    "asof": "2026-11-18T07:42:37Z"
+    "DXY": 103.78,
+    "WTI": 82.0,
+    "VIX": 24.56,
+    "asof": "2026-11-18T23:10:11Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
