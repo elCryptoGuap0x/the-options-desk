@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-18T00:13:18Z",
+  "generated_at": "2026-11-18T07:42:37Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-18T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 64885,
-      "chg_pct": 0.28,
+      "last": 64501,
+      "chg_pct": -0.08,
       "history": [
-        76085,
         75636,
         75828,
         75902,
@@ -589,16 +588,16 @@
         64612,
         64552,
         64346,
-        64885
+        64885,
+        64501
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1821.68,
-      "chg_pct": 0.21,
+      "last": 1808.25,
+      "chg_pct": -1.0,
       "history": [
-        2239.1,
         2226.93,
         2231.23,
         2240.27,
@@ -637,16 +636,16 @@
         1813.35,
         1813.64,
         1822.45,
-        1821.68
+        1821.68,
+        1808.25
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 74.97,
-      "chg_pct": 4.72,
+      "last": 74.84,
+      "chg_pct": 2.85,
       "history": [
-        89.5,
         89.59,
         89.89,
         90.24,
@@ -685,7 +684,8 @@
         71.24,
         71.56,
         72.39,
-        74.97
+        74.97,
+        74.84
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Nvidia tops estimates, issues strong guidance; shares rise",
-      "summary": "Speaking on the earnings call, Chairman Harvey Jones said the board has no intention of reinstating Jensen Huang as CEO.",
-      "url": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
-      "ts": "2026-11-17T21:25:50Z"
+      "title": "Google finds self-running AI hacking tool with Russian comments in its files",
+      "summary": "Google spots an AI that can find and exploit software flaws on its own, no human needed.",
+      "url": "https://www.coindesk.com/tech/2026/11/18/google-finds-self-running-ai-hacking-tool-with-russian-comments-in-its-files",
+      "ts": "2026-11-18T07:37:59Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Coinbase CEO says AI agents will account for '99.9%' of transactions within a decade",
-      "summary": "Brian Armstrong says Coinbase is building payment tools for AI agents and believes bitcoin has hit bottom despite the selloff.",
-      "url": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
-      "ts": "2026-11-17T19:45:57Z"
+      "title": "Live updates: Bitcoin stuck near $65,000 as popular 'basis trade' returns dry up",
+      "summary": "XRP edged toward $1 and SOL rose 3%, while a Talos report showed crypto\u2019s favorite carry trade now pays about what Treasuries do.",
+      "url": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up",
+      "ts": "2026-11-18T07:27:48Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
-      "summary": "The company confirmed that the Commodity Futures Trading Commission ordered it to stop \"mention\" contracts involving the U.S. president.",
-      "url": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
-      "ts": "2026-11-17T19:16:00Z"
+      "title": "U.S. judge says Ethereum has \u2018no terms of use,\u2019 clears MIT brothers of $25 million fraud",
+      "summary": "A federal judge acquitted Anton and James Peraire-Bueno, ruling that their 2023 trade against Ethereum trading bots involved no lie that anyone relied on, and closing the U.S. government\u2019s first criminal case over the practice known as MEV.",
+      "url": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud",
+      "ts": "2026-11-18T05:30:10Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Druckenmiller says he is short copper, warns of economic weakness in 2027",
-      "summary": "The billionaire investor is prioritizing capital preservation and shifting his AI focus from infrastructure to applications.",
-      "url": "https://www.coindesk.com/business/2026/11/17/druckenmiller-says-he-is-short-copper-warns-of-economic-weakness-in-2027",
-      "ts": "2026-11-17T17:42:40Z"
+      "title": "Bitcoin's 12% slide through key support looks scary, but history says give it 3 months.",
+      "summary": "Bitcoin broke below its 200-week average with a 12% drop. Only three similar crashes have occurred since 2013. Here\u2019s what happened next.",
+      "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record",
+      "ts": "2026-11-18T04:34:21Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 64888,
+    "last": 64467,
     "high_24h": 65268,
     "low_24h": 63361,
-    "chg_pct": 0.3
+    "chg_pct": -0.11
   },
   "macro": {
     "10Y": 5.1,
-    "DXY": 103.6,
-    "WTI": 85.86,
+    "DXY": 103.7,
+    "WTI": 84.1,
     "VIX": 25.46,
-    "asof": "2026-11-18T00:13:18Z"
+    "asof": "2026-11-18T07:42:37Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
