@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17T08:33:57Z",
+  "generated_at": "2026-11-18T00:13:18Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-17T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-18T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 64346,
-      "chg_pct": -0.28,
+      "last": 64885,
+      "chg_pct": 0.28,
       "history": [
-        80296,
         76085,
         75636,
         75828,
@@ -589,16 +588,16 @@
         64997,
         64612,
         64552,
-        64346
+        64346,
+        64885
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1822.45,
-      "chg_pct": 0.83,
+      "last": 1821.68,
+      "chg_pct": 0.21,
       "history": [
-        2418.07,
         2239.1,
         2226.93,
         2231.23,
@@ -637,16 +636,16 @@
         1824.81,
         1813.35,
         1813.64,
-        1822.45
+        1822.45,
+        1821.68
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 72.39,
-      "chg_pct": 2.2,
+      "last": 74.97,
+      "chg_pct": 4.72,
       "history": [
-        96.49,
         89.5,
         89.59,
         89.89,
@@ -685,7 +684,8 @@
         72.22,
         71.24,
         71.56,
-        72.39
+        72.39,
+        74.97
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,6 +934,20 @@
   "news": [
     {
       "tag": "OPTIONS",
+      "title": "Nvidia\u2019s Earnings and Guidance Soothe Investor Worries",
+      "summary": "The wait is over: Nvidia delivered a solid third-quarter earnings report and upbeat revenue guidance that immediately lifted its shares, and those of other artificial intelligence (AI) and semiconductor companies, in after-hours trading Tue",
+      "url": "https://www.cboe.com/insights/posts/nvidias-earnings-and-guidance-soothe-investor-worries/",
+      "ts": "2026-11-17T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Nvidia tops estimates, issues strong guidance; shares rise",
+      "summary": "Speaking on the earnings call, Chairman Harvey Jones said the board has no intention of reinstating Jensen Huang as CEO.",
+      "url": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
+      "ts": "2026-11-17T21:25:50Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Week of 11/16/2026: Retail Turns Bearish on NVDA Ahead of Earnings",
       "summary": "Implied volatilities were mixed across asset classes last week. While stocks rebounded, bonds sold off on higher real yields as the Fed turned more hawkish. Learn more in this week's Macro Volatility Digest.",
       "url": "https://www.cboe.com/insights/posts/week-of-11-16-2026-retail-turns-bearish-on-nvda-ahead-of-earnings/",
@@ -941,10 +955,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin could slide into the $50,000s as Fed rate hike bets build, Wintermute says",
-      "summary": "Bitcoin may slide into the $50,000s after losing its 200-week average, with ETF outflows, weak demand and rate-hike risks weighing on BTC, leading market maker warns.",
-      "url": "https://www.coindesk.com/markets/2026/11/17/bitcoin-could-slide-into-the-usd50-000s-as-fed-rate-hike-bets-build-wintermute-says",
-      "ts": "2026-11-17T07:38:07Z"
+      "title": "Coinbase CEO says AI agents will account for '99.9%' of transactions within a decade",
+      "summary": "Brian Armstrong says Coinbase is building payment tools for AI agents and believes bitcoin has hit bottom despite the selloff.",
+      "url": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
+      "ts": "2026-11-17T19:45:57Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "Nvidia Tugs Market Lower Again",
+      "summary": "Nvidia dragged the market lower again on Monday, with shares falling another 4% and extending a selloff that has increasingly weighed on technology and semiconductor stocks.",
+      "url": "https://www.cboe.com/insights/posts/nvidia-tugs-market-lower-again/",
+      "ts": "2026-11-16T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
+      "summary": "The company confirmed that the Commodity Futures Trading Commission ordered it to stop \"mention\" contracts involving the U.S. president.",
+      "url": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
+      "ts": "2026-11-17T19:16:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,38 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cardano Foundation seeks $5 million from treasury using ADA price 33% above market",
-      "summary": "The Foundation wants 25 million ADA for 12 global events, even as the token trades well below the 20 cent price used to size the request.",
-      "url": "https://www.coindesk.com/tech/2026/11/17/cardano-foundation-seeks-usd5-million-from-treasury-using-ada-price-33-above-market",
-      "ts": "2026-11-17T06:54:49Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Market Metrics That Matter: U.S. Cash Equities October Volume Briefing",
-      "summary": "Total Consolidated Volume (TCV) increased 2.67% month-over-month in October to an Average Daily Volume (ADV) of 17.3 billion shares. Trade Reporting Facility (TRF) volume as a percent of TCV declined slightly to 49.9%.",
-      "url": "https://www.cboe.com/insights/posts/market-metrics-that-matter-u-s-cash-equities-october-volume-briefing/",
-      "ts": "2026-11-13T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Wells Fargo's reported BlackRock bitcoin ETF holdings double to $2.35 billion",
-      "summary": "The bank's reported BlackRock bitcoin ETF position doubled to $2.35 billion in the third quarter, giving it exposure to roughly 28,000 BTC.",
-      "url": "https://www.coindesk.com/markets/2026/11/17/wells-fargo-s-reported-blackrock-bitcoin-etf-holdings-double-to-usd2-35-billion",
-      "ts": "2026-11-17T05:37:23Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Ripple-backed Evernorth has written down its pre-listing XRP holdings by 60%",
-      "summary": "The company\u2019s accounting policy requires it to record price declines without reversing those write-downs when XRP recovers.",
-      "url": "https://www.coindesk.com/markets/2026/11/17/ripple-backed-evernorth-has-written-down-its-pre-listing-xrp-holdings-by-60",
-      "ts": "2026-11-17T05:02:05Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Former Robinhood engineer pleads guilty to insider trading scheme on Hyperliquid",
-      "summary": "Huaisong Xiang admitted using confidential crypto listing information to make $125,523 trading perpetual futures on Hyperliquid.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/former-robinhood-engineer-pleads-guilty-to-insider-trading-scheme-on-hyperliquid",
-      "ts": "2026-11-16T21:51:04Z"
+      "title": "Druckenmiller says he is short copper, warns of economic weakness in 2027",
+      "summary": "The billionaire investor is prioritizing capital preservation and shifting his AI focus from infrastructure to applications.",
+      "url": "https://www.coindesk.com/business/2026/11/17/druckenmiller-says-he-is-short-copper-warns-of-economic-weakness-in-2027",
+      "ts": "2026-11-17T17:42:40Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 63744,
-    "high_24h": 65455,
+    "last": 64888,
+    "high_24h": 65268,
     "low_24h": 63361,
-    "chg_pct": -1.74
+    "chg_pct": 0.3
   },
   "macro": {
-    "10Y": 5.09,
-    "DXY": 103.41,
-    "WTI": 86.45,
-    "VIX": 25.3,
-    "asof": "2026-11-17T08:33:57Z"
+    "10Y": 5.1,
+    "DXY": 103.6,
+    "WTI": 85.86,
+    "VIX": 25.46,
+    "asof": "2026-11-18T00:13:18Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
