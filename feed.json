@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:10:11Z",
+  "generated_at": "2026-11-19T04:15:38Z",
   "session": {
     "day_label": "WED",
     "market_state": "CLOSED",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 62486,
-      "chg_pct": -3.86,
+      "last": 63282,
+      "chg_pct": -1.65,
       "history": [
-        75828,
         75902,
         75985,
         75825,
@@ -589,16 +588,16 @@
         64346,
         64885,
         64501,
-        62486
+        62486,
+        63282
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1767.03,
-      "chg_pct": -2.91,
+      "last": 1795.86,
+      "chg_pct": -0.38,
       "history": [
-        2231.23,
         2240.27,
         2243.82,
         2240.51,
@@ -637,16 +636,16 @@
         1822.45,
         1821.68,
         1808.25,
-        1767.03
+        1767.03,
+        1795.86
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 73.08,
-      "chg_pct": -2.68,
+      "last": 74.24,
+      "chg_pct": -0.67,
       "history": [
-        89.89,
         90.24,
         90.08,
         89.81,
@@ -685,7 +684,8 @@
         72.39,
         74.97,
         74.84,
-        73.08
+        73.08,
+        74.24
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO\u2019s venture capital business, Tribe",
-      "summary": "Sethi, who was appointed co-CEO of Kraken in October 2024, is also the chairman of Tribe Capital.",
-      "url": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
-      "ts": "2026-11-18T22:30:00Z"
+      "title": "CZ says tokenized Anthropic is coming to BNB Chain on IPO day",
+      "summary": "Changpeng Zhao says Anthropic-linked tokens from bStocks, Ondo and xStocks will hit BNB Chain on day one of the AI giant\u2019s Nasdaq debut. This follows a $500 million pre-IPO rush that comes with notable fine print.",
+      "url": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
+      "ts": "2026-11-19T03:40:48Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
-      "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange.",
-      "url": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
-      "ts": "2026-11-18T17:22:03Z"
+      "title": "Another U.S. appellate court goes against Kalshi, building the industry's legal headwinds",
+      "summary": "Despite a Commodity Futures Trading Commission demand that prediction markets return to operating in all 50 states, federal courts continue to get in the way.",
+      "url": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
+      "ts": "2026-11-19T00:33:46Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto Long & Short: Crypto exchanges shouldn\u2019t double as the vault",
-      "summary": "A single breach moved billions out of Binance in minutes, exposing how much client money sits with the venue that trades it. Darren Jordan of Komainu argues institutions should keep trading and custody separate, as traditional markets have ",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
-      "ts": "2026-11-18T16:02:54Z"
+      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO\u2019s venture capital business, Tribe",
+      "summary": "Sethi, who was appointed co-CEO of Kraken in October 2024, is also the chairman of Tribe Capital.",
+      "url": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
+      "ts": "2026-11-18T22:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 62463,
-    "high_24h": 64918,
+    "last": 63294,
+    "high_24h": 64864,
     "low_24h": 62068,
-    "chg_pct": -3.82
+    "chg_pct": -1.68
   },
   "macro": {
     "10Y": 5.07,
-    "DXY": 103.78,
-    "WTI": 82.0,
+    "DXY": 103.95,
+    "WTI": 82.09,
     "VIX": 24.56,
-    "asof": "2026-11-18T23:10:11Z"
+    "asof": "2026-11-19T04:15:38Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
