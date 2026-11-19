@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-19T04:15:38Z",
+  "generated_at": "2026-11-19T21:46:14Z",
   "session": {
-    "day_label": "WED",
+    "day_label": "THU",
     "market_state": "CLOSED",
     "next_open": "TOMORROW 8:30 CT",
-    "next_open_iso": "2026-11-19T14:30:00Z",
+    "next_open_iso": "2026-11-20T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 63282,
-      "chg_pct": -1.65,
+      "last": 61588,
+      "chg_pct": -1.1,
       "history": [
-        75902,
         75985,
         75825,
         75795,
@@ -589,16 +588,16 @@
         64885,
         64501,
         62486,
-        63282
+        63282,
+        61588
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1795.86,
-      "chg_pct": -0.38,
+      "last": 1741.28,
+      "chg_pct": -1.19,
       "history": [
-        2240.27,
         2243.82,
         2240.51,
         2235.56,
@@ -637,16 +636,16 @@
         1821.68,
         1808.25,
         1767.03,
-        1795.86
+        1795.86,
+        1741.28
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 74.24,
-      "chg_pct": -0.67,
+      "last": 72.21,
+      "chg_pct": -0.97,
       "history": [
-        90.24,
         90.08,
         89.81,
         89.79,
@@ -685,7 +684,8 @@
         74.97,
         74.84,
         73.08,
-        74.24
+        74.24,
+        72.21
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "CZ says tokenized Anthropic is coming to BNB Chain on IPO day",
-      "summary": "Changpeng Zhao says Anthropic-linked tokens from bStocks, Ondo and xStocks will hit BNB Chain on day one of the AI giant\u2019s Nasdaq debut. This follows a $500 million pre-IPO rush that comes with notable fine print.",
-      "url": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
-      "ts": "2026-11-19T03:40:48Z"
+      "title": "Sky's USDS stablecoin shrinks 35% as $1.5 billion exits reserves after illicit-finance report",
+      "summary": "USDS held its $1 peg as a large holder linked to Poloniex withdrew much of decentralized protocol Sky's USDC liquidity backing its stablecoins.",
+      "url": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report",
+      "ts": "2026-11-19T19:53:42Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Another U.S. appellate court goes against Kalshi, building the industry's legal headwinds",
-      "summary": "Despite a Commodity Futures Trading Commission demand that prediction markets return to operating in all 50 states, federal courts continue to get in the way.",
-      "url": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
-      "ts": "2026-11-19T00:33:46Z"
+      "title": "Trump's Democratic SEC pick suggests tokenization policy deserves full rule process",
+      "summary": "The U.S. Senate Banking Committee held a confirmation hearing for the two nominees \u2014 one from each party \u2014 as the administration rebuilds the markets regulators.",
+      "url": "https://www.coindesk.com/policy/2026/11/19/trump-s-democratic-sec-pick-suggests-tokenization-policy-deserves-full-rule-process",
+      "ts": "2026-11-19T18:15:56Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO\u2019s venture capital business, Tribe",
-      "summary": "Sethi, who was appointed co-CEO of Kraken in October 2024, is also the chairman of Tribe Capital.",
-      "url": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
-      "ts": "2026-11-18T22:30:00Z"
+      "title": "Anthropic gains after IPO, but pulls off highest levels",
+      "summary": "After opening at $111.50, ANT quickly slipped back under $100, still above its $83 offering price.",
+      "url": "https://www.coindesk.com/markets/2026/11/19/anthropic-opens-for-trade-at-usd11-50-up-34-from-ipo-price",
+      "ts": "2026-11-19T17:01:47Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 63654,
+    "last": 61588,
     "high_24h": 64006,
-    "low_24h": 62068,
-    "chg_pct": -0.55
+    "low_24h": 61753,
+    "chg_pct": -1.1
   },
   "macro": {
-    "10Y": 5.07,
-    "DXY": 103.71,
-    "WTI": 83.2,
-    "VIX": 22.17,
-    "asof": "2026-11-19T04:15:38Z"
+    "10Y": 5.05,
+    "DXY": 103.94,
+    "WTI": 83.13,
+    "VIX": 28.44,
+    "asof": "2026-11-19T21:46:14Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
