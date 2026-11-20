@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-20T02:41:04Z",
+  "generated_at": "2026-11-20T10:36:46Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-20T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 61604,
-      "chg_pct": -1.51,
+      "last": 62061,
+      "chg_pct": -2.67,
       "history": [
-        75825,
         75795,
         75666,
         75711,
@@ -589,16 +588,16 @@
         62486,
         63282,
         61588,
-        61604
+        61604,
+        62061
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1733.57,
-      "chg_pct": -1.94,
+      "last": 1753.16,
+      "chg_pct": -2.79,
       "history": [
-        2240.51,
         2235.56,
         2229.82,
         2232.88,
@@ -637,16 +636,16 @@
         1767.03,
         1795.86,
         1741.28,
-        1733.57
+        1733.57,
+        1753.16
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 72.02,
-      "chg_pct": -1.52,
+      "last": 72.19,
+      "chg_pct": -3.07,
       "history": [
-        89.81,
         89.79,
         89.15,
         89.34,
@@ -685,7 +684,8 @@
         73.08,
         74.24,
         72.21,
-        72.02
+        72.02,
+        72.19
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Sky's USDS stablecoin shrinks 35% as $1.5 billion exits reserves after illicit-finance report",
-      "summary": "USDS held its $1 peg as a large holder linked to Poloniex withdrew much of decentralized protocol Sky's USDC liquidity backing its stablecoins.",
-      "url": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report",
-      "ts": "2026-11-19T19:53:42Z"
+      "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says",
+      "summary": "Hyperliquid and other onchain exchanges can offer derivatives to U.S. traders if they obtain the required licenses or work with a registered exchange, the CFTC chairman said.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
+      "ts": "2026-11-20T10:02:03Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Trump's Democratic SEC pick suggests tokenization policy deserves full rule process",
-      "summary": "The U.S. Senate Banking Committee held a confirmation hearing for the two nominees \u2014 one from each party \u2014 as the administration rebuilds the markets regulators.",
-      "url": "https://www.coindesk.com/policy/2026/11/19/trump-s-democratic-sec-pick-suggests-tokenization-policy-deserves-full-rule-process",
-      "ts": "2026-11-19T18:15:56Z"
+      "title": "Cathie Wood's Ark Invest piled into Anthropic IPO, buying $90 million worth of shares",
+      "summary": "ARK Invest snapped up $90 million in Anthropic stock across six funds during the AI maker\u2019s historic Nasdaq debut while offloading Nvidia shares amid leadership turmoil.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/cathie-wood-s-ark-invest-piled-into-anthropic-ipo-buying-usd90-million-worth-of-shares",
+      "ts": "2026-11-20T09:48:52Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Anthropic gains after IPO, but pulls off highest levels",
-      "summary": "After opening at $111.50, ANT quickly slipped back under $100, still above its $83 offering price.",
-      "url": "https://www.coindesk.com/markets/2026/11/19/anthropic-opens-for-trade-at-usd11-50-up-34-from-ipo-price",
-      "ts": "2026-11-19T17:01:47Z"
+      "title": "Wrapped Monero token plunges 99% as issuer-linked wallet sells $13.5 million",
+      "summary": "The sell-off hit Wagyu\u2019s XMR1 token, separate from Monero and Hyperliquid\u2019s XMR futures market.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/wrapped-monero-token-plunges-99-as-issuer-linked-wallet-sells-usd13-5-million",
+      "ts": "2026-11-20T08:04:40Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 61490,
+    "last": 62061,
     "high_24h": 64006,
-    "low_24h": 61413,
-    "chg_pct": -1.65
+    "low_24h": 61273,
+    "chg_pct": -2.67
   },
   "macro": {
     "10Y": 5.05,
-    "DXY": 103.9,
-    "WTI": 82.9,
-    "VIX": 28.44,
-    "asof": "2026-11-20T02:41:04Z"
+    "DXY": 103.87,
+    "WTI": 81.13,
+    "VIX": 29.56,
+    "asof": "2026-11-20T10:36:46Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
