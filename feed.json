@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-21T00:22:38Z",
+  "generated_at": "2026-11-21T07:39:11Z",
   "session": {
-    "day_label": "FRI",
-    "market_state": "CLOSED",
+    "day_label": "SAT",
+    "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-11-23T14:30:00Z",
     "position": "FLAT",
-    "desk_arms": null
+    "desk_arms": "MON 8:20 CT"
   },
   "stats": {
     "record": "0-0",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 58872,
-      "chg_pct": -5.28,
+      "last": 58180,
+      "chg_pct": -5.54,
       "history": [
-        75666,
         75711,
         75762,
         75825,
@@ -589,16 +588,16 @@
         61588,
         61604,
         62061,
-        58872
+        58872,
+        58180
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1620.0,
-      "chg_pct": -7.93,
+      "last": 1634.45,
+      "chg_pct": -6.14,
       "history": [
-        2229.82,
         2232.88,
         2233.22,
         2234.68,
@@ -637,16 +636,16 @@
         1741.28,
         1733.57,
         1753.16,
-        1620.0
+        1620.0,
+        1634.45
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 68.79,
-      "chg_pct": -6.01,
+      "last": 67.85,
+      "chg_pct": -6.19,
       "history": [
-        89.15,
         89.34,
         88.99,
         89.04,
@@ -685,7 +684,8 @@
         72.21,
         72.02,
         72.19,
-        68.79
+        68.79,
+        67.85
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Kalshi races to get ahead of New York order that could shut down exchange",
-      "summary": "The U.S. prediction market firm asked a New York court to give the company a chance to argue against a pending restraining order stemming from a new court loss.",
-      "url": "https://www.coindesk.com/policy/2026/11/20/kalshi-races-to-get-ahead-of-new-york-order-that-could-shut-down-exchange",
-      "ts": "2026-11-20T22:51:14Z"
+      "title": "Bitcoin nodes could be stalled by repeating one ID 50,000 times. AI found the bug",
+      "summary": "Bitcoin Core shipped fixes on Friday for a bug flagged by Loupe, an open-source scanner from Block\u2019s Spiral that uses AI agents to examine bitcoin code.",
+      "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-nodes-could-be-stalled-by-repeating-one-id-50-000-times-ai-found-the-bug",
+      "ts": "2026-11-21T06:16:42Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment",
-      "summary": "The firm is the latest to join in building blockchain-based stock markets under the agency\u2019s five-year \"innovation exemption\" for tokenized trading.",
-      "url": "https://www.coindesk.com/business/2026/11/20/fairmint-plans-tokenized-stock-venue-on-canton-ethereum-under-sec-experiment",
-      "ts": "2026-11-20T22:05:31Z"
+      "title": "XRP falls 10% as long bets unwind and ETF assets slip below $1 billion",
+      "summary": "The token broke its previous November lows during Saturday's crypto selloff, with long positions accounting for most XRP liquidations and technical indicators showing further weakness.",
+      "url": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion",
+      "ts": "2026-11-21T05:59:19Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
-      "summary": "Bitcoin is closing in on its $57,700 summer low as Delphi Digital strategist warns the Fed could make matters worse and STS Digital sees cash as the place to hide.",
-      "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
-      "ts": "2026-11-20T18:13:52Z"
+      "title": "Bitcoin tanks below $57,000 for the first time in two years, and its not alone",
+      "summary": "BTC's sell-off deepened on Saturday, with prices hitting two-year lows under $57,000.",
+      "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
+      "ts": "2026-11-21T04:10:07Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 58894,
-    "high_24h": 62478,
-    "low_24h": 57799,
-    "chg_pct": -5.24
+    "last": 58180,
+    "high_24h": 62224,
+    "low_24h": 55298,
+    "chg_pct": -5.54
   },
   "macro": {
     "10Y": 4.91,
     "DXY": 103.84,
-    "WTI": 83.62,
+    "WTI": 83.41,
     "VIX": 35.89,
-    "asof": "2026-11-21T00:22:38Z"
+    "asof": "2026-11-21T07:39:11Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
