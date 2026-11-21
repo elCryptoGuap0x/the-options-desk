@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T10:36:46Z",
+  "generated_at": "2026-11-21T00:22:38Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-20T14:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-11-23T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 62061,
-      "chg_pct": -2.67,
+      "last": 58872,
+      "chg_pct": -5.28,
       "history": [
-        75795,
         75666,
         75711,
         75762,
@@ -589,16 +588,16 @@
         63282,
         61588,
         61604,
-        62061
+        62061,
+        58872
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1753.16,
-      "chg_pct": -2.79,
+      "last": 1620.0,
+      "chg_pct": -7.93,
       "history": [
-        2235.56,
         2229.82,
         2232.88,
         2233.22,
@@ -637,16 +636,16 @@
         1795.86,
         1741.28,
         1733.57,
-        1753.16
+        1753.16,
+        1620.0
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 72.19,
-      "chg_pct": -3.07,
+      "last": 68.79,
+      "chg_pct": -6.01,
       "history": [
-        89.79,
         89.15,
         89.34,
         88.99,
@@ -685,7 +684,8 @@
         74.24,
         72.21,
         72.02,
-        72.19
+        72.19,
+        68.79
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Purpose Investments Adds Anthropic and Micron to Yield Shares ETF Suite on Cboe Canada",
+      "summary": "",
+      "url": "https://www.cboe.com/insights/posts/purpose-investments-adds-anthropic-and-micron-to-yield-shares-etf-suite-on-cboe-canada/",
+      "ts": "2026-11-20T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Kalshi races to get ahead of New York order that could shut down exchange",
+      "summary": "The U.S. prediction market firm asked a New York court to give the company a chance to argue against a pending restraining order stemming from a new court loss.",
+      "url": "https://www.coindesk.com/policy/2026/11/20/kalshi-races-to-get-ahead-of-new-york-order-that-could-shut-down-exchange",
+      "ts": "2026-11-20T22:51:14Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Anthropic Hits the Market, but Wall Street Hits the Brakes",
       "summary": "Wall Street came under significant pressure throughout most of Thursday\u2019s session in what appeared to be a classic sell-the-news reaction. Anthropic\u2019s highly anticipated initial public offering (IPO) sparked what looked like a rally in the ",
       "url": "https://www.cboe.com/insights/posts/anthropic-hits-the-market-but-wall-street-hits-the-brakes/",
@@ -948,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says",
-      "summary": "Hyperliquid and other onchain exchanges can offer derivatives to U.S. traders if they obtain the required licenses or work with a registered exchange, the CFTC chairman said.",
-      "url": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
-      "ts": "2026-11-20T10:02:03Z"
+      "title": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment",
+      "summary": "The firm is the latest to join in building blockchain-based stock markets under the agency\u2019s five-year \"innovation exemption\" for tokenized trading.",
+      "url": "https://www.coindesk.com/business/2026/11/20/fairmint-plans-tokenized-stock-venue-on-canton-ethereum-under-sec-experiment",
+      "ts": "2026-11-20T22:05:31Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cathie Wood's Ark Invest piled into Anthropic IPO, buying $90 million worth of shares",
-      "summary": "ARK Invest snapped up $90 million in Anthropic stock across six funds during the AI maker\u2019s historic Nasdaq debut while offloading Nvidia shares amid leadership turmoil.",
-      "url": "https://www.coindesk.com/markets/2026/11/20/cathie-wood-s-ark-invest-piled-into-anthropic-ipo-buying-usd90-million-worth-of-shares",
-      "ts": "2026-11-20T09:48:52Z"
+      "title": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
+      "summary": "Bitcoin is closing in on its $57,700 summer low as Delphi Digital strategist warns the Fed could make matters worse and STS Digital sees cash as the place to hide.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
+      "ts": "2026-11-20T18:13:52Z"
     },
     {
       "tag": "OPTIONS",
@@ -973,20 +987,6 @@
       "summary": "The wait is over: Nvidia delivered a solid third-quarter earnings report and upbeat revenue guidance that immediately lifted its shares, and those of other artificial intelligence (AI) and semiconductor companies, in after-hours trading Tue",
       "url": "https://www.cboe.com/insights/posts/nvidias-earnings-and-guidance-soothe-investor-worries/",
       "ts": "2026-11-17T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Wrapped Monero token plunges 99% as issuer-linked wallet sells $13.5 million",
-      "summary": "The sell-off hit Wagyu\u2019s XMR1 token, separate from Monero and Hyperliquid\u2019s XMR futures market.",
-      "url": "https://www.coindesk.com/markets/2026/11/20/wrapped-monero-token-plunges-99-as-issuer-linked-wallet-sells-usd13-5-million",
-      "ts": "2026-11-20T08:04:40Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Option Volume During Global Trading Hours Continues to Build",
-      "summary": "Options trading in extended hours has grown every week since the new Global Trading Hours (GTH) and Curb sessions launched on October 19 for 24 single stocks and five ETFs.",
-      "url": "https://www.cboe.com/insights/posts/option-volume-during-global-trading-hours-continues-to-build/",
-      "ts": "2026-11-16T05:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 58615,
-    "high_24h": 62826,
-    "low_24h": 58811,
-    "chg_pct": -6.81
+    "last": 58894,
+    "high_24h": 62478,
+    "low_24h": 57799,
+    "chg_pct": -5.24
   },
   "macro": {
-    "10Y": 4.94,
+    "10Y": 4.91,
     "DXY": 103.84,
-    "WTI": 82.96,
-    "VIX": 31.92,
-    "asof": "2026-11-20T10:36:46Z"
+    "WTI": 83.62,
+    "VIX": 35.89,
+    "asof": "2026-11-21T00:22:38Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
