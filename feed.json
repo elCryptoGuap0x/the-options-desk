@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T01:25:59Z",
+  "generated_at": "2026-11-22T08:44:47Z",
   "session": {
-    "day_label": "SAT",
+    "day_label": "SUN",
     "market_state": "WEEKEND",
     "next_open": "MON 8:30 CT",
     "next_open_iso": "2026-11-23T14:30:00Z",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 60113,
-      "chg_pct": 1.87,
+      "last": 59915,
+      "chg_pct": 3.81,
       "history": [
-        75834,
         74209,
         75114,
         74243,
@@ -589,16 +588,16 @@
         58180,
         59787,
         60343,
-        60113
+        60113,
+        59915
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1684.15,
-      "chg_pct": 3.79,
+      "last": 1687.25,
+      "chg_pct": 3.92,
       "history": [
-        2232.7,
         2118.54,
         2140.71,
         2107.15,
@@ -637,16 +636,16 @@
         1634.45,
         1679.8,
         1684.13,
-        1684.15
+        1684.15,
+        1687.25
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 70.23,
-      "chg_pct": 2.01,
+      "last": 69.92,
+      "chg_pct": 4.33,
       "history": [
-        89.36,
         85.73,
         87.75,
         86.73,
@@ -685,7 +684,8 @@
         67.85,
         70.28,
         70.46,
-        70.23
+        70.23,
+        69.92
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,9 +934,9 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Purpose Investments Adds Anthropic and Micron to Yield Shares ETF Suite on Cboe Canada",
-      "summary": "",
-      "url": "https://www.cboe.com/insights/posts/purpose-investments-adds-anthropic-and-micron-to-yield-shares-etf-suite-on-cboe-canada/",
+      "title": "Anthropic Options Preview",
+      "summary": "After a highly publicized Initial Public Offering (IPO) process, shares of Anthropic (NASDAQ: ANT) began trading in the open market on November 19, trading over 850 million shares and finishing their first day of trading more than $14, or 1",
+      "url": "https://www.cboe.com/insights/posts/anthropic-options-preview/",
       "ts": "2026-11-20T05:00:00Z"
     },
     {
@@ -948,10 +948,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Anthropic Hits the Market, but Wall Street Hits the Brakes",
-      "summary": "Wall Street came under significant pressure throughout most of Thursday\u2019s session in what appeared to be a classic sell-the-news reaction. Anthropic\u2019s highly anticipated initial public offering (IPO) sparked what looked like a rally in the ",
-      "url": "https://www.cboe.com/insights/posts/anthropic-hits-the-market-but-wall-street-hits-the-brakes/",
-      "ts": "2026-11-19T05:00:00Z"
+      "title": "Market Selloff Deepens as Investors Seek Shelter",
+      "summary": "There is a lot to say about what happened in Friday\u2019s tumultuous trading session, but probably the most relevant is that it\u2019s over, marking the end of an eventful week.",
+      "url": "https://www.cboe.com/insights/posts/market-selloff-deepens-as-investors-seek-shelter/",
+      "ts": "2026-11-20T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Nasdaq Breaks Losing Streak as Dow and S&P Slide Again",
-      "summary": "What might a day of trading without Nvidia in the spotlight look like? We may not know for some time, but Wednesday\u2019s mixed session might have offered a glimpse of what happens when investors look beyond the chipmaker for direction.",
-      "url": "https://www.cboe.com/insights/posts/nasdaq-breaks-losing-streak-as-dow-and-s-p-slide-again/",
-      "ts": "2026-11-18T05:00:00Z"
+      "title": "Anthropic Hits the Market, but Wall Street Hits the Brakes",
+      "summary": "Wall Street came under significant pressure throughout most of Thursday\u2019s session in what appeared to be a classic sell-the-news reaction. Anthropic\u2019s highly anticipated initial public offering (IPO) sparked what looked like a rally in the ",
+      "url": "https://www.cboe.com/insights/posts/anthropic-hits-the-market-but-wall-street-hits-the-brakes/",
+      "ts": "2026-11-19T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "OPTIONS",
-      "title": "Nvidia\u2019s Earnings and Guidance Soothe Investor Worries",
-      "summary": "The wait is over: Nvidia delivered a solid third-quarter earnings report and upbeat revenue guidance that immediately lifted its shares, and those of other artificial intelligence (AI) and semiconductor companies, in after-hours trading Tue",
-      "url": "https://www.cboe.com/insights/posts/nvidias-earnings-and-guidance-soothe-investor-worries/",
-      "ts": "2026-11-17T05:00:00Z"
+      "title": "Nasdaq Breaks Losing Streak as Dow and S&P Slide Again",
+      "summary": "What might a day of trading without Nvidia in the spotlight look like? We may not know for some time, but Wednesday\u2019s mixed session might have offered a glimpse of what happens when investors look beyond the chipmaker for direction.",
+      "url": "https://www.cboe.com/insights/posts/nasdaq-breaks-losing-streak-as-dow-and-s-p-slide-again/",
+      "ts": "2026-11-18T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 60113,
+    "last": 60013,
     "high_24h": 60799,
-    "low_24h": 55298,
-    "chg_pct": 1.87
+    "low_24h": 57695,
+    "chg_pct": 4.02
   },
   "macro": {
     "10Y": 4.91,
