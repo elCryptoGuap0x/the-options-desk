@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:42:43Z",
+  "generated_at": "2026-11-22T22:09:44Z",
   "session": {
     "day_label": "SUN",
     "market_state": "WEEKEND",
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 61227,
-      "chg_pct": 2.24,
+      "last": 60811,
+      "chg_pct": 1.15,
       "history": [
-        75114,
         74243,
         74839,
         74758,
@@ -589,16 +588,16 @@
         60343,
         60113,
         59915,
-        61227
+        61227,
+        60811
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1719.86,
-      "chg_pct": 2.4,
+      "last": 1714.31,
+      "chg_pct": 2.11,
       "history": [
-        2140.71,
         2107.15,
         2126.62,
         2117.35,
@@ -637,16 +636,16 @@
         1684.13,
         1684.15,
         1687.25,
-        1719.86
+        1719.86,
+        1714.31
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 70.54,
-      "chg_pct": 0.21,
+      "last": 70.29,
+      "chg_pct": 0.34,
       "history": [
-        87.75,
         86.73,
         86.51,
         85.97,
@@ -685,7 +684,8 @@
         70.46,
         70.23,
         69.92,
-        70.54
+        70.54,
+        70.29
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,31 +934,17 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Anthropic Options Preview",
-      "summary": "After a highly publicized Initial Public Offering (IPO) process, shares of Anthropic (NASDAQ: ANT) began trading in the open market on November 19, trading over 850 million shares and finishing their first day of trading more than $14, or 1",
-      "url": "https://www.cboe.com/insights/posts/anthropic-options-preview/",
+      "title": "Purpose Investments Adds Anthropic and Micron to Yield Shares ETF Suite on Cboe Canada",
+      "summary": "",
+      "url": "https://www.cboe.com/insights/posts/purpose-investments-adds-anthropic-and-micron-to-yield-shares-etf-suite-on-cboe-canada/",
       "ts": "2026-11-20T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
-      "summary": "Quantum computers can\u2019t break Bitcoin network\u2019s security yet, but Leo Fan warns that upgrading it and moving funds could take longer than expected.",
-      "url": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
-      "ts": "2026-11-22T14:00:00Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Market Selloff Deepens as Investors Seek Shelter",
-      "summary": "There is a lot to say about what happened in Friday\u2019s tumultuous trading session, but probably the most relevant is that it\u2019s over, marking the end of an eventful week.",
-      "url": "https://www.cboe.com/insights/posts/market-selloff-deepens-as-investors-seek-shelter/",
-      "ts": "2026-11-20T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
-      "summary": "The selloff wiped out $1.8 billion in leveraged crypto positions, mostly from bullish bets on rising prices.",
-      "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
-      "ts": "2026-11-21T17:50:00Z"
+      "title": "More on the pending oversight hearings: State of Crypto",
+      "summary": "New letters show the widening range of Congressional committees that will be probing the presidential administration \u2014 and the crypto collateral that may be swept up.",
+      "url": "https://www.coindesk.com/",
+      "ts": "2026-11-22T19:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
-      "summary": "The withdrawal carried a valid signature, which Onchain Lens said points to a possible compromise of the key validators use to approve vault payouts.",
-      "url": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
-      "ts": "2026-11-21T16:41:00Z"
+      "title": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
+      "summary": "Quantum computers can\u2019t break Bitcoin network\u2019s security yet, but Leo Fan warns that upgrading it and moving funds could take longer than expected.",
+      "url": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins",
+      "ts": "2026-11-22T14:00:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +969,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
-      "summary": "BTCS cut its reported Aave debt by about $10 million in ten days, but falling ether prices are keeping its collateral under pressure.",
-      "url": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated",
-      "ts": "2026-11-21T12:30:00Z"
+      "title": "Bitcoin rebounds above $60,000 after $1.8 billion crypto liquidation wave",
+      "summary": "The selloff wiped out $1.8 billion in leveraged crypto positions, mostly from bullish bets on rising prices.",
+      "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
+      "ts": "2026-11-21T17:50:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
+      "summary": "The withdrawal carried a valid signature, which Onchain Lens said points to a possible compromise of the key validators use to approve vault payouts.",
+      "url": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
+      "ts": "2026-11-21T16:41:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "OpenAI, Anthropic and rivals seek AI agent rules to prevent commerce chaos",
+      "summary": "OpenAI, Anthropic, and other technology giants are backing standards designed to enable agents to work together without putting any one company in control.",
+      "url": "https://www.coindesk.com/tech/2026/11/21/openai-anthropic-and-rivals-seek-ai-agent-rules-to-prevent-commerce-chaos",
+      "ts": "2026-11-21T14:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,10 +1048,10 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 61227,
+    "last": 60802,
     "high_24h": 61447,
     "low_24h": 58696,
-    "chg_pct": 2.24
+    "chg_pct": 1.11
   },
   "macro": {
     "10Y": 4.91,
