@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-23T12:16:31Z",
+  "generated_at": "2026-11-24T00:03:55Z",
   "session": {
     "day_label": "MON",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-23T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-24T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 61270,
-      "chg_pct": 0.13,
+      "last": 61155,
+      "chg_pct": 0.11,
       "history": [
-        74758,
         74170,
         73620,
         73572,
@@ -589,16 +588,16 @@
         61227,
         60811,
         60515,
-        61270
+        61270,
+        61155
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1720.61,
-      "chg_pct": 0.47,
+      "last": 1706.68,
+      "chg_pct": -0.87,
       "history": [
-        2117.35,
         2088.14,
         2048.29,
         2056.9,
@@ -637,16 +636,16 @@
         1719.86,
         1714.31,
         1700.86,
-        1720.61
+        1720.61,
+        1706.68
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 72.36,
-      "chg_pct": 2.43,
+      "last": 71.83,
+      "chg_pct": 1.82,
       "history": [
-        85.97,
         85.03,
         82.99,
         83.2,
@@ -685,7 +684,8 @@
         70.54,
         70.29,
         70.0,
-        72.36
+        72.36,
+        71.83
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -934,59 +934,59 @@
   "news": [
     {
       "tag": "OPTIONS",
-      "title": "Purpose Investments Adds Anthropic and Micron to Yield Shares ETF Suite on Cboe Canada",
-      "summary": "",
-      "url": "https://www.cboe.com/insights/posts/purpose-investments-adds-anthropic-and-micron-to-yield-shares-etf-suite-on-cboe-canada/",
+      "title": "Week of 11/23/2026: VIX\u00ae Jumps to 1-Year High, but No Panic as AI Trade Unwinds",
+      "summary": "Friday\u2019s VIX\u00ae move, while large, was surprisingly orderly. The sell-off in SPX\u00ae spot (-3.7%) and the increase in fixed-strike vols (+3.2 pts) accounted for almost 90% of the 7.4pt VIX increase. Learn more in this week\u2019s Macro Volatility Dig",
+      "url": "https://www.cboe.com/insights/posts/week-of-11-23-2026-vix-jumps-to-1-year-high-but-no-panic-as-ai-trade-unwinds/",
+      "ts": "2026-11-23T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "New York judge declines to block Kalshi from operating in the state for now",
+      "summary": "Judge Melissa Crane did not shut down Kalshi's operations in a hearing Monday, but did say she wanted both parties to present their full arguments in an expedited fashion.",
+      "url": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
+      "ts": "2026-11-23T18:22:03Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "The Market Taketh and the Market Giveth Back",
+      "summary": "Talk about whiplash. Monday\u2019s market roared higher after Nvidia announced Jensen Huang was back at the helm, underscoring just how quickly investor sentiment can shift from melancholy to merriment on a single headline.",
+      "url": "https://www.cboe.com/insights/posts/the-market-taketh-and-the-market-giveth-back/",
+      "ts": "2026-11-23T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
+      "summary": "Congressional scrutiny will continue even as CEO returns to lead the company after his affair scandal and its national-security implications.",
+      "url": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
+      "ts": "2026-11-23T18:12:05Z"
+    },
+    {
+      "tag": "OPTIONS",
+      "title": "What to Know About the Launch of Anthropic Options",
+      "summary": "After a highly publicized Initial Public Offering (IPO) process, shares of Anthropic (NASDAQ: ANT) began trading in the open market on November 19, trading over 850 million shares and finishing their first day of trading more than $14, or 1",
+      "url": "https://www.cboe.com/insights/posts/what-to-know-about-the-launch-of-anthropic-options/",
       "ts": "2026-11-20T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin rebounds from 2-year low as Wall Street futures recover",
-      "summary": "Monday's market activity will show whether the weekend decline was seen as a dip and traders add to their holdings, or whether they abstain and the bounce fades.",
-      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebounds-from-2-year-low-as-wall-street-futures-recover",
-      "ts": "2026-11-23T11:51:09Z"
+      "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
+      "summary": "Nvidia jumped more than 30% and has recovered most of its losses since CEO Jensen Huang stepped down, but bitcoin is lagging as U.S. selling persists, traders said.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
+      "ts": "2026-11-23T17:31:27Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "Anthropic Hits the Market, but Wall Street Hits the Brakes",
-      "summary": "Wall Street came under significant pressure throughout most of Thursday\u2019s session in what appeared to be a classic sell-the-news reaction. Anthropic\u2019s highly anticipated initial public offering (IPO) sparked what looked like a rally in the ",
-      "url": "https://www.cboe.com/insights/posts/anthropic-hits-the-market-but-wall-street-hits-the-brakes/",
-      "ts": "2026-11-19T05:00:00Z"
+      "title": "Market Selloff Deepens as Investors Seek Shelter",
+      "summary": "There is a lot to say about what happened in Friday\u2019s tumultuous trading session, but probably the most relevant is that it\u2019s over, marking the end of an eventful week.",
+      "url": "https://www.cboe.com/insights/posts/market-selloff-deepens-as-investors-seek-shelter/",
+      "ts": "2026-11-20T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Japan to ramp up crypto tax audits after uncovering $24.5 million in hidden income",
-      "summary": "On-site audits of individual crypto traders averaged 12.58 million yen in extra tax per case, nearly triple the bureau's standard audit average.",
-      "url": "https://www.coindesk.com/business/2026/11/23/japan-to-ramp-up-crypto-tax-audits-after-uncovering-usd24-5-million-in-hidden-income",
-      "ts": "2026-11-23T11:33:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Live updates: Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
-      "summary": "Bitcoin is recovering from a weekend plunge to nearly $55,500, its lowest in more than two years, as Nasdaq futures jumped 3% and Nvidia rallied.",
-      "url": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout",
-      "ts": "2026-11-23T11:29:09Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "South Korea to expand cryptocurrency account freezes and curb illicit transfers abroad",
-      "summary": "The proposed measures would also expand a June phishing-account suspension system, which has already frozen more than 11,500 accounts, to cover other serious financial crimes.",
-      "url": "https://www.coindesk.com/policy/2026/11/23/south-korea-to-expand-cryptocurrency-account-freezes-and-curb-illicit-transfers-abroad",
-      "ts": "2026-11-23T10:53:19Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin breaks a record streak of 'lower highs.' Here's what it means",
-      "summary": "Bitcoin rose above the previous day\u2019s peak on Sunday, an early sign that selling pressure may be easing even as the cryptocurrency remains down 21% in November.",
-      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-breaks-a-record-streak-of-lower-highs-here-s-what-it-means",
-      "ts": "2026-11-23T10:31:02Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "U.S. inflation, Thanksgiving trading: Crypto Week Ahead",
-      "summary": "Your look at what\u2019s coming in the week starting Nov. 23.",
-      "url": "https://www.coindesk.com/markets/2026/11/23/u-s-inflation-thanksgiving-trading-crypto-week-ahead",
-      "ts": "2026-11-23T09:40:25Z"
+      "title": "Cathie Wood's ARK Invest pulls the plug on two planned crypto ETFs",
+      "summary": "ProShares' rival CoinDesk 20 Crypto ETF (KRYP) holds $1.81 million in assets nearly 10 months post-launch.",
+      "url": "https://www.coindesk.com/business/2026/11/23/cathie-wood-s-ark-invest-pulls-the-plug-on-two-planned-crypto-etfs",
+      "ts": "2026-11-23T16:39:03Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 61282,
-    "high_24h": 61796,
+    "last": 61155,
+    "high_24h": 64446,
     "low_24h": 60358,
-    "chg_pct": 0.24
+    "chg_pct": 0.11
   },
   "macro": {
-    "10Y": 4.91,
-    "DXY": 103.92,
-    "WTI": 82.39,
-    "VIX": 30.2,
-    "asof": "2026-11-23T12:16:31Z"
+    "10Y": 4.92,
+    "DXY": 104.32,
+    "WTI": 80.41,
+    "VIX": 26.62,
+    "asof": "2026-11-24T00:03:55Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
