@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-24T00:03:55Z",
+  "generated_at": "2026-11-24T09:45:27Z",
   "session": {
-    "day_label": "MON",
+    "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-24T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 61155,
-      "chg_pct": 0.11,
+      "last": 60112,
+      "chg_pct": -2.2,
       "history": [
-        74170,
         73620,
         73572,
         73972,
@@ -589,16 +588,16 @@
         60811,
         60515,
         61270,
-        61155
+        61155,
+        60112
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1706.68,
-      "chg_pct": -0.87,
+      "last": 1689.93,
+      "chg_pct": -1.96,
       "history": [
-        2088.14,
         2048.29,
         2056.9,
         2059.57,
@@ -637,16 +636,16 @@
         1714.31,
         1700.86,
         1720.61,
-        1706.68
+        1706.68,
+        1689.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 71.83,
-      "chg_pct": 1.82,
+      "last": 70.93,
+      "chg_pct": -1.85,
       "history": [
-        85.03,
         82.99,
         83.2,
         83.85,
@@ -685,7 +684,8 @@
         70.29,
         70.0,
         72.36,
-        71.83
+        71.83,
+        70.93
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "New York judge declines to block Kalshi from operating in the state for now",
-      "summary": "Judge Melissa Crane did not shut down Kalshi's operations in a hearing Monday, but did say she wanted both parties to present their full arguments in an expedited fashion.",
-      "url": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
-      "ts": "2026-11-23T18:22:03Z"
+      "title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
+      "summary": "The derivatives regulator issues a rule on data reporting for event contracts and new guidance for how crypto assets can be used to meet regulatory requirements.",
+      "url": "https://www.coindesk.com/policy/2026/11/23/u-s-cftc-sets-policies-on-event-contract-data-using-crypto-to-check-financial-boxes",
+      "ts": "2026-11-24T00:25:04Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
-      "summary": "Congressional scrutiny will continue even as CEO returns to lead the company after his affair scandal and its national-security implications.",
-      "url": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
-      "ts": "2026-11-23T18:12:05Z"
+      "title": "New York judge declines to block Kalshi from operating in the state for now",
+      "summary": "Judge Melissa Crane did not shut down Kalshi's operations in a hearing Monday, but did say she wanted both parties to present their full arguments in an expedited fashion.",
+      "url": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
+      "ts": "2026-11-23T18:22:03Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
-      "summary": "Nvidia jumped more than 30% and has recovered most of its losses since CEO Jensen Huang stepped down, but bitcoin is lagging as U.S. selling persists, traders said.",
-      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
-      "ts": "2026-11-23T17:31:27Z"
+      "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
+      "summary": "Congressional scrutiny will continue even as CEO returns to lead the company after his affair scandal and its national-security implications.",
+      "url": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
+      "ts": "2026-11-23T18:12:05Z"
     },
     {
       "tag": "OPTIONS",
@@ -983,10 +983,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Cathie Wood's ARK Invest pulls the plug on two planned crypto ETFs",
-      "summary": "ProShares' rival CoinDesk 20 Crypto ETF (KRYP) holds $1.81 million in assets nearly 10 months post-launch.",
-      "url": "https://www.coindesk.com/business/2026/11/23/cathie-wood-s-ark-invest-pulls-the-plug-on-two-planned-crypto-etfs",
-      "ts": "2026-11-23T16:39:03Z"
+      "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
+      "summary": "Nvidia jumped more than 30% and has recovered most of its losses since CEO Jensen Huang stepped down, but bitcoin is lagging as U.S. selling persists, traders said.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
+      "ts": "2026-11-23T17:31:27Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 61155,
+    "last": 60112,
     "high_24h": 64446,
-    "low_24h": 60358,
-    "chg_pct": 0.11
+    "low_24h": 59467,
+    "chg_pct": -2.2
   },
   "macro": {
     "10Y": 4.92,
-    "DXY": 104.32,
-    "WTI": 80.41,
-    "VIX": 26.62,
-    "asof": "2026-11-24T00:03:55Z"
+    "DXY": 104.22,
+    "WTI": 80.25,
+    "VIX": 27.43,
+    "asof": "2026-11-24T09:45:27Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
