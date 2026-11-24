@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-24T09:45:27Z",
+  "generated_at": "2026-11-24T20:23:18Z",
   "session": {
     "day_label": "TUE",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-24T14:30:00Z",
+    "next_open": "TOMORROW 8:30 CT",
+    "next_open_iso": "2026-11-25T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 60112,
-      "chg_pct": -2.2,
+      "last": 59652,
+      "chg_pct": -2.47,
       "history": [
-        73620,
         73572,
         73972,
         74114,
@@ -589,16 +588,16 @@
         60515,
         61270,
         61155,
-        60112
+        60112,
+        59652
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1689.93,
-      "chg_pct": -1.96,
+      "last": 1673.52,
+      "chg_pct": -3.2,
       "history": [
-        2048.29,
         2056.9,
         2059.57,
         2062.84,
@@ -637,16 +636,16 @@
         1700.86,
         1720.61,
         1706.68,
-        1689.93
+        1689.93,
+        1673.52
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 70.93,
-      "chg_pct": -1.85,
+      "last": 69.08,
+      "chg_pct": -5.51,
       "history": [
-        82.99,
         83.2,
         83.85,
         83.69,
@@ -685,7 +684,8 @@
         70.0,
         72.36,
         71.83,
-        70.93
+        70.93,
+        69.08
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,6 +933,13 @@
   },
   "news": [
     {
+      "tag": "FED",
+      "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "summary": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+      "ts": "2026-11-24T19:00:00Z"
+    },
+    {
       "tag": "OPTIONS",
       "title": "Week of 11/23/2026: VIX\u00ae Jumps to 1-Year High, but No Panic as AI Trade Unwinds",
       "summary": "Friday\u2019s VIX\u00ae move, while large, was surprisingly orderly. The sell-off in SPX\u00ae spot (-3.7%) and the increase in fixed-strike vols (+3.2 pts) accounted for almost 90% of the 7.4pt VIX increase. Learn more in this week\u2019s Macro Volatility Dig",
@@ -941,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
-      "summary": "The derivatives regulator issues a rule on data reporting for event contracts and new guidance for how crypto assets can be used to meet regulatory requirements.",
-      "url": "https://www.coindesk.com/policy/2026/11/23/u-s-cftc-sets-policies-on-event-contract-data-using-crypto-to-check-financial-boxes",
-      "ts": "2026-11-24T00:25:04Z"
+      "title": "Utah moves to drop criminal pursuit of Kalshi after the firm halted services there",
+      "summary": "The state continues to hold the criminal charges in its back pocket with a vow to hit Kalshi and other prediction markets with gambling accusations if they return.",
+      "url": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
+      "ts": "2026-11-24T17:50:08Z"
     },
     {
       "tag": "OPTIONS",
@@ -955,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "New York judge declines to block Kalshi from operating in the state for now",
-      "summary": "Judge Melissa Crane did not shut down Kalshi's operations in a hearing Monday, but did say she wanted both parties to present their full arguments in an expedited fashion.",
-      "url": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
-      "ts": "2026-11-23T18:22:03Z"
+      "title": "'AI trade never died': Traders see room for market recovery, but bitcoin's participation is another story",
+      "summary": "Monday's tech enthusiasm is quickly fading on Tuesday, while bitcoin remains near bear-market lows.",
+      "url": "https://www.coindesk.com/markets/2026/11/24/ai-trade-never-died-traders-see-room-for-market-recovery-despite-bitcoin-s-weakness",
+      "ts": "2026-11-24T16:00:25Z"
     },
     {
       "tag": "OPTIONS",
@@ -969,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
-      "summary": "Congressional scrutiny will continue even as CEO returns to lead the company after his affair scandal and its national-security implications.",
-      "url": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
-      "ts": "2026-11-23T18:12:05Z"
+      "title": "Anchorage Digital to unveil new asset-management subsidiary",
+      "summary": "The crypto custody technology firm said it will unveil a separate subsidiary called 61st Parallel Asset Management.",
+      "url": "https://www.coindesk.com/business/2026/11/24/anchorage-digital-to-unveil-new-asset-management-subsidiary",
+      "ts": "2026-11-24T15:06:32Z"
     },
     {
       "tag": "OPTIONS",
@@ -980,13 +987,6 @@
       "summary": "There is a lot to say about what happened in Friday\u2019s tumultuous trading session, but probably the most relevant is that it\u2019s over, marking the end of an eventful week.",
       "url": "https://www.cboe.com/insights/posts/market-selloff-deepens-as-investors-seek-shelter/",
       "ts": "2026-11-20T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
-      "summary": "Nvidia jumped more than 30% and has recovered most of its losses since CEO Jensen Huang stepped down, but bitcoin is lagging as U.S. selling persists, traders said.",
-      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
-      "ts": "2026-11-23T17:31:27Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 60112,
-    "high_24h": 64446,
-    "low_24h": 59467,
-    "chg_pct": -2.2
+    "last": 59637,
+    "high_24h": 61557,
+    "low_24h": 59265,
+    "chg_pct": -2.5
   },
   "macro": {
-    "10Y": 4.92,
-    "DXY": 104.22,
-    "WTI": 80.25,
-    "VIX": 27.43,
-    "asof": "2026-11-24T09:45:27Z"
+    "10Y": 4.9,
+    "DXY": 103.8,
+    "WTI": 81.52,
+    "VIX": 27.46,
+    "asof": "2026-11-24T20:23:18Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
