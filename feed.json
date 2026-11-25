@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-25T03:42:53Z",
+  "generated_at": "2026-11-25T22:49:36Z",
   "session": {
-    "day_label": "TUE",
+    "day_label": "WED",
     "market_state": "CLOSED",
     "next_open": "TOMORROW 8:30 CT",
-    "next_open_iso": "2026-11-25T14:30:00Z",
+    "next_open_iso": "2026-11-26T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 59423,
-      "chg_pct": -1.48,
+      "last": 60134,
+      "chg_pct": 0.25,
       "history": [
-        73972,
         74114,
         73550,
         71391,
@@ -589,16 +588,16 @@
         61155,
         60112,
         59652,
-        59423
+        59423,
+        60134
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1663.36,
-      "chg_pct": -1.8,
+      "last": 1686.45,
+      "chg_pct": 0.08,
       "history": [
-        2059.57,
         2062.84,
         2047.6,
         2012.06,
@@ -637,16 +636,16 @@
         1706.68,
         1689.93,
         1673.52,
-        1663.36
+        1663.36,
+        1686.45
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 69.3,
-      "chg_pct": -2.49,
+      "last": 70.48,
+      "chg_pct": 0.87,
       "history": [
-        83.85,
         83.69,
         82.86,
         81.31,
@@ -685,7 +684,8 @@
         71.83,
         70.93,
         69.08,
-        69.3
+        69.3,
+        70.48
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -941,6 +941,20 @@
     },
     {
       "tag": "OPTIONS",
+      "title": "Call It Wall Street\u2019s Turkey of a Trading Day",
+      "summary": "Whoa! What a ride. We thought the market might repeat last Friday\u2019s selloff but dip buyers eventually stepped in and helped pull stocks off their deep morning lows. Crazy things can happen when traders take days off and it\u2019s one of those da",
+      "url": "https://www.cboe.com/insights/posts/call-it-wall-streets-turkey-of-a-trading-day/",
+      "ts": "2026-11-25T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "French Senate blocks new crypto tax and wallet list critics called a kidnapping risk",
+      "summary": "The government opposed the measures citing existing EU data-sharing rules and non-legal tender status, leaving the 2027 budget open.",
+      "url": "https://www.coindesk.com/business/2026/11/25/french-senate-blocks-new-crypto-tax-and-wallet-list-critics-called-a-kidnapping-risk",
+      "ts": "2026-11-25T18:24:47Z"
+    },
+    {
+      "tag": "OPTIONS",
       "title": "Monday\u2019s Euphoria Ends with Tuesday\u2019s Hangover",
       "summary": "If Monday\u2019s merriment looked like a celebration, Tuesday was the hangover. Investor zeal over Jensen Huang\u2019s return to the spotlight at Nvidia faded as traders swung back to selling technology stocks and sheltering in defensive corners of t",
       "url": "https://www.cboe.com/insights/posts/mondays-euphoria-ends-with-tuesdays-hangover/",
@@ -948,24 +962,24 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Trump says he's willing to give Nvidia's Huang a pardon, doesn't think he needs one",
-      "summary": "President Donald Trump said in an interview with the New York Post that he's fine clearing Nvidia's CEO from legal trouble in his affair scandal.",
-      "url": "https://www.coindesk.com/policy/2026/11/24/trump-says-he-s-willing-to-give-nvidia-s-huang-a-pardon-doesn-t-think-he-needs-one",
-      "ts": "2026-11-25T03:35:20Z"
+      "title": "'This time actually seems different': Crypto veterans brace for more pain as bitcoin tumbles",
+      "summary": "Crypto sentiment is near rock bottom, but Galaxy sees room for a deeper slide and even longtime crypto bulls are wary of buying amid fears of AI and quantum computing.",
+      "url": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles",
+      "ts": "2026-11-25T17:38:33Z"
     },
     {
       "tag": "OPTIONS",
-      "title": "The Market Taketh and the Market Giveth Back",
-      "summary": "Talk about whiplash. Monday\u2019s market roared higher after Nvidia announced Jensen Huang was back at the helm, underscoring just how quickly investor sentiment can shift from melancholy to merriment on a single headline.",
-      "url": "https://www.cboe.com/insights/posts/the-market-taketh-and-the-market-giveth-back/",
-      "ts": "2026-11-23T05:00:00Z"
+      "title": "Liquidity, Success Rates and Mark-Outs: An Evolving Picture in European Periodic Auctions",
+      "summary": "As Periodic Auctions have grown to become a core part of the European equities trading landscape, new Cboe research highlights how its Periodic Auctions venue continues to set the standard for execution quality, combining high success rates",
+      "url": "https://www.cboe.com/insights/posts/liquidity-success-rates-and-mark-outs-an-evolving-picture-in-european-periodic-auctions/",
+      "ts": "2026-11-24T05:00:00Z"
     },
     {
       "tag": "CRYPTO",
-      "title": "Utah moves to drop criminal pursuit of Kalshi after the firm halted services there",
-      "summary": "The state continues to hold the criminal charges in its back pocket with a vow to hit Kalshi and other prediction markets with gambling accusations if they return.",
-      "url": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
-      "ts": "2026-11-24T17:50:08Z"
+      "title": "EU bank watchdog seeks European Commission rules for crypto firms offering DeFi lending",
+      "summary": "The EBA renewed its call for the commission to propose rules for crypto firms granting client access to DeFi, particularly lending protocols.",
+      "url": "https://www.coindesk.com/policy/2026/11/25/eu-bank-watchdog-seeks-european-commission-rules-for-crypto-firms-offering-defi-lending",
+      "ts": "2026-11-25T16:02:31Z"
     },
     {
       "tag": "OPTIONS",
@@ -973,20 +987,6 @@
       "summary": "Friday\u2019s VIX\u00ae move, while large, was surprisingly orderly. The sell-off in SPX\u00ae spot (-3.7%) and the increase in fixed-strike vols (+3.2 pts) accounted for almost 90% of the 7.4pt VIX increase. Learn more in this week\u2019s Macro Volatility Dig",
       "url": "https://www.cboe.com/insights/posts/week-of-11-23-2026-vix-jumps-to-1-year-high-but-no-panic-as-ai-trade-unwinds/",
       "ts": "2026-11-23T05:00:00Z"
-    },
-    {
-      "tag": "CRYPTO",
-      "title": "'AI trade never died': Traders see room for market recovery, but bitcoin's participation is another story",
-      "summary": "Monday's tech enthusiasm is quickly fading on Tuesday, while bitcoin remains near bear-market lows.",
-      "url": "https://www.coindesk.com/markets/2026/11/24/ai-trade-never-died-traders-see-room-for-market-recovery-despite-bitcoin-s-weakness",
-      "ts": "2026-11-24T16:00:25Z"
-    },
-    {
-      "tag": "OPTIONS",
-      "title": "Market Selloff Deepens as Investors Seek Shelter",
-      "summary": "There is a lot to say about what happened in Friday\u2019s tumultuous trading session, but probably the most relevant is that it\u2019s over, marking the end of an eventful week.",
-      "url": "https://www.cboe.com/insights/posts/market-selloff-deepens-as-investors-seek-shelter/",
-      "ts": "2026-11-20T05:00:00Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 58399,
-    "high_24h": 60524,
-    "low_24h": 58415,
-    "chg_pct": -2.84
+    "last": 60142,
+    "high_24h": 60395,
+    "low_24h": 57308,
+    "chg_pct": 0.25
   },
   "macro": {
-    "10Y": 4.84,
-    "DXY": 103.95,
-    "WTI": 82.54,
-    "VIX": 30.91,
-    "asof": "2026-11-25T03:42:53Z"
+    "10Y": 4.85,
+    "DXY": 103.7,
+    "WTI": 84.15,
+    "VIX": 28.29,
+    "asof": "2026-11-25T22:49:36Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
