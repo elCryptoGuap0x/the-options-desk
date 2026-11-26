@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-26T04:32:50Z",
+  "generated_at": "2026-11-26T23:14:54Z",
   "session": {
-    "day_label": "WED",
+    "day_label": "THU",
     "market_state": "CLOSED",
     "next_open": "TOMORROW 8:30 CT",
-    "next_open_iso": "2026-11-26T14:30:00Z",
+    "next_open_iso": "2026-11-27T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 60994,
-      "chg_pct": 3.14,
+      "last": 60418,
+      "chg_pct": 0.46,
       "history": [
-        73550,
         71391,
         70157,
         69302,
@@ -589,16 +588,16 @@
         59652,
         59423,
         60134,
-        60994
+        60994,
+        60418
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1700.78,
-      "chg_pct": 2.58,
+      "last": 1687.29,
+      "chg_pct": 0.04,
       "history": [
-        2047.6,
         2012.06,
         1987.83,
         1950.23,
@@ -637,16 +636,16 @@
         1673.52,
         1663.36,
         1686.45,
-        1700.78
+        1700.78,
+        1687.29
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 71.16,
-      "chg_pct": 3.27,
+      "last": 70.87,
+      "chg_pct": 0.6,
       "history": [
-        82.86,
         81.31,
         80.07,
         80.33,
@@ -685,7 +684,8 @@
         69.08,
         69.3,
         70.48,
-        71.16
+        71.16,
+        70.87
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "French Senate blocks new crypto tax and wallet list critics called a kidnapping risk",
-      "summary": "The government opposed the measures citing existing EU data-sharing rules and non-legal tender status, leaving the 2027 budget open.",
-      "url": "https://www.coindesk.com/business/2026/11/25/french-senate-blocks-new-crypto-tax-and-wallet-list-critics-called-a-kidnapping-risk",
-      "ts": "2026-11-25T18:24:47Z"
+      "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
+      "summary": "A Bitcoin Core contributor found that the wallet's habit of resending stuck payments lets anyone link an address to the computer watching it, for under 35 cents.",
+      "url": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
+      "ts": "2026-11-26T17:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "'This time actually seems different': Crypto veterans brace for more pain as bitcoin tumbles",
-      "summary": "Crypto sentiment is near rock bottom, but Galaxy sees room for a deeper slide and even longtime crypto bulls are wary of buying amid fears of AI and quantum computing.",
-      "url": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles",
-      "ts": "2026-11-25T17:38:33Z"
+      "title": "Bitcoin\u2019s dormant supply rises, a behavior seen during previous bear-market bottoming phases",
+      "summary": "More bitcoin is sitting untouched onchain as the price holds around $60,000, some 50% below its peak,",
+      "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
+      "ts": "2026-11-26T16:50:23Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "EU bank watchdog seeks European Commission rules for crypto firms offering DeFi lending",
-      "summary": "The EBA renewed its call for the commission to propose rules for crypto firms granting client access to DeFi, particularly lending protocols.",
-      "url": "https://www.coindesk.com/policy/2026/11/25/eu-bank-watchdog-seeks-european-commission-rules-for-crypto-firms-offering-defi-lending",
-      "ts": "2026-11-25T16:02:31Z"
+      "title": "Crypto for Advisors: Four questions to ask before trusting a crypto exchange",
+      "summary": "",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/11/26/crypto-for-advisors-four-questions-to-ask-before-trusting-a-crypto-exchange",
+      "ts": "2026-11-26T15:42:43Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 60752,
+    "last": 60418,
     "high_24h": 61375,
-    "low_24h": 57667,
-    "chg_pct": 4.28
+    "low_24h": 59942,
+    "chg_pct": 0.46
   },
   "macro": {
     "10Y": 4.85,
-    "DXY": 103.64,
-    "WTI": 84.49,
-    "VIX": 27.05,
-    "asof": "2026-11-26T04:32:50Z"
+    "DXY": 103.78,
+    "WTI": 84.88,
+    "VIX": 26.8,
+    "asof": "2026-11-26T23:14:54Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
