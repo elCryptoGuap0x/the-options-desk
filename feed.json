@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T23:14:54Z",
+  "generated_at": "2026-11-27T05:09:30Z",
   "session": {
-    "day_label": "THU",
+    "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TOMORROW 8:30 CT",
+    "next_open": "TODAY 8:30 CT",
     "next_open_iso": "2026-11-27T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 60418,
-      "chg_pct": 0.46,
+      "last": 61591,
+      "chg_pct": 1.14,
       "history": [
-        71391,
         70157,
         69302,
         68107,
@@ -589,16 +588,16 @@
         59423,
         60134,
         60994,
-        60418
+        60418,
+        61591
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1687.29,
-      "chg_pct": 0.04,
+      "last": 1738.53,
+      "chg_pct": 2.32,
       "history": [
-        2012.06,
         1987.83,
         1950.23,
         1922.88,
@@ -637,16 +636,16 @@
         1663.36,
         1686.45,
         1700.78,
-        1687.29
+        1687.29,
+        1738.53
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 70.87,
-      "chg_pct": 0.6,
+      "last": 73.02,
+      "chg_pct": 2.67,
       "history": [
-        81.31,
         80.07,
         80.33,
         77.85,
@@ -685,7 +684,8 @@
         69.3,
         70.48,
         71.16,
-        70.87
+        70.87,
+        73.02
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -948,10 +948,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
-      "summary": "A Bitcoin Core contributor found that the wallet's habit of resending stuck payments lets anyone link an address to the computer watching it, for under 35 cents.",
-      "url": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
-      "ts": "2026-11-26T17:30:00Z"
+      "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
+      "summary": "Binance says it has fully lifted withdrawal suspensions imposed after October\u2019s $6.3 billion hack, though a small number of networks remain paused for unrelated maintenance.",
+      "url": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
+      "ts": "2026-11-27T04:45:47Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +962,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Bitcoin\u2019s dormant supply rises, a behavior seen during previous bear-market bottoming phases",
-      "summary": "More bitcoin is sitting untouched onchain as the price holds around $60,000, some 50% below its peak,",
-      "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
-      "ts": "2026-11-26T16:50:23Z"
+      "title": "Ethereum's much-awaited Glamsterdam upgrade cleared for December test. Here's what to know",
+      "summary": "Developers have agreed to keep the planned storage charges despite concerns about some existing smart contracts, ending seven weeks of delays to the next major test.",
+      "url": "https://www.coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know",
+      "ts": "2026-11-27T04:29:47Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +976,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Crypto for Advisors: Four questions to ask before trusting a crypto exchange",
-      "summary": "",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/11/26/crypto-for-advisors-four-questions-to-ask-before-trusting-a-crypto-exchange",
-      "ts": "2026-11-26T15:42:43Z"
+      "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
+      "summary": "A Bitcoin Core contributor found that the wallet's habit of resending stuck payments lets anyone link an address to the computer watching it, for under 35 cents.",
+      "url": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
+      "ts": "2026-11-26T17:30:00Z"
     },
     {
       "tag": "OPTIONS",
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 60418,
-    "high_24h": 61375,
+    "last": 61620,
+    "high_24h": 61678,
     "low_24h": 59942,
-    "chg_pct": 0.46
+    "chg_pct": 1.16
   },
   "macro": {
     "10Y": 4.85,
-    "DXY": 103.78,
-    "WTI": 84.88,
+    "DXY": 103.76,
+    "WTI": 85.79,
     "VIX": 26.8,
-    "asof": "2026-11-26T23:14:54Z"
+    "asof": "2026-11-27T05:09:30Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
