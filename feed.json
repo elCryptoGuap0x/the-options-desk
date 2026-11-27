@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-27T05:09:30Z",
+  "generated_at": "2026-11-27T23:34:56Z",
   "session": {
     "day_label": "FRI",
     "market_state": "CLOSED",
-    "next_open": "TODAY 8:30 CT",
-    "next_open_iso": "2026-11-27T14:30:00Z",
+    "next_open": "MON 8:30 CT",
+    "next_open_iso": "2026-11-30T14:30:00Z",
     "position": "FLAT",
     "desk_arms": null
   },
@@ -547,10 +547,9 @@
   ],
   "market_board": {
     "BTC": {
-      "last": 61591,
-      "chg_pct": 1.14,
+      "last": 59808,
+      "chg_pct": -0.99,
       "history": [
-        70157,
         69302,
         68107,
         66862,
@@ -589,16 +588,16 @@
         60134,
         60994,
         60418,
-        61591
+        61591,
+        59808
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "ETH": {
-      "last": 1738.53,
-      "chg_pct": 2.32,
+      "last": 1658.86,
+      "chg_pct": -1.5,
       "history": [
-        1987.83,
         1950.23,
         1922.88,
         1890.28,
@@ -637,16 +636,16 @@
         1686.45,
         1700.78,
         1687.29,
-        1738.53
+        1738.53,
+        1658.86
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
     },
     "SOL": {
-      "last": 73.02,
-      "chg_pct": 2.67,
+      "last": 71.43,
+      "chg_pct": 0.8,
       "history": [
-        80.07,
         80.33,
         77.85,
         75.31,
@@ -685,7 +684,8 @@
         70.48,
         71.16,
         70.87,
-        73.02
+        73.02,
+        71.43
       ],
       "status": "tracked",
       "why": "Price only. Not a trade candidate."
@@ -933,13 +933,6 @@
   },
   "news": [
     {
-      "tag": "FED",
-      "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
-      "summary": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
-      "ts": "2026-11-24T19:00:00Z"
-    },
-    {
       "tag": "OPTIONS",
       "title": "Call It Wall Street\u2019s Turkey of a Trading Day",
       "summary": "Whoa! What a ride. We thought the market might repeat last Friday\u2019s selloff but dip buyers eventually stepped in and helped pull stocks off their deep morning lows. Crazy things can happen when traders take days off and it\u2019s one of those da",
@@ -948,10 +941,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
-      "summary": "Binance says it has fully lifted withdrawal suspensions imposed after October\u2019s $6.3 billion hack, though a small number of networks remain paused for unrelated maintenance.",
-      "url": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
-      "ts": "2026-11-27T04:45:47Z"
+      "title": "Kalshi turns to small businesses as legal battles threaten forecasts on sports",
+      "summary": "The prediction market is pitching protection against tariffs, weather and other business risks as courts challenge its ability to offer sports wagers.",
+      "url": "https://www.coindesk.com/business/2026/11/27/kalshi-turns-to-small-businesses-as-legal-battles-threaten-forecasts-on-sports",
+      "ts": "2026-11-27T13:19:10Z"
     },
     {
       "tag": "OPTIONS",
@@ -962,10 +955,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "Ethereum's much-awaited Glamsterdam upgrade cleared for December test. Here's what to know",
-      "summary": "Developers have agreed to keep the planned storage charges despite concerns about some existing smart contracts, ending seven weeks of delays to the next major test.",
-      "url": "https://www.coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know",
-      "ts": "2026-11-27T04:29:47Z"
+      "title": "Bitcoin 'death cross' is coming. Here's what happened after previous 13.",
+      "summary": "Your day-ahead look for Nov. 27, 2026",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13",
+      "ts": "2026-11-27T12:16:07Z"
     },
     {
       "tag": "OPTIONS",
@@ -976,10 +969,10 @@
     },
     {
       "tag": "CRYPTO",
-      "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
-      "summary": "A Bitcoin Core contributor found that the wallet's habit of resending stuck payments lets anyone link an address to the computer watching it, for under 35 cents.",
-      "url": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
-      "ts": "2026-11-26T17:30:00Z"
+      "title": "Bitcoin on course to end seven-week losing streak while trailing stock rebound",
+      "summary": "Bitcoin (BTC) has risen 1.8% since midnight UTC to around $61,600 and is on course to end seven straight weekly losses.",
+      "url": "https://www.coindesk.com/markets/2026/11/27/bitcoin-on-course-to-end-seven-week-losing-streak-while-trailing-stock-rebound",
+      "ts": "2026-11-27T11:45:47Z"
     },
     {
       "tag": "OPTIONS",
@@ -987,6 +980,13 @@
       "summary": "Friday\u2019s VIX\u00ae move, while large, was surprisingly orderly. The sell-off in SPX\u00ae spot (-3.7%) and the increase in fixed-strike vols (+3.2 pts) accounted for almost 90% of the 7.4pt VIX increase. Learn more in this week\u2019s Macro Volatility Dig",
       "url": "https://www.cboe.com/insights/posts/week-of-11-23-2026-vix-jumps-to-1-year-high-but-no-panic-as-ai-trade-unwinds/",
       "ts": "2026-11-23T05:00:00Z"
+    },
+    {
+      "tag": "CRYPTO",
+      "title": "Live updates: Bitcoin's Thanksgiving gains prove fleeting",
+      "summary": "Stocks are broadly higher, but bitcoin has slipped back near $60,000, reversing a turkey day advance.",
+      "url": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains",
+      "ts": "2026-11-27T11:34:37Z"
     }
   ],
   "calendar": [
@@ -1048,17 +1048,17 @@
   "tenor_calendar": "weeklies dark \u00b7 indices + IBIT live",
   "desk_events": {},
   "btc_range": {
-    "last": 59654,
+    "last": 59808,
     "high_24h": 62097,
-    "low_24h": 58940,
-    "chg_pct": -0.89
+    "low_24h": 58910,
+    "chg_pct": -0.99
   },
   "macro": {
-    "10Y": 4.89,
-    "DXY": 103.96,
-    "WTI": 83.69,
-    "VIX": 27.34,
-    "asof": "2026-11-27T05:09:30Z"
+    "10Y": 4.94,
+    "DXY": 104.01,
+    "WTI": 83.08,
+    "VIX": 23.81,
+    "asof": "2026-11-27T23:34:56Z"
   },
   "pulse": null,
   "today_label": "Tue 10/6",
